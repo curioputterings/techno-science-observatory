@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+# secrets — never commit
+.env
+# data artifacts
+data/jobs.db
+*.csv
+# keep raw research JSON in git (it's the cited evidence), ignore db
+data/ats_raw/
+data/research/*.log
+data/research/launchd*
+.claude/
+data/research/_*.txt

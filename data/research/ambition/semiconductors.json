@@ -1,0 +1,420 @@
+{
+  "domain": "semiconductors",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "CHIPS and Science Act (2022)",
+        "National Semiconductor Technology Center (NSTC)",
+        "CHIPS for America R&D programs"
+      ],
+      "rationale": "The CHIPS Act is a clear, well-funded national strategy to bolster the domestic semiconductor industry across the value chain, from R&D to advanced manufacturing, aiming for global leadership."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Made in China 2025 (semiconductors as key industry)",
+        "National IC Industry Investment Fund (Big Fund)",
+        "Various provincial subsidies and 'New Infrastructure' initiatives"
+      ],
+      "rationale": "China has made semiconductor self-sufficiency a top national priority, backed by immense state funding and strategic plans, driven by both economic and geopolitical considerations to overcome external restrictions."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Rapidus Corporation (joint venture for advanced logic chip manufacturing)",
+        "METI's semiconductor strategy",
+        "Subsidies for domestic fab construction (e.g., TSMC Kumamoto, Micron Hiroshima)"
+      ],
+      "rationale": "Japan is actively pursuing a strategy to revive its advanced semiconductor manufacturing capabilities, leveraging its strengths in materials and equipment, and forming strategic partnerships like Rapidus."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "K-Semiconductor Strategy (2021)",
+        "'K-Chips Act' (tax incentives)",
+        "'Semiconductor Superpower Strategy' (2022)",
+        "Samsung's 300 trillion won investment in Yongin cluster"
+      ],
+      "rationale": "South Korea, already a semiconductor powerhouse, has explicit national strategies and significant investments aimed at solidifying and expanding its global leadership across various segments of the semiconductor industry."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Taiwan's '5+2 Industrial Innovation Plan' (semiconductors as a key industry)",
+        "'Taiwan Chips Act' (tax incentives for R&D and advanced manufacturing)",
+        "Ongoing massive investments by TSMC"
+      ],
+      "rationale": "Taiwan's national strategy is deeply intertwined with its semiconductor industry, particularly TSMC, focusing on maintaining its technological edge and global dominance in advanced manufacturing."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "European Chips Act (Germany is a major beneficiary)",
+        "IPCEI on Microelectronics and Communication Technologies",
+        "Intel fab announcement in Magdeburg",
+        "TSMC fab announcement in Dresden"
+      ],
+      "rationale": "Germany is a key player in the European Chips Act, attracting significant foreign investment for fabs and bolstering its domestic R&D and manufacturing capabilities, particularly for industrial and automotive applications."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 4,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "European Chips Act",
+        "National Growth Fund (e.g., PhotonDelta)",
+        "ASML's continuous R&D investments",
+        "Government support for high-tech ecosystems"
+      ],
+      "rationale": "The Netherlands' ambition is primarily centered around its critical role in the semiconductor equipment supply chain, particularly through ASML, with government support for the high-tech ecosystem and R&D."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "UK Semiconductor Strategy (2023)",
+        "\u00a31 billion investment over 10 years",
+        "Compound Semiconductor Applications Catapult"
+      ],
+      "rationale": "The UK has a defined semiconductor strategy, albeit with a more focused scope on design, R&D, and compound semiconductors, rather than competing in leading-edge logic manufacturing."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "European Chips Act (France is a major beneficiary)",
+        "IPCEI Microelectronics",
+        "STMicroelectronics investments",
+        "Soitec's FD-SOI technology development"
+      ],
+      "rationale": "France is a key participant in the European Chips Act, supporting domestic champions like STMicroelectronics and focusing on R&D and specialized manufacturing within the broader European strategy."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 3,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Intel's significant R&D and design centers in Israel",
+        "Government support for high-tech and startups"
+      ],
+      "rationale": "Israel has a robust ecosystem for semiconductor design and R&D, attracting major players like Intel and fostering numerous fabless companies, with government support for the high-tech sector."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 4,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "India Semiconductor Mission (ISM) with INR 76,000 crore incentive scheme",
+        "Micron ATMP plant in Gujarat",
+        "Tata Electronics fab plans",
+        "Design-linked incentive schemes"
+      ],
+      "rationale": "India has launched an ambitious, well-funded national mission to build a comprehensive domestic semiconductor ecosystem, from design to manufacturing and packaging, with clear financial incentives."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Economic Development Board (EDB) strategies to attract high-tech manufacturing",
+        "GlobalFoundries expansion",
+        "Micron expansion",
+        "A*STAR research institutes"
+      ],
+      "rationale": "Singapore has a long-standing strategy to be a high-value manufacturing and R&D hub, with significant investments and incentives to attract and retain semiconductor companies, focusing on specialized manufacturing and advanced packaging."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "ETH Zurich and EPFL research",
+        "CSEM (Swiss Center for Electronics and Microtechnology)",
+        "Specialized industrial companies"
+      ],
+      "rationale": "Switzerland's contribution is primarily through its strong academic research institutions and specialized companies in materials and microtechnology, rather than a dedicated national semiconductor manufacturing strategy."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "KTH Royal Institute of Technology, Chalmers University of Technology research",
+        "Ericsson's R&D",
+        "Participation in European Chips Act (indirectly)"
+      ],
+      "rationale": "Sweden's ambition is more in R&D and specialized applications that leverage semiconductor technology, rather than establishing a broad domestic semiconductor industry."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre of Finland",
+        "Aalto University",
+        "Participation in European Chips Act (indirectly)"
+      ],
+      "rationale": "Similar to Sweden, Finland's strength lies in R&D and specialized applications, with no explicit national strategy for broad semiconductor manufacturing."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Canada's Semiconductor Challenge Program ($200 million over 5 years)",
+        "National Quantum Strategy",
+        "Investments in advanced packaging (e.g., IBM Bromont)"
+      ],
+      "rationale": "Canada has a stated strategy and dedicated funding to support its semiconductor ecosystem, primarily focusing on R&D, design, and advanced packaging, aligning with its broader tech strengths."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Strategy",
+        "CSIRO research",
+        "University research in photonics and materials"
+      ],
+      "rationale": "Australia's ambition in semiconductors is primarily within specialized R&D areas like quantum computing and photonics, not in establishing a broad manufacturing base."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "IDA Ireland's strategy to attract high-tech investment",
+        "Intel's significant fab operations in Leixlip"
+      ],
+      "rationale": "Ireland's strategy is largely driven by attracting foreign direct investment, which has resulted in significant semiconductor manufacturing presence (Intel), but without a specific, broad national semiconductor strategy beyond FDI."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 3,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "imec (Interuniversity Microelectronics Centre)",
+        "Participation in European Chips Act (indirectly through imec's role)"
+      ],
+      "rationale": "Belgium's ambition is almost entirely channeled through imec, a globally recognized leader in semiconductor R&D, making it a critical player in the frontier of technology development."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Infineon's presence and R&D",
+        "Participation in European Chips Act (indirectly)"
+      ],
+      "rationale": "Austria contributes to the semiconductor ecosystem through specialized R&D and manufacturing (e.g., power semiconductors) by companies like Infineon, rather than a broad national strategy."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "European Chips Act (Italy is a beneficiary)",
+        "IPCEI Microelectronics",
+        "STMicroelectronics presence"
+      ],
+      "rationale": "Italy is a participant in the European Chips Act, supporting domestic players like STMicroelectronics and aiming to attract investment, contributing to the broader European strategy."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "PERTE Chip (Strategic Project for the Recovery and Economic Transformation of Microelectronics and Semiconductors) with \u20ac12.25 billion investment"
+      ],
+      "rationale": "Spain has launched a significant national plan (PERTE Chip) with substantial funding to develop its semiconductor capabilities, focusing on design, R&D, and attracting manufacturing."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Investment Aspiration (NIA) targeting high-tech industries",
+        "New Industrial Master Plan 2030 (NIMP 2030) emphasizing E&E sector",
+        "Significant FDI in ATMP (e.g., Intel, Infineon expansions)"
+      ],
+      "rationale": "Malaysia, a long-standing hub for ATMP, has explicit national plans and incentives to upgrade its semiconductor industry, moving towards higher-value activities like design and wafer fabrication."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 2,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "US-Vietnam Comprehensive Strategic Partnership (including semiconductor cooperation)",
+        "Amkor Technology's new advanced packaging plant",
+        "Intel's existing assembly and test plant"
+      ],
+      "rationale": "Vietnam is actively positioning itself to attract semiconductor investment, particularly in packaging, with government support and international partnerships, though a comprehensive national strategy is still developing."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 2,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Board of Investment (BOI) incentives for high-tech industries",
+        "Existing packaging and test operations"
+      ],
+      "rationale": "Thailand is seeking to attract investment in advanced electronics, which includes segments of the semiconductor supply chain like packaging and testing, but lacks a dedicated, comprehensive national semiconductor strategy."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Government efforts to attract FDI in high-tech manufacturing",
+        "Potential partnerships with global players"
+      ],
+      "rationale": "Indonesia has expressed interest in developing its semiconductor industry, but concrete, auditable national strategies and significant investments are still in early stages compared to other regional players."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Mubadala Investment Company's past investment in GlobalFoundries (now divested)",
+        "Focus on AI and advanced technologies"
+      ],
+      "rationale": "While the UAE has invested in technology and AI, its direct stated national ambition for a domestic semiconductor industry is low, especially after divesting from GlobalFoundries."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "NEOM project",
+        "Various tech investment funds",
+        "Focus on AI and advanced technologies as part of Vision 2030"
+      ],
+      "rationale": "Saudi Arabia's Vision 2030 includes broad tech ambitions, but a specific, auditable national strategy for developing a domestic semiconductor industry (beyond attracting general tech investment) is not prominent."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Past initiatives like CIITEC (Centro de Inova\u00e7\u00e3o e Tecnologia em Semicondutores) which faced challenges",
+        "No significant current national program or budget"
+      ],
+      "rationale": "Brazil has historically struggled to establish a viable domestic semiconductor industry, and there is no strong, funded national strategy currently in place to significantly change this."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 2,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "European Chips Act participation",
+        "Intel's announced ATMP facility in Wroc\u0142aw"
+      ],
+      "rationale": "Poland is benefiting from the European Chips Act, attracting significant investment in advanced packaging and testing (Intel), indicating a growing but still focused ambition within the broader European strategy."
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "domain": "digital",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "volume_band": "very_high",
+      "skill_level": 5,
+      "frontier": 0.95,
+      "confidence": "high",
+      "evidence": [
+        "AWS",
+        "Microsoft Azure",
+        "Google Cloud",
+        "OpenAI",
+        "Nvidia",
+        "MIT",
+        "Stanford",
+        "DARPA",
+        "NSA"
+      ],
+      "rationale": "The US is the global leader in digital innovation, hosting major hyperscalers, leading AI/ML research, cybersecurity firms, and a vast ecosystem of startups and R&D labs pushing the frontier in cloud, edge, AI, and distributed systems."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "volume_band": "very_high",
+      "skill_level": 4,
+      "frontier": 0.85,
+      "confidence": "high",
+      "evidence": [
+        "Huawei",
+        "Alibaba Cloud",
+        "Tencent Cloud",
+        "Baidu AI",
+        "SenseTime",
+        "Tsinghua University",
+        "Government 5G/AI initiatives"
+      ],
+      "rationale": "China has a massive domestic digital market, large tech giants with significant R&D capabilities, and strong government backing for AI, 5G, and cloud infrastructure, leading to rapid advancement and frontier work, especially in applied AI and large-scale distributed systems."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "high",
+      "skill_level": 3,
+      "frontier": 0.55,
+      "confidence": "medium",
+      "evidence": [
+        "NTT",
+        "Fujitsu",
+        "Sony",
+        "NEC",
+        "SoftBank",
+        "RIKEN"
+      ],
+      "rationale": "Japan possesses strong engineering talent and significant investment in specific digital areas like 5G/6G research (NTT), quantum-inspired computing (Fujitsu), and industrial IoT. While a large economy, adoption of cloud-native and agile practices can be slower compared to Western counterparts, impacting overall advanced digital volume and broad frontier work."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.75,
+      "confidence": "high",
+      "evidence": [
+        "Samsung",
+        "LG",
+        "SK Telecom",
+        "KT",
+        "Naver Cloud",
+        "KAIST"
+      ],
+      "rationale": "South Korea is a highly digitized nation with world-leading 5G infrastructure, strong semiconductor industry, and major tech conglomerates investing heavily in AI, cloud, and future communication technologies. Its engineering talent and innovation culture drive significant frontier research."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "medium",
+      "evidence": [
+        "TSMC",
+        "MediaTek",
+        "Foxconn",
+        "ITRI"
+      ],
+      "rationale": "Taiwan's digital strength is primarily rooted in its dominance in semiconductor manufacturing, which underpins global digital infrastructure. While software and cloud adoption are growing, the frontier work is heavily influenced by hardware innovation (e.g., AI chips, edge devices) rather than broad software-defined digital services."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "high",
+      "evidence": [
+        "SAP",
+        "Siemens",
+        "Bosch",
+        "Fraunhofer Institutes",
+        "Deutsche Telekom",
+        "BMW"
+      ],
+      "rationale": "Germany excels in industrial digital transformation (Industry 4.0), with strong capabilities in industrial AI, edge computing, and cybersecurity. Its robust engineering base and research institutions contribute to significant advanced digital roles, though less focused on hyperscale cloud innovation compared to the US."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.45,
+      "confidence": "medium",
+      "evidence": [
+        "ASML (indirectly)",
+        "Booking.com",
+        "Adyen",
+        "QuTech",
+        "TU Delft"
+      ],
+      "rationale": "The Netherlands has a vibrant tech ecosystem, particularly strong in fintech, AI, and high-tech systems. It serves as a European hub for many global tech companies. While innovative, its smaller size limits the overall volume of advanced digital roles and broad frontier R&D compared to larger economies."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "DeepMind (Google)",
+        "ARM",
+        "GCHQ",
+        "Imperial College London",
+        "University of Cambridge"
+      ],
+      "rationale": "The UK is a major global tech hub, especially in London, with strong capabilities in AI research (DeepMind), cybersecurity, fintech, and quantum computing. Its world-class universities and a thriving startup scene contribute to a high volume of advanced digital roles and significant frontier work."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Dassault Syst\u00e8mes",
+        "OVHcloud",
+        "Inria",
+        "Thales",
+        "Mistral AI"
+      ],
+      "rationale": "France has a growing 'French Tech' ecosystem with strong government support, excelling in AI (e.g., Mistral AI), cybersecurity, and some industrial software. It possesses strong mathematical and engineering talent, contributing to a solid base of advanced digital roles and some frontier research."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "Check Point",
+        "Palo Alto Networks (R&D)",
+        "Mobileye (Intel)",
+        "Technion",
+        "Unit 8200 alumni"
+      ],
+      "rationale": "Known as the 'Startup Nation,' Israel has an exceptionally high concentration of R&D centers for global tech firms and a thriving indigenous cybersecurity and AI industry. Its military tech background fosters a culture of innovation, leading to a high skill level and significant frontier work despite its smaller size."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "very_high",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "high",
+      "evidence": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "HCLTech",
+        "Reliance Jio (5G)",
+        "IITs",
+        "Google/Microsoft/Amazon R&D centers"
+      ],
+      "rationale": "India possesses a massive talent pool and is a global hub for IT services and digital transformation. While the volume of digital roles is very high, much of the advanced work is focused on implementation and scaling existing technologies. Frontier R&D exists, often driven by multinational R&D centers and specific national initiatives (e.g., 5G)."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "GovTech",
+        "Grab",
+        "Sea Group",
+        "NUS",
+        "NTU",
+        "Google/Amazon/Microsoft regional HQs"
+      ],
+      "rationale": "Singapore is a leading regional tech hub with strong government support for digital transformation and smart nation initiatives. It attracts significant foreign investment and talent, fostering a high skill level and notable frontier work in AI, smart city tech, and cybersecurity, especially for its size."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "ETH Zurich",
+        "EPFL",
+        "Google Zurich",
+        "IBM Research Zurich",
+        "Crypto Valley"
+      ],
+      "rationale": "Switzerland boasts world-class universities and research institutions, attracting top talent. It excels in niche areas like fintech, cybersecurity, AI, and quantum computing. While the overall volume of roles is lower due to country size, the skill level and frontier research are very high in these specialized domains."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Ericsson",
+        "Spotify",
+        "Klarna",
+        "KTH Royal Institute of Technology"
+      ],
+      "rationale": "Sweden has a strong innovation culture and a vibrant startup ecosystem, particularly in telecom (Ericsson), gaming, and fintech. It contributes to advanced digital roles and some frontier research, especially in 5G and AI, driven by strong engineering talent."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.45,
+      "confidence": "medium",
+      "evidence": [
+        "Nokia",
+        "Aalto University",
+        "VTT Technical Research Centre"
+      ],
+      "rationale": "Finland has a strong legacy in telecommunications (Nokia) and a growing presence in gaming and cybersecurity. It contributes to advanced digital roles and some frontier research, particularly in 5G/6G and quantum computing, but its smaller market size limits overall volume."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "Shopify",
+        "BlackBerry (cybersecurity)",
+        "Mila",
+        "Vector Institute",
+        "Google/Microsoft R&D centers"
+      ],
+      "rationale": "Canada has rapidly growing tech hubs, particularly strong in AI research (Montreal, Toronto), cybersecurity, and cloud adoption. Its excellent universities and government support for AI initiatives contribute to a high skill level and significant frontier work."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Atlassian",
+        "CSIRO",
+        "UNSW",
+        "University of Sydney"
+      ],
+      "rationale": "Australia has a growing tech sector, with strengths in fintech, cloud adoption, and some specialized AI/data science. While it has good universities and a strong startup culture, its geographic isolation and smaller population limit the overall volume of advanced digital roles and broad frontier R&D compared to global leaders."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.35,
+      "confidence": "high",
+      "evidence": [
+        "Google Ireland",
+        "Microsoft Ireland",
+        "Amazon Web Services (AWS) EMEA HQ",
+        "IDA Ireland"
+      ],
+      "rationale": "Ireland serves as a major European hub for US tech giants, leading to a high volume of advanced digital roles, particularly in cloud operations, cybersecurity, and data centers. The skill level is high, but frontier R&D is primarily driven by the R&D centers of multinational corporations rather than indigenous deep tech."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "IMEC (indirectly)",
+        "KU Leuven",
+        "Ghent University"
+      ],
+      "rationale": "Belgium has a smaller tech market but strong academic institutions and specialized niches in AI, cybersecurity, and microelectronics (IMEC). It contributes to advanced digital roles and some specialized research, but overall volume and broad frontier work are limited."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.25,
+      "confidence": "medium",
+      "evidence": [
+        "TU Wien",
+        "Joanneum Research"
+      ],
+      "rationale": "Austria has a growing tech scene with strengths in industrial software, AI, and some cybersecurity. It has good universities and engineering talent, but its smaller market size limits the overall volume of advanced digital roles and broad frontier R&D."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Leonardo (defense tech)",
+        "Politecnico di Milano"
+      ],
+      "rationale": "Italy is a large economy but has been slower in widespread digital transformation compared to Northern European countries. While there's a growing startup scene and some strength in industrial IoT, the overall volume of advanced digital roles and frontier R&D is moderate, often facing challenges like brain drain."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Telefonica",
+        "Barcelona Supercomputing Center"
+      ],
+      "rationale": "Spain has emerging tech hubs in cities like Barcelona and Madrid, attracting startups and investment. However, overall digital maturity and the volume of advanced digital roles are still developing. Frontier R&D exists in specific areas like supercomputing and AI, but is not broadly integrated into a strong industrial ecosystem."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "medium",
+      "evidence": [
+        "MDEC (Malaysia Digital Economy Corporation)",
+        "MIMOS"
+      ],
+      "rationale": "Malaysia is a regional hub for IT services and data centers, with government initiatives pushing for digital economy growth. While the talent pool is growing, the focus is primarily on adoption and implementation of existing technologies rather than deep frontier research, leading to a lower skill level and frontier score for advanced digital roles."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.05,
+      "confidence": "medium",
+      "evidence": [
+        "FPT Software",
+        "Viettel",
+        "VinGroup"
+      ],
+      "rationale": "Vietnam has a rapidly growing tech sector, strong in IT outsourcing and mobile development. There's a government push for digital transformation, but the advanced digital job market is still emerging, with a primary focus on implementation and services rather than frontier R&D."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.05,
+      "confidence": "low",
+      "evidence": [
+        "Digital Economy Promotion Agency (DEPA)"
+      ],
+      "rationale": "Thailand is developing its digital economy with smart city initiatives, but advanced digital capabilities are still nascent. The talent pool is growing, but roles are often focused on adoption and localized solutions, with very limited frontier R&D."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.05,
+      "confidence": "medium",
+      "evidence": [
+        "GoJek",
+        "Tokopedia",
+        "Traveloka"
+      ],
+      "rationale": "Indonesia has a massive domestic market and a thriving consumer tech sector (e-commerce, ride-hailing). While there's a large talent pool, advanced digital roles are still emerging, primarily focused on scaling existing technologies for the local market rather than deep frontier research."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Dubai Future Foundation",
+        "G42",
+        "Hub71",
+        "Government AI strategies"
+      ],
+      "rationale": "The UAE has a strong government push for digital transformation, smart cities, and AI, attracting global talent and companies. Significant investment drives a growing volume of advanced digital roles and some frontier work, particularly in AI and smart city technologies, often relying on expatriate expertise."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.35,
+      "confidence": "medium",
+      "evidence": [
+        "NEOM",
+        "Saudi Aramco (digital initiatives)",
+        "STC",
+        "King Abdullah University of Science and Technology (KAUST)"
+      ],
+      "rationale": "Saudi Arabia's Vision 2030 includes massive investments in digital infrastructure and smart cities (e.g., NEOM). This is rapidly growing the advanced digital job market, with significant focus on AI and smart infrastructure. While developing rapidly, it heavily relies on expatriate talent and partnerships for frontier work."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.15,
+      "confidence": "medium",
+      "evidence": [
+        "Nubank",
+        "Ita\u00fa Unibanco (digital)",
+        "Embraer (digital aviation)",
+        "USP"
+      ],
+      "rationale": "Brazil, the largest economy in Latin America, has a growing tech scene, particularly strong in fintech and e-commerce. While there's a good academic base, challenges with infrastructure and investment for deep tech limit the overall volume of advanced digital roles and broad frontier R&D."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.25,
+      "confidence": "medium",
+      "evidence": [
+        "CD Projekt Red (indirectly)",
+        "Allegro",
+        "Polish National Centre for Research and Development"
+      ],
+      "rationale": "Poland is a growing tech hub in Central Europe, known for strong IT outsourcing, cybersecurity, and software development talent. It contributes to advanced digital roles, but broad frontier R&D is less prevalent, with specialized research existing in areas like AI and cybersecurity."
+    }
+  ]
+}

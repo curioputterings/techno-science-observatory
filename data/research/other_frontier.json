@@ -1,0 +1,481 @@
+{
+  "domain": "other_frontier",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "volume_band": "very_high",
+      "skill_level": 5,
+      "frontier": 0.95,
+      "confidence": "high",
+      "evidence": [
+        "NASA",
+        "SpaceX",
+        "Blue Origin",
+        "Lockheed Martin",
+        "Boeing",
+        "GE Additive",
+        "National Labs (LLNL, LANL, ORNL)",
+        "Commonwealth Fusion Systems",
+        "Helion Energy"
+      ],
+      "rationale": "The US leads globally across most 'Other Frontier' sub-domains, with massive government and private investment in space, advanced aerospace, fusion energy, nuclear technology, hydrogen, and additive manufacturing. It boasts numerous world-leading companies, national labs, and startups pushing the boundaries of these fields."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "volume_band": "very_high",
+      "skill_level": 5,
+      "frontier": 0.85,
+      "confidence": "high",
+      "evidence": [
+        "CNSA",
+        "CASC",
+        "COMAC",
+        "AVIC",
+        "EAST tokamak",
+        "CGN",
+        "CNNC",
+        "National hydrogen strategy",
+        "Numerous AM companies"
+      ],
+      "rationale": "China has made immense state-backed investments in space, aerospace, nuclear, fusion (EAST tokamak), hydrogen, and additive manufacturing. It is rapidly closing gaps and achieving significant milestones, with a strong focus on indigenous innovation and large-scale deployment."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.75,
+      "confidence": "high",
+      "evidence": [
+        "JAXA",
+        "Mitsubishi Heavy Industries",
+        "Kawasaki Heavy Industries",
+        "JT-60SA",
+        "Toyota (hydrogen fuel cells)",
+        "National hydrogen strategy",
+        "Hitachi-GE Nuclear Energy"
+      ],
+      "rationale": "Japan has a strong industrial base and significant R&D in space (JAXA), aerospace, nuclear, fusion (JT-60SA, ITER involvement), and hydrogen technologies. Its focus is on high-quality engineering and strategic advancements, particularly in energy and advanced materials."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "KARI",
+        "Hanwha Aerospace",
+        "KAI",
+        "KSTAR tokamak",
+        "Hyundai (hydrogen)",
+        "National hydrogen roadmap",
+        "KEPCO"
+      ],
+      "rationale": "South Korea demonstrates strong government backing and industrial participation in space (KARI), aerospace, nuclear, fusion (KSTAR), and hydrogen. It's a high-tech nation with significant R&D capabilities, particularly in advanced energy and mobility solutions."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "AIDC (Aerospace Industrial Development Corp.)",
+        "ITRI (Industrial Technology Research Institute)",
+        "Aerospace/satellite component supply chain"
+      ],
+      "rationale": "Taiwan excels in advanced manufacturing and component supply for aerospace and satellite industries. While not leading in large-scale space launches or nuclear/fusion research, its expertise in high-tech manufacturing and additive manufacturing contributes significantly to the global frontier supply chain."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "DLR (German Aerospace Center)",
+        "Airbus",
+        "ArianeGroup",
+        "Max Planck Institute for Plasma Physics (Wendelstein 7-X)",
+        "Fraunhofer Institutes",
+        "EOS",
+        "SLM Solutions",
+        "Siemens Energy"
+      ],
+      "rationale": "Germany possesses a robust industrial and research landscape in aerospace (Airbus, DLR), space, fusion (Wendelstein 7-X), hydrogen, and additive manufacturing. It's a global leader in industrial applications and fundamental research in these areas."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "ESA ESTEC",
+        "DIFFER (Dutch Institute for Fundamental Energy Research)",
+        "TNO",
+        "ASML (indirectly via high-tech manufacturing)",
+        "Fokker Technologies"
+      ],
+      "rationale": "The Netherlands has a highly specialized contribution to the 'Other Frontier' domain, particularly in space (ESA ESTEC host), fusion research (DIFFER), and high-tech manufacturing for aerospace and satellite components. Its focus is on niche, high-value R&D and engineering."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 0.85,
+      "confidence": "high",
+      "evidence": [
+        "UK Space Agency",
+        "Rolls-Royce (aerospace, SMRs)",
+        "Culham Centre for Fusion Energy (JET, STEP program)",
+        "BAE Systems",
+        "OneWeb",
+        "ITM Power"
+      ],
+      "rationale": "The UK has a strong legacy and current presence in aerospace, nuclear (SMR development), and is a global leader in fusion energy research (JET, STEP). Its space sector is growing, and there's significant investment in hydrogen and advanced manufacturing."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "CNES",
+        "ArianeGroup",
+        "Thales Alenia Space",
+        "Airbus",
+        "Dassault Aviation",
+        "EDF",
+        "Framatome",
+        "ITER (Cadarache host site)",
+        "CEA",
+        "Air Liquide"
+      ],
+      "rationale": "France is a powerhouse in space (CNES, ArianeGroup), aerospace (Airbus, Dassault), and nuclear energy (EDF, Framatome). As the host of ITER, it's at the forefront of fusion research, complemented by strong initiatives in hydrogen and advanced materials."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Israel Aerospace Industries (IAI)",
+        "SpaceIL",
+        "Elbit Systems",
+        "Stratasys",
+        "HP Indigo (additive manufacturing)"
+      ],
+      "rationale": "Israel has a highly innovative and specialized 'Other Frontier' sector, particularly in defense aerospace, satellite technology (IAI, SpaceIL), and additive manufacturing (Stratasys). While not involved in large-scale nuclear or fusion, its high-tech ecosystem drives significant frontier advancements in its focus areas."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "ISRO (Indian Space Research Organisation)",
+        "HAL (Hindustan Aeronautics Limited)",
+        "NPCIL (Nuclear Power Corporation of India)",
+        "BARC (Bhabha Atomic Research Centre)",
+        "Institute for Plasma Research (ITER involvement)",
+        "National Hydrogen Mission"
+      ],
+      "rationale": "India has robust national programs in space (ISRO), aerospace, and nuclear energy. It's a significant contributor to ITER and has a growing focus on hydrogen and additive manufacturing, demonstrating strong scientific and engineering capabilities."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "ST Engineering Aerospace",
+        "Rolls-Royce (MRO hub)",
+        "A*STAR (Agency for Science, Technology and Research)",
+        "Nanyang Technological University (AM research)"
+      ],
+      "rationale": "Singapore is a key aerospace MRO (Maintenance, Repair, and Overhaul) hub and has a growing presence in satellite manufacturing and advanced manufacturing (additive manufacturing). Its strength lies in high-tech services and specialized R&D rather than heavy industry in these frontier domains."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "very_low",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "EPFL (Swiss Plasma Center)",
+        "CERN (indirectly related to plasma/high energy physics)",
+        "Industrial AM players (e.g., inspire AG)",
+        "Specialized aerospace component manufacturers"
+      ],
+      "rationale": "Switzerland contributes significantly to frontier research, particularly in fusion (EPFL's Swiss Plasma Center) and high-precision additive manufacturing. While its volume is low, the quality and frontier nature of its specialized engineering and research are very high."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.5,
+      "confidence": "high",
+      "evidence": [
+        "Swedish Space Corporation (SSC)",
+        "Saab Aeronautics",
+        "Vattenfall (nuclear)",
+        "Arcam (now GE Additive)",
+        "National hydrogen initiatives"
+      ],
+      "rationale": "Sweden has strong niche players in space (SSC), aerospace (Saab), nuclear, and additive manufacturing (Arcam). It focuses on high-tech R&D and specialized industrial applications, with growing interest in hydrogen technologies."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Iceye (small satellites)",
+        "VTT Technical Research Centre",
+        "TVO (Olkiluoto nuclear plant)",
+        "Fortum (nuclear)"
+      ],
+      "rationale": "Finland is strong in specific niche areas like small satellite technology (Iceye) and nuclear expertise, particularly in safety and waste management. Its overall volume in 'Other Frontier' is low, but it has innovative contributions in focused segments."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "Canadian Space Agency (CSA)",
+        "MDA (space robotics)",
+        "Bombardier",
+        "Pratt & Whitney Canada",
+        "CANDU reactors (AECL)",
+        "Ballard Power Systems (hydrogen fuel cells)",
+        "CCFM (Centre canadien de fusion magn\u00e9tique)"
+      ],
+      "rationale": "Canada has a strong presence in aerospace (Bombardier, P&WC), space robotics (MDA), and nuclear technology (CANDU reactors). It's also a leader in hydrogen fuel cell technology (Ballard) and contributes to fusion research."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Australian Space Agency (ASA)",
+        "Gilmour Space Technologies",
+        "Fleet Space Technologies",
+        "CSIRO",
+        "National hydrogen strategy"
+      ],
+      "rationale": "Australia has an emerging space sector with ambitious startups (Gilmour Space, Fleet Space) and a significant national push into green hydrogen production and export. While not a major player in traditional aerospace or nuclear power, its focus on new space and hydrogen has frontier potential."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "medium",
+      "evidence": [
+        "Aerospace leasing industry",
+        "Some advanced manufacturing research centers"
+      ],
+      "rationale": "Ireland's contribution to 'Other Frontier' is primarily in aerospace services (leasing, MRO) and some advanced manufacturing research, particularly for medical devices. Direct frontier R&D in space, propulsion, fusion, or nuclear is minimal."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "high",
+      "evidence": [
+        "SCK CEN (Belgian Nuclear Research Centre)",
+        "Materialise (additive manufacturing)",
+        "Thales Alenia Space Belgium",
+        "Port of Antwerp (hydrogen hub initiatives)"
+      ],
+      "rationale": "Belgium has strong capabilities in nuclear research (SCK CEN), advanced materials (Materialise in AM), and specialized space components. It also participates in European fusion efforts and is developing hydrogen infrastructure."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Specialized engineering firms (aerospace components)",
+        "Research institutes in additive manufacturing"
+      ],
+      "rationale": "Austria's 'Other Frontier' involvement is mainly in specialized engineering for aerospace components and advanced manufacturing research. It does not have significant programs in heavy space, nuclear, or fusion."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "ASI (Italian Space Agency)",
+        "Thales Alenia Space Italia",
+        "Avio (propulsion)",
+        "Leonardo (aerospace)",
+        "ENEA (fusion research)",
+        "DTT (Divertor Test Tokamak)"
+      ],
+      "rationale": "Italy has a strong and historic presence in space (ASI, Thales Alenia Space, Avio) and aerospace (Leonardo). It's a significant contributor to ITER and has its own advanced fusion research projects (DTT), alongside growing initiatives in hydrogen and additive manufacturing."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "CDTI (Centre for the Development of Industrial Technology)",
+        "Hispasat",
+        "GMV (space technology)",
+        "Airbus Spain",
+        "CIEMAT (fusion research)"
+      ],
+      "rationale": "Spain has a growing space sector, strong contributions to European aerospace (Airbus Spain), and significant research in fusion energy (CIEMAT, ITER involvement). It's also developing capabilities in hydrogen and additive manufacturing."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "MEASAT (satellite operator)",
+        "Aerospace MRO facilities"
+      ],
+      "rationale": "Malaysia's 'Other Frontier' activities are primarily in aerospace MRO and satellite operations (MEASAT). While there's some interest in advanced manufacturing, direct frontier R&D in space, propulsion, fusion, or nuclear is very limited."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.05,
+      "confidence": "low",
+      "evidence": [
+        "Vietnam National Satellite Center (VNSC)"
+      ],
+      "rationale": "Vietnam has a nascent space program focused on small satellite development (VNSC). Its involvement in other 'Other Frontier' domains like advanced propulsion, fusion, or nuclear is minimal, with capabilities still in very early stages."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.05,
+      "confidence": "low",
+      "evidence": [
+        "Geo-Informatics and Space Technology Development Agency (GISTDA)",
+        "THEOS satellites"
+      ],
+      "rationale": "Thailand is developing its satellite capabilities through GISTDA and projects like THEOS. Its 'Other Frontier' activities are largely focused on space applications rather than fundamental R&D in propulsion, fusion, or nuclear, with capabilities in very early stages."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.05,
+      "confidence": "low",
+      "evidence": [
+        "LAPAN (National Institute of Aeronautics and Space)",
+        "PT Dirgantara Indonesia (aerospace manufacturing)"
+      ],
+      "rationale": "Indonesia has a developing space program (LAPAN) and aerospace manufacturing capabilities (PT Dirgantara Indonesia). Its 'Other Frontier' involvement is still in early stages, with limited direct frontier R&D in areas like fusion or advanced propulsion."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "high",
+      "evidence": [
+        "UAE Space Agency",
+        "Emirates Mars Mission",
+        "MBZ-SAT",
+        "Masdar (hydrogen initiatives)",
+        "Strata Manufacturing (aerospace composites)"
+      ],
+      "rationale": "The UAE has an ambitious and rapidly developing space program (Emirates Mars Mission, MBZ-SAT) and is making significant investments in hydrogen energy (Masdar). Its focus is on high-profile projects and strategic partnerships to build frontier capabilities."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "Saudi Space Commission (SPSC)",
+        "NEOM (green hydrogen projects)",
+        "National nuclear energy program ambitions"
+      ],
+      "rationale": "Saudi Arabia has ambitious plans in space (SPSC), nuclear energy (SMR ambitions), and especially green hydrogen (NEOM). While current operational frontier R&D is limited, significant investment and strategic initiatives are aimed at developing these capabilities rapidly."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Embraer (aerospace)",
+        "Brazilian Space Agency (AEB)",
+        "INPE (National Institute for Space Research)",
+        "Eletronuclear (nuclear power)"
+      ],
+      "rationale": "Brazil is a strong regional player in aerospace (Embraer) and has a developing space program (AEB, INPE) and nuclear energy infrastructure. While solid in engineering and manufacturing, its direct frontier R&D in areas like advanced propulsion or fusion is relatively limited compared to global leaders."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Polish Space Agency",
+        "PZL Mielec (aerospace components)",
+        "Institute of Plasma Physics and Laser Microfusion (IPPLM)",
+        "National hydrogen strategy"
+      ],
+      "rationale": "Poland has an emerging space sector, some aerospace manufacturing capabilities, and niche research in plasma physics (IPPLM) and hydrogen. Its 'Other Frontier' involvement is growing, but still at an early stage compared to major global players."
+    }
+  ]
+}
