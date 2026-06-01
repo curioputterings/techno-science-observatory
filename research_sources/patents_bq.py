@@ -42,18 +42,21 @@ CREDS = _ENV.get("GOOGLE_APPLICATION_CREDENTIALS", "")
 BQ_PROJECT = _ENV.get("BQ_PROJECT", "")
 LOG = ROOT / "data" / "research" / "patents_run.log"
 
-# Title/abstract keyword groups per domain. patents-public-data stores title &
-# abstract as localized arrays; we flatten and lowercase, then match any term.
-DOMAIN_TERMS: dict[str, list[str]] = {
-    "semiconductors": ["semiconductor", "lithography", "transistor", "wafer", "integrated circuit"],
-    "quantum": ["qubit", "quantum computing", "quantum cryptography", "quantum sensing"],
-    "precision_engineering": ["photonic", "actuator", "mems", "metrology", "optical sensor"],
-    "advanced_materials": ["nanomaterial", "graphene", "composite material", "thin film", "alloy"],
-    "biomedical": ["crispr", "gene editing", "biosensor", "tissue engineering", "genomic"],
-    "pharmaceuticals": ["pharmaceutical", "vaccine", "antibody", "drug formulation", "therapeutic"],
-    "digital": ["cybersecurity", "edge computing", "wireless network", "data center", "5g"],
-    "artificial_intelligence": ["machine learning", "neural network", "artificial intelligence", "deep learning"],
-    "other_frontier": ["propulsion", "fusion reactor", "fuel cell", "satellite", "carbon capture"],
+# CPC classification-code prefixes per domain. Using the patent office's own
+# expert classification (the `cpc` field) is both far cheaper to query (~18 GB vs
+# ~228 GB for full-text LIKE) AND more reliable than keyword-matching titles.
+# Validated against patents-public-data 2020 — counts are face-valid (e.g.
+# semiconductors top = US/JP/KR/TW/CN). Prefixes are matched with LIKE 'CODE%'.
+DOMAIN_CPC: dict[str, list[str]] = {
+    "semiconductors": ["H01L"],                  # semiconductor devices
+    "quantum": ["G06N10"],                        # quantum computing
+    "artificial_intelligence": ["G06N3", "G06N20"],  # neural nets, machine learning
+    "advanced_materials": ["C01B32", "B82Y"],     # carbon nanostructures, nanotech
+    "pharmaceuticals": ["A61K", "A61P"],          # medicinal preparations, therapeutic activity
+    "biomedical": ["C12N15", "C12Q"],             # genetic engineering, nucleic-acid assays
+    "digital": ["H04L"],                          # digital information transmission / security
+    "precision_engineering": ["G01B", "B81B"],    # metrology, MEMS / microstructural devices
+    "other_frontier": ["B64G", "G21B"],           # cosmonautics, fusion reactors
 }
 
 
@@ -87,27 +90,25 @@ def _client():
     return bigquery.Client.from_service_account_json(CREDS, project=BQ_PROJECT)
 
 
-def _query_sql(terms: list[str], year: int) -> str:
+def _query_sql(cpc_prefixes: list[str], year: int) -> str:
     """Count patent publications per inventor-country for one domain+year.
 
-    - publication_date is an INT64 like 20200115; filter by the year prefix.
-    - title/abstract are localized arrays -> UNNEST and lowercase-match any term.
+    - publication_date is an INT64 like 20200115; filter by the year range.
+    - cpc is a repeated record -> UNNEST and prefix-match the classification code
+      (the patent office's own subject classification — robust + cheap to scan).
     - country comes from inventor_harmonized[].country_code (UNNEST), so a patent
-      with inventors in 2 countries counts once per country (co-invention).
+      co-invented across 2 countries counts once per country.
     """
-    like = " OR ".join(
-        [f"LOWER(t.text) LIKE '%{w}%'" for w in terms]
-        + [f"LOWER(a.text) LIKE '%{w}%'" for w in terms])
+    cond = " OR ".join(f"c.code LIKE '{p}%'" for p in cpc_prefixes)
     iso_list = ",".join(f"'{c}'" for c in TARGET_COUNTRIES)
     return f"""
     SELECT inv.country_code AS iso, COUNT(DISTINCT p.publication_number) AS n
     FROM `patents-public-data.patents.publications` AS p,
-         UNNEST(p.title_localized)    AS t,
-         UNNEST(p.abstract_localized) AS a,
+         UNNEST(p.cpc) AS c,
          UNNEST(p.inventor_harmonized) AS inv
     WHERE p.publication_date BETWEEN {year}0101 AND {year}1231
       AND inv.country_code IN ({iso_list})
-      AND ({like})
+      AND ({cond})
     GROUP BY iso
     """
 
@@ -130,10 +131,10 @@ def check() -> bool:
               "and the BigQuery API enabled on that project.")
         return False
     try:
-        gb = _run_query(_query_sql(["semiconductor"], 2020), dry_run=True) / 1e9
+        gb = _run_query(_query_sql(["H01L"], 2020), dry_run=True) / 1e9
         print(f"OK: auth works. One domain-year query scans ~{gb:.1f} GB "
               f"(free tier = 1000 GB/month).")
-        rows = _run_query(_query_sql(["qubit"], 2020), dry_run=False)
+        rows = _run_query(_query_sql(["G06N10"], 2020), dry_run=False)
         top = sorted(((r["n"], r["iso"]) for r in rows), reverse=True)[:5]
         print("Live test (qubit patents 2020):",
               ", ".join(f"{i}:{n}" for n, i in top) or "(no rows)")
@@ -153,7 +154,7 @@ def run(year: int, domains: list[str] | None = None, dry_run: bool = False) -> d
     if dry_run:
         total_gb = 0.0
         for dom in domains:
-            gb = _run_query(_query_sql(DOMAIN_TERMS[dom], year), dry_run=True) / 1e9
+            gb = _run_query(_query_sql(DOMAIN_CPC[dom], year), dry_run=True) / 1e9
             total_gb += gb
             log(f"[dry] {dom:22} ~{gb:.2f} GB")
         log(f"=== dry-run total ~{total_gb:.1f} GB (free tier 1000 GB/mo) ===")
@@ -162,7 +163,7 @@ def run(year: int, domains: list[str] | None = None, dry_run: bool = False) -> d
     store = Store()
     written = 0
     for dom in domains:
-        rows = _run_query(_query_sql(DOMAIN_TERMS[dom], year), dry_run=False)
+        rows = _run_query(_query_sql(DOMAIN_CPC[dom], year), dry_run=False)
         counts = {r["iso"]: r["n"] for r in rows}
         cells = []
         for iso, name in TARGET_COUNTRIES.items():
