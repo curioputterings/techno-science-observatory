@@ -549,6 +549,18 @@ with tab10:
 
 
 @st.cache_data(ttl=120)
+def patent_trend_data():
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        return pd.read_sql_query(
+            "SELECT country_iso, domain, year, n_patents FROM patent_trend", conn)
+    except Exception:
+        return pd.DataFrame()
+    finally:
+        conn.close()
+
+
+@st.cache_data(ttl=120)
 def triangulation_data():
     conn = sqlite3.connect(DB_PATH)
     try:
@@ -671,15 +683,43 @@ with tab11:
             figp.update_layout(height=560)
             st.plotly_chart(figp, use_container_width=True)
             st.caption(f"Research↔invention rank agreement: {corr_pp:.2f}. Patents are "
-                       "USPTO grants (PatentsView) — captures inventors who patent into "
-                       "the US market, an honest coverage bias.")
+                       "from Google patents-public-data (BigQuery), classified by CPC "
+                       "code, counted by inventor country.")
+
+            # patent momentum trend (multi-year)
+            tr = patent_trend_data()
+            if not tr.empty:
+                st.divider()
+                st.markdown("### 📈 Invention momentum — patents over time")
+                yrs = sorted(tr["year"].unique())
+                st.caption(f"Patent counts by inventor country, {yrs[0]}–{yrs[-1]} "
+                           "(CPC-classified). The trend is the signal hiring estimates "
+                           "can't show: who is *accelerating* in invention.")
+                dom_pick = st.selectbox(
+                    "Domain", taxonomy.ALL_DOMAINS,
+                    format_func=lambda d: taxonomy.DOMAIN_LABELS.get(d, d),
+                    key="trend_domain")
+                sub = tr[tr["domain"] == dom_pick]
+                latest_yr = sub["year"].max()
+                top_c = (sub[sub["year"] == latest_yr]
+                         .nlargest(8, "n_patents")["country_iso"].tolist())
+                sub = sub[sub["country_iso"].isin(top_c)]
+                figt = px.line(
+                    sub, x="year", y="n_patents", color="country_iso", markers=True,
+                    labels={"year": "Year", "n_patents": "Patents (inventor country)",
+                            "country_iso": "Country"},
+                    title=f"{taxonomy.DOMAIN_LABELS.get(dom_pick, dom_pick)} — patent momentum")
+                figt.update_layout(height=480)
+                st.plotly_chart(figt, use_container_width=True)
+                st.caption("Recent years lag (patents take ~2y to fully publish), so "
+                           "the final point may understate — read the slope, not the last dot.")
         else:
             st.markdown("### 🔬 Patents layer — not yet populated")
-            st.caption("Add a free PatentsView key to `.env` "
-                       "(`PATENTSVIEW_API_KEY=…`, from https://patentsview.org/), then "
-                       "run `python3 research_sources/patents.py --check` and "
-                       "`python3 research_sources/patents.py`. A publications-vs-patents "
-                       "view (research → invention) will appear here automatically.")
+            st.caption("Configure BigQuery (`GOOGLE_APPLICATION_CREDENTIALS` + "
+                       "`BQ_PROJECT` in `.env`), then run "
+                       "`python3 research_sources/patents_bq.py --check` and "
+                       "`python3 research_sources/patents_bq.py --years 2016 2018 2020 2022`. "
+                       "A research→invention view + momentum trend appear here automatically.")
 
 
 st.divider()

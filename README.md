@@ -76,8 +76,11 @@ python3 ats/scrape.py                   # scrape -> classify -> counted cells
 python3 ats/footprint.py                # cross-border MNC division-of-labour map
 python3 research_sources/publications.py --year 2024   # OpenAlex triangulation layer
 # patents (needs free EPO_OPS_KEY + EPO_OPS_SECRET in .env):
-python3 research_sources/patents.py --check            # validate auth + country query
-python3 research_sources/patents.py --year 2022        # EPO OPS patents layer
+# patents via BigQuery (needs GOOGLE_APPLICATION_CREDENTIALS + BQ_PROJECT in .env):
+python3 research_sources/patents_bq.py --check               # auth + live test query
+python3 research_sources/patents_bq.py --dry-run --year 2020 # GB it will scan (free=1TB/mo)
+python3 research_sources/patents_bq.py --years 2016 2018 2020 2022  # patent momentum trend
+#   (CPC-classified, ~18 GB/domain. EPO OPS connector patents.py is the keyless fallback.)
 
 # 2. dashboard  (a .venv is already set up with deps)
 .venv/bin/streamlit run dashboard/app.py

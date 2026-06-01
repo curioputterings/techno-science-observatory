@@ -88,6 +88,19 @@ CREATE TABLE IF NOT EXISTS footprint (
 );
 CREATE INDEX IF NOT EXISTS idx_fp_employer ON footprint(employer);
 CREATE INDEX IF NOT EXISTS idx_fp_country  ON footprint(country_iso);
+
+-- Patent time-series (one row per country × domain × year). The `cells` table
+-- (source='patents') holds only the latest year; this keeps the full history so
+-- the dashboard can chart invention momentum. Re-running a year overwrites it.
+CREATE TABLE IF NOT EXISTS patent_trend (
+    country_iso  TEXT NOT NULL,
+    country_name TEXT,
+    domain       TEXT NOT NULL,
+    year         INTEGER NOT NULL,
+    n_patents    INTEGER,
+    PRIMARY KEY (country_iso, domain, year)
+);
+CREATE INDEX IF NOT EXISTS idx_pt_year ON patent_trend(year);
 """
 
 _COLS = [
@@ -155,6 +168,23 @@ class Store:
 
     def count_ambition(self) -> int:
         return self.conn.execute("SELECT COUNT(*) FROM ambition").fetchone()[0]
+
+    # ---- patent time-series ----
+    def upsert_patent_year(self, rows: list[dict]) -> int:
+        cols = ["country_iso", "country_name", "domain", "year", "n_patents"]
+        upd = "n_patents=excluded.n_patents, country_name=excluded.country_name"
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO patent_trend ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(country_iso, domain, year) DO UPDATE SET {upd}",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
+
+    def patent_years(self) -> list[int]:
+        return [r[0] for r in self.conn.execute(
+            "SELECT DISTINCT year FROM patent_trend ORDER BY year")]
 
     # ---- cross-border footprint ----
     def replace_footprint(self, rows: list[dict]) -> int:

@@ -144,10 +144,13 @@ def check() -> bool:
         return False
 
 
-def run(year: int, domains: list[str] | None = None, dry_run: bool = False) -> dict:
+def run(year: int, domains: list[str] | None = None, dry_run: bool = False,
+        latest_year: int | None = None) -> dict:
     if not ready():
         raise SystemExit("BigQuery not configured — see module docstring / --check.")
     domains = domains or taxonomy.ALL_DOMAINS
+    global _latest_year
+    _latest_year = latest_year if latest_year is not None else year
     as_of = dt.date.today().isoformat()
     log(f"=== patents (BigQuery) {as_of}: year={year}, dry_run={dry_run}, domains={domains} ===")
 
@@ -162,45 +165,57 @@ def run(year: int, domains: list[str] | None = None, dry_run: bool = False) -> d
 
     store = Store()
     written = 0
+    is_latest = year >= max(_latest_year, year)  # only update cells if this is newest
     for dom in domains:
         rows = _run_query(_query_sql(DOMAIN_CPC[dom], year), dry_run=False)
         counts = {r["iso"]: r["n"] for r in rows}
-        cells = []
-        for iso, name in TARGET_COUNTRIES.items():
-            n = int(counts.get(iso, 0))
-            cells.append({
-                "country_iso": iso, "country_name": name, "domain": dom,
-                "volume_band": list(taxonomy.VOLUME_BANDS.values())[count_to_volume_ord(n)]["key"],
-                "volume_ord": count_to_volume_ord(n),
-                "volume_estimate": f"{n} patents ({year})",
-                "skill_level": None, "frontier": None,
-                "rationale": f"{n} patent publications in {dom} with a {name} inventor, {year}",
-                "evidence": ["BigQuery", "patents-public-data", str(year)],
-                "confidence": "high", "precision": "counted",
-                "source": "patents", "as_of": as_of,
-            })
-        written += store.upsert_many(cells)
+        # always record the year in the trend table
+        trend = [{"country_iso": iso, "country_name": name, "domain": dom,
+                  "year": year, "n_patents": int(counts.get(iso, 0))}
+                 for iso, name in TARGET_COUNTRIES.items()]
+        store.upsert_patent_year(trend)
+        # update the 'latest' cells snapshot only for the newest year pulled
+        if is_latest:
+            cells = []
+            for iso, name in TARGET_COUNTRIES.items():
+                n = int(counts.get(iso, 0))
+                cells.append({
+                    "country_iso": iso, "country_name": name, "domain": dom,
+                    "volume_band": list(taxonomy.VOLUME_BANDS.values())[count_to_volume_ord(n)]["key"],
+                    "volume_ord": count_to_volume_ord(n),
+                    "volume_estimate": f"{n} patents ({year})",
+                    "skill_level": None, "frontier": None,
+                    "rationale": f"{n} patent publications in {dom} with a {name} inventor, {year}",
+                    "evidence": ["BigQuery", "patents-public-data", str(year)],
+                    "confidence": "high", "precision": "counted",
+                    "source": "patents", "as_of": as_of,
+                })
+            written += store.upsert_many(cells)
         top = sorted(((counts.get(i, 0), i) for i in TARGET_COUNTRIES), reverse=True)[:4]
         log(f"[ok] {dom:22} top: {', '.join(f'{i}:{n}' for n,i in top)}")
         time.sleep(0.3)
-    total = store.conn.execute(
-        "SELECT COUNT(*) FROM cells WHERE source='patents'").fetchone()[0]
+    yrs = store.patent_years()
     store.close()
-    log(f"=== done. wrote {written} | patents cells in db: {total} ===")
-    return {"written": written, "total": total}
+    log(f"=== done. year {year} | cells updated={is_latest} | trend years now: {yrs} ===")
+    return {"year": year, "trend_years": yrs}
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="BigQuery patents-public-data by country×domain")
     ap.add_argument("--year", type=int, default=dt.date.today().year - 3,
-                    help="publication year (default: 3y back; patents lag)")
+                    help="single publication year (default: 3y back; patents lag)")
+    ap.add_argument("--years", nargs="*", type=int, default=None,
+                    help="multiple years for a trend, e.g. --years 2016 2018 2020 2022")
     ap.add_argument("--domains", nargs="*", default=None)
     ap.add_argument("--check", action="store_true", help="validate auth + tiny query")
     ap.add_argument("--dry-run", action="store_true", help="estimate GB scanned, no data")
     args = ap.parse_args(argv)
     if args.check:
         sys.exit(0 if check() else 1)
-    run(args.year, domains=args.domains, dry_run=args.dry_run)
+    years = args.years or [args.year]
+    latest = max(years)
+    for y in sorted(years):  # oldest first; newest updates the 'latest' cells
+        run(y, domains=args.domains, dry_run=args.dry_run, latest_year=latest)
 
 
 if __name__ == "__main__":
