@@ -35,10 +35,18 @@ def capability(df: pd.DataFrame) -> pd.Series:
             + CAP_W["frontier"] * df["frontier"].clip(0, 1)) * 100
 
 
+# Embed Plotly's own JS in the FIRST figure only, so the bundled library always
+# matches the exact version that encoded the figures' typed-array (bdata) data.
+# A mismatched CDN version silently fails to decode bdata -> blank heatmaps.
+_PLOTLY_JS_EMITTED = {"done": False}
+
+
 def fig_html(fig, height=480) -> str:
     fig.update_layout(height=height, margin=dict(l=10, r=10, t=40, b=10),
                       template="plotly_white")
-    return pio.to_html(fig, include_plotlyjs=False, full_html=False,
+    include = "inline" if not _PLOTLY_JS_EMITTED["done"] else False
+    _PLOTLY_JS_EMITTED["done"] = True
+    return pio.to_html(fig, include_plotlyjs=include, full_html=False,
                        config={"displayModeBar": False})
 
 
@@ -150,7 +158,6 @@ def main():
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Techno-Science Capability Observatory</title>
-<script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 <style>
   :root {{ --bg:#0d1117; --fg:#e6edf3; --mut:#8b949e; --card:#161b22; --acc:#2f81f7; }}
   * {{ box-sizing:border-box; }}
