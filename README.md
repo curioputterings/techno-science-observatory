@@ -49,10 +49,12 @@ run_research.py ──(Gemini API)──▶ data/research/<domain>.json ──�
 - `research_sources/publications.py` — OpenAlex publication counts by country ×
   domain (`source='publications'`, real counts) — an independent signal that
   triangulates the Gemini estimates. Free, no key.
-- `research_sources/patents.py` — PatentsView (USPTO) patent counts by country ×
-  domain (`source='patents'`, real counts) — research→invention triangulation.
-  Needs a **free** `PATENTSVIEW_API_KEY` in `.env` (patents have no free no-key
-  global API). Run `python3 research_sources/patents.py --check` to validate.
+- `research_sources/patents.py` — **EPO OPS** (European Patent Office) patent
+  counts by country × domain (`source='patents'`) — research→invention
+  triangulation. No citizenship restriction (PatentsView is US-citizen-only).
+  Needs a free OAuth app (`EPO_OPS_KEY` + `EPO_OPS_SECRET` in `.env`, from
+  https://developers.epo.org/). Run `python3 research_sources/patents.py --check`
+  first — it validates auth **and** the country-filter query before any full run.
 - `dashboard/app.py` — comparison dashboard (9 tabs incl. OEC, adjacent possible,
   ambition vs reality, trends, verified ATS).
 - `my_technoscience_scraper.py` — original SEA-focused ATS scraper (reference).
@@ -73,9 +75,9 @@ python3 ats/probe.py                    # find live boards -> data/ats_registry.
 python3 ats/scrape.py                   # scrape -> classify -> counted cells
 python3 ats/footprint.py                # cross-border MNC division-of-labour map
 python3 research_sources/publications.py --year 2024   # OpenAlex triangulation layer
-# patents (needs free PATENTSVIEW_API_KEY in .env):
-python3 research_sources/patents.py --check            # validate key + endpoint
-python3 research_sources/patents.py --year 2023        # USPTO patents layer
+# patents (needs free EPO_OPS_KEY + EPO_OPS_SECRET in .env):
+python3 research_sources/patents.py --check            # validate auth + country query
+python3 research_sources/patents.py --year 2022        # EPO OPS patents layer
 
 # 2. dashboard  (a .venv is already set up with deps)
 .venv/bin/streamlit run dashboard/app.py

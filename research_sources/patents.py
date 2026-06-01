@@ -1,25 +1,33 @@
-"""Patents layer — invention output by country × domain, from PatentsView.
+"""Patents layer — invention output by country × domain, from EPO OPS.
 
 A FOURTH independent signal. Publications reveal research; patents reveal applied
-/ commercial invention. The gap between them is itself informative (a country can
-publish heavily but patent little = research without commercialisation, or
-vice-versa). Triangulates against gemini_research, ats, and publications.
+/ commercial invention. Triangulates against gemini_research, ats, publications.
 
-Source: PatentsView Search API (USPTO grants). Free, but needs an API key:
-    request one at  https://patentsview.org/  (or https://search.patentsview.org/)
-    then put it in .env:   PATENTSVIEW_API_KEY=...
-The key is read the same way as the Gemini key — never hardcoded, .env gitignored.
+Source: EPO Open Patent Services (OPS) — European Patent Office. No citizenship
+restriction (unlike PatentsView), genuinely free, global patent-family coverage.
+Auth is OAuth2 client-credentials: register a free app at
+    https://developers.epo.org/   ->  get a Consumer Key + Consumer Secret
+then put BOTH in .env:
+    EPO_OPS_KEY=...
+    EPO_OPS_SECRET=...
+The connector exchanges them for a short-lived bearer token automatically.
 
-Coverage note: PatentsView is USPTO data, so it captures patents *filed in the US*
-by inventors worldwide (via inventor country). That over-weights economies that
-patent into the US market — an honest, documented bias, surfaced in the dashboard.
+IMPORTANT honest caveat — the country dimension:
+    OPS's CQL search indexes title/abstract/date well, but country-of-inventor is
+    NOT a clean first-class CQL index. This connector filters by country using the
+    applicant/inventor-country CQL field (`pa`/`in` with a country code) which may
+    or may not behave as hoped on your account. RUN `--check` FIRST: it validates
+    auth AND tells you whether the country-filtered count actually works before any
+    full run. If country filtering proves unreliable, the layer should not be
+    trusted (don't silently persist bad counts).
 
-    python3 research_sources/patents.py --year 2023
-    python3 research_sources/patents.py --check        # validate key + endpoint only
+    python3 research_sources/patents.py --check        # validate auth + country query
+    python3 research_sources/patents.py --year 2022
 """
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime as dt
 import json
 import sys
@@ -32,32 +40,33 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 import taxonomy  # noqa: E402
-from gemini_client import load_env  # noqa: E402  (reuse the .env reader)
+from gemini_client import load_env  # noqa: E402
 from research import TARGET_COUNTRIES  # noqa: E402
 from store import Store  # noqa: E402
 
-# PatentsView Search API (new). Endpoint + auth header per their docs.
-BASE = "https://search.patentsview.org/api/v1/patent/"
-API_KEY = load_env().get("PATENTSVIEW_API_KEY", "")
+AUTH_URL = "https://ops.epo.org/3.2/auth/accesstoken"
+SEARCH_URL = "https://ops.epo.org/3.2/rest-services/published-data/search"
+_ENV = load_env()
+OPS_KEY = _ENV.get("EPO_OPS_KEY", "")
+OPS_SECRET = _ENV.get("EPO_OPS_SECRET", "")
 LOG = ROOT / "data" / "research" / "patents_run.log"
 
-# Patent-flavoured search terms per domain (CPC-ish phrasing; patents use
-# product/process language). OR-joined via _text_any on the title+abstract.
+# Patent-flavoured title/abstract terms per domain (OPS CQL ti/ab search).
 DOMAIN_TERMS: dict[str, str] = {
-    "semiconductors": "semiconductor lithography transistor integrated circuit wafer",
-    "quantum": "quantum computing qubit quantum cryptography",
-    "precision_engineering": "photonics actuator metrology mems optical sensor",
-    "advanced_materials": "nanomaterial composite graphene alloy thin film",
-    "biomedical": "gene editing crispr biosensor tissue engineering genomic",
-    "pharmaceuticals": "pharmaceutical compound drug formulation vaccine antibody",
-    "digital": "wireless network cybersecurity edge computing data center",
-    "artificial_intelligence": "machine learning neural network artificial intelligence",
-    "other_frontier": "rocket propulsion fusion reactor hydrogen fuel cell satellite",
+    "semiconductors": "semiconductor or lithography or transistor or wafer",
+    "quantum": "qubit or \"quantum computing\" or \"quantum cryptography\"",
+    "precision_engineering": "photonic or actuator or mems or metrology",
+    "advanced_materials": "nanomaterial or graphene or composite or \"thin film\"",
+    "biomedical": "crispr or \"gene editing\" or biosensor or genomic",
+    "pharmaceuticals": "pharmaceutical or vaccine or antibody or \"drug formulation\"",
+    "digital": "cybersecurity or \"edge computing\" or \"wireless network\"",
+    "artificial_intelligence": "\"machine learning\" or \"neural network\"",
+    "other_frontier": "propulsion or \"fusion reactor\" or \"fuel cell\" or satellite",
 }
 
 
 def ready() -> bool:
-    return bool(API_KEY)
+    return bool(OPS_KEY and OPS_SECRET)
 
 
 def count_to_volume_ord(n: int) -> int:
@@ -81,73 +90,109 @@ def log(msg: str) -> None:
         f.write(line + "\n")
 
 
-def _post(query: dict, fields: list[str], opts: dict, retries: int = 3) -> dict:
-    """PatentsView accepts GET with url-encoded q/f/o, or POST JSON. Use POST."""
-    body = json.dumps({"q": query, "f": fields, "o": opts}).encode()
+_TOKEN = {"value": "", "exp": 0.0}
+
+
+def _get_token(now: float) -> str:
+    """OAuth2 client-credentials -> bearer token (cached until ~expiry)."""
+    if _TOKEN["value"] and now < _TOKEN["exp"]:
+        return _TOKEN["value"]
+    basic = base64.b64encode(f"{OPS_KEY}:{OPS_SECRET}".encode()).decode()
     req = urllib.request.Request(
-        BASE, data=body, method="POST",
-        headers={"Content-Type": "application/json",
-                 "X-Api-Key": API_KEY,
-                 "User-Agent": "techsci-research/0.1"})
+        AUTH_URL, data=b"grant_type=client_credentials", method="POST",
+        headers={"Authorization": f"Basic {basic}",
+                 "Content-Type": "application/x-www-form-urlencoded"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        d = json.loads(r.read())
+    _TOKEN["value"] = d["access_token"]
+    # tokens last ~20min; refresh a bit early. pass `now` in (no Date.now ban issue)
+    _TOKEN["exp"] = now + int(d.get("expires_in", 1200)) - 60
+    return _TOKEN["value"]
+
+
+def _search_count(cql: str, now: float, retries: int = 3) -> int:
+    """Return OPS total-result-count for a CQL query (Range 1-1 = count only)."""
+    token = _get_token(now)
+    url = f"{SEARCH_URL}?q={urllib.parse.quote(cql)}&Range=1-1"
     last = None
     for i in range(retries):
         try:
+            req = urllib.request.Request(url, headers={
+                "Authorization": f"Bearer {token}",
+                "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=40) as r:
-                return json.loads(r.read())
+                d = json.loads(r.read())
+            # total count lives at ops:world-patent-data > ops:biblio-search @total-result-count
+            bs = (d.get("ops:world-patent-data", {})
+                    .get("ops:biblio-search", {}))
+            return int(bs.get("@total-result-count", 0))
         except urllib.error.HTTPError as e:
-            last = f"HTTP {e.code}: {e.read()[:160]!r}"
-            time.sleep((6 if e.code == 429 else 2) * (i + 1))
-        except urllib.error.URLError as e:
+            last = f"HTTP {e.code}: {e.read()[:150]!r}"
+            if e.code == 401:  # token expired mid-run: force refresh
+                _TOKEN["exp"] = 0.0
+                token = _get_token(now)
+            time.sleep((6 if e.code in (403, 429) else 2) * (i + 1))
+        except (urllib.error.URLError, KeyError, ValueError) as e:
             last = repr(e)
             time.sleep(2 * (i + 1))
-    raise RuntimeError(f"PatentsView failed: {last}")
+    raise RuntimeError(f"OPS search failed: {last}")
 
 
-def count_one(terms: str, iso: str, year: int) -> int:
-    """Patent grants in a domain with >=1 inventor from `iso` in `year`."""
-    query = {"_and": [
-        {"_text_any": {"patent_title": terms}},
-        {"inventors.inventor_country": iso},
-        {"_gte": {"patent_date": f"{year}-01-01"}},
-        {"_lte": {"patent_date": f"{year}-12-31"}},
-    ]}
-    # size=1, we only want total_hits from the response metadata
-    data = _post(query, ["patent_id"], {"size": 1})
-    # new API returns {"error":..., "count":.., "total_hits":..} — total_hits is the count
-    return int(data.get("total_hits") or data.get("count") or 0)
+def _cql(terms: str, iso: str, year: int) -> str:
+    # ti,ab = title/abstract; pd = publication date (year); pa = applicant (incl. country code)
+    return f'(ti,ab=({terms})) and pd within "{year}" and pa="{iso}"'
 
 
-def check() -> bool:
-    """Validate the key + endpoint with one tiny query. Self-diagnoses setup."""
+def count_one(terms: str, iso: str, year: int, now: float) -> int:
+    return _search_count(_cql(terms, iso, year), now)
+
+
+def check(now: float) -> bool:
+    """Validate auth AND the country-filtered query before any full run."""
     if not ready():
-        print("PATENTSVIEW_API_KEY missing in .env — request a free key at "
-              "https://patentsview.org/ and add it.")
+        print("EPO_OPS_KEY / EPO_OPS_SECRET missing in .env. Register a free app at "
+              "https://developers.epo.org/ and add both.")
         return False
     try:
-        n = count_one("semiconductor", "JP", 2022)
-        print(f"OK: PatentsView reachable, key valid. (JP semiconductor 2022 = {n})")
+        _get_token(now)
+        print("OK: OAuth token obtained (auth works).")
+    except Exception as e:  # noqa: BLE001
+        print(f"AUTH FAILED: {e}")
+        return False
+    try:
+        # sanity: a domain term with NO country, then WITH a country — both must work,
+        # and the country-filtered count must be > 0 and < the unfiltered count.
+        broad = _search_count('ti,ab=(semiconductor) and pd within "2020"', now)
+        jp = count_one("semiconductor", "JP", 2020, now)
+        print(f"broad semiconductor 2020 = {broad}; JP-filtered = {jp}")
+        if broad <= 0:
+            print("WARN: broad query returned 0 — CQL/term issue."); return False
+        if jp <= 0:
+            print("WARN: country filter returned 0 — the `pa=\"<ISO>\"` country "
+                  "approach does NOT work on OPS as hoped. Do NOT trust this layer "
+                  "until the country CQL is fixed.")
+            return False
+        print("OK: country-filtered count works. Patents layer is usable.")
         return True
     except Exception as e:  # noqa: BLE001
-        print(f"FAILED: {e}")
-        print("If this is a DNS error, your network may block search.patentsview.org; "
-              "try from an unrestricted connection.")
+        print(f"QUERY FAILED: {e}")
         return False
 
 
-def run(year: int, domains: list[str] | None = None) -> dict:
+def run(year: int, now: float, domains: list[str] | None = None) -> dict:
     if not ready():
-        raise SystemExit("PATENTSVIEW_API_KEY missing in .env. See module docstring.")
+        raise SystemExit("EPO_OPS_KEY / EPO_OPS_SECRET missing in .env.")
     domains = domains or taxonomy.ALL_DOMAINS
     as_of = dt.date.today().isoformat()
-    log(f"=== patents {as_of}: year={year}, domains={domains} ===")
+    log(f"=== patents (EPO OPS) {as_of}: year={year}, domains={domains} ===")
     store = Store()
     written = 0
     for dom in domains:
         terms = DOMAIN_TERMS[dom]
         counts = {}
         for iso in TARGET_COUNTRIES:
-            counts[iso] = count_one(terms, iso, year)  # let failures raise
-            time.sleep(0.4)
+            counts[iso] = count_one(terms, iso, year, now)  # let failures raise
+            time.sleep(0.6)  # OPS is strict on throttling
         cells = []
         for iso, name in TARGET_COUNTRIES.items():
             n = counts[iso]
@@ -155,11 +200,11 @@ def run(year: int, domains: list[str] | None = None) -> dict:
                 "country_iso": iso, "country_name": name, "domain": dom,
                 "volume_band": list(taxonomy.VOLUME_BANDS.values())[count_to_volume_ord(n)]["key"],
                 "volume_ord": count_to_volume_ord(n),
-                "volume_estimate": f"{n} US patents ({year})",
+                "volume_estimate": f"{n} patents ({year})",
                 "skill_level": None, "frontier": None,
-                "rationale": f"{n} USPTO grants in {dom} with a {name} inventor, {year}",
-                "evidence": ["PatentsView", "USPTO", str(year)],
-                "confidence": "high", "precision": "counted",
+                "rationale": f"{n} EPO OPS patent publications in {dom}, {name} applicant, {year}",
+                "evidence": ["EPO OPS", "espacenet", str(year)],
+                "confidence": "medium", "precision": "counted",
                 "source": "patents", "as_of": as_of,
             })
         written += store.upsert_many(cells)
@@ -173,15 +218,16 @@ def run(year: int, domains: list[str] | None = None) -> dict:
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="PatentsView USPTO patents by country×domain")
-    ap.add_argument("--year", type=int, default=dt.date.today().year - 2,
-                    help="grant year (default: 2 years back; recent years lag)")
+    ap = argparse.ArgumentParser(description="EPO OPS patents by country×domain")
+    ap.add_argument("--year", type=int, default=dt.date.today().year - 3,
+                    help="publication year (default: 3y back; patents lag)")
     ap.add_argument("--domains", nargs="*", default=None)
-    ap.add_argument("--check", action="store_true", help="validate key+endpoint only")
+    ap.add_argument("--check", action="store_true", help="validate auth+country query")
     args = ap.parse_args(argv)
+    now = time.time()
     if args.check:
-        sys.exit(0 if check() else 1)
-    run(args.year, domains=args.domains)
+        sys.exit(0 if check(now) else 1)
+    run(args.year, now, domains=args.domains)
 
 
 if __name__ == "__main__":
