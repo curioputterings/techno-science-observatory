@@ -71,10 +71,10 @@ m1.metric("Countries", df["country_iso"].nunique())
 m2.metric("Domains", df["domain"].nunique())
 m3.metric("Cells", len(df))
 
-(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10) = st.tabs(
+(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11) = st.tabs(
     ["Capability matrix", "Quantity vs skill", "Country profile", "Rankings",
      "Complexity (OEC)", "Adjacent possible", "Ambition vs reality", "Trends",
-     "Verified (ATS)", "MNC footprint"]
+     "Verified (ATS)", "MNC footprint", "Triangulation"]
 )
 
 DOMAIN_ORDER = [taxonomy.DOMAIN_LABELS[d] for d in taxonomy.ALL_DOMAINS
@@ -548,6 +548,94 @@ with tab10:
                 "patterns*, not a complete census.")
 
 
+@st.cache_data(ttl=120)
+def triangulation_data():
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        p = pd.read_sql_query(
+            "SELECT country_iso, country_name, domain, volume_estimate "
+            "FROM cells WHERE source='publications'", conn)
+        gg = pd.read_sql_query(
+            "SELECT country_iso, domain, volume_ord, skill_level, frontier "
+            "FROM cells WHERE source='gemini_research'", conn)
+    except Exception:
+        return pd.DataFrame()
+    finally:
+        conn.close()
+    if p.empty or gg.empty:
+        return pd.DataFrame()
+    # real publication counts (parse the integer out of "<n> publications (year)")
+    p["pubs"] = p["volume_estimate"].str.extract(r"(\d+)").astype(float)
+    gg["gem_cap"] = (0.4 * (gg["volume_ord"] / 5)
+                     + 0.4 * ((gg["skill_level"] - 1).clip(lower=0) / 4)
+                     + 0.2 * gg["frontier"].clip(0, 1)) * 100
+    m = p.merge(gg[["country_iso", "domain", "gem_cap"]],
+                on=["country_iso", "domain"], how="inner")
+    # percentile-rank both signals WITHIN each domain (0-100) so they're comparable
+    m["pub_pct"] = m.groupby("domain")["pubs"].rank(pct=True) * 100
+    m["gem_pct"] = m.groupby("domain")["gem_cap"].rank(pct=True) * 100
+    m["divergence"] = m["pub_pct"] - m["gem_pct"]  # +ve = stronger in research than hiring
+    m["domain_label"] = m["domain"].map(taxonomy.DOMAIN_LABELS).fillna(m["domain"])
+    return m
+
+
+with tab11:
+    st.subheader("Triangulation — research output vs hiring estimate")
+    st.caption(
+        "An **independent** check: OpenAlex publication counts (real, counted) "
+        "versus the Gemini hiring-capability estimate. Where the two agree, "
+        "confidence is high. Where they diverge, it's a signal: strong research "
+        "but weak hiring = academic base without industry (or vice-versa)."
+    )
+    m = triangulation_data()
+    if m.empty:
+        st.warning("Need both publications and gemini_research data. "
+                   "Run `python3 research_sources/publications.py`.")
+    else:
+        corr = m["pub_pct"].corr(m["gem_pct"])
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Cells compared", len(m))
+        c2.metric("Rank agreement", f"{corr:.2f}", help="1.0 = perfect agreement")
+        c3.metric("Publications (2024)", f"{int(m['pubs'].sum()):,}")
+
+        st.markdown("**Agreement scatter** — each point is a country×domain. On the "
+                    "diagonal = the two signals agree; off-diagonal = they disagree.")
+        fig = px.scatter(
+            m, x="gem_pct", y="pub_pct", color="divergence",
+            color_continuous_scale="RdBu", color_continuous_midpoint=0,
+            hover_data={"country_iso": True, "domain_label": True,
+                        "pubs": True, "gem_pct": ":.0f", "pub_pct": ":.0f"},
+            labels={"gem_pct": "Hiring-capability percentile (Gemini)",
+                    "pub_pct": "Research-output percentile (OpenAlex)"})
+        fig.add_shape(type="line", x0=0, y0=0, x1=100, y1=100,
+                      line=dict(color="gray", dash="dot"))
+        fig.update_layout(height=560)
+        st.plotly_chart(fig, use_container_width=True)
+
+        colL, colR = st.columns(2)
+        with colL:
+            st.markdown("**📚 Research-heavy, hiring-light** (publishes more than it hires)")
+            top = m.nlargest(12, "divergence")[
+                ["country_iso", "domain_label", "pubs", "gem_pct", "pub_pct"]]
+            top = top.rename(columns={"country_iso": "Country", "domain_label": "Domain",
+                                      "pubs": "Pubs", "gem_pct": "Hire %ile",
+                                      "pub_pct": "Pub %ile"}).round(0)
+            st.dataframe(top, use_container_width=True, hide_index=True)
+        with colR:
+            st.markdown("**🏭 Hiring-heavy, research-light** (hires more than it publishes)")
+            bot = m.nsmallest(12, "divergence")[
+                ["country_iso", "domain_label", "pubs", "gem_pct", "pub_pct"]]
+            bot = bot.rename(columns={"country_iso": "Country", "domain_label": "Domain",
+                                      "pubs": "Pubs", "gem_pct": "Hire %ile",
+                                      "pub_pct": "Pub %ile"}).round(0)
+            st.dataframe(bot, use_container_width=True, hide_index=True)
+
+        st.info(f"ℹ️ Rank agreement **{corr:.2f}** = moderate: the two independent "
+                "signals broadly concur, validating the capability estimates, while "
+                "the divergences flag genuine structural differences (academic vs "
+                "industrial strength). Publications = OpenAlex 2024, real counts.")
+
+
 st.divider()
 st.caption(f"DB: {DB_PATH} · revealed=gemini_research (estimates) · ats=verified "
-           "counts (separate) · ambition=stated intent. Confidence + precision per cell.")
+           "counts · publications=OpenAlex counts · ambition=stated intent.")

@@ -46,6 +46,9 @@ run_research.py ──(Gemini API)──▶ data/research/<domain>.json ──�
 - `ats/footprint.py` — cross-border MNC division-of-labour map: classifies each
   posting by business **function** (research / engineering / manufacturing-test /
   field / commercial / corporate) → `employer × country × function` table.
+- `research_sources/publications.py` — OpenAlex publication counts by country ×
+  domain (`source='publications'`, real counts) — an independent signal that
+  triangulates the Gemini estimates. Free, no key.
 - `dashboard/app.py` — comparison dashboard (9 tabs incl. OEC, adjacent possible,
   ambition vs reality, trends, verified ATS).
 - `my_technoscience_scraper.py` — original SEA-focused ATS scraper (reference).
@@ -65,6 +68,7 @@ python3 ambition.py                     # stated national ambition — all 9 dom
 python3 ats/probe.py                    # find live boards -> data/ats_registry.json
 python3 ats/scrape.py                   # scrape -> classify -> counted cells
 python3 ats/footprint.py                # cross-border MNC division-of-labour map
+python3 research_sources/publications.py --year 2024   # OpenAlex triangulation layer
 
 # 2. dashboard  (a .venv is already set up with deps)
 .venv/bin/streamlit run dashboard/app.py

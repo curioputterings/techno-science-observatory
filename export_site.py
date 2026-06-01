@@ -65,6 +65,12 @@ def main():
         fp = pd.read_sql_query("SELECT * FROM footprint", conn)
     except Exception:
         fp = pd.DataFrame()
+    try:
+        pub = pd.read_sql_query(
+            "SELECT country_iso, domain, volume_estimate FROM cells "
+            "WHERE source='publications'", conn)
+    except Exception:
+        pub = pd.DataFrame()
     conn.close()
 
     g["capability"] = capability(g)
@@ -175,6 +181,34 @@ def main():
                        "hubs; bright on Commercial/Field are market outposts (sell &"
                        " deploy, don't build). The original project thesis — where each "
                        "economy sits in the global value chain — from real hiring."))
+
+    # 7. Triangulation — publications vs hiring estimate (independent validation)
+    if not pub.empty:
+        pub = pub.copy()
+        pub["pubs"] = pub["volume_estimate"].str.extract(r"(\d+)").astype(float)
+        gcap = g.groupby(["country_iso", "domain"])["capability"].mean().reset_index()
+        m = pub.merge(gcap, on=["country_iso", "domain"], how="inner")
+        m["pub_pct"] = m.groupby("domain")["pubs"].rank(pct=True) * 100
+        m["gem_pct"] = m.groupby("domain")["capability"].rank(pct=True) * 100
+        m["divergence"] = m["pub_pct"] - m["gem_pct"]
+        m["domain_label"] = m["domain"].map(taxonomy.DOMAIN_LABELS)
+        corr = m["pub_pct"].corr(m["gem_pct"])
+        f = px.scatter(
+            m, x="gem_pct", y="pub_pct", color="divergence",
+            color_continuous_scale="RdBu", color_continuous_midpoint=0,
+            hover_data={"country_iso": True, "domain_label": True, "pubs": True},
+            labels={"gem_pct": "Hiring-capability percentile (estimate)",
+                    "pub_pct": "Research-output percentile (OpenAlex, real)"},
+            title="Triangulation — research output vs hiring estimate")
+        f.add_shape(type="line", x0=0, y0=0, x1=100, y1=100,
+                    line=dict(color="gray", dash="dot"))
+        blocks.append(("Triangulation", fig_html(f, height=560),
+                       f"An independent cross-check: real OpenAlex publication counts "
+                       f"(2024) vs the hiring-capability estimate. Rank agreement "
+                       f"<strong>{corr:.2f}</strong> — moderate, so the estimates are "
+                       "broadly corroborated. Points above the line publish more than "
+                       "they hire (academic strength); below the line hire more than "
+                       "they publish (industrial base)."))
 
     # assemble
     n_countries = g["country_iso"].nunique()

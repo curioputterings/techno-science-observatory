@@ -59,6 +59,14 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
     except Exception as e:  # noqa: BLE001
         log(f"    [warn] footprint refresh failed: {e!r}")
 
+    # publications triangulation layer (free OpenAlex, no key)
+    try:
+        from research_sources import publications
+        psum = publications.run(year=dt.date.today().year - 1)
+        log(f"    publications: {psum}")
+    except Exception as e:  # noqa: BLE001
+        log(f"    [warn] publications refresh failed: {e!r}")
+
     store = Store()
     n = store.snapshot(as_of)
     dates = store.snapshot_dates()
