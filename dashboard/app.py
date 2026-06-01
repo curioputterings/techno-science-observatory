@@ -71,10 +71,10 @@ m1.metric("Countries", df["country_iso"].nunique())
 m2.metric("Domains", df["domain"].nunique())
 m3.metric("Cells", len(df))
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(
+(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10) = st.tabs(
     ["Capability matrix", "Quantity vs skill", "Country profile", "Rankings",
      "Complexity (OEC)", "Adjacent possible", "Ambition vs reality", "Trends",
-     "Verified (ATS)"]
+     "Verified (ATS)", "MNC footprint"]
 )
 
 DOMAIN_ORDER = [taxonomy.DOMAIN_LABELS[d] for d in taxonomy.ALL_DOMAINS
@@ -457,6 +457,95 @@ with tab9:
         st.info("ℹ️ These `ats` cells are stored separately from the `gemini_research` "
                 "estimates and are **not** blended into the other tabs — they're the "
                 "ground-truth calibration layer (the precision ratchet: band → counted).")
+
+
+@st.cache_data(ttl=120)
+def footprint_data():
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        f = pd.read_sql_query("SELECT * FROM footprint", conn)
+    except Exception:
+        return pd.DataFrame()
+    finally:
+        conn.close()
+    return f
+
+
+FUNC_LABELS = {
+    "research": "Research / R&D", "engineering": "Engineering / Design",
+    "manufacturing_test": "Manufacturing / Test", "field_deployment": "Field / Deployment",
+    "commercial": "Commercial / GTM", "operations": "Corporate / Ops",
+}
+FUNC_ORDER = ["research", "engineering", "manufacturing_test", "field_deployment",
+              "commercial", "operations"]
+
+
+with tab10:
+    st.subheader("Cross-border MNC footprint — division of labour")
+    st.caption(
+        "How multinationals orchestrate their value chain across countries: where "
+        "each company runs **research**, **engineering**, **manufacturing/test**, "
+        "**field deployment**, **commercial**, and **corporate** roles. Built from "
+        "real ATS postings — same source as the Verified tab. US-skewed coverage."
+    )
+    fp = footprint_data()
+    if fp.empty:
+        st.warning("No footprint data yet. Run `python3 ats/footprint.py`.")
+    else:
+        fp["func_label"] = fp["function"].map(FUNC_LABELS).fillna(fp["function"])
+        multi = (fp.groupby("employer")["country_iso"].nunique()
+                 .sort_values(ascending=False))
+        multi = multi[multi >= 2]
+        cc1, cc2, cc3 = st.columns(3)
+        cc1.metric("Multinationals mapped", int((fp.groupby("employer")["country_iso"]
+                                                 .nunique() >= 2).sum()))
+        cc2.metric("Countries", fp["country_iso"].nunique())
+        cc3.metric("Roles classified", int(fp["n_roles"].sum()))
+
+        emp = st.selectbox("Employer", multi.index.tolist(),
+                           help="Only employers operating in ≥2 countries are shown.")
+        sub = fp[fp["employer"] == emp]
+
+        # country × function heatmap for this employer
+        piv = sub.pivot_table(index="country_iso", columns="function",
+                              values="n_roles", aggfunc="sum", fill_value=0)
+        fcols = [f for f in FUNC_ORDER if f in piv.columns]
+        piv = piv[fcols]
+        piv.columns = [FUNC_LABELS[f] for f in fcols]
+        piv = piv.loc[piv.sum(axis=1).sort_values(ascending=False).index]
+        fig = px.imshow(piv, aspect="auto", color_continuous_scale="Tealgrn",
+                        labels=dict(x="Function", y="Country", color="Open roles"),
+                        title=f"{emp} — where each function lives")
+        fig.update_layout(height=max(300, 30 * len(piv) + 120))
+        st.plotly_chart(fig, use_container_width=True)
+
+        # narrative read: function mix by country
+        st.markdown("**Read:** each country's role mix reveals its place in the chain "
+                    "— R&D/engineering = a build site; commercial/field only = a market outpost.")
+
+        # global view: function specialisation by country across ALL employers
+        st.divider()
+        st.markdown("**Where the world does each function** (all mapped MNCs combined)")
+        gpiv = fp.pivot_table(index="country_iso", columns="function",
+                              values="n_roles", aggfunc="sum", fill_value=0)
+        gcols = [f for f in FUNC_ORDER if f in gpiv.columns]
+        gpiv = gpiv[gcols]
+        # row-normalise to show each country's FUNCTION MIX (share), not raw size
+        share = gpiv.div(gpiv.sum(axis=1).replace(0, 1), axis=0)
+        share.columns = [FUNC_LABELS[f] for f in gcols]
+        share = share.loc[gpiv.sum(axis=1).sort_values(ascending=False).index]
+        share = share[share.index.isin(gpiv.sum(axis=1)[gpiv.sum(axis=1) >= 3].index)]
+        fig2 = px.imshow(share, aspect="auto", color_continuous_scale="Purples",
+                         labels=dict(x="Function", y="Country", color="Share of roles"),
+                         title="Function mix by country (share of each country's roles)")
+        fig2.update_layout(height=max(320, 26 * len(share) + 120))
+        st.plotly_chart(fig2, use_container_width=True)
+        st.caption("A country bright on Research/Engineering is a build hub; bright on "
+                   "Commercial/Field is a sales-and-deployment market. This is the "
+                   "cross-border division-of-labour signal from CLAUDE.md.")
+        st.info("ℹ️ Footprint is built from the same ATS postings as the Verified tab — "
+                "real open roles, narrow & US-heavy coverage. It maps *orchestration "
+                "patterns*, not a complete census.")
 
 
 st.divider()

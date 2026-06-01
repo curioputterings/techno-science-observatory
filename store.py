@@ -71,6 +71,23 @@ CREATE TABLE IF NOT EXISTS cell_history (
     PRIMARY KEY (snapshot_date, country_iso, domain, source)
 );
 CREATE INDEX IF NOT EXISTS idx_hist_date ON cell_history(snapshot_date);
+
+-- Cross-border MNC footprint (the division-of-labour map). One row per
+-- (employer, country, function): how many open roles an MNC runs of a given
+-- value-chain function in a given country. Reveals e.g. R&D in US, eng in IN,
+-- manufacturing/test in MY for the same parent.
+CREATE TABLE IF NOT EXISTS footprint (
+    employer    TEXT NOT NULL,
+    sector      TEXT,
+    country_iso TEXT NOT NULL,
+    function    TEXT NOT NULL,
+    domain      TEXT,
+    n_roles     INTEGER,
+    as_of       TEXT,
+    PRIMARY KEY (employer, country_iso, function)
+);
+CREATE INDEX IF NOT EXISTS idx_fp_employer ON footprint(employer);
+CREATE INDEX IF NOT EXISTS idx_fp_country  ON footprint(country_iso);
 """
 
 _COLS = [
@@ -138,6 +155,23 @@ class Store:
 
     def count_ambition(self) -> int:
         return self.conn.execute("SELECT COUNT(*) FROM ambition").fetchone()[0]
+
+    # ---- cross-border footprint ----
+    def replace_footprint(self, rows: list[dict]) -> int:
+        """Footprint is a full snapshot each run: clear then insert."""
+        self.conn.execute("DELETE FROM footprint")
+        cols = ["employer", "sector", "country_iso", "function", "domain",
+                "n_roles", "as_of"]
+        self.conn.executemany(
+            f"INSERT INTO footprint ({','.join(cols)}) "
+            f"VALUES ({','.join('?' for _ in cols)})",
+            [[r.get(c) for c in cols] for r in rows],
+        )
+        self.conn.commit()
+        return len(rows)
+
+    def count_footprint(self) -> int:
+        return self.conn.execute("SELECT COUNT(*) FROM footprint").fetchone()[0]
 
     # ---- longitudinal snapshots (Phase 7) ----
     def snapshot(self, snapshot_date: str) -> int:

@@ -43,6 +43,9 @@ run_research.py ──(Gemini API)──▶ data/research/<domain>.json ──�
 - `ats/classify.py` — map a posting → domain + complexity tier + country.
 - `ats/scrape.py` — fetch live boards → classify → aggregate → `source='ats'`,
   `precision=counted` cells (verified depth layer, L0a).
+- `ats/footprint.py` — cross-border MNC division-of-labour map: classifies each
+  posting by business **function** (research / engineering / manufacturing-test /
+  field / commercial / corporate) → `employer × country × function` table.
 - `dashboard/app.py` — comparison dashboard (9 tabs incl. OEC, adjacent possible,
   ambition vs reality, trends, verified ATS).
 - `my_technoscience_scraper.py` — original SEA-focused ATS scraper (reference).
@@ -61,6 +64,7 @@ python3 ambition.py                     # stated national ambition — all 9 dom
 # verified depth — real ATS postings (no key, ~$0):
 python3 ats/probe.py                    # find live boards -> data/ats_registry.json
 python3 ats/scrape.py                   # scrape -> classify -> counted cells
+python3 ats/footprint.py                # cross-border MNC division-of-labour map
 
 # 2. dashboard  (a .venv is already set up with deps)
 .venv/bin/streamlit run dashboard/app.py

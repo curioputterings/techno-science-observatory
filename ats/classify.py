@@ -87,10 +87,91 @@ def complexity_tier(title: str, text: str) -> int:
     return 2  # default applied professional
 
 
+# ---------------------------------------------------------------------------
+# Business function — WHERE in the value chain a role sits. This is what reveals
+# cross-border division of labour: the same MNC doing R&D in one country,
+# manufacturing/test in another, commercial ops in a third.
+# Title cues are weighted heaviest; checked most-specific first.
+# ---------------------------------------------------------------------------
+FUNCTIONS: dict[str, dict] = {
+    "research": {
+        "label": "Research / R&D",
+        "title": ["research scientist", "research engineer", "researcher",
+                  "research lead", "principal investigator", "member of technical staff",
+                  "research fellow", "scientist", "postdoc"],
+        "text": ["publish", "novel", "state-of-the-art research", "research agenda",
+                 "phd in", "first-principles"],
+    },
+    "engineering": {
+        "label": "Engineering / Design",
+        "title": ["software engineer", "design engineer", "hardware engineer",
+                  "ml engineer", "developer", "architect", "rtl", "asic",
+                  "firmware", "systems engineer", "platform engineer", "verification"],
+        "text": ["design and build", "develop", "implement", "codebase", "ci/cd"],
+    },
+    "manufacturing_test": {
+        "label": "Manufacturing / Test",
+        "title": ["manufacturing", "process engineer", "production", "test engineer",
+                  "assembly", "fabrication", "fab ", "yield", "equipment", "technician",
+                  "quality engineer", "supply chain", "operations technician"],
+        "text": ["production line", "cleanroom", "shop floor", "throughput", "yield",
+                 "wafer", "assembly line"],
+    },
+    "field_deployment": {
+        "label": "Field / Deployment",
+        "title": ["field engineer", "solutions engineer", "deployment", "site engineer",
+                  "installation", "field service", "launch", "integration engineer",
+                  "forward deployed"],
+        "text": ["on-site", "customer site", "deploy to", "installation"],
+    },
+    "commercial": {
+        "label": "Commercial / GTM",
+        "title": ["sales", "account executive", "marketing", "business development",
+                  "partnerships", "customer success", "go-to-market", "revenue",
+                  "growth", "account manager"],
+        "text": ["pipeline", "quota", "close deals", "revenue target"],
+    },
+    "operations": {
+        "label": "Corporate / Ops",
+        "title": ["recruiter", "people ops", "human resources", "finance", "legal",
+                  "counsel", "accountant", "office manager", "executive assistant",
+                  "talent", "payroll", "facilities", "it support"],
+        "text": ["headcount", "compliance", "bookkeeping"],
+    },
+}
+
+FUNCTION_LABELS = {k: v["label"] for k, v in FUNCTIONS.items()}
+ALL_FUNCTIONS = list(FUNCTIONS.keys())
+# order of resolution: specific value-chain functions before generic corp/ops
+_FUNC_ORDER = ["research", "manufacturing_test", "field_deployment",
+               "engineering", "commercial", "operations"]
+
+
+def classify_function(title: str, text: str) -> str:
+    t = (title or "").lower()
+    tx = (text or "").lower()[:600]
+    scores = {}
+    for fn in _FUNC_ORDER:
+        meta = FUNCTIONS[fn]
+        s = 3 * sum(1 for kw in meta["title"] if kw in t)
+        s += sum(1 for kw in meta["text"] if kw in tx)
+        if s:
+            scores[fn] = s
+    if not scores:
+        return "engineering"  # default: most ATS deep-tech roles are build roles
+    # tie-break by _FUNC_ORDER priority
+    best = max(scores.values())
+    for fn in _FUNC_ORDER:
+        if scores.get(fn) == best:
+            return fn
+    return "engineering"
+
+
 def classify_posting(title: str, text: str, location: str,
                      sector: str | None = None) -> dict:
     return {
         "domain": classify_domain(f"{title} {text}", fallback_sector=sector),
         "tier": complexity_tier(title, text),
         "country": infer_country(location),
+        "function": classify_function(title, text),
     }

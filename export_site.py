@@ -61,6 +61,10 @@ def main():
         amb = pd.read_sql_query("SELECT * FROM ambition", conn)
     except Exception:
         amb = pd.DataFrame()
+    try:
+        fp = pd.read_sql_query("SELECT * FROM footprint", conn)
+    except Exception:
+        fp = pd.DataFrame()
     conn.close()
 
     g["capability"] = capability(g)
@@ -145,6 +149,32 @@ def main():
                        "Actual open postings scraped from 14 live Greenhouse/Lever/Ashby "
                        "boards (SpaceX, OpenAI, Anthropic, Mistral, IonQ, PsiQuantum…). "
                        "Coverage is narrow & US-heavy by design — depth, not breadth."))
+
+    # 6. Cross-border MNC footprint — division of labour
+    if not fp.empty:
+        FL = {"research": "Research", "engineering": "Engineering",
+              "manufacturing_test": "Manufacturing/Test", "field_deployment": "Field",
+              "commercial": "Commercial", "operations": "Corporate"}
+        ford = ["research", "engineering", "manufacturing_test", "field_deployment",
+                "commercial", "operations"]
+        # function mix by country (share), across all mapped MNCs
+        gp = fp.pivot_table(index="country_iso", columns="function",
+                            values="n_roles", aggfunc="sum", fill_value=0)
+        gp = gp[[c for c in ford if c in gp.columns]]
+        big = gp.sum(axis=1)[gp.sum(axis=1) >= 3].index
+        share = gp.loc[big].div(gp.loc[big].sum(axis=1), axis=0)
+        share.columns = [FL[c] for c in gp.columns]
+        share = share.loc[gp.loc[big].sum(axis=1).sort_values(ascending=False).index]
+        f = px.imshow(share, aspect="auto", color_continuous_scale="Purples",
+                      labels=dict(x="Function", y="Country", color="Share of roles"),
+                      title="Division of labour — each country's function mix (all MNCs)")
+        n_multi = int((fp.groupby("employer")["country_iso"].nunique() >= 2).sum())
+        blocks.append(("Cross-border footprint", fig_html(f, height=560),
+                       f"How {n_multi} multinationals split their value chain across "
+                       "borders. Countries bright on Research/Engineering are build "
+                       "hubs; bright on Commercial/Field are market outposts (sell &"
+                       " deploy, don't build). The original project thesis — where each "
+                       "economy sits in the global value chain — from real hiring."))
 
     # assemble
     n_countries = g["country_iso"].nunique()

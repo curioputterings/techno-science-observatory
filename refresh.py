@@ -51,6 +51,14 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
     else:
         log("--- snapshot-only: skipping Gemini refresh ---")
 
+    # cross-border footprint always refreshes (free ATS, no key needed)
+    try:
+        from ats import footprint
+        fsum = footprint.run()
+        log(f"    footprint: {fsum}")
+    except Exception as e:  # noqa: BLE001
+        log(f"    [warn] footprint refresh failed: {e!r}")
+
     store = Store()
     n = store.snapshot(as_of)
     dates = store.snapshot_dates()
