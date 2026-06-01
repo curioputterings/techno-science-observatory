@@ -571,7 +571,22 @@ def triangulation_data():
                      + 0.2 * gg["frontier"].clip(0, 1)) * 100
     m = p.merge(gg[["country_iso", "domain", "gem_cap"]],
                 on=["country_iso", "domain"], how="inner")
-    # percentile-rank both signals WITHIN each domain (0-100) so they're comparable
+    # patents are optional (need a key) — left-join so the tab works without them
+    conn2 = sqlite3.connect(DB_PATH)
+    try:
+        pat = pd.read_sql_query(
+            "SELECT country_iso, domain, volume_estimate FROM cells "
+            "WHERE source='patents'", conn2)
+    except Exception:
+        pat = pd.DataFrame()
+    finally:
+        conn2.close()
+    if not pat.empty:
+        pat["pats"] = pat["volume_estimate"].str.extract(r"(\d+)").astype(float)
+        m = m.merge(pat[["country_iso", "domain", "pats"]],
+                    on=["country_iso", "domain"], how="left")
+        m["pat_pct"] = m.groupby("domain")["pats"].rank(pct=True) * 100
+    # percentile-rank signals WITHIN each domain (0-100) so they're comparable
     m["pub_pct"] = m.groupby("domain")["pubs"].rank(pct=True) * 100
     m["gem_pct"] = m.groupby("domain")["gem_cap"].rank(pct=True) * 100
     m["divergence"] = m["pub_pct"] - m["gem_pct"]  # +ve = stronger in research than hiring
@@ -634,6 +649,37 @@ with tab11:
                 "signals broadly concur, validating the capability estimates, while "
                 "the divergences flag genuine structural differences (academic vs "
                 "industrial strength). Publications = OpenAlex 2024, real counts.")
+
+        # --- patents panel (only if the patents layer has been populated) ---
+        st.divider()
+        if "pat_pct" in m.columns and m["pat_pct"].notna().any():
+            mp = m.dropna(subset=["pat_pct"])
+            st.markdown("### 🔬 Research → 🏭 Invention: publications vs patents")
+            st.caption("Publications measure research output; patents measure applied "
+                       "invention. Above the line = strong research but fewer patents "
+                       "(upstream / academic); below = patents outrun publications "
+                       "(applied / commercialisation-led).")
+            corr_pp = mp["pub_pct"].corr(mp["pat_pct"])
+            figp = px.scatter(
+                mp, x="pub_pct", y="pat_pct", color="domain_label",
+                hover_data={"country_iso": True, "pubs": True, "pats": True},
+                labels={"pub_pct": "Publications percentile (OpenAlex)",
+                        "pat_pct": "Patents percentile (USPTO/PatentsView)",
+                        "domain_label": "Domain"})
+            figp.add_shape(type="line", x0=0, y0=0, x1=100, y1=100,
+                           line=dict(color="gray", dash="dot"))
+            figp.update_layout(height=560)
+            st.plotly_chart(figp, use_container_width=True)
+            st.caption(f"Research↔invention rank agreement: {corr_pp:.2f}. Patents are "
+                       "USPTO grants (PatentsView) — captures inventors who patent into "
+                       "the US market, an honest coverage bias.")
+        else:
+            st.markdown("### 🔬 Patents layer — not yet populated")
+            st.caption("Add a free PatentsView key to `.env` "
+                       "(`PATENTSVIEW_API_KEY=…`, from https://patentsview.org/), then "
+                       "run `python3 research_sources/patents.py --check` and "
+                       "`python3 research_sources/patents.py`. A publications-vs-patents "
+                       "view (research → invention) will appear here automatically.")
 
 
 st.divider()

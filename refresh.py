@@ -67,6 +67,17 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
     except Exception as e:  # noqa: BLE001
         log(f"    [warn] publications refresh failed: {e!r}")
 
+    # patents layer (PatentsView — only if a key is configured)
+    try:
+        from research_sources import patents
+        if patents.ready():
+            ptsum = patents.run(year=dt.date.today().year - 2)  # grants lag ~2y
+            log(f"    patents: {ptsum}")
+        else:
+            log("    patents: skipped (no PATENTSVIEW_API_KEY in .env)")
+    except Exception as e:  # noqa: BLE001
+        log(f"    [warn] patents refresh failed: {e!r}")
+
     store = Store()
     n = store.snapshot(as_of)
     dates = store.snapshot_dates()
