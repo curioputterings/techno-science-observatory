@@ -4,6 +4,11 @@ Global, country-by-country view of leading-edge industries: **job quantity +
 skill/complexity level** per country per domain, compared across countries, with
 OEC-style complexity analysis to follow. See `ARCHITECTURE.md` / `ROADMAP.md`.
 
+**🌐 Live site:** https://curioputterings.github.io/techno-science-observatory/
+
+If you find this useful, you can support the work:
+**☕ [Buy me a coffee](https://buymeacoffee.com/curioputterings)**
+
 ## Status — all 7 phases built & verified
 Working end to end in `data/jobs.db`:
 - **270 capability cells + 270 ambition cells** (9 domains × 30 countries, incl.

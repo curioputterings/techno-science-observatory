@@ -177,6 +177,9 @@ def main():
            padding:12px 16px; border-radius:8px; margin:16px 0; color:#e6edf3; }}
   code {{ background:#1c2128; padding:2px 6px; border-radius:4px; font-size:.85em; }}
   a.gh {{ color:var(--acc); }}
+  a.bmac {{ display:inline-block; background:#FFDD00; color:#000; font-weight:600;
+            padding:8px 16px; border-radius:8px; text-decoration:none; margin-top:6px; }}
+  a.bmac:hover {{ background:#ffe533; }}
 </style></head><body>
 <header>
   <h1>🌐 Techno-Science Capability Observatory</h1>
@@ -206,6 +209,9 @@ def main():
   <br><br>Source &amp; method:
   <a class="gh" href="https://github.com/curioputterings/techno-science-observatory">
   github.com/curioputterings/techno-science-observatory</a>
+  <br><br>
+  <a class="bmac" href="https://buymeacoffee.com/curioputterings">☕ Buy me a coffee</a>
+  &nbsp;·&nbsp; if this is useful to you.
 </footer>
 </body></html>"""
 
