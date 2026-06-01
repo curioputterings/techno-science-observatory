@@ -67,15 +67,19 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
     except Exception as e:  # noqa: BLE001
         log(f"    [warn] publications refresh failed: {e!r}")
 
-    # patents layer (EPO OPS — only if OAuth creds are configured)
+    # patents layer — prefer BigQuery if configured, else EPO OPS, else skip.
+    pat_year = dt.date.today().year - 3  # patents lag a few years
     try:
-        import time as _time
-        from research_sources import patents
-        if patents.ready():
-            ptsum = patents.run(year=dt.date.today().year - 3, now=_time.time())
-            log(f"    patents: {ptsum}")
+        from research_sources import patents_bq
+        if patents_bq.ready():
+            log(f"    patents (BigQuery): {patents_bq.run(year=pat_year)}")
         else:
-            log("    patents: skipped (no EPO_OPS_KEY/EPO_OPS_SECRET in .env)")
+            import time as _time
+            from research_sources import patents
+            if patents.ready():
+                log(f"    patents (EPO OPS): {patents.run(year=pat_year, now=_time.time())}")
+            else:
+                log("    patents: skipped (no BigQuery or EPO OPS creds in .env)")
     except Exception as e:  # noqa: BLE001
         log(f"    [warn] patents refresh failed: {e!r}")
 
