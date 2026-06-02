@@ -99,16 +99,13 @@ python3 verify_panel.py                 # capability ranking + domain leaders
 dated snapshot to `cell_history`, so the dashboard's **Trends** tab fills in over
 time. Intended cadence: every **Monday 09:00**.
 
-**Installed and verified:** the crontab entry is active —
-```
-0 9 * * 1 $PROJECT_DIR/weekly_refresh.sh
-```
-To view / re-install / remove:
+Install it as a weekly cron job (run from the repo root; `weekly_refresh.sh`
+self-locates so the absolute path is derived for you):
 ```bash
-crontab -l        # view (should show the line above)
-# re-install (idempotent):
+crontab -l        # view existing
+# install (idempotent) — uses this repo's absolute path:
 ( crontab -l 2>/dev/null | grep -v 'tech_sci_jobs weekly refresh'; \
-  echo '0 9 * * 1 $PROJECT_DIR/weekly_refresh.sh  # tech_sci_jobs weekly refresh' ) | crontab -
+  echo "0 9 * * 1 $(pwd)/weekly_refresh.sh  # tech_sci_jobs weekly refresh" ) | crontab -
 crontab -e        # remove: delete the tech_sci_jobs line
 ```
 

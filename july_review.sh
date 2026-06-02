@@ -6,7 +6,8 @@
 # it fires by removing its own cron line.
 set -uo pipefail
 
-PROJECT_DIR="$PROJECT_DIR"
+# self-locate: PROJECT_DIR is the directory this script lives in (portable)
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR" || exit 1
 
 if [ -x "$PROJECT_DIR/.venv/bin/python" ]; then PY="$PROJECT_DIR/.venv/bin/python"; else PY="$(command -v python3)"; fi

@@ -4,7 +4,8 @@
 # appends to a dated cron log. Safe to run by hand any time.
 set -euo pipefail
 
-PROJECT_DIR="$PROJECT_DIR"
+# self-locate: PROJECT_DIR is the directory this script lives in (portable)
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR"
 
 # Prefer venv python if present (harmless), else system python3.
