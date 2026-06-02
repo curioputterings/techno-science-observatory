@@ -101,6 +101,18 @@ CREATE TABLE IF NOT EXISTS patent_trend (
     PRIMARY KEY (country_iso, domain, year)
 );
 CREATE INDEX IF NOT EXISTS idx_pt_year ON patent_trend(year);
+
+-- Publication time-series (country × domain × year), mirror of patent_trend so
+-- the dashboard can show research momentum next to invention momentum.
+CREATE TABLE IF NOT EXISTS publication_trend (
+    country_iso  TEXT NOT NULL,
+    country_name TEXT,
+    domain       TEXT NOT NULL,
+    year         INTEGER NOT NULL,
+    n_pubs       INTEGER,
+    PRIMARY KEY (country_iso, domain, year)
+);
+CREATE INDEX IF NOT EXISTS idx_put_year ON publication_trend(year);
 """
 
 _COLS = [
@@ -185,6 +197,22 @@ class Store:
     def patent_years(self) -> list[int]:
         return [r[0] for r in self.conn.execute(
             "SELECT DISTINCT year FROM patent_trend ORDER BY year")]
+
+    def upsert_publication_year(self, rows: list[dict]) -> int:
+        cols = ["country_iso", "country_name", "domain", "year", "n_pubs"]
+        upd = "n_pubs=excluded.n_pubs, country_name=excluded.country_name"
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO publication_trend ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(country_iso, domain, year) DO UPDATE SET {upd}",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
+
+    def publication_years(self) -> list[int]:
+        return [r[0] for r in self.conn.execute(
+            "SELECT DISTINCT year FROM publication_trend ORDER BY year")]
 
     # ---- cross-border footprint ----
     def replace_footprint(self, rows: list[dict]) -> int:

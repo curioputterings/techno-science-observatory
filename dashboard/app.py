@@ -561,6 +561,18 @@ def patent_trend_data():
 
 
 @st.cache_data(ttl=120)
+def publication_trend_data():
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        return pd.read_sql_query(
+            "SELECT country_iso, domain, year, n_pubs FROM publication_trend", conn)
+    except Exception:
+        return pd.DataFrame()
+    finally:
+        conn.close()
+
+
+@st.cache_data(ttl=120)
 def triangulation_data():
     conn = sqlite3.connect(DB_PATH)
     try:
@@ -686,33 +698,47 @@ with tab11:
                        "from Google patents-public-data (BigQuery), classified by CPC "
                        "code, counted by inventor country.")
 
-            # patent momentum trend (multi-year)
+            # momentum trends (multi-year): research (publications) + invention (patents)
             tr = patent_trend_data()
-            if not tr.empty:
+            pr = publication_trend_data()
+            if not tr.empty or not pr.empty:
                 st.divider()
-                st.markdown("### 📈 Invention momentum — patents over time")
-                yrs = sorted(tr["year"].unique())
-                st.caption(f"Patent counts by inventor country, {yrs[0]}–{yrs[-1]} "
-                           "(CPC-classified). The trend is the signal hiring estimates "
-                           "can't show: who is *accelerating* in invention.")
+                st.markdown("### 📈 Momentum over time — research & invention")
+                st.caption("The signal a single snapshot can't show: who is "
+                           "*accelerating*. Research = OpenAlex publications, "
+                           "invention = CPC-classified patents, by author/inventor country.")
                 dom_pick = st.selectbox(
                     "Domain", taxonomy.ALL_DOMAINS,
                     format_func=lambda d: taxonomy.DOMAIN_LABELS.get(d, d),
                     key="trend_domain")
-                sub = tr[tr["domain"] == dom_pick]
-                latest_yr = sub["year"].max()
-                top_c = (sub[sub["year"] == latest_yr]
-                         .nlargest(8, "n_patents")["country_iso"].tolist())
-                sub = sub[sub["country_iso"].isin(top_c)]
-                figt = px.line(
-                    sub, x="year", y="n_patents", color="country_iso", markers=True,
-                    labels={"year": "Year", "n_patents": "Patents (inventor country)",
-                            "country_iso": "Country"},
-                    title=f"{taxonomy.DOMAIN_LABELS.get(dom_pick, dom_pick)} — patent momentum")
-                figt.update_layout(height=480)
-                st.plotly_chart(figt, use_container_width=True)
-                st.caption("Recent years lag (patents take ~2y to fully publish), so "
-                           "the final point may understate — read the slope, not the last dot.")
+                dlabel = taxonomy.DOMAIN_LABELS.get(dom_pick, dom_pick)
+
+                def _trend_fig(df, val, title):
+                    sub = df[df["domain"] == dom_pick]
+                    if sub.empty:
+                        return None
+                    ly = sub["year"].max()
+                    top = sub[sub["year"] == ly].nlargest(7, val)["country_iso"].tolist()
+                    sub = sub[sub["country_iso"].isin(top)]
+                    f = px.line(sub, x="year", y=val, color="country_iso", markers=True,
+                                labels={"year": "Year", val: title, "country_iso": "Country"},
+                                title=title)
+                    f.update_layout(height=440, margin=dict(t=40, b=10))
+                    return f
+
+                cP, cI = st.columns(2)
+                with cP:
+                    f1 = _trend_fig(pr, "n_pubs", "Research (publications)") if not pr.empty else None
+                    if f1: st.plotly_chart(f1, use_container_width=True)
+                    else: st.info("No publication trend yet — run "
+                                  "`publications.py --years 2016 2018 2020 2022`.")
+                with cI:
+                    f2 = _trend_fig(tr, "n_patents", "Invention (patents)") if not tr.empty else None
+                    if f2: st.plotly_chart(f2, use_container_width=True)
+                    else: st.info("No patent trend yet.")
+                st.caption(f"**{dlabel}** — top-7 countries by latest year, each panel. "
+                           "Recent years lag (publications + patents take time to fully "
+                           "index/publish) — read the slope, not the final dot.")
         else:
             st.markdown("### 🔬 Patents layer — not yet populated")
             st.caption("Configure BigQuery (`GOOGLE_APPLICATION_CREDENTIALS` + "

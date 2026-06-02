@@ -29,6 +29,9 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import socket
+socket.setdefaulttimeout(35)  # hard backstop: no urlopen can hang past this
+
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 import taxonomy  # noqa: E402
@@ -75,22 +78,22 @@ def log(msg: str) -> None:
         f.write(line + "\n")
 
 
-def _get(url: str, retries: int = 3):
+def _get(url: str, retries: int = 4):
     req = urllib.request.Request(url, headers={
         "User-Agent": f"techsci-research/0.1 (mailto:{MAILTO})"})
     last = None
     for i in range(retries):
         try:
-            with urllib.request.urlopen(req, timeout=40) as r:
+            with urllib.request.urlopen(req, timeout=30) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             last = e
-            # 429 = rate limited: back off hard and longer each retry
             time.sleep((6 if e.code == 429 else 2) * (i + 1))
-        except urllib.error.URLError as e:  # noqa: PERF203
+        except Exception as e:  # noqa: BLE001 — incl. ConnectionResetError, socket timeout
+            # any transport-level failure (reset, timeout, DNS blip): back off + retry
             last = e
-            time.sleep(2 * (i + 1))
-    raise RuntimeError(f"OpenAlex failed: {last}")
+            time.sleep(3 * (i + 1))
+    raise RuntimeError(f"OpenAlex failed after {retries} tries: {last}")
 
 
 def _count_one(query: str, iso: str, year: int) -> int:
@@ -117,58 +120,78 @@ def country_counts(query: str, year: int) -> dict[str, int]:
     return out
 
 
-def run(year: int, domains: list[str] | None = None) -> dict:
+def run(year: int, domains: list[str] | None = None,
+        latest_year: int | None = None, skip_existing: bool = False) -> dict:
     as_of = dt.date.today().isoformat()
     domains = domains or taxonomy.ALL_DOMAINS
-    log(f"=== publications {as_of}: year={year}, domains={domains} ===")
+    is_latest = year >= (latest_year if latest_year is not None else year)
+    log(f"=== publications {as_of}: year={year}, latest={is_latest}, domains={domains} ===")
     store = Store()
+    # resume support: which (year,domain) are already complete (30 countries)?
+    done = set()
+    if skip_existing:
+        for (d,) in store.conn.execute(
+                "SELECT domain FROM publication_trend WHERE year=? "
+                "GROUP BY domain HAVING COUNT(*)>=30", (year,)):
+            done.add(d)
     written = 0
     summary = {}
     for dom in domains:
+        if dom in done:
+            log(f"[skip] {dom:22} already complete for {year}")
+            continue
         try:
             counts = country_counts(DOMAIN_QUERIES[dom], year)
         except Exception as e:  # noqa: BLE001
             log(f"[err] {dom}: {e}")
             summary[dom] = 0
             continue
-        cells = []
-        for iso, name in TARGET_COUNTRIES.items():
-            n = counts.get(iso, 0)
-            cells.append({
-                "country_iso": iso,
-                "country_name": name,
-                "domain": dom,
-                "volume_band": list(taxonomy.VOLUME_BANDS.values())[count_to_volume_ord(n)]["key"],
-                "volume_ord": count_to_volume_ord(n),
-                "volume_estimate": f"{n} publications ({year})",
-                "skill_level": None,        # publications don't carry a skill tier
-                "frontier": None,
-                "rationale": f"{n} OpenAlex works in {dom} with an author in {name}, {year}",
-                "evidence": ["OpenAlex", f"default.search:{dom}", str(year)],
-                "confidence": "high",
-                "precision": "counted",
-                "source": "publications",
-                "as_of": as_of,
-            })
-        written += store.upsert_many(cells)
-        summary[dom] = len([c for c in cells if c["volume_ord"] > 0])
+        # always record the year in the trend table
+        store.upsert_publication_year(
+            [{"country_iso": iso, "country_name": name, "domain": dom,
+              "year": year, "n_pubs": int(counts.get(iso, 0))}
+             for iso, name in TARGET_COUNTRIES.items()])
+        # update the 'latest' cells snapshot only for the newest year pulled
+        if is_latest:
+            cells = []
+            for iso, name in TARGET_COUNTRIES.items():
+                n = counts.get(iso, 0)
+                cells.append({
+                    "country_iso": iso, "country_name": name, "domain": dom,
+                    "volume_band": list(taxonomy.VOLUME_BANDS.values())[count_to_volume_ord(n)]["key"],
+                    "volume_ord": count_to_volume_ord(n),
+                    "volume_estimate": f"{n} publications ({year})",
+                    "skill_level": None, "frontier": None,
+                    "rationale": f"{n} OpenAlex works in {dom} with an author in {name}, {year}",
+                    "evidence": ["OpenAlex", f"default.search:{dom}", str(year)],
+                    "confidence": "high", "precision": "counted",
+                    "source": "publications", "as_of": as_of,
+                })
+            written += store.upsert_many(cells)
+        summary[dom] = sum(1 for v in counts.values() if v > 0)
         top = sorted(((counts.get(i, 0), i) for i in TARGET_COUNTRIES), reverse=True)[:4]
         log(f"[ok] {dom:22} top: {', '.join(f'{i}:{n}' for n,i in top)}")
-    total = store.conn.execute(
-        "SELECT COUNT(*) FROM cells WHERE source='publications'").fetchone()[0]
+    yrs = store.publication_years()
     store.close()
-    log(f"=== done. wrote {written} cells | publications cells in db: {total} ===")
-    return {"written": written, "total": total}
+    log(f"=== done. year {year} | cells updated={is_latest} | trend years now: {yrs} ===")
+    return {"year": year, "trend_years": yrs}
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="OpenAlex publications by country×domain")
     ap.add_argument("--year", type=int, default=dt.date.today().year - 1,
-                    help="publication year (default: last full year)")
+                    help="single publication year (default: last full year)")
+    ap.add_argument("--years", nargs="*", type=int, default=None,
+                    help="multiple years for a trend, e.g. --years 2016 2018 2020 2022")
     ap.add_argument("--domains", nargs="*", default=None,
                     help="subset of domains to (re)run; default all 9")
+    ap.add_argument("--skip-existing", action="store_true",
+                    help="skip (year,domain) already complete — resume an interrupted run")
     args = ap.parse_args(argv)
-    run(args.year, domains=args.domains)
+    years = args.years or [args.year]
+    latest = max(years)
+    for y in sorted(years):
+        run(y, domains=args.domains, latest_year=latest, skip_existing=args.skip_existing)
 
 
 if __name__ == "__main__":
