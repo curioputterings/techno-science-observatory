@@ -1,140 +1,133 @@
 # CLAUDE.md
 
-Guidance for Claude Code working in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What this is
 
-A longitudinal scraper for **advanced-technoscience job postings across Southeast
-Asia** — semiconductors & ATE, IC design, assembly/test (ATM), photonics,
-advanced packaging, HDD/storage, EV-battery & critical-minerals materials,
-biotech, quantum, aerospace (thin nuclear tails). It is a **foresight /
-computational-sociology instrument**, not a job-search tool: the point is to
-track *hiring flow* over time as a leading indicator of capability formation, and
-to do so **comparably across countries**.
+A **techno-science capability observatory**: a global, country-by-country view of
+nine leading-edge industries (semiconductors, quantum, precision engineering,
+advanced materials, biomedical, pharmaceuticals, digital, artificial intelligence,
+other frontier). It fuses **multiple independent signals** into one
+`country × domain` panel, then layers economic-complexity analysis, an
+ambition-vs-reality gap, cross-border MNC orchestration, and multi-year momentum.
 
-The regional scope *is* the analytical payoff. Two signals matter most:
+The point is *triangulation*: where independent signals agree, confidence is high;
+where they diverge, that gap is itself the finding (e.g. China out-publishes the US
+in AI research but the US still out-patents it). See `ARCHITECTURE.md` for the
+layered design and `ROADMAP.md` for build history (all 7 phases complete +
+adjacencies: MNC footprint, publications, patents).
 
-1. **Convergence** — AI/ML skill tags bleeding into firms that were previously
-   pure-hardware: a datable measure of the frontier industrialising.
-2. **Cross-border functional division of labour** — the same multinational
-   hiring *design* in one country, *assembly/test* in another, *R&D* in a third.
-   Tracking that footprint maps where each economy sits in the regional value
-   chain, and how that position is shifting. This is the comparison the single-
-   country version could not see.
+## The central data model
 
-Optimise for clean, country-comparable longitudinal panels, not one-off pulls.
+Everything writes into **one SQLite DB** (`data/jobs.db`, gitignored) via
+`store.py`. The key idea: the **`cells` table holds the latest `country × domain`
+value per *source***, with PK `(country_iso, domain, source)`. Sources are kept
+strictly separate and never silently blended:
 
-## Hard rules (do not violate, even if asked)
+- `gemini_research` — capability estimates (volume band + skill tier + frontier), `precision='band'`
+- `ats` — verified counts from real job postings, `precision='counted'`
+- `publications` — OpenAlex research-output counts, `precision='counted'`
+- `patents` — BigQuery patent counts, `precision='counted'`
 
-These are the project's reason-for-being. Treat them as inviolable.
+Separate tables: `ambition` (stated national intent), `footprint` (employer ×
+country × function), `cell_history` (weekly snapshots), `patent_trend` /
+`publication_trend` (country × domain × year time-series). When adding a new signal,
+follow this convention: new `source` value in `cells` for a latest-snapshot, or a
+dedicated table for anything multi-dimensional (per-year, per-employer).
 
-1. **Scrape only open sources.** Two tiers, both public-by-design:
-   - ATS JSON APIs — Greenhouse, Lever, Ashby (GET); Workday (POST to `cxs`).
-   - Server-rendered custom career pages with no auth/bot-defense.
-2. **Never scrape defended aggregators.** Regional: JobStreet/SEEK, LinkedIn,
-   Indeed, Glassdoor, Glints. Country-level: VietnamWorks / ITviec / TopCV (VN),
-   JobsDB (TH), Kalibrr (PH/ID), and the JobStreet/Jobsdb country sites. All are
-   ToS-encumbered and bot-defended — use them **by eye only** to populate the
-   registry. Do **not** add an adapter, write a circumvention, rotate proxies, or
-   solve CAPTCHAs. If a task seems to require any of that, stop and flag it.
-3. **Postings only — never applicant data.** Job descriptions are not personal
-   data and are fine to collect. Candidate-side data is personal under every
-   jurisdiction here (SG PDPA, MY PDPA, TH PDPA, VN PDPD, PH Data Privacy Act,
-   ID PDP Law) — never touch application forms, resumes, or submitted data.
-4. **Be a polite client.** Respect `robots.txt`, keep the `User-Agent` honest,
-   keep `POLITE_DELAY_S >= 2`, don't parallel-hammer a host, cache where possible.
+`taxonomy.py` is the shared spine — the 9 domains (with keyword anchors), 5
+complexity tiers, and 0–5 volume bands. **Every layer imports from it** so outputs
+stay comparable. `research.TARGET_COUNTRIES` is the shared 30-country set.
 
-If a request conflicts with these, surface the conflict; don't quietly comply.
-
-## Layout
+## Architecture: data flows one direction
 
 ```
-scraper.py            # adapters, schema, registry, runner (start here)
-locales/              # per-country city/region vocab for custom-page parsing
-data/                 # weekly CSV/parquet snapshots, partitioned by country (gitignored)
-CLAUDE.md             # this file
+collectors ──▶ store.py (jobs.db) ──▶ analysis/ ──▶ dashboard/app.py (live)
+                                                └──▶ export_site.py ──▶ docs/ (static, Pages)
 ```
 
-## Setup & commands
+- **Collectors** (each free/no-cost or key-gated, each idempotent):
+  `run_research.py` + `ambition.py` (Gemini), `ats/` (probe→scrape→footprint),
+  `research_sources/publications.py` (OpenAlex), `research_sources/patents_bq.py`
+  (BigQuery).
+- **`analysis/`** is pure computation over the DB: `complexity.py` (OEC — RCA, PCI,
+  basket complexity, proximity, adjacent-possible) and `gap.py` (ambition − revealed).
+- **`dashboard/app.py`** is an 11-tab Streamlit reader; **`export_site.py`** renders
+  the same data to a static `docs/index.html` for GitHub Pages.
+- **`refresh.py`** orchestrates the weekly cron: re-run research + ambition + ATS +
+  publications (+ patents if configured) → snapshot into `cell_history`.
 
-Python env via **uv**:
+## Commands
+
+Run collectors/analysis with **system `python3`** (stdlib-only; works anywhere).
+Run the dashboard/analysis-with-pandas from the **`.venv`** (has streamlit, plotly,
+pandas, numpy, google-cloud-bigquery):
 
 ```bash
-uv venv
-uv pip install requests beautifulsoup4
-uv run python scraper.py            # writes a dated snapshot under data/
+# data collection (idempotent — safe to re-run)
+python3 run_research.py                 # Gemini capability, 9 domains (needs GEMINI_API_KEY)
+python3 run_research.py quantum         # single domain
+python3 ambition.py                     # Gemini national-ambition layer
+python3 ats/probe.py                    # find live ATS boards -> data/ats_registry.json
+python3 ats/scrape.py                   # ATS verified counts
+python3 ats/footprint.py                # cross-border MNC division-of-labour
+python3 research_sources/publications.py --years 2016 2018 2020 2022 --skip-existing
+python3 research_sources/patents_bq.py --check                    # validate BigQuery auth
+python3 research_sources/patents_bq.py --dry-run --year 2020      # GB it will scan (free=1TB/mo)
+python3 research_sources/patents_bq.py --years 2016 2018 2020 2022
+
+# text verification (no UI) — these are the "tests": run after data changes
+python3 verify_panel.py                 # capability ranking + domain leaders (stdlib)
+.venv/bin/python verify_complexity.py   # OEC metrics report (needs numpy/pandas)
+
+# dashboard + static site
+.venv/bin/streamlit run dashboard/app.py     # http://localhost:8501
+.venv/bin/python export_site.py              # regenerate docs/index.html for Pages
+
+# weekly refresh (what the cron runs)
+python3 refresh.py --snapshot-only      # snapshot current cells, no API cost
+python3 refresh.py --trends             # text trend summary
+./weekly_refresh.sh                      # exactly what cron runs
 ```
 
-No test suite yet. When adding parsers, add a fixture test against saved HTML
-rather than hitting the network in CI.
+There is **no formal test suite**. `verify_panel.py` and `verify_complexity.py` are
+the verification harness — run them after touching collectors or analysis. The
+standard dashboard smoke-test is: boot headless on a spare port and curl
+`/_stcore/health` for HTTP 200.
 
-## Architecture
+## Hard rules (inherited from the original scraper — still inviolable)
 
-- **Adapters are keyed by source type, never by country.** One function per
-  source type, registered in `ADAPTERS` (`fetch_greenhouse`/`_lever`/`_ashby`/
-  `_workday` + custom page parsers). Country is data, not code.
-- **Common schema.** Everything normalises to the `Posting` dataclass, which
-  **must** carry `country` (ISO-3166 alpha-2) and a `country_inferred` flag, plus
-  `parent` (canonical employer name) so cross-border footprints aggregate.
-- **Prefer ATS structured location over text parsing.** It is locale-proof and
-  scales across the region; fall back to `locales/` vocab only for custom pages.
-- **Employer registry.** `EMPLOYERS` is the hand-curated universe, grouped by
-  country. Each entry: `country`, `name`, `parent`, `sector`, `kind` (adapter),
-  `ref` (ATS token/handle or career URL). This list is the manual heart.
-- **Skill tagging.** `SKILL_PATTERNS` drives convergence detection and must
-  tolerate non-English text (see gotchas). Extend the taxonomy, don't inline
-  matches in adapters.
-- **Longitudinal panel.** Each row carries a UTC `snapshot_date`. Derive flow by
-  diffing `(country, employer, job_id)` across snapshots → openings/closings,
-  tenure on board, skill-flag drift, and cross-border footprint shifts.
+The `ats/` layer collects only **open, public-by-design** sources: ATS JSON APIs
+(Greenhouse, Lever, Ashby; Workday via `cxs` POST) and undefended career pages.
+**Never** add an adapter for defended/ToS-encumbered aggregators (LinkedIn, Indeed,
+JobStreet/SEEK, Glassdoor, Glints), never rotate proxies or solve CAPTCHAs, and
+collect **postings only — never applicant data**. If a task seems to need any of
+that, stop and flag it. `my_technoscience_scraper.py` is the original SEA-focused
+scraper, kept as reference.
 
-## Country nodes & seed sources
+## Conventions that matter
 
-Populate the registry by eye from each country's investment agency and recruitment
-events. Employer names below are **examples to confirm**, not a maintained roster.
+- **Secrets live in `.env`** (gitignored), read via `gemini_client.load_env()`.
+  Keys present: `GEMINI_API_KEY`, BigQuery `GOOGLE_APPLICATION_CREDENTIALS` +
+  `BQ_PROJECT`, and (unused) EPO OPS creds. The BigQuery service-account JSON lives
+  **outside the repo**. Before any commit, scan staged files for `.env`, `*.json`
+  keys, `.venv/`, and `jobs.db` — none should ever stage.
+- **Collectors must not silently zero on failure.** A network/API error should
+  raise or be retried, not persist a 0 (which corrupts the panel). Long multi-year
+  pulls support `--skip-existing` to resume; OpenAlex needs backoff + a socket
+  timeout backstop (a `Connection reset` once hung a run for 16 min).
+- **BigQuery cost discipline:** always `--dry-run` first. Queries use **CPC
+  classification codes** (`DOMAIN_CPC`), not full-text LIKE — ~18 GB/domain vs
+  ~228 GB, and more accurate. Each year ≈ 162 GB; budget the 1 TB/month free tier.
+- **Estimates vs counts stay visually distinct** in the dashboard — `gemini_research`
+  is labelled estimated; ATS/publications/patents are counted. Don't merge them.
+- **Patent/publication recent years lag** (~2y to fully index) — pull ≤ 2 years back
+  for complete data; the UI says "read the slope, not the final dot".
 
-| ISO | Seed sources | Frontier shape (examples) |
-|----|---|---|
-| SG | EDB, A*STAR | Regional R&D/HQ hub; fabs (GlobalFoundries, Micron, UMC), deep-tech startups on global ATS, quantum/biomed |
-| MY | MIDA, InvestPenang | Penang/Kulim ATE & design houses (ViTrox, Greatech, Pentamaster), MNC fabs |
-| TH | BOI | HDD/storage (WD, Seagate), automotive/EV electronics, some semi |
-| VN | MPI | Rising ATM (Intel, Amkor, Hana, Samsung) + emerging IC design |
-| ID | BKPM | EV-battery & nickel/critical-minerals processing, digital/platform |
-| PH | BOI / PEZA | Large semiconductor ATM, electronics |
+## Environment notes
 
-## Adding an employer (the common task)
-
-1. Confirm **country** and **surface** by eye: ATS (look for `greenhouse.io`,
-   `lever.co`, `ashbyhq.com`, `myworkdayjobs.com`) or custom page?
-2. ATS → add a registry row with country, token/handle, parent; existing adapter
-   handles it.
-3. Custom page → write an adapter following the existing pattern: stable id,
-   title, structured location if present, then `tag_skills(full_text)`. Put any
-   city vocab in `locales/<iso>.py`, not inline.
-4. Set `parent` to the canonical multinational name so footprint rolls up.
-
-## Domain context / gotchas
-
-- **Multilingual postings** (Bahasa Malaysia/Indonesia, Thai, Vietnamese, Tagalog).
-  An English-only regex under-counts — but most *technical* terms stay English
-  even inside local-language posts ("RTL", "CRISPR", "machine learning" rarely
-  translate), so English anchors still work; add per-language synonym sets where
-  needed and a `langdetect` pass to tag `lang`.
-- **Workday is the regional MNC-fab backbone**, not an optional tier. Its `cxs`
-  endpoint needs a POST with a JSON facet body (`appliedFacets`, `limit`,
-  `offset`); paginate on `offset`. Build/maintain the WorkdayAdapter accordingly.
-- **Same parent, many tenants.** A multinational may post under different ATS
-  tenants per country. The `parent` field is what makes cross-border aggregation
-  correct — keep it canonical and consistent.
-- **Locale, not just language.** Don't hardcode per-country city regex; lean on
-  ATS structured location and `locales/` lookups.
-- **Time & money.** Stamp `snapshot_date` in UTC for clean cross-country diffs.
-  If salary is captured, store amount + ISO currency; never normalise silently.
-- Listings often include regional/remote roles outside the posting country — keep
-  them but set `country_inferred` so analyses can filter to in-country hiring.
-
-## Style
-
-Plain stdlib + `requests`/`bs4`; no heavy frameworks. Dataclasses over dicts.
-Adapters small and pure (`fetch -> list[Posting]`); side effects (I/O, sleeping,
-partitioning) live in the runner.
+System Python is 3.14 with PEP-668 (externally-managed) — use the **`.venv`** for
+anything needing third-party packages; never `pip install` globally. The Gemini
+**MCP server is unusable** (pinned to a retired model) — `gemini_client.py` calls
+the REST API directly with `gemini-2.5-flash`. The weekly cron is macOS `crontab`
+(Mondays 09:00) and only fires while the Mac is awake.
