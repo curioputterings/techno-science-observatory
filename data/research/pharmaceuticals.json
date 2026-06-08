@@ -12,66 +12,66 @@
         "Pfizer",
         "Johnson & Johnson",
         "Merck",
+        "AbbVie",
         "Moderna",
-        "Gilead Sciences",
-        "Amgen",
+        "BioNTech (US presence)",
         "NIH",
         "FDA",
-        "Boston/SF Bay Area biotech clusters",
-        "Top universities (Harvard, Stanford, MIT)"
+        "Boston/Cambridge biotech cluster",
+        "San Francisco Bay Area biotech cluster"
       ],
-      "rationale": "The US is the global leader in pharmaceutical R&D, drug discovery, and biotech innovation, with a vast ecosystem of large pharma, startups, academic research, and regulatory bodies. It consistently leads in novel therapies, biologics, and advanced manufacturing."
+      "rationale": "Global leader in pharmaceutical R&D, drug discovery, clinical trials, and biotech innovation, with extensive academic and industry collaboration."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "WuXi AppTec",
         "Hengrui Medicine",
         "Innovent Biologics",
         "BeiGene",
-        "National strategic programs (e.g., Made in China 2025)",
-        "Suzhou BioBay, Shanghai Zhangjiang Hi-Tech Park"
+        "national biotech parks",
+        "significant investment in biopharma R&D"
       ],
-      "rationale": "China has a rapidly expanding pharmaceutical market with significant government investment in R&D, particularly in biologics, biosimilars, and some novel drug discovery. It has strong manufacturing capabilities and a growing talent pool, increasingly moving towards frontier research."
+      "rationale": "China is a major player in pharmaceutical manufacturing and increasingly in R&D, especially in biologics and oncology, with strong government support and a large talent pool."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "Takeda",
-        "Astellas Pharma",
+        "Astellas",
         "Daiichi Sankyo",
         "Eisai",
         "Chugai Pharmaceutical",
-        "RIKEN",
-        "AMED (Japan Agency for Medical Research and Development)"
+        "strong academic research",
+        "government initiatives for drug discovery"
       ],
-      "rationale": "Japan has a well-established pharmaceutical industry with a strong focus on innovation, particularly in areas like oncology, regenerative medicine, and rare diseases. It boasts high-quality R&D and manufacturing, though overall volume is lower than the US or China."
+      "rationale": "Japan has a well-established and highly innovative pharmaceutical industry with significant R&D investment, particularly in specialized therapeutic areas."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
         "Samsung Biologics",
         "Celltrion",
         "SK Bioscience",
-        "Hanmi Pharmaceutical",
-        "Government biotech growth initiatives"
+        "LG Chem Life Sciences",
+        "government bio-cluster initiatives (e.g., Songdo)"
       ],
-      "rationale": "South Korea has a rapidly growing biotech and pharmaceutical sector, excelling in biosimilars, biologics manufacturing, and increasingly in novel drug development. Strong government support and investment drive its advanced capabilities."
+      "rationale": "South Korea is a rising powerhouse in biopharmaceuticals, particularly in biosimilars and contract manufacturing, with increasing investment in novel drug development."
     },
     {
       "country_iso": "TW",
@@ -82,11 +82,11 @@
       "confidence": "medium",
       "evidence": [
         "PharmaEngine",
-        "TaiMed Biologics",
-        "National Health Research Institutes",
-        "Hsinchu Biomedical Science Park"
+        "Mycenax Biotech",
+        "Hsinchu Biomedical Science Park",
+        "strong semiconductor industry spillover into medtech/biotech"
       ],
-      "rationale": "Taiwan is a niche player with strengths in contract manufacturing (CDMO) and some biotech startups, particularly in oncology and rare diseases. It has good R&D capabilities but is not a broad frontier leader."
+      "rationale": "Taiwan has a developing pharmaceutical R&D sector, leveraging its strong tech base, with a focus on CDMO and some innovative drug development."
     },
     {
       "country_iso": "DE",
@@ -101,210 +101,223 @@
         "Merck KGaA",
         "BioNTech",
         "CureVac",
-        "Max Planck Institutes",
-        "Fraunhofer Institutes"
+        "Fraunhofer Institutes",
+        "Max Planck Institutes"
       ],
-      "rationale": "Germany is a major European pharmaceutical hub with a strong R&D base, leading academic institutions, and significant contributions to vaccine development (e.g., mRNA technology) and advanced therapies. It has a high volume of skilled roles and frontier research."
+      "rationale": "Germany has a robust and innovative pharmaceutical industry, with significant R&D capabilities, leading companies, and strong academic research."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Galapagos",
-        "Genmab (strong NL presence)",
+        "Philips (medtech R&D ecosystem)",
+        "Genmab (presence)",
         "Leiden Bio Science Park",
         "Utrecht Science Park",
-        "Erasmus MC"
+        "strong academic medical centers"
       ],
-      "rationale": "The Netherlands is a growing biotech hub with strong academic research and a supportive ecosystem for startups. It excels in specific therapeutic areas like oncology, immunology, and neuroscience, contributing to frontier research."
+      "rationale": "The Netherlands has a vibrant biotech ecosystem, strong academic research, and a growing number of innovative pharmaceutical companies, particularly in specialized areas."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
-      "skill_level": 4,
-      "frontier": 0.8,
+      "skill_level": 5,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "AstraZeneca",
         "GSK",
-        "Oxford University",
-        "Cambridge University",
+        "Oxford/Cambridge biotech clusters",
         "Francis Crick Institute",
-        "Wellcome Trust"
+        "Wellcome Trust",
+        "significant government investment in life sciences"
       ],
-      "rationale": "The UK has a historically strong pharmaceutical sector, world-class academic research, and a significant biotech cluster. It is strong in drug discovery, clinical development, genomics, and AI in drug discovery, with substantial frontier R&D."
+      "rationale": "The UK boasts a world-class life sciences sector, with leading universities, major pharmaceutical companies, and a strong track record in drug discovery and development."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
         "Sanofi",
         "Servier",
         "Ipsen",
-        "Institut Pasteur",
-        "CNRS",
-        "Inserm"
+        "Pasteur Institute",
+        "Genopole biocluster",
+        "strong public research institutions"
       ],
-      "rationale": "France possesses an established pharmaceutical industry with strong public research and a focus on specific therapeutic areas like oncology, neuroscience, and infectious diseases. It has good R&D capabilities and contributes to frontier research."
+      "rationale": "France has a well-established pharmaceutical industry with strong R&D capabilities, particularly in vaccines and oncology, supported by major companies and research institutes."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
         "Teva Pharmaceutical Industries (R&D)",
-        "Numerous biotech startups",
+        "numerous biotech startups",
         "Weizmann Institute of Science",
-        "Technion"
+        "Technion",
+        "strong venture capital funding for life sciences"
       ],
-      "rationale": "Israel has a vibrant biotech startup ecosystem, particularly strong in medical devices, digital health, and some niche drug development. Its innovation often focuses on early-stage research or technology-driven pharma solutions rather than full-scale drug pipelines."
+      "rationale": "Israel's biotech sector is highly innovative, leveraging its strong tech ecosystem for drug discovery and development, despite a smaller overall volume."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.45,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
-        "Serum Institute of India",
         "Dr. Reddy's Laboratories",
-        "Cipla",
         "Sun Pharmaceutical Industries",
+        "Cipla",
         "Biocon",
-        "National initiatives for pharma R&D"
+        "Serum Institute of India",
+        "increasing investment in R&D by domestic firms"
       ],
-      "rationale": "India is a global leader in generic drug manufacturing and has a rapidly growing clinical trials market. While still heavily focused on generics, there's increasing investment in biosimilars, vaccines, and some novel drug discovery, pushing towards frontier capabilities."
+      "rationale": "India is a pharmaceutical manufacturing giant, primarily in generics, but is rapidly expanding its R&D capabilities, particularly in biosimilars and vaccine development."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
+        "Novartis (presence)",
+        "Pfizer (presence)",
+        "GSK (presence)",
+        "Biopolis research park",
         "A*STAR",
-        "Biopolis",
-        "GSK, Novartis, Pfizer (R&D/manufacturing sites)",
-        "National University of Singapore"
+        "strong government incentives for biotech"
       ],
-      "rationale": "Singapore serves as a strategic hub for biopharma manufacturing and R&D in Asia, backed by strong government support. It focuses on high-value areas like biologics, cell therapy, and precision medicine, attracting global pharma companies and investing in frontier research."
+      "rationale": "Singapore has strategically invested in becoming a leading biopharmaceutical hub in Asia, attracting significant R&D and manufacturing operations from global players."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "Roche",
         "Novartis",
-        "Lonza",
+        "Lonza (CDMO)",
         "ETH Zurich",
-        "University of Basel"
+        "EPFL",
+        "Basel biotech cluster",
+        "significant R&D spending"
       ],
-      "rationale": "Switzerland is home to major global pharmaceutical companies and boasts a highly innovative R&D environment. It is a leader in drug discovery, biologics, and advanced therapies, with a very high concentration of frontier research and high-value manufacturing."
+      "rationale": "Switzerland is a global leader in pharmaceuticals, with two of the world's largest pharma companies and a strong ecosystem for advanced R&D and manufacturing."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "high",
+      "frontier": 0.65,
+      "confidence": "medium",
       "evidence": [
         "AstraZeneca (major R&D site)",
         "Karolinska Institutet",
         "Uppsala University",
-        "SciLifeLab"
+        "Medicon Village (Lund)",
+        "strong government support for life sciences"
       ],
-      "rationale": "Sweden has strong academic research and a history of pharmaceutical innovation, particularly in neuroscience, oncology, and rare diseases. It maintains good R&D capabilities and contributes to frontier research, often driven by academic-industry collaborations."
+      "rationale": "Sweden has a focused and innovative life science sector, with strong academic ties and a presence of major pharmaceutical R&D."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "Orion Pharma",
         "University of Helsinki",
-        "VTT Technical Research Centre"
+        "focus on health tech and personalized medicine"
       ],
-      "rationale": "Finland is a niche player with strengths in diagnostics, health tech, and some early-stage drug discovery. While it has good academic research, the large-scale pharmaceutical industry is limited, resulting in a smaller volume of advanced roles and less broad frontier R&D."
+      "rationale": "Finland has a smaller but growing pharmaceutical sector, with strengths in health technology and diagnostics, and some specialized drug development."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Sanofi (vaccines R&D)",
-        "Pfizer (R&D presence)",
-        "National Research Council Canada",
-        "Top universities (UofT, McGill, UBC)"
+        "Sanofi (vaccines R&D/manufacturing)",
+        "GSK (presence)",
+        "Pfizer (presence)",
+        "Montreal/Toronto/Vancouver biotech clusters",
+        "strong university research"
       ],
-      "rationale": "Canada has strong academic research, a growing biotech sector, and significant clinical trial activity. It possesses good R&D capabilities, particularly in oncology, neuroscience, and vaccine development, often collaborating with US institutions on frontier research."
+      "rationale": "Canada has a well-established pharmaceutical sector with strong R&D capabilities, particularly in specific therapeutic areas, supported by academic excellence."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.55,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
         "CSL Limited (biologics)",
-        "Garvan Institute of Medical Research",
+        "numerous biotech startups",
+        "Garvan Institute",
         "Walter and Eliza Hall Institute",
-        "Significant clinical trial activity"
+        "strong clinical trial infrastructure"
       ],
-      "rationale": "Australia is a strong clinical trial hub with excellent academic research and an emerging biotech sector. It excels in specific areas like oncology, immunology, and regenerative medicine, often at the early research stage, contributing to frontier science."
+      "rationale": "Australia excels in early-stage research and clinical trials, with a growing biotech sector and strong academic institutions contributing to drug discovery."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.45,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "Pfizer, Johnson & Johnson, Merck, Bristol Myers Squibb (manufacturing sites)",
-        "National Institute for Bioprorocessing Research and Training (NIBRT)"
+        "Pfizer (manufacturing)",
+        "Johnson & Johnson (manufacturing)",
+        "Merck (manufacturing)",
+        "Bristol-Myers Squibb (manufacturing)",
+        "IDA Ireland initiatives",
+        "NIBRT"
       ],
-      "rationale": "Ireland is a major hub for pharmaceutical manufacturing, especially biologics, driven by foreign direct investment. While strong in high-tech manufacturing and process development, its frontier R&D is more focused on process innovation than novel drug discovery."
+      "rationale": "Ireland is a global hub for pharmaceutical manufacturing, especially biologics, with a strong presence of multinational companies and increasing R&D activities."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "UCB",
         "Janssen Pharmaceutica (J&J)",
         "GSK Vaccines",
-        "VIB (Flanders Institute for Biotechnology)"
+        "KU Leuven",
+        "Flanders biotech cluster"
       ],
-      "rationale": "Belgium has a strong pharmaceutical and biotech sector, particularly renowned for vaccine development and oncology. It boasts good R&D capabilities and significant frontier research, especially in biologics and advanced therapies."
+      "rationale": "Belgium has a highly concentrated and innovative pharmaceutical and biotech sector, with significant R&D and manufacturing activities, especially in vaccines."
     },
     {
       "country_iso": "AT",
@@ -314,12 +327,12 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Shire (Takeda R&D presence)",
-        "Boehringer Ingelheim (R&D presence)",
-        "Biocenter Vienna",
-        "Austrian Research Promotion Agency (FFG)"
+        "Takeda (presence)",
+        "Boehringer Ingelheim (presence)",
+        "Vienna Biocenter",
+        "strong academic institutions"
       ],
-      "rationale": "Austria is a niche player with strengths in specific areas like oncology, immunology, and some biotech. It has good academic research and specialized biotech firms, contributing to some frontier research, often through academic spin-offs."
+      "rationale": "Austria has a growing pharmaceutical and biotech sector, with a focus on biologics and a supportive research environment."
     },
     {
       "country_iso": "IT",
@@ -327,55 +340,59 @@
       "volume_band": "medium",
       "skill_level": 3,
       "frontier": 0.5,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "Menarini",
         "Chiesi Farmaceutici",
-        "Recordati",
-        "Istituto Superiore di Sanit\u00e0"
+        "GSK (vaccines manufacturing)",
+        "strong academic research",
+        "government initiatives to boost R&D"
       ],
-      "rationale": "Italy has an established pharmaceutical industry, strong in generics and some specialized areas, with good academic research. While it has good manufacturing and R&D, its frontier innovation is perhaps less dynamic compared to other major EU countries."
+      "rationale": "Italy has a strong pharmaceutical manufacturing industry and is increasing its investment in R&D, particularly in specialized therapeutic areas."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
-      "confidence": "medium",
+      "frontier": 0.4,
+      "confidence": "high",
       "evidence": [
         "Grifols (plasma-derived medicines)",
         "Almirall",
-        "Ferrer",
-        "National research centers"
+        "Esteve",
+        "strong academic research",
+        "government support for biotech"
       ],
-      "rationale": "Spain has a growing pharmaceutical market, strong in generics and some specialized areas, with significant clinical trial activity. While it has good manufacturing and clinical development, there's less emphasis on frontier drug discovery compared to leading nations."
+      "rationale": "Spain has a developing pharmaceutical R&D sector, building on its manufacturing base, with a focus on specific therapeutic areas."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Government initiatives to grow biotech",
-        "Local generic manufacturers"
+        "Local generic manufacturers",
+        "some foreign pharma manufacturing presence",
+        "government initiatives to develop biotech"
       ],
-      "rationale": "Malaysia is an emerging market primarily focused on generics manufacturing and some contract research. Its advanced R&D capabilities are still nascent, with very limited frontier work."
+      "rationale": "Malaysia's pharmaceutical sector is primarily focused on generics and manufacturing, with limited advanced R&D capabilities currently."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "very_low",
-      "skill_level": 2,
+      "volume_band": "none",
+      "skill_level": 1,
       "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "Local generic manufacturers",
-        "Increasing healthcare demand"
+        "Predominantly generic manufacturers",
+        "limited R&D infrastructure",
+        "reliance on technology transfer"
       ],
-      "rationale": "Vietnam's pharmaceutical market is dominated by generics, with very limited R&D. The focus is primarily on manufacturing and distribution of established drugs, with negligible frontier R&D."
+      "rationale": "Vietnam's pharmaceutical industry is still in early stages of development, with minimal advanced R&D activities."
     },
     {
       "country_iso": "TH",
@@ -385,77 +402,83 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Government support for medical hub",
-        "Local generic companies"
+        "Government Pharmaceutical Organization (GPO)",
+        "some local manufacturers",
+        "efforts to promote medical hubs"
       ],
-      "rationale": "Thailand primarily focuses on generics and some contract manufacturing. While there's a growing healthcare market, advanced R&D and frontier work are limited, mostly confined to academic settings or early-stage collaborations."
+      "rationale": "Thailand's pharmaceutical sector is primarily focused on local manufacturing and generics, with advanced R&D still in early stages."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 1,
       "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "Local generic companies",
-        "Large domestic market"
+        "Bio Farma (vaccines, manufacturing focus)",
+        "local generic companies",
+        "limited R&D investment"
       ],
-      "rationale": "Indonesia has a large domestic generics market but very limited R&D capabilities. The focus is on manufacturing and distribution, with negligible frontier R&D."
+      "rationale": "Indonesia's pharmaceutical industry is largely focused on meeting domestic demand with generics, with minimal advanced R&D."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
         "Dubai Science Park",
-        "Government initiatives to diversify economy"
+        "Julphar (local manufacturing)",
+        "government initiatives to diversify economy into life sciences"
       ],
-      "rationale": "The UAE is an emerging market focused on distribution and some manufacturing, with ambitions to attract R&D investment. Capabilities are still being built, and it is not yet a major R&D hub for advanced pharmaceuticals."
+      "rationale": "The UAE is investing in developing its life sciences sector, but advanced pharmaceutical R&D is still in nascent stages, with a focus on attracting manufacturing and clinical trials."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "King Abdullah University of Science and Technology (KAUST)",
-        "Vision 2030 initiatives"
+        "SPIMACO",
+        "Vision 2030 initiatives for health and biotech",
+        "King Abdullah University of Science and Technology (KAUST) research"
       ],
-      "rationale": "Similar to the UAE, Saudi Arabia focuses on local manufacturing and distribution, aiming to attract R&D through national initiatives. It is in the early stages of developing R&D infrastructure, often through international partnerships."
+      "rationale": "Saudi Arabia is making strategic investments to build its pharmaceutical and biotech capabilities, but advanced R&D is still in early development."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.35,
+      "skill_level": 2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "Fiocruz",
-        "Butantan Institute (vaccines)",
-        "National health programs"
+        "Butantan Institute (vaccines, biologics)",
+        "local generic companies",
+        "some multinational pharma presence"
       ],
-      "rationale": "Brazil is the largest pharmaceutical market in Latin America, strong in generics, with some R&D in specific areas like tropical diseases and vaccines. It has good manufacturing and clinical research, with some specialized R&D contributing to frontier work in public health."
+      "rationale": "Brazil has a large pharmaceutical market with a strong public health focus, including vaccine production and some R&D, but advanced drug discovery is less prominent than manufacturing."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.25,
-      "confidence": "low",
+      "frontier": 0.2,
+      "confidence": "medium",
       "evidence": [
         "Polpharma",
         "Adamed Pharma",
-        "Growing healthcare investment"
+        "increasing number of clinical trials",
+        "EU funding for R&D"
       ],
-      "rationale": "Poland has a growing generics market and increasing clinical trial activity. Its advanced pharmaceutical sector is primarily focused on applied manufacturing and clinical research, with limited frontier R&D, mostly in academic settings or early-stage biotech."
+      "rationale": "Poland is a significant player in generic pharmaceutical manufacturing in Europe, with a growing presence in clinical trials and some emerging R&D capabilities."
     }
   ]
 }

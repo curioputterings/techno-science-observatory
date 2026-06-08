@@ -6,484 +6,482 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.9,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
-        "DARPA",
-        "NASA",
-        "MIT",
-        "Stanford",
-        "Caltech",
-        "Intel",
-        "NVIDIA",
-        "ASML (US operations)",
-        "Lam Research",
-        "KLA",
-        "Boston Dynamics",
-        "SpaceX",
-        "Lockheed Martin",
-        "Raytheon"
+        "JPL (Jet Propulsion Laboratory)",
+        "MIT (Massachusetts Institute of Technology)",
+        "Caltech (California Institute of Technology)",
+        "NIST (National Institute of Standards and Technology)",
+        "Lockheed Martin (aerospace/defense)",
+        "Raytheon Technologies (aerospace/defense)",
+        "Intel (semiconductors)",
+        "Micron Technology (semiconductors)",
+        "Medtronic (medical devices)",
+        "Boston Dynamics (robotics)"
       ],
-      "rationale": "The US leads in aerospace, defense, semiconductors, medical devices, and advanced robotics, driving very high demand for frontier precision engineering roles across R&D, design, and manufacturing."
+      "rationale": "The US has a vast and diverse precision engineering landscape, driven by strong R&D in universities and national labs, significant defense and aerospace industries, leading semiconductor manufacturing, advanced medical device development, and cutting-edge robotics. This creates a very high volume of advanced roles and significant frontier research."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Huawei",
-        "DJI",
-        "Foxconn (automation initiatives)",
-        "SMIC",
-        "National robotics programs",
-        "Chinese Academy of Sciences (CAS)",
+        "Huawei (telecom/electronics)",
+        "SMIC (semiconductor manufacturing)",
+        "DJI (drones/robotics)",
+        "National Space Program (e.g., CNSA)",
         "Tsinghua University",
-        "Shanghai Institute of Optics and Fine Mechanics"
+        "Chinese Academy of Sciences (CAS)",
+        "Industrial robotics firms (e.g., Estun, Efort)"
       ],
-      "rationale": "China's massive manufacturing base, coupled with significant national investment in industrial automation, robotics, photonics, and advanced materials, generates a very high volume of precision engineering roles, with a rapidly growing frontier capability."
+      "rationale": "China has a massive manufacturing base and rapidly growing investment in high-tech sectors, including robotics, semiconductors, and aerospace. While much volume is in applied engineering, there's increasing frontier R&D, driven by national strategic initiatives and leading tech companies."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 5,
-      "frontier": 0.8,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Fanuc",
-        "Keyence",
-        "Nikon",
-        "Canon",
-        "Sony",
-        "Toyota",
-        "Mitsubishi Electric",
-        "Hitachi",
-        "JAXA",
-        "RIKEN",
+        "Fanuc (robotics/CNC)",
+        "Keyence (sensors/metrology)",
+        "Nikon (optics/metrology)",
+        "Canon (optics/imaging)",
+        "Sony (electronics/imaging)",
+        "Toyota (automotive/robotics)",
+        "AIST (National Institute of Advanced Industrial Science and Technology)",
         "University of Tokyo"
       ],
-      "rationale": "Japan has a long-standing tradition of excellence in precision manufacturing, industrial robotics, machine tools, and optics, with companies and research institutions pushing high-skill and significant frontier work."
+      "rationale": "Japan is a historical and current leader in precision manufacturing, industrial robotics, optics, and advanced materials. Its industries consistently push the boundaries of accuracy and miniaturization, supporting a high volume of expert roles and significant frontier R&D."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Samsung",
-        "LG",
-        "Hyundai",
-        "SK Hynix",
-        "KAIST",
-        "ETRI",
-        "National robotics initiatives"
+        "Samsung Electronics (semiconductors, displays, robotics)",
+        "LG Electronics (displays, robotics)",
+        "Hyundai Motor Group (automotive, robotics)",
+        "SK Hynix (semiconductors)",
+        "KAIST (Korea Advanced Institute of Science and Technology)",
+        "ETRI (Electronics and Telecommunications Research Institute)"
       ],
-      "rationale": "South Korea's dominance in semiconductors, displays, automotive, and robotics drives a high volume of precision engineering roles, supported by a highly skilled workforce and strong industry-academia collaboration in applied R&D."
+      "rationale": "South Korea excels in high-tech manufacturing, particularly semiconductors, displays, and automotive. There's a strong focus on automation and robotics, with significant government and corporate investment in advanced R&D, leading to a high demand for skilled precision engineers."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "TSMC",
-        "Foxconn",
-        "UMC",
-        "ASE",
+        "TSMC (Taiwan Semiconductor Manufacturing Company)",
+        "Foxconn (electronics manufacturing)",
+        "UMC (United Microelectronics Corporation)",
         "ITRI (Industrial Technology Research Institute)",
         "National Taiwan University"
       ],
-      "rationale": "Taiwan is a global leader in semiconductor manufacturing and optoelectronics, requiring advanced precision engineering for fabrication processes and related machinery, leading to a medium volume of high-skill roles."
+      "rationale": "Taiwan is a global powerhouse in semiconductor manufacturing and advanced electronics. The precision required for chip fabrication drives a high demand for precision engineers, with significant investment in R&D to maintain its technological edge."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 5,
-      "frontier": 0.8,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Siemens",
-        "Bosch",
-        "Zeiss",
-        "Trumpf",
-        "Kuka",
-        "Fraunhofer Institutes",
-        "Max Planck Society",
-        "Technical Universities (e.g., RWTH Aachen)"
+        "Siemens (industrial automation, medical technology)",
+        "Bosch (automotive, industrial technology)",
+        "Carl Zeiss (optics, metrology)",
+        "Fraunhofer Institutes (applied research)",
+        "RWTH Aachen University",
+        "TU Munich (Technical University of Munich)",
+        "Leading automotive manufacturers (BMW, Mercedes-Benz, Audi)"
       ],
-      "rationale": "Germany's 'Mittelstand' excellence, strong automotive, industrial automation, machine tool, and optics sectors, combined with world-class research institutions, ensure a high volume of highly skilled and frontier precision engineering work."
+      "rationale": "Germany is renowned for its engineering excellence, particularly in industrial machinery, automotive, optics, and automation (Industrie 4.0). This creates a robust market for precision engineers, with high skill levels and substantial frontier research activities."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
+      "volume_band": "medium",
+      "skill_level": 5,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "ASML (lithography systems)",
+        "Philips (medical technology, consumer electronics)",
+        "TNO (Netherlands Organisation for Applied Scientific Research)",
+        "TU Delft (Delft University of Technology)",
+        "Eindhoven University of Technology"
+      ],
+      "rationale": "The Netherlands is a global leader in high-tech systems, particularly in lithography (ASML), photonics, and mechatronics. This niche but highly advanced sector drives a significant demand for expert precision engineers and contributes substantially to frontier R&D."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "Rolls-Royce (aerospace, defense)",
+        "BAE Systems (defense)",
+        "Renishaw (metrology, additive manufacturing)",
+        "University of Oxford",
+        "University of Cambridge",
+        "Manufacturing Technology Centre (MTC)"
+      ],
+      "rationale": "The UK has strong capabilities in aerospace, defense, and specialized manufacturing, with world-class universities and research centers. While not as broad as some larger economies, it maintains a solid base for advanced precision engineering, particularly in niche areas."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "Airbus (aerospace)",
+        "Safran (aerospace, defense)",
+        "Dassault Syst\u00e8mes (software for engineering)",
+        "CEA (French Alternative Energies and Atomic Energy Commission)",
+        "CNRS (National Center for Scientific Research)",
+        "\u00c9cole Polytechnique"
+      ],
+      "rationale": "France has a strong aerospace and defense industry, along with significant public R&D investment. This supports a medium volume of precision engineering roles, with a focus on high-tech manufacturing and advanced research."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "medium",
+      "evidence": [
+        "Elbit Systems (defense electronics)",
+        "Rafael Advanced Defense Systems (defense)",
+        "Mobileye (autonomous driving - optics/sensors)",
+        "Technion \u2013 Israel Institute of Technology",
+        "Weizmann Institute of Science",
+        "Numerous photonics and medical device startups"
+      ],
+      "rationale": "Israel's high-tech ecosystem, particularly in defense, medical devices, and autonomous systems, drives a concentrated demand for precision engineering, especially in optics, sensors, and micro-electromechanical systems (MEMS). It has a high frontier focus despite lower overall volume."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "ISRO (Indian Space Research Organisation)",
+        "DRDO (Defence Research and Development Organisation)",
+        "Tata Group (automotive, industrial machinery)",
+        "Mahindra Group (automotive, aerospace)",
+        "Indian Institutes of Technology (IITs)",
+        "Growing electronics manufacturing sector"
+      ],
+      "rationale": "India has a large engineering talent pool and growing manufacturing capabilities. While the volume of precision engineering roles is increasing, particularly in aerospace, defense, and automotive, the frontier R&D component is still developing compared to global leaders."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "A*STAR (Agency for Science, Technology and Research)",
+        "National University of Singapore (NUS)",
+        "Nanyang Technological University (NTU)",
+        "ST Engineering (aerospace MRO, defense)",
+        "GlobalFoundries (semiconductor manufacturing)",
+        "Micron Technology (semiconductor manufacturing)"
+      ],
+      "rationale": "Singapore is a hub for high-tech manufacturing, R&D, and aerospace MRO. Its strategic investment in advanced manufacturing, biomedical technology, and semiconductors creates a strong demand for highly skilled precision engineers and supports significant frontier research."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
       "volume_band": "low",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "ASML",
-        "Philips",
-        "TNO (Netherlands Organisation for Applied Scientific Research)",
-        "TU Delft",
-        "Eindhoven University of Technology",
-        "Brainport Eindhoven ecosystem"
+        "Rolex (luxury watches)",
+        "Swatch Group (luxury watches, microtechnology)",
+        "ABB Robotics (global HQ)",
+        "CERN (European Organization for Nuclear Research - contributions to precision instrumentation)",
+        "EPFL (Swiss Federal Institute of Technology Lausanne)",
+        "ETH Zurich (Swiss Federal Institute of Technology Zurich)"
       ],
-      "rationale": "Despite its size, the Netherlands has an exceptionally high concentration of frontier precision engineering, largely driven by ASML's lithography technology, photonics, and high-tech systems, resulting in a low absolute volume but very high skill and frontier level."
-    },
-    {
-      "country_iso": "GB",
-      "country_name": "United Kingdom",
-      "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
-      "evidence": [
-        "Rolls-Royce",
-        "BAE Systems",
-        "Renishaw",
-        "Oxford Instruments",
-        "Cambridge University",
-        "Oxford University",
-        "National Physical Laboratory"
-      ],
-      "rationale": "The UK possesses strong academic research and niche industrial players in aerospace, defense, and metrology, contributing to a low volume of advanced precision engineering roles with a good skill level and some frontier work."
-    },
-    {
-      "country_iso": "FR",
-      "country_name": "France",
-      "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
-      "evidence": [
-        "Safran",
-        "Thales",
-        "Dassault Aviation",
-        "CEA (Atomic Energy and Alternative Energies Commission)",
-        "CNRS",
-        "\u00c9cole Polytechnique"
-      ],
-      "rationale": "France has significant capabilities in aerospace, defense, and some industrial machinery, supported by strong engineering schools and research, leading to a low volume of high-skill precision engineering roles with a moderate frontier component."
-    },
-    {
-      "country_iso": "IL",
-      "country_name": "Israel",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "medium",
-      "evidence": [
-        "Elbit Systems",
-        "Rafael Advanced Defense Systems",
-        "Intel R&D",
-        "Mobileye",
-        "Technion",
-        "Weizmann Institute"
-      ],
-      "rationale": "Israel's vibrant high-tech ecosystem, particularly in defense, optics, and medical devices, drives a very low but highly skilled and frontier-oriented precision engineering market, despite its small size."
-    },
-    {
-      "country_iso": "IN",
-      "country_name": "India",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
-      "evidence": [
-        "ISRO (Indian Space Research Organisation)",
-        "DRDO (Defence Research and Development Organisation)",
-        "Tata Motors",
-        "Mahindra & Mahindra",
-        "IITs (Indian Institutes of Technology)",
-        "HAL (Hindustan Aeronautics Limited)"
-      ],
-      "rationale": "India has a growing manufacturing base and significant capabilities in space and defense, leading to a low volume of precision engineering roles. While skill levels are improving, frontier R&D in this domain is still developing."
-    },
-    {
-      "country_iso": "SG",
-      "country_name": "Singapore",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
-      "evidence": [
-        "A*STAR (Agency for Science, Technology and Research)",
-        "NTU (Nanyang Technological University)",
-        "NUS (National University of Singapore)",
-        "Rolls-Royce (manufacturing facility)",
-        "Micron",
-        "GlobalFoundries"
-      ],
-      "rationale": "Singapore's strategic focus on high-value manufacturing, biomedical engineering, and R&D, supported by strong government investment, creates a very low but highly skilled and frontier-oriented precision engineering market."
-    },
-    {
-      "country_iso": "CH",
-      "country_name": "Switzerland",
-      "volume_band": "very_low",
-      "skill_level": 5,
-      "frontier": 0.8,
-      "confidence": "high",
-      "evidence": [
-        "ABB Robotics",
-        "Rolex",
-        "Swatch Group",
-        "Schindler",
-        "Roche",
-        "Novartis",
-        "ETH Zurich",
-        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
-        "CSEM (Swiss Center for Electronics and Microtechnology)"
-      ],
-      "rationale": "Switzerland is renowned for its high-precision industries, including watchmaking, medical devices, machine tools, and robotics. This drives a very low volume of extremely high-skill and frontier precision engineering roles."
+      "rationale": "Switzerland is globally recognized for its ultra-high precision manufacturing, particularly in luxury goods, medical devices, and microtechnology. Its universities and research institutions are at the forefront of frontier research, leading to highly skilled roles despite a smaller overall volume."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.5,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
-        "ABB (robotics division)",
-        "Ericsson",
-        "Volvo",
-        "Saab Group",
+        "Volvo Group (automotive, industrial equipment)",
+        "Ericsson (telecommunications, R&D)",
+        "ABB (robotics, industrial automation - global HQ in Switzerland but significant presence)",
         "KTH Royal Institute of Technology",
         "Chalmers University of Technology"
       ],
-      "rationale": "Sweden has a strong engineering tradition in industrial automation, automotive, and defense. While the absolute volume of advanced precision engineering roles is very low, the skill level is high with a moderate frontier component."
+      "rationale": "Sweden has a strong industrial base with significant players in automotive, telecommunications, and industrial automation. This fosters a demand for precision engineering, with a focus on R&D and advanced manufacturing processes."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "low",
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
+        "Nokia (telecommunications, R&D)",
         "VTT Technical Research Centre of Finland",
         "Aalto University",
-        "Niche industrial machinery manufacturers"
+        "Specialized photonics companies (e.g., Modulight)"
       ],
-      "rationale": "Finland has some niche industrial technology and research, but the overall market for advanced precision engineering roles is negligible, with limited industrial translation of frontier research."
+      "rationale": "Finland has a focused high-tech sector, particularly in telecommunications and photonics. While the overall volume is lower, there's a strong emphasis on R&D and specialized precision engineering, particularly in optical and sensor technologies."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Bombardier (aerospace, rail)",
+        "MDA (space robotics, satellite systems)",
+        "National Research Council of Canada (NRC)",
+        "University of Waterloo",
+        "Specialized photonics and optics firms"
+      ],
+      "rationale": "Canada has significant capabilities in aerospace, space robotics, and some specialized manufacturing. Its universities and research institutions contribute to frontier R&D, supporting a moderate demand for precision engineers."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "University of New South Wales (UNSW)",
+        "Australian National University (ANU)",
+        "Defense industry (e.g., BAE Systems Australia)",
+        "Specialized robotics for mining and agriculture"
+      ],
+      "rationale": "Australia has a growing defense industry and specialized sectors like mining technology and space. While the overall volume of advanced precision engineering roles is low, there's a focus on R&D in specific niches, particularly in robotics and sensor systems."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "MDA (robotics for space, e.g., Canadarm)",
-        "National Research Council (NRC)",
-        "Bombardier",
-        "University of Toronto",
-        "University of Waterloo"
+        "Medtronic (medical devices - significant EU operations)",
+        "Boston Scientific (medical devices - significant EU operations)",
+        "IDA Ireland (attracting high-tech manufacturing)",
+        "University research in microelectronics and medical technology"
       ],
-      "rationale": "Canada has capabilities in aerospace and some industrial technology, supported by good universities and research. However, the volume of advanced precision engineering roles remains very low, with a moderate frontier focus."
-    },
-    {
-      "country_iso": "AU",
-      "country_name": "Australia",
-      "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
-      "evidence": [
-        "CSIRO",
-        "University research (e.g., robotics, advanced manufacturing)",
-        "Defense projects"
-      ],
-      "rationale": "Australia's advanced manufacturing sector is relatively small, with limited demand for frontier precision engineering roles. While there is some research, industrial application is not a major driver."
-    },
-    {
-      "country_iso": "IE",
-      "country_name": "Ireland",
-      "volume_band": "none",
-      "skill_level": 3,
-      "frontier": 0.2,
-      "confidence": "low",
-      "evidence": [
-        "Tyndall National Institute",
-        "Medical device manufacturing (e.g., Medtronic, Boston Scientific)"
-      ],
-      "rationale": "Ireland is a hub for medical device and pharmaceutical manufacturing, which requires precision, but the focus is more on high-value production rather than indigenous advanced precision engineering R&D, leading to negligible job volume."
+      "rationale": "Ireland has a strong presence of multinational medical device and pharmaceutical companies, which require precision manufacturing. While much of this is applied engineering, there's a growing base for specialized roles and some R&D."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
         "IMEC (Interuniversity Microelectronics Centre)",
-        "KU Leuven",
-        "Niche industrial companies"
+        "KU Leuven (Katholieke Universiteit Leuven)",
+        "Specialized machinery manufacturers"
       ],
-      "rationale": "Belgium hosts IMEC, a world-leading research center in nanoelectronics, which involves significant micro-precision. However, the broader advanced precision engineering domain outside of microelectronics has a very low volume."
+      "rationale": "Belgium, particularly through IMEC, is a world leader in nanoelectronics and digital technologies, which underpins much of precision engineering. This drives a demand for highly skilled engineers in micro- and nano-scale precision, despite a smaller overall industrial volume."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "low",
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "AVL (automotive testing systems)",
-        "Some machine tool manufacturers",
-        "TU Wien (Vienna University of Technology)"
+        "AVL (automotive testing, powertrain development)",
+        "Magna Steyr (automotive engineering, contract manufacturing)",
+        "Infineon Technologies (R&D center for semiconductors)",
+        "TU Wien (Vienna University of Technology)",
+        "Graz University of Technology"
       ],
-      "rationale": "Austria has a strong industrial base in automotive components and machinery, with some niche precision engineering. The volume of advanced roles is very low, with limited frontier R&D compared to global leaders."
+      "rationale": "Austria has a strong industrial base, particularly in automotive components, industrial machinery, and microelectronics. This supports a steady demand for precision engineers, with a focus on advanced manufacturing and R&D in these sectors."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Comau (robotics)",
-        "Ferrari",
-        "Lamborghini",
-        "Italian Institute of Technology (IIT)"
+        "Ferrari (luxury automotive)",
+        "Lamborghini (luxury automotive)",
+        "Comau (robotics and automation)",
+        "Leonardo S.p.A. (aerospace, defense, security)",
+        "Politecnico di Milano"
       ],
-      "rationale": "Italy has strengths in luxury automotive, industrial machinery, and robotics. While there's a good design and manufacturing base, the volume of advanced precision engineering roles is low, with a moderate frontier focus, particularly in robotics."
+      "rationale": "Italy has a strong tradition in high-quality manufacturing, particularly in luxury automotive, industrial machinery, and some aerospace. This drives a demand for precision engineering, with a focus on design, automation, and specialized production."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "Automotive industry (assembly plants)",
-        "Some university research"
+        "SEAT (automotive manufacturing)",
+        "Airbus (components manufacturing)",
+        "CDTI (Centre for the Development of Industrial Technology)",
+        "Some university research in robotics and materials"
       ],
-      "rationale": "Spain's industrial base is largely focused on automotive assembly and traditional manufacturing. Advanced precision engineering R&D and high-skill roles are negligible."
+      "rationale": "Spain has a significant automotive and aerospace component manufacturing sector. While there is a need for precision in these areas, the focus is more on applied engineering and manufacturing processes rather than frontier R&D, resulting in a lower volume of advanced roles."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
       "evidence": [
-        "Intel (assembly/test operations)",
-        "Micron (assembly/test operations)",
-        "Local universities"
+        "Intel (semiconductor assembly and test)",
+        "Micron Technology (semiconductor assembly and test)",
+        "Penang as a major electronics manufacturing hub",
+        "MIDA (Malaysian Investment Development Authority) initiatives"
       ],
-      "rationale": "Malaysia is a significant hub for semiconductor assembly and test, and electronics manufacturing. However, advanced precision engineering roles focused on R&D and design are negligible, with the focus primarily on manufacturing operations."
+      "rationale": "Malaysia is a key hub for electronics and semiconductor assembly and test operations. This requires significant precision engineering capabilities, though much of the advanced R&D is often driven by parent companies elsewhere. There's a growing local skill base."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Samsung (assembly operations)",
-        "Foxconn (assembly operations)",
-        "Local universities"
+        "Samsung Electronics (major manufacturing/assembly plants)",
+        "Foxconn (electronics assembly)",
+        "Government initiatives to attract high-tech manufacturing"
       ],
-      "rationale": "Vietnam is an emerging manufacturing hub, particularly for electronics assembly. Its precision engineering capabilities are still nascent, with negligible demand for advanced roles and no significant frontier R&D."
+      "rationale": "Vietnam is an emerging manufacturing hub, primarily for electronics assembly. While precision is required for these operations, the advanced precision engineering roles and frontier R&D are still nascent, with most high-skill work concentrated in foreign-owned facilities."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Automotive assembly plants",
-        "Electronics manufacturing",
-        "Some university research"
+        "Major automotive assembly plants (e.g., Toyota, Honda)",
+        "Electronics manufacturing sector",
+        "BOI (Board of Investment) incentives for high-tech"
       ],
-      "rationale": "Thailand has a strong automotive and electronics manufacturing base, but advanced precision engineering roles focused on R&D and innovation are negligible, with the focus on production and assembly."
+      "rationale": "Thailand has a strong automotive assembly and electronics manufacturing base. While precision is crucial for these industries, the advanced precision engineering roles and frontier R&D are limited, with a focus on production and applied engineering."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
-      "evidence": [
-        "Automotive assembly",
-        "Some electronics manufacturing"
-      ],
-      "rationale": "Indonesia is an emerging manufacturing economy, but its capabilities in advanced precision engineering are very limited, with negligible demand for high-skill or frontier roles."
-    },
-    {
-      "country_iso": "AE",
-      "country_name": "United Arab Emirates",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
-      "evidence": [
-        "Masdar Institute",
-        "Defense procurement",
-        "Economic diversification initiatives"
-      ],
-      "rationale": "The UAE is investing in economic diversification and technology, but its indigenous advanced precision engineering capabilities are nascent, resulting in negligible job volume for advanced roles."
-    },
-    {
-      "country_iso": "SA",
-      "country_name": "Saudi Arabia",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
-      "evidence": [
-        "KAUST (King Abdullah University of Science and Technology)",
-        "NEOM projects",
-        "Vision 2030 initiatives"
-      ],
-      "rationale": "Saudi Arabia is pursuing ambitious economic diversification plans (Vision 2030), but its advanced precision engineering sector is still in very early stages, with negligible demand for high-skill or frontier roles."
-    },
-    {
-      "country_iso": "BR",
-      "country_name": "Brazil",
-      "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
-      "evidence": [
-        "Embraer (aerospace)",
-        "Automotive manufacturing",
-        "Universities"
-      ],
-      "rationale": "Brazil has an industrial base in automotive and aerospace (Embraer), but the broader advanced precision engineering ecosystem is not highly developed, leading to negligible demand for frontier roles."
-    },
-    {
-      "country_iso": "PL",
-      "country_name": "Poland",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Automotive manufacturing",
-        "Industrial machinery manufacturing",
-        "Universities"
+        "Automotive assembly industry (e.g., Toyota, Mitsubishi)",
+        "Growing electronics manufacturing",
+        "Government focus on industrialization"
       ],
-      "rationale": "Poland is a growing manufacturing hub, particularly in automotive and industrial machinery. However, advanced precision engineering roles focused on R&D and innovation are negligible, with the focus on production and assembly."
+      "rationale": "Indonesia has a large manufacturing sector, particularly in automotive and electronics assembly. However, advanced precision engineering and frontier R&D are still in early stages, with most roles being applied rather than specialist or expert."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "low",
+      "evidence": [
+        "Mubadala Investment Company (investments in aerospace, technology)",
+        "Khalifa University (research in advanced materials, robotics)",
+        "Some aerospace MRO (Maintenance, Repair, and Overhaul) facilities"
+      ],
+      "rationale": "The UAE is actively diversifying its economy and investing in high-tech sectors, but its advanced precision engineering capabilities are still nascent. There's a growing R&D base, but the volume of advanced roles is currently very low."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "low",
+      "evidence": [
+        "KAUST (King Abdullah University of Science and Technology)",
+        "Aramco (investments in industrial technologies)",
+        "Vision 2030 initiatives for industrial diversification",
+        "Developing defense industry"
+      ],
+      "rationale": "Saudi Arabia is making significant investments in industrial diversification and R&D through Vision 2030. While there's a strong intent to build advanced manufacturing, the current volume of advanced precision engineering roles and frontier R&D is still very low, largely in foundational stages."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "Embraer (aerospace industry)",
+        "Petrobras (some industrial technology development)",
+        "University of S\u00e3o Paulo (USP)",
+        "State University of Campinas (Unicamp)"
+      ],
+      "rationale": "Brazil has a large industrial base, but advanced precision engineering is concentrated in specific sectors like aerospace (Embraer). Overall R&D investment is lower, leading to a very low volume of frontier roles, with most precision engineering being applied."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "Major automotive component suppliers (e.g., Bosch, Siemens factories)",
+        "Growing R&D centers for multinational corporations",
+        "Warsaw University of Technology",
+        "National Centre for Research and Development"
+      ],
+      "rationale": "Poland has become a significant manufacturing hub, particularly for automotive components and electronics. This drives a demand for precision engineering in production and process optimization. While R&D is growing, frontier work is still limited compared to Western European leaders."
     }
   ]
 }

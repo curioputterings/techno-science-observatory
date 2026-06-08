@@ -49,39 +49,43 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
         asum = ambition.run(taxonomy.ALL_DOMAINS, as_of)
         log(f"    ambition per-domain: {asum}")
     else:
-        log("--- snapshot-only: skipping Gemini refresh ---")
+        # snapshot-only is truly offline: no Gemini, no ATS/OpenAlex, no BigQuery.
+        # It just copies the cells already in the DB into cell_history.
+        log("--- snapshot-only: skipping all collectors (Gemini/ATS/OpenAlex/BigQuery) ---")
 
-    # cross-border footprint always refreshes (free ATS, no key needed)
-    try:
-        from ats import footprint
-        fsum = footprint.run()
-        log(f"    footprint: {fsum}")
-    except Exception as e:  # noqa: BLE001
-        log(f"    [warn] footprint refresh failed: {e!r}")
+    if not skip_api:
+        # cross-border footprint always refreshes (free ATS, no key needed)
+        try:
+            from ats import footprint
+            fsum = footprint.run()
+            log(f"    footprint: {fsum}")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] footprint refresh failed: {e!r}")
 
-    # publications triangulation layer (free OpenAlex, no key)
-    try:
-        from research_sources import publications
-        psum = publications.run(year=dt.date.today().year - 1)
-        log(f"    publications: {psum}")
-    except Exception as e:  # noqa: BLE001
-        log(f"    [warn] publications refresh failed: {e!r}")
+        # publications triangulation layer (free OpenAlex, no key)
+        try:
+            from research_sources import publications
+            psum = publications.run(year=dt.date.today().year - 1)
+            log(f"    publications: {psum}")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] publications refresh failed: {e!r}")
 
-    # patents layer — prefer BigQuery if configured, else EPO OPS, else skip.
-    pat_year = dt.date.today().year - 3  # patents lag a few years
-    try:
-        from research_sources import patents_bq
-        if patents_bq.ready():
-            log(f"    patents (BigQuery): {patents_bq.run(year=pat_year)}")
-        else:
-            import time as _time
-            from research_sources import patents
-            if patents.ready():
-                log(f"    patents (EPO OPS): {patents.run(year=pat_year, now=_time.time())}")
+        # patents layer — prefer BigQuery if configured, else EPO OPS, else skip.
+        # NOTE: BigQuery scans ~162 GB/year against the 1 TB/month free tier.
+        pat_year = dt.date.today().year - 3  # patents lag a few years
+        try:
+            from research_sources import patents_bq
+            if patents_bq.ready():
+                log(f"    patents (BigQuery): {patents_bq.run(year=pat_year)}")
             else:
-                log("    patents: skipped (no BigQuery or EPO OPS creds in .env)")
-    except Exception as e:  # noqa: BLE001
-        log(f"    [warn] patents refresh failed: {e!r}")
+                import time as _time
+                from research_sources import patents
+                if patents.ready():
+                    log(f"    patents (EPO OPS): {patents.run(year=pat_year, now=_time.time())}")
+                else:
+                    log("    patents: skipped (no BigQuery or EPO OPS creds in .env)")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] patents refresh failed: {e!r}")
 
     store = Store()
     n = store.snapshot(as_of)

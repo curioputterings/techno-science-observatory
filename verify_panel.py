@@ -7,7 +7,9 @@ from store import DB_PATH
 
 c = sqlite3.connect(DB_PATH)
 c.row_factory = sqlite3.Row
-rows = [dict(r) for r in c.execute("SELECT * FROM cells")]
+# capability formula only applies to the Gemini estimate layer; counted sources
+# (ats/patents/publications) carry NULL band fields, so filter to gemini_research.
+rows = [dict(r) for r in c.execute("SELECT * FROM cells WHERE source='gemini_research'")]
 c.close()
 
 out = []

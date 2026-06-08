@@ -12,13 +12,13 @@
         "OpenAI",
         "Google DeepMind",
         "Meta AI",
-        "Microsoft Research",
+        "Microsoft AI",
         "NVIDIA",
-        "Stanford University",
-        "Carnegie Mellon University (CMU)",
-        "MIT"
+        "Stanford University AI Lab",
+        "Carnegie Mellon University (CMU) AI",
+        "MIT CSAIL"
       ],
-      "rationale": "The US is the global leader in AI, with a massive ecosystem of research, development, and commercialization. It boasts a very high volume of advanced roles across all skill levels, with significant frontier R&D driven by major tech companies, startups, and top-tier academic institutions."
+      "rationale": "The US is the global leader in AI research and development, hosting the largest concentration of major tech companies, leading research institutions, and a vibrant startup ecosystem. This drives very high hiring volume across all skill levels, with significant demand for frontier R&D roles."
     },
     {
       "country_iso": "CN",
@@ -28,51 +28,47 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Baidu Research",
+        "Baidu AI",
         "Alibaba DAMO Academy",
         "Tencent AI Lab",
-        "Huawei",
+        "Huawei Noah's Ark Lab",
         "SenseTime",
-        "Tsinghua University",
-        "Peking University",
-        "National AI Strategy"
+        "Megvii",
+        "National AI Development Plan"
       ],
-      "rationale": "China has made AI a national strategic priority, leading to massive investment and a large talent pool. There's a strong presence of major tech companies and top universities conducting advanced research, resulting in a very high volume of roles, particularly for specialists and experts, with significant frontier contributions."
+      "rationale": "China has made massive strategic investments in AI, fostering a rapidly growing ecosystem with major tech giants and numerous startups. While strong in applied and specialist roles, its frontier research is also highly significant, particularly in areas like computer vision and NLP."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "RIKEN Center for Advanced Intelligence Project (AIP)",
-        "Fujitsu AI Lab",
-        "NEC AI",
+        "AIST",
         "Sony AI",
-        "Toyota Research Institute (TRI-AD/Woven Planet)",
-        "University of Tokyo"
+        "Toyota Research Institute (TRI)",
+        "Fujitsu AI"
       ],
-      "rationale": "Japan has a strong foundation in robotics and automation, which naturally extends to AI. While there's significant industrial application and some specialist roles, the pure frontier AI research volume and overall advanced hiring are moderate compared to global leaders."
+      "rationale": "Japan has a strong foundation in robotics and industrial automation, with growing investment in AI. The volume is medium, with a focus on applied and specialist roles, and some notable frontier research in specific domains like robotics and materials science."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
-      "skill_level": 4,
+      "skill_level": 3,
       "frontier": 0.6,
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
-        "Samsung AI Research",
+        "Samsung AI Center",
         "LG AI Research",
         "Naver AI Lab",
         "Kakao Brain",
-        "Hyundai Motor Group",
-        "KAIST",
-        "Seoul National University"
+        "KAIST AI"
       ],
-      "rationale": "South Korea is a tech powerhouse with major conglomerates investing heavily in AI, particularly in areas relevant to their core businesses (semiconductors, consumer electronics, automotive). Strong academic research contributes to a medium volume of specialist and expert roles, with notable frontier work."
+      "rationale": "South Korea demonstrates strong government support and significant investment from its major conglomerates in AI. The market has a medium volume of roles, with a solid base in applied and specialist areas, and a growing presence in expert and frontier research."
     },
     {
       "country_iso": "TW",
@@ -82,47 +78,43 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "TSMC",
+        "TSMC (AI chip design)",
         "MediaTek",
         "Industrial Technology Research Institute (ITRI)",
-        "National Taiwan University",
-        "NVIDIA's presence"
+        "National Taiwan University AI"
       ],
-      "rationale": "Taiwan's strength in semiconductors provides a foundation for AI hardware. There's a growing focus on applying AI in manufacturing and chip design, with some emerging research capabilities, leading to a low volume of advanced roles."
+      "rationale": "Taiwan's strength lies in its semiconductor and hardware industry, which is increasingly integrating AI. The job market for advanced AI roles is low but growing, primarily focused on applied and specialist roles, with some frontier work in AI hardware and co-design."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Fraunhofer Institutes (e.g., IAIS)",
-        "Max Planck Institutes (e.g., for Intelligent Systems)",
+        "Max Planck Institutes",
         "German Research Center for Artificial Intelligence (DFKI)",
         "Bosch Center for AI",
-        "Siemens AI Lab",
-        "Technical University of Munich"
+        "Siemens AI"
       ],
-      "rationale": "Germany has a robust research landscape and strong industrial players integrating AI into their products and processes, especially in automotive, manufacturing, and robotics. Significant government funding for AI research supports a medium volume of specialist and expert roles, with strong frontier contributions."
+      "rationale": "Germany has a robust industrial base and strong research institutions, with significant investment in AI for manufacturing, automotive, and healthcare. It boasts a high volume of roles, strong in specialist and expert levels, with substantial frontier research."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "University of Amsterdam (UvA - Delta Lab)",
-        "Radboud University",
-        "TU Delft",
+        "University of Amsterdam (UvA) AI",
+        "TU Delft AI",
         "Philips Research",
-        "ASML",
-        "Netherlands AI Coalition (NLAIC)"
+        "NL AI Coalition"
       ],
-      "rationale": "The Netherlands has a vibrant academic scene and a growing number of AI startups. Focus areas include responsible AI, medical imaging, and logistics, with some strong research groups, leading to a low volume of advanced roles."
+      "rationale": "The Netherlands has a growing tech scene and strong academic research, with a focus on responsible AI and medical AI. The market has a medium volume of roles, primarily applied and specialist, with some notable expert and frontier contributions."
     },
     {
       "country_iso": "GB",
@@ -133,121 +125,107 @@
       "confidence": "high",
       "evidence": [
         "Google DeepMind (London)",
-        "Meta AI (London)",
-        "Microsoft Research (Cambridge)",
         "The Alan Turing Institute",
-        "University of Oxford",
-        "University of Cambridge",
-        "UCL"
+        "University of Oxford AI",
+        "University of Cambridge AI",
+        "University of Edinburgh AI"
       ],
-      "rationale": "The UK is a major global hub for AI, particularly in London and Cambridge. It boasts world-leading academic institutions and significant investment from global tech giants, fostering both applied and frontier research, resulting in a high volume of advanced roles."
+      "rationale": "The UK is a major European AI hub, particularly London, with world-class universities and the birthplace of DeepMind. It has a high volume of roles across all levels, with significant expert and frontier research capabilities."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 4,
+      "skill_level": 3,
       "frontier": 0.6,
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
-        "INRIA",
+        "Inria",
         "CNRS",
-        "Google AI Paris",
-        "Meta AI Paris",
+        "Mistral AI",
         "Institut Polytechnique de Paris",
-        "Universit\u00e9 Paris-Saclay",
-        "\u00c9cole Normale Sup\u00e9rieure",
-        "National AI Strategy ('AI for Humanity')"
+        "National AI Strategy"
       ],
-      "rationale": "France has a strong tradition in mathematics and computer science, translating into robust AI research. Government initiatives and the presence of major tech company labs contribute to a dynamic ecosystem with significant frontier potential and a medium volume of specialist and expert roles."
+      "rationale": "France has a strong government push for AI development and a good research base, with a growing startup ecosystem. The market has a medium volume of roles, with a solid foundation in applied and specialist areas, and emerging expert and frontier contributions."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Mobileye (Intel)",
-        "NVIDIA Research",
-        "IBM Research",
-        "Google AI",
-        "Microsoft R&D",
-        "Technion",
+        "Technion AI",
         "Weizmann Institute of Science",
-        "Tel Aviv University"
+        "Intel AI Israel",
+        "NVIDIA Israel (Mellanox)",
+        "Mobileye"
       ],
-      "rationale": "Israel is a 'startup nation' with a high density of R&D centers and a strong focus on deep tech, including AI. Significant investment in areas like autonomous driving, cybersecurity, and computer vision drives a low volume of highly skilled, often frontier-level, roles."
+      "rationale": "Israel, the 'Startup Nation,' has a highly innovative tech sector with a strong focus on R&D, including AI for cybersecurity, defense, and medical applications. It has a medium volume of roles but a high concentration of specialist and expert talent, with significant frontier research."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "TCS Research",
-        "Wipro AI",
-        "Infosys",
-        "Google India",
-        "Microsoft India",
-        "Amazon India",
-        "IITs (e.g., Bombay, Delhi)",
-        "IISc Bangalore"
+        "IITs (Indian Institutes of Technology)",
+        "IISc (Indian Institute of Science)",
+        "TCS, Infosys, Wipro (AI divisions)",
+        "Google India AI",
+        "Microsoft India AI"
       ],
-      "rationale": "India has a vast pool of IT talent and is a major hub for global tech companies' R&D and engineering centers. While much of the volume is in applied AI, there's a growing push for advanced research in top institutions and corporate labs, leading to a high volume of roles, predominantly applied and specialist."
+      "rationale": "India possesses a vast talent pool and a rapidly expanding IT services industry, leading to a high volume of AI roles, particularly in applied and specialist areas. While frontier research is emerging, it's less concentrated than in leading nations."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "high",
+      "evidence": [
+        "AI Singapore",
+        "A*STAR (Agency for Science, Technology and Research)",
+        "National University of Singapore (NUS) AI",
+        "Nanyang Technological University (NTU) AI",
+        "Google AI Singapore"
+      ],
+      "rationale": "Singapore is a regional AI hub with strong government investment and excellent research institutions. It has a medium volume of roles, strong in applied and specialist areas, with a growing presence in expert and frontier research."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
       "volume_band": "low",
       "skill_level": 4,
       "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "AI Singapore (AISG)",
-        "Agency for Science, Technology and Research (A*STAR)",
-        "National University of Singapore (NUS)",
-        "Nanyang Technological University (NTU)",
-        "Google AI",
-        "Grab AI Lab"
-      ],
-      "rationale": "Singapore has a highly strategic approach to AI, with significant government investment and a focus on becoming a regional AI hub. Strong academic institutions and corporate labs contribute to advanced research and a low volume of high-skill roles."
-    },
-    {
-      "country_iso": "CH",
-      "country_name": "Switzerland",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
-      "evidence": [
-        "ETH Zurich",
-        "EPFL",
-        "IDSIA",
-        "Google AI Zurich",
+        "ETH Zurich AI",
+        "EPFL AI",
         "IBM Research Zurich",
-        "Swiss AI Initiative"
+        "Idiap Research Institute",
+        "Google AI Zurich"
       ],
-      "rationale": "Switzerland, despite its size, is a powerhouse in academic research, particularly at ETH Zurich and EPFL. It attracts top talent and hosts significant corporate AI research labs, leading to high-quality, frontier-level work, though the overall volume is very low."
+      "rationale": "Switzerland has a smaller market but boasts extremely high-quality research and a concentration of expert talent, particularly in specific niches like finance and pharma AI. It has a low volume of roles but significant frontier contributions."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "AI Sweden",
-        "Ericsson Research",
-        "Spotify",
-        "KTH Royal Institute of Technology",
-        "Chalmers University of Technology"
+        "KTH Royal Institute of Technology AI",
+        "Chalmers University of Technology AI",
+        "Ericsson AI",
+        "AI Sweden"
       ],
-      "rationale": "Sweden has a strong tech and innovation ecosystem, with a growing focus on AI, particularly in areas like telecommunications, gaming, and industrial applications. Academic research is solid, but overall volume for advanced roles is very low."
+      "rationale": "Sweden has a strong tradition of tech innovation, with a focus on industrial AI, automotive, and telecom. The market has a low volume of roles, primarily applied and specialist, with some expert contributions and emerging frontier research."
     },
     {
       "country_iso": "FI",
@@ -257,13 +235,12 @@
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Finnish Center for Artificial Intelligence (FCAI)",
-        "University of Helsinki",
-        "Aalto University",
+        "University of Helsinki AI",
+        "Aalto University AI",
         "VTT Technical Research Centre of Finland",
         "Nokia Bell Labs"
       ],
-      "rationale": "Finland has a strong academic foundation in AI and a focus on ethical AI and specific applications. The overall market volume is small, but the quality of research is high, leading to a very low volume of advanced roles."
+      "rationale": "Finland has strengths in specific tech areas like telecom and gaming, with a smaller overall AI market. Volume is very low, with roles mainly in applied and specialist areas, and limited frontier research."
     },
     {
       "country_iso": "CA",
@@ -273,15 +250,14 @@
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Mila (Montreal Institute for Learning Algorithms - Yoshua Bengio)",
+        "Mila (Quebec AI Institute)",
         "Vector Institute (Toronto)",
         "Amii (Alberta Machine Intelligence Institute)",
-        "Google AI",
-        "Meta AI",
-        "University of Toronto",
-        "McGill University"
+        "University of Toronto AI",
+        "McGill University AI",
+        "Google Brain Montreal"
       ],
-      "rationale": "Canada has strategically invested in AI research, creating world-leading hubs like Mila and the Vector Institute. This has attracted top talent and corporate R&D, leading to significant frontier work and a medium volume of specialist and expert roles."
+      "rationale": "Canada has become a global leader in AI research, particularly in deep learning, thanks to strong government support and world-renowned research hubs. It has a medium volume of roles, with a high concentration of expert and frontier talent."
     },
     {
       "country_iso": "AU",
@@ -292,13 +268,11 @@
       "confidence": "medium",
       "evidence": [
         "CSIRO's Data61",
-        "Australian Institute for Machine Learning (AIML)",
-        "University of Sydney",
-        "UNSW",
-        "Australian National University (ANU)",
-        "National AI Strategy"
+        "University of New South Wales (UNSW) AI",
+        "University of Melbourne AI",
+        "Australian National University (ANU) AI"
       ],
-      "rationale": "Australia is increasing its investment in AI, leveraging its strengths in specific industries (e.g., mining, agriculture, healthcare). Academic research is strong, and there's a growing ecosystem, but the overall volume for advanced roles remains low."
+      "rationale": "Australia's tech sector is growing, with government investment in AI for resources, agriculture, and healthcare. The market has a low volume of roles, primarily applied and specialist, with some emerging expert and frontier research."
     },
     {
       "country_iso": "IE",
@@ -308,148 +282,137 @@
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "ADAPT Centre for AI-Driven Digital Content Technology",
-        "Insight SFI Research Centre for Data Analytics",
-        "Google",
-        "Microsoft",
-        "IBM",
-        "Intel"
+        "ADAPT Centre",
+        "SFI Research Centres",
+        "Google Ireland (AI teams)",
+        "Microsoft Ireland (AI teams)"
       ],
-      "rationale": "Ireland hosts many EMEA headquarters for global tech companies, leading to a demand for AI talent. While much of it is in applied roles, there's a growing focus on research through academic centers and corporate R&D, resulting in a low volume of advanced roles."
+      "rationale": "Ireland serves as a European HQ for many US tech giants, leading to a strong data science presence and growing AI adoption. The volume of advanced AI roles is low, mainly in applied and specialist areas, with limited frontier research."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.2,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "KU Leuven (AI Institute)",
-        "Ghent University (IDLab)",
+        "KU Leuven AI",
+        "Ghent University AI",
         "imec",
-        "VUB AI Lab"
+        "AI4Belgium"
       ],
-      "rationale": "Belgium has solid academic institutions conducting AI research, particularly in areas like machine learning and data science. The overall market volume for advanced roles is smaller, but there's a steady demand for skilled professionals."
+      "rationale": "Belgium has a good research base but a smaller overall market for advanced AI roles. The volume is very low, with most roles in applied areas and very limited frontier research."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.2,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "TU Wien",
-        "Graz University of Technology",
-        "Johannes Kepler University Linz (LIT AI Lab)",
-        "IST Austria"
+        "TU Wien AI",
+        "IST Austria",
+        "Linz Institute of Technology (LIT)"
       ],
-      "rationale": "Austria has strong technical universities and research institutes contributing to AI, often with a focus on industrial applications and robotics. The market for advanced AI roles is smaller but growing, leading to a very low volume."
+      "rationale": "Austria has strong academic institutions but a relatively small market for advanced AI jobs. Volume is very low, with roles primarily in applied areas and very limited frontier research."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "Italian Institute of Technology (IIT)",
-        "Politecnico di Milano",
-        "Sapienza University of Rome",
-        "CINI AIIS (National Laboratory of Artificial Intelligence and Intelligent Systems)"
+        "Sapienza University of Rome AI",
+        "Politecnico di Milano AI"
       ],
-      "rationale": "Italy has a developing AI ecosystem. While there's academic interest and some industrial adoption, the overall volume and frontier research for advanced AI roles are still relatively nascent compared to other European nations."
+      "rationale": "Italy shows growing interest in AI, but adoption and job market maturity are slower compared to other major European economies. Volume is low, with roles mainly in applied areas and nascent specialist and frontier efforts."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "Barcelona Supercomputing Center (BSC)",
-        "Universitat Polit\u00e8cnica de Catalunya (UPC)",
-        "CSIC",
-        "National AI Strategy"
+        "Universitat Polit\u00e8cnica de Catalunya (UPC) AI",
+        "Plan Nacional de IA"
       ],
-      "rationale": "Spain is investing in AI, with a focus on developing its research capabilities and startup ecosystem. The market for advanced AI roles is still in its early stages, resulting in a very low volume."
+      "rationale": "Spain has a developing tech scene and government initiatives to boost AI, but the advanced AI job market is still maturing. Volume is low, with roles predominantly in applied areas and limited frontier research."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Malaysia Digital Economy Corporation (MDEC)",
-        "MIMOS Berhad",
-        "Local universities"
+        "MyDIGITAL blueprint",
+        "local universities (e.g., Universiti Malaya)"
       ],
-      "rationale": "Malaysia is actively promoting digital transformation and AI adoption, but the advanced AI job market is still nascent, primarily focused on applied solutions rather than frontier research, leading to a very low volume."
+      "rationale": "Malaysia is an emerging market with government efforts to promote digital transformation, but the advanced AI job market is still nascent. Volume is very low, with roles primarily at entry to applied levels, and negligible frontier research."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "VinAI Research",
+        "VinAI Research (VinGroup)",
         "FPT AI",
-        "Vingroup",
-        "National AI Strategy"
+        "National Digital Transformation Strategy"
       ],
-      "rationale": "Vietnam has a booming tech sector and strong government backing for AI development. While there's significant growth in applied AI, frontier research is still in early stages, with VinAI being a notable exception, resulting in a very low volume of advanced roles."
+      "rationale": "Vietnam has a rapidly growing tech sector and strong government support for digital transformation. While AI adoption is increasing, the advanced AI job market is still very low, focused on entry to applied roles, with minimal frontier research."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
         "AI Thailand",
-        "National Science and Technology Development Agency (NSTDA)",
-        "Chulalongkorn University"
+        "Government Digital Economy Initiatives"
       ],
-      "rationale": "Thailand is investing in its digital economy and AI capabilities, but the advanced AI job market is still developing, with a focus on practical applications rather than frontier research, leading to a very low volume."
+      "rationale": "Thailand is an emerging market with a focus on digital transformation. The advanced AI job market is very low, with roles primarily at entry to applied levels, and negligible frontier research."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Gojek",
-        "Tokopedia",
-        "Traveloka",
-        "Local universities",
-        "Government digital initiatives"
+        "Gojek (AI teams)",
+        "Tokopedia (AI teams)",
+        "National Digital Strategy"
       ],
-      "rationale": "Indonesia has a massive digital economy and a rapidly growing tech sector. AI adoption is increasing, particularly in consumer tech, but advanced research roles are limited, resulting in a very low volume."
+      "rationale": "Indonesia has a large population and a growing digital economy, but its AI talent pool and advanced AI job market are still nascent. Volume is very low, with roles mainly at entry to applied levels, and negligible frontier research."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
         "G42",
-        "UAE AI Strategy 2031",
-        "Dubai Future Foundation"
+        "UAE National AI Strategy"
       ],
-      "rationale": "The UAE has a highly ambitious national AI strategy and has established institutions like MBZUAI to foster advanced research and talent. While the overall volume is still low, the quality and frontier potential are rapidly increasing, leading to a very low volume of specialist roles."
+      "rationale": "The UAE has an ambitious national AI strategy and significant investment, but a smaller local talent pool, often relying on expatriates. Volume is low, with roles in applied and specialist areas, and some emerging frontier research driven by specific institutions."
     },
     {
       "country_iso": "SA",
@@ -459,12 +422,11 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Saudi Data and AI Authority (SDAIA)",
-        "King Abdullah University of Science and Technology (KAUST)",
-        "NEOM",
-        "Vision 2030"
+        "Saudi Data & AI Authority (SDAIA)",
+        "NEOM (AI initiatives)",
+        "King Abdullah University of Science and Technology (KAUST) AI"
       ],
-      "rationale": "Saudi Arabia is making substantial investments in AI as part of its Vision 2030. While the ecosystem is still developing, there's a strong government push and emerging research capabilities, particularly at KAUST, resulting in a very low volume of advanced roles."
+      "rationale": "Saudi Arabia is making significant investments under Vision 2030 to develop its tech sector, including AI. However, the advanced AI ecosystem is still nascent. Volume is very low, with roles primarily at entry to applied levels, and limited frontier research."
     },
     {
       "country_iso": "BR",
@@ -474,27 +436,25 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "University of S\u00e3o Paulo (USP)",
-        "State University of Campinas (Unicamp)",
-        "Federal University of Minas Gerais (UFMG)",
+        "University of S\u00e3o Paulo (USP) AI",
+        "University of Campinas (Unicamp) AI",
         "National AI Strategy"
       ],
-      "rationale": "Brazil has a large and developing tech market with a growing interest in AI. Academic research is present, but the overall volume of advanced AI roles and frontier research is still moderate, leading to a low volume of primarily applied roles."
+      "rationale": "Brazil, as the largest economy in Latin America, has a growing tech scene, but its AI maturity is still developing. Volume is low, with roles mainly in applied areas and nascent specialist and frontier efforts."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.2,
-      "confidence": "medium",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "NASK (National Research Institute)",
-        "Polish Academy of Sciences",
-        "Warsaw University of Technology",
-        "AGH University of Science and Technology"
+        "Polish National Centre for AI",
+        "Warsaw University of Technology AI",
+        "AGH University of Science and Technology AI"
       ],
-      "rationale": "Poland has a strong base of IT talent and a growing tech sector. Academic institutions are actively involved in AI research, and there's increasing corporate adoption, leading to a steady but very low volume of specialist roles."
+      "rationale": "Poland is a growing tech hub in Central and Eastern Europe with strong IT talent. However, its advanced AI market is still maturing. Volume is low, with roles primarily in applied areas and limited frontier research."
     }
   ]
 }

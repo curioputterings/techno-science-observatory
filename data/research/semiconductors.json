@@ -9,158 +9,151 @@
       "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "Intel (fabs, design)",
-        "NVIDIA (GPU design)",
-        "Qualcomm (mobile SoCs)",
-        "AMD (CPUs, GPUs)",
-        "Broadcom",
-        "Micron (memory)",
-        "Texas Instruments",
-        "Applied Materials (equipment)",
-        "Lam Research (equipment)",
-        "KLA (equipment)",
-        "IBM Research",
-        "Google (TPU design)",
-        "Apple (M-series design)",
-        "Stanford University",
-        "UC Berkeley",
-        "MIT"
+        "Intel (design, manufacturing)",
+        "Qualcomm (design)",
+        "NVIDIA (design)",
+        "AMD (design)",
+        "Broadcom (design)",
+        "Apple (design)",
+        "Google (design)",
+        "Amazon (design)",
+        "TSMC Arizona (manufacturing)",
+        "MIT, Stanford, Berkeley (academic R&D)",
+        "SRC, DARPA (research funding)"
       ],
-      "rationale": "The US is a global leader across the entire semiconductor value chain, from fundamental research and chip design (CPU, GPU, AI accelerators) to advanced manufacturing equipment and some leading-edge fabrication. It hosts numerous major companies, startups, and top-tier research institutions driving frontier innovation."
+      "rationale": "The US is a global leader in semiconductor design, IP, and advanced R&D, with significant manufacturing investments. It hosts numerous frontier design houses, major foundries, and leading academic research institutions."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 4,
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "SMIC (foundry)",
-        "Huawei (HiSilicon design)",
-        "Yangtze Memory Technologies (YMTC)",
+        "Huawei HiSilicon (design)",
+        "Yangtze Memory Technologies Co (YMTC)",
         "Changxin Memory Technologies (CXMT)",
-        "Naura (equipment)",
-        "AMEC (equipment)",
-        "National IC Industry Investment Fund",
-        "Tsinghua University"
+        "Tsinghua Unigroup",
+        "Numerous provincial fabs and design houses",
+        "Government initiatives (Made in China 2025)"
       ],
-      "rationale": "China has made massive strategic investments to achieve semiconductor self-sufficiency, leading to a very high volume of advanced roles in design, manufacturing, and equipment. While rapidly advancing, its frontier R&D often builds on global foundations, though it shows strong progress in areas like advanced packaging and specific materials."
+      "rationale": "China has made massive investments in developing its domestic semiconductor industry, with a strong focus on self-sufficiency in design and manufacturing. While still catching up in advanced lithography, it has a rapidly growing ecosystem and significant R&D efforts."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Tokyo Electron (TEL - equipment)",
-        "Renesas (microcontrollers)",
-        "Kioxia (NAND flash)",
-        "Sony (image sensors)",
-        "Canon (lithography, equipment)",
-        "Nikon (lithography, equipment)",
-        "JSR (materials)",
+        "Tokyo Electron (equipment)",
         "Shin-Etsu Chemical (materials)",
-        "Rapidus (new foundry initiative)"
+        "Sumco (materials)",
+        "Renesas (design, manufacturing)",
+        "Sony (specialized devices)",
+        "Kioxia (memory)",
+        "Nikon, Canon (lithography equipment)",
+        "Rapidus (advanced logic manufacturing initiative)",
+        "AIST, Tohoku University (academic R&D)"
       ],
-      "rationale": "Japan remains a powerhouse in critical semiconductor materials, manufacturing equipment, and specialized components (e.g., image sensors, power electronics). It has a strong R&D base, particularly in materials science and precision engineering, contributing significantly to the global frontier."
+      "rationale": "Japan remains critical in semiconductor materials and equipment. It has strong specialized device manufacturing and is making a concerted effort with Rapidus to re-enter advanced logic manufacturing, backed by significant R&D."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Samsung Electronics (memory, foundry, logic design)",
+        "Samsung Electronics (foundry, memory, design)",
         "SK Hynix (memory)",
-        "Pyeongtaek fabs (Samsung)",
-        "Icheon/Cheongju fabs (SK Hynix)",
-        "KAIST"
+        "Numerous fabless design companies",
+        "KAIST, Seoul National University (academic R&D)"
       ],
-      "rationale": "South Korea is a global leader in memory (DRAM, NAND) and advanced foundry manufacturing, driven by Samsung and SK Hynix. It invests heavily in R&D, pushing the boundaries of process technology, device architecture, and advanced packaging, with a strong presence at the technological frontier."
+      "rationale": "South Korea is a global powerhouse in memory and advanced foundry manufacturing, driven by Samsung and SK Hynix. These companies invest heavily in frontier R&D, pushing the boundaries of process technology and device performance."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "TSMC (foundry)",
-        "MediaTek (chip design)",
+        "MediaTek (design)",
         "UMC (foundry)",
-        "ASE Technology Holding (packaging)",
-        "Siliconware Precision Industries (SPIL - packaging)",
-        "Hsinchu Science Park"
+        "ASE, SPIL (packaging and test)",
+        "ITRI (research institute)",
+        "National Taiwan University (academic R&D)"
       ],
-      "rationale": "Taiwan is the undisputed global leader in advanced semiconductor manufacturing (foundry) and packaging, primarily through TSMC. Its ecosystem, including major design houses and OSATs, operates at the absolute cutting edge of process technology and advanced packaging, making it a critical frontier player."
+      "rationale": "Taiwan is the undisputed global leader in advanced foundry manufacturing (TSMC) and packaging. It has a robust design ecosystem and continuous innovation in process technology, making it central to the global semiconductor supply chain."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "skill_level": 4,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Infineon Technologies (power semiconductors, automotive)",
+        "Infineon (automotive, power semiconductors)",
         "Bosch (automotive semiconductors)",
-        "GlobalFoundries (Dresden fab)",
-        "Fraunhofer Institutes (e.g., IIS, IPMS)",
-        "Saxony 'Silicon Saxony' cluster"
+        "Zeiss (optics for ASML EUV systems)",
+        "Fraunhofer Institutes (applied research)",
+        "TU Dresden (academic R&D)",
+        "Intel Magdeburg (upcoming fab investment)"
       ],
-      "rationale": "Germany has a strong presence in specialized semiconductors, particularly for automotive and industrial applications, with significant manufacturing and R&D capabilities. While not leading in general logic/memory nodes, it contributes to the frontier in power electronics, sensors, and specialized materials research."
+      "rationale": "Germany has strong capabilities in automotive and power semiconductors, specialized equipment (Zeiss for ASML), and significant R&D. Intel's planned fab further boosts its advanced manufacturing presence."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "ASML (lithography equipment)",
-        "NXP Semiconductors (automotive, IoT)",
-        "ASM International (deposition equipment)",
-        "Eindhoven University of Technology"
+        "ASML (EUV lithography equipment)",
+        "NXP (automotive, IoT semiconductors)",
+        "TNO (applied research)",
+        "TU Delft, Eindhoven University of Technology (academic R&D)"
       ],
-      "rationale": "The Netherlands is home to ASML, the global monopoly in EUV lithography, which is absolutely critical for advanced chip manufacturing. This places the country at the pinnacle of semiconductor equipment technology and frontier R&D, despite a smaller overall industrial footprint than some other leaders."
+      "rationale": "The Netherlands is home to ASML, a critical frontier player in EUV lithography, and NXP, a major automotive chip supplier. While the overall hiring volume might be lower than broader ecosystems, the skill level and frontier R&D are exceptionally high."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "frontier": 0.5,
+      "confidence": "high",
       "evidence": [
-        "ARM (CPU architecture IP)",
-        "Imagination Technologies (GPU IP)",
-        "Plessey Semiconductors (niche manufacturing)",
-        "University of Cambridge",
-        "University of Manchester"
+        "ARM Holdings (IP design)",
+        "Imagination Technologies (IP design)",
+        "University of Cambridge, University of Manchester (academic R&D)",
+        "National Graphene Institute (materials research)"
       ],
-      "rationale": "The UK excels in semiconductor intellectual property (IP) design, notably with ARM's foundational CPU architectures. It has a strong ecosystem of design houses and academic research, contributing to the frontier in chip architecture, but lacks significant advanced manufacturing capabilities."
+      "rationale": "The UK excels in semiconductor IP design (ARM) and has a strong academic research base in advanced materials and quantum computing, but lacks significant advanced manufacturing capabilities."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (Crolles fab, R&D)",
+        "STMicroelectronics (design, manufacturing - Crolles)",
         "Soitec (SOI wafers)",
         "CEA-Leti (research institute)",
-        "Grenoble 'Minatec' cluster"
+        "Grenoble INP (academic R&D)"
       ],
-      "rationale": "France has a strong research base, particularly through CEA-Leti, and specialized materials expertise with Soitec. STMicroelectronics maintains significant R&D and manufacturing operations. It contributes to the frontier in advanced materials, specialized device research, and some integrated device manufacturing."
+      "rationale": "France has a notable presence through STMicroelectronics and specialized materials company Soitec. CEA-Leti is a significant research institute, contributing to advanced microelectronics R&D."
     },
     {
       "country_iso": "IL",
@@ -170,12 +163,14 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Intel (design centers, some fab operations)",
-        "Tower Semiconductor (foundry)",
-        "Numerous AI/ML chip startups (e.g., Habana Labs, acquired by Intel)",
-        "Technion \u2013 Israel Institute of Technology"
+        "Intel (design centers in Haifa, Petah Tikva)",
+        "NVIDIA (design centers)",
+        "Qualcomm (design centers)",
+        "Apple (design centers)",
+        "Mobileye (autonomous driving chips)",
+        "Technion, Weizmann Institute (academic R&D)"
       ],
-      "rationale": "Israel is a hub for high-level chip design, R&D, and innovation, particularly in areas like AI accelerators, advanced computing, and specialized processors. It hosts major design centers for global companies and a vibrant startup scene, contributing significantly to the design frontier."
+      "rationale": "Israel is a major hub for chip design, particularly in areas like AI, autonomous driving, and specialized processors, hosting significant R&D centers for global tech giants and a vibrant startup scene."
     },
     {
       "country_iso": "IN",
@@ -185,226 +180,228 @@
       "frontier": 0.3,
       "confidence": "high",
       "evidence": [
-        "Design centers for Intel, Qualcomm, NVIDIA, Broadcom, Texas Instruments",
-        "Wipro, HCLTech (design services)",
-        "Indian Institutes of Technology (IITs)",
-        "India Semiconductor Mission"
+        "Intel India (design center)",
+        "Qualcomm India (design center)",
+        "NVIDIA India (design center)",
+        "AMD India (design center)",
+        "Texas Instruments India (design center)",
+        "Numerous IITs (academic R&D)",
+        "ISRO (space electronics)"
       ],
-      "rationale": "India has a very large and growing talent pool in chip design services, verification, and embedded systems, hosting major design centers for nearly all global semiconductor companies. While the volume of advanced roles is high, core frontier R&D in process technology or leading-edge architecture is still nascent, though government initiatives aim to change this."
+      "rationale": "India is a massive global hub for semiconductor design services, verification, and embedded software, hosting large R&D centers for nearly all major semiconductor companies. While manufacturing is nascent, design talent volume is very high."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "GlobalFoundries (fab)",
-        "Micron Technology (fab)",
-        "STMicroelectronics (fab)",
+        "GlobalFoundries (foundry)",
+        "Micron (memory manufacturing)",
+        "STMicroelectronics (manufacturing)",
+        "Infineon (manufacturing)",
         "Applied Materials (equipment)",
-        "Lam Research (equipment)",
-        "A*STAR (research institutes)"
+        "A*STAR (research institutes)",
+        "Nanyang Technological University, National University of Singapore (academic R&D)"
       ],
-      "rationale": "Singapore is a significant hub for semiconductor manufacturing, R&D, and equipment support. It hosts advanced fabs and research institutes, contributing to the frontier in advanced manufacturing processes, materials science, and packaging R&D."
+      "rationale": "Singapore has a significant presence in semiconductor manufacturing, advanced packaging, and equipment. It also has strong government-backed research institutes and universities contributing to R&D."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "CSEM (research center)",
-        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
-        "ETH Zurich",
-        "STMicroelectronics (some R&D)"
+        "u-blox (wireless communication chips)",
+        "CSEM (applied research)",
+        "ETH Zurich, EPFL (academic R&D)"
       ],
-      "rationale": "Switzerland has a niche but strong presence in specialized semiconductors, particularly in sensors, low-power ICs, and advanced materials research, driven by leading academic institutions and research centers. Its frontier contributions are highly specialized rather than broad."
+      "rationale": "Switzerland has niche expertise in specialized chip design (e.g., wireless communication, sensors) and strong academic research, particularly at its leading technical universities, but not a broad advanced semiconductor industry."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "medium",
       "evidence": [
-        "Ericsson (chip design for telecom)",
-        "KTH Royal Institute of Technology",
-        "Chalmers University of Technology"
+        "Ericsson (telecom chips)",
+        "Chalmers University of Technology (academic R&D)"
       ],
-      "rationale": "Sweden's semiconductor activity is primarily focused on specialized chip design for telecommunications (Ericsson) and some academic research in areas like photonics. Industrial frontier R&D in core semiconductor manufacturing or general-purpose chip design is limited."
+      "rationale": "Sweden has some specialized design capabilities, particularly in telecom chips through Ericsson, and academic research, but a limited advanced semiconductor industry overall."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
+      "frontier": 0.1,
+      "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre of Finland",
-        "Aalto University",
-        "Nokia (some chip design for telecom)"
+        "Nokia (telecom chips)",
+        "VTT Technical Research Centre of Finland (applied research)"
       ],
-      "rationale": "Finland has a very niche presence in semiconductors, mainly in specialized sensors, photonics, and some academic research. Industrial advanced roles are scarce, and frontier work is highly specific rather than broad."
+      "rationale": "Finland has some specialized design capabilities, particularly in telecom chips through Nokia, and applied research, but a limited advanced semiconductor industry overall."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "AMD (design centers, acquired ATI)",
-        "Numerous AI/ML chip startups",
-        "University of Toronto",
-        "University of Waterloo"
+        "AMD (design center in Markham)",
+        "Tenstorrent (AI chip startup)",
+        "University of Toronto, University of Waterloo (academic R&D in AI hardware)"
       ],
-      "rationale": "Canada has a strong base in chip design, particularly in graphics (historically ATI/AMD) and increasingly in AI/ML hardware. Its universities and startups contribute to the frontier in specialized hardware and quantum computing components, but it lacks significant manufacturing."
+      "rationale": "Canada has specialized design expertise, particularly in AI hardware and some processor design (AMD), with strong academic research in these areas, but no significant advanced manufacturing."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "UNSW (quantum computing research)",
-        "CSIRO (national science agency)",
-        "Silicon Quantum Computing (SQC)"
+        "Silicon Quantum Computing (SQC)",
+        "UNSW, University of Sydney (world-leading quantum computing research)",
+        "CSIRO (research organization)"
       ],
-      "rationale": "Australia's primary frontier contribution in semiconductors is in quantum computing hardware research, particularly silicon-based qubits. Traditional semiconductor manufacturing or large-scale design activities are very limited, with most advanced roles being academic or highly specialized."
+      "rationale": "Australia is a leader in niche frontier R&D, particularly in silicon-based quantum computing and specialized sensors, but has a very limited broad advanced semiconductor industry."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "high",
+      "frontier": 0.2,
+      "confidence": "medium",
       "evidence": [
-        "Intel (Leixlip fab, R&D)",
-        "Analog Devices (design, manufacturing)",
-        "AMD (Xilinx design center)"
+        "Intel (Leixlip manufacturing fab)",
+        "Analog Devices (design center)",
+        "Tyndall National Institute (research institute)"
       ],
-      "rationale": "Ireland hosts significant semiconductor manufacturing operations, notably Intel's advanced fab, and design centers for companies like Analog Devices and AMD. While it has advanced manufacturing and some specialized design, core frontier R&D for process technology is largely driven elsewhere."
+      "rationale": "Ireland hosts a significant Intel manufacturing facility and design centers for other companies like Analog Devices, along with a national research institute focused on microelectronics."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 5,
       "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "IMEC (Interuniversity Microelectronics Centre)",
-        "Ghent University",
-        "KU Leuven"
+        "IMEC (world-leading nanoelectronics research center)",
+        "KU Leuven (academic R&D)"
       ],
-      "rationale": "Belgium is home to IMEC, a world-leading independent research institute that operates at the absolute frontier of semiconductor process technology, materials science, and device physics. IMEC's pre-competitive research is crucial for the entire global industry, making Belgium a key frontier player despite limited industrial manufacturing."
+      "rationale": "Belgium is home to IMEC, a globally recognized frontier research center in nanoelectronics, lithography, and materials. While commercial manufacturing is limited, its R&D impact is immense."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Infineon Technologies (Villach R&D, manufacturing)",
-        "AMS-Osram (sensors)",
-        "Graz University of Technology"
+        "Infineon (R&D and manufacturing in Villach)",
+        "AMS-Osram (sensors, specialized analog)",
+        "TU Graz (academic R&D)"
       ],
-      "rationale": "Austria has a specialized presence in power semiconductors, sensors, and embedded systems, primarily through Infineon and AMS-Osram. It contributes to niche frontier R&D in these specific areas but does not have a broad-based advanced semiconductor industry."
+      "rationale": "Austria has specialized expertise in power semiconductors (Infineon) and sensors (AMS-Osram), with some associated R&D, but a relatively small overall advanced semiconductor footprint."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (Agrate Brianza, Catania fabs, R&D)",
-        "Politecnico di Milano",
+        "STMicroelectronics (manufacturing and R&D in Agrate Brianza, Catania)",
         "CNR (National Research Council)"
       ],
-      "rationale": "Italy, through STMicroelectronics, has capabilities in specialized ICs, automotive, and industrial applications, including some R&D and manufacturing. Its frontier contributions are focused on niche areas like power electronics and MEMS, rather than leading-edge logic or memory."
+      "rationale": "Italy's advanced semiconductor activity is primarily centered around STMicroelectronics, with some R&D capabilities, but it is not a major global hub."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.0,
+      "confidence": "low",
       "evidence": [
-        "Barcelona Supercomputing Center (chip design for HPC, but no manufacturing)",
-        "Universities (e.g., UPC, UAB)"
+        "Limited academic research",
+        "No major advanced semiconductor industry players"
       ],
-      "rationale": "Spain has a very limited traditional semiconductor industry. While there is academic research and some activity in high-performance computing chip design, there is negligible industrial manufacturing or significant frontier R&D in core semiconductor technologies."
+      "rationale": "Spain has a very limited advanced semiconductor industry, with activity largely confined to academic research and no significant commercial manufacturing or design presence."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "medium",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "high",
       "evidence": [
-        "Intel (Kulim, Penang - assembly, test, packaging)",
-        "Micron Technology (Muar - assembly, test, packaging)",
-        "Infineon Technologies (Kulim - assembly, test)",
-        "ASE, Amkor (OSATs)"
+        "Intel (assembly, test, packaging in Penang)",
+        "Broadcom (ATP)",
+        "Micron (ATP)",
+        "Infineon (ATP)",
+        "STMicroelectronics (ATP)",
+        "ASE, Amkor (packaging and test services)",
+        "MIMOS (applied research)"
       ],
-      "rationale": "Malaysia is a major global hub for semiconductor back-end manufacturing (assembly, test, packaging). While it has a high volume of manufacturing engineering roles, its advanced roles are primarily focused on these areas, with limited frontier R&D in front-end process technology or chip design."
+      "rationale": "Malaysia is a major global hub for semiconductor assembly, test, and packaging (ATP), hosting significant operations for many international companies. While strong in backend, advanced front-end fab or design R&D is limited."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.0,
       "confidence": "medium",
       "evidence": [
-        "Intel (Ho Chi Minh City - assembly, test)",
-        "Samsung (Bac Ninh, Thai Nguyen - assembly, test)",
-        "Government initiatives to attract design centers"
+        "Intel (assembly plant in Ho Chi Minh City)",
+        "FPT Semiconductor (emerging domestic design)"
       ],
-      "rationale": "Vietnam is growing as a location for semiconductor assembly and test operations, with major investments from Intel and Samsung. There's a nascent interest in chip design, but current advanced roles are predominantly in manufacturing engineering for back-end processes, with very limited frontier R&D."
+      "rationale": "Vietnam is an emerging player, primarily in semiconductor assembly and test (Intel). There are nascent efforts in domestic chip design, but advanced capabilities are still very limited."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "medium",
       "evidence": [
-        "Western Digital (HDD components, some NAND assembly)",
-        "NXP Semiconductors (assembly, test)",
-        "ON Semiconductor (assembly, test)"
+        "Western Digital (HDD components, some semiconductor packaging)",
+        "Seagate (HDD components, some semiconductor packaging)",
+        "NXP (ATP)",
+        "ON Semiconductor (ATP)",
+        "Delta Electronics (power management ICs)"
       ],
-      "rationale": "Thailand's semiconductor industry is primarily focused on assembly, test, and packaging, particularly for storage components and automotive chips. Advanced roles are limited to manufacturing engineering and quality control, with negligible frontier R&D in core semiconductor technologies."
+      "rationale": "Thailand is a significant hub for semiconductor assembly, test, and packaging, particularly for hard drive components and power management ICs. Advanced front-end manufacturing or design R&D is limited."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Limited public information on advanced semiconductor activities",
-        "Some basic assembly operations"
+        "Very limited advanced semiconductor activity",
+        "No major advanced semiconductor players"
       ],
-      "rationale": "Indonesia has a very limited presence in the advanced semiconductor industry. Activities are mostly confined to basic assembly or manufacturing support, with negligible advanced design, fabrication, or frontier R&D capabilities."
+      "rationale": "Indonesia has a very limited advanced semiconductor industry, with activity largely confined to basic electronics assembly and no significant commercial manufacturing or design presence."
     },
     {
       "country_iso": "AE",
@@ -412,12 +409,12 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "high",
+      "confidence": "low",
       "evidence": [
-        "Mubadala Investment Company (owner of GlobalFoundries, but no local operations)",
-        "Limited local manufacturing or design companies"
+        "Mubadala (owner of GlobalFoundries, but operations are outside UAE)",
+        "No significant domestic advanced fab or design activity"
       ],
-      "rationale": "The UAE has no significant domestic semiconductor manufacturing or design industry. While its sovereign wealth funds invest globally in the sector, there are no local advanced roles or frontier R&D activities in the country itself."
+      "rationale": "The UAE has investment interests in the global semiconductor industry (e.g., Mubadala's ownership of GlobalFoundries), but there is no significant domestic advanced semiconductor manufacturing or design industry within the country itself."
     },
     {
       "country_iso": "SA",
@@ -425,39 +422,38 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "high",
+      "confidence": "low",
       "evidence": [
-        "King Abdullah University of Science and Technology (KAUST - some research)",
-        "Vision 2030 initiatives (focus on tech diversification, but no established semiconductor industry)"
+        "Vision 2030 initiatives mention technology development",
+        "No established advanced semiconductor industry"
       ],
-      "rationale": "Saudi Arabia currently has no established advanced semiconductor industry. While there is academic research and national ambitions for technological diversification, there are negligible industrial advanced roles or frontier R&D capabilities in semiconductors."
+      "rationale": "Saudi Arabia is investing in technology development as part of Vision 2030, but currently has a negligible advanced semiconductor industry, with no established manufacturing or design capabilities."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.0,
+      "confidence": "low",
       "evidence": [
-        "Past efforts like CEITEC (government-backed, now defunct/restructured)",
-        "Universities (e.g., USP, Unicamp)"
+        "CEITEC (older fab, limited advanced capabilities)",
+        "Limited advanced R&D or commercial industry"
       ],
-      "rationale": "Brazil has historically struggled to establish a viable semiconductor industry. Current activities are primarily limited to academic research and very small-scale design efforts, with no significant industrial manufacturing or frontier R&D."
+      "rationale": "Brazil has some older semiconductor manufacturing capabilities (e.g., CEITEC) and academic research, but lacks a significant advanced semiconductor industry or frontier R&D."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Intel (new assembly and test facility announced in Miekinia/Wroclaw)",
-        "Intel (existing R&D centers)",
-        "Warsaw University of Technology"
+        "Intel (upcoming assembly and test facility in Wroclaw)",
+        "Some academic research in microelectronics"
       ],
-      "rationale": "Poland is seeing growing investment, notably with Intel's planned assembly and test facility, which will bring advanced manufacturing engineering roles. While there are existing R&D centers, core frontier R&D in process technology or leading-edge chip design is still limited, but the potential for growth is significant."
+      "rationale": "Poland is emerging with Intel's planned assembly and test facility, which will boost its presence in the semiconductor supply chain. There is also some academic research, but advanced fab or design R&D is limited."
     }
   ]
 }
