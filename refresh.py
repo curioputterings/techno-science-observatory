@@ -71,19 +71,28 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
             log(f"    [warn] publications refresh failed: {e!r}")
 
         # patents layer — prefer BigQuery if configured, else EPO OPS, else skip.
-        # NOTE: BigQuery scans ~162 GB/year against the 1 TB/month free tier.
+        # Skip-existing: the target year is `today-3` and patents lag ~3y, so once a
+        # year is pulled its counts are final and never change. Re-scanning it every
+        # week would burn ~162 GB of the 1 TB/mo free tier for byte-identical data,
+        # so we only scan a year that isn't already in patent_trend — i.e. exactly
+        # once, when `year-3` ticks over to a new value. (Manual pulls via
+        # patents_bq.py --year are unaffected and always run.)
         pat_year = dt.date.today().year - 3  # patents lag a few years
         try:
-            from research_sources import patents_bq
-            if patents_bq.ready():
-                log(f"    patents (BigQuery): {patents_bq.run(year=pat_year)}")
+            have = set(Store().patent_years())  # cheap local read
+            if pat_year in have:
+                log(f"    patents: year {pat_year} already in DB — skipping scan (no cost)")
             else:
-                import time as _time
-                from research_sources import patents
-                if patents.ready():
-                    log(f"    patents (EPO OPS): {patents.run(year=pat_year, now=_time.time())}")
+                from research_sources import patents_bq
+                if patents_bq.ready():
+                    log(f"    patents (BigQuery): {patents_bq.run(year=pat_year)}")
                 else:
-                    log("    patents: skipped (no BigQuery or EPO OPS creds in .env)")
+                    import time as _time
+                    from research_sources import patents
+                    if patents.ready():
+                        log(f"    patents (EPO OPS): {patents.run(year=pat_year, now=_time.time())}")
+                    else:
+                        log("    patents: skipped (no BigQuery or EPO OPS creds in .env)")
         except Exception as e:  # noqa: BLE001
             log(f"    [warn] patents refresh failed: {e!r}")
 
