@@ -35,11 +35,15 @@ socket.setdefaulttimeout(35)  # hard backstop: no urlopen can hang past this
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 import taxonomy  # noqa: E402
+from gemini_client import load_env  # noqa: E402
 from research import TARGET_COUNTRIES  # noqa: E402  (reuse the country set)
 from store import Store  # noqa: E402
 
 API = "https://api.openalex.org/works"
-MAILTO = "research@example.org"  # polite pool — faster, kinder rate limits
+# Polite pool needs a REAL, reachable mailto or OpenAlex throttles you into the
+# common pool (sustained 429s on a long run). Read it from .env (gitignored) so
+# the address stays out of the public repo; placeholder is a last resort.
+MAILTO = load_env().get("OPENALEX_MAILTO", "research@example.org")
 LOG = ROOT / "data" / "research" / "publications_run.log"
 
 # Academic search phrasing per domain (publications use different language than
@@ -108,7 +112,7 @@ def log(msg: str) -> None:
         f.write(line + "\n")
 
 
-def _get(url: str, retries: int = 4):
+def _get(url: str, retries: int = 6):
     req = urllib.request.Request(url, headers={
         "User-Agent": f"techsci-research/0.1 (mailto:{MAILTO})"})
     last = None
@@ -118,7 +122,8 @@ def _get(url: str, retries: int = 4):
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             last = e
-            time.sleep((6 if e.code == 429 else 2) * (i + 1))
+            # 429s need a long cooldown; back off harder and longer than transient errors
+            time.sleep((15 if e.code == 429 else 3) * (i + 1))
         except Exception as e:  # noqa: BLE001 — incl. ConnectionResetError, socket timeout
             # any transport-level failure (reset, timeout, DNS blip): back off + retry
             last = e
@@ -146,7 +151,7 @@ def country_counts(query: str, year: int) -> dict[str, int]:
     out = {}
     for iso in TARGET_COUNTRIES:
         out[iso] = _count_one(query, iso, year)  # let failures propagate
-        time.sleep(0.4)  # polite pacing — slower to avoid 429 over many calls
+        time.sleep(1.0)  # polite pacing — slower to avoid 429 over a long multi-year run
     return out
 
 

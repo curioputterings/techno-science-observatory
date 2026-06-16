@@ -109,9 +109,10 @@ def main():
                color_continuous_scale="RdBu",
                title="Domain complexity (PCI) — high = rare & hard")
     f.update_layout(yaxis={"categoryorder": "total ascending"})
-    blocks.append(("Domain complexity (OEC)", fig_html(f, height=420),
-                   "Semiconductors & precision engineering score highest: few countries "
-                   "do them well. AI/quantum are widely attempted, so lower PCI."))
+    blocks.append(("Domain complexity (OEC)", fig_html(f, height=max(420, 22 * len(pci))),
+                   "Advanced packaging, memory, nanomaterials & fab equipment score "
+                   "highest: few countries do them well. AI/cloud/genomics are widely "
+                   "attempted, so lower PCI."))
 
     basket = rep["basket_complexity"].head(15).reset_index()
     basket.columns = ["iso", "score"]
@@ -122,8 +123,9 @@ def main():
                title="Basket complexity — concentration in the rarest domains")
     f.update_layout(yaxis={"categoryorder": "total ascending"})
     blocks.append(("Basket complexity (OEC)", fig_html(f, height=440),
-                   "Taiwan/Korea/Netherlands lead — portfolios concentrated in the "
-                   "hardest domains. Differs from raw capability (US-led) by design."))
+                   "Taiwan/Malaysia/Korea lead — portfolios concentrated in the "
+                   "hardest domains (incl. semiconductor packaging). Differs from raw "
+                   "capability (US-led) by design."))
 
     # 4. Ambition gap (if present)
     if not amb.empty:

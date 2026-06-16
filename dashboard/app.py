@@ -128,7 +128,8 @@ with tab3:
                  orientation="h", color="skill_level",
                  color_continuous_scale="Viridis",
                  labels={"capability": "Capability (0–100)", "domain_label": ""})
-    fig.update_layout(height=420, yaxis={"categoryorder": "total ascending"})
+    fig.update_layout(height=max(420, 22 * len(sub)),
+                      yaxis={"categoryorder": "total ascending"})
     st.plotly_chart(fig, use_container_width=True)
     st.dataframe(
         sub[["volume_band", "skill_level", "frontier", "capability",
@@ -193,10 +194,11 @@ with tab5:
         st.plotly_chart(
             px.bar(pdf, x="PCI", y="domain", orientation="h", color="PCI",
                    color_continuous_scale="RdBu")
-            .update_layout(height=380, yaxis={"categoryorder": "total ascending"}),
+            .update_layout(height=max(380, 22 * len(pdf)),
+                           yaxis={"categoryorder": "total ascending"}),
             use_container_width=True)
-        st.caption("Semiconductors & precision engineering score highest: few "
-                   "countries do them well. AI/quantum are widely attempted → lower PCI.")
+        st.caption("Advanced packaging, memory & nanomaterials score highest: few "
+                   "countries do them well. AI/cloud/genomics are widely attempted → lower PCI.")
     with cB:
         st.markdown("**Basket complexity** — is your *mix* concentrated in hard domains?")
         bdf = basket.head(15).reset_index()
@@ -207,8 +209,9 @@ with tab5:
                    color_continuous_scale="Viridis")
             .update_layout(height=380, yaxis={"categoryorder": "total ascending"}),
             use_container_width=True)
-        st.caption("Taiwan/Korea/NL lead: portfolios concentrated in the rarest "
-                   "domains. Differs from raw capability (US-led) by design.")
+        st.caption("Taiwan/Malaysia/Korea lead: portfolios concentrated in the rarest "
+                   "domains (incl. semiconductor packaging). Differs from raw "
+                   "capability (US-led) by design.")
 
     st.divider()
     st.markdown("**Technology proximity** — the deep-tech 'product space'")
@@ -219,7 +222,8 @@ with tab5:
         pdisp.columns = [taxonomy.DOMAIN_LABELS.get(d, d) for d in pdisp.columns]
         st.plotly_chart(
             px.imshow(pdisp, aspect="auto", color_continuous_scale="Magma",
-                      labels=dict(color="Proximity")).update_layout(height=480),
+                      labels=dict(color="Proximity")).update_layout(
+                          height=max(480, 16 * len(pdisp))),
             use_container_width=True)
         st.caption("How often two domains are co-developed by the same countries. "
                    "AI↔Digital and Bio↔Pharma are the tightest couplings.")

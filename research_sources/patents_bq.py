@@ -27,7 +27,6 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import sys
-import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -143,6 +142,37 @@ def _query_sql(cpc_prefixes: list[str], year: int) -> str:
     """
 
 
+def _domain_cond(dom: str) -> str:
+    return "(" + " OR ".join(f"c.code LIKE '{p}%'" for p in DOMAIN_CPC[dom]) + ")"
+
+
+def _query_sql_batched(domains: list[str], year: int) -> str:
+    """ALL domains for one year in a SINGLE table scan.
+
+    UNNEST cpc + inventor once, then bucket into per-domain COUNT(DISTINCT ...)
+    columns. Reads the same columns as a single-domain query, so it scans ~the
+    same ~18 GB *total* instead of ~18 GB *per domain* — a ~Nx saving at N=30.
+    A patent counts once per (country, domain) it matches (co-classification) —
+    identical semantics to running the per-domain queries separately.
+    """
+    iso_list = ",".join(f"'{c}'" for c in TARGET_COUNTRIES)
+    cols = ",\n      ".join(
+        f"COUNT(DISTINCT IF({_domain_cond(d)}, p.publication_number, NULL)) AS {d}"
+        for d in domains)
+    any_match = " OR ".join(_domain_cond(d) for d in domains)
+    return f"""
+    SELECT inv.country_code AS iso,
+      {cols}
+    FROM `patents-public-data.patents.publications` AS p,
+         UNNEST(p.cpc) AS c,
+         UNNEST(p.inventor_harmonized) AS inv
+    WHERE p.publication_date BETWEEN {year}0101 AND {year}1231
+      AND inv.country_code IN ({iso_list})
+      AND ({any_match})
+    GROUP BY iso
+    """
+
+
 def _run_query(sql: str, dry_run: bool):
     from google.cloud import bigquery
     client = _client()
@@ -185,20 +215,19 @@ def run(year: int, domains: list[str] | None = None, dry_run: bool = False,
     log(f"=== patents (BigQuery) {as_of}: year={year}, dry_run={dry_run}, domains={domains} ===")
 
     if dry_run:
-        total_gb = 0.0
-        for dom in domains:
-            gb = _run_query(_query_sql(DOMAIN_CPC[dom], year), dry_run=True) / 1e9
-            total_gb += gb
-            log(f"[dry] {dom:22} ~{gb:.2f} GB")
-        log(f"=== dry-run total ~{total_gb:.1f} GB (free tier 1000 GB/mo) ===")
-        return {"dry_run_gb": round(total_gb, 1)}
+        gb = _run_query(_query_sql_batched(domains, year), dry_run=True) / 1e9
+        log(f"=== dry-run: ONE batched scan ~{gb:.1f} GB for {len(domains)} domains "
+            f"(free tier 1000 GB/mo) ===")
+        return {"dry_run_gb": round(gb, 1)}
 
     store = Store()
     written = 0
     is_latest = year >= max(_latest_year, year)  # only update cells if this is newest
+    # one scan per year buckets every domain (wide row per inventor-country)
+    wide = _run_query(_query_sql_batched(domains, year), dry_run=False)
+    by_dom = {dom: {r["iso"]: int(r[dom] or 0) for r in wide} for dom in domains}
     for dom in domains:
-        rows = _run_query(_query_sql(DOMAIN_CPC[dom], year), dry_run=False)
-        counts = {r["iso"]: r["n"] for r in rows}
+        counts = by_dom[dom]
         # always record the year in the trend table
         trend = [{"country_iso": iso, "country_name": name, "domain": dom,
                   "year": year, "n_patents": int(counts.get(iso, 0))}
@@ -223,7 +252,6 @@ def run(year: int, domains: list[str] | None = None, dry_run: bool = False,
             written += store.upsert_many(cells)
         top = sorted(((counts.get(i, 0), i) for i in TARGET_COUNTRIES), reverse=True)[:4]
         log(f"[ok] {dom:22} top: {', '.join(f'{i}:{n}' for n,i in top)}")
-        time.sleep(0.3)
     yrs = store.patent_years()
     store.close()
     log(f"=== done. year {year} | cells updated={is_latest} | trend years now: {yrs} ===")
