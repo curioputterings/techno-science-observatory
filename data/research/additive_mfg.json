@@ -1,0 +1,443 @@
+{
+  "domain": "additive_mfg",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "volume_band": "very_high",
+      "skill_level": 5,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "GE Additive",
+        "3D Systems",
+        "Stratasys",
+        "America Makes",
+        "Oak Ridge National Lab",
+        "MIT",
+        "DoD investments"
+      ],
+      "rationale": "The US is a global leader in Additive Manufacturing, driven by extensive R&D, significant industrial adoption across aerospace, medical, and defense sectors, and a robust ecosystem of companies, national labs, and universities pushing frontier technologies."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "Xi'an Bright Laser Technologies (BLT)",
+        "Farsoon Technologies",
+        "Huazhong University of Science and Technology",
+        "National AM initiatives"
+      ],
+      "rationale": "China has a rapidly expanding AM sector with strong government backing, focusing on industrial applications, domestic technology development, and new materials, leading to high volume and advanced skill sets."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Panasonic",
+        "Canon",
+        "Mitsubishi",
+        "University of Tokyo",
+        "AIST"
+      ],
+      "rationale": "Japan, with its strong traditional manufacturing and precision engineering, is adopting AM with a focus on high-quality, niche applications, particularly in automotive and medical, supported by specialized research."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Hyundai",
+        "Samsung",
+        "Korea Institute of Industrial Technology (KITECH)",
+        "Pohang University of Science and Technology (POSTECH)"
+      ],
+      "rationale": "South Korea is an emerging AM market, leveraging its strengths in manufacturing and R&D with government support, focusing on industrial and medical applications and materials integration."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Industrial Technology Research Institute (ITRI)",
+        "National Cheng Kung University",
+        "Electronics and medical device component focus"
+      ],
+      "rationale": "Taiwan's AM market is niche, primarily supporting its strong electronics and medical device industries with some academic research, but less industrial frontier work compared to leaders."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "EOS",
+        "TRUMPF",
+        "Siemens",
+        "Fraunhofer Institutes (ILT, IWS)",
+        "RWTH Aachen"
+      ],
+      "rationale": "Germany is a European leader in industrial AM, driven by strong engineering, materials science, and a robust ecosystem of research institutes and companies, particularly in automotive, aerospace, and machinery."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "UltiMaker",
+        "MX3D",
+        "TU Delft",
+        "Eindhoven University of Technology"
+      ],
+      "rationale": "The Netherlands has a niche but innovative AM sector, strong in materials, medical, and high-tech equipment, with significant academic contributions and specialized startups."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "Manufacturing Technology Centre (MTC)",
+        "Renishaw",
+        "GKN Aerospace",
+        "Loughborough University"
+      ],
+      "rationale": "The UK has significant AM activity, particularly in aerospace, automotive, and medical sectors, supported by strong research institutions and key industrial players."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Safran",
+        "Dassault Syst\u00e8mes",
+        "CEA (French Alternative Energies and Atomic Energy Commission)",
+        "AddUp"
+      ],
+      "rationale": "France possesses a robust AM sector driven by its strong aerospace, defense, and automotive industries, with significant R&D in materials and process optimization."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Stratasys (co-founder origin)",
+        "XJet",
+        "Technion",
+        "Medical and dental AM focus"
+      ],
+      "rationale": "Israel has a niche but highly innovative AM sector, particularly strong in medical, dental, and specialized high-tech applications, leveraging its vibrant startup culture and academic research."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "Wipro3D",
+        "IITs (Indian Institutes of Technology)",
+        "National Centre for Additive Manufacturing (NCAM)"
+      ],
+      "rationale": "India's AM market is emerging with increasing government and academic interest, but industrial adoption is still in early stages, focusing on basic applications and skill development."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "A*STAR (Agency for Science, Technology and Research)",
+        "Nanyang Technological University (NTU)",
+        "National Additive Manufacturing Innovation Cluster (NAMIC)"
+      ],
+      "rationale": "Singapore has a small but highly focused AM sector, driven by government investment in R&D and high-value manufacturing, particularly in aerospace and biomedical applications."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "inspire AG",
+        "ETH Zurich",
+        "EPFL",
+        "GF Machining Solutions"
+      ],
+      "rationale": "Switzerland boasts a niche but highly advanced AM sector, leveraging its strengths in precision engineering, medical technology, and strong academic research institutions."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Arcam (pioneering EBM technology, now GE Additive)",
+        "Chalmers University of Technology",
+        "RISE Research Institutes of Sweden"
+      ],
+      "rationale": "Sweden is strong in specific AM technologies (like Electron Beam Melting) and materials research, with applications in aerospace and industrial sectors, supported by key academic and research bodies."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "VTT Technical Research Centre of Finland",
+        "Aalto University",
+        "Some industrial pilots"
+      ],
+      "rationale": "Finland has a nascent AM market with some academic and research institution involvement, but limited widespread industrial adoption and lower frontier R&D compared to other European nations."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "National Research Council (NRC)",
+        "University of Waterloo",
+        "McGill University",
+        "Aerospace companies (e.g., Bombardier)"
+      ],
+      "rationale": "Canada has a growing AM sector with strong academic research and applications in aerospace, medical, and automotive industries, supported by government research bodies."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO",
+        "Monash University",
+        "RMIT",
+        "Defence Science and Technology Group (DSTG)"
+      ],
+      "rationale": "Australia's developing AM market is supported by strong academic research and government initiatives, particularly for defense, medical, and resource sector applications."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "National University of Ireland Galway (C\u00daRAM)",
+        "University of Limerick",
+        "Medical device industry focus"
+      ],
+      "rationale": "Ireland's AM market is niche, primarily driven by its strong medical device sector and some academic research, with limited broader industrial adoption."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "Materialise (leading software/service provider)",
+        "KU Leuven",
+        "Ghent University",
+        "Sirris"
+      ],
+      "rationale": "Belgium is a significant player in AM software and services (Materialise), complemented by strong academic research in materials and applications."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "EOS (strong presence)",
+        "TU Wien",
+        "Graz University of Technology",
+        "AM Austria platform"
+      ],
+      "rationale": "Austria has a niche but advanced AM sector, leveraging its strong engineering and manufacturing base, with good academic and industry collaboration."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Politecnico di Milano",
+        "National Research Council (CNR)",
+        "Prima Additive",
+        "Roboze"
+      ],
+      "rationale": "Italy has a growing AM market, particularly in automotive, design, and machinery sectors, supported by academic research and specialized companies."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "CEIT (Centre for Research in Advanced Materials)",
+        "Basque Research and Technology Alliance (BRTA)",
+        "Polytechnic University of Catalonia"
+      ],
+      "rationale": "Spain's developing AM market shows increasing industrial interest and academic research, but is still in early stages of widespread adoption."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Universiti Teknologi Malaysia (UTM)",
+        "MIMOS (national R&D centre)",
+        "Limited industrial pilots"
+      ],
+      "rationale": "Malaysia has a nascent AM market, primarily focused on basic applications and academic exploration, with limited advanced industrial adoption."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Hanoi University of Science and Technology",
+        "Small-scale industrial adoption"
+      ],
+      "rationale": "Vietnam's AM market is extremely nascent, primarily focused on academic research and very basic prototyping, with minimal industrial impact."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "National Science and Technology Development Agency (NSTDA)",
+        "Chulalongkorn University",
+        "Limited industrial pilots"
+      ],
+      "rationale": "Thailand has a nascent AM market, primarily focused on academic research and basic industrial applications, with limited advanced capabilities."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Bandung Institute of Technology (ITB)",
+        "Small-scale industrial adoption"
+      ],
+      "rationale": "Indonesia's AM market is extremely nascent, primarily focused on academic research and very basic prototyping, with minimal industrial impact."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Dubai Future Foundation (3D Printing Strategy)",
+        "Strata Manufacturing (aerospace components)",
+        "Khalifa University"
+      ],
+      "rationale": "The UAE has a niche but strategically important AM market, driven by government initiatives and investment in high-tech manufacturing, particularly in construction and aerospace."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "King Abdullah University of Science and Technology (KAUST)",
+        "Saudi Aramco (some applications)",
+        "King Fahd University of Petroleum and Minerals"
+      ],
+      "rationale": "Saudi Arabia's emerging AM market is driven by strategic national initiatives and investment in R&D, particularly for oil & gas, defense, and localized manufacturing."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "low",
+      "evidence": [
+        "SENAI (National Service for Industrial Learning)",
+        "University of S\u00e3o Paulo",
+        "Some automotive/aerospace interest"
+      ],
+      "rationale": "Brazil has a nascent AM market with some academic and industrial interest, but widespread adoption is limited, focusing on basic applications and skill development."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "AGH University of Science and Technology",
+        "Wroclaw University of Science and Technology",
+        "Specialized manufacturing companies"
+      ],
+      "rationale": "Poland has a developing AM market with increasing industrial interest and academic research, particularly in manufacturing and engineering sectors, but still at an early stage."
+    }
+  ]
+}

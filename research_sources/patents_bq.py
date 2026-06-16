@@ -48,15 +48,45 @@ LOG = ROOT / "data" / "research" / "patents_run.log"
 # Validated against patents-public-data 2020 — counts are face-valid (e.g.
 # semiconductors top = US/JP/KR/TW/CN). Prefixes are matched with LIKE 'CODE%'.
 DOMAIN_CPC: dict[str, list[str]] = {
-    "semiconductors": ["H01L"],                  # semiconductor devices
-    "quantum": ["G06N10"],                        # quantum computing
-    "artificial_intelligence": ["G06N3", "G06N20"],  # neural nets, machine learning
-    "advanced_materials": ["C01B32", "B82Y"],     # carbon nanostructures, nanotech
-    "pharmaceuticals": ["A61K", "A61P"],          # medicinal preparations, therapeutic activity
-    "biomedical": ["C12N15", "C12Q"],             # genetic engineering, nucleic-acid assays
-    "digital": ["H04L"],                          # digital information transmission / security
-    "precision_engineering": ["G01B", "B81B"],    # metrology, MEMS / microstructural devices
-    "other_frontier": ["B64G", "G21B"],           # cosmonautics, fusion reactors
+    # --- Semiconductors ---
+    "chip_design": ["H01L27", "H03K", "G06F30"],   # IC layout, logic, EDA
+    "memory_devices": ["G11C", "H10B"],            # memory circuits / devices
+    "advanced_packaging": ["H01L23", "H01L24", "H01L25"],  # packaging / interconnect
+    "semi_equipment": ["G03F", "H01J37", "H01L21/67"],     # litho, e-beam, fab handling
+    # --- Quantum ---
+    "quantum_computing": ["G06N10"],
+    "quantum_comms_sensing": ["H04L9/08", "H04B10/70", "G01R33"],  # QKD, photonic, sensing
+    # --- Precision Engineering ---
+    "robotics_motion": ["B25J", "G05B19"],         # manipulators, programmable control
+    "photonics_optics": ["G02B", "H01S", "G02F"],  # optics, lasers, optical modulation
+    "mems_metrology": ["B81B", "B81C", "G01B"],    # MEMS, microfab, length metrology
+    "additive_mfg": ["B33Y", "B29C64"],            # additive manufacturing
+    # --- Advanced Materials ---
+    "nanomaterials": ["B82Y", "C01B32"],           # nanotech, carbon nanostructures
+    "energy_storage": ["H01M10", "H01M4"],         # secondary cells, electrodes
+    "composites_polymers": ["C08", "C04B", "C22C"],  # polymers, ceramics, alloys
+    # --- Biomedical ---
+    "genomics": ["C12N15", "G16B"],                # genetic engineering, bioinformatics
+    "cell_gene_therapy": ["A61K35", "A61K48", "C12N5"],  # cell/gene therapy
+    "synbio_bioprocess": ["C12N1", "C12P", "C12M"],      # microorganisms, fermentation, apparatus
+    # --- Pharmaceuticals ---
+    "drug_discovery": ["A61K31", "C07D"],          # organic active ingredients, heterocycles
+    "biologics_vaccines": ["A61K39", "C07K16"],    # vaccines/antigens, antibodies
+    "pharma_mfg": ["A61K9", "A61J"],               # formulation, containers/delivery
+    # --- Digital ---
+    "cloud_distributed": ["G06F9", "G06F15"],      # program execution, distributed compute
+    "cybersecurity": ["H04L9", "G06F21"],          # cryptography, security
+    "networks_5g": ["H04W", "H04B7"],              # wireless networks, radio transmission
+    "embedded_iot": ["G06F1", "H04Q9"],            # device architecture, selecting/IoT
+    # --- Artificial Intelligence ---
+    "machine_learning": ["G06N3", "G06N20"],       # neural nets, machine learning
+    "generative_nlp": ["G06F40", "G10L"],          # NLP, speech
+    "computer_vision": ["G06V", "G06T"],           # image/vision, image data processing
+    # --- Other Frontier ---
+    "space_aerospace": ["B64G", "B64D"],           # cosmonautics, aircraft equipment
+    "fusion_nuclear": ["G21B", "G21C", "G21D"],    # fusion, fission reactors
+    "hydrogen_fuelcells": ["H01M8", "C25B"],       # fuel cells, electrolysis
+    "carbon_capture": ["B01D53", "Y02C"],          # gas separation, CO2 capture/storage
 }
 
 

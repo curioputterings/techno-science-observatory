@@ -1,0 +1,473 @@
+{
+  "domain": "composites_polymers",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "volume_band": "very_high",
+      "skill_level": 5,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "Boeing",
+        "Lockheed Martin",
+        "General Motors",
+        "Ford",
+        "DuPont",
+        "Dow Chemical",
+        "3M",
+        "Oak Ridge National Lab",
+        "MIT",
+        "Stanford University",
+        "National defense programs (e.g., F-35)"
+      ],
+      "rationale": "Global leader in advanced materials R&D and application across diverse high-tech industries including aerospace, automotive, defense, and energy, with extensive academic and industrial research infrastructure."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "volume_band": "very_high",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "COMAC (aerospace)",
+        "CRRC (high-speed rail)",
+        "BYD (automotive/batteries)",
+        "Sinopec",
+        "Chinese Academy of Sciences",
+        "National materials science programs"
+      ],
+      "rationale": "Massive manufacturing base and aggressive government investment in advanced materials for aerospace, automotive, high-speed rail, and electronics, rapidly growing R&D capabilities and industrial scale."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "Toray Industries (carbon fiber)",
+        "Teijin (carbon fiber)",
+        "Mitsubishi Chemical",
+        "JAXA (aerospace)",
+        "Toyota",
+        "Honda",
+        "National Institute for Materials Science (NIMS)"
+      ],
+      "rationale": "Long-standing expertise and innovation in high-performance materials, particularly carbon fiber, specialized polymers, and materials for electronics and automotive sectors."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "Samsung (electronics, displays)",
+        "LG Chem (batteries, chemicals)",
+        "SK Innovation",
+        "Hyundai Motors",
+        "Korea Institute of Science and Technology (KIST)",
+        "POSTECH"
+      ],
+      "rationale": "Strong focus on high-tech manufacturing, especially in electronics, automotive, and battery industries, driving significant corporate and national R&D in advanced materials."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "TSMC (semiconductor materials)",
+        "AUO (display materials)",
+        "Innolux",
+        "Industrial Technology Research Institute (ITRI)",
+        "Formosa Plastics Group"
+      ],
+      "rationale": "Critical role in the global electronics supply chain necessitates advanced materials expertise, with ITRI and major corporations driving innovation in specialized chemicals and components."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "BASF",
+        "Covestro",
+        "Fraunhofer Institutes",
+        "Max Planck Institutes",
+        "Airbus (components)",
+        "BMW",
+        "Mercedes-Benz"
+      ],
+      "rationale": "Renowned for engineering and materials science, with strong integration of R&D into industrial applications across automotive, aerospace, and chemical sectors."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "DSM",
+        "AkzoNobel",
+        "ASML (materials for lithography)",
+        "TNO (Netherlands Organisation for Applied Scientific Research)",
+        "TU Delft"
+      ],
+      "rationale": "Niche strengths in specialized chemicals, high-tech systems, and aerospace components drive demand for advanced materials, supported by strong research institutions."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "Rolls-Royce (aerospace)",
+        "BAE Systems (defense)",
+        "McLaren (automotive/F1)",
+        "Oxford University",
+        "Cambridge University",
+        "National Composites Centre (NCC)"
+      ],
+      "rationale": "Significant aerospace, automotive (especially high-performance), and defense sectors, coupled with strong academic research in materials science and dedicated composite centers."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "Airbus",
+        "Safran (aerospace)",
+        "Dassault Aviation",
+        "Arkema",
+        "CNRS (National Center for Scientific Research)",
+        "CEA (French Alternative Energies and Atomic Energy Commission)"
+      ],
+      "rationale": "Key player in European aerospace and defense industries, with strong national research institutions and major corporations supporting materials innovation."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Elbit Systems (defense)",
+        "Israel Aerospace Industries",
+        "Technion - Israel Institute of Technology",
+        "Weizmann Institute of Science"
+      ],
+      "rationale": "Focus on high-value, specialized applications, particularly in defense, aerospace, and medical technology, drives demand for advanced materials R&D and niche production."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "DRDO (Defense Research and Development Organisation)",
+        "ISRO (Indian Space Research Organisation)",
+        "Tata Motors",
+        "Mahindra & Mahindra",
+        "Council of Scientific & Industrial Research (CSIR)"
+      ],
+      "rationale": "Large and growing economy with increasing focus on indigenous manufacturing and R&D in strategic sectors like aerospace, defense, and automotive, though still developing advanced capabilities."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "A*STAR (Agency for Science, Technology and Research)",
+        "Nanyang Technological University (NTU)",
+        "National University of Singapore (NUS)",
+        "Multinational chemical/materials companies with R&D hubs"
+      ],
+      "rationale": "Strategic hub for high-value manufacturing and R&D, attracting investment in advanced materials, particularly for biomedical, aerospace MRO, and electronics applications."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "Sika AG (construction chemicals)",
+        "Lonza (specialty chemicals)",
+        "ETH Zurich",
+        "EPFL (Swiss Federal Institute of Technology Lausanne)",
+        "CSEM (Swiss Center for Electronics and Microtechnology)"
+      ],
+      "rationale": "Focus on high-precision, high-performance applications in medical devices, precision engineering, and specialty chemicals, supported by strong academic research."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Volvo Group",
+        "Saab Group (aerospace/defense)",
+        "KTH Royal Institute of Technology",
+        "RISE Research Institutes of Sweden"
+      ],
+      "rationale": "Advanced engineering industries, particularly automotive and aerospace, require specialized materials, supported by strong national research and innovation ecosystems."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre of Finland",
+        "Aalto University",
+        "UPM (biocomposites, forest industry)"
+      ],
+      "rationale": "Niche but innovative R&D, particularly strong in sustainable materials, bio-based composites, and materials for machinery and forest industries."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Bombardier (aerospace)",
+        "Magna International (automotive)",
+        "National Research Council Canada (NRC)",
+        "University of Toronto",
+        "McGill University"
+      ],
+      "rationale": "Significant aerospace and automotive sectors, with government and academic support for materials research, particularly in lightweighting and advanced manufacturing."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "Monash Centre for Composite Materials",
+        "Defense industry (e.g., shipbuilding)",
+        "Universities with strong materials science programs"
+      ],
+      "rationale": "Niche but active research and application in areas like defense, resource processing, and advanced manufacturing, with a growing focus on lightweight materials and composites."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "low",
+      "evidence": [
+        "Medtronic (medical devices)",
+        "Boston Scientific (medical devices)",
+        "Tyndall National Institute",
+        "AMBER Centre (Advanced Materials and BioEngineering Research)"
+      ],
+      "rationale": "High concentration of medical device and pharmaceutical companies drives demand for specialized materials and related R&D, particularly in biomaterials and advanced polymers."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Solvay (specialty chemicals)",
+        "Umicore (materials technology)",
+        "KU Leuven",
+        "Ghent University"
+      ],
+      "rationale": "Key players in specialty chemicals and advanced materials, with strong academic research and industrial clusters focused on high-performance applications."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Magna Steyr (automotive)",
+        "voestalpine (special steels, some composites)",
+        "Austrian Institute of Technology (AIT)"
+      ],
+      "rationale": "Specialized manufacturing sectors, particularly automotive components and machinery, require advanced materials, supported by focused research and development efforts."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Leonardo (aerospace/defense)",
+        "Ferrari",
+        "Lamborghini",
+        "Pirelli (tires)",
+        "CNR (National Research Council)"
+      ],
+      "rationale": "High-performance automotive, aerospace, and luxury goods industries drive demand for advanced composites and polymers, with a strong tradition in design and engineering."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Airbus (factories in Spain)",
+        "Gestamp (automotive components)",
+        "Tecnalia (research center)",
+        "CIEMAT (Center for Energy, Environmental and Technological Research)"
+      ],
+      "rationale": "Significant presence in European aerospace and automotive supply chains, with increasing investment in materials R&D, particularly for lightweight structures and renewable energy applications."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.2,
+      "confidence": "low",
+      "evidence": [
+        "Intel (assembly/packaging)",
+        "Proton (automotive)",
+        "Perodua (automotive)",
+        "MIMOS (applied research)"
+      ],
+      "rationale": "Primarily a manufacturing and assembly hub for electronics and automotive, with nascent advanced materials R&D and limited high-skill job volume."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Samsung (assembly)",
+        "Foxconn (assembly)",
+        "Limited domestic R&D centers in advanced materials"
+      ],
+      "rationale": "Focus on basic manufacturing and assembly, with very little advanced materials R&D or high-skill job volume in this domain."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "volume_band": "very_low",
+      "skill_level": 1,
+      "frontier": 0.2,
+      "confidence": "low",
+      "evidence": [
+        "Toyota (manufacturing)",
+        "PTT Global Chemical (petrochemicals)",
+        "National Science and Technology Development Agency (NSTDA)"
+      ],
+      "rationale": "Strong automotive and petrochemical industries, but advanced materials R&D and high-skill job creation are still in early stages, primarily focused on local adaptation."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Astra International (automotive)",
+        "Limited national research institutes focused on advanced materials"
+      ],
+      "rationale": "Focus on basic manufacturing and resource processing for domestic consumption, with minimal advanced materials R&D or high-skill job volume."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "Strata Manufacturing (aerospace composites)",
+        "Khalifa University",
+        "Masdar Institute"
+      ],
+      "rationale": "Strategic investments in high-tech manufacturing and R&D, particularly in aerospace composites, but still small in absolute volume and developing its ecosystem."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "low",
+      "evidence": [
+        "SABIC (petrochemicals, specialty plastics)",
+        "King Abdullah University of Science and Technology (KAUST)",
+        "National industrialization programs"
+      ],
+      "rationale": "Strong petrochemical base provides raw materials, with significant government investment in diversification, downstream industries, and advanced materials R&D, particularly at KAUST."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Embraer (aerospace)",
+        "Petrobras (oil & gas, some materials research)",
+        "IPT (Institute for Technological Research)",
+        "Universities with materials science programs"
+      ],
+      "rationale": "Significant aerospace industry and natural resources drive some advanced materials development, but overall volume remains moderate and often tied to specific industrial needs."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "low",
+      "evidence": [
+        "PZL Mielec (aerospace components)",
+        "Various automotive suppliers (e.g., for VW, Fiat)",
+        "\u0141ukasiewicz Research Network"
+      ],
+      "rationale": "Emerging as a manufacturing hub for complex automotive and aerospace components, leading to increased demand for materials expertise, but still building its advanced R&D capacity."
+    }
+  ]
+}

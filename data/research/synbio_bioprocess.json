@@ -1,0 +1,469 @@
+{
+  "domain": "synbio_bioprocess",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "volume_band": "very_high",
+      "skill_level": 5,
+      "frontier": 0.95,
+      "confidence": "high",
+      "evidence": [
+        "Ginkgo Bioworks",
+        "Zymergen (acquired by Ginkgo)",
+        "Amyris",
+        "Berkeley Lab",
+        "MIT Center for Synthetic Biology",
+        "Stanford University",
+        "DARPA Biomanufacturing Programs",
+        "BioMADE",
+        "Illumina Ventures",
+        "Flagship Pioneering"
+      ],
+      "rationale": "The US is a global leader in synthetic biology and bioprocess, with unparalleled academic research, a vibrant startup ecosystem, significant venture capital investment, and strong government funding. Major hubs like Boston, San Francisco Bay Area, and San Diego drive continuous innovation and high hiring volumes for frontier roles."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.75,
+      "confidence": "medium",
+      "evidence": [
+        "BGI Group",
+        "WuXi Biologics",
+        "Chinese Academy of Sciences (CAS) Institutes",
+        "Tsinghua University",
+        "Peking University",
+        "Made in China 2025 initiatives",
+        "National Key R&D Program of China"
+      ],
+      "rationale": "China has made massive strategic investments in biotechnology and biomanufacturing, rapidly expanding its capabilities. While much of the volume is in scaling and applied research, there's significant government-backed frontier R&D, particularly in genomics and bioprocessing, leading to high demand for skilled professionals."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "Kirin Holdings (fermentation)",
+        "Ajinomoto (amino acids, fermentation)",
+        "Kyoto University",
+        "University of Tokyo",
+        "RIKEN",
+        "Ministry of Economy, Trade and Industry (METI) bio-economy initiatives"
+      ],
+      "rationale": "Japan has a strong foundation in fermentation and industrial biotechnology, with established players and excellent academic research. While not as aggressive in synthetic biology startups as the US, it maintains a high skill level and contributes to frontier research, particularly in bioprocess optimization and novel biomaterials."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "medium",
+      "evidence": [
+        "Samsung Biologics",
+        "Celltrion",
+        "SK Bioscience",
+        "KAIST (Korea Advanced Institute of Science and Technology)",
+        "Seoul National University",
+        "Government's 'Bio-Korea' initiatives"
+      ],
+      "rationale": "South Korea has rapidly developed a robust biomanufacturing and pharmaceutical industry, supported by significant government investment and leading companies. Its focus on advanced bioprocessing and biosimilars drives a strong demand for expert-level skills, with growing contributions to frontier research."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Industrial Technology Research Institute (ITRI)",
+        "National Taiwan University",
+        "Developing biopharmaceutical sector",
+        "Taiwan Bio-Industry Organization"
+      ],
+      "rationale": "Taiwan has a strong foundation in high-tech manufacturing and is actively developing its biotech sector, particularly in biopharmaceuticals and diagnostics. While the volume is lower, there's a demand for specialist skills in bioprocess and some applied synthetic biology, with emerging frontier efforts."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 0.85,
+      "confidence": "high",
+      "evidence": [
+        "BASF (industrial biotechnology)",
+        "Bayer (life sciences)",
+        "Merck KGaA",
+        "Max Planck Institutes",
+        "Fraunhofer Institutes",
+        "Technical University of Munich",
+        "Federal Ministry of Education and Research (BMBF) Bioeconomy Strategy"
+      ],
+      "rationale": "Germany is a powerhouse in industrial biotechnology and chemical engineering, with world-class research institutions and major industrial players. It has a strong focus on sustainable bioprocesses and synthetic biology applications, leading to high demand for expert and frontier talent."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.75,
+      "confidence": "high",
+      "evidence": [
+        "DSM (biotechnology, fermentation)",
+        "Wageningen University & Research",
+        "TU Delft",
+        "Leiden Bio Science Park",
+        "Dutch Top Sector Life Sciences & Health"
+      ],
+      "rationale": "The Netherlands has a highly innovative and collaborative ecosystem, particularly strong in agricultural biotechnology, industrial bioprocesses, and sustainable solutions. Excellent universities and a supportive government drive significant frontier research and a consistent demand for high-skill roles."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "Oxford University",
+        "Cambridge University",
+        "Imperial College London",
+        "SynbiCITE (Centre for Synthetic Biology and Innovation)",
+        "Industrial Biotechnology Innovation Centre (IBioIC)",
+        "GSK, AstraZeneca (R&D)",
+        "UKRI funding for synthetic biology"
+      ],
+      "rationale": "The UK boasts a world-leading academic base in synthetic biology and a strong biotech cluster, particularly around Oxford and Cambridge. Significant government and private investment fuels frontier research and a high volume of advanced roles across various applications."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "medium",
+      "evidence": [
+        "Sanofi (bioprocess R&D)",
+        "Institut Pasteur",
+        "CNRS (National Center for Scientific Research)",
+        "INRAE (National Research Institute for Agriculture, Food and Environment)",
+        "Genopole biocluster"
+      ],
+      "rationale": "France has strong public research institutions and a growing biotech sector, with a focus on health and agricultural applications. While the commercial volume might be slightly lower than its European counterparts, there's solid academic and industrial demand for specialist and expert roles, with notable frontier contributions."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "Weizmann Institute of Science",
+        "Technion \u2013 Israel Institute of Technology",
+        "Hebrew University of Jerusalem",
+        "Strong startup ecosystem (e.g., in cultivated meat, medical diagnostics)"
+      ],
+      "rationale": "Israel's deep-tech startup culture and world-class academic institutions drive significant innovation in synthetic biology, particularly in medical applications, food tech, and biosensors. While the overall volume is smaller, the skill level and frontier research intensity are very high."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "Biocon (biopharmaceuticals)",
+        "Serum Institute of India (vaccines)",
+        "Indian Institutes of Technology (IITs)",
+        "Council of Scientific and Industrial Research (CSIR) labs",
+        "Department of Biotechnology (DBT) initiatives"
+      ],
+      "rationale": "India has a large and growing biotechnology sector, primarily focused on biopharmaceuticals, vaccines, and agricultural biotech. While there's a strong base of applied research and manufacturing, frontier synthetic biology is still emerging, leading to a moderate volume of specialist roles."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "A*STAR (Agency for Science, Technology and Research)",
+        "National University of Singapore (NUS)",
+        "Nanyang Technological University (NTU)",
+        "Biopolis research hub",
+        "Strong government investment in biotech"
+      ],
+      "rationale": "Singapore has strategically invested heavily in building a world-class biomedical and biotech hub. Despite its small size, it attracts significant foreign investment and fosters high-quality research and development, leading to a concentrated demand for expert and frontier talent."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "medium",
+      "skill_level": 5,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "Novartis, Roche (major pharma R&D)",
+        "ETH Zurich (Swiss Federal Institute of Technology Zurich)",
+        "EPFL (Swiss Federal Institute of Technology Lausanne)",
+        "University of Basel (Biozentrum)",
+        "High R&D expenditure"
+      ],
+      "rationale": "Switzerland is a global leader in life sciences, with major pharmaceutical companies and top-tier research universities. Its high R&D investment and focus on precision medicine and advanced bioprocesses drive a very high skill level and significant frontier research, despite a smaller overall volume."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "Karolinska Institutet",
+        "KTH Royal Institute of Technology",
+        "Chalmers University of Technology",
+        "Strong focus on sustainable biotech and life sciences"
+      ],
+      "rationale": "Sweden has a strong tradition in life sciences and a growing focus on sustainable biotechnology. Excellent universities and a supportive innovation environment contribute to expert-level roles and notable frontier research, particularly in areas like biomaterials and industrial enzymes."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre of Finland",
+        "Aalto University",
+        "University of Helsinki",
+        "Strong bioeconomy and forest industry focus"
+      ],
+      "rationale": "Finland has a strong bioeconomy sector, particularly in forest-based industries and cleantech. This drives demand for bioprocess and biochemical expertise. While the overall volume is lower, there's solid specialist-level work and some emerging frontier research in industrial biotech."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "medium",
+      "evidence": [
+        "University of Toronto",
+        "McGill University",
+        "University of British Columbia",
+        "National Research Council of Canada (NRC)",
+        "Biotech clusters in Montreal, Toronto, Vancouver"
+      ],
+      "rationale": "Canada has a robust academic research base and growing biotech clusters. Government support and private investment contribute to a healthy demand for expert roles in bioprocessing and synthetic biology, with significant contributions to frontier research, particularly in health and agriculture."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "University of Queensland",
+        "Monash University",
+        "Strong agricultural and medical biotech research"
+      ],
+      "rationale": "Australia has strong research capabilities in medical and agricultural biotechnology, with a focus on innovation. While the overall market volume is moderate, there's a consistent demand for specialist and expert roles, and notable contributions to frontier research, often in collaboration with international partners."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "National Institute for Bioprocessing Research and Training (NIBRT)",
+        "Many multinational pharmaceutical companies (e.g., Pfizer, BMS) with manufacturing sites",
+        "University College Dublin"
+      ],
+      "rationale": "Ireland is a major hub for biopharmaceutical manufacturing, attracting significant investment from multinational companies. This drives demand for bioprocess specialists. While less focused on frontier synthetic biology R&D, its strength in biomanufacturing ensures a steady volume of applied roles."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Ghent University (VIB-UGent Center for Plant Systems Biology)",
+        "KU Leuven",
+        "Janssen Pharmaceutica (Johnson & Johnson)",
+        "Biotech clusters in Flanders and Wallonia"
+      ],
+      "rationale": "Belgium has a strong pharmaceutical and chemical industry, with notable academic research in biotechnology. There's a consistent demand for specialist roles in bioprocess and some emerging synthetic biology applications, particularly in plant biotech and medical research."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "University of Natural Resources and Life Sciences (BOKU) Vienna",
+        "Austrian Centre of Industrial Biotechnology (ACIB)",
+        "Some specialized biotech companies"
+      ],
+      "rationale": "Austria has a focused biotech sector with strong academic institutions and specialized research centers in industrial biotechnology. While the overall volume is smaller, there's a demand for specialist skills and some contributions to applied frontier research."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "University of Bologna",
+        "Politecnico di Milano",
+        "Some pharmaceutical companies",
+        "National Cluster of Green Chemistry and Biotechnology (SPRING)"
+      ],
+      "rationale": "Italy has a strong academic base in life sciences and some established pharmaceutical companies. While the biotech sector is growing, it's generally less dynamic in frontier synthetic biology compared to northern European counterparts, leading to a moderate volume of specialist roles."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.25,
+      "confidence": "medium",
+      "evidence": [
+        "University of Barcelona",
+        "CSIC (Spanish National Research Council)",
+        "Growing biotech startups, particularly in health and agri-food"
+      ],
+      "rationale": "Spain's biotech sector is growing, supported by public research and emerging startups, particularly in health and agri-food. While the volume of advanced roles is relatively low, there's a demand for specialist skills and some applied research in bioprocess and synthetic biology."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Malaysian Biotechnology Corporation (Bioeconomy Corporation)",
+        "Universiti Malaya",
+        "Focus on palm oil derivatives and halal biotech"
+      ],
+      "rationale": "Malaysia is developing its bioeconomy, with a focus on agriculture, food, and industrial biotechnology. While there are initiatives and some research, the advanced synthetic biology and bioprocess job market for frontier roles is very limited, primarily focused on applied and entry-level positions."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.05,
+      "confidence": "low",
+      "evidence": [
+        "Vietnam Academy of Science and Technology",
+        "Focus on agricultural biotech and food processing"
+      ],
+      "rationale": "Vietnam's biotech sector is nascent, primarily focused on agricultural applications, food processing, and some basic pharmaceuticals. Advanced synthetic biology and bioprocess capabilities are very limited, with negligible demand for frontier roles."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "National Center for Genetic Engineering and Biotechnology (BIOTEC)",
+        "Mahidol University",
+        "Government's 'Thailand 4.0' bio-economy initiatives"
+      ],
+      "rationale": "Thailand is investing in its bio-economy, particularly in agriculture, food, and medical applications. While there's a growing base of applied research and some industrial activity, the advanced synthetic biology and bioprocess job market for frontier roles remains very limited."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.05,
+      "confidence": "low",
+      "evidence": [
+        "Indonesian Institute of Sciences (LIPI)",
+        "Focus on agriculture, food, and traditional medicine"
+      ],
+      "rationale": "Indonesia has a vast potential for bio-resources, but its biotechnology industry is still in early stages of development. Advanced synthetic biology and bioprocess capabilities are very limited, with negligible demand for frontier roles."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "Khalifa University",
+        "Mohammed bin Rashid University of Medicine and Health Sciences",
+        "Government initiatives to diversify economy into biotech"
+      ],
+      "rationale": "The UAE is actively investing in R&D and diversification, including biotechnology, often through international partnerships and building new research infrastructure. However, the indigenous advanced synthetic biology and bioprocess job market is still nascent, with very limited frontier roles."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
+      "evidence": [
+        "King Abdullah University of Science and Technology (KAUST)",
+        "King Fahd University of Petroleum and Minerals",
+        "Vision 2030 initiatives for R&D and diversification"
+      ],
+      "rationale": "Saudi Arabia is making significant investments in R&D and building research capabilities, particularly through institutions like KAUST. While there's a strong push for scientific advancement, the advanced synthetic biology and bioprocess job market for frontier roles is still in its early stages."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Fiocruz (Oswaldo Cruz Foundation)",
+        "Embrapa (Brazilian Agricultural Research Corporation)",
+        "University of S\u00e3o Paulo",
+        "Strong agricultural biotech sector (biofuels, crop science)"
+      ],
+      "rationale": "Brazil has a significant agricultural sector and strong research institutions, particularly in biofuels and agricultural biotechnology. While economic instability can be a factor, there's a demand for specialist bioprocess roles and some applied research, but limited frontier synthetic biology."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Jagiellonian University",
+        "University of Warsaw",
+        "Growing number of biotech startups and research parks",
+        "National Centre for Research and Development funding"
+      ],
+      "rationale": "Poland's biotech sector is growing, supported by a good academic base and increasing government funding. There's a demand for specialist roles, particularly in biopharmaceuticals and diagnostics, but advanced synthetic biology and frontier R&D are still developing."
+    }
+  ]
+}

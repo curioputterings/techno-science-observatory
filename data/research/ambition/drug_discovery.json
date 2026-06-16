@@ -1,0 +1,413 @@
+{
+  "domain": "drug_discovery",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "NIH Common Fund",
+        "National Center for Advancing Translational Sciences (NCATS)",
+        "Advanced Research Projects Agency for Health (ARPA-H)",
+        "Cancer Moonshot Initiative",
+        "Biomedical Advanced Research and Development Authority (BARDA)"
+      ],
+      "rationale": "The US maintains a flagship national priority in small-molecule drug discovery, with extensive, well-funded government agencies and initiatives aimed at leading frontier research and development across all stages."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "14th Five-Year Plan for Bioeconomy Development",
+        "National Key R&D Program of China (Biomedicine)",
+        "Made in China 2025 (Biopharmaceutical sector focus)",
+        "National Medical Products Administration (NMPA) reforms"
+      ],
+      "rationale": "China has a very strong, explicit national ambition to become a global leader in biopharmaceuticals, including small-molecule drug discovery, backed by massive strategic investments and long-term plans."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Japan Agency for Medical Research and Development (AMED) programs",
+        "Strategic Innovation Promotion Program (SIP) for Innovative Drug Discovery",
+        "Healthcare Policy for strengthening drug discovery capabilities"
+      ],
+      "rationale": "Japan has a high ambition to maintain and advance its position in pharmaceutical innovation, with dedicated agencies and programs supporting expert-level drug discovery research."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Bio-Health Industry Innovation Strategy",
+        "K-Bio Vaccine Hub initiative (broader biopharma R&D)",
+        "Bio-Health 2030 Vision",
+        "Ministry of Health and Welfare R&D programs"
+      ],
+      "rationale": "South Korea has a high stated ambition to become a global bio-health hub, with significant government investment targeting expert-level capabilities in novel drug discovery."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "5+2 Industrial Innovation Plan (Biomedical Industry)",
+        "National Biotechnology Research Park",
+        "Ministry of Science and Technology (MOST) grants for drug discovery"
+      ],
+      "rationale": "Taiwan shows significant ambition in biomedical innovation, aiming for specialist capabilities in drug discovery, often focusing on niche areas and contract research."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "High-Tech Strategy 2025 (Health Technologies focus)",
+        "German Centre for Infection Research (DZIF)",
+        "Fraunhofer Institutes for Drug Discovery and Diagnostics"
+      ],
+      "rationale": "Germany has a strong, sustained ambition in pharmaceutical R&D, leveraging its robust academic and industrial base to achieve expert-level drug discovery capabilities."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Top Sector Life Sciences & Health (LSH) agenda",
+        "Health~Holland initiatives",
+        "National Growth Fund investments in health innovation"
+      ],
+      "rationale": "The Netherlands demonstrates significant ambition in life sciences, fostering public-private partnerships to develop specialist capabilities in drug discovery and translational research."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Life Sciences Vision",
+        "UK Research and Innovation (UKRI) funding (MRC, BBSRC)",
+        "Medicines Manufacturing Innovation Centre (MMIC)"
+      ],
+      "rationale": "The UK has a high stated ambition to be a global leader in life sciences, with strategic plans and significant funding to drive expert-level small-molecule drug discovery."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "France 2030 (Health Innovation pillar)",
+        "Health Innovation Agency (AHI)",
+        "National Strategy for Accelerating Biotherapies and Bioproduction (includes small molecules)"
+      ],
+      "rationale": "France has a high ambition to strengthen its position in health innovation, with substantial government investment through 'France 2030' targeting expert capabilities in drug discovery."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Israel Innovation Authority (IIA) programs for health-tech",
+        "National Digital Health Strategy (includes drug discovery applications)"
+      ],
+      "rationale": "Israel shows significant ambition in biotech, leveraging its strong startup ecosystem and focus on innovation to develop specialist capabilities, particularly in AI-driven drug discovery."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Biopharma Mission",
+        "Production Linked Incentive (PLI) scheme for Pharmaceuticals",
+        "Department of Biotechnology (DBT) initiatives"
+      ],
+      "rationale": "India has a significant stated ambition to become a global hub for pharmaceutical R&D, moving beyond generics to develop specialist capabilities in novel small-molecule drug discovery."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Agency for Science, Technology and Research (A*STAR) Biomedical Sciences Initiative",
+        "Biomedical Sciences Industry Masterplan"
+      ],
+      "rationale": "Singapore has a high, strategic ambition to be a leading biomedical sciences hub, with sustained government investment in R&D infrastructure and talent to achieve expert-level drug discovery."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Swiss National Science Foundation (SNSF) funding for basic research",
+        "Innosuisse (Swiss Innovation Agency) support for biotech startups",
+        "Strong university-industry collaboration in pharma"
+      ],
+      "rationale": "Switzerland maintains a flagship national priority in pharmaceutical innovation, driven by a world-leading industry and strong public research funding, aiming for frontier advancements in drug discovery."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Vinnova (Sweden's Innovation Agency) funding for life sciences",
+        "National Life Sciences Strategy"
+      ],
+      "rationale": "Sweden has significant ambition in its life sciences sector, focusing on innovation and specific disease areas to develop specialist capabilities in drug discovery."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Business Finland Health & Wellbeing programs",
+        "National Health Sector Growth Strategy"
+      ],
+      "rationale": "Finland shows some ambition in health tech and personalized medicine, with efforts to support applied research in drug discovery, though not a primary flagship focus."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Biomanufacturing and Life Sciences Strategy",
+        "Canadian Institutes of Health Research (CIHR) funding",
+        "Strategic Innovation Fund (SIF) for life sciences"
+      ],
+      "rationale": "Canada has a significant stated ambition to strengthen its domestic biomanufacturing and life sciences capabilities, including specialist-level drug discovery research."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Medical Research Future Fund (MRFF)",
+        "MTPConnect (Medical Technology and Pharmaceutical Growth Centre)"
+      ],
+      "rationale": "Australia has some ambition in medical research and clinical trials, supporting applied drug discovery efforts, particularly in specific disease areas."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "IDA Ireland R&D incentives for pharmaceutical companies",
+        "Science Foundation Ireland (SFI) funding for health research"
+      ],
+      "rationale": "Ireland, while a major pharmaceutical manufacturing hub, has a more modest, applied-level ambition for small-molecule drug discovery R&D, focusing on attracting and supporting industry research."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Flanders Innovation & Entrepreneurship (VLAIO) support for life sciences",
+        "Walloon Region's Marshall Plan (biotech focus)",
+        "Strong biotech and pharma cluster initiatives"
+      ],
+      "rationale": "Belgium has a high ambition in biotech and pharma, with strong regional and national support for R&D, aiming for expert-level innovation in drug discovery."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Austrian Research Promotion Agency (FFG) programs for life sciences",
+        "Life Sciences Strategy Austria"
+      ],
+      "rationale": "Austria shows some ambition in life sciences, supporting applied research in drug discovery, often linked to specific academic strengths and disease areas."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Recovery and Resilience Plan (PNRR) Health Mission",
+        "Ministry of Health R&D programs"
+      ],
+      "rationale": "Italy has some ambition in pharmaceutical R&D, with efforts to boost applied drug discovery through national recovery plans and public-private partnerships, but it's not a top-tier national priority."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Strategy for Science, Technology and Innovation",
+        "Carlos III Health Institute (ISCIII) funding for biomedical research"
+      ],
+      "rationale": "Spain has some ambition to grow its biotech sector and support applied drug discovery research through national science and health strategies."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Biotechnology Policy",
+        "Bioeconomy Malaysia initiatives"
+      ],
+      "rationale": "Malaysia's ambition in drug discovery is currently low, primarily focused on developing its biomanufacturing capabilities and basic research rather than novel small-molecule discovery."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "National Strategy for Pharmaceutical Industry Development (focus on domestic production and generics)"
+      ],
+      "rationale": "Vietnam has a low stated ambition in small-molecule drug discovery, with national strategies primarily focused on developing its domestic pharmaceutical manufacturing capacity and ensuring access to essential medicines."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Thailand 4.0 (Medical Hub initiative)",
+        "National Science and Technology Development Agency (NSTDA) programs"
+      ],
+      "rationale": "Thailand's ambition in drug discovery is low, with a broader focus on becoming a medical hub and developing biopharmaceuticals, rather than a strong emphasis on novel small-molecule discovery."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "National Health System Transformation (focus on self-sufficiency in pharmaceuticals)",
+        "Pharmaceutical Industry Roadmap"
+      ],
+      "rationale": "Indonesia has a low stated ambition in small-molecule drug discovery, with national plans primarily focused on strengthening domestic pharmaceutical production and reducing reliance on imports."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Dubai Future Foundation initiatives in health-tech",
+        "Abu Dhabi Department of Health strategies",
+        "Investments in biotech parks and research clusters"
+      ],
+      "rationale": "The UAE shows some ambition in developing its healthcare and biotech sectors, with investments aimed at building applied research capabilities in areas including drug discovery."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Vision 2030 (Health Sector Transformation Program)",
+        "National Biotechnology Strategy",
+        "King Abdullah University of Science and Technology (KAUST) research initiatives"
+      ],
+      "rationale": "Saudi Arabia, through Vision 2030, has some ambition to develop its health and biotech industries, including building applied research capabilities in drug discovery."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Strategy for Science, Technology and Innovation",
+        "Ministry of Health R&D programs (e.g., Fiocruz)"
+      ],
+      "rationale": "Brazil has some ambition in pharmaceutical R&D, with efforts to support applied drug discovery, particularly through public research institutions, but it faces challenges in consistent funding and strategic focus."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Smart Specialisation (NSS) for 'Healthy Society'",
+        "Polish Agency for Enterprise Development (PARP) grants for biotech"
+      ],
+      "rationale": "Poland has a low stated ambition in small-molecule drug discovery, with efforts primarily focused on supporting emerging biotech companies and applied research within broader health initiatives."
+    }
+  ]
+}

@@ -45,15 +45,45 @@ LOG = ROOT / "data" / "research" / "publications_run.log"
 # Academic search phrasing per domain (publications use different language than
 # job ads). Kept tight to avoid false positives; OR-joined via the | operator.
 DOMAIN_QUERIES: dict[str, str] = {
-    "semiconductors": "semiconductor OR lithography OR \"integrated circuit\" OR CMOS OR \"chip design\"",
-    "quantum": "\"quantum computing\" OR qubit OR \"quantum information\" OR \"quantum sensing\"",
-    "precision_engineering": "photonics OR mechatronics OR metrology OR MEMS OR \"precision engineering\"",
-    "advanced_materials": "\"advanced materials\" OR nanomaterial OR graphene OR superconductor OR perovskite",
-    "biomedical": "\"synthetic biology\" OR CRISPR OR genomics OR bioengineering OR \"gene therapy\"",
-    "pharmaceuticals": "\"drug discovery\" OR pharmacology OR \"clinical trial\" OR mRNA OR biologics",
-    "digital": "\"distributed systems\" OR cybersecurity OR \"edge computing\" OR \"5G\" OR \"cloud computing\"",
-    "artificial_intelligence": "\"machine learning\" OR \"deep learning\" OR \"neural network\" OR \"large language model\"",
-    "other_frontier": "\"nuclear fusion\" OR aerospace OR \"space propulsion\" OR \"hydrogen energy\" OR \"carbon capture\"",
+    # --- Semiconductors ---
+    "chip_design": "\"integrated circuit design\" OR \"VLSI\" OR \"RTL\" OR \"chip design\" OR \"ASIC\"",
+    "memory_devices": "\"DRAM\" OR \"NAND flash\" OR \"non-volatile memory\" OR \"memory device\" OR \"SRAM\"",
+    "advanced_packaging": "\"advanced packaging\" OR \"chiplet\" OR \"heterogeneous integration\" OR \"through-silicon via\" OR \"2.5D integration\"",
+    "semi_equipment": "\"photolithography\" OR \"EUV lithography\" OR \"plasma etching\" OR \"thin film deposition\" OR \"semiconductor fabrication\"",
+    # --- Quantum ---
+    "quantum_computing": "\"quantum computing\" OR qubit OR \"quantum error correction\" OR \"superconducting qubit\"",
+    "quantum_comms_sensing": "\"quantum communication\" OR \"quantum key distribution\" OR \"quantum sensing\" OR \"quantum metrology\"",
+    # --- Precision Engineering ---
+    "robotics_motion": "robotics OR mechatronics OR \"motion control\" OR \"robot manipulator\" OR \"servo control\"",
+    "photonics_optics": "photonics OR \"optical engineering\" OR \"silicon photonics\" OR \"laser\" OR optoelectronics",
+    "mems_metrology": "MEMS OR \"microelectromechanical\" OR metrology OR \"precision measurement\" OR \"inertial sensor\"",
+    "additive_mfg": "\"additive manufacturing\" OR \"3D printing\" OR \"selective laser melting\" OR \"powder bed fusion\"",
+    # --- Advanced Materials ---
+    "nanomaterials": "nanomaterial OR graphene OR \"carbon nanotube\" OR \"two-dimensional material\" OR \"quantum dot\"",
+    "energy_storage": "\"lithium-ion battery\" OR \"solid-state battery\" OR \"energy storage\" OR supercapacitor OR \"battery electrode\"",
+    "composites_polymers": "\"composite material\" OR polymer OR ceramic OR \"superconductor\" OR perovskite",
+    # --- Biomedical ---
+    "genomics": "genomics OR CRISPR OR \"gene editing\" OR \"DNA sequencing\" OR bioinformatics",
+    "cell_gene_therapy": "\"cell therapy\" OR \"gene therapy\" OR \"CAR-T\" OR \"stem cell\" OR \"regenerative medicine\"",
+    "synbio_bioprocess": "\"synthetic biology\" OR \"metabolic engineering\" OR fermentation OR \"protein engineering\" OR biomanufacturing",
+    # --- Pharmaceuticals ---
+    "drug_discovery": "\"drug discovery\" OR \"medicinal chemistry\" OR pharmacology OR \"lead optimization\" OR preclinical",
+    "biologics_vaccines": "biologics OR mRNA OR vaccine OR \"monoclonal antibody\" OR immunotherapy",
+    "pharma_mfg": "\"pharmaceutical manufacturing\" OR \"drug formulation\" OR \"clinical trial\" OR \"GMP\" OR \"drug delivery\"",
+    # --- Digital ---
+    "cloud_distributed": "\"distributed systems\" OR \"cloud computing\" OR kubernetes OR \"edge computing\" OR microservices",
+    "cybersecurity": "cybersecurity OR cryptography OR \"intrusion detection\" OR \"network security\" OR \"malware\"",
+    "networks_5g": "\"5G\" OR \"6G\" OR \"wireless network\" OR \"software defined networking\" OR \"radio access network\"",
+    "embedded_iot": "\"embedded systems\" OR \"Internet of Things\" OR firmware OR \"real-time operating system\" OR microcontroller",
+    # --- Artificial Intelligence ---
+    "machine_learning": "\"machine learning\" OR \"deep learning\" OR \"neural network\" OR \"reinforcement learning\"",
+    "generative_nlp": "\"natural language processing\" OR \"large language model\" OR \"generative AI\" OR transformer OR \"speech recognition\"",
+    "computer_vision": "\"computer vision\" OR \"object detection\" OR \"image recognition\" OR \"image segmentation\"",
+    # --- Other Frontier ---
+    "space_aerospace": "aerospace OR satellite OR \"space propulsion\" OR spacecraft OR \"launch vehicle\"",
+    "fusion_nuclear": "\"nuclear fusion\" OR plasma OR tokamak OR \"nuclear reactor\" OR \"magnetic confinement\"",
+    "hydrogen_fuelcells": "\"hydrogen energy\" OR \"fuel cell\" OR electrolyzer OR \"green hydrogen\" OR electrolysis",
+    "carbon_capture": "\"carbon capture\" OR \"direct air capture\" OR \"carbon sequestration\" OR \"CO2 utilization\"",
 }
 
 # Publication counts are large; bands tuned to research volume (works/year/domain).

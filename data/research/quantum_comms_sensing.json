@@ -1,0 +1,461 @@
+{
+  "domain": "quantum_comms_sensing",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 1.0,
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Initiative",
+        "IBM Quantum",
+        "Google AI Quantum",
+        "Microsoft Quantum",
+        "Amazon Braket",
+        "NIST",
+        "MIT",
+        "Stanford",
+        "Honeywell Quantum Solutions",
+        "Lockheed Martin"
+      ],
+      "rationale": "Extensive government and private investment, leading academic institutions, and a vibrant startup ecosystem drive significant advanced R&D and hiring in quantum communications and sensing."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "volume_band": "high",
+      "skill_level": 5,
+      "frontier": 1.0,
+      "confidence": "high",
+      "evidence": [
+        "USTC (Pan Jianwei group)",
+        "Chinese Academy of Sciences (CAS)",
+        "Micius quantum satellite",
+        "Jinan Quantum Communication Network",
+        "Huawei",
+        "Alibaba"
+      ],
+      "rationale": "China has made quantum technologies a national strategic priority, leading to massive state-backed investment in research, infrastructure (like the Micius satellite), and talent development, resulting in a high volume of advanced roles."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Technology Strategy",
+        "Toshiba (QKD)",
+        "NEC",
+        "NTT",
+        "RIKEN",
+        "University of Tokyo"
+      ],
+      "rationale": "Japan has a long-standing commitment to quantum research, with government initiatives and major corporations investing in QKD and quantum network components, driving a steady demand for expert-level talent."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "SK Telecom (QKD)",
+        "KT",
+        "LG U+",
+        "KIST",
+        "KAIST",
+        "National Quantum Science and Technology Strategy"
+      ],
+      "rationale": "South Korea is actively investing in quantum technologies, particularly in QKD for telecommunications, with major carriers and research institutes driving specialist-level roles and some frontier exploration."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Program",
+        "Academia Sinica",
+        "National Taiwan University",
+        "TSMC (foundational tech)"
+      ],
+      "rationale": "Taiwan is leveraging its strong semiconductor industry to develop quantum technologies, with national programs and academic institutions fostering specialist roles in quantum components, including sensing and communication."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "Fraunhofer Institutes",
+        "Max Planck Institutes",
+        "DLR",
+        "BMBF Quantum Technologies program",
+        "Bosch",
+        "Siemens",
+        "Airbus"
+      ],
+      "rationale": "Germany has a robust quantum ecosystem with significant government funding, world-renowned research institutes, and industrial engagement, particularly strong in quantum metrology and sensing, leading to expert-level roles and substantial frontier R&D."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "QuTech (TU Delft, TNO)",
+        "Quantum Delta NL",
+        "Delft University of Technology"
+      ],
+      "rationale": "The Netherlands, particularly through QuTech, is a global hub for quantum internet and QKD research, attracting top talent and driving significant frontier R&D, resulting in a focused but highly advanced job market."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Technologies Programme",
+        "University of Oxford",
+        "University of Cambridge",
+        "University College London",
+        "BT",
+        "QinetiQ",
+        "M Squared Lasers"
+      ],
+      "rationale": "The UK's National Quantum Technologies Programme has fostered a strong ecosystem of academic research and commercialization in quantum communications and sensing, leading to a medium volume of expert-level roles and substantial frontier work."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "medium",
+      "evidence": [
+        "French National Quantum Strategy",
+        "CNRS",
+        "CEA",
+        "Inria",
+        "Thales",
+        "Atos",
+        "Orange"
+      ],
+      "rationale": "France's national quantum strategy supports strong academic research and industrial engagement, particularly in quantum optics, QKD, and sensing for strategic applications, creating expert-level roles and a growing frontier presence."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Israel Innovation Authority",
+        "Weizmann Institute of Science",
+        "Hebrew University of Jerusalem",
+        "various tech startups"
+      ],
+      "rationale": "Israel's strong high-tech and cybersecurity sectors are naturally extending into quantum cryptography and sensing, with academic institutions and startups driving specialist roles and some frontier research, albeit at a smaller volume."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Mission",
+        "Indian Institute of Science (IISc)",
+        "various IITs (e.g., IIT Delhi, IIT Madras)"
+      ],
+      "rationale": "India's National Quantum Mission is fostering an nascent ecosystem, with leading academic institutions focusing on foundational research and skill development in QKD and sensing, leading to applied-level roles and early-stage frontier exploration."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "Centre for Quantum Technologies (CQT) at NUS",
+        "National Quantum Technologies Programme",
+        "Nanyang Technological University (NTU)"
+      ],
+      "rationale": "Singapore, through its Centre for Quantum Technologies, is a highly concentrated hub for advanced quantum communications and sensing research, attracting top talent and driving significant frontier R&D, resulting in a focused but expert-level job market."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.9,
+      "confidence": "high",
+      "evidence": [
+        "ETH Zurich",
+        "EPFL",
+        "University of Geneva",
+        "ID Quantique (QKD company)",
+        "NCCR Quantum Science and Technology"
+      ],
+      "rationale": "Switzerland boasts world-class academic institutions and a pioneering commercial entity (ID Quantique) in QKD, driving highly specialized and expert-level roles, with substantial frontier research in quantum communications and precision sensing."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Wallenberg Centre for Quantum Technology (WACQT)",
+        "Chalmers University of Technology",
+        "KTH Royal Institute of Technology"
+      ],
+      "rationale": "Sweden's WACQT focuses primarily on quantum computing, but also supports specialist-level research in related quantum sensing and communication components, contributing to a very low volume of advanced roles."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "InstituteQ",
+        "VTT Technical Research Centre of Finland",
+        "Aalto University"
+      ],
+      "rationale": "Finland's quantum efforts, coordinated by InstituteQ, are strong in academic research, particularly in quantum computing, with specialist roles emerging in related quantum sensing applications, but a very low volume in communications."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "Institute for Quantum Computing (IQC) at University of Waterloo",
+        "University of Toronto",
+        "Quantum Safe Canada",
+        "ISARA Corporation (quantum-safe crypto)"
+      ],
+      "rationale": "Canada has a well-established quantum ecosystem with leading academic institutions and national initiatives focusing on quantum cryptography, QKD, and sensing, driving expert-level roles and substantial frontier research."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Australian National Quantum Strategy",
+        "UNSW",
+        "University of Sydney",
+        "Australian National University (ANU)",
+        "ARC Centre of Excellence for Engineered Quantum Systems (EQUS)"
+      ],
+      "rationale": "Australia's national quantum strategy supports strong academic research, particularly in quantum computing, with specialist roles emerging in related quantum sensing and communication, contributing to a very low volume of advanced positions."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "medium",
+      "evidence": [
+        "Tyndall National Institute",
+        "University College Dublin",
+        "some photonics research"
+      ],
+      "rationale": "Ireland's quantum ecosystem is still in its very early stages, with limited dedicated activity in advanced quantum communications and sensing, resulting in negligible job volume and primarily foundational research."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Imec",
+        "Ghent University",
+        "KU Leuven",
+        "QuIC (Quantum Internet Alliance - EU project involvement)"
+      ],
+      "rationale": "Belgium, particularly through Imec, has strong expertise in quantum hardware and photonics, leading to specialist roles in component development for quantum sensing and communication, but with a very low overall volume."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "volume_band": "very_low",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
+      "evidence": [
+        "University of Vienna (Anton Zeilinger group)",
+        "IQOQI Innsbruck (Austrian Academy of Sciences)",
+        "Vienna Center for Quantum Science and Technology (VCQ)"
+      ],
+      "rationale": "Austria is a global leader in fundamental quantum optics and entanglement, with institutions like the University of Vienna and IQOQI Innsbruck driving expert-level research and significant frontier work in quantum communication, albeit with a very focused job market."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "CNR (National Research Council)",
+        "INFN (National Institute for Nuclear Physics)",
+        "University of Rome \"La Sapienza\"",
+        "Istituto Nazionale di Ottica (INO)"
+      ],
+      "rationale": "Italy has a strong academic base in quantum optics and QKD, with institutions like CNR and INFN fostering specialist-level research, but the industrial application and overall job volume remain very low."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "Quantum Spain initiative",
+        "ICFO (Institute of Photonic Sciences)",
+        "CSIC (Spanish National Research Council)",
+        "Universitat Aut\u00f2noma de Barcelona"
+      ],
+      "rationale": "Spain's Quantum Spain initiative and institutions like ICFO are developing a strong academic base in quantum photonics, QKD, and sensing, leading to specialist roles and some frontier research, but with a very low overall job volume."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
+      "evidence": [
+        "Lack of prominent national quantum initiatives",
+        "major research centers",
+        "industry players in this specific domain"
+      ],
+      "rationale": "Malaysia currently lacks significant national programs, dedicated research centers, or industrial investment in advanced quantum communications and sensing, resulting in negligible job market activity."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
+      "evidence": [
+        "Lack of prominent national quantum initiatives",
+        "major research centers",
+        "industry players in this specific domain"
+      ],
+      "rationale": "Vietnam's quantum technology landscape is extremely nascent, with no discernible advanced job market or frontier research in quantum communications and sensing."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
+      "evidence": [
+        "Lack of prominent national quantum initiatives",
+        "major research centers",
+        "industry players in this specific domain"
+      ],
+      "rationale": "Thailand shows minimal activity in advanced quantum communications and sensing, with no significant job market or frontier research identified."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
+      "evidence": [
+        "Lack of prominent national quantum initiatives",
+        "major research centers",
+        "industry players in this specific domain"
+      ],
+      "rationale": "Indonesia's engagement in advanced quantum communications and sensing is currently negligible, with no significant job market or frontier research."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "medium",
+      "evidence": [
+        "Khalifa University (some quantum research)",
+        "strategic national focus on advanced technologies"
+      ],
+      "rationale": "While the UAE has strategic ambitions in advanced technologies, its quantum communications and sensing ecosystem is still in its infancy, with negligible job volume and only very early-stage exploratory research."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
+      "confidence": "medium",
+      "evidence": [
+        "KAUST (King Abdullah University of Science and Technology - some quantum-related research)",
+        "Vision 2030"
+      ],
+      "rationale": "Saudi Arabia is investing in advanced technologies as part of Vision 2030, but its quantum communications and sensing domain is in very early development, resulting in negligible job volume and only nascent research efforts."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "University of Campinas (UNICAMP)",
+        "Federal University of Rio de Janeiro (UFRJ)",
+        "Brazilian National Institute of Science and Technology for Quantum Information"
+      ],
+      "rationale": "Brazil has academic groups engaged in foundational quantum physics, including some aspects of communications and sensing, but the overall job market for advanced roles remains negligible, with limited frontier R&D."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "University of Warsaw",
+        "Jagiellonian University",
+        "National Centre for Quantum Information"
+      ],
+      "rationale": "Poland has a strong academic tradition in theoretical quantum information, with some applied research in quantum communications and sensing, leading to a very low volume of roles primarily within academia."
+    }
+  ]
+}

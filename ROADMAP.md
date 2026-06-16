@@ -97,8 +97,12 @@ countries — deeper but not yet global.)
 - [x] Phase 4 — OEC complexity engine (`analysis/complexity.py`): RCA (with a
       volume floor to kill the empty-country pathology), PCI, basket complexity,
       proximity, density/adjacent-possible. `verify_complexity.py` prints it.
-      Note: classic eigenvector ECI is unreliable at 9 domains (small-N + washes
-      out all-round leaders) — we surface **basket complexity** + **PCI** instead.
+      Note: classic eigenvector ECI stays unreliable even after the 30-domain
+      expansion — corr(ECI, diversity) ≈ 0.22 and the top ranks invert (a known
+      method-of-reflections degeneracy on a dense panel, not a small-N artifact)
+      — so we surface **basket complexity** + **PCI** instead. The expansion DID
+      sharpen PCI markedly (Advanced Packaging / Memory / Nanomaterials now top
+      the ladder) and enriched the proximity graph + adjacent-possible.
 - [x] Phase 5 — dashboard (`dashboard/app.py`), now 8 tabs; boots clean (HTTP 200).
 - [x] Phase 6 — ambition layer + gap analysis. `ambition.py` (Gemini policy
       research → `ambition` table, 270 cells), `analysis/gap.py` (ambition −

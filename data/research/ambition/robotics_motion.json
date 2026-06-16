@@ -1,0 +1,411 @@
+{
+  "domain": "robotics_motion",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Robotics Initiative (NRI)",
+        "Manufacturing USA Institutes (e.g., ARM Institute)",
+        "National AI Initiative Act of 2020",
+        "DoD robotics programs"
+      ],
+      "rationale": "Robotics is a flagship national priority, integrated into broader AI and manufacturing strategies, with sustained funding and dedicated programs aiming for frontier research and applications."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Made in China 2025 (Robotics)",
+        "14th Five-Year Plan for Robotics Industry Development",
+        "National New Generation Artificial Intelligence Development Plan"
+      ],
+      "rationale": "China has explicit, highly ambitious national plans and massive investments to become a global leader in robotics, with clear targets for domestic production and advanced capabilities."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "New Robot Strategy (updated)",
+        "Society 5.0 initiatives",
+        "METI R&D funding for robotics"
+      ],
+      "rationale": "Japan has a long-standing and continuously updated national strategy for robotics, driven by industrial competitiveness and societal challenges, aiming for global leadership in diverse applications."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "3rd Basic Plan for Intelligent Robot Development and Distribution (2019-2023)",
+        "Intelligent Robot Development and Supply Promotion Act",
+        "MOTIE R&D programs"
+      ],
+      "rationale": "South Korea has a highly ambitious and well-funded national strategy to maintain and advance its global leadership in intelligent robotics, with clear plans and legal frameworks."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "5+2 Industrial Innovation Plan (Smart Machinery)",
+        "Industrial Technology Research Institute (ITRI) robotics initiatives",
+        "Ministry of Economic Affairs (MOEA) programs"
+      ],
+      "rationale": "Taiwan leverages its strong ICT and manufacturing base to develop smart machinery and industrial robotics, aiming for expertise in high-value applications and components."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Plattform Industrie 4.0",
+        "High-Tech Strategy 2025",
+        "BMBF funding for AI and robotics in manufacturing"
+      ],
+      "rationale": "Germany prioritizes robotics as a core component of its Industry 4.0 strategy, aiming to maintain its industrial leadership through advanced automation and human-robot collaboration."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Dutch National AI Strategy (includes robotics applications)",
+        "RoboValley initiative",
+        "NWO funding for robotics research"
+      ],
+      "rationale": "The Netherlands focuses on niche robotics applications (e.g., agri-food, medical, logistics) within broader AI and innovation strategies, leveraging its strong research ecosystem."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "UK Robotics and Autonomous Systems (RAS) Network",
+        "Industrial Strategy Challenge Fund (Future of Robotics and AI)",
+        "UK AI Strategy"
+      ],
+      "rationale": "The UK recognizes robotics as a key technology, integrating it into AI and industrial strategies, with a focus on autonomous systems and specific application areas, though less dedicated large-scale funding than some peers."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "France 2030 investment plan (includes robotics and AI)",
+        "National Strategy for Artificial Intelligence (AI for Humanity)",
+        "Bpifrance funding"
+      ],
+      "rationale": "France's national AI strategy and 'France 2030' plan include significant investment in robotics, particularly for industrial modernization, healthcare, and defense applications."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Israel Innovation Authority (IIA) programs",
+        "Specific R&D grants for robotics startups"
+      ],
+      "rationale": "Israel's ambition in robotics is primarily driven by its vibrant startup ecosystem and integration with AI, focusing on niche applications in defense, medical, and agriculture, rather than a standalone national strategy."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Make in India initiative (promoting manufacturing and automation)",
+        "National Strategy for Artificial Intelligence (includes robotics applications)"
+      ],
+      "rationale": "India acknowledges robotics for industrial growth and societal applications, but its national strategy is more focused on adoption and basic R&D, with less explicit, dedicated funding for advanced robotics development."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Robotics Programme (NRP)",
+        "Smart Nation Initiative",
+        "A*STAR robotics research"
+      ],
+      "rationale": "Singapore has a highly strategic and well-funded National Robotics Programme, aiming to leverage robotics for productivity, smart city initiatives, and addressing labor shortages across various sectors."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Research Programme 'Digital Transformation' (NRP 75)",
+        "ETH Zurich and EPFL robotics institutes",
+        "Innosuisse funding for innovation projects"
+      ],
+      "rationale": "Switzerland focuses on high-value, precision robotics, often linked to medical, industrial, and drone applications, driven by strong academic research and innovation funding."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Vinnova funding for innovation programs (e.g., Smart Industry)",
+        "Strategic innovation programs (SIPs) that include automation"
+      ],
+      "rationale": "Sweden integrates robotics into broader industrial innovation and digitalization agendas, focusing on advanced industrial automation and human-robot collaboration, rather than a standalone national robotics strategy."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Business Finland's 'AI Business' program (includes robotics)",
+        "National digitalization strategies"
+      ],
+      "rationale": "Finland focuses on leveraging robotics for industrial automation and specific applications within broader digitalization and AI strategies, with less emphasis on frontier robotics R&D."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Pan-Canadian Artificial Intelligence Strategy (includes robotics applications)",
+        "Next Generation Manufacturing Canada (NGen) supercluster",
+        "NRC robotics research"
+      ],
+      "rationale": "Canada's strong AI strategy often includes robotics, with a focus on autonomous systems and AI-driven robotics for specific applications like agriculture and remote operations."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National AI Centre (includes robotics)",
+        "Modern Manufacturing Strategy (priority areas include robotics and automation)",
+        "CSIRO robotics research"
+      ],
+      "rationale": "Australia is increasingly recognizing robotics for its key industries (mining, agriculture, defense, healthcare), focusing on autonomous systems and AI integration within broader manufacturing and AI strategies."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "Enterprise Ireland support for R&D and innovation",
+        "IDA Ireland promoting automation in FDI"
+      ],
+      "rationale": "Ireland's focus is primarily on attracting FDI and general digital transformation. While automation is present, a dedicated, high-ambition national robotics strategy is not prominent."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "Regional innovation agencies (e.g., VLAIO in Flanders) supporting automation"
+      ],
+      "rationale": "Belgium has a strong industrial base in certain regions with a focus on automation, but no overarching, highly ambitious national robotics strategy."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Production of the Future program (FFG)",
+        "Austrian Research Promotion Agency (FFG) funding for robotics and AI"
+      ],
+      "rationale": "Austria focuses on smart manufacturing and Industry 4.0, with robotics being a key enabler, supported by government programs and strong academic research."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Piano Nazionale Transizione 4.0 (National Transition Plan 4.0)",
+        "National Research Council (CNR) robotics research"
+      ],
+      "rationale": "Italy has identified robotics as crucial for its 'Industry 4.0' plans, with significant government incentives for automation and digital transformation in its strong manufacturing sector."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Espa\u00f1a Digital 2025 (includes digital transformation and AI)",
+        "CDTI funding for R&D"
+      ],
+      "rationale": "Spain is investing in digital transformation and Industry 4.0, with robotics playing a role in modernizing its industrial base, but without a highly ambitious, dedicated robotics strategy."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Policy on Industry 4.0 (Industry4WRD)",
+        "MIDA and SIRIM initiatives to promote automation"
+      ],
+      "rationale": "Malaysia aims to adopt Industry 4.0 technologies, including robotics, to move up the manufacturing value chain, but a dedicated, high-ambition national robotics strategy is not yet prominent."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "General industrialization plans",
+        "Mentions of Industry 4.0 in broader economic strategies"
+      ],
+      "rationale": "Vietnam is a growing manufacturing hub, but its focus is primarily on basic industrialization and attracting FDI. Robotics adoption is largely driven by foreign companies, with limited explicit national strategy for advanced development."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Thailand 4.0 economic model (includes robotics and automation)",
+        "Eastern Economic Corridor (EEC) initiatives for smart industries",
+        "Board of Investment (BOI) incentives for automation"
+      ],
+      "rationale": "Thailand has identified robotics and automation as a key sector for its 'Thailand 4.0' economic model, aiming to transform its industries through adoption and some local development."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Making Indonesia 4.0 roadmap (identifies robotics as a key technology)",
+        "Government incentives for industrial modernization"
+      ],
+      "rationale": "Indonesia's 'Making Indonesia 4.0' roadmap acknowledges robotics, but the focus is on broad industrial transformation and adoption of existing technologies, rather than a dedicated, flagship national priority for advanced robotics development."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "UAE Strategy for Artificial Intelligence",
+        "Dubai Future Foundation initiatives",
+        "Smart city projects (e.g., autonomous transport trials)"
+      ],
+      "rationale": "The UAE has ambitious plans for smart cities, AI, and future technologies, with robotics playing a significant role in service, logistics, and public sector automation, driven by strategic initiatives."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Vision 2030 (includes industrial diversification, smart cities like NEOM)",
+        "National Industrial Development and Logistics Program (NIDLP)",
+        "KAUST robotics research"
+      ],
+      "rationale": "Saudi Arabia's Vision 2030 includes massive investments in technology and diversification, with robotics and automation crucial for new industries and smart cities like NEOM, aiming for significant adoption and some development."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Plano Nacional de Internet das Coisas (National IoT Plan, includes industrial automation)",
+        "BNDES funding for innovation"
+      ],
+      "rationale": "Brazil has a large industrial base but a less developed national strategy for advanced robotics. The focus is more on adopting existing technologies for productivity within broader industrial modernization plans."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Strategy for Responsible Development (includes digitalization and Industry 4.0)",
+        "Ministry of Development Funds and Regional Policy programs for innovation"
+      ],
+      "rationale": "Poland is investing in digital transformation and Industry 4.0 to modernize its economy, with robotics identified as a key area for industrial competitiveness and adoption."
+    }
+  ]
+}

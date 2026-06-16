@@ -1,0 +1,397 @@
+{
+  "domain": "synbio_bioprocess",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Executive Order 14081 on Advancing Biotechnology and Biomanufacturing Innovation",
+        "National Biotechnology and Biomanufacturing Initiative",
+        "DARPA BTO programs"
+      ],
+      "rationale": "Explicit national strategy and significant funding to establish US leadership in bioeconomy and biomanufacturing."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "14th Five-Year Plan for Bioeconomy Development",
+        "Made in China 2025 (biomedicine, advanced manufacturing)",
+        "National Key R&D Programs in Synthetic Biology"
+      ],
+      "rationale": "Strategic national priority with massive investments to achieve global leadership in biotechnology and biomanufacturing."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Bio-strategy 2020",
+        "Moonshot R&D Program (Goal 7)",
+        "METI Biomanufacturing Initiatives"
+      ],
+      "rationale": "Strong national commitment to bio-based industries and green innovation, aiming for industrial application and advanced research."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Bio-Health Industry Innovation Strategy",
+        "National Strategy for Biotechnology",
+        "MSIT R&D programs for bio-convergence"
+      ],
+      "rationale": "Significant government push to develop bio-health and future new industries, including advanced biotechnology."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "5+2 Industrial Innovation Plan (Biomedical Industry Innovation Program)",
+        "National Biotechnology Research Park"
+      ],
+      "rationale": "Focus on building a robust biotech and precision health sector, with specific initiatives to foster innovation."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Bioeconomy Strategy (2020)",
+        "Hightech Strategy 2025",
+        "BMBF funding for industrial biotechnology"
+      ],
+      "rationale": "Long-standing commitment to a sustainable bioeconomy, with strong research and industrial application focus."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Dutch National Research Agenda (NWA) themes",
+        "Top Sector Life Sciences & Health",
+        "Investments in bio-based economy"
+      ],
+      "rationale": "Strong emphasis on circular and bio-based economy, leveraging existing life sciences strengths for innovation."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "UK Bioeconomy Strategy (2018)",
+        "Life Sciences Vision (2021)",
+        "Innovate UK funding for synthetic biology"
+      ],
+      "rationale": "Clear strategic intent to be a global leader in life sciences and biomanufacturing, supported by dedicated strategies and funding."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "France 2030 Investment Plan (Biomanufacturing)",
+        "National Strategy for Biotechnology"
+      ],
+      "rationale": "Significant investment in industrial biomanufacturing and health innovation as part of broader national strategic plans."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Israel Innovation Authority programs supporting biotech startups",
+        "Academic research centers in synthetic biology"
+      ],
+      "rationale": "Strong general biotech innovation ecosystem, but synthetic biology is less explicitly a standalone national priority compared to broader biotech."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Biotechnology Development Strategy (2015-2020)",
+        "Department of Biotechnology (DBT) funding",
+        "Make in India initiatives for biotech"
+      ],
+      "rationale": "Focus on developing domestic biotechnology capabilities for healthcare, agriculture, and industry, with an emphasis on applied solutions."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Research, Innovation and Enterprise (RIE) 2025 Plan (Health and Biomedical Sciences, Manufacturing)",
+        "A*STAR Biomanufacturing Initiatives"
+      ],
+      "rationale": "Strategic investments to establish Singapore as a hub for biomedical sciences and advanced biomanufacturing."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Swiss National Science Foundation (SNSF) funding for life sciences",
+        "ETH Zurich Department of Biosystems Science and Engineering (D-BSSE)"
+      ],
+      "rationale": "Excellent academic research in life sciences and synthetic biology, but less a top-down national industrial strategy for the domain."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Research Agenda for Bioeconomy",
+        "Vinnova programs for bio-based industries"
+      ],
+      "rationale": "Focus on sustainable bio-based economy and industrial applications, leveraging strong research capabilities."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Bioeconomy Strategy",
+        "Business Finland programs for bio-based solutions"
+      ],
+      "rationale": "Emphasis on bioeconomy and circular economy, with a focus on sustainable resource utilization and industrial processes."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Innovation, Science and Economic Development Canada (ISED) Biomanufacturing Strategy",
+        "Genome Canada initiatives"
+      ],
+      "rationale": "Building on existing biotech strengths with targeted investments in biomanufacturing and genomics."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Biotechnology Strategy",
+        "CSIRO Synthetic Biology Future Science Platform"
+      ],
+      "rationale": "Broad biotechnology strategy with specific research initiatives in synthetic biology, leveraging natural resources."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "IDA Ireland support for biopharma manufacturing FDI"
+      ],
+      "rationale": "Strong focus on attracting and supporting existing biopharma manufacturing, but limited explicit national ambition for frontier synthetic biology."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Flanders' Smart Specialisation Strategy (Life Sciences)",
+        "VLAIO funding for biotech"
+      ],
+      "rationale": "Strong regional clusters in life sciences and biotech, with regional strategies supporting innovation."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "Austrian Research Promotion Agency (FFG) funding for life sciences"
+      ],
+      "rationale": "General support for life sciences research, but no dedicated national strategy or significant ambition for synthetic biology."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "National Research Programme (PNR) includes life sciences"
+      ],
+      "rationale": "Some support for life sciences research, but synthetic biology is not a prominent national strategic priority."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "Spanish Strategy for Science, Technology and Innovation (broader biotech)"
+      ],
+      "rationale": "General support for science and technology, but limited explicit national ambition for advanced synthetic biology."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Biotechnology Policy",
+        "Bioeconomy Transformation Programme"
+      ],
+      "rationale": "Broader biotechnology policy, but limited explicit focus or significant investment in advanced synthetic biology."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "General science and technology development plans"
+      ],
+      "rationale": "Developing science and technology base, but synthetic biology is not a stated national priority."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Bio-Circular-Green (BCG) Economy Model",
+        "National Science Technology and Innovation Policy"
+      ],
+      "rationale": "Focus on bio-based industries and circular economy, with biotechnology as an enabler, but not specifically advanced synthetic biology."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "National Research and Innovation Agency (BRIN) initiatives"
+      ],
+      "rationale": "General research and innovation efforts, but synthetic biology is not a stated national priority."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "UAE Advanced Technology Strategy",
+        "Dubai Future Foundation initiatives in biotech"
+      ],
+      "rationale": "Significant investments in advanced technologies and diversification, including general biotech, but specific synthetic biology ambition is emerging."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Vision 2030 (health and life sciences)",
+        "NEOM project (future technologies)",
+        "KAUST research initiatives"
+      ],
+      "rationale": "Ambitious plans for economic diversification and advanced technology development, with emerging focus on life sciences."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Ministry of Science, Technology and Innovation (MCTI) programs",
+        "EMBRAPA (agricultural biotechnology)"
+      ],
+      "rationale": "Strong in agricultural biotechnology and bio-based products, but less explicit national ambition for frontier synthetic biology."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "short",
+      "confidence": "low",
+      "evidence": [
+        "National Centre for Research and Development (NCBR) funding (general life sciences)"
+      ],
+      "rationale": "General support for life sciences research, but synthetic biology is not a stated national priority."
+    }
+  ]
+}

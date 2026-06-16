@@ -52,16 +52,39 @@ OPS_SECRET = _ENV.get("EPO_OPS_SECRET", "")
 LOG = ROOT / "data" / "research" / "patents_run.log"
 
 # Patent-flavoured title/abstract terms per domain (OPS CQL ti/ab search).
+# (Legacy EPO path — kept consistent with the 30-domain taxonomy; the active
+# patent collector is patents_bq.py.)
 DOMAIN_TERMS: dict[str, str] = {
-    "semiconductors": "semiconductor or lithography or transistor or wafer",
-    "quantum": "qubit or \"quantum computing\" or \"quantum cryptography\"",
-    "precision_engineering": "photonic or actuator or mems or metrology",
-    "advanced_materials": "nanomaterial or graphene or composite or \"thin film\"",
-    "biomedical": "crispr or \"gene editing\" or biosensor or genomic",
-    "pharmaceuticals": "pharmaceutical or vaccine or antibody or \"drug formulation\"",
-    "digital": "cybersecurity or \"edge computing\" or \"wireless network\"",
-    "artificial_intelligence": "\"machine learning\" or \"neural network\"",
-    "other_frontier": "propulsion or \"fusion reactor\" or \"fuel cell\" or satellite",
+    "chip_design": "\"integrated circuit\" or asic or vlsi or \"chip design\"",
+    "memory_devices": "dram or \"flash memory\" or \"memory device\" or sram",
+    "advanced_packaging": "chiplet or \"advanced packaging\" or \"through-silicon via\"",
+    "semi_equipment": "lithography or \"plasma etching\" or \"thin film deposition\" or wafer",
+    "quantum_computing": "qubit or \"quantum computing\" or \"quantum error correction\"",
+    "quantum_comms_sensing": "\"quantum key distribution\" or \"quantum sensing\" or \"quantum communication\"",
+    "robotics_motion": "robot or actuator or \"motion control\" or manipulator",
+    "photonics_optics": "photonic or laser or \"optical\" or optoelectronic",
+    "mems_metrology": "mems or metrology or \"precision measurement\" or \"inertial sensor\"",
+    "additive_mfg": "\"additive manufacturing\" or \"3d printing\" or \"selective laser melting\"",
+    "nanomaterials": "nanomaterial or graphene or \"carbon nanotube\" or \"quantum dot\"",
+    "energy_storage": "battery or \"lithium-ion\" or supercapacitor or electrolyte",
+    "composites_polymers": "composite or polymer or ceramic or superconductor",
+    "genomics": "crispr or \"gene editing\" or genomic or \"dna sequencing\"",
+    "cell_gene_therapy": "\"cell therapy\" or \"gene therapy\" or \"stem cell\"",
+    "synbio_bioprocess": "\"synthetic biology\" or fermentation or \"protein engineering\"",
+    "drug_discovery": "\"drug discovery\" or \"medicinal chemistry\" or \"small molecule\"",
+    "biologics_vaccines": "vaccine or antibody or biologics or mrna",
+    "pharma_mfg": "\"drug formulation\" or \"drug delivery\" or \"pharmaceutical manufacturing\"",
+    "cloud_distributed": "\"distributed system\" or \"cloud computing\" or \"edge computing\"",
+    "cybersecurity": "cybersecurity or cryptography or \"intrusion detection\"",
+    "networks_5g": "\"5g\" or \"wireless network\" or \"radio access\"",
+    "embedded_iot": "\"embedded system\" or \"internet of things\" or firmware",
+    "machine_learning": "\"machine learning\" or \"neural network\" or \"deep learning\"",
+    "generative_nlp": "\"natural language processing\" or \"large language model\" or \"speech recognition\"",
+    "computer_vision": "\"computer vision\" or \"object detection\" or \"image recognition\"",
+    "space_aerospace": "satellite or spacecraft or propulsion or aerospace",
+    "fusion_nuclear": "\"fusion reactor\" or tokamak or \"nuclear reactor\" or plasma",
+    "hydrogen_fuelcells": "\"fuel cell\" or electrolyzer or hydrogen",
+    "carbon_capture": "\"carbon capture\" or \"carbon sequestration\" or \"direct air capture\"",
 }
 
 

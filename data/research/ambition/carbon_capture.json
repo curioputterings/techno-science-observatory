@@ -1,0 +1,405 @@
+{
+  "domain": "carbon_capture",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Inflation Reduction Act (IRA)",
+        "Bipartisan Infrastructure Law (BIL)",
+        "DOE Carbon Negative Shot",
+        "45Q tax credit"
+      ],
+      "rationale": "Aggressive federal investment and policy support for large-scale deployment of CCUS and DAC technologies."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "14th Five-Year Plan for Green Industrial Development",
+        "National Climate Change Strategy",
+        "Various pilot projects by state-owned enterprises"
+      ],
+      "rationale": "Significant R&D and pilot projects, with CCUS identified as crucial for industrial decarbonization towards 2060 carbon neutrality."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Green Growth Strategy Through Achieving Carbon Neutrality in 2050",
+        "METI's CCUS Roadmap",
+        "Asia CCUS Network initiative"
+      ],
+      "rationale": "Strong strategic focus on CCUS for hard-to-abate sectors and international collaboration, with clear roadmaps."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "2050 Carbon Neutrality Strategy",
+        "Korean Green New Deal",
+        "National CCUS Master Plan"
+      ],
+      "rationale": "Identified as a key technology for carbon neutrality, with R&D investment and a national plan for deployment."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Taiwan's Pathway to Net-Zero Emissions by 2050 (mentions CCUS as an option)",
+        "Some industrial pilot projects"
+      ],
+      "rationale": "Acknowledged in net-zero plans, but not a flagship national priority with dedicated large-scale funding compared to other climate solutions."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Climate Action Programme 2030",
+        "New government coalition agreement (acknowledging CCUS for hard-to-abate sectors)",
+        "Funding for CO2 utilization research"
+      ],
+      "rationale": "Evolving stance, with increasing recognition of CCUS necessity for industrial emissions, but historically cautious due to public opposition."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "short",
+      "confidence": "high",
+      "evidence": [
+        "Climate Agreement (Klimaatakkoord)",
+        "Porthos project",
+        "SDE++ subsidy scheme"
+      ],
+      "rationale": "A European frontrunner with clear targets and significant projects for industrial CCS, particularly in port areas."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 5,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Ten Point Plan for a Green Industrial Revolution",
+        "Net Zero Strategy",
+        "CCUS Cluster Sequencing process",
+        "Industrial Decarbonisation Strategy"
+      ],
+      "rationale": "Strong policy support, dedicated funding, and clear plans for developing multiple operational CCUS clusters."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "National Low Carbon Strategy (SNBC)",
+        "Some industrial initiatives (e.g., Dunkerque)"
+      ],
+      "rationale": "Acknowledges CCUS for industrial emissions but prioritizes nuclear and renewables; less aggressive national funding for CCUS deployment."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "National Climate Plan (limited specific mention or funding for CCUS)"
+      ],
+      "rationale": "Climate strategy focuses more on renewables, energy efficiency, and water tech; CCUS is not a stated national priority."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "NITI Aayog's 'Carbon Capture, Utilisation, and Storage (CCUS) Policy Framework and its Deployment Mechanism for India'",
+        "National Centre for Carbon Capture and Utilisation (NCCCU)"
+      ],
+      "rationale": "Recognizes CCUS importance for industrial decarbonization with a policy framework and dedicated research center, but large-scale deployment is nascent."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Singapore Green Plan 2030",
+        "National Climate Change Strategy",
+        "A*STAR initiatives"
+      ],
+      "rationale": "Investing in R&D for CO2 utilization and exploring regional storage, critical for its energy-intensive economy and limited land."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 3,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Swiss Climate Strategy",
+        "Support for innovative climate technologies (e.g., DAC)"
+      ],
+      "rationale": "Strong focus on direct air capture (DAC) technology development, leveraging its innovation ecosystem, rather than large-scale industrial CCS."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Climate Policy Framework",
+        "Specific support for Bioenergy with Carbon Capture and Storage (BECCS)",
+        "Vattenfall's CCS project at Uppsala"
+      ],
+      "rationale": "Strong policy and financial support for BECCS and industrial CCS, with clear targets and ongoing projects."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Climate and Energy Strategy (mentions CCUS)",
+        "Some industrial feasibility studies"
+      ],
+      "rationale": "Exploring CCUS for industrial emissions and waste-to-energy, but not a top-tier national priority with significant dedicated funding yet."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 5,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Investment Tax Credit for CCUS",
+        "Clean Fuel Regulations",
+        "Carbon Capture, Utilization, and Storage Strategy"
+      ],
+      "rationale": "Strong policy framework and financial incentives, leveraging vast storage potential, especially for oil & gas and industrial sectors."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Low Emissions Technology Statement",
+        "Carbon Capture, Use and Storage Hubs",
+        "National CO2 Infrastructure Plan"
+      ],
+      "rationale": "Strong government support and investment in CCUS, recognizing its importance for its resource-intensive economy and vast storage potential."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 2,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Climate Action Plan (acknowledges CCUS as a future option)"
+      ],
+      "rationale": "Climate action focuses heavily on renewables; CCUS is acknowledged but lacks significant dedicated national programs or funding as a current priority."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Federal Climate Plan",
+        "Regional initiatives (e.g., Antwerp@C)"
+      ],
+      "rationale": "Participating in European CCUS efforts with industrial clusters exploring deployment, particularly in Flanders."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Climate and Energy Strategy (minimal specific CCUS focus)"
+      ],
+      "rationale": "Climate strategy emphasizes renewables and energy efficiency; CCUS is not a prominent national priority."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Energy and Climate Plan (PNIEC)",
+        "Industrial initiatives (e.g., Eni's Ravenna project)"
+      ],
+      "rationale": "Identified as important for decarbonizing heavy industry, with some industrial projects and policy recognition."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "National Integrated Energy and Climate Plan (PNIEC)",
+        "Some industrial pilots"
+      ],
+      "rationale": "Climate strategy prioritizes renewables; CCUS is mentioned as a potential option but lacks significant dedicated national programs or funding."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Energy Policy",
+        "Petronas's CCUS initiatives"
+      ],
+      "rationale": "Exploring CCUS for decarbonization and enhanced oil recovery, with state-owned companies leading initiatives and some government support."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "National Climate Change Strategy (limited specific CCUS focus)"
+      ],
+      "rationale": "Climate efforts primarily focus on renewable energy and energy efficiency; CCUS is not a stated national priority with significant funding."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 2,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "National Energy Plan (mentions CCUS)",
+        "Some industrial interest"
+      ],
+      "rationale": "Exploring CCUS as part of long-term decarbonization, particularly for industrial sectors, but still in early stages of commitment."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Energy Policy",
+        "Pertamina's CCUS initiatives"
+      ],
+      "rationale": "Looking at CCUS for decarbonization and enhanced oil recovery, with state-owned companies driving initiatives and some government support."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "UAE Net Zero by 2050 Strategic Initiative",
+        "ADNOC's Al Reyadah CCUS facility",
+        "Masdar initiatives"
+      ],
+      "rationale": "Strong commitment to CCUS as crucial for decarbonization and maintaining its energy industry, with operational facilities and clear targets."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Saudi Green Initiative",
+        "Vision 2030",
+        "Aramco's CCUS projects"
+      ],
+      "rationale": "Heavy investment in CCUS as part of its circular carbon economy approach and Vision 2030, with significant projects underway."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 2,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "National Climate Change Policy (limited specific CCUS initiatives)"
+      ],
+      "rationale": "Climate strategy focuses heavily on forest protection and renewable energy; CCUS is acknowledged but not a flagship national priority."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Polish Energy Policy 2040",
+        "EU funding for CCUS projects"
+      ],
+      "rationale": "Sees CCUS as necessary for decarbonizing its coal-reliant energy sector and heavy industry, with policy recognition and some project development."
+    }
+  ]
+}

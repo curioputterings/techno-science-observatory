@@ -1,0 +1,413 @@
+{
+  "domain": "energy_storage",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Inflation Reduction Act (IRA)",
+        "Bipartisan Infrastructure Law",
+        "National Blueprint for Lithium Batteries",
+        "Department of Energy (DOE) Battery 500 Consortium"
+      ],
+      "rationale": "Strong policy support, substantial funding for R&D, manufacturing, and supply chain development for next-generation battery technologies."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "14th Five-Year Plan",
+        "National New Energy Vehicle (NEV) policies",
+        "State-backed R&D and industrial policies",
+        "CATL and BYD expansion plans"
+      ],
+      "rationale": "Strategic national priority with massive industrial base, significant R&D investment, and market dominance in current and emerging battery technologies."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Green Innovation Fund (METI)",
+        "NEDO projects for solid-state batteries",
+        "National strategies for automotive and energy sectors"
+      ],
+      "rationale": "Strong R&D capabilities, major automotive players, and government support for advanced battery technologies, particularly solid-state."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "K-Battery Development Strategy",
+        "Government R&D funding for next-generation batteries (e.g., solid-state, lithium-sulfur)",
+        "LG Energy Solution, Samsung SDI, SK On investment plans"
+      ],
+      "rationale": "Strong industrial base, significant government support, and leading companies in battery production and R&D for advanced Li-ion and next-gen chemistries."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Taiwan's '5+2 Industrial Innovation Plan' (Green Energy)",
+        "ITRI initiatives for battery components and smart grid"
+      ],
+      "rationale": "Leveraging existing strengths in electronics and semiconductors to integrate battery technology, particularly for EVs and energy storage systems, with a focus on components and systems rather than core cell manufacturing."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "IPCEI (Important Projects of Common European Interest) for Batteries",
+        "'Battery Cell Production Made in Germany' strategy",
+        "Fraunhofer Institutes R&D programs"
+      ],
+      "rationale": "Strong industrial base, significant government and EU funding to establish a competitive battery value chain, especially for automotive applications."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Climate Agreement",
+        "TNO research on energy storage and circular economy"
+      ],
+      "rationale": "Strong in energy transition and smart grid solutions, but not a primary focus for large-scale battery manufacturing or frontier R&D. More on integration and circularity."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Faraday Battery Challenge",
+        "UK Battery Industrialisation Centre (UKBIC)",
+        "Automotive Transformation Fund",
+        "Net Zero Strategy"
+      ],
+      "rationale": "Clear government initiatives to support battery R&D and manufacturing, driven by the automotive sector and net-zero targets."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "IPCEI for Batteries (with Germany)",
+        "'France 2030' investment plan (decarbonization)",
+        "ACC (Automotive Cells Company) gigafactory projects"
+      ],
+      "rationale": "Strong government support and significant investment, particularly in collaboration with Germany, to establish a European battery ecosystem."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Israel Innovation Authority funding for startups (e.g., StoreDot)",
+        "Academic research in battery materials"
+      ],
+      "rationale": "Known for high-tech R&D and startups in specific battery technologies (e.g., fast charging), but not a major player in large-scale battery production or broad national manufacturing strategy."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Production Linked Incentive (PLI) scheme for Advanced Chemistry Cell (ACC) battery manufacturing",
+        "FAME India scheme (Faster Adoption and Manufacturing of Electric Vehicles)",
+        "National Programme on Advanced Chemistry Cell Battery Storage"
+      ],
+      "rationale": "Clear government policies and incentives to boost domestic battery manufacturing and reduce import dependence, driven by EV targets."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Research Foundation (NRF) funding for sustainable energy",
+        "A*STAR research institutes on advanced materials"
+      ],
+      "rationale": "Strong R&D capabilities and focus on high-tech solutions and smart energy systems, but limited land and resources for large-scale battery production. More on integration and advanced materials."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "ETH Zurich, EPFL research in materials science",
+        "CSEM initiatives for energy storage"
+      ],
+      "rationale": "Excellent research institutions, particularly in materials science, but the country's industrial structure doesn't lend itself to mass production of batteries. Focus is on high-value components or research."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 3,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Northvolt gigafactory (with strong government support)",
+        "National strategies for green transition and circular economy",
+        "Business Sweden support for battery industry"
+      ],
+      "rationale": "Strong commitment to sustainability and green industrialization, exemplified by the Northvolt project, which has significant national backing for sustainable battery production and recycling."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Battery Strategy",
+        "Business Finland initiatives for battery value chain",
+        "Focus on sustainable mining and battery chemicals"
+      ],
+      "rationale": "Rich in raw materials for batteries, strong focus on circular economy and sustainable processing, aiming to be a key player in the battery value chain beyond cell production."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 3,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Critical Minerals Strategy",
+        "Strategic Innovation Fund (SIF) investments in EV and battery manufacturing (e.g., Stellantis-LGES, Volkswagen gigafactory)",
+        "'Mines to Mobility' vision"
+      ],
+      "rationale": "Abundant critical minerals, significant government investment to attract battery manufacturing and integrate into the North American EV supply chain."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Critical Minerals Strategy",
+        "National Battery Strategy (emerging)",
+        "CSIRO research on battery materials and processing"
+      ],
+      "rationale": "World leader in lithium and other critical mineral extraction, aiming to move up the value chain into processing and potentially some manufacturing, but not yet a full-scale battery producer."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Science Foundation Ireland (SFI) funding for general materials research"
+      ],
+      "rationale": "Strong in general R&D and tech, but not a specific national priority for large-scale battery development or production. Limited explicit strategies or dedicated programs."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Flemish government initiatives (e.g., Circular Economy)",
+        "Umicore (private company, but significant national presence in materials)",
+        "Participation in EU IPCEI for batteries"
+      ],
+      "rationale": "Strong in chemical industry and recycling, contributing to the European battery ecosystem, but not aiming for large-scale cell manufacturing itself."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Austrian Research Promotion Agency (FFG) funding for materials research",
+        "COMET Competence Centers for materials science"
+      ],
+      "rationale": "Strong R&D capabilities, particularly in materials science and engineering, but not a major player in large-scale battery production or a dedicated national strategy for it."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Participation in EU IPCEI for Batteries",
+        "National Recovery and Resilience Plan (PNRR) investments in green transition and mobility",
+        "Stellantis investments in battery production"
+      ],
+      "rationale": "Part of the European push for battery independence, with some industrial players and government support for establishing a domestic presence in battery production."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "PERTE VEC (Strategic Project for the Recovery and Economic Transformation of the Electric and Connected Vehicle)",
+        "Volkswagen's Sagunto gigafactory project",
+        "National Recovery Plan investments"
+      ],
+      "rationale": "Significant government support and EU funding to attract battery manufacturing, particularly linked to its strong automotive industry."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Automotive Policy (NAP 2020) includes EV focus"
+      ],
+      "rationale": "Strong electronics manufacturing base, but not a primary focus for advanced battery R&D or large-scale cell production. More on integration and assembly for EVs."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "VinFast (private company) investing in battery production",
+        "Government support for EV adoption"
+      ],
+      "rationale": "Emerging market with a strong local player (VinFast) driving some battery manufacturing, but not a broad national strategy for advanced battery R&D or global competitiveness."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "EV 3.0/3.5 policy",
+        "Board of Investment (BOI) incentives for EV and battery production"
+      ],
+      "rationale": "Strong automotive manufacturing base, with clear government incentives to attract EV and battery production, but primarily for assembly and regional supply."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National EV Strategy",
+        "Indonesia Battery Corporation (IBC)",
+        "Nickel downstreaming policies",
+        "Investments from LG, CATL"
+      ],
+      "rationale": "Leveraging its vast nickel resources to build a complete EV battery supply chain from mining to cell production, a significant national priority."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "UAE Energy Strategy 2050",
+        "Masdar initiatives for renewable energy and smart grids"
+      ],
+      "rationale": "Significant investment in renewable energy and smart infrastructure, requiring energy storage solutions, but not aiming to be a global leader in battery cell technology or manufacturing."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Vision 2030 diversification plans",
+        "Public Investment Fund (PIF) investments (e.g., Lucid Motors, Ceer)"
+      ],
+      "rationale": "Diversifying its economy, with investments in EVs and related industries, but not a primary focus on advanced battery R&D or large-scale production."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "No explicit national battery strategy or significant dedicated programs"
+      ],
+      "rationale": "While having some raw materials, there isn't a strong, coordinated national strategy or significant investment in advanced battery R&D or manufacturing."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Participation in EU IPCEI for Batteries",
+        "LG Energy Solution factory (largest in Europe)",
+        "Government support for foreign investment in battery sector"
+      ],
+      "rationale": "Has become a major hub for battery cell manufacturing (primarily foreign investment), with government support for this industrial activity, contributing significantly to the European battery supply chain."
+    }
+  ]
+}

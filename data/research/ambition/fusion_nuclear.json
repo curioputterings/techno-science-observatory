@@ -1,0 +1,417 @@
+{
+  "domain": "fusion_nuclear",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "White House Fusion Energy Strategy",
+        "DOE Fusion Energy Sciences programs",
+        "ARPA-E ALPHA program",
+        "Project Pele",
+        "ITER participation",
+        "Nuclear Energy Innovation Capabilities Act"
+      ],
+      "rationale": "Strong government and private sector commitment to commercial fusion by the 2030s and advanced SMR deployment."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Medium- and Long-Term Program for Science and Technology Development",
+        "ITER participation",
+        "EAST tokamak program",
+        "HTR-PM project",
+        "CAP1400/CAP1000 advanced reactor deployment"
+      ],
+      "rationale": "Massive investment and strategic prioritization in both fusion (domestic tokamaks, ITER) and advanced fission (HTGRs, fast reactors, SMRs)."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Strategic Energy Plan",
+        "ITER participation",
+        "JT-60SA fusion device",
+        "Fast Breeder Reactor development (historical and ongoing R&D)",
+        "SMR development initiatives"
+      ],
+      "rationale": "Long-standing nuclear expertise with significant contributions to fusion (ITER, JT-60SA) and continued interest in advanced fission technologies."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "KSTAR fusion device",
+        "SMART SMR development and export",
+        "Renewed national nuclear energy policy",
+        "Carbon Neutrality Strategy"
+      ],
+      "rationale": "Strong domestic nuclear industry, leading fusion research (KSTAR), and active SMR development and deployment plans."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Discussions on SMR adoption for future energy needs",
+        "Existing nuclear power plant fleet"
+      ],
+      "rationale": "While having existing nuclear power, explicit national ambition for advanced nuclear R&D or fusion is less pronounced, with more focus on SMR adoption."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 1,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Nuclear phase-out law",
+        "ITER participation (via EUROfusion, Max Planck Institute for Plasma Physics)"
+      ],
+      "rationale": "Strong anti-fission policy, but maintains significant research contributions to fusion through international collaborations."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Government exploring new nuclear power plants (including SMRs)",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "Growing interest in new nuclear capacity, including SMRs, and continued involvement in European fusion research."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "UK Fusion Strategy",
+        "STEP (Spherical Tokamak for Energy Production) program",
+        "Great British Nuclear (GBN) initiative",
+        "Rolls-Royce SMR program",
+        "Nuclear Energy (Financing) Act"
+      ],
+      "rationale": "Flagship national priority for both fusion (STEP aiming for a prototype power plant) and advanced fission (SMRs, AMRs) with dedicated funding and agencies."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "ITER host nation",
+        "EDF's NUWARD SMR program",
+        "France 2030 investment plan (includes nuclear energy)",
+        "New nuclear reactor program (EPR2)"
+      ],
+      "rationale": "A global leader in nuclear energy, hosting ITER, and with strong national programs for advanced fission (SMRs, new large reactors) as a strategic priority."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Academic research in plasma physics/fusion",
+        "No national nuclear power program or advanced nuclear development"
+      ],
+      "rationale": "Limited to academic research, with no stated national ambition for commercial advanced nuclear or large-scale fusion deployment."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "India's Three-Stage Nuclear Power Programme (including fast breeder reactors)",
+        "ITER participation",
+        "SST-1 tokamak program"
+      ],
+      "rationale": "Significant domestic nuclear program with a focus on advanced fuel cycles (fast breeders) and active participation in fusion research."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Feasibility studies on SMRs for long-term energy security",
+        "No active development or deployment plans"
+      ],
+      "rationale": "Exploratory interest in SMRs for future energy options, but no concrete national ambition or active programs for advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 1,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Nuclear phase-out policy",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "Phasing out nuclear fission, but maintains participation in international fusion research."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Recent government statements on building new nuclear power (including SMRs)",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "Shifting policy towards new nuclear, including SMRs, alongside continued involvement in European fusion research."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Existing nuclear power fleet",
+        "Discussions and studies on SMR deployment",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "Operates nuclear power, with growing interest in SMRs and participation in European fusion efforts."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Canada's SMR Action Plan",
+        "SMR Roadmap",
+        "Provincial commitments (Ontario, New Brunswick, Saskatchewan) for SMR deployment",
+        "CANDU technology leadership"
+      ],
+      "rationale": "Strong national and provincial commitment to be a global leader in SMR development and deployment, with clear timelines and funding."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Ongoing political debate regarding nuclear power and SMRs",
+        "No current national nuclear power program or advanced nuclear development"
+      ],
+      "rationale": "Historically opposed to nuclear power, with recent political discussions but no concrete national strategy or funding for advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 0,
+      "target_level": 0,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "No national nuclear power program or advanced nuclear/fusion initiatives"
+      ],
+      "rationale": "No stated national ambition or active programs in advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Reconsideration of nuclear phase-out, discussions on SMRs",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "While having a nuclear phase-out plan, there's recent political interest in extending existing plants and exploring SMRs, alongside fusion research."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 0,
+      "target_level": 0,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Anti-nuclear legislation and policy",
+        "No national nuclear power program or advanced nuclear/fusion initiatives"
+      ],
+      "rationale": "Strong anti-nuclear stance with no stated national ambition or active programs in advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Recent political discussions about returning to nuclear power and SMRs",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "Phased out nuclear, but growing political interest in reintroducing nuclear power, including SMRs, alongside fusion research."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 1,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Nuclear phase-out plan",
+        "Participation in EUROfusion/ITER"
+      ],
+      "rationale": "Phasing out existing nuclear, but maintains significant contributions to fusion research through international collaborations."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Past studies on nuclear power feasibility",
+        "No current active national program for advanced nuclear or fusion"
+      ],
+      "rationale": "Explored nuclear power previously, but no current concrete national ambition or active programs for advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Suspended nuclear power plans",
+        "No current active national program for advanced nuclear or fusion"
+      ],
+      "rationale": "Plans for nuclear power were suspended, and there is no current stated national ambition for advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Past studies on nuclear power feasibility",
+        "No current active national program for advanced nuclear or fusion"
+      ],
+      "rationale": "Explored nuclear power previously, but no current concrete national ambition or active programs for advanced nuclear or fusion."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Long-term national energy policy includes nuclear power",
+        "Discussions on SMR adoption"
+      ],
+      "rationale": "Long-term plans for nuclear power, with growing interest in SMRs, but still in early stages of concrete commitment."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Barakah Nuclear Power Plant operations",
+        "National Energy Strategy 2050"
+      ],
+      "rationale": "Successfully deployed commercial nuclear power, demonstrating a commitment to nuclear energy, with potential for future advanced nuclear interest."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Saudi National Atomic Energy Project",
+        "Discussions with international partners for nuclear technology and SMRs"
+      ],
+      "rationale": "Strong national interest and plans to develop nuclear power for energy and desalination, including exploring SMRs."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "Existing nuclear power plants (Angra)",
+        "Domestic nuclear program",
+        "Some academic research in fusion"
+      ],
+      "rationale": "Operates nuclear power and has a domestic nuclear program, with some academic interest in fusion, but no flagship advanced nuclear/fusion initiatives."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 4,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Polish Nuclear Power Program",
+        "Agreements with Westinghouse (AP1000) and GE Hitachi (BWRX-300 SMR)",
+        "Orlen Synthos Green Energy SMR deployment plans"
+      ],
+      "rationale": "Strong national commitment to build new nuclear power plants, including SMRs, as a key part of its energy transition strategy."
+    }
+  ]
+}

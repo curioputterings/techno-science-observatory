@@ -72,9 +72,10 @@ def classify_domain(text: str, fallback_sector: str | None = None) -> str | None
             best, best_hits = domain, hits
     if best:
         return best
-    # fall back to the employer's sector tag if text was uninformative
-    if fallback_sector in taxonomy.ALL_DOMAINS:
-        return fallback_sector
+    # fall back to the employer's sector tag if text was uninformative.
+    # Accepts a domain key or a parent group key (resolved to its default child).
+    if fallback_sector:
+        return taxonomy.resolve_domain(fallback_sector)
     return None
 
 

@@ -1,0 +1,422 @@
+{
+  "domain": "quantum_computing",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Initiative Act (2018, reauthorized 2023)",
+        "National Quantum Initiative (NQI) Program",
+        "White House OSTP National Strategic Overview for Quantum Information Science",
+        "DOE, NSF, NIST dedicated quantum programs"
+      ],
+      "rationale": "The US has a comprehensive, well-funded national strategy aiming for global leadership in quantum computing, with significant investment across multiple government agencies and research institutions."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Information Sciences Project (estimated $10B+ investment)",
+        "Hefei National Laboratory for Physical Sciences at the Microscale",
+        "14th Five-Year Plan (broader tech push)",
+        "Explicit goal to be a world leader in quantum technologies"
+      ],
+      "rationale": "China has made quantum computing a top national priority with massive, centralized investments and explicit goals for global leadership."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Quantum Technology Innovation Strategy (2020)",
+        "Quantum Future Society",
+        "Q-LEAP (Quantum Leap Flagship Program)",
+        "MEXT Quantum Leap Program",
+        "RIKEN Center for Quantum Computing"
+      ],
+      "rationale": "Japan has a strong national strategy and significant, sustained funding to develop practical quantum computers and applications, aiming for a competitive position."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Technology Development Strategy (2023)",
+        "Ministry of Science and ICT (MSIT) Quantum Computing Development Roadmap",
+        "Goal to develop a 50-qubit quantum computer by 2028"
+      ],
+      "rationale": "South Korea has launched a comprehensive national strategy with substantial investment and clear targets to become a quantum technology powerhouse."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Taiwan Quantum Technology National Program (2021)",
+        "National Science and Technology Council (NSTC) initiatives",
+        "TSMC's involvement in quantum research"
+      ],
+      "rationale": "Taiwan is increasing its focus on quantum technologies, leveraging its semiconductor strengths, with a dedicated national program and industry involvement."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "German Quantum Computing Initiative (2021, \u20ac3 billion)",
+        "Quantum Technology and Photonics program",
+        "DLR Quantum Computing Initiative",
+        "Fraunhofer Institutes and Max Planck Society quantum research"
+      ],
+      "rationale": "Germany has committed significant funding and a clear strategy to build a robust quantum ecosystem and develop competitive quantum computing capabilities."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Agenda Quantum Technology (NAQT)",
+        "Quantum Delta NL (QDNL) program (\u20ac615M investment)",
+        "QuTech (Delft University of Technology)"
+      ],
+      "rationale": "The Netherlands has a well-defined national agenda and substantial investment in quantum technology, particularly strong in quantum internet and computing prototypes."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Technologies Programme (NQTP, \u00a31 billion+ investment)",
+        "UK Quantum Strategy (2023)",
+        "National Quantum Computing Centre (NQCC)",
+        "Innovate UK quantum programs"
+      ],
+      "rationale": "The UK has a long-standing and well-funded national program with a clear strategy to establish a leading position in quantum technologies."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Strategy (2021, \u20ac1.8 billion over 5 years)",
+        "France 2030 investment plan",
+        "CEA, CNRS, Inria quantum initiatives"
+      ],
+      "rationale": "France has launched an ambitious national quantum strategy with significant financial commitment, aiming for industrial applications and quantum supremacy."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Israel National Quantum Initiative (INQI, ~$300M over 5 years)",
+        "Israel Innovation Authority (IIA) programs",
+        "Weizmann Institute, Technion quantum research"
+      ],
+      "rationale": "Israel has a strong R&D base and is increasing government support through a dedicated national initiative to foster quantum technology development."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Mission (NQM, ~$800M over 8 years)",
+        "Department of Science & Technology (DST) initiatives"
+      ],
+      "rationale": "India has announced a significant national mission with substantial funding to develop quantum computing capabilities and related technologies."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Strategy (NQS)",
+        "Centre for Quantum Technologies (CQT) at NUS",
+        "National Research Foundation (NRF) funding"
+      ],
+      "rationale": "Singapore has a focused national strategy and dedicated research centers with significant funding to advance quantum technologies."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "NCCR QSIT (National Centre of Competence in Research Quantum Science and Technology)",
+        "ETH Zurich, EPFL quantum initiatives",
+        "Swiss National Science Foundation (SNSF) funding"
+      ],
+      "rationale": "Switzerland has a strong academic foundation in quantum research with increasing national coordination and funding for specific quantum technologies."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Wallenberg Centre for Quantum Technology (WACQT, ~$100M over 10 years)",
+        "Chalmers University of Technology quantum programs"
+      ],
+      "rationale": "Sweden has a dedicated, well-funded national program focused on developing a quantum computer prototype and related technologies."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre of Finland quantum initiatives",
+        "IQM Quantum Computers (private company with public support/funding)",
+        "Business Finland programs"
+      ],
+      "rationale": "Finland has a focused approach, particularly in superconducting qubits and cryogenics, with public support for building quantum computing capabilities."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Strategy (2023, $360M)",
+        "Institute for Quantum Computing (IQC) at Waterloo",
+        "Quantum Algorithms Institute (QAI)",
+        "CIFAR Quantum Information Science program"
+      ],
+      "rationale": "Canada has a long history of investment in quantum research and recently launched a comprehensive national strategy to drive leadership and commercialization."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Australian Quantum Strategy (2023)",
+        "CSIRO quantum initiatives",
+        "UNSW Centre for Quantum Computation and Communication Technology (CQC2T)",
+        "Sydney Quantum Academy"
+      ],
+      "rationale": "Australia has a clear national strategy and significant investment in quantum research and commercialization, aiming to develop strong capabilities."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Science Foundation Ireland (SFI) research grants for quantum topics",
+        "University-led quantum research groups"
+      ],
+      "rationale": "Ireland shows emerging interest with some research funding, but lacks a comprehensive, dedicated national quantum computing strategy."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "QuIC (Quantum Internet Alliance, EU-funded with Belgian participation)",
+        "imec quantum research programs",
+        "Emerging Belgian National Quantum Plan"
+      ],
+      "rationale": "Belgium has growing research efforts, particularly through EU collaborations and strong research institutes, with an emerging national plan."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Austrian Quantum Research and Technology Initiative (AQRT)",
+        "University of Innsbruck (ion trap research)",
+        "IQOQI (Institute for Quantum Optics and Quantum Information)"
+      ],
+      "rationale": "Austria has a strong academic base in quantum physics and is increasing national focus and coordination through a dedicated initiative."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Technologies Initiative (NQTI)",
+        "CNR (National Research Council) quantum programs",
+        "PNRR (National Recovery and Resilience Plan) funding for quantum"
+      ],
+      "rationale": "Italy is developing a national strategy with dedicated funding through its recovery plan to foster quantum technology development."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Quantum Spain (part of Digital Spain 2025 agenda, \u20ac60M)",
+        "Barcelona Supercomputing Center (BSC) quantum initiatives"
+      ],
+      "rationale": "Spain has launched a dedicated national program, Quantum Spain, with significant funding to develop quantum computing capabilities and infrastructure."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Limited public announcements regarding national quantum strategy",
+        "Some university-level research interest"
+      ],
+      "rationale": "Malaysia is in the very early stages of exploring quantum technologies, with no clear national strategy or significant dedicated funding announced."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Limited public announcements regarding national quantum strategy",
+        "Primarily academic interest in fundamental research"
+      ],
+      "rationale": "Vietnam shows minimal stated national ambition in quantum computing, with activities largely confined to academic research."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Limited public announcements regarding national quantum strategy",
+        "Early-stage exploration in some universities"
+      ],
+      "rationale": "Thailand has very limited stated national ambition or dedicated programs for quantum computing, with activities in early exploratory stages."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Limited public announcements regarding national quantum strategy",
+        "Nascent academic interest"
+      ],
+      "rationale": "Indonesia shows minimal stated national ambition in quantum computing, with activities largely confined to nascent academic interest."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) quantum research",
+        "Strategic partnerships with international quantum companies"
+      ],
+      "rationale": "The UAE is showing emerging interest in advanced technologies, including quantum, primarily through academic initiatives and strategic partnerships rather than a comprehensive national strategy."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "King Abdullah University of Science and Technology (KAUST) quantum research",
+        "Part of broader Vision 2030 technology diversification efforts"
+      ],
+      "rationale": "Saudi Arabia's interest in quantum computing is emerging, driven by broader technology diversification goals under Vision 2030 and academic research, but lacks a dedicated national quantum strategy."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Emerging Brazilian National Quantum Initiative",
+        "University research groups (e.g., USP, Unicamp) in quantum physics"
+      ],
+      "rationale": "Brazil has growing academic interest and an emerging national initiative, indicating a nascent ambition to develop quantum capabilities."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Information Centre (KCIK)",
+        "Quantum Technologies Poland (QTP) program",
+        "Participation in EU quantum initiatives"
+      ],
+      "rationale": "Poland has a growing research community and dedicated national centers and programs aimed at developing quantum technologies, often leveraging EU funding."
+    }
+  ]
+}

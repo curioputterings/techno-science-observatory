@@ -1,0 +1,422 @@
+{
+  "domain": "embedded_iot",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 4,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "NIST IoT Program",
+        "National AI Initiative (supports edge AI)",
+        "CHIPS and Science Act (indirectly supports underlying tech)",
+        "DoD initiatives for secure embedded systems"
+      ],
+      "rationale": "Strong focus on advanced IoT, edge computing, and secure embedded systems as critical components of national security, economic competitiveness, and technological leadership."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Made in China 2025 (IoT as strategic emerging industry)",
+        "14th Five-Year Plan for Digital Economy",
+        "National IoT Development Plan",
+        "Various provincial and municipal IoT industrial parks and subsidies"
+      ],
+      "rationale": "Aggressive, top-down national strategy to achieve global leadership across the entire IoT stack, with massive government investment and policy support."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Society 5.0 strategy (heavily relies on IoT/CPS)",
+        "METI's IoT Acceleration Lab",
+        "Various smart city initiatives",
+        "R&D programs for industrial IoT"
+      ],
+      "rationale": "IoT is a foundational element of the 'Society 5.0' vision, with a strong emphasis on industrial IoT, smart infrastructure, and data-driven services."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Digital New Deal",
+        "K-ICT Strategy",
+        "Smart City National Strategic Project",
+        "R&D programs for IoT devices and platforms"
+      ],
+      "rationale": "IoT is a key enabler for South Korea's digital transformation, smart city development, and advanced manufacturing initiatives, supported by significant public investment."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Asia Silicon Valley Development Plan (includes IoT)",
+        "Smart City Taiwan Project",
+        "Industrial upgrade programs"
+      ],
+      "rationale": "Leveraging its semiconductor and ICT manufacturing strengths, Taiwan aims to be a hub for high-value embedded hardware and industrial IoT solutions."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Plattform Industrie 4.0",
+        "Gaia-X (data infrastructure for IoT)",
+        "BMBF and BMWK funding for digital technologies and embedded systems"
+      ],
+      "rationale": "Industrial IoT and secure embedded systems are at the core of Germany's 'Industry 4.0' strategy, aiming for leadership in smart manufacturing and cyber-physical systems."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Dutch Digitalisation Strategy",
+        "Innovation programs for smart industry, agriculture, and logistics"
+      ],
+      "rationale": "Focus on applying IoT in specific sectors like smart logistics, agriculture, and smart cities, leveraging a strong R&D ecosystem."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "UK Digital Strategy",
+        "Innovate UK funding for IoT projects",
+        "Digital Catapult Network"
+      ],
+      "rationale": "Supports IoT development and adoption across various sectors, with a focus on research and innovation, but less centralized than some other nations."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "France 2030 (includes digital technologies, industrial modernization)",
+        "National Strategy for AI (edge AI)",
+        "Initiatives for smart industry"
+      ],
+      "rationale": "IoT is integrated into broader digital sovereignty and industrial modernization plans, with an emphasis on industrial applications and secure embedded systems."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 3,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Israel Innovation Authority programs",
+        "Focus on cybersecurity and AI startups (often includes embedded/IoT aspects)"
+      ],
+      "rationale": "Leveraging its strong cybersecurity and tech startup ecosystem to develop specialized and secure IoT solutions, particularly in edge AI and vertical applications."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 4,
+      "target_level": 3,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Digital India Programme",
+        "Smart Cities Mission",
+        "National Policy on Electronics (includes IoT devices)",
+        "MeitY initiatives for IoT R&D and deployment"
+      ],
+      "rationale": "Massive national push for digital transformation, with IoT as a core component for smart cities, smart manufacturing, and widespread digital services."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 4,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Smart Nation Initiative",
+        "IMDA and GovTech driving IoT projects",
+        "R&D funding for advanced sensors and platforms"
+      ],
+      "rationale": "IoT is fundamental to Singapore's 'Smart Nation' vision, aiming for pervasive sensing and advanced integration across all sectors of society and economy."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 3,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Innosuisse funding for innovation projects",
+        "University research programs in embedded systems and IoT"
+      ],
+      "rationale": "Focus on high-precision industrial IoT and secure embedded systems, leveraging its strong research base and industrial expertise in niche, high-value applications."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Swedish Digitalisation Strategy",
+        "Vinnova funding for IoT and digital transformation projects",
+        "Drive Sweden (connected transport)"
+      ],
+      "rationale": "Strong innovation ecosystem with a focus on industrial IoT, smart cities, and connected vehicles, supported by digitalization strategies."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Finnish Digital Strategy",
+        "Business Finland funding for digital transformation and IoT projects"
+      ],
+      "rationale": "Leveraging its telecommunications and digital services strengths, Finland focuses on industrial IoT, smart cities, and digital health applications."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Pan-Canadian AI Strategy (indirectly supports edge AI)",
+        "Innovation, Science and Economic Development Canada (ISED) programs",
+        "Smart Cities Challenge"
+      ],
+      "rationale": "IoT is an enabler within broader digital and AI strategies, with specific initiatives for smart cities and industrial applications."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Digital Economy Strategy",
+        "Smart Cities and Suburbs Program",
+        "CSIRO initiatives"
+      ],
+      "rationale": "Focus on applying IoT for digital economy growth, smart cities, and specific sectors like agriculture and mining, with government support for adoption."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Digital Strategy",
+        "Enterprise Ireland funding for digital innovation",
+        "IDA Ireland attracting tech investment"
+      ],
+      "rationale": "Leveraging its tech hub status, Ireland focuses on enterprise IoT, smart manufacturing, and edge computing, driven by digital innovation policies."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Digital Belgium strategy",
+        "Regional innovation programs (e.g., Flanders Industry 4.0)"
+      ],
+      "rationale": "Some national and regional initiatives for industrial IoT and smart logistics, but less pronounced as a flagship national priority."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Digital Austria strategy",
+        "FFG funding for R&D in Industry 4.0 and digital technologies"
+      ],
+      "rationale": "Focus on industrial IoT and smart manufacturing as part of broader digitalization efforts, with R&D funding for related technologies."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Industry 4.0 Plan (Transition 4.0)",
+        "Regional smart city initiatives"
+      ],
+      "rationale": "IoT is a key component of Italy's 'Transition 4.0' plan, aiming to modernize traditional industries and develop smart city solutions."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Digital Spain 2025",
+        "Regional smart city programs",
+        "Funding for digital innovation"
+      ],
+      "rationale": "IoT is integrated into Spain's digital transformation agenda, with initiatives for smart cities and industrial applications across various regions."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Policy on Industry 4.0 (Industry4WRD)",
+        "Malaysia Digital Economy Blueprint (MyDIGITAL)",
+        "Smart City Framework"
+      ],
+      "rationale": "IoT is a key enabler for Malaysia's Industry 4.0 and digital economy ambitions, with policies promoting adoption and some local development."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Digital Transformation Program",
+        "Industry 4.0 Strategy",
+        "Smart City Development Plan"
+      ],
+      "rationale": "Strong government push for digital transformation and Industry 4.0, with IoT as a foundational technology for smart cities and manufacturing."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Thailand 4.0",
+        "Digital Economy and Society Development Plan",
+        "Smart city projects"
+      ],
+      "rationale": "IoT is a core component of the 'Thailand 4.0' vision, aiming to transform the economy through smart cities, agriculture, and industry."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Making Indonesia 4.0 roadmap",
+        "National Digital Transformation Strategy"
+      ],
+      "rationale": "IoT is identified as a key technology in the 'Making Indonesia 4.0' roadmap, aiming for industrial transformation and smart city development."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "UAE Centennial 2071",
+        "Dubai Future Foundation initiatives",
+        "Smart Dubai Strategy",
+        "Various smart city projects"
+      ],
+      "rationale": "Aggressive national ambition to become a global leader in smart cities and digital government, with IoT as a fundamental enabling technology."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "Vision 2030",
+        "NEOM project (smart city)",
+        "National Digital Transformation Program"
+      ],
+      "rationale": "Massive investments in futuristic smart cities (e.g., NEOM) and digital transformation under Vision 2030, making IoT a core strategic priority."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Brazilian Digital Transformation Strategy (E-Digital)",
+        "National IoT Plan (Plano Nacional de IoT)"
+      ],
+      "rationale": "Has a national IoT plan and digital transformation strategy, but ambition and funding are less centralized and robust compared to leading nations."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Polish Digital Transformation Strategy",
+        "Industry 4.0 Platform",
+        "Regional smart city initiatives"
+      ],
+      "rationale": "IoT is part of Poland's digital transformation and Industry 4.0 initiatives, aiming for adoption and some local development."
+    }
+  ]
+}

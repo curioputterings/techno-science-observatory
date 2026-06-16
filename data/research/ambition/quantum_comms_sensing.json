@@ -1,0 +1,416 @@
+{
+  "domain": "quantum_comms_sensing",
+  "cells": [
+    {
+      "country_iso": "US",
+      "country_name": "United States",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Initiative Act (2018, reauthorized 2023)",
+        "National Quantum Initiative (NQI) program",
+        "NIST, DOE, NSF quantum centers",
+        "DoD quantum efforts"
+      ],
+      "rationale": "The US has a comprehensive, well-funded national strategy aiming for global leadership across all quantum domains, with significant legislative backing and agency involvement."
+    },
+    {
+      "country_iso": "CN",
+      "country_name": "China",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Information Sciences Project",
+        "Quantum Information Science Satellite (Micius)",
+        "National Laboratory for Quantum Information Sciences",
+        "14th Five-Year Plan"
+      ],
+      "rationale": "China has made massive, centralized investments in quantum technologies, particularly in quantum communications and networks, with explicit goals to achieve global leadership."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Quantum Technology Innovation Strategy (2020)",
+        "Quantum Future Society",
+        "Q-LEAP (Quantum Leap Flagship Program)",
+        "MEXT funding"
+      ],
+      "rationale": "Japan has a clear national strategy and dedicated programs with substantial funding to advance quantum technologies, including communications and sensing, aiming for a strong international position."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Science and Technology Strategy (2019, updated 2023)",
+        "K-Quantum Strategy",
+        "Ministry of Science and ICT (MSIT) programs"
+      ],
+      "rationale": "South Korea has launched an ambitious national strategy with significant investment to become a global quantum powerhouse, focusing on core technologies including quantum communications."
+    },
+    {
+      "country_iso": "TW",
+      "country_name": "Taiwan",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Taiwan Quantum Initiative",
+        "National Science and Technology Council (NSTC) funding",
+        "Industrial Technology Research Institute (ITRI) efforts"
+      ],
+      "rationale": "Taiwan is increasing its focus on quantum technologies with dedicated initiatives and funding, aiming to build capabilities in specific areas, including quantum communications."
+    },
+    {
+      "country_iso": "DE",
+      "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Quantum Technologies - German Roadmap (2018)",
+        "Quantum Technologies Programme (2021-2025)",
+        "BMBF (Federal Ministry of Education and Research) funding"
+      ],
+      "rationale": "Germany has a well-defined national roadmap and significant funding for quantum technologies, with a strong emphasis on developing quantum communications and sensing capabilities."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Agenda Quantum Technology (NAQT)",
+        "Quantum Delta NL",
+        "NWO (Netherlands Organisation for Scientific Research) funding"
+      ],
+      "rationale": "The Netherlands has a focused national agenda and a strong ecosystem (Quantum Delta NL) driving research and development in quantum technologies, including quantum internet and sensing."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "UK National Quantum Technologies Programme (NQTP)",
+        "UKRI (UK Research and Innovation) funding",
+        "Quantum Communications Hub",
+        "Quantum Sensing and Metrology Hub"
+      ],
+      "rationale": "The UK has a long-standing and well-funded national program with dedicated hubs for quantum communications and sensing, aiming to translate research into commercial applications."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "France 2030 Investment Plan",
+        "National Quantum Strategy (2020)",
+        "ANR (National Research Agency) funding"
+      ],
+      "rationale": "France has launched an ambitious national quantum strategy with substantial public investment, targeting leadership in quantum technologies, including communications and sensing."
+    },
+    {
+      "country_iso": "IL",
+      "country_name": "Israel",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Israel National Quantum Initiative (INQI)",
+        "Israel Innovation Authority (IIA) funding"
+      ],
+      "rationale": "Israel has a growing national quantum initiative, leveraging its strong academic and startup ecosystem to develop capabilities in various quantum domains, including sensing and communications."
+    },
+    {
+      "country_iso": "IN",
+      "country_name": "India",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Mission (NQM) (2023)",
+        "Department of Science & Technology (DST) funding",
+        "Quantum-Enabled Science & Technology (QuEST) program"
+      ],
+      "rationale": "India has launched a significant National Quantum Mission with a substantial budget, aiming to develop and scale quantum technologies, including communications and sensing, for national strategic needs."
+    },
+    {
+      "country_iso": "SG",
+      "country_name": "Singapore",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Strategy (NQS)",
+        "National Quantum Office (NQO)",
+        "Centre for Quantum Technologies (CQT)"
+      ],
+      "rationale": "Singapore has a focused national quantum strategy and a leading research center (CQT) dedicated to advancing quantum technologies, including communications and sensing."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "NCCR QSIT (National Centre of Competence in Research Quantum Science and Technology)",
+        "ETH Zurich and EPFL quantum research initiatives"
+      ],
+      "rationale": "Switzerland has strong academic research in quantum science, supported by federal funding, but lacks a single overarching national strategy for commercialization compared to other leading nations."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Wallenberg Centre for Quantum Technology (WACQT)",
+        "Vinnova funding for quantum research"
+      ],
+      "rationale": "Sweden has significant academic and industrial interest, notably through WACQT, focusing on building quantum capabilities, including sensing, but without a broad national strategy for all quantum domains."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "InstituteQ (Finnish Quantum Institute)",
+        "VTT Technical Research Centre quantum initiatives",
+        "Academy of Finland funding"
+      ],
+      "rationale": "Finland is building its quantum capabilities through research institutes and national funding, with a focus on specific applications and participation in broader EU quantum efforts."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Strategy (2023)",
+        "NSERC (Natural Sciences and Engineering Research Council) funding",
+        "Quantum Algorithms Institute",
+        "Perimeter Institute"
+      ],
+      "rationale": "Canada has launched a comprehensive National Quantum Strategy with significant investment, aiming to solidify its position in quantum technologies, including communications and sensing."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "National Quantum Strategy (2023)",
+        "CSIRO quantum initiatives",
+        "ARC (Australian Research Council) funding",
+        "Sydney Quantum Academy"
+      ],
+      "rationale": "Australia has a new National Quantum Strategy and strong research institutions, aiming to develop its quantum industry and capabilities, including in sensing and communications."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Science Foundation Ireland (SFI) funding for quantum research",
+        "Participation in EU quantum initiatives"
+      ],
+      "rationale": "Ireland has foundational research in quantum science, primarily through academic institutions and EU programs, but lacks a dedicated, high-level national strategy or significant earmarked funding for quantum comms & sensing."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "QuIC (Quantum Internet Alliance) involvement",
+        "imec quantum research",
+        "FWO (Research Foundation - Flanders) funding"
+      ],
+      "rationale": "Belgium contributes to European quantum initiatives and has strong research institutions like imec, but a comprehensive, standalone national strategy with dedicated large-scale funding for quantum comms & sensing is less pronounced."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Austrian Academy of Sciences (\u00d6AW) quantum initiatives",
+        "FWF (Austrian Science Fund) funding",
+        "University of Innsbruck quantum research"
+      ],
+      "rationale": "Austria has a strong academic base in quantum physics, particularly in Innsbruck, with national funding supporting research, but a broad, coordinated national strategy for quantum comms & sensing commercialization is still developing."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Quantum Technologies Plan (PNQT)",
+        "CNR (National Research Council) quantum efforts",
+        "INFN (National Institute for Nuclear Physics) quantum efforts"
+      ],
+      "rationale": "Italy has launched a National Quantum Technologies Plan and participates actively in EU initiatives, indicating a growing ambition to develop capabilities in quantum communications and sensing."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Quantum Spain initiative",
+        "Ministry of Economic Affairs and Digital Transformation funding",
+        "CSIC (Spanish National Research Council) quantum research"
+      ],
+      "rationale": "Spain has initiated the Quantum Spain program with significant funding, aiming to build a national quantum ecosystem, including capabilities in quantum communications and sensing."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Limited public announcements or dedicated national programs for quantum technologies"
+      ],
+      "rationale": "Malaysia shows nascent interest in emerging technologies, but there is no clear, stated national ambition or dedicated program for quantum communications and sensing with significant funding."
+    },
+    {
+      "country_iso": "VN",
+      "country_name": "Vietnam",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "No significant public announcements or national strategies identified for quantum technologies"
+      ],
+      "rationale": "Vietnam has not publicly articulated a national strategy or significant ambition in quantum communications and sensing, with activity primarily limited to academic interest."
+    },
+    {
+      "country_iso": "TH",
+      "country_name": "Thailand",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Limited public announcements or dedicated national programs for quantum technologies"
+      ],
+      "rationale": "Thailand has emerging academic interest but no clear, stated national ambition or dedicated program with significant funding for quantum communications and sensing."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "ambition": 0,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "No significant public announcements or national strategies identified for quantum technologies"
+      ],
+      "rationale": "Indonesia has not publicly articulated a national strategy or significant ambition in quantum communications and sensing, with activity primarily limited to academic interest."
+    },
+    {
+      "country_iso": "AE",
+      "country_name": "United Arab Emirates",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) quantum research",
+        "General investment in advanced technologies as part of national diversification"
+      ],
+      "rationale": "The UAE has a general ambition in advanced technologies and AI, with some academic initiatives in quantum, but a specific, dedicated national strategy for quantum communications and sensing with clear targets is still nascent."
+    },
+    {
+      "country_iso": "SA",
+      "country_name": "Saudi Arabia",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "King Abdullah University of Science and Technology (KAUST) quantum research",
+        "Vision 2030 technology investment initiatives"
+      ],
+      "rationale": "Saudi Arabia's Vision 2030 includes broad technology investments, and KAUST conducts quantum research, but a specific, high-level national ambition or dedicated program for quantum communications and sensing is not yet clearly defined."
+    },
+    {
+      "country_iso": "BR",
+      "country_name": "Brazil",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "long",
+      "confidence": "low",
+      "evidence": [
+        "Brazilian Quantum Initiative (informal)",
+        "FAPESP (S\u00e3o Paulo Research Foundation) funding for quantum research"
+      ],
+      "rationale": "Brazil has emerging academic interest and some regional funding for quantum research, but lacks a comprehensive, federally coordinated national strategy or significant earmarked budget for quantum communications and sensing."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Centre for Quantum Computing (KCIK)",
+        "Participation in EuroQCI (European Quantum Communication Infrastructure)",
+        "Ministry of Education and Science funding"
+      ],
+      "rationale": "Poland is developing its quantum capabilities through national research centers and participation in EU initiatives, showing a growing ambition in quantum communications and sensing, but not yet at the flagship national priority level."
+    }
+  ]
+}
