@@ -4,32 +4,29 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
         "IBM Quantum",
         "Google AI Quantum",
         "Microsoft Azure Quantum",
-        "Amazon Braket",
-        "Intel Quantum",
-        "Quantinuum",
         "IonQ",
-        "PsiQuantum",
+        "Quantinuum",
         "NIST",
-        "Argonne National Laboratory",
-        "MIT",
-        "Stanford University",
-        "National Quantum Initiative"
+        "DOE National Labs (e.g., Argonne, Oak Ridge)",
+        "NSF Quantum Leap Challenge Institutes",
+        "Universities (MIT, Stanford, Caltech, Princeton)",
+        "National Quantum Initiative Act"
       ],
-      "rationale": "The US is a global leader in quantum research and commercialization, with extensive government funding, numerous major tech companies, a vibrant startup ecosystem, and top-tier academic institutions driving frontier R&D across all quantum modalities."
+      "rationale": "The US leads globally in quantum research and development, driven by major tech companies, a vibrant startup ecosystem, extensive government funding, and world-class academic institutions. This results in a high volume of advanced roles and significant frontier R&D."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
-      "skill_level": 5,
+      "skill_level": 4,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
@@ -38,19 +35,18 @@
         "Alibaba Quantum Lab",
         "Baidu Quantum Computing",
         "Huawei",
-        "Origin Quantum",
-        "QuantumCTek",
-        "National Quantum Information Sciences Project (Hefei)"
+        "National Quantum Information Science and Technology Program",
+        "Jiuquan quantum satellite"
       ],
-      "rationale": "China has made massive state-backed investments in quantum technologies, leading to rapid advancements, particularly in quantum communication and sensing, with strong academic and emerging industrial capabilities."
+      "rationale": "China has made massive strategic investments in quantum technologies, rapidly advancing its capabilities in quantum communication, computing, and sensing. This has led to a high volume of advanced roles, particularly in state-backed research and emerging industrial applications, with strong frontier research."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
-      "confidence": "high",
+      "frontier": 0.75,
+      "confidence": "medium",
       "evidence": [
         "RIKEN",
         "NTT",
@@ -59,9 +55,10 @@
         "NEC",
         "University of Tokyo",
         "Osaka University",
-        "Q-LEAP (Quantum Leap Flagship Program)"
+        "Quantum Technology Innovation Hub",
+        "Q-LEAP program"
       ],
-      "rationale": "Japan has a long history in quantum physics research and significant government and corporate investment through initiatives like Q-LEAP, fostering a strong academic base and growing industrial applications."
+      "rationale": "Japan has a strong foundation in quantum physics and engineering, with significant government and corporate investment aimed at establishing a leading position. The volume of advanced roles is medium, supported by a robust academic sector and focused national programs driving frontier research."
     },
     {
       "country_iso": "KR",
@@ -73,12 +70,13 @@
       "evidence": [
         "Korea Institute of Science and Technology (KIST)",
         "Electronics and Telecommunications Research Institute (ETRI)",
-        "Samsung",
+        "Samsung Advanced Institute of Technology",
         "LG",
         "KAIST",
-        "National Quantum R&D Programs"
+        "Seoul National University",
+        "National Quantum Computing Roadmap"
       ],
-      "rationale": "South Korea is an emerging player with significant government investment and strong electronics companies exploring quantum applications, building on its advanced manufacturing capabilities."
+      "rationale": "South Korea is actively investing in quantum technologies, leveraging its strong semiconductor and electronics industries. While the volume of advanced roles is currently low, there's a clear national strategy to boost research and development, contributing to a growing frontier presence."
     },
     {
       "country_iso": "TW",
@@ -88,12 +86,12 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "TSMC (potential future involvement in quantum chip fabrication)",
-        "Academia Sinica",
+        "Industrial Technology Research Institute (ITRI)",
         "National Taiwan University",
-        "National Quantum Program"
+        "National Quantum Program",
+        "TSMC (potential future involvement)"
       ],
-      "rationale": "Taiwan has a strong semiconductor industry, which could be leveraged for quantum hardware. Direct quantum R&D is developing with government support, but the job market for advanced roles is still small."
+      "rationale": "Taiwan's strength in semiconductors provides a potential foundation for quantum hardware, but the advanced quantum job market is still very nascent. Research is primarily academic, with emerging national programs aiming to build frontier capabilities."
     },
     {
       "country_iso": "DE",
@@ -105,13 +103,14 @@
       "evidence": [
         "Fraunhofer Institutes",
         "Max Planck Institutes",
-        "Forschungszentrum J\u00fclich",
-        "IBM Quantum System One (Ehningen)",
+        "IBM Quantum (Ehningen)",
         "Bosch",
         "Siemens",
-        "Quantum Technology & Systems (QTLS) program"
+        "DLR (German Aerospace Center)",
+        "Universities (LMU Munich, Technical University of Munich)",
+        "Quantum Technology & Systems program"
       ],
-      "rationale": "Germany is a leading European nation in quantum research, with robust academic institutions, strong government funding, and increasing industrial involvement, including a major IBM quantum hub."
+      "rationale": "Germany possesses a strong scientific and industrial base, with significant government funding for quantum research. This translates to a medium volume of advanced roles, particularly in academic and institutional research, with robust frontier R&D across various quantum modalities."
     },
     {
       "country_iso": "NL",
@@ -121,12 +120,12 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "QuTech (TU Delft & TNO)",
-        "Quantum Delta NL",
-        "ASML (indirectly relevant for advanced manufacturing)",
-        "Leiden University"
+        "QuTech (TU Delft, TNO)",
+        "Leiden University",
+        "Eindhoven University of Technology",
+        "National Agenda Quantum Technology"
       ],
-      "rationale": "The Netherlands punches above its weight due to QuTech, a globally recognized center for quantum computing and internet research, supported by the national Quantum Delta NL initiative."
+      "rationale": "The Netherlands has established itself as a significant player in quantum computing and communication, largely due to the world-renowned QuTech center. While the overall volume of roles is low, the skill level is high, and the country is a hub for frontier research."
     },
     {
       "country_iso": "GB",
@@ -137,149 +136,156 @@
       "confidence": "high",
       "evidence": [
         "National Quantum Technologies Programme (NQTP)",
-        "Oxford Quantum Circuits (OQC)",
+        "National Quantum Computing Centre (NQCC)",
+        "Oxford Quantum Circuits",
         "Quantinuum (formerly Cambridge Quantum Computing)",
-        "BT",
-        "Universities of Oxford, Cambridge, UCL, Bristol"
+        "Universities (Oxford, Cambridge, UCL, Bristol)",
+        "BT"
       ],
-      "rationale": "The UK has a significant government investment through the NQTP, fostering a strong academic base and a growing ecosystem of quantum startups and industrial players."
+      "rationale": "The UK has a comprehensive National Quantum Technologies Programme, fostering a strong academic and emerging industrial ecosystem. This supports a medium volume of advanced roles and significant frontier research, particularly in quantum computing and sensing."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "medium",
+      "frontier": 0.75,
+      "confidence": "high",
       "evidence": [
+        "CEA (French Alternative Energies and Atomic Energy Commission)",
+        "CNRS (National Center for Scientific Research)",
+        "Inria",
         "Pasqal",
-        "Quandela",
-        "Atos",
         "Thales",
-        "CEA",
-        "CNRS",
-        "France Quantum Plan"
+        "Atos",
+        "Quandela",
+        "Universities (ENS, Sorbonne)",
+        "France 2030 Quantum Plan"
       ],
-      "rationale": "France has a strong government push with its national Quantum Plan, supported by robust academic institutions and emerging startups in quantum computing and related fields."
+      "rationale": "France has a strong tradition in fundamental physics and has launched an ambitious national quantum strategy. This drives a medium volume of advanced roles, primarily in public research institutions and a growing number of quantum startups, with a focus on frontier R&D."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.6,
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "Quantum Machines",
         "Weizmann Institute of Science",
-        "Tel Aviv University",
-        "Technion",
-        "Israel Innovation Authority quantum initiatives"
+        "Hebrew University of Jerusalem",
+        "Technion \u2013 Israel Institute of Technology",
+        "Quantum Machines",
+        "Israel Innovation Authority"
       ],
-      "rationale": "Known for its deep-tech startup ecosystem, Israel is developing its quantum capabilities with notable startups and strong academic research, supported by government initiatives."
+      "rationale": "Israel's vibrant deep-tech startup ecosystem and strong academic research contribute to a low but highly skilled quantum job market. There's significant frontier research, particularly in quantum control and hardware, supported by government initiatives."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
-      "confidence": "low",
+      "skill_level": 3,
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
         "National Quantum Mission",
-        "Indian Institute of Science (IISc) Bangalore",
-        "Indian Institutes of Technology (IITs)"
+        "Indian Institute of Science (IISc)",
+        "Indian Institutes of Technology (IITs)",
+        "Tata Institute of Fundamental Research (TIFR)",
+        "TCS (Tata Consultancy Services)"
       ],
-      "rationale": "India has launched a National Quantum Mission to boost research and development, but the advanced quantum job market is still in its nascent stages, primarily academic with limited industrial application."
+      "rationale": "India has launched a National Quantum Mission to accelerate research and development. While the advanced quantum job market is currently very low, there's a growing academic base and government push to develop capabilities and foster some frontier research."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "high",
+      "frontier": 0.5,
+      "confidence": "medium",
       "evidence": [
         "Centre for Quantum Technologies (CQT) at NUS",
-        "A*STAR",
-        "National Quantum Strategy"
+        "A*STAR (Agency for Science, Technology and Research)",
+        "Nanyang Technological University (NTU)"
       ],
-      "rationale": "Singapore has strategically invested in high-tech research, with CQT being a globally recognized center for quantum physics and technology, driving focused R&D efforts."
+      "rationale": "Singapore has a focused and well-funded academic quantum research program, particularly at CQT. This supports a very low volume of highly specialized roles, with a strong emphasis on frontier research in quantum communication and sensing."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
         "ETH Zurich",
-        "EPFL",
+        "EPFL (Swiss Federal Institute of Technology Lausanne)",
         "IBM Research Zurich",
-        "Terra Quantum"
+        "CSEM",
+        "NCCR Quantum Science and Technology"
       ],
-      "rationale": "Switzerland boasts excellent academic institutions, particularly ETH Zurich, which contribute significantly to fundamental quantum research, alongside some emerging startups."
+      "rationale": "Switzerland boasts world-leading academic institutions and research centers that are highly active in quantum science. This results in a low but extremely high-skilled job market, with significant contributions to frontier research, especially in quantum computing and materials."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
         "Wallenberg Centre for Quantum Technology (WACQT)",
         "Chalmers University of Technology",
-        "KTH Royal Institute of Technology"
+        "KTH Royal Institute of Technology",
+        "Lund University"
       ],
-      "rationale": "WACQT is a significant national initiative driving quantum research, but the overall advanced quantum ecosystem and job volume are still developing."
+      "rationale": "Sweden has a concentrated effort in quantum technology through the WACQT program, fostering strong academic research. The volume of advanced roles is very low, but the focus is on developing frontier capabilities in superconducting qubits and quantum algorithms."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.45,
       "confidence": "medium",
       "evidence": [
-        "IQM Quantum Computers",
         "VTT Technical Research Centre of Finland",
-        "Aalto University"
+        "Aalto University",
+        "IQM Quantum Computers (spin-off)"
       ],
-      "rationale": "Finland has a notable quantum hardware startup (IQM) and strong academic research, particularly in cryogenics, contributing to the quantum computing landscape."
+      "rationale": "Finland has a niche but strong presence in quantum technology, particularly in superconducting quantum computing, largely driven by Aalto University and VTT. This supports a very low volume of highly specialized roles and some frontier R&D, notably through IQM."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Institute for Quantum Computing (IQC) at Waterloo",
-        "Xanadu",
+        "Institute for Quantum Computing (IQC) at University of Waterloo",
+        "Perimeter Institute for Theoretical Physics",
         "D-Wave Systems",
         "National Research Council (NRC)",
-        "Universities of British Columbia, Toronto, McGill"
+        "Universities (University of Toronto, UBC)"
       ],
-      "rationale": "Canada was an early adopter in quantum computing (D-Wave) and maintains strong academic hubs and startups, supported by significant government funding."
+      "rationale": "Canada has been a pioneer in quantum information science, with world-renowned institutions and companies like D-Wave. This creates a low but highly skilled job market, with significant contributions to frontier research in various quantum computing paradigms."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "Silicon Quantum Computing (SQC)",
-        "Q-CTRL",
-        "UNSW",
-        "University of Sydney",
-        "Australian Quantum Technologies Roadmap"
+        "UNSW (University of New South Wales) - Silicon Quantum Computing",
+        "University of Sydney - Q-CTRL",
+        "Australian National University (ANU)",
+        "CSIRO",
+        "National Quantum Strategy"
       ],
-      "rationale": "Australia has leading research in silicon-based quantum computing and a national roadmap, fostering a growing but still relatively small advanced quantum ecosystem."
+      "rationale": "Australia has made significant strides in quantum research, particularly in silicon-based quantum computing and quantum control. This supports a low volume of advanced roles, with notable frontier research and a growing national strategy."
     },
     {
       "country_iso": "IE",
@@ -289,173 +295,173 @@
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Tyndall National Institute (photonics research)",
+        "Tyndall National Institute",
         "University College Dublin (UCD)",
-        "Trinity College Dublin (TCD)"
+        "Trinity College Dublin"
       ],
-      "rationale": "While strong in general tech, Ireland's direct advanced quantum activity is limited, primarily consisting of academic exploration in related fields like photonics."
+      "rationale": "Ireland's quantum sector is still in its early stages, with limited academic research and very few dedicated advanced roles. While there's some foundational work, significant frontier R&D is not yet established."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Imec (semiconductor R&D, potential future quantum hardware)",
+        "Imec",
         "KU Leuven",
-        "Ghent University",
-        "Participation in EU Quantum Flagship"
+        "Ghent University"
       ],
-      "rationale": "Belgium has strong research in microelectronics (Imec) which could support quantum hardware, and academic involvement in EU quantum initiatives, but a dedicated quantum ecosystem is small."
+      "rationale": "Belgium has a strong microelectronics research hub at Imec, which has some relevance to quantum hardware. Academic research is present, leading to a very low volume of specialist roles and some emerging frontier work."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "high",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "University of Innsbruck (ion trap research)",
-        "Institute for Quantum Optics and Quantum Information (IQOQI)",
-        "Alpine Quantum Technologies (AQT)"
+        "University of Innsbruck (IonQ collaboration)",
+        "Institute for Quantum Optics and Quantum Information (IQOQI) - Austrian Academy of Sciences"
       ],
-      "rationale": "Innsbruck is a world-renowned center for ion-trap quantum computing research, making Austria a significant contributor to fundamental quantum science despite its smaller overall volume."
+      "rationale": "Austria, particularly Innsbruck, is a global leader in ion-trap quantum computing and quantum optics. While the overall volume of roles is very low, the skill level is exceptionally high, and it's a significant hub for frontier experimental research."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "National Research Council (CNR)",
-        "National Institute for Nuclear Physics (INFN)",
-        "Sapienza University of Rome",
-        "Participation in EU Quantum Flagship"
+        "CNR (National Research Council)",
+        "INFN (National Institute for Nuclear Physics)",
+        "Universities (Padua, Rome, Milan)",
+        "National Quantum Technologies Plan"
       ],
-      "rationale": "Italy has a good academic base in physics and participates in EU quantum initiatives, but a coherent national quantum strategy and industrial ecosystem are still developing."
+      "rationale": "Italy has a solid academic base in physics, with some government initiatives in quantum technologies. The advanced quantum job market is very low, primarily concentrated in universities and national research institutes, with nascent frontier efforts."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "skill_level": 3,
+      "frontier": 0.35,
       "confidence": "medium",
       "evidence": [
         "ICFO (Institute of Photonic Sciences)",
         "Barcelona Supercomputing Center (BSC)",
-        "Quantum Spain initiative",
-        "Universitat Aut\u00f2noma de Barcelona (UAB)"
+        "CSIC (Spanish National Research Council)",
+        "Universities (Barcelona, Complutense Madrid)",
+        "Quantum Spain initiative"
       ],
-      "rationale": "Spain shows growing government interest with the Quantum Spain initiative and has strong research in related fields like photonics and supercomputing, but the advanced quantum job market is nascent."
+      "rationale": "Spain has growing academic research in quantum technologies, notably at ICFO and BSC. The 'Quantum Spain' initiative aims to boost capabilities, but the current volume of advanced roles remains very low, with emerging frontier research."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "No major quantum labs, companies, or national programs identified."
+        "No significant national quantum programs or major research centers identified",
+        "Limited academic groups with foundational physics research"
       ],
-      "rationale": "Malaysia's technological focus is primarily on manufacturing and general IT services, with no significant advanced quantum research or industrial activity identified."
+      "rationale": "Malaysia has not yet established a significant advanced quantum technology sector. Any related roles would be negligible and likely foundational academic research rather than dedicated advanced quantum jobs."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "No major quantum labs, companies, or national programs identified."
+        "No significant national quantum programs or major research centers identified",
+        "Limited academic groups with foundational physics research"
       ],
-      "rationale": "Vietnam has a developing tech sector, but advanced quantum research and development is not a current priority or area of significant investment."
+      "rationale": "Vietnam's advanced quantum technology market is negligible. While there may be some foundational physics research, there are no identified dedicated advanced quantum job opportunities or significant frontier R&D efforts."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "No major quantum labs, companies, or national programs identified."
+        "No significant national quantum programs or major research centers identified",
+        "Limited academic groups with foundational physics research"
       ],
-      "rationale": "Similar to other Southeast Asian nations, Thailand's focus is not on advanced quantum R&D, and there is no discernible job market for such roles."
+      "rationale": "Thailand currently has no discernible advanced quantum technology job market. Any activity would be confined to very early-stage academic exploration, with no significant frontier R&D."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "No major quantum labs, companies, or national programs identified."
+        "No significant national quantum programs or major research centers identified",
+        "Limited academic groups with foundational physics research"
       ],
-      "rationale": "Despite being a large economy, Indonesia has no significant advanced quantum research or industrial activity, and therefore no discernible job market in this domain."
+      "rationale": "Indonesia's advanced quantum technology sector is currently negligible. There are no identified significant research programs or job opportunities in this highly specialized field."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.1,
-      "confidence": "low",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.25,
+      "confidence": "medium",
       "evidence": [
-        "Technology Innovation Institute (TII) in Abu Dhabi (announced quantum initiatives)"
+        "Technology Innovation Institute (TII) in Abu Dhabi (Quantum Research Centre)"
       ],
-      "rationale": "The UAE has announced strategic investments in advanced technologies, including quantum, through TII. However, the actual job market for advanced quantum roles is still extremely nascent, almost negligible."
+      "rationale": "The UAE has recently made strategic investments in advanced technologies, including quantum, through institutions like TII. This has created a very low volume of roles, primarily focused on establishing foundational and some early-stage frontier research capabilities."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.1,
-      "confidence": "low",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
       "evidence": [
-        "King Abdullah University of Science and Technology (KAUST) (some related research)",
-        "National vision for tech development"
+        "King Abdullah University of Science and Technology (KAUST)",
+        "NEOM (potential future initiatives)"
       ],
-      "rationale": "Saudi Arabia is investing in future technologies as part of its national vision, with some foundational research at KAUST. However, a dedicated advanced quantum job market is not yet established."
+      "rationale": "Saudi Arabia is investing in advanced research through institutions like KAUST and future projects like NEOM. This has led to a very low volume of emerging quantum roles, with efforts to build foundational and some early-stage frontier research capabilities."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "skill_level": 3,
+      "frontier": 0.25,
       "confidence": "medium",
       "evidence": [
-        "Brazilian Quantum Technologies Program",
-        "University of S\u00e3o Paulo (USP)",
-        "UNICAMP",
-        "National Laboratory of Scientific Computing (LNCC)"
+        "Universities (University of S\u00e3o Paulo - USP, UNICAMP, Federal University of Rio de Janeiro - UFRJ)",
+        "National Institute of Science and Technology for Quantum Information"
       ],
-      "rationale": "Brazil has a growing academic interest and government support for quantum technologies through its national program, but the industrial ecosystem is still in early development."
+      "rationale": "Brazil has a respectable academic base in quantum physics, with several university groups conducting research. However, the advanced quantum job market remains very low, with limited industrial application and nascent frontier R&D."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "National Quantum Information Centre (KCIK) in Gdansk",
         "University of Warsaw",
         "Jagiellonian University",
-        "Participation in EU Quantum Flagship"
+        "National Centre for Quantum Technologies (QUNA)"
       ],
-      "rationale": "Poland has a strong academic base in quantum information theory and participates in EU quantum initiatives, but the industrial application and advanced job market are still nascent."
+      "rationale": "Poland has a strong academic tradition in quantum physics, with active research groups and a national initiative (QUNA). This supports a very low volume of specialist roles, primarily in academia, with some emerging frontier research."
     }
   ]
 }

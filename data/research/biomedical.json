@@ -6,408 +6,461 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "National Institutes of Health (NIH) funding",
-        "Moderna, Amgen, Genentech, Illumina",
-        "Broad Institute, MIT, Harvard Medical School",
-        "CRISPR Therapeutics, Ginkgo Bioworks"
+        "NIH",
+        "FDA",
+        "Moderna",
+        "CRISPR Therapeutics",
+        "Illumina",
+        "Broad Institute",
+        "MIT",
+        "Stanford",
+        "UCSF",
+        "Boston Biotech Cluster",
+        "San Francisco Bay Area Biotech Cluster"
       ],
-      "rationale": "The US is the global leader in biomedical research and industry, with unparalleled investment, top-tier academic institutions, and a vibrant startup ecosystem driving frontier innovation in all advanced bio fields."
+      "rationale": "Global leader in biomedical research, development, and commercialization with vast funding, top-tier institutions, and a robust startup ecosystem."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "BGI Genomics, WuXi AppTec, BeiGene",
-        "Chinese Academy of Sciences (CAS)",
-        "Government 'Made in China 2025' and 13th Five-Year Plan initiatives"
+        "WuXi AppTec",
+        "BeiGene",
+        "BGI Genomics",
+        "Chinese Academy of Sciences",
+        "National Natural Science Foundation of China",
+        "Made in China 2025"
       ],
-      "rationale": "China has rapidly scaled its biomedical sector with massive government and private investment, strong academic output, and a growing number of innovative companies, particularly in genomics and biopharmaceuticals."
+      "rationale": "Rapidly growing with significant government investment, large patient population, and emerging biotech firms, particularly strong in genomics and contract research/manufacturing."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
-      "confidence": "high",
+      "frontier": 0.8,
+      "confidence": "medium",
       "evidence": [
-        "Takeda Pharmaceutical, Astellas Pharma",
-        "Center for iPS Cell Research and Application (CiRA)",
-        "RIKEN, government support for regenerative medicine"
+        "Takeda Pharmaceutical",
+        "Astellas Pharma",
+        "Kyoto University (iPS cell research)",
+        "RIKEN",
+        "AMED"
       ],
-      "rationale": "Japan possesses a strong foundational pharmaceutical industry and world-leading research in specific areas like regenerative medicine and iPS cells, supported by robust academic institutions."
+      "rationale": "Established pharmaceutical industry and strong in regenerative medicine (iPS cells), driven by an aging population and government support."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "high",
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "Samsung Biologics, Celltrion, SK Bioscience",
-        "KAIST, Seoul National University",
-        "Government bio-health industry development plans"
+        "Samsung Biologics",
+        "Celltrion",
+        "SK Bioscience",
+        "KAIST",
+        "Bio-Health Industry Innovation Strategy"
       ],
-      "rationale": "South Korea is a rapidly emerging biotech hub, driven by significant government investment, major corporate players in biosimilars and biomanufacturing, and strong academic research in cell/gene therapy and diagnostics."
+      "rationale": "Strong government support, major players in biosimilars and contract manufacturing, with growing capabilities in cell/gene therapy and diagnostics."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Academia Sinica, National Health Research Institutes",
-        "Industrial Technology Research Institute (ITRI)",
-        "Taiwan Bio-Industry Organization"
+        "Academia Sinica",
+        "ITRI",
+        "National Health Research Institutes",
+        "Bio-Taiwan Committee"
       ],
-      "rationale": "Taiwan has niche strengths in medical devices and diagnostics, with growing government support for precision medicine and biopharmaceuticals, but a smaller overall advanced biomedical ecosystem."
+      "rationale": "Strong in medical devices and diagnostics, with a growing biotech sector focusing on precision medicine and genomics, supported by government initiatives."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "BioNTech, CureVac, Bayer, Boehringer Ingelheim",
-        "Max Planck Institutes, Fraunhofer Institutes",
-        "German Centre for Infection Research (DZIF)"
+        "Bayer",
+        "Boehringer Ingelheim",
+        "BioNTech",
+        "CureVac",
+        "Max Planck Institutes",
+        "Fraunhofer Institutes"
       ],
-      "rationale": "Germany boasts a robust pharmaceutical and chemical industry, excellent research infrastructure, and significant investment in biopharmaceuticals, diagnostics, and industrial biotechnology, demonstrated by its vaccine development capabilities."
+      "rationale": "Robust pharmaceutical industry, excellent research infrastructure, and strong in bioprocessing, diagnostics, and gene therapy, with significant R&D investment."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "high",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
       "evidence": [
-        "Leiden Bio Science Park, Utrecht Science Park",
-        "Galapagos, Erasmus MC, Hubrecht Institute"
+        "Leiden Bio Science Park",
+        "Utrecht Science Park",
+        "Erasmus MC",
+        "Genmab"
       ],
-      "rationale": "The Netherlands has concentrated biotech clusters, strong academic research in immunology and regenerative medicine, and a collaborative ecosystem fostering innovation."
+      "rationale": "Vibrant biotech ecosystem with strong academic research, particularly in immunology, oncology, and food/agri-tech biotech."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "GSK, AstraZeneca",
-        "Genomics England, Sanger Institute, Oxford Nanopore Technologies",
-        "University of Cambridge, University of Oxford"
+        "GSK",
+        "AstraZeneca",
+        "Oxford University",
+        "Cambridge University",
+        "Francis Crick Institute",
+        "Genomics England"
       ],
-      "rationale": "The UK benefits from world-class universities, a deep scientific heritage, significant venture capital, and strong government initiatives in genomics and gene therapy, supporting a vibrant biotech sector."
+      "rationale": "Strong academic base, major pharmaceutical companies, and a dynamic biotech startup scene, leading in genomics and drug discovery."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "high",
+      "frontier": 0.7,
+      "confidence": "medium",
       "evidence": [
-        "Sanofi, Ipsen, Genethon",
-        "Institut Pasteur, CNRS, Inserm",
-        "Biocitech Paris"
+        "Sanofi",
+        "Genopole",
+        "Institut Pasteur",
+        "CNRS",
+        "Inserm"
       ],
-      "rationale": "France has strong public research institutions, major pharmaceutical companies, and a growing biotech startup scene, with a focus on oncology, neuroscience, and infectious diseases."
+      "rationale": "Established pharmaceutical industry and strong public research, with a growing biotech sector focused on oncology, neuroscience, and infectious diseases."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.65,
-      "confidence": "high",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "Weizmann Institute of Science, Technion",
-        "Numerous biotech startups, strong VC funding for life sciences"
+        "Weizmann Institute of Science",
+        "Technion",
+        "Israel Innovation Authority",
+        "numerous biotech startups"
       ],
-      "rationale": "Israel's 'Startup Nation' ethos extends to biotech, with strong academic research, high venture capital investment, and innovation particularly in medical devices, digital health, and personalized medicine."
+      "rationale": "Highly innovative startup nation with strong academic research, particularly in medical devices, digital health, and personalized medicine."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.25,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Serum Institute of India, Biocon, Dr. Reddy's Laboratories",
-        "Government's National Biotechnology Development Strategy"
+        "Serum Institute of India",
+        "Biocon",
+        "Dr. Reddy's Laboratories",
+        "National Centre for Biological Sciences"
       ],
-      "rationale": "India has a large pharmaceutical industry focused on generics and CRAMS, with growing investment in biosimilars and vaccines. Advanced R&D is developing but still limited compared to manufacturing volume."
+      "rationale": "Major player in generics and vaccine manufacturing, with growing contract research and manufacturing, and increasing focus on biosimilars."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "A*STAR (Agency for Science, Technology and Research)",
-        "Biopolis, National University of Singapore (NUS)",
-        "Presence of global pharma R&D centers"
+        "Biopolis",
+        "A*STAR",
+        "National University of Singapore (NUS)",
+        "Roche R&D Center"
       ],
-      "rationale": "Singapore has made strategic government investments in biomedical sciences, creating a world-class research and biomanufacturing hub that attracts global talent and companies, driving significant frontier work for its size."
+      "rationale": "Strong government commitment and a strategic hub for pharmaceutical manufacturing and R&D, with excellent research institutes focusing on genomics and cell therapy."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "medium",
       "skill_level": 5,
-      "frontier": 0.85,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Roche, Novartis, Lonza",
-        "ETH Zurich, EPFL, University of Basel",
-        "High R&D spending and patent output in biotech"
+        "Roche",
+        "Novartis",
+        "Lonza",
+        "ETH Zurich",
+        "EPFL",
+        "Swiss Biotech Association"
       ],
-      "rationale": "Switzerland is home to global pharmaceutical giants and top-tier research institutions, leading to high-value, specialized roles and significant frontier R&D in biopharma, oncology, and immunology."
+      "rationale": "Home to global pharma giants, a strong biotech sector, and excellent universities, with high R&D investment in advanced therapies and drug discovery."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "high",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "AstraZeneca (R&D in Sweden), Karolinska Institutet",
-        "Uppsala University, Medicon Valley (shared with Denmark)"
+        "Karolinska Institute",
+        "AstraZeneca (R&D)",
+        "SciLifeLab",
+        "Uppsala University"
       ],
-      "rationale": "Sweden has strong academic research, particularly in life sciences, and a growing biotech cluster, with a focus on neuroscience, immunology, and rare diseases."
+      "rationale": "Strong academic research, historical pharma presence, and growing biotech startups, with focus on neuroscience, oncology, and rare diseases."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Institute for Molecular Medicine Finland (FIMM)",
-        "University of Helsinki, strong health tech startup scene"
+        "FinnGen project",
+        "University of Helsinki",
+        "VTT Technical Research Centre",
+        "Orion Pharma"
       ],
-      "rationale": "Finland has niche strengths in health tech, diagnostics, and bioinformatics, with an emerging biotech sector focused on personalized medicine and genomics, though at a smaller scale."
+      "rationale": "Strong in health tech and diagnostics, with good academic research and specific projects like FinnGen in genomics and personalized medicine."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "high",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "Stem Cell Network, MaRS Discovery District",
-        "University of Toronto, McGill University, AbCellera",
+        "University of Toronto (Stem Cell Institute)",
+        "McGill University",
+        "MaRS Discovery District",
         "National Research Council Canada"
       ],
-      "rationale": "Canada possesses strong academic research, growing biotech clusters in major cities, and government funding for research, particularly in regenerative medicine, oncology, and neuroscience."
+      "rationale": "Strong academic research and growing biotech clusters, with government support and focus on regenerative medicine, oncology, and neuroscience."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.45,
-      "confidence": "high",
+      "frontier": 0.5,
+      "confidence": "medium",
       "evidence": [
-        "Garvan Institute of Medical Research, Walter and Eliza Hall Institute",
-        "CSIRO, CSL Limited (R&D in AU)",
-        "Major universities"
+        "Walter and Eliza Hall Institute",
+        "Garvan Institute",
+        "CSL Limited",
+        "Medical Research Future Fund"
       ],
-      "rationale": "Australia has strong academic research, particularly in medical research institutes, with a growing biotech sector focused on oncology, immunology, and infectious diseases, albeit at a smaller scale."
+      "rationale": "Strong medical research institutes and a good clinical trial environment, with a growing biotech sector focused on oncology, immunology, and infectious diseases."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
-      "confidence": "high",
+      "frontier": 0.3,
+      "confidence": "medium",
       "evidence": [
-        "IDA Ireland attracting pharma/biotech",
-        "National Institute for Bioprocessing Research and Training (NIBRT)",
-        "Presence of major pharma R&D/manufacturing sites (e.g., Pfizer, J&J)"
+        "Pfizer (manufacturing)",
+        "Johnson & Johnson (manufacturing)",
+        "NIBRT",
+        "IDA Ireland"
       ],
-      "rationale": "Ireland is a significant hub for pharmaceutical manufacturing and R&D for global companies, with strong capabilities in bioprocessing and biomanufacturing, and a growing indigenous biotech sector."
+      "rationale": "Major hub for pharmaceutical manufacturing and bioprocessing by MNCs, with growing but limited advanced R&D capabilities."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.55,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "UCB, Galapagos",
-        "VIB (Flanders Institute for Biotechnology), KU Leuven, Ghent University"
+        "Janssen Pharmaceutica (J&J)",
+        "UCB",
+        "KU Leuven",
+        "VIB (Flanders Institute for Biotechnology)"
       ],
-      "rationale": "Belgium has a strong pharmaceutical and biotech sector, particularly in Flanders, with excellent academic research and innovative companies focused on oncology, immunology, and neuroscience."
+      "rationale": "Strong pharmaceutical presence and excellent academic research, with significant biotech clusters focusing on oncology, neuroscience, and immunology."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.35,
-      "confidence": "medium",
+      "frontier": 0.4,
+      "confidence": "low",
       "evidence": [
-        "Vienna BioCenter",
-        "University of Vienna, Medical University of Vienna",
-        "Austrian Research Promotion Agency (FFG)"
+        "Medical University of Vienna",
+        "CeMM Research Center for Molecular Medicine",
+        "Austrian Biotech Association"
       ],
-      "rationale": "Austria has a growing biotech sector, centered around the Vienna BioCenter, with strengths in biopharmaceuticals, diagnostics, and academic research, though at a smaller scale."
+      "rationale": "Growing biotech sector with good academic research, focusing on oncology, immunology, and rare diseases, but on a smaller scale."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Chiesi Farmaceutici, Menarini",
-        "San Raffaele Hospital (gene therapy), Italian Institute of Technology (IIT)"
+        "Chiesi Farmaceutici",
+        "Menarini",
+        "San Raffaele Hospital (gene therapy)",
+        "Italian Institute of Technology"
       ],
-      "rationale": "Italy has an established pharmaceutical industry and strong academic research, particularly in oncology and rare diseases, with a growing but somewhat fragmented biotech sector."
+      "rationale": "Established pharmaceutical industry and strong academic research, with a focus on oncology, rare diseases, and some gene therapy, though the biotech sector is fragmented."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "medium",
+      "frontier": 0.3,
+      "confidence": "low",
       "evidence": [
-        "Parc Cient\u00edfic de Barcelona, CNIO (Spanish National Cancer Research Centre)",
-        "CRG (Centre for Genomic Regulation), Grifols (R&D in ES)"
+        "Grifols",
+        "IrsiCaixa",
+        "Centre for Genomic Regulation (CRG)",
+        "Barcelona Science Park"
       ],
-      "rationale": "Spain has a developing biotech sector, particularly in Catalonia, with strong academic research and government support for R&D, focusing on oncology, neuroscience, and infectious diseases."
+      "rationale": "Growing biotech sector with good academic research, focusing on oncology, neuroscience, and infectious diseases, with emerging frontier capabilities."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Bioeconomy Corporation, Malaysian Biotechnology Corporation",
-        "Government 'Bioeconomy Malaysia' initiatives"
+        "Bioeconomy Corporation",
+        "Universiti Malaya",
+        "National Institutes of Biotechnology Malaysia"
       ],
-      "rationale": "Malaysia's biotech sector is primarily driven by government initiatives, focusing on industrial and agricultural biotech, with advanced biomedical R&D still in nascent stages."
+      "rationale": "Government initiatives to develop biotech, with a focus on biomanufacturing and halal pharmaceuticals, but still nascent in advanced R&D."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
-      "confidence": "low",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "Limited public information on advanced biomedical R&D",
-        "Focus on agriculture and basic pharmaceutical manufacturing"
+        "General economic development indicators",
+        "lack of major advanced biotech firms or research hubs"
       ],
-      "rationale": "Vietnam has a very nascent biotech sector, primarily focused on agriculture and basic pharmaceuticals, with limited advanced biomedical R&D capabilities currently."
+      "rationale": "Emerging market with focus on basic pharmaceutical manufacturing and agricultural biotech; very limited advanced biomedical R&D."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "National Center for Genetic Engineering and Biotechnology (BIOTEC)",
-        "Thailand Science Research and Innovation (TSRI)",
-        "Government 'Thailand 4.0' initiatives"
+        "Mahidol University",
+        "Thailand Science Park"
       ],
-      "rationale": "Thailand has government initiatives to promote biotech, focusing on agriculture, food, and some medical biotech, but advanced biomedical R&D is still developing."
+      "rationale": "Government push for biotech under 'Thailand 4.0', focusing on biopharmaceuticals and medical devices, but still early stage for advanced biomedical research."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
-      "confidence": "low",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "Limited public information on advanced biomedical R&D",
-        "Focus on agriculture and basic pharmaceuticals"
+        "Bio Farma",
+        "lack of significant advanced biotech R&D centers"
       ],
-      "rationale": "Indonesia's biotech sector is very nascent, primarily focused on agriculture and basic pharmaceuticals, with limited advanced biomedical R&D capabilities."
+      "rationale": "Large market with a nascent biotech sector, primarily focused on basic pharmaceutical production and vaccines; very limited advanced biomedical R&D."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Dubai Future Foundation, Dubai Genomics initiatives",
+        "Dubai Science Park",
+        "Abu Dhabi Stem Cell Center",
+        "G42 Healthcare",
         "Mohammed Bin Rashid University of Medicine and Health Sciences"
       ],
-      "rationale": "The UAE is making significant investments in healthcare and research, with growing interest in precision medicine and genomics, but the advanced biotech ecosystem is still in early development."
+      "rationale": "Significant investment in healthcare infrastructure and an emerging focus on genomics and precision medicine, often through international collaborations and recruitment."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
         "King Abdullah University of Science and Technology (KAUST)",
-        "King Faisal Specialist Hospital & Research Centre, Saudi Human Genome Program",
-        "Vision 2030 diversification efforts"
+        "King Faisal Specialist Hospital & Research Centre",
+        "Saudi Human Genome Project",
+        "Vision 2030"
       ],
-      "rationale": "Saudi Arabia is investing heavily in research infrastructure and genomics through Vision 2030, but the advanced biotech industry is nascent and largely driven by international collaborations."
+      "rationale": "Vision 2030 drives investment in healthcare and biotech, building research infrastructure and focusing on genomics, but still in early stages of local ecosystem development."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.25,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Fiocruz, Butantan Institute (vaccines)",
-        "University of S\u00e3o Paulo, some local biotech startups"
+        "Fiocruz",
+        "Butantan Institute",
+        "University of S\u00e3o Paulo",
+        "National Council for Scientific and Technological Development (CNPq)"
       ],
-      "rationale": "Brazil has an established pharmaceutical industry and strong academic research in specific areas like infectious diseases and vaccines, but the advanced industrial biotech sector is still developing."
+      "rationale": "Largest economy in Latin America with an established pharmaceutical industry and strong public health system, good academic research, but faces funding challenges for advanced biotech."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Polpharma, Adamed Pharma",
-        "National Centre for Research and Development",
-        "Emerging university spin-offs"
+        "Polpharma",
+        "Adamed Pharma",
+        "Medical University of Warsaw",
+        "Polish Academy of Sciences"
       ],
-      "rationale": "Poland has a growing pharmaceutical sector and an emerging biotech scene, particularly in oncology and diagnostics, with academic strengths, but the advanced roles volume is still relatively small."
+      "rationale": "Growing pharmaceutical and biotech sector with a good academic base, focusing on generics, biosimilars, and some contract research, with emerging R&D capabilities."
     }
   ]
 }

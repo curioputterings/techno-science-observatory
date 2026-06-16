@@ -4,17 +4,17 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "ambition": 5,
-      "target_level": 5,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "National Robotics Initiative (NRI)",
-        "National Quantum Initiative (NQI)",
-        "CHIPS and Science Act (indirectly via advanced manufacturing)",
-        "NIST Advanced Manufacturing Programs"
+        "National Quantum Initiative Act",
+        "Manufacturing USA Institutes (e.g., Advanced Robotics Manufacturing Institute - ARM)",
+        "NIST Advanced Manufacturing Programs",
+        "DoD investments in advanced materials and manufacturing"
       ],
-      "rationale": "Strong and sustained national commitment to advanced manufacturing, robotics, and quantum technologies, which are foundational to precision engineering, with significant funding and strategic initiatives."
+      "rationale": "The US has strong, multi-agency initiatives supporting advanced manufacturing, robotics, and quantum technologies, all of which heavily rely on precision engineering. The National Quantum Initiative and Manufacturing USA demonstrate significant, funded commitment."
     },
     {
       "country_iso": "CN",
@@ -24,25 +24,25 @@
       "horizon": "long",
       "confidence": "high",
       "evidence": [
-        "Made in China 2025 (high-end equipment, robotics)",
-        "14th Five-Year Plan for National Economic and Social Development",
-        "National Key R&D Programs"
+        "Made in China 2025 (explicitly targets high-end CNC machine tools, robotics, aerospace equipment)",
+        "14th Five-Year Plan for National Economic and Social Development and the Long-Range Objectives Through 2035",
+        "National Key R&D Programs for advanced manufacturing and robotics"
       ],
-      "rationale": "Precision engineering is a core strategic priority for China's industrial upgrading and technological self-reliance, backed by extensive national plans and investment."
+      "rationale": "China has made precision engineering, particularly in areas like high-end robotics, CNC machinery, and advanced materials, a core national priority with massive state-backed investment and explicit targets under 'Made in China 2025' and subsequent plans."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "ambition": 4,
+      "ambition": 5,
       "target_level": 5,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Robot Strategy (METI)",
-        "Society 5.0 initiatives (advanced manufacturing)",
-        "Moonshot R&D Program"
+        "Society 5.0 strategy (integrates cyber-physical systems, robotics)",
+        "METI's 'New Robot Strategy'",
+        "Moonshot R&D Program (e.g., aiming for advanced robotics and smart manufacturing)"
       ],
-      "rationale": "Japan maintains a strong focus on robotics, advanced manufacturing, and high-precision components, aiming to sustain its leadership in these areas."
+      "rationale": "Japan has a long-standing leadership in precision manufacturing, robotics, and optics. Current strategies like Society 5.0 and the New Robot Strategy reinforce a national commitment to maintaining and advancing its frontier capabilities in precision engineering."
     },
     {
       "country_iso": "KR",
@@ -52,11 +52,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Intelligent Robot Development and Supply Promotion Act",
-        "K-Robotics Strategy (MOTIE)",
-        "National R&D programs for advanced manufacturing"
+        "K-Manufacturing Innovation Strategy",
+        "National Robotics Strategy",
+        "Investments in smart factories and advanced materials by MOTIE"
       ],
-      "rationale": "South Korea has a clear national strategy to become a global leader in intelligent robotics and smart manufacturing, requiring high levels of precision engineering."
+      "rationale": "South Korea has a strong national push for smart manufacturing, robotics, and high-tech industries, all requiring advanced precision engineering. The K-Manufacturing Innovation Strategy and dedicated robotics initiatives demonstrate clear, funded ambition."
     },
     {
       "country_iso": "TW",
@@ -66,91 +66,93 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Smart Machinery Promotion Program (MOEA)",
-        "Industrial Technology Research Institute (ITRI) initiatives"
+        "Smart Machinery Promotion Project",
+        "'5+2 Industrial Innovation Plan' (includes smart machinery)",
+        "Industrial Technology Research Institute (ITRI) programs in precision machinery and advanced manufacturing"
       ],
-      "rationale": "Taiwan leverages its semiconductor and ICT strengths to advance smart machinery and precision components, crucial for its high-tech manufacturing base."
+      "rationale": "Taiwan, a global leader in semiconductor manufacturing (which demands extreme precision), has a strong national focus on smart machinery and advanced manufacturing as part of its industrial innovation plans, aiming to upgrade its industrial base."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "ambition": 4,
-      "target_level": 5,
-      "horizon": "long",
+      "target_level": 4,
+      "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Industrie 4.0 Platform",
-        "High-Tech Strategy 2025",
-        "Fraunhofer-Gesellschaft research programs (e.g., optics, micro-engineering)"
+        "Industry 4.0 Platform",
+        "High-Tech Strategy 2025 (focus on advanced manufacturing, photonics, robotics)",
+        "Fraunhofer Gesellschaft research programs in production technology and micro-engineering"
       ],
-      "rationale": "Germany's industrial strategy, particularly Industrie 4.0, heavily relies on precision engineering for advanced manufacturing, robotics, and automation."
+      "rationale": "Germany's 'Industry 4.0' initiative and 'High-Tech Strategy 2025' place a strong emphasis on advanced manufacturing, automation, and digital integration, inherently requiring and promoting high levels of precision engineering expertise and technology."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "ambition": 4,
+      "ambition": 5,
       "target_level": 5,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "high",
       "evidence": [
-        "High-Tech Systems and Materials (HTSM) Top Sector agenda",
-        "PhotonDelta initiative",
-        "National Growth Fund investments in high-tech"
+        "PhotonDelta (National Growth Fund program for integrated photonics)",
+        "Brainport Eindhoven ecosystem (focus on high-tech systems and materials)",
+        "National innovation agenda supporting high-tech systems and advanced manufacturing"
       ],
-      "rationale": "The Netherlands has a strong, focused ambition in high-tech systems, photonics, and advanced manufacturing equipment, exemplified by its HTSM top sector and ecosystem around ASML."
+      "rationale": "The Netherlands demonstrates world-leading ambition in specific precision engineering niches, particularly in lithography (ASML) and integrated photonics (PhotonDelta), backed by significant national funding and a strong innovation ecosystem."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "ambition": 3,
-      "target_level": 4,
+      "target_level": 3,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "UK National Quantum Technologies Programme",
-        "Made Smarter Industrial Strategy Challenge Fund",
-        "High Value Manufacturing Catapult"
+        "High Value Manufacturing Catapult",
+        "Made Smarter UK (digital manufacturing initiative)"
       ],
-      "rationale": "The UK has specific strengths and stated ambitions in quantum technologies and advanced manufacturing, which require high levels of precision engineering, though less of a broad national strategy for the domain itself."
+      "rationale": "The UK has dedicated programs like the National Quantum Technologies Programme and the High Value Manufacturing Catapult which support advanced manufacturing and precision technologies, indicating a clear, though not always flagship, national priority."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "ambition": 3,
-      "target_level": 4,
+      "target_level": 3,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "France 2030 investment plan (e.g., Robotics and Mechatronics, Quantum Technologies)",
-        "Industry of the Future plan"
+        "France 2030 investment plan (includes significant investments in robotics, quantum technologies, advanced manufacturing)",
+        "National strategies for AI and quantum technologies"
       ],
-      "rationale": "France aims to re-industrialize and strengthen its position in key technological areas like robotics, quantum, and microelectronics through significant national investment programs."
+      "rationale": "France 2030 allocates substantial funds to re-industrialization and strategic technologies like quantum and robotics, which are heavily reliant on precision engineering. This indicates a strong, renewed national ambition in these areas."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "ambition": 2,
+      "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Israel Innovation Authority programs (supporting deep tech, advanced manufacturing startups)"
+        "Israel Innovation Authority programs supporting advanced manufacturing, robotics, and deep tech",
+        "National initiatives to promote Industry 4.0 technologies"
       ],
-      "rationale": "While Israel has strong capabilities in high-tech, defense, and medical devices that inherently involve precision engineering, there isn't a distinct, explicit national strategy for 'precision engineering' as a standalone domain."
+      "rationale": "Israel's innovation ecosystem and the Israel Innovation Authority actively support advanced manufacturing and deep tech, including robotics and photonics, indicating a strategic intent to develop capabilities in precision engineering."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "long",
       "confidence": "medium",
       "evidence": [
-        "Make in India initiative",
-        "National Policy on Electronics",
-        "Production Linked Incentive (PLI) schemes for manufacturing"
+        "Make in India initiative (aims to boost manufacturing, including high-tech)",
+        "National Strategy for Additive Manufacturing",
+        "Various technology missions promoting indigenous production"
       ],
-      "rationale": "India's 'Make in India' and PLI schemes aim to boost domestic manufacturing and reduce imports, including high-tech components that require precision engineering, indicating a growing but still developing ambition."
+      "rationale": "India's 'Make in India' and additive manufacturing strategies aim to build domestic manufacturing capabilities, which implicitly includes precision engineering. However, the focus is often on adoption and scaling rather than frontier R&D in this specific domain."
     },
     {
       "country_iso": "SG",
@@ -161,22 +163,24 @@
       "confidence": "high",
       "evidence": [
         "Research, Innovation and Enterprise (RIE) 2025 plan (Advanced Manufacturing and Engineering domain)",
-        "National Robotics Programme (NRP)"
+        "A*STAR research institutes (e.g., Singapore Institute of Manufacturing Technology - SIMTech)",
+        "National Robotics Programme"
       ],
-      "rationale": "Singapore has a clear strategic focus on advanced manufacturing and engineering, with dedicated programs and significant investment to develop high-value precision industries."
+      "rationale": "Singapore's RIE2025 plan explicitly prioritizes Advanced Manufacturing and Engineering, with significant investments in research and development through A*STAR and dedicated programs like the National Robotics Programme, demonstrating high ambition."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "ambition": 3,
-      "target_level": 4,
-      "horizon": "long",
-      "confidence": "medium",
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
       "evidence": [
-        "CSEM (Swiss Center for Electronics and Microtechnology) initiatives",
-        "Swiss National Science Foundation (SNSF) funding for engineering sciences"
+        "Innosuisse funding for innovation projects in advanced manufacturing, robotics, and photonics",
+        "Strong university research programs (e.g., ETH Zurich, EPFL) in micro-engineering and robotics",
+        "Swiss National Science Foundation (SNSF) grants for precision-related research"
       ],
-      "rationale": "Switzerland has a long-standing excellence in precision mechanics and microtechnology, supported by strong research institutions, though less of a top-down 'national strategy' for the domain compared to others."
+      "rationale": "Switzerland has a historical strength in precision mechanics and continues to foster innovation through Innosuisse and leading universities, with clear support for advanced manufacturing, robotics, and micro-engineering."
     },
     {
       "country_iso": "SE",
@@ -186,71 +190,79 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Vinnova programs for 'Smart Industry' and 'Production in Sweden'"
+        "Produktion2030 (strategic innovation program for smart production)",
+        "Vinnova funding for advanced manufacturing and robotics",
+        "National initiatives for industrial digitalization and automation"
       ],
-      "rationale": "Sweden's innovation agency, Vinnova, supports advanced manufacturing, robotics, and automation, reflecting an ambition to maintain its industrial competitiveness through smart industry initiatives."
+      "rationale": "Sweden's Produktion2030 program and Vinnova's funding initiatives target smart production and industrial digitalization, which inherently involve advancements in precision engineering, particularly in automation and robotics."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "ambition": 2,
-      "target_level": 3,
+      "target_level": 2,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Business Finland programs supporting advanced manufacturing and industrial renewal"
+        "Business Finland programs supporting industrial digitalization, AI, and robotics",
+        "National strategies for smart manufacturing and sustainable industry"
       ],
-      "rationale": "Finland focuses on digitalization and smart manufacturing, which indirectly involves precision engineering, but lacks a highly explicit national strategy for the domain itself."
+      "rationale": "Finland focuses on digitalization and AI in industry, with Business Finland supporting related R&D. While not explicitly 'precision engineering' as a standalone domain, these efforts contribute to advanced manufacturing capabilities."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "ambition": 2,
+      "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "Next Generation Manufacturing Canada (NGen) supercluster",
-        "Strategic Innovation Fund (SIF) investments in advanced manufacturing"
+        "National Quantum Strategy",
+        "Strategic Innovation Fund (supports advanced manufacturing projects)"
       ],
-      "rationale": "Canada aims to strengthen its advanced manufacturing capabilities through supercluster initiatives and strategic investments, which include aspects of precision engineering."
+      "rationale": "Canada's NGen supercluster and National Quantum Strategy include significant components related to advanced manufacturing and precision technologies, indicating a growing national ambition in these areas."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "ambition": 2,
-      "target_level": 3,
-      "horizon": "long",
+      "target_level": 2,
+      "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Modern Manufacturing Strategy",
-        "National Reconstruction Fund (NRF) investment priorities (e.g., defence, medical science manufacturing)"
+        "Modern Manufacturing Strategy (priority areas include advanced manufacturing)",
+        "National Reconstruction Fund (allocates funds to manufacturing)",
+        "CSIRO research in advanced materials and manufacturing"
       ],
-      "rationale": "Australia's Modern Manufacturing Strategy and National Reconstruction Fund aim to diversify and strengthen domestic manufacturing, with precision engineering being a component in targeted sectors."
+      "rationale": "Australia's Modern Manufacturing Strategy and National Reconstruction Fund aim to boost domestic manufacturing capabilities, with advanced manufacturing being a key focus, implicitly supporting precision engineering development."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "IDA Ireland's focus on attracting advanced manufacturing and medtech FDI"
+        "IDA Ireland's focus on attracting high-tech manufacturing and R&D",
+        "Enterprise Ireland's support for R&D in manufacturing and engineering sectors"
       ],
-      "rationale": "Ireland's ambition in precision engineering is primarily driven by attracting foreign direct investment in high-tech manufacturing and medtech, rather than a distinct national strategy for indigenous development in the domain."
+      "rationale": "Ireland's agencies like IDA Ireland and Enterprise Ireland support high-value manufacturing and R&D, which includes aspects of precision engineering, though it's not a distinct, flagship national priority."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "ambition": 1,
-      "target_level": 2,
+      "ambition": 2,
+      "target_level": 3,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Flanders Make research centre (regional initiative)"
+        "imec's research in nanoelectronics and photonics (Flanders)",
+        "Regional innovation strategies (e.g., Flanders Industry 4.0)",
+        "Walloon Region's Marshall Plan 4.0"
       ],
-      "rationale": "While there are regional initiatives like Flanders Make, a cohesive national strategy or strong stated ambition for precision engineering as a top priority is less evident in Belgium."
+      "rationale": "Belgium, particularly through imec, has strong capabilities and ambition in micro- and nano-precision technologies. Regional strategies also support advanced manufacturing, though a unified national strategy for precision engineering is less pronounced."
     },
     {
       "country_iso": "AT",
@@ -260,96 +272,105 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "'Production of the Future' research program (BMK)"
+        "'Production of the Future' research program",
+        "FFG (Austrian Research Promotion Agency) funding for advanced manufacturing and robotics",
+        "Industry 4.0 initiatives"
       ],
-      "rationale": "Austria has a stated ambition to advance its industrial base through programs like 'Production of the Future,' focusing on smart manufacturing and digitalization, which includes precision engineering aspects."
+      "rationale": "Austria's 'Production of the Future' program and FFG funding demonstrate a clear commitment to advanced manufacturing and smart production, which are closely tied to precision engineering capabilities."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "ambition": 2,
-      "target_level": 3,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Industria 4.0 (now Transition 4.0) plan",
-        "National Recovery and Resilience Plan (PNRR) investments in R&D and digital transition"
+        "'Transition 4.0' plan (incentives for digital and green transition in industry)",
+        "National Competence Centers (e.g., Made Competence Center)",
+        "Investments in robotics and automation"
       ],
-      "rationale": "Italy's 'Transition 4.0' plan aims to modernize its industrial base through digitalization and automation, encompassing elements of precision engineering, but it's a broader industrial strategy."
+      "rationale": "Italy's 'Transition 4.0' plan provides incentives for industrial digitalization and automation, which includes precision engineering aspects. National competence centers also support these areas, but it's more about industrial adoption than frontier R&D."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "'Spain Digital 2025' agenda (indirectly supports industrial transformation)"
+        "'Spain Digital 2025' agenda",
+        "PERTE for Advanced Microelectronics and Semiconductors (CHIP PERTE)",
+        "National strategies for Industry 4.0 and AI"
       ],
-      "rationale": "Spain's focus is more on general digitalization and modernization of its industry, with less explicit national ambition or dedicated programs specifically for precision engineering."
+      "rationale": "Spain's PERTE for microelectronics and semiconductors indicates a strategic push in a highly precision-dependent field. Broader Industry 4.0 initiatives also support advanced manufacturing, though precision engineering is not a standalone flagship."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "ambition": 2,
+      "ambition": 1,
       "target_level": 2,
       "horizon": "long",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "New Industrial Master Plan 2030 (NIMP 2030)"
+        "Industry4WRD National Policy on Industry 4.0",
+        "Various investment incentives for high-tech manufacturing"
       ],
-      "rationale": "Malaysia's NIMP 2030 aims to move its manufacturing sector up the value chain, including a focus on high-tech and automated processes that require precision engineering capabilities."
+      "rationale": "Malaysia's Industry4WRD policy aims to promote Industry 4.0 adoption. While this includes advanced manufacturing, explicit, high-level ambition for developing frontier precision engineering capabilities is less pronounced; the focus is more on upgrading existing industries."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "ambition": 1,
-      "target_level": 2,
+      "target_level": 1,
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "National Strategy on Industry 4.0"
+        "'Made in Vietnam' strategy",
+        "Efforts to attract high-tech investment and manufacturing"
       ],
-      "rationale": "Vietnam's National Strategy on Industry 4.0 aims to attract high-tech FDI and develop advanced industries, but its ambition in precision engineering is still nascent and broad."
+      "rationale": "Vietnam is focused on attracting and developing its manufacturing base, including higher-tech industries. While this implies a need for precision, explicit national strategies or significant R&D funding specifically for precision engineering as a domain are limited."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "ambition": 2,
       "target_level": 2,
-      "horizon": "long",
+      "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Thailand 4.0 strategy",
-        "Eastern Economic Corridor (EEC) development plan (targeting robotics and automation)"
+        "Thailand 4.0 strategy (targets robotics, automation)",
+        "Eastern Economic Corridor (EEC) development plan (focus on advanced industries)"
       ],
-      "rationale": "Thailand 4.0 and the EEC plan aim to transform the economy into a value-based one, with a focus on robotics and automation, which implies a growing ambition in precision engineering."
+      "rationale": "Thailand 4.0 and the EEC plan aim to transform the economy towards advanced industries, including robotics and automation, which require precision engineering. This indicates a clear, though still developing, national ambition."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "ambition": 2,
+      "ambition": 1,
       "target_level": 2,
       "horizon": "long",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Making Indonesia 4.0 roadmap"
+        "Making Indonesia 4.0 roadmap (identifies priority sectors for Industry 4.0 adoption)",
+        "Government initiatives to boost manufacturing competitiveness"
       ],
-      "rationale": "Indonesia's 'Making Indonesia 4.0' roadmap outlines a strategy to modernize its manufacturing sector, including the adoption of advanced technologies that involve precision engineering."
+      "rationale": "Indonesia's 'Making Indonesia 4.0' roadmap aims for industrial transformation. While it identifies priority sectors for Industry 4.0 adoption, explicit, high-level ambition for developing frontier precision engineering capabilities is not a primary focus."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "ambition": 3,
+      "ambition": 2,
       "target_level": 3,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "medium",
       "evidence": [
         "UAE Advanced Manufacturing Strategy",
-        "Dubai Future Foundation initiatives"
+        "Dubai Future Foundation initiatives",
+        "Investments in R&D and innovation hubs for diversification"
       ],
-      "rationale": "The UAE has a strong drive for economic diversification and technological leadership, with explicit strategies for advanced manufacturing and Industry 4.0, which include precision engineering."
+      "rationale": "The UAE's Advanced Manufacturing Strategy and broader diversification efforts aim to build high-tech industrial capabilities, including robotics and advanced materials, which require precision engineering. Ambition is high for a nascent industrial base."
     },
     {
       "country_iso": "SA",
@@ -359,10 +380,11 @@
       "horizon": "long",
       "confidence": "medium",
       "evidence": [
-        "Saudi Vision 2030",
-        "National Industrial Development and Logistics Program (NIDLP)"
+        "Vision 2030 (economic diversification, industrial development)",
+        "National Industrial Development and Logistics Program (NIDLP)",
+        "NEOM project's stated goals for advanced manufacturing and robotics"
       ],
-      "rationale": "Saudi Arabia's Vision 2030 and NIDLP aim to localize and diversify its industrial base, with significant investments in advanced manufacturing that will require precision engineering capabilities."
+      "rationale": "Saudi Arabia's Vision 2030 and NIDLP aim to diversify its economy through industrial development, including advanced manufacturing and robotics, with projects like NEOM envisioning cutting-edge technologies that will rely on precision engineering."
     },
     {
       "country_iso": "BR",
@@ -372,22 +394,23 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Brazil 4.0 agenda"
+        "Brazilian Industry 4.0 Agenda",
+        "BNDES (National Bank for Economic and Social Development) support for innovation"
       ],
-      "rationale": "Brazil's 'Brazil 4.0' agenda focuses on general industrial digitalization and modernization, with less explicit or dedicated national ambition for precision engineering as a distinct domain."
+      "rationale": "Brazil has an Industry 4.0 agenda and some support for industrial innovation. However, consistent funding and a strong, unified national push specifically for precision engineering R&D are often hampered by economic and political instability."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "ambition": 2,
+      "ambition": 1,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
         "Polish Industry 4.0 Platform",
-        "'Strategy for Responsible Development'"
+        "Government programs supporting digitalization of SMEs"
       ],
-      "rationale": "Poland aims to modernize its manufacturing sector through its Industry 4.0 Platform and broader development strategies, which include adopting advanced technologies requiring precision engineering."
+      "rationale": "Poland's Industry 4.0 Platform aims to digitalize and automate its manufacturing sector. While this involves aspects of precision engineering, the ambition is more focused on industrial modernization and adoption rather than leading frontier research."
     }
   ]
 }

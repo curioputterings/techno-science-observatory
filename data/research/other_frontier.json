@@ -11,16 +11,19 @@
       "evidence": [
         "NASA",
         "SpaceX",
+        "Blue Origin",
         "Boeing",
         "Lockheed Martin",
         "Northrop Grumman",
-        "Blue Origin",
         "GE Aerospace",
-        "National Labs (LLNL, LANL, ORNL)",
-        "ITER contributions",
-        "numerous additive manufacturing firms"
+        "National Labs (Los Alamos, Sandia, Oak Ridge)",
+        "Commonwealth Fusion Systems",
+        "Helion Energy",
+        "DOE Hydrogen Hubs",
+        "3D Systems",
+        "Stratasys"
       ],
-      "rationale": "The US leads globally in aerospace, space exploration, advanced propulsion, nuclear fusion research, and additive manufacturing. It has a vast ecosystem of government agencies, private companies, and research institutions driving frontier innovation and a very high volume of advanced roles."
+      "rationale": "The US leads globally across nearly all 'Other Frontier' domains, with massive government and private investment in space, advanced aerospace, nuclear fusion/fission, hydrogen, and additive manufacturing. Extensive R&D and commercialization activities drive very high volume and frontier-level innovation."
     },
     {
       "country_iso": "CN",
@@ -30,448 +33,459 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "CASC",
-        "CNSA",
+        "CNSA (China National Space Administration)",
+        "CASC (China Aerospace Science and Technology Corporation)",
         "COMAC",
-        "China National Nuclear Corporation",
-        "multiple fusion research institutes (e.g., EAST)",
-        "extensive additive manufacturing industry"
+        "AECC (Aero Engine Corporation of China)",
+        "CNNC (China National Nuclear Corporation)",
+        "EAST (Experimental Advanced Superconducting Tokamak)",
+        "State-backed additive manufacturing initiatives"
       ],
-      "rationale": "China has made massive state-backed investments in space, aerospace, nuclear energy, fusion research, and additive manufacturing, rapidly advancing its capabilities and generating a very high volume of advanced roles, often at the frontier of technology."
+      "rationale": "China has made rapid, strategic advancements in space, aerospace, nuclear power (including fusion research), and additive manufacturing, backed by significant state investment and a large talent pool. This results in very high activity and strong frontier contributions."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.8,
+      "skill_level": 4,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
-        "JAXA",
+        "JAXA (Japan Aerospace Exploration Agency)",
         "Mitsubishi Heavy Industries",
         "Kawasaki Heavy Industries",
-        "Toshiba",
-        "Hitachi",
-        "Naka Fusion Institute (JT-60SA)",
-        "hydrogen energy programs"
+        "IHI Corporation",
+        "ITER (major contributor)",
+        "National Hydrogen Strategy (e.g., Kawasaki's hydrogen carrier projects)",
+        "Advanced materials research"
       ],
-      "rationale": "Japan is a leader in robotics, space exploration, advanced materials, and has significant programs in nuclear technology (despite recent shifts), fusion research, and hydrogen energy. It maintains a high volume of skilled roles with strong frontier contributions."
+      "rationale": "Japan is a leader in high-tech manufacturing, robotics, and advanced materials, with strong programs in space, aerospace, and a significant national commitment to hydrogen energy. While nuclear power generation has scaled back, R&D in related fields and fusion remains strong."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.75,
       "confidence": "medium",
       "evidence": [
-        "KARI",
+        "KARI (Korea Aerospace Research Institute)",
         "Hanwha Aerospace",
-        "Korea Hydro & Nuclear Power",
-        "KSTAR (fusion reactor)",
-        "Hyundai (hydrogen initiatives)",
-        "advanced manufacturing clusters"
+        "Korea Hydro & Nuclear Power (KHNP)",
+        "KSTAR (Korean Superconducting Tokamak Advanced Research)",
+        "Hyundai (hydrogen fuel cell development)",
+        "Advanced manufacturing industry"
       ],
-      "rationale": "South Korea has a growing space program, strong capabilities in advanced manufacturing, significant nuclear energy infrastructure, and notable contributions to fusion research (KSTAR). It offers a medium volume of advanced roles with solid frontier engagement."
+      "rationale": "South Korea has a growing space program, strong capabilities in advanced manufacturing, and significant investment in nuclear power and hydrogen technologies. Its fusion research is also world-class, contributing to a medium volume of high-skill frontier work."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "low",
-      "skill_level": 4,
+      "skill_level": 3,
       "frontier": 0.5,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "AIDC (aerospace)",
+        "AIDC (Aerospace Industrial Development Corporation)",
         "NSPO (National Space Organization)",
-        "ITRI (Industrial Technology Research Institute)",
-        "defense contractors"
+        "Strong advanced manufacturing base (semiconductors, precision components)",
+        "ITRI (Industrial Technology Research Institute)"
       ],
-      "rationale": "Taiwan excels in high-tech manufacturing, including aerospace components and some satellite technology. While not a primary space or nuclear power, its advanced manufacturing base supports niche frontier applications, resulting in a low volume of highly skilled roles."
+      "rationale": "Taiwan excels in advanced manufacturing and precision engineering, which supports aerospace components and some satellite technology. Direct involvement in core 'Other Frontier' R&D like propulsion or fusion is limited, but its high-tech ecosystem provides a solid foundation."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.85,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "Airbus (major presence)",
+        "ArianeGroup",
         "DLR (German Aerospace Center)",
-        "ESA contributions",
-        "Siemens Energy",
-        "Fraunhofer Institutes (additive manufacturing)",
+        "Fraunhofer Institutes (additive manufacturing, materials)",
+        "EOS GmbH",
+        "TRUMPF",
         "Max Planck Institute for Plasma Physics (Wendelstein 7-X)",
-        "national hydrogen strategy"
+        "National Hydrogen Strategy"
       ],
-      "rationale": "Germany is a powerhouse in aerospace, advanced manufacturing (especially additive), and has world-leading research in fusion energy (Wendelstein 7-X) and hydrogen technologies. It has a high volume of advanced roles with significant frontier R&D."
+      "rationale": "Germany is a powerhouse in engineering and research, with strong contributions to aerospace, space, advanced manufacturing (especially additive), and significant research in fusion energy and hydrogen technologies. This drives high volume and frontier-level innovation."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "skill_level": 3,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "ESA ESTEC",
-        "ASML (indirectly supports advanced manufacturing)",
+        "ESA ESTEC (European Space Research and Technology Centre)",
+        "TNO (Netherlands Organisation for Applied Scientific Research)",
         "Fokker Technologies",
-        "TNO",
-        "TU Delft (space, additive)",
-        "hydrogen initiatives"
+        "National Hydrogen Strategy",
+        "ASML (indirectly related high-tech manufacturing)"
       ],
-      "rationale": "The Netherlands has a strong niche in space technology (hosting ESA ESTEC), advanced manufacturing, and is investing in hydrogen. While the overall volume is lower than larger economies, the skill level and frontier contributions in specific areas are high."
+      "rationale": "The Netherlands has a strong niche in space instrumentation and high-tech manufacturing, contributing significantly to European space efforts. It also has growing initiatives in hydrogen technology, supporting a low but highly skilled volume of frontier work."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
-      "skill_level": 5,
+      "skill_level": 4,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Rolls-Royce",
+        "UK Space Agency",
+        "Rolls-Royce (aerospace, SMRs)",
         "BAE Systems",
         "Reaction Engines",
-        "UK Space Agency",
-        "Culham Centre for Fusion Energy (JET, STEP program)",
-        "UKAEA",
-        "AMRC (additive manufacturing)"
+        "Culham Centre for Fusion Energy (STEP program)",
+        "GKN Aerospace",
+        "Diverse additive manufacturing companies"
       ],
-      "rationale": "The UK has a robust aerospace and defense industry, a growing space sector, and is a global leader in fusion energy research (JET, STEP). It also has significant capabilities in advanced manufacturing, leading to a high volume of advanced, frontier-level roles."
+      "rationale": "The UK has a robust aerospace and defense sector, a rapidly growing space industry, and world-leading research in nuclear fusion (STEP program) and Small Modular Reactors (SMRs). Significant activity in advanced materials and additive manufacturing contributes to high volume and frontier research."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
         "Airbus (major presence)",
         "Dassault Aviation",
         "ArianeGroup",
-        "CNES (French Space Agency)",
-        "CEA (Atomic Energy and Alternative Energies Commission)",
-        "EDF (nuclear power)",
-        "ITER (Cadarache host)",
+        "CNES (Centre National d'\u00c9tudes Spatiales)",
+        "EDF (\u00c9lectricit\u00e9 de France)",
+        "CEA (Commissariat \u00e0 l'\u00e9nergie atomique et aux \u00e9nergies alternatives, ITER host)",
         "Safran",
-        "Onera"
+        "Thales"
       ],
-      "rationale": "France is a global leader in aerospace, space, and nuclear energy. It hosts the ITER fusion project and has extensive R&D in propulsion and advanced materials. This results in a high volume of highly skilled, frontier-focused roles."
+      "rationale": "France is a global leader in aerospace, space, and nuclear energy (fission and fusion, hosting ITER). Its strong industrial base and research institutions drive a high volume of highly skilled and frontier-level work across these domains."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
         "Israel Aerospace Industries (IAI)",
         "Rafael Advanced Defense Systems",
         "Elbit Systems",
         "SpaceIL",
-        "Technion (additive manufacturing)"
+        "Weizmann Institute of Science (research)",
+        "Advanced materials R&D"
       ],
-      "rationale": "Israel has a highly innovative defense and aerospace industry, with notable achievements in satellite technology and advanced manufacturing. While the volume of roles is lower, the skill level and frontier nature of the work are significant."
+      "rationale": "Israel has a highly advanced defense industry with strong capabilities in aerospace, satellite technology, and related high-tech systems. While its space program is smaller, its innovation in specific niches and advanced materials is significant, supporting medium volume and frontier work."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "volume_band": "high",
+      "skill_level": 3,
+      "frontier": 0.75,
       "confidence": "medium",
       "evidence": [
         "ISRO (Indian Space Research Organisation)",
         "DRDO (Defence Research and Development Organisation)",
         "HAL (Hindustan Aeronautics Limited)",
-        "NPCIL (Nuclear Power Corporation of India)",
+        "NPCIL (Nuclear Power Corporation of India Limited)",
         "BARC (Bhabha Atomic Research Centre)",
-        "IITs (additive manufacturing, fusion research)"
+        "Growing private space sector"
       ],
-      "rationale": "India has a rapidly advancing space program, a significant nuclear energy sector, and growing capabilities in aerospace manufacturing and advanced materials. This translates to a medium volume of advanced roles with increasing frontier contributions."
+      "rationale": "India has a well-established and rapidly advancing space program, a significant nuclear power sector, and a growing aerospace industry. While skill levels can vary, there's substantial government-backed R&D pushing frontier capabilities, leading to high volume."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "low",
       "evidence": [
-        "ST Engineering Aerospace",
-        "A*STAR (additive manufacturing, materials)",
-        "Nanyang Technological University (satellite research)",
-        "hydrogen initiatives"
+        "ST Engineering (aerospace MRO, defense)",
+        "Nanyang Technological University (NTU) aerospace/materials research",
+        "Satellite technology development (e.g., small satellites)",
+        "A*STAR (Agency for Science, Technology and Research)"
       ],
-      "rationale": "Singapore focuses on high-value manufacturing, aerospace MRO, and has emerging capabilities in satellite technology and advanced materials. While the direct R&D volume in 'Other Frontier' is very low, the skill level is high in its niche areas."
+      "rationale": "Singapore focuses on high-value manufacturing, aerospace MRO, and R&D in advanced materials and satellite technologies. While not a major player in large-scale space or nuclear, its specialized expertise and research contribute to a low but skilled volume of frontier work."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "low",
-      "skill_level": 5,
+      "skill_level": 4,
       "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
+        "CERN (European Organization for Nuclear Research - plasma physics, fundamental research)",
         "RUAG Space",
-        "CERN (indirectly related to advanced physics/engineering)",
-        "EPFL (fusion, space)",
-        "ETH Zurich (additive manufacturing)",
-        "advanced materials companies"
+        "Oerlikon (additive manufacturing)",
+        "EPFL/ETH Zurich (advanced materials, robotics)"
       ],
-      "rationale": "Switzerland, despite its size, has world-class research institutions and companies contributing to space components, advanced manufacturing, and fusion research. It has a low volume of roles but very high skill and significant frontier R&D impact."
+      "rationale": "Switzerland excels in high-precision engineering, advanced materials, and fundamental research (e.g., CERN's contributions to plasma physics). It has niche strengths in space components and additive manufacturing, leading to a low volume of very high-skill, frontier-level work."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.55,
+      "skill_level": 3,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "Saab Aeronautics",
-        "GKN Aerospace",
-        "SSC (Swedish Space Corporation)",
-        "Chalmers University (fusion)",
-        "RISE (additive manufacturing)"
+        "Saab (aerospace, defense)",
+        "GKN Aerospace Sweden",
+        "Esrange Space Center",
+        "Vattenfall (nuclear expertise, although phasing out)",
+        "Hydrogen initiatives"
       ],
-      "rationale": "Sweden has a strong aerospace industry, a capable space sector, and research in fusion and advanced manufacturing. It offers a low volume of advanced roles, but with high skill and notable frontier contributions in specific areas."
+      "rationale": "Sweden has a strong aerospace and defense industry, a significant space research presence (Esrange), and expertise in advanced materials. While its nuclear power is being phased out, related expertise remains. Growing interest in hydrogen contributes to a low volume of skilled work."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
+      "frontier": 0.55,
+      "confidence": "low",
       "evidence": [
+        "VTT Technical Research Centre of Finland",
         "ICEYE (small satellites)",
-        "VTT Technical Research Centre",
-        "Aalto University (space tech, additive manufacturing)"
+        "Fortum (nuclear expertise, Olkiluoto NPP)",
+        "Some advanced manufacturing"
       ],
-      "rationale": "Finland has a niche in small satellite technology and advanced manufacturing research. While the overall volume of 'Other Frontier' jobs is very low, there are specific areas of innovation and skilled work."
+      "rationale": "Finland has niche strengths in space technology (e.g., small satellites, remote sensing), nuclear expertise (operating NPPs), and advanced materials research. The overall volume in 'Other Frontier' domains is very low but involves specialist skills and some frontier R&D."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "skill_level": 3,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
-        "MDA (space robotics)",
+        "MDA (Canadarm, satellite systems)",
         "Bombardier (aerospace)",
-        "CAE (simulation)",
-        "SNC-Lavalin (nuclear - CANDU)",
-        "Canadian Space Agency",
-        "National Research Council (aerospace, additive)",
-        "hydrogen initiatives"
+        "CAE (simulation, training)",
+        "SNC-Lavalin (CANDU reactors)",
+        "Chalk River Laboratories",
+        "National Hydrogen Strategy"
       ],
-      "rationale": "Canada is strong in aerospace, space robotics (Canadarm), and nuclear technology (CANDU reactors). It has a medium volume of advanced roles with solid skill levels and contributions to frontier research."
+      "rationale": "Canada has a strong aerospace sector, particularly in regional jets and space robotics. It also possesses significant expertise in nuclear technology (CANDU reactors) and is actively pursuing hydrogen energy. This supports a medium volume of skilled and frontier-oriented work."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "Australian Space Agency",
-        "EOS (space, defense)",
-        "CSIRO (hydrogen, additive manufacturing)",
-        "universities"
+        "EOS Defence Systems",
+        "Gilmour Space Technologies",
+        "CSIRO (hydrogen, advanced materials)",
+        "Growing defense industry"
       ],
-      "rationale": "Australia has a growing space sector, significant research in hydrogen energy, and capabilities in advanced manufacturing and materials. The volume of advanced 'Other Frontier' jobs is low but increasing, with emerging frontier contributions."
+      "rationale": "Australia has a rapidly developing space sector, a growing defense industry with aerospace components, and significant research in hydrogen and advanced materials. While the overall volume is low, there's a clear push towards specialist skills and frontier R&D."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "Limited direct R&D in core 'Other Frontier' areas",
-        "aerospace leasing industry"
+        "Some aerospace MRO (Maintenance, Repair, and Overhaul)",
+        "High-tech manufacturing (supporting industries)",
+        "Limited direct 'Other Frontier' R&D programs"
       ],
-      "rationale": "Ireland's strength lies in IT, pharma, and aerospace leasing, with very limited direct R&D or manufacturing in the core 'Other Frontier' domains like space, nuclear, or advanced propulsion. Job volume is negligible."
+      "rationale": "Ireland's 'Other Frontier' activity is primarily in supporting high-tech manufacturing and some aerospace MRO. Direct R&D in core domains like space, nuclear, or advanced propulsion is very limited, resulting in very low volume and applied skill levels."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
+      "frontier": 0.6,
+      "confidence": "low",
       "evidence": [
-        "ESA contributions",
-        "SCK CEN (nuclear research)",
-        "Sirris (additive manufacturing)"
+        "SCK CEN (Belgian Nuclear Research Centre)",
+        "Thales Alenia Space Belgium",
+        "OIP Sensor Systems",
+        "ESA contributions"
       ],
-      "rationale": "Belgium contributes to ESA programs and has research in nuclear technology and advanced manufacturing. The volume of dedicated 'Other Frontier' jobs is very low, but with a decent skill level and some frontier engagement."
+      "rationale": "Belgium has strong expertise in nuclear research (SCK CEN) and contributes significantly to European space programs, particularly in optical and electronic components. This leads to a low volume of specialist skill and some frontier research."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "medium",
+      "skill_level": 2,
+      "frontier": 0.4,
+      "confidence": "low",
       "evidence": [
         "FACC AG (aerospace components)",
-        "AMAG (materials)",
-        "TU Wien (additive manufacturing)"
+        "Magna Steyr (engineering, some aerospace)",
+        "Some advanced manufacturing and materials science research"
       ],
-      "rationale": "Austria has niche strengths in aerospace components and advanced materials, including additive manufacturing. The volume of 'Other Frontier' jobs is very low, but with specialized skills and some frontier research."
+      "rationale": "Austria has a strong advanced manufacturing sector, particularly in automotive and some aerospace components. Direct involvement in core 'Other Frontier' domains like space launch or nuclear power is very limited, resulting in very low volume and applied skill levels."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "skill_level": 3,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
         "Leonardo (aerospace, defense)",
-        "Avio S.p.A. (space propulsion)",
+        "Avio Aero (aerospace propulsion)",
         "ASI (Italian Space Agency)",
-        "ENEA (fusion, nuclear)",
-        "Politecnico di Torino (aerospace, additive)"
+        "Thales Alenia Space (joint venture)",
+        "ENEA (nuclear, fusion research)",
+        "Diverse advanced manufacturing"
       ],
-      "rationale": "Italy has a strong aerospace industry, significant contributions to ESA, and research in fusion and nuclear technologies. This results in a medium volume of advanced roles with good skill levels and frontier involvement."
+      "rationale": "Italy has a significant aerospace and space industry, with strong capabilities in propulsion and satellite manufacturing. It also contributes to nuclear and fusion research. This supports a medium volume of skilled and frontier-oriented work."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "frontier": 0.6,
+      "confidence": "low",
       "evidence": [
-        "Airbus (components)",
-        "Indra (defense, space)",
-        "CDTI (space)",
-        "CIEMAT (fusion research)",
-        "universities"
+        "Airbus (significant presence)",
+        "Indra (defense, aerospace)",
+        "CDTI (Centre for the Development of Industrial Technology - space programs)",
+        "SENER Aeroespacial",
+        "Growing hydrogen economy initiatives"
       ],
-      "rationale": "Spain has a growing aerospace sector, contributes to ESA, and conducts research in fusion energy. The volume of 'Other Frontier' jobs is low, but with developing skill levels and increasing frontier engagement."
+      "rationale": "Spain has a growing aerospace sector, contributing to Airbus programs and developing its own space capabilities. There's also increasing investment in renewable hydrogen. This leads to a low but skilled volume of work with some frontier elements."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "MIMOS (advanced manufacturing)",
-        "Universiti Putra Malaysia (some satellite research)"
+        "CTRM (Composites Technology Research Malaysia)",
+        "MIMOS (Malaysian Institute of Microelectronic Systems - R&D)",
+        "Some aerospace MRO activities",
+        "Angkasa (National Space Agency)"
       ],
-      "rationale": "Malaysia has some advanced manufacturing capabilities and limited satellite research, but direct R&D in core 'Other Frontier' domains like space, nuclear, or advanced propulsion is negligible, resulting in very few advanced roles."
+      "rationale": "Malaysia has some capabilities in aerospace composites and MRO, with nascent interest in space technology. However, direct advanced R&D in core 'Other Frontier' domains is limited, resulting in very low volume and applied skill levels."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "VAST (space, nuclear research - nascent)",
-        "emerging manufacturing sector"
+        "VNSC (Vietnam National Space Center) with limited capabilities",
+        "Nascent high-tech manufacturing sector",
+        "Limited advanced R&D in core 'Other Frontier' areas"
       ],
-      "rationale": "Vietnam is an emerging economy with a nascent space program and some basic nuclear research. The advanced 'Other Frontier' job market is extremely small, with very limited frontier R&D."
+      "rationale": "Vietnam's 'Other Frontier' capabilities are in early stages, primarily focused on satellite receiving and some basic space applications. Advanced R&D in propulsion, fusion, or complex aerospace manufacturing is minimal, leading to very low volume and entry-level skills."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.25,
       "confidence": "low",
       "evidence": [
-        "GISTDA (space - nascent)",
-        "some aerospace MRO"
+        "GISTDA (Geo-Informatics and Space Technology Development Agency)",
+        "Some aerospace MRO and component manufacturing",
+        "Limited advanced R&D"
       ],
-      "rationale": "Thailand has a developing space agency and some aerospace MRO, but direct R&D in advanced 'Other Frontier' domains is very limited. The job volume for advanced roles is negligible."
+      "rationale": "Thailand has a space agency focused on Earth observation and some aerospace MRO. While there's a push for high-tech industries, direct advanced R&D in core 'Other Frontier' domains is limited, resulting in very low volume and applied skill levels."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "PT Dirgantara Indonesia (aerospace - limited advanced R&D)",
-        "LAPAN (space - nascent)"
+        "LAPAN (National Institute of Aeronautics and Space)",
+        "PT Dirgantara Indonesia (aerospace)",
+        "Limited advanced R&D in core 'Other Frontier' areas"
       ],
-      "rationale": "Indonesia has a national aerospace company and a developing space agency, but advanced R&D in 'Other Frontier' domains is very limited. The job volume for advanced roles is negligible."
+      "rationale": "Indonesia has a national space agency and a state-owned aerospace company, but its 'Other Frontier' capabilities are still developing. Advanced R&D in propulsion, fusion, or complex aerospace manufacturing is minimal, leading to very low volume and entry-level skills."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
         "UAE Space Agency",
-        "Mohammed bin Rashid Space Centre (Mars mission)",
-        "Strata Manufacturing (aerospace components)",
+        "Mohammed bin Rashid Space Centre (MBRSC - Mars Hope probe, lunar mission)",
+        "Barakah Nuclear Energy Plant",
+        "EDGE Group (defense, aerospace)",
         "Masdar (hydrogen initiatives)"
       ],
-      "rationale": "The UAE has an ambitious and rapidly developing space program, with significant investments in advanced manufacturing and hydrogen. While the domestic R&D job volume is still very low, the skill level and frontier aspirations are high."
+      "rationale": "The UAE has an ambitious and rapidly advancing space program, a fully operational nuclear power plant, and significant investments in defense aerospace and hydrogen technologies. This drives a low but highly skilled volume of frontier-oriented work."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "low",
+      "frontier": 0.55,
+      "confidence": "medium",
       "evidence": [
-        "Saudi Space Commission (nascent)",
-        "NEOM (hydrogen, advanced manufacturing initiatives)",
-        "King Abdullah City for Atomic and Renewable Energy (K.A.CARE)"
+        "Saudi Space Commission",
+        "NEOM (hydrogen, future tech investments)",
+        "King Abdullah City for Atomic and Renewable Energy (K.A.CARE)",
+        "Saudi Military Industries Company (SAMI)"
       ],
-      "rationale": "Saudi Arabia is investing heavily in future technologies and has nascent space and nuclear ambitions, alongside hydrogen initiatives (e.g., NEOM). The domestic R&D job volume in 'Other Frontier' is very low, but with growing potential and skill development."
+      "rationale": "Saudi Arabia is making significant investments in future technologies, including a nascent space program, ambitious hydrogen projects (NEOM), and plans for nuclear energy. While still developing, these initiatives contribute to a low volume of applied-to-specialist skill work with emerging frontier elements."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Embraer (aerospace)",
-        "AEB (Brazilian Space Agency)",
-        "IPEN (nuclear research)",
-        "ITA (aerospace institute)"
+        "Brazilian Space Agency (AEB)",
+        "Eletronuclear (Angra NPP)",
+        "CTA (Department of Aerospace Science and Technology)"
       ],
-      "rationale": "Brazil has a notable aerospace industry (Embraer), a space program, and some nuclear research capabilities. While economic challenges can impact growth, there is a low volume of advanced roles with a decent skill level and some frontier engagement."
+      "rationale": "Brazil has an established aerospace industry (Embraer), a national space program, and operational nuclear power plants. While facing economic challenges, these sectors maintain a low to medium volume of skilled work with some frontier R&D."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "medium",
+      "skill_level": 2,
+      "frontier": 0.45,
+      "confidence": "low",
       "evidence": [
-        "Polish Space Agency",
-        "Creotech Instruments (space tech)",
-        "Institute of Plasma Physics and Laser Microfusion",
-        "ESA contributions"
+        "Polish Space Agency (POLSA)",
+        "Creotech Instruments (small satellites)",
+        "Growing aerospace components sector",
+        "Plans for nuclear power development"
       ],
-      "rationale": "Poland has a growing space sector, contributing to ESA, and some research in plasma physics and advanced manufacturing. The volume of 'Other Frontier' jobs is very low, but with developing skills and emerging frontier contributions."
+      "rationale": "Poland has a growing space sector, contributing to ESA programs and developing small satellite capabilities. It also has ambitions for nuclear power and a developing aerospace components industry. This results in a very low volume of applied-to-specialist skill work with emerging frontier elements."
     }
   ]
 }
