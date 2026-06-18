@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import random
 import sys
 import time
 import urllib.error
@@ -44,6 +45,11 @@ API = "https://api.openalex.org/works"
 # common pool (sustained 429s on a long run). Read it from .env (gitignored) so
 # the address stays out of the public repo; placeholder is a last resort.
 MAILTO = load_env().get("OPENALEX_MAILTO", "research@example.org")
+# Seconds between calls = PACING + random jitter in [0, JITTER]. The jitter breaks
+# the rhythmic call pattern that rate-limiters fingerprint; raise via env for a very
+# slow, throttle-safe run (a 30x30x5 burst at 0.4s once earned a sustained 429).
+PACING = float(load_env().get("OPENALEX_PACING", "1.0"))
+JITTER = float(load_env().get("OPENALEX_JITTER", "0.5"))
 LOG = ROOT / "data" / "research" / "publications_run.log"
 
 # Academic search phrasing per domain (publications use different language than
@@ -124,11 +130,19 @@ def _get(url: str, retries: int = 6):
             last = e
             # 429s need a long cooldown; back off harder and longer than transient errors
             time.sleep((15 if e.code == 429 else 3) * (i + 1))
-        except Exception as e:  # noqa: BLE001 — incl. ConnectionResetError, socket timeout
-            # any transport-level failure (reset, timeout, DNS blip): back off + retry
+        except urllib.error.URLError as e:
+            # DNS / connection failure — usually a VPN switch dropping the network.
+            # No point burning the full retry/backoff: it won't recover in seconds.
+            # Fail fast (2 quick tries) so the pass skips on; --skip-existing retries
+            # this (year, domain) on a later pass once connectivity is back.
+            last = e
+            if i >= 1:
+                break
+            time.sleep(2)
+        except Exception as e:  # noqa: BLE001 — e.g. socket timeout, malformed JSON
             last = e
             time.sleep(3 * (i + 1))
-    raise RuntimeError(f"OpenAlex failed after {retries} tries: {last}")
+    raise RuntimeError(f"OpenAlex failed after {min(i + 1, retries)} tries: {last}")
 
 
 def _count_one(query: str, iso: str, year: int) -> int:
@@ -151,7 +165,7 @@ def country_counts(query: str, year: int) -> dict[str, int]:
     out = {}
     for iso in TARGET_COUNTRIES:
         out[iso] = _count_one(query, iso, year)  # let failures propagate
-        time.sleep(1.0)  # polite pacing — slower to avoid 429 over a long multi-year run
+        time.sleep(PACING + random.uniform(0, JITTER))  # jittered polite pacing
     return out
 
 
