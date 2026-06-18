@@ -361,6 +361,10 @@ def history_data():
         return pd.DataFrame()
     finally:
         conn.close()
+    if not h.empty:
+        # roll each (30-domain or legacy 9-domain) row up to its parent group, so
+        # snapshots across the 9->30 expansion share one comparable vocabulary
+        h["parent"] = h["domain"].map(taxonomy.rollup_to_parent)
     return h
 
 
@@ -380,17 +384,38 @@ with tab8:
         if len(dates) < 2:
             st.info("Only one snapshot so far — the line chart needs ≥2 weeks to "
                     "show movement. Showing the current level meanwhile.")
-        per_country = (h.groupby(["snapshot_date", "country_name"])["capability"]
+        # Roll up to the 9 parent groups so dates before and after the 9->30 domain
+        # expansion are comparable: mean within each parent, then mean across the 9
+        # parents (equal parent weight — matching how the legacy 9-domain rows read).
+        parent_lvl = (h.groupby(["snapshot_date", "country_name", "parent"])["capability"]
+                      .mean().reset_index())
+        per_country = (parent_lvl.groupby(["snapshot_date", "country_name"])["capability"]
                        .mean().reset_index())
+        # the 9->30 boundary = first snapshot carrying more than the 9 parent groups
+        dom_per_date = h.groupby("snapshot_date")["domain"].nunique()
+        post_exp = [d for d in dates if dom_per_date.get(d, 0) > 9]
+        first_30 = post_exp[0] if post_exp else None
+        st.caption(
+            "Capability is **rolled up to the 9 parent groups** so snapshots before and "
+            "after the 30-domain expansion stay comparable (no composition jump)."
+            + (f" The dotted line marks the **9→30 domain expansion ({first_30})** — "
+               "movement across it is real re-estimation at finer grain, not an artifact."
+               if first_30 and first_30 != dates[0] else "")
+        )
         default = (per_country[per_country.snapshot_date == dates[-1]]
                    .nlargest(8, "capability")["country_name"].tolist())
         picks = st.multiselect("Countries", sorted(h["country_name"].unique()),
                                default=default)
-        sub = per_country[per_country["country_name"].isin(picks)]
-        fig = px.line(sub, x="snapshot_date", y="capability", color="country_name",
+        sub = per_country[per_country["country_name"].isin(picks)].copy()
+        sub["date"] = pd.to_datetime(sub["snapshot_date"])
+        fig = px.line(sub, x="date", y="capability", color="country_name",
                       markers=True,
-                      labels={"snapshot_date": "Snapshot", "capability": "Mean capability",
+                      labels={"date": "Snapshot", "capability": "Mean capability (9 groups)",
                               "country_name": "Country"})
+        if first_30 and first_30 != dates[0]:
+            fig.add_vline(x=pd.to_datetime(first_30).timestamp() * 1000,
+                          line_dash="dot", line_color="gray",
+                          annotation_text="9→30 expansion", annotation_position="top")
         fig.update_layout(height=480)
         st.plotly_chart(fig, use_container_width=True)
         if len(dates) >= 2:
