@@ -13,9 +13,12 @@ out = []
 
 out.append(f"panel rows: {len(rep['panel'])} | intensity matrix: {rep['intensity'].shape}")
 
-out.append("\n=== Technology Complexity Index (ECI, top 12) ===")
-for iso, v in rep["eci"].head(12).items():
-    out.append(f"{v:+5.2f}  {iso}  {names.get(iso, '')}")
+out.append("\n=== Country complexity — FITNESS (Tacchella, top 12) ===")
+for iso, v in rep["fitness"].head(12).items():
+    out.append(f"{v:5.2f}  {iso}  {names.get(iso, '')}")
+fit, div_ = rep["fitness"], rep["diversity"]
+out.append(f"  [health] corr(Fitness, diversity) = {fit.corr(div_):.3f}  "
+           f"(eigenvector ECI = {rep['eci'].corr(div_):.3f}, degenerate — kept for reference)")
 
 out.append("\n=== Domain Complexity (PCI) — high = complex & rare ===")
 for dom, v in rep["pci"].items():

@@ -101,8 +101,20 @@ def main():
     blocks.append(("Capability matrix", fig_html(f, height=760),
                    "Each cell is a country's capability score in one domain."))
 
-    # 3. OEC: PCI + basket complexity
+    # 3. OEC: country fitness + PCI + basket complexity
     rep = complexity.full_report()
+    names = rep["names"]
+    fit = rep["fitness"].head(15).reset_index(); fit.columns = ["iso", "fitness"]
+    fit["country"] = fit["iso"].map(names).fillna(fit["iso"])
+    ff = px.bar(fit, x="fitness", y="country", orientation="h", color="fitness",
+                color_continuous_scale="Tealgrn",
+                title="Country complexity — Fitness (non-linear, ≈1 = average)")
+    ff.update_layout(yaxis={"categoryorder": "total ascending"})
+    blocks.append(("Country complexity (Fitness)", fig_html(ff, height=520),
+                   "The robust country index (Tacchella Fitness), used instead of the "
+                   "classic eigenvector ECI which degenerates on this panel. Rewards "
+                   "diversified depth (US/JP/KR/CN/DE); complements basket complexity, "
+                   "which rewards concentration in rare domains (TW/MY)."))
     pci = rep["pci"].reset_index(); pci.columns = ["domain", "PCI"]
     pci["domain"] = pci["domain"].map(taxonomy.DOMAIN_LABELS)
     f = px.bar(pci, x="PCI", y="domain", orientation="h", color="PCI",

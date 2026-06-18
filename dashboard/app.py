@@ -167,6 +167,7 @@ def oec_report():
         "pci": rep["pci"],
         "basket": rep["basket_complexity"],
         "eci": rep["eci"],
+        "fitness": rep["fitness"],
         "diversity": rep["diversity"],
         "proximity": rep["proximity"],
         "density": rep["density"],
@@ -184,6 +185,26 @@ with tab5:
     rep = oec_report()
     pci, basket = rep["pci"], rep["basket"]
     names = rep["names"]
+
+    st.markdown("**Country complexity — Fitness** (Tacchella non-linear index)")
+    fit = rep["fitness"]
+    fdf = fit.head(15).reset_index()
+    fdf.columns = ["iso", "fitness"]
+    fdf["country"] = fdf["iso"].map(names).fillna(fdf["iso"])
+    st.plotly_chart(
+        px.bar(fdf, x="fitness", y="country", orientation="h", color="fitness",
+               color_continuous_scale="Tealgrn")
+        .update_layout(height=max(380, 22 * len(fdf)),
+                       yaxis={"categoryorder": "total ascending"}),
+        use_container_width=True)
+    st.caption(
+        "The robust country index (≈1 = average). We use **Fitness** instead of the "
+        "classic eigenvector ECI, which degenerates on this panel "
+        f"(corr w/ diversity {rep['fitness'].corr(rep['diversity']):.2f} vs "
+        f"{rep['eci'].corr(rep['diversity']):.2f}). Rewards diversified depth "
+        "(US/JP/KR/CN/DE) — complements basket complexity, which rewards "
+        "*concentration* in rare domains (TW/MY).")
+    st.divider()
 
     cA, cB = st.columns(2)
     with cA:

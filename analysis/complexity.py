@@ -135,6 +135,36 @@ def complexity_indices(M: pd.DataFrame) -> tuple[pd.Series, pd.Series]:
     return eci, pci
 
 
+def fitness_complexity(M: pd.DataFrame, iterations: int = 1000
+                       ) -> tuple[pd.Series, pd.Series]:
+    """Tacchella et al. non-linear Fitness-Complexity — a robust alternative to the
+    eigenvector ECI/PCI, which degenerates on small/dense panels (here corr(ECI,
+    diversity) was ~0.22 and the ranks inverted).
+
+    Iterate to convergence, renormalising to mean 1 each step:
+        F_c <- sum_d M[c,d] * Q_d                     (country fitness)
+        Q_d <- 1 / sum_c ( M[c,d] / F_c )             (domain complexity)
+
+    The 1/F_c term is the point: a domain is complex only if even *low-fitness*
+    countries can't do it, so ubiquity is penalised non-linearly and diversified
+    countries rise — exactly the failure modes of the linear method. Returns
+    (fitness per country, complexity per domain), both mean-normalised (≈1 = avg).
+    """
+    if M.empty or M.values.sum() == 0:
+        return pd.Series(dtype=float), pd.Series(dtype=float)
+    Mv = M.values.astype(float)
+    F = np.ones(Mv.shape[0])
+    Q = np.ones(Mv.shape[1])
+    for _ in range(iterations):
+        F = Mv @ Q
+        F = F / (F.mean() or 1.0)
+        denom = Mv.T @ (1.0 / np.maximum(F, 1e-12))   # sum_c M[c,d]/F_c
+        Q = 1.0 / np.maximum(denom, 1e-12)
+        Q = Q / (Q.mean() or 1.0)
+    return (pd.Series(F, index=M.index).sort_values(ascending=False),
+            pd.Series(Q, index=M.columns).sort_values(ascending=False))
+
+
 def proximity(M: pd.DataFrame) -> pd.DataFrame:
     """Domain-domain proximity: min(P(i|j), P(j|i)) over co-specialisation."""
     if M.empty:
@@ -180,6 +210,7 @@ def full_report(db_path=None, source: str = "gemini_research",
     vol = volume_ord_matrix(df)
     M = specialisation(mat, vol=vol, min_vol_ord=min_vol_ord)
     eci, pci = complexity_indices(M)
+    fitness, dom_fitness = fitness_complexity(M)
     cwc = complexity_weighted_capability(mat, pci)
     names = (df.drop_duplicates("country_iso")
              .set_index("country_iso")["country_name"].to_dict())
@@ -192,6 +223,8 @@ def full_report(db_path=None, source: str = "gemini_research",
         "diversity": M.sum(axis=1),
         "ubiquity": M.sum(axis=0),
         "eci": eci.sort_values(ascending=False) if not eci.empty else eci,
+        "fitness": fitness,            # non-linear country complexity (robust ECI)
+        "domain_fitness": dom_fitness,
         "pci": pci.sort_values(ascending=False) if not pci.empty else pci,
         "basket_complexity": (cwc.sort_values(ascending=False)
                               if not cwc.empty else cwc),
