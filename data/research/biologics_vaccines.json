@@ -6,73 +6,77 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
         "Pfizer",
         "Moderna",
-        "Johnson & Johnson",
-        "Merck",
+        "Regeneron",
         "Amgen",
-        "Genentech",
-        "Gilead Sciences",
-        "NIH",
-        "FDA",
-        "Boston Biotech Cluster",
-        "SF Bay Area Biotech Cluster"
+        "Genentech (Roche)",
+        "Merck",
+        "Johnson & Johnson",
+        "National Institutes of Health (NIH)",
+        "numerous biotech startups",
+        "leading academic research institutions (e.g., Harvard, MIT, Stanford)"
       ],
-      "rationale": "The US is the global leader in biologics and vaccines, with unparalleled R&D investment, numerous major pharmaceutical and biotech companies, top-tier academic institutions, and a robust regulatory and venture capital ecosystem. It leads in mRNA technology, gene therapies, and novel antibody development."
+      "rationale": "The US is the global leader in biopharmaceutical R&D and manufacturing, particularly in biologics and vaccines. It boasts a vast ecosystem of major pharmaceutical companies, innovative biotech startups, and world-class academic research centers driving frontier advancements in mRNA, gene therapy, and novel antibody platforms. Hiring volume for advanced roles is exceptionally high."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
+        "Wuxi Biologics",
         "Sinovac",
         "Sinopharm",
         "CanSino Biologics",
-        "WuXi Biologics",
         "Innovent Biologics",
         "BeiGene",
-        "Made in China 2025",
-        "14th Five-Year Plan"
+        "government initiatives (e.g., Made in China 2025)",
+        "significant investment in biotech parks"
       ],
-      "rationale": "China has a rapidly growing biotech sector with significant government investment, a large domestic market, and increasing R&D capabilities. It is a major player in biosimilars, vaccines, and contract manufacturing (e.g., WuXi Biologics), with growing innovation in novel biologics."
+      "rationale": "China has rapidly emerged as a major player in biopharmaceuticals, with substantial government investment and a large domestic market. It excels in contract development and manufacturing (CDMO) for biologics and has a growing number of domestic companies engaged in novel biologics and vaccine R&D, including CAR-T and gene therapy. The skill level is high and advancing rapidly, with significant frontier activity."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Takeda Pharmaceutical",
         "Astellas Pharma",
         "Daiichi Sankyo",
-        "Chugai Pharmaceutical",
-        "National Institute of Biomedical Innovation"
+        "Chugai Pharmaceutical (Roche affiliate)",
+        "Shionogi",
+        "Fujifilm Diosynth Biotechnologies",
+        "RIKEN",
+        "leading universities"
       ],
-      "rationale": "Japan has an established pharmaceutical industry with strong R&D, high-quality manufacturing, and major global players like Takeda. It focuses on oncology, rare diseases, and some vaccines, supported by strong academic research."
+      "rationale": "Japan has a well-established pharmaceutical industry with strong R&D capabilities, particularly in oncology, regenerative medicine, and some vaccine development. Major global players like Takeda drive significant advanced-role hiring. The country maintains a high skill level and substantial frontier research, though perhaps less broad than the US or some European hubs."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.5,
+      "frontier": 0.65,
       "confidence": "high",
       "evidence": [
         "Samsung Biologics",
         "Celltrion",
         "SK Bioscience",
         "LG Chem",
-        "Bio-Health Industry Innovation Strategy"
+        "Hanmi Pharmaceutical",
+        "government support for bio-industry",
+        "Bio-Korea initiatives"
       ],
-      "rationale": "South Korea is a rapidly emerging biotech powerhouse, particularly strong in biosimilars and contract manufacturing (CDMO) with global leaders like Samsung Biologics and Celltrion. It has aggressive government support and increasing investment in novel biologics R&D."
+      "rationale": "South Korea is a rapidly growing biopharmaceutical powerhouse, especially in biosimilars and contract manufacturing (CDMO) for biologics. Companies like Samsung Biologics and Celltrion are global leaders. There's significant investment in R&D, leading to a high skill level and increasing frontier activity in novel biologics and vaccine development."
     },
     {
       "country_iso": "TW",
@@ -82,13 +86,13 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
+        "Formosa Biomedical Technology",
         "Adimmune Corporation",
-        "Medigen Vaccine Biologics",
         "Mycenax Biotech",
-        "National Health Research Institutes",
-        "Biotechnology and Pharmaceutical Industry Promotion Program"
+        "Development Center for Biotechnology (DCB)",
+        "Hsinchu Biomedical Science Park"
       ],
-      "rationale": "Taiwan has a growing biotech sector with government support, focusing on biosimilars, some novel drug development, and contract manufacturing. While smaller in scale, it emphasizes high-quality production and niche R&D."
+      "rationale": "Taiwan has a developing biotech sector with strengths in contract manufacturing and some specialized R&D, particularly in diagnostics and medical devices. While smaller in scale compared to major players, it has a good academic base and government support, contributing to a medium skill level and moderate frontier activity, often through international collaborations."
     },
     {
       "country_iso": "DE",
@@ -99,30 +103,32 @@
       "confidence": "high",
       "evidence": [
         "BioNTech",
+        "Merck KGaA",
         "Bayer",
         "Boehringer Ingelheim",
-        "Merck KGaA",
+        "CureVac",
         "Fraunhofer Institutes",
         "Max Planck Institutes",
-        "Paul-Ehrlich-Institut"
+        "leading universities"
       ],
-      "rationale": "Germany is a major European hub for biologics and vaccines, home to BioNTech (a pioneer in mRNA technology) and other large pharmaceutical companies. It boasts leading research institutions and a strong R&D and manufacturing base."
+      "rationale": "Germany is a major European pharmaceutical hub, home to BioNTech, a pioneer in mRNA vaccine technology. It boasts excellent research infrastructure, strong academic-industry collaboration, and significant investment in advanced biologics, oncology, and immunology. The skill level is very high, with substantial frontier R&D."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.6,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Janssen Vaccines & Prevention (J&J)",
-        "Crucell (J&J)",
+        "Janssen Vaccines & Prevention (Johnson & Johnson)",
+        "Crucell (Johnson & Johnson)",
+        "HAL Allergy",
         "Leiden Bio Science Park",
         "Utrecht Science Park",
-        "Erasmus MC"
+        "Biotech Campus Delft"
       ],
-      "rationale": "The Netherlands has a strong life sciences cluster with excellent research universities and a focus on vaccine development, immunology, and biotech startups. It offers a high-quality, concentrated biotech ecosystem."
+      "rationale": "The Netherlands has a growing biotech sector supported by strong academic research and an attractive environment for foreign investment. Janssen's significant presence drives vaccine development and manufacturing. The country has a high skill level and notable frontier activity, particularly in immunology and gene therapy."
     },
     {
       "country_iso": "GB",
@@ -134,12 +140,13 @@
       "evidence": [
         "AstraZeneca",
         "GSK",
-        "Oxford University (Jenner Institute)",
-        "Cambridge University",
+        "University of Oxford (Jenner Institute)",
+        "University of Cambridge",
         "Francis Crick Institute",
-        "Cell and Gene Therapy Catapult"
+        "Cell and Gene Therapy Catapult",
+        "Wellcome Trust"
       ],
-      "rationale": "The UK possesses a world-class academic research base, major pharmaceutical companies, and significant biotech clusters. It has been a pioneer in vaccine development (Oxford/AstraZeneca) and has strong government support for life sciences."
+      "rationale": "The UK possesses a strong pharmaceutical heritage and world-class academic research, particularly in vaccine development (Oxford/AstraZeneca), immunology, and gene therapy. Major companies like AstraZeneca and GSK, alongside leading research institutes, ensure a very high skill level and significant frontier R&D."
     },
     {
       "country_iso": "FR",
@@ -149,35 +156,38 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Sanofi (vaccines, biologics)",
-        "Institut Pasteur",
+        "Sanofi (Sanofi Pasteur)",
         "Servier",
-        "Genopole biopark",
-        "France 2030 investment plan"
+        "Ipsen",
+        "Institut Pasteur",
+        "Inserm",
+        "Genopole"
       ],
-      "rationale": "France has an established pharmaceutical industry with global players like Sanofi, a leader in vaccines and biologics. It benefits from strong public research institutions like the Institut Pasteur and government initiatives supporting biotech."
+      "rationale": "France is a major pharmaceutical player, notably with Sanofi Pasteur leading in vaccine development. It benefits from strong academic research and government support for biotech. The country maintains a high skill level and significant frontier activity in vaccines, oncology, and immunology."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Numerous biotech startups (oncology, immunology)",
+        "Teva Pharmaceutical Industries (some biologics R&D)",
+        "numerous biotech startups",
         "Weizmann Institute of Science",
-        "Hebrew University of Jerusalem",
-        "Teva Pharmaceutical Industries (some biologics focus)"
+        "Technion",
+        "Tel Aviv University",
+        "government support for innovation"
       ],
-      "rationale": "Israel is renowned for innovation and high-tech, translating into a vibrant biotech startup ecosystem. It focuses on novel drug discovery and cutting-edge research in biologics, often with high impact despite a smaller scale."
+      "rationale": "Israel has a vibrant biotech startup scene and strong academic research, focusing on innovation in novel drug discovery and personalized medicine. While the overall volume is lower than major hubs, the skill level is high for specialized roles, and there's moderate frontier activity, particularly in immunology and novel therapeutic platforms."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.45,
       "confidence": "high",
       "evidence": [
         "Serum Institute of India",
@@ -185,144 +195,157 @@
         "Biocon",
         "Dr. Reddy's Laboratories",
         "Zydus Cadila",
-        "National Centre for Biological Sciences"
+        "National Biopharma Mission"
       ],
-      "rationale": "India is the 'Pharmacy of the world' for generics and a dominant player in vaccine and biosimilar manufacturing, with Serum Institute of India being the world's largest vaccine producer. R&D is growing, but its primary strength remains in large-scale, cost-effective production."
+      "rationale": "India is a global leader in vaccine manufacturing (Serum Institute of India being the largest) and biosimilars. It has a massive domestic market and a growing biologics sector. While manufacturing capabilities are very high, frontier R&D in novel biologics is still developing, leading to a medium skill level with growing frontier activity."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.6,
       "confidence": "high",
       "evidence": [
+        "Novartis (manufacturing)",
+        "Roche (manufacturing)",
+        "GSK (manufacturing)",
+        "Sanofi (manufacturing)",
+        "Amgen (manufacturing)",
         "A*STAR (Agency for Science, Technology and Research)",
-        "Biopolis (research hub)",
-        "Pfizer, GSK, Sanofi, Novartis, Roche manufacturing sites"
+        "Biopolis",
+        "National University of Singapore (NUS)"
       ],
-      "rationale": "Singapore has strategically invested heavily to become a world-class biotech hub in Asia, attracting major multinational pharmaceutical companies for both R&D and high-value manufacturing of biologics and vaccines."
+      "rationale": "Singapore is a major biotech manufacturing hub in Asia, attracting significant foreign investment and hosting numerous MNCs. Strong government investment in R&D and excellent infrastructure contribute to a high skill level and significant frontier activity, particularly in biomanufacturing innovation, immunology, and infectious diseases."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "high",
       "skill_level": 5,
-      "frontier": 0.9,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
-        "Novartis",
         "Roche",
+        "Novartis",
         "Lonza (CDMO)",
+        "Actelion (Johnson & Johnson)",
         "ETH Zurich",
-        "University of Basel",
-        "Bio-Technopark Schlieren"
+        "EPFL",
+        "University of Basel"
       ],
-      "rationale": "Switzerland is a global pharmaceutical hub, home to two of the world's largest pharmaceutical companies (Novartis, Roche) and a leading CDMO (Lonza), all major players in biologics. It has high R&D investment and excellent academic institutions."
+      "rationale": "Switzerland is home to global pharmaceutical giants Roche and Novartis, driving world-leading R&D and high-value manufacturing in biologics and vaccines. It boasts exceptional research infrastructure and a highly skilled workforce, resulting in a very high skill level and extensive frontier R&D in oncology, immunology, and gene therapy."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "AstraZeneca (R&D in Gothenburg)",
-        "Karolinska Institute",
-        "Uppsala University",
-        "Medicon Village (Lund)"
+        "AstraZeneca (Gothenburg R&D)",
+        "Sobi (Swedish Orphan Biovitrum)",
+        "Karolinska Institutet",
+        "Uppsala University"
       ],
-      "rationale": "Sweden has a strong life sciences tradition and excellent universities, particularly the Karolinska Institute. It hosts significant R&D operations for major pharmaceutical companies and contributes to advanced biologics research, especially in immunology."
+      "rationale": "Sweden has a strong life science sector with good academic research and a significant R&D presence from AstraZeneca. It maintains a medium skill level and moderate frontier activity, particularly in neuroscience, immunology, and some biologics R&D."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
-      "skill_level": 3,
+      "skill_level": 2,
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
         "Orion Pharma (some biologics focus)",
-        "University of Helsinki (vaccine research)",
+        "Valio (probiotics)",
+        "University of Helsinki",
         "VTT Technical Research Centre"
       ],
-      "rationale": "Finland has a smaller biotech sector, with activity primarily in academic research and some specialized niches like diagnostics and vaccine research. Large-scale pharma manufacturing or R&D in biologics is limited."
+      "rationale": "Finland has a smaller but innovative biotech sector, often focused on diagnostics and specialized niche areas. While there's good academic research, the volume of advanced biologics and vaccines roles is very low, with limited frontier R&D compared to larger economies."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
-      "skill_level": 4,
+      "skill_level": 3,
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Sanofi Pasteur (vaccines)",
-        "National Research Council of Canada",
+        "Sanofi Pasteur (vaccine manufacturing/R&D)",
+        "GSK",
+        "National Research Council Canada",
         "University of Toronto",
-        "McGill University",
-        "Biotech clusters in Montreal, Toronto, Vancouver"
+        "McGill University"
       ],
-      "rationale": "Canada has a robust academic research base and significant government support for biotech, particularly in vaccine development. It hosts major pharma presence like Sanofi Pasteur and has growing biotech clusters."
+      "rationale": "Canada has an established biotech sector with strong academic research, particularly in vaccine research, oncology, and neuroscience. Sanofi Pasteur has a significant presence. The country maintains a medium skill level and moderate frontier activity, often in collaboration with international partners."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "skill_level": 3,
+      "frontier": 0.55,
+      "confidence": "medium",
       "evidence": [
-        "CSL Limited (Seqirus vaccines, plasma products)",
-        "Peter Doherty Institute for Infection and Immunity",
+        "CSL Limited",
+        "Seqirus (CSL's vaccine arm)",
         "Walter and Eliza Hall Institute (WEHI)",
-        "Garvan Institute of Medical Research"
+        "Garvan Institute of Medical Research",
+        "leading universities"
       ],
-      "rationale": "Australia is home to CSL Limited, a global leader in plasma-derived therapies and vaccines. It boasts excellent academic research institutions and a strong clinical trials infrastructure, driving significant innovation in biologics."
+      "rationale": "Australia has a growing biotech sector, driven by strong academic research and global biotherapeutics company CSL Limited (including its vaccine arm, Seqirus). It exhibits a medium skill level and moderate frontier activity, especially in immunology, infectious diseases, and some vaccine development."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.2,
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "Manufacturing sites for Pfizer, Johnson & Johnson, Lilly, Bristol Myers Squibb, Regeneron",
+        "Pfizer (biologics manufacturing)",
+        "Johnson & Johnson (biologics manufacturing)",
+        "Eli Lilly (biologics manufacturing)",
+        "Regeneron (biologics manufacturing)",
+        "Bristol Myers Squibb (biologics manufacturing)",
         "National Institute for Bioprocessing Research and Training (NIBRT)"
       ],
-      "rationale": "Ireland is a critical manufacturing hub for many global pharmaceutical companies, especially for biologics API, benefiting from a skilled workforce and supportive environment. Its strength lies primarily in manufacturing rather than novel R&D."
+      "rationale": "Ireland is a major hub for pharmaceutical manufacturing, particularly biologics, with significant investments from leading MNCs. This drives a high skill level in bioprocess engineering and advanced manufacturing. While R&D is supported, the frontier activity is more focused on process innovation rather than novel drug discovery compared to other top-tier countries."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "frontier": 0.65,
+      "confidence": "high",
       "evidence": [
         "GSK Vaccines",
-        "Janssen Pharmaceutica (J&J)",
         "UCB",
+        "Janssen Pharmaceutica (Johnson & Johnson)",
         "VIB (Flanders Institute for Biotechnology)",
-        "Ghent University"
+        "leading universities (e.g., KU Leuven)"
       ],
-      "rationale": "Belgium has a strong pharmaceutical sector, particularly in vaccine development (e.g., GSK Vaccines, Janssen Pharmaceutica). It benefits from excellent academic research and is an integral part of the broader European biotech ecosystem."
+      "rationale": "Belgium has a strong pharmaceutical and biotech sector, notably with GSK Vaccines as a global leader. Excellent academic research and a supportive ecosystem contribute to a high skill level and significant frontier activity, particularly in vaccine development, oncology, and immunology."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.35,
       "confidence": "medium",
       "evidence": [
-        "Takeda (manufacturing, R&D)",
+        "Takeda (manufacturing/R&D)",
+        "Boehringer Ingelheim",
         "Valneva (vaccines)",
-        "Boehringer Ingelheim (biologics manufacturing)",
-        "Vienna Biocenter"
+        "Biocenter Vienna",
+        "Medical University of Vienna"
       ],
-      "rationale": "Austria has a growing biotech sector with specialized companies in biologics manufacturing and vaccine development. It is supported by a strong academic environment, but on a smaller scale compared to major European hubs."
+      "rationale": "Austria has a growing biotech sector with strong academic research and some specialized companies. Takeda has a significant presence. The country maintains a medium skill level and moderate frontier activity, often in niche areas or collaborative research projects."
     },
     {
       "country_iso": "IT",
@@ -332,27 +355,29 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "GSK Vaccines (Siena, manufacturing)",
-        "Novartis (manufacturing)",
+        "GSK Vaccines (Siena)",
         "Menarini",
-        "IRBM (vaccine research)"
+        "Chiesi Farmaceutici",
+        "IRBM (vaccine research)",
+        "leading universities"
       ],
-      "rationale": "Italy has an established pharmaceutical industry with significant manufacturing capacity for vaccines and biologics, including sites for major global companies. It also has strong academic research in specific areas, but less frontier R&D compared to leading nations."
+      "rationale": "Italy has an established pharmaceutical industry with some major players and a growing biotech sector. GSK Vaccines has a significant R&D and manufacturing presence. The country has a medium skill level and moderate frontier activity, but it is not a global leader in cutting-edge biologics/vaccines R&D compared to other major European nations."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "frontier": 0.25,
+      "confidence": "medium",
       "evidence": [
-        "Grifols (plasma-derived products)",
+        "Grifols (plasma-derived therapies)",
         "Almirall",
-        "Ferrer",
-        "National research centers"
+        "PharmaMar",
+        "Spanish National Cancer Research Centre (CNIO)",
+        "leading universities"
       ],
-      "rationale": "Spain's pharmaceutical sector is growing, with some activity in contract manufacturing and biosimilar development, particularly in plasma derivatives. However, large-scale R&D or manufacturing of novel biologics is more limited."
+      "rationale": "Spain has an established pharmaceutical industry, but its focus on advanced biologics and vaccines R&D is less pronounced than other major European countries. Grifols is a notable player in plasma-derived therapies. The country has a medium skill level and moderate frontier activity, often in collaborative projects or specific disease areas."
     },
     {
       "country_iso": "MY",
@@ -363,24 +388,25 @@
       "confidence": "low",
       "evidence": [
         "Biocon (manufacturing site)",
-        "Pharmaniaga (vaccine fill-and-finish)",
-        "Bio-XCell (biotech park)",
-        "Bioeconomy Malaysia initiative"
+        "Pharmaniaga",
+        "Malaysia Bioeconomy Corporation",
+        "government initiatives for biotech development"
       ],
-      "rationale": "Malaysia is an emerging biotech sector with government initiatives to promote contract manufacturing and biosimilars. Advanced R&D in novel biologics and vaccines is still in early stages, with a focus on local production and adaptation."
+      "rationale": "Malaysia has a developing biotech sector with a focus on manufacturing and meeting local market needs. While there are government initiatives to grow the sector, the volume of advanced biologics and vaccines roles is very low, with limited frontier R&D, primarily focused on technology transfer and local adaptation."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "Vabiotech",
-        "IVAC (local vaccine production)"
+        "Vabiotech (vaccines)",
+        "Pasteur Institute (local branches)",
+        "government efforts to develop biotech"
       ],
-      "rationale": "Vietnam's biotech industry is nascent, primarily focused on basic vaccine production for domestic use and generic pharmaceuticals. There is negligible activity in advanced biologics R&D or complex manufacturing."
+      "rationale": "Vietnam has a nascent biotech sector primarily focused on local production of basic vaccines and pharmaceuticals. The volume of advanced biologics and vaccines roles is negligible, with very limited frontier R&D, mostly confined to academic research or early-stage development."
     },
     {
       "country_iso": "TH",
@@ -391,10 +417,10 @@
       "confidence": "low",
       "evidence": [
         "Government Pharmaceutical Organization (GPO)",
-        "BioNet-Asia (vaccines)",
-        "Thailand 4.0 initiative"
+        "National Vaccine Institute",
+        "Mahidol University"
       ],
-      "rationale": "Thailand is developing its biotech sector with government support, including some vaccine production and biosimilars. However, advanced R&D in biologics and vaccines is still in early stages and on a small scale."
+      "rationale": "Thailand has a developing biotech sector with some vaccine production capabilities, primarily focused on local needs and traditional medicine. The volume of advanced biologics and vaccines roles is very low, with limited frontier R&D, mostly academic research or early-stage development."
     },
     {
       "country_iso": "ID",
@@ -404,52 +430,54 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Bio Farma (state-owned vaccine producer)",
+        "Bio Farma (vaccines)",
         "Kalbe Farma",
-        "Government push for pharmaceutical self-sufficiency"
+        "government initiatives for pharmaceutical self-sufficiency"
       ],
-      "rationale": "Indonesia has a large domestic market and focuses on local production of basic vaccines and generics through companies like Bio Farma. Advanced biologics R&D is still developing and on a small scale."
+      "rationale": "Indonesia, with its large domestic market, focuses on local production of vaccines and basic pharmaceuticals. The volume of advanced biologics and vaccines roles is very low, with limited frontier R&D, primarily focused on technology transfer and local production to meet domestic demand."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.15,
       "confidence": "low",
       "evidence": [
-        "Dubai Science Park (focus on attracting investment)",
-        "Limited local manufacturing or R&D facilities for advanced biologics"
+        "Abu Dhabi Stem Cell Center",
+        "Dubai Science Park",
+        "significant government investment in healthcare and biotech infrastructure"
       ],
-      "rationale": "The UAE has significant investment in healthcare infrastructure, but its biotech manufacturing and R&D for advanced biologics and vaccines are nascent. Activity is primarily focused on importing and distributing rather than local innovation or production."
+      "rationale": "The UAE has an emerging biotech sector with significant government investment in healthcare infrastructure and R&D, aiming to attract foreign investment and talent. However, it is starting from a low base, resulting in a very low volume of advanced roles and limited frontier R&D, primarily through international collaborations and new research centers."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.15,
       "confidence": "low",
       "evidence": [
-        "SPIMACO (focus on generics)",
-        "King Abdullah International Medical Research Center (more general medical research)",
-        "Vision 2030 healthcare diversification goals"
+        "King Abdullah University of Science and Technology (KAUST)",
+        "King Faisal Specialist Hospital & Research Centre",
+        "Vision 2030 initiatives for economic diversification"
       ],
-      "rationale": "Saudi Arabia is working to diversify its economy, including healthcare and pharma, but advanced biologics and vaccines R&D and manufacturing are currently negligible. The focus is on establishing basic manufacturing capabilities."
+      "rationale": "Similar to the UAE, Saudi Arabia is making significant investments in diversifying its economy, including the biotech sector, and building research infrastructure. The volume of advanced biologics and vaccines roles is very low, with limited frontier R&D, primarily through new research institutions and partnerships as part of long-term strategic goals."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.25,
       "confidence": "medium",
       "evidence": [
-        "Fiocruz (Oswaldo Cruz Foundation)",
-        "Butantan Institute (vaccines, biologics)",
-        "National health programs"
+        "Fiocruz (Oswaldo Cruz Foundation - vaccines)",
+        "Butantan Institute (vaccines)",
+        "leading universities",
+        "strong public health system"
       ],
-      "rationale": "Brazil has significant capacity for vaccine and biologics production, primarily through public institutions like Fiocruz and Butantan, driven by public health needs and technology transfer. Novel frontier R&D is less prominent but growing."
+      "rationale": "Brazil has the largest pharmaceutical market in Latin America and a strong public health system, with significant vaccine production capabilities through institutions like Fiocruz and Butantan. It has a medium skill level and some novel research, but frontier activity is often focused on local needs or international collaborations rather than global leadership."
     },
     {
       "country_iso": "PL",
@@ -459,11 +487,12 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Polpharma Biologics (CDMO)",
+        "Polpharma Biologics",
         "Adamed Pharma",
-        "Some university research in biotechnology"
+        "universities",
+        "EU funding for R&D"
       ],
-      "rationale": "Poland's biotech sector is developing, with some contract manufacturing for biologics and growing academic interest. However, it is still at an early stage for advanced biologics and vaccines R&D and large-scale novel manufacturing compared to Western Europe."
+      "rationale": "Poland has a growing pharmaceutical market and increasing investment in biotech, with some local manufacturing capabilities. However, the volume of advanced biologics and vaccines roles is very low, with limited frontier R&D, primarily confined to academic research or contract manufacturing, often supported by EU funding."
     }
   ]
 }

@@ -6,22 +6,21 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
         "Google AI",
         "Meta AI",
-        "NVIDIA",
-        "Microsoft",
-        "Apple",
-        "Amazon",
-        "Tesla",
+        "NVIDIA Research",
+        "Microsoft Research",
+        "Amazon Science",
+        "OpenAI",
+        "Tesla Autopilot",
         "Stanford University",
-        "MIT",
         "CMU",
-        "OpenAI"
+        "MIT"
       ],
-      "rationale": "The US is a global leader in Computer Vision, with major tech companies, numerous startups, and top-tier academic institutions driving fundamental research and advanced applications across various sectors like autonomous vehicles, robotics, and consumer tech."
+      "rationale": "The US leads globally in Computer Vision research and development, with a vast ecosystem of major tech companies, cutting-edge startups, and top-tier academic institutions driving frontier innovation and a very high volume of advanced roles."
     },
     {
       "country_iso": "CN",
@@ -31,126 +30,120 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
+        "Baidu Research",
+        "Alibaba DAMO Academy",
+        "Tencent AI Lab",
         "SenseTime",
         "Megvii",
-        "Baidu (Apollo)",
-        "Alibaba (DAMO Academy)",
-        "Tencent",
         "Huawei",
+        "DJI",
         "Tsinghua University",
         "Peking University",
-        "Chinese Academy of Sciences",
-        "National AI strategy"
+        "National AI plans"
       ],
-      "rationale": "China has made massive strategic investments in AI, particularly Computer Vision for surveillance, smart cities, and autonomous driving, fostering world-leading companies and research institutions with strong government backing."
+      "rationale": "China has made massive strategic investments in AI, including Computer Vision, with leading tech giants and a strong academic base producing significant research and applications, supported by national initiatives, resulting in a very high volume of advanced roles."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
-        "Sony",
-        "Panasonic",
-        "Toyota (TRI)",
-        "Honda",
-        "Hitachi",
+        "Toyota Research Institute",
+        "Sony AI",
+        "Honda Research",
         "FANUC",
-        "National Institute of Advanced Industrial Science and Technology (AIST)",
+        "RIKEN",
         "University of Tokyo"
       ],
-      "rationale": "Japan excels in robotics, automotive, and industrial automation, where Computer Vision is critical. While strong in applied research and integration, its frontier R&D is more focused on specific industrial applications rather than broad foundational AI."
+      "rationale": "Japan has a strong foundation in robotics and industrial automation, with major corporations and research institutes contributing to advanced Computer Vision, particularly in specific application areas. The volume of pure frontier roles is high, but perhaps less broad than US/China."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "Samsung (SAIT)",
+        "Samsung AI Center",
         "LG AI Research",
-        "Hyundai (Boston Dynamics, autonomous driving)",
+        "Hyundai Motor Group",
         "Naver",
-        "Kakao",
         "KAIST",
-        "Seoul National University",
-        "National AI strategy"
+        "POSTECH"
       ],
-      "rationale": "South Korea has a robust electronics and automotive industry, with major conglomerates investing heavily in AI and Computer Vision for consumer devices, autonomous vehicles, and smart manufacturing. Strong academic institutions contribute to R&D."
+      "rationale": "South Korea is a tech-forward nation with strong corporate R&D in electronics and automotive, driving significant Computer Vision advancements. Its academic institutions also contribute to frontier research, leading to a high volume of advanced roles."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "TSMC (AI chip manufacturing)",
+        "TSMC",
         "MediaTek",
-        "Acer",
-        "ASUS",
-        "Industrial Technology Research Institute (ITRI)",
-        "National Taiwan University"
+        "ITRI",
+        "National Taiwan University",
+        "NVIDIA R&D Center"
       ],
-      "rationale": "Taiwan's strength lies in semiconductor manufacturing and hardware. Its Computer Vision market is primarily driven by hardware-accelerated CV, embedded vision systems, and related applied research, with less emphasis on foundational AI breakthroughs."
+      "rationale": "Taiwan excels in semiconductor manufacturing and hardware, which supports AI development. While there's strong technical expertise and some R&D, the focus is often on hardware acceleration and applied solutions rather than broad frontier CV research, resulting in a medium volume of advanced roles."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
+        "Fraunhofer Institutes",
+        "Max Planck Institutes",
+        "DFKI",
         "Bosch",
-        "Siemens",
         "Mercedes-Benz",
         "BMW",
-        "Volkswagen",
-        "Fraunhofer Institutes (e.g., IIS, IPA)",
-        "Max Planck Institutes",
-        "Technical University of Munich"
+        "Siemens"
       ],
-      "rationale": "Germany has a strong industrial base, particularly in automotive and manufacturing, leading to significant applied and specialist Computer Vision roles. Its Fraunhofer and Max Planck Institutes contribute to expert and some frontier R&D in robotics and industrial AI."
+      "rationale": "Germany possesses a robust industrial and research landscape, with world-renowned institutes and automotive/engineering giants driving significant Computer Vision innovation, especially in industrial AI and autonomous driving. This leads to a high volume of advanced roles."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "ASML",
-        "Philips (medical imaging)",
-        "TomTom",
+        "Philips Research",
         "TU Delft",
-        "University of Amsterdam (QUVA lab)"
+        "University of Amsterdam",
+        "Brainport Eindhoven"
       ],
-      "rationale": "The Netherlands has a growing tech scene with strong academic research, particularly in medical imaging, computer graphics, and high-tech systems. While the overall volume is lower, the quality of research is high."
+      "rationale": "The Netherlands has a growing deep tech sector and strong academic research in AI. While not as large as major economies, it contributes to frontier CV in specific areas like medical imaging and smart systems, resulting in a medium volume of advanced roles."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Google DeepMind",
-        "Wayve",
-        "Five AI",
-        "Oxford University",
+        "DeepMind (Google)",
+        "ARM",
+        "University of Oxford",
         "University of Cambridge",
-        "University College London (UCL)",
-        "Imperial College London"
+        "UCL",
+        "Imperial College London",
+        "Alan Turing Institute"
       ],
-      "rationale": "The UK, especially London, is a major AI hub with world-leading research institutions and companies like DeepMind. It has a vibrant startup ecosystem and strong academic foundations contributing to frontier Computer Vision research."
+      "rationale": "The UK has a vibrant AI ecosystem, particularly in London, with leading research universities and significant corporate R&D, including world-renowned AI labs. This drives substantial frontier Computer Vision work and a high volume of advanced roles."
     },
     {
       "country_iso": "FR",
@@ -160,65 +153,63 @@
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
+        "INRIA",
+        "CNRS",
+        "Institut Pasteur",
         "Thales",
         "Dassault Syst\u00e8mes",
-        "Valeo",
-        "INRIA",
-        "CentraleSup\u00e9lec",
-        "Sorbonne University",
-        "\u00c9cole Normale Sup\u00e9rieure",
-        "National AI strategy"
+        "Sorbonne University"
       ],
-      "rationale": "France has strong academic research in AI and Computer Vision, supported by government initiatives. Its market includes major industrial players and a growing startup scene, contributing to applied and specialist roles with some expert R&D."
+      "rationale": "France has a strong tradition in mathematics and computer science, with excellent research institutions contributing to AI. While industrial adoption is growing, the focus is often on fundamental research and specific sectors like defense and aerospace, leading to a medium volume of advanced roles."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Mobileye (Intel)",
-        "OrCam",
-        "AnyVision",
+        "numerous AI startups",
         "Technion",
-        "Weizmann Institute of Science",
-        "Tel Aviv University"
+        "Weizmann Institute of Science"
       ],
-      "rationale": "Israel, the 'Startup Nation,' has a high concentration of deep tech talent and R&D, particularly in Computer Vision for autonomous systems, defense, and medical applications. Companies like Mobileye are global leaders in their niche."
+      "rationale": "Israel, the 'Startup Nation,' boasts a high concentration of AI talent and deep tech innovation, particularly in autonomous driving and medical imaging. Its strong R&D culture, often leading to acquisitions by global firms, drives significant frontier CV work and a medium volume of advanced roles."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.45,
       "confidence": "medium",
       "evidence": [
+        "Google India",
+        "Microsoft India",
+        "Amazon India",
         "TCS",
         "Infosys",
-        "Wipro",
-        "HCLTech",
-        "IITs (e.g., IIT Bombay, IIT Delhi)",
-        "Global capability centers of MNCs"
+        "IITs",
+        "IISc"
       ],
-      "rationale": "India possesses a vast talent pool and a significant IT services sector that implements Computer Vision solutions at scale. While strong in applied CV, fundamental frontier research is less prevalent compared to the US or China, but growing."
+      "rationale": "India has a massive talent pool and a rapidly growing tech sector. While much of the work is applied AI and services, there's increasing investment in R&D by multinational tech companies and premier academic institutions, contributing to a high volume of advanced roles, though less pure frontier than top nations."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "high",
+      "skill_level": 3,
+      "frontier": 0.55,
+      "confidence": "medium",
       "evidence": [
+        "AI Singapore",
         "A*STAR",
         "National University of Singapore (NUS)",
         "Nanyang Technological University (NTU)",
-        "AI Singapore"
+        "Smart Nation initiatives"
       ],
-      "rationale": "Singapore has a strategic focus on AI and a strong ecosystem of government-backed research institutions and universities. It serves as a regional hub for high-quality Computer Vision research and development, particularly in smart city applications."
+      "rationale": "Singapore has a strong government-backed AI strategy and excellent research institutions. It's a regional hub for innovation, with a focus on smart cities and healthcare, driving quality R&D and a low volume of advanced roles, but with high skill and frontier potential."
     },
     {
       "country_iso": "CH",
@@ -231,104 +222,103 @@
         "ETH Zurich",
         "EPFL",
         "IBM Research Zurich",
-        "ABB",
-        "Google Zurich"
+        "Google AI (Zurich)"
       ],
-      "rationale": "Switzerland boasts world-renowned academic institutions like ETH Zurich and EPFL, which are leaders in AI, robotics, and Computer Vision research. While the overall market volume is smaller, the quality and frontier nature of the work are very high."
+      "rationale": "Switzerland boasts world-class research institutions and a high-tech economy. Despite its smaller size, it's a significant contributor to frontier AI, particularly in fundamental research, robotics, and medical imaging, leading to a low volume of highly skilled, frontier-focused roles."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.45,
       "confidence": "medium",
       "evidence": [
         "Ericsson",
         "Volvo",
         "KTH Royal Institute of Technology",
-        "Chalmers University of Technology"
+        "Chalmers University of Technology",
+        "AI Sweden"
       ],
-      "rationale": "Sweden has a strong innovation culture and good academic research in Computer Vision, particularly in areas related to telecommunications and automotive. The market for advanced roles is smaller but high-quality."
+      "rationale": "Sweden has an innovative tech scene, strong in automotive and telecom. Its universities and companies contribute to advanced Computer Vision, particularly in autonomous systems and industrial AI, resulting in a low volume of advanced roles."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "low",
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Nokia",
-        "VTT Technical Research Centre of Finland",
+        "Nokia Bell Labs",
+        "VTT Technical Research Centre",
         "Aalto University",
         "University of Helsinki"
       ],
-      "rationale": "Finland has a history of innovation in telecommunications and a growing focus on AI. Its Computer Vision market is relatively small, with research primarily concentrated in universities and some industrial applications."
+      "rationale": "Finland has a strong innovation ecosystem, particularly in telecommunications. While the overall market size for advanced CV roles is smaller, there's quality research and development, especially in industrial AI and connected devices, leading to a very low volume."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Vector Institute (Toronto)",
-        "Mila (Montreal)",
-        "Amii (Edmonton)",
-        "University of Toronto",
-        "McGill University",
-        "Google Brain (Montreal/Toronto)",
-        "Borealis AI (RBC)",
+        "Mila (Yoshua Bengio)",
+        "Vector Institute",
+        "Amii",
+        "Element AI",
+        "Google Brain (Toronto)",
         "CIFAR"
       ],
-      "rationale": "Canada is a global leader in AI research, with strong government support and world-class academic institutions like the Vector Institute and Mila. It attracts significant investment and talent, driving frontier Computer Vision R&D."
+      "rationale": "Canada is a global leader in fundamental AI research, particularly deep learning, with strong government support and world-renowned research institutes in Montreal, Toronto, and Edmonton. This drives significant frontier CV work and a medium volume of advanced roles."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "CSIRO",
         "University of Sydney",
-        "University of Melbourne",
-        "ANU"
+        "Australian National University (ANU)",
+        "UNSW Sydney",
+        "National AI Centre"
       ],
-      "rationale": "Australia has a growing tech sector and good academic research in Computer Vision, particularly in areas like agriculture, mining, and environmental monitoring. The market for advanced roles is still developing."
+      "rationale": "Australia has a growing tech sector and good research capabilities, with a focus on applications in agriculture, mining, and healthcare. While the market for advanced CV roles is smaller, there's quality R&D, resulting in a low volume."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Google",
-        "Microsoft",
-        "Intel (some R&D)",
-        "Trinity College Dublin",
-        "University College Dublin"
+        "Google Ireland",
+        "Microsoft Ireland",
+        "Intel Ireland",
+        "ADAPT Centre",
+        "Trinity College Dublin"
       ],
-      "rationale": "Ireland hosts European headquarters for many major tech companies, but advanced Computer Vision R&D roles are less common, with a focus more on applied solutions and support. Academic research is present but smaller in scale."
+      "rationale": "Ireland serves as a European hub for many multinational tech companies, leading to a presence of applied AI roles. While there's some R&D, pure frontier Computer Vision work is less prevalent than in larger research economies, resulting in a low volume."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "low",
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Imec",
         "KU Leuven",
-        "Ghent University"
+        "Ghent University",
+        "imec"
       ],
-      "rationale": "Belgium has strong academic research in Computer Vision, particularly at universities like KU Leuven. The industrial market for advanced CV roles is smaller, with some activity in specialized high-tech and semiconductor research (Imec)."
+      "rationale": "Belgium has strong academic research institutions contributing to AI, particularly in areas like medical imaging and industrial applications. However, the overall market size for advanced CV roles is relatively small, leading to a very low volume."
     },
     {
       "country_iso": "AT",
@@ -336,14 +326,13 @@
       "volume_band": "very_low",
       "skill_level": 3,
       "frontier": 0.3,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "AVL (automotive)",
-        "Joanneum Research",
         "TU Wien",
-        "Graz University of Technology"
+        "Graz University of Technology",
+        "Austrian Institute of Technology (AIT)"
       ],
-      "rationale": "Austria has specialized tech companies and good academic research, particularly in areas like automotive and industrial vision. The overall volume for advanced Computer Vision roles remains relatively low."
+      "rationale": "Austria has quality research institutions and a focus on industrial AI and robotics. While contributing to advanced Computer Vision, the market for these roles is relatively small, resulting in a very low volume."
     },
     {
       "country_iso": "IT",
@@ -355,9 +344,9 @@
       "evidence": [
         "Italian Institute of Technology (IIT)",
         "Politecnico di Milano",
-        "University of Bologna"
+        "Sapienza University of Rome"
       ],
-      "rationale": "Italy shows growing interest in AI, with some notable academic institutions conducting research in Computer Vision. However, the industrial market for advanced CV roles is still nascent, with a focus on applied solutions."
+      "rationale": "Italy has good academic research in AI and robotics, but industrial adoption and dedicated R&D centers for frontier Computer Vision are less developed compared to other major European economies. This results in a very low volume of advanced roles."
     },
     {
       "country_iso": "ES",
@@ -368,121 +357,122 @@
       "confidence": "low",
       "evidence": [
         "Barcelona Supercomputing Center",
-        "Universitat Polit\u00e8cnica de Catalunya",
-        "Telef\u00f3nica"
+        "Polytechnic University of Catalonia (UPC)",
+        "Universitat Aut\u00f2noma de Barcelona (UAB)"
       ],
-      "rationale": "Spain's tech scene is growing, with some academic research in Computer Vision. The market for advanced CV roles is primarily focused on applied solutions and integration, with limited frontier R&D."
+      "rationale": "Spain's tech scene is growing, with some academic strengths in AI, particularly in areas related to supercomputing. However, the industrial R&D for frontier Computer Vision is still emerging, leading to a very low volume of advanced roles."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "none",
-      "skill_level": 1,
+      "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Digital economy initiatives",
-        "local universities"
+        "MIMOS",
+        "Universiti Malaya",
+        "Malaysia Digital Economy Corporation (MDEC)"
       ],
-      "rationale": "Malaysia is an emerging market with a focus on digital transformation and IT services. Advanced Computer Vision R&D and job opportunities are negligible, primarily consisting of basic applied roles."
+      "rationale": "Malaysia is an emerging tech market with government initiatives to promote digital transformation. While there's a growing talent pool for applied AI, dedicated frontier Computer Vision R&D roles are negligible."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.1,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.15,
       "confidence": "low",
       "evidence": [
-        "FPT Software",
-        "VinAI Research (emerging)",
-        "local universities"
+        "VinAI Research (Vingroup)",
+        "FPT AI",
+        "Hanoi University of Science and Technology"
       ],
-      "rationale": "Vietnam has a rapidly growing tech sector, largely driven by outsourcing and basic development. While there's emerging interest (e.g., VinAI), the advanced Computer Vision job market and frontier R&D are currently negligible."
+      "rationale": "Vietnam's tech sector is rapidly growing, with strong government support for the digital economy. Companies like VinAI are emerging with research capabilities, but the overall volume of advanced Computer Vision roles, especially frontier, is still very low."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
-      "skill_level": 1,
+      "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Digital Economy Promotion Agency (DEPA)",
-        "local universities"
+        "AI Thailand",
+        "National Science and Technology Development Agency (NSTDA)",
+        "Chulalongkorn University"
       ],
-      "rationale": "Thailand is an emerging market focusing on digital transformation. The advanced Computer Vision job market is negligible, with most activity centered on basic applied solutions and academic interest."
+      "rationale": "Thailand is developing its digital economy with smart city initiatives. While there's a focus on AI adoption, the volume of advanced Computer Vision roles, particularly frontier R&D, remains negligible."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.1,
+      "skill_level": 2,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
         "Gojek",
         "Tokopedia",
-        "local universities"
+        "University of Indonesia"
       ],
-      "rationale": "Indonesia has a large and rapidly growing consumer internet market, but its tech focus is primarily on digital services. Advanced Computer Vision R&D and job opportunities are negligible, with most roles being entry-level applied positions."
+      "rationale": "Indonesia has a massive digital economy driven by e-commerce and ride-hailing. While these companies utilize AI, dedicated advanced Computer Vision R&D roles, especially at the frontier, are negligible, with most work being applied."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
-        "UAE AI Strategy 2031",
-        "G42"
+        "G42",
+        "UAE AI Strategy"
       ],
-      "rationale": "The UAE has made significant strategic investments in AI, including establishing MBZUAI. While the ecosystem is still building, there's a clear push for high-level research and applied Computer Vision, though overall volume remains modest."
+      "rationale": "The UAE has an ambitious national AI strategy with significant government investment in attracting talent and establishing research institutions like MBZUAI. This drives a growing, albeit still low, volume of advanced Computer Vision roles with frontier potential."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.25,
       "confidence": "low",
       "evidence": [
         "King Abdullah University of Science and Technology (KAUST)",
-        "Saudi Vision 2030",
-        "NEOM projects"
+        "Saudi Data and Artificial Intelligence Authority (SDAIA)",
+        "NEOM project"
       ],
-      "rationale": "Saudi Arabia is investing heavily in technology and AI as part of Vision 2030, with institutions like KAUST. However, the advanced Computer Vision job market is still nascent, with most activity being strategic planning and foundational build-out rather than a mature market."
+      "rationale": "Saudi Arabia is investing heavily in technology as part of Vision 2030, including AI. Institutions like KAUST and initiatives like NEOM are building capabilities, but the volume of established advanced Computer Vision roles, especially at the frontier, is still very low."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.15,
       "confidence": "low",
       "evidence": [
-        "Embraer (some R&D)",
         "University of S\u00e3o Paulo (USP)",
-        "UNICAMP",
-        "local startups"
+        "University of Campinas (Unicamp)",
+        "some AI startups"
       ],
-      "rationale": "Brazil has the largest economy in Latin America and a growing tech scene. While there's academic research and some applied Computer Vision in industries like agriculture and aerospace, the market for advanced R&D roles is still limited."
+      "rationale": "Brazil has a large economy and good academic research in AI, but industrial R&D in frontier Computer Vision is less developed. Most roles are applied, resulting in a very low volume of advanced positions."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.25,
       "confidence": "low",
       "evidence": [
-        "AGH University of Science and Technology",
+        "Polish Academy of Sciences",
         "Warsaw University of Technology",
-        "local tech companies"
+        "growing startup ecosystem"
       ],
-      "rationale": "Poland is a growing tech hub in Eastern Europe with a strong IT services sector. Academic institutions are active in Computer Vision research, but the industrial market for advanced R&D roles is still relatively small, focusing more on applied solutions."
+      "rationale": "Poland is an emerging tech hub in Eastern Europe with a strong academic base and a growing startup scene. While there's increasing activity in AI, dedicated frontier Computer Vision R&D roles are limited, leading to a low volume of advanced roles."
     }
   ]
 }

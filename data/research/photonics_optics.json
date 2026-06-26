@@ -6,100 +6,91 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.9,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
         "Intel (silicon photonics)",
-        "Cisco (optical networking)",
-        "Lumentum (lasers, optical components)",
-        "Coherent (lasers)",
-        "Apple (Lidar R&D)",
-        "MIT, Stanford, Caltech, University of Rochester (leading research universities)",
-        "DARPA, NIST (government research funding)"
+        "Google/Apple (lidar, AR/VR optics)",
+        "Lockheed Martin/Northrop Grumman (defense)",
+        "MIT, Stanford, Caltech, Rochester (universities)",
+        "AIM Photonics",
+        "NIST, LLNL (national labs)"
       ],
-      "rationale": "The US is a global leader in Photonics & Optics, driven by strong R&D in universities and national labs, significant venture capital, and major tech companies across diverse applications like silicon photonics, quantum optics, lidar, and defense. This leads to a very high volume of frontier and expert-level roles."
+      "rationale": "Global leader in R&D, commercialization, and advanced manufacturing across all photonics sub-domains, with significant government and private investment driving frontier research."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
-        "Huawei (optical communication, optoelectronics)",
-        "ZTE (optical communication)",
-        "Alibaba, Tencent (cloud infrastructure, data centers)",
-        "Tsinghua University, Peking University (leading research institutions)",
-        "National Key R&D Programs (government investment in photonics, quantum communication)",
-        "Major lidar companies (e.g., Hesai, RoboSense)"
+        "Huawei (optical comms)",
+        "Alibaba/Tencent (AI/cloud optics, lidar)",
+        "Tsinghua, Peking (universities)",
+        "Made in China 2025 initiatives",
+        "Numerous national research institutes"
       ],
-      "rationale": "China has made massive strategic investments in photonics, particularly in optical communication, optoelectronics, and lidar. Its vast domestic market and rapid technological advancement, supported by state-backed initiatives and major tech companies, result in a very high volume of advanced roles, with a significant portion at the specialist and emerging frontier levels."
+      "rationale": "Rapidly growing market with massive government investment in R&D and industrialization, aiming for technological leadership in optical communications, lidar, and advanced photonics."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Sony (imaging, optical components)",
-        "Canon, Nikon (optics, lithography)",
-        "Fujitsu, NEC (optical communication)",
-        "Hamamatsu Photonics (photodetectors, light sources)",
-        "NTT (optical communication research)",
-        "University of Tokyo, Kyoto University, RIKEN (research institutions)"
+        "Canon, Nikon, Sony, Panasonic (imaging, displays, optical components)",
+        "Fujitsu, NEC (optical comms)",
+        "University of Tokyo, Kyoto University, Osaka University"
       ],
-      "rationale": "Japan has a long-standing heritage in precision optics, optoelectronics, and advanced manufacturing. Its strengths lie in high-quality components, imaging, and optical communication, with significant R&D efforts contributing to a high volume of specialist and expert roles, including substantial frontier research."
+      "rationale": "Long-standing leader in precision optics, imaging, displays, and optical components, with a strong industrial base and significant R&D, particularly in industrial applications."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "high",
       "evidence": [
-        "Samsung, LG (displays, optoelectronics, consumer electronics)",
-        "SK Hynix (semiconductor-related optics)",
-        "ETRI (Electronics and Telecommunications Research Institute)",
-        "KAIST, POSTECH (leading research universities)"
+        "Samsung, LG (displays, optical modules)",
+        "SK Hynix (semiconductor optics)",
+        "KAIST, Seoul National University"
       ],
-      "rationale": "South Korea's strong semiconductor and display industries provide a foundation for optoelectronics and related photonics applications. While not as broad as Japan or Germany, there is a growing market for advanced photonics, particularly in applied and specialist roles, with some frontier research in specific areas like displays and sensors."
+      "rationale": "Strong in displays, semiconductors, and optical components for consumer electronics, with growing R&D in lidar and advanced sensing, often tied to industrial applications."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "frontier": 0.55,
+      "confidence": "high",
       "evidence": [
-        "TSMC (silicon photonics manufacturing, advanced packaging)",
-        "UMC (semiconductor manufacturing)",
-        "AUO, Innolux (display technologies)",
-        "ITRI (Industrial Technology Research Institute)",
-        "National Taiwan University (research)"
+        "TSMC (silicon photonics manufacturing)",
+        "Foxconn (optical modules)",
+        "AUO, Innolux (displays)",
+        "ITRI (Industrial Technology Research Institute)"
       ],
-      "rationale": "Taiwan's dominance in semiconductor manufacturing, particularly through TSMC, positions it strongly for silicon photonics. There's a significant market for applied and specialist roles in optoelectronics and display technologies, with growing frontier work linked to advanced semiconductor processes."
+      "rationale": "Critical player in semiconductor manufacturing, including optoelectronics and silicon photonics components, with strong capabilities in manufacturing and supply chain."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Trumpf (lasers, industrial photonics)",
-        "Zeiss (optics, optical instruments, lithography)",
-        "Schott (specialty glass, optical materials)",
-        "Jenoptik (photonics, optical systems)",
-        "Fraunhofer Institutes (e.g., IOF, ILT - applied research)",
-        "Max Planck Institutes (basic research)"
+        "Carl Zeiss, Schott, Trumpf (lasers, optics)",
+        "Bosch, Continental (automotive lidar)",
+        "Fraunhofer Institutes (IOF, ILT)",
+        "Max Planck Institutes"
       ],
-      "rationale": "Germany is a world leader in industrial photonics, lasers, and optical instruments. Its strong engineering tradition, coupled with excellent research institutions and a robust industrial base, generates a high volume of expert and specialist roles, with significant frontier R&D in high-power lasers, quantum optics, and medical imaging."
+      "rationale": "European powerhouse in optics and photonics, strong in lasers, optical instruments, industrial optics, medical technology, and automotive lidar, with excellent research infrastructure."
     },
     {
       "country_iso": "NL",
@@ -107,145 +98,144 @@
       "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.8,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "ASML (lithography, extreme UV optics)",
-        "Philips (medical, lighting, consumer electronics)",
+        "ASML (lithography optics)",
         "PhotonDelta (integrated photonics ecosystem)",
-        "TU Eindhoven, University of Twente (leading research in integrated photonics)",
-        "IMEC (cross-border collaboration, silicon photonics)"
+        "TU/e (Eindhoven University of Technology)",
+        "LioniX International, SMART Photonics"
       ],
-      "rationale": "The Netherlands is a highly specialized hub for integrated photonics and advanced lithography. The PhotonDelta ecosystem and the presence of ASML drive significant frontier research and expert-level roles, particularly in silicon photonics and quantum technologies, leading to a medium volume of highly skilled positions."
+      "rationale": "Emerging leader in integrated photonics (silicon and InP), with a strong ecosystem for R&D, manufacturing, and startups, driven by significant national initiatives."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.7,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "BT (optical communication research)",
-        "QinetiQ (defense photonics)",
-        "Rockley Photonics (silicon photonics, health sensing)",
-        "Universities (Cambridge, Oxford, Southampton, UCL - strong research in quantum, silicon photonics)",
-        "National Physical Laboratory (NPL - metrology, quantum)"
+        "BT (fiber optics)",
+        "Rockley Photonics (silicon photonics)",
+        "Cambridge, Oxford, Southampton (universities)",
+        "UK National Quantum Technologies Programme",
+        "National Physical Laboratory"
       ],
-      "rationale": "The UK possesses a strong academic and research base in photonics, particularly in quantum technologies, silicon photonics, and optical communications. While the industrial volume is smaller than some larger economies, the quality of research and the presence of specialized companies support a low volume of expert and frontier roles."
+      "rationale": "Strong research base, particularly in quantum technologies, fiber optics, and optical communications, supported by leading universities and national programs."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "medium",
+      "frontier": 0.6,
+      "confidence": "high",
       "evidence": [
-        "Thales, Safran (defense, aerospace electro-optics)",
-        "CEA (French Alternative Energies and Atomic Energy Commission - lasers, photonics)",
-        "CNRS (National Center for Scientific Research - extensive photonics research)",
-        "Universities (Paris-Saclay, Bordeaux - strong laser and optics research)"
+        "Thales, Safran (defense, aerospace optics)",
+        "CEA-Leti (microelectronics, photonics)",
+        "CNRS (National Center for Scientific Research)",
+        "Paris-Saclay, Bordeaux (universities)"
       ],
-      "rationale": "France has a robust research ecosystem in photonics, particularly in lasers, quantum optics, and defense applications, supported by national research organizations and universities. The industrial base, while strong in specific niches, results in a low volume of specialist and frontier roles overall."
+      "rationale": "Strong in lasers, optical instruments, defense, and space applications, with a good research base and significant government-funded R&D."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "medium",
+      "frontier": 0.8,
+      "confidence": "high",
       "evidence": [
-        "Mobileye (Intel - automotive lidar, computer vision)",
-        "Innoviz Technologies (automotive lidar)",
-        "Elbit Systems, Rafael Advanced Defense Systems (defense electro-optics)",
-        "Technion, Weizmann Institute of Science (leading research institutions)"
+        "Mobileye (Intel, lidar)",
+        "Elbit Systems, Rafael (defense optics)",
+        "Innoviz (lidar)",
+        "Technion, Weizmann Institute"
       ],
-      "rationale": "Israel is highly specialized in electro-optics, defense, medical imaging, and automotive lidar, driven by a strong startup culture and significant R&D investment. This creates a low volume of highly skilled expert and frontier roles, particularly in niche, high-value applications."
+      "rationale": "Very strong in electro-optics, imaging, lidar, and defense applications, characterized by a high concentration of innovative startups and R&D centers."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Reliance Jio, Tata Communications (telecom infrastructure, fiber optics)",
-        "DRDO (Defense Research and Development Organization - some photonics applications)",
-        "Indian Institutes of Technology (IITs - growing academic research)"
+        "Reliance Jio (fiber rollout)",
+        "TCS, Wipro (IT services with some optical components)",
+        "Indian Institutes of Technology (IITs)"
       ],
-      "rationale": "India's large and rapidly growing IT and telecom sectors drive demand for optical communication technologies. While the industrial base for advanced photonics manufacturing and frontier R&D is still developing, there is a low volume of applied and specialist roles, with some emerging academic research."
+      "rationale": "Growing market, particularly in optical communications infrastructure, with emerging R&D in photonics, but less focused on frontier research compared to leading nations."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "frontier": 0.6,
+      "confidence": "high",
       "evidence": [
-        "A*STAR (Agency for Science, Technology and Research - integrated photonics, quantum technologies)",
-        "NTU, NUS (leading research universities)",
-        "Multinational R&D centers (e.g., Intel, Micron)"
+        "A*STAR (Agency for Science, Technology and Research)",
+        "NTU, NUS (universities)",
+        "GlobalFoundries (semiconductor manufacturing)"
       ],
-      "rationale": "Singapore serves as a strategic hub for high-tech R&D and manufacturing in Southeast Asia. Despite its small size, it has a focused effort in integrated photonics and quantum technologies, supported by government initiatives and universities, leading to a very low volume of specialist and frontier roles."
+      "rationale": "Strategic hub for R&D and manufacturing in advanced electronics and photonics, with strong government support and a focus on integrated photonics."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 4,
       "frontier": 0.7,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Leica Geosystems (precision optics, surveying instruments)",
-        "CSEM (Swiss Center for Electronics and Microtechnology - micro-optics, sensors)",
-        "EPFL, ETH Zurich (world-leading research in quantum photonics, precision instruments)",
-        "CERN (indirectly, through detector technologies)"
+        "Leica Geosystems (precision optics)",
+        "CSEM (Swiss Center for Electronics and Microtechnology)",
+        "ETH Zurich, EPFL (universities)",
+        "CERN (particle physics optics)"
       ],
-      "rationale": "Switzerland excels in precision engineering, medical technology, and quantum research. Its highly specialized academic institutions and niche companies contribute to a very low volume of extremely high-skilled expert and frontier roles, particularly in quantum photonics and precision optical systems."
+      "rationale": "Strong in precision optics, lasers, and scientific instrumentation, with world-class research institutions and high-tech manufacturing capabilities."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Ericsson (optical communication, telecom)",
-        "Chalmers University of Technology, KTH Royal Institute of Technology (photonics research)"
+        "Ericsson (optical comms)",
+        "KTH Royal Institute of Technology, Chalmers University of Technology"
       ],
-      "rationale": "Sweden has a strong heritage in telecommunications and a good research base in photonics. While the industrial volume for advanced photonics roles is limited, there are specialist positions in optical communication and sensors, with some academic frontier research."
+      "rationale": "Strong research in fiber optics, optical communications, and some niche photonics applications, with a good academic base."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre of Finland (applied photonics research)",
-        "Aalto University (quantum technologies, photonics research)",
-        "Nokia (historical and ongoing optical networking R&D)"
+        "VTT Technical Research Centre of Finland",
+        "Aalto University, University of Oulu (photonics research)"
       ],
-      "rationale": "Finland, with its strong background in telecommunications and a focus on R&D, has a small but active photonics sector. There are specialist roles in optical communication and some frontier research in quantum technologies, resulting in a very low volume of advanced positions."
+      "rationale": "Niche strengths in optoelectronics, imaging, and photonics for harsh environments, with a focus on research and specialized applications."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Lumentum (Ottawa - optical components, lasers)",
-        "National Research Council (NRC - photonics research)",
-        "Universities (Waterloo, Toronto, UBC - strong research in quantum photonics, optical communication, lidar)"
+        "Ciena (optical networking)",
+        "Lumentum (optical components)",
+        "Waterloo, Toronto, McGill (universities)",
+        "National Research Council (NRC)"
       ],
-      "rationale": "Canada has a strong research presence in quantum photonics, optical communication, and lidar, with some specialized companies. This leads to a low volume of specialist and frontier roles, particularly in academic and R&D-focused environments."
+      "rationale": "Strong in optical communications, quantum photonics, and some niche areas like lidar, supported by a good research base and some key industry players."
     },
     {
       "country_iso": "AU",
@@ -255,128 +245,130 @@
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "ANU, University of Sydney, UNSW (world-leading research in quantum computing with photonics, fiber optics)",
-        "CUDOS (Centre for Ultrahigh bandwidth Devices for Optical Systems)"
+        "ANU (quantum optics, astronomy)",
+        "University of Sydney (photonics)",
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)"
       ],
-      "rationale": "Australia has excellent academic research in specific areas like quantum photonics (especially silicon photonics for quantum computing) and fiber optics. While the industrial base for advanced photonics is small, the high quality of research supports a very low volume of specialist and frontier roles."
+      "rationale": "Strong research in quantum photonics, fiber optics, and astronomy instrumentation, but with a smaller industrial base."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Intel (Leixlip - some silicon photonics related activities)",
-        "Tyndall National Institute (photonics research)",
-        "Universities (e.g., UCC, NUI Galway - academic research)"
+        "Tyndall National Institute",
+        "Intel (some R&D presence)",
+        "Data center industry (optical interconnects)"
       ],
-      "rationale": "Ireland, as a tech hub, hosts multinational companies with some photonics-related activities, particularly in semiconductor and data center infrastructure. There's a very low volume of applied and some specialist roles, with emerging academic research."
+      "rationale": "Growing hub for data centers and related optical interconnects, with some R&D in photonics, particularly at research institutes."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "skill_level": 4,
+      "frontier": 0.8,
+      "confidence": "high",
       "evidence": [
-        "IMEC (world-leading research in silicon photonics, integrated circuits)",
-        "Ghent University (Photonics Research Group - integrated photonics)"
+        "Imec (world-leading R&D in microelectronics and nanophotonics)",
+        "Ghent University (Photonics Research Group)"
       ],
-      "rationale": "Belgium, primarily through IMEC, is a significant player in silicon photonics and integrated circuits, driving substantial frontier research. This creates a very low volume of highly specialized expert and frontier roles, focused on cutting-edge device development."
+      "rationale": "Strong in microelectronics and nanophotonics research, with Imec being a key global player driving frontier R&D in integrated photonics."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "AMS Osram (sensors, optical components)",
-        "Joanneum Research (applied photonics research)",
-        "University of Innsbruck (quantum optics research)"
+        "IQOQI (Institute for Quantum Optics and Quantum Information)",
+        "AIT Austrian Institute of Technology",
+        "University of Vienna, University of Innsbruck"
       ],
-      "rationale": "Austria has strengths in sensors and some specialized optics, with notable research in quantum optics. This contributes to a very low volume of specialist roles and some frontier academic work."
+      "rationale": "Niche strengths in lasers, optical sensors, and quantum optics research, with a strong academic component."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Leonardo (defense, aerospace electro-optics)",
-        "CNR (National Research Council - extensive photonics research)",
-        "Politecnico di Milano, IFN-CNR (laser and optics research)"
+        "CNR (National Research Council)",
+        "Italian Institute of Technology (IIT)",
+        "University of Pisa, University of Florence"
       ],
-      "rationale": "Italy has a strong academic research base in lasers, quantum optics, and defense applications. While the industrial volume is limited, there are specialist roles and some frontier research, particularly in university and national lab settings."
+      "rationale": "Strong research in fundamental photonics, quantum optics, and some industrial applications, primarily driven by academic and public research institutions."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "ICFO (Institute of Photonic Sciences - leading research center)",
-        "CSIC (Spanish National Research Council - photonics research)",
-        "Universities (e.g., UPC, UAM - academic research)"
+        "ICFO (Institute of Photonic Sciences)",
+        "Universitat Polit\u00e8cnica de Val\u00e8ncia"
       ],
-      "rationale": "Spain has a growing research presence in photonics, particularly through institutions like ICFO, with applications in areas like astronomy instrumentation. This results in a very low volume of applied and some specialist roles, with emerging frontier research."
+      "rationale": "Growing research in photonics, particularly in integrated photonics and biophotonics, but with a smaller industrial footprint."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 1,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Multinational electronics companies with assembly/test operations (e.g., Intel, Broadcom)",
-        "MIMOS (national R&D center - some optoelectronics research)"
+        "Intel, Broadcom (manufacturing presence)",
+        "Local universities (limited research)"
       ],
-      "rationale": "Malaysia's strong electronics manufacturing sector includes some optical component assembly and testing. While advanced photonics R&D is limited, there is a very low volume of applied roles, with nascent local research efforts."
+      "rationale": "Significant electronics manufacturing, including some optical components, but advanced photonics R&D and high-skill jobs are limited."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "General electronics manufacturing growth, but no specific advanced photonics industry anchors or significant R&D centers identified."
+        "Samsung (electronics manufacturing)",
+        "FPT University (nascent research efforts)"
       ],
-      "rationale": "Vietnam's tech sector is emerging, primarily focused on electronics manufacturing and software. Advanced Photonics & Optics, particularly in frontier R&D or complex manufacturing, is currently negligible, with very few to no dedicated advanced roles."
+      "rationale": "Emerging electronics manufacturing base, but very nascent in advanced photonics R&D and high-skill job market."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "General electronics manufacturing, but no specific advanced photonics industry anchors or significant R&D centers identified."
+        "Western Digital (some optical storage components manufacturing)",
+        "Local universities (limited research)"
       ],
-      "rationale": "Thailand has a significant electronics manufacturing base, but its focus is largely on assembly and lower-tier components. Advanced Photonics & Optics roles, especially at specialist or frontier levels, are currently negligible."
+      "rationale": "Electronics manufacturing base, but advanced photonics R&D and high-skill job market are very limited."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "Large domestic market and growing digital economy, but no specific advanced photonics industry anchors or significant R&D centers identified."
+        "Limited specific evidence for advanced photonics industry or significant R&D"
       ],
-      "rationale": "Indonesia is a large and growing digital market, but its advanced manufacturing and R&D capabilities in Photonics & Optics are still nascent. There are currently negligible advanced roles in this domain."
+      "rationale": "Large domestic market, but very limited advanced photonics manufacturing or R&D capabilities."
     },
     {
       "country_iso": "AE",
@@ -386,10 +378,9 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Masdar Institute, Khalifa University (investments in science and technology research)",
-        "Government initiatives to diversify economy into high-tech."
+        "Masdar Institute, Khalifa University (emerging research initiatives)"
       ],
-      "rationale": "The UAE is investing heavily in diversifying its economy into high-tech sectors, including some academic initiatives in photonics. However, a mature advanced Photonics & Optics job market with significant volume or industrial frontier work is not yet established, leading to negligible advanced roles."
+      "rationale": "Investing in high-tech sectors, but photonics is nascent, primarily importing expertise with limited established R&D or industrial base."
     },
     {
       "country_iso": "SA",
@@ -399,36 +390,35 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "KAUST (King Abdullah University of Science and Technology - some photonics research)",
-        "Vision 2030 (national strategy for tech development), NEOM project."
+        "KAUST (King Abdullah University of Science and Technology - some research)",
+        "NEOM initiatives (future-oriented)"
       ],
-      "rationale": "Saudi Arabia is making significant investments in science and technology, particularly through institutions like KAUST and projects like NEOM. While there are nascent research efforts in photonics, a substantial advanced job market or industrial frontier is not yet present, resulting in negligible advanced roles."
+      "rationale": "Significant investment in Vision 2030, but advanced photonics is nascent, with limited established R&D or industrial ecosystem beyond academic initiatives."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "very_low",
-      "skill_level": 2,
+      "volume_band": "none",
+      "skill_level": 1,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Universities (e.g., USP, Unicamp - academic research in optics and lasers)",
-        "Some telecom infrastructure development."
+        "UNICAMP, USP (some academic research in optics/photonics)"
       ],
-      "rationale": "Brazil has a decent academic research base in optics and lasers, and a market for telecom infrastructure. However, the industrial base for advanced photonics manufacturing and frontier R&D is limited, resulting in a very low volume of applied and some specialist roles."
+      "rationale": "Some academic research in photonics, but limited industrial advanced photonics manufacturing or significant R&D activities."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Universities (e.g., University of Warsaw, Wroclaw University of Science and Technology - photonics research)",
-        "Growing tech sector and R&D investments."
+        "Institute of Electronic Materials Technology",
+        "University of Warsaw, Wroclaw University of Science and Technology"
       ],
-      "rationale": "Poland's tech sector is growing, with increasing investments in R&D and a good academic base in photonics. However, the industrial scale for advanced photonics manufacturing and frontier R&D is still developing, leading to a very low volume of applied and some specialist roles."
+      "rationale": "Growing tech sector with some research in photonics, particularly in lasers and optical materials, primarily driven by academic institutions."
     }
   ]
 }

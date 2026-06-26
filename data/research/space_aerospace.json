@@ -6,21 +6,21 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "NASA (multiple centers)",
-        "SpaceX (Starship, Starlink)",
+        "NASA",
+        "SpaceX",
+        "Boeing",
+        "Lockheed Martin",
+        "JPL",
         "Blue Origin",
-        "Boeing Defense, Space & Security",
-        "Lockheed Martin Space",
+        "ULA",
         "Northrop Grumman",
-        "Raytheon Technologies",
-        "Sierra Space",
-        "Vast Space",
-        "Numerous university research labs (MIT, Stanford, Caltech)"
+        "Artemis Program",
+        "Starship development"
       ],
-      "rationale": "The US leads globally in space and aerospace, with massive government programs (NASA, DoD), a vibrant commercial sector (SpaceX, Blue Origin), and extensive R&D across all sub-domains, including cutting-edge propulsion, advanced materials, satellite constellations, and deep space exploration."
+      "rationale": "Unmatched private and public investment, leading innovation in all aspects of space and aerospace, from launch to deep space and advanced aircraft."
     },
     {
       "country_iso": "CN",
@@ -30,393 +30,410 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "China National Space Administration (CNSA)",
-        "China Aerospace Science and Technology Corporation (CASC)",
-        "China Aerospace Science and Industry Corporation (CASIC)",
-        "Commercial space startups (e.g., LandSpace, iSpace)",
-        "Tiangong Space Station program",
-        "Chang'e lunar missions"
+        "CNSA",
+        "CASC",
+        "CASIC",
+        "Tiangong Space Station",
+        "Chang'e Lunar Program",
+        "Tianwen Mars Mission",
+        "Beidou Navigation Satellite System",
+        "COMAC C919"
       ],
-      "rationale": "China has a rapidly expanding and highly ambitious space program, with significant state-backed investment in all areas from launch vehicles and human spaceflight to lunar and planetary exploration. It is a major player in frontier R&D, rapidly closing gaps with the US."
+      "rationale": "Massive state-backed investment, ambitious space exploration goals, rapid technological development across all aerospace sectors, including indigenous aircraft."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Japan Aerospace Exploration Agency (JAXA)",
-        "Mitsubishi Heavy Industries (H3 launch vehicle)",
-        "IHI Corporation (propulsion)",
-        "NEC Corporation (satellites)",
-        "Hayabusa asteroid sample return missions"
+        "JAXA",
+        "Mitsubishi Heavy Industries (MHI)",
+        "IHI Corporation",
+        "Hayabusa missions",
+        "H3 Launch Vehicle",
+        "SLIM Lunar Lander"
       ],
-      "rationale": "Japan has a highly advanced and innovative space program, particularly strong in robotics, satellite technology, and scientific missions. While not matching the sheer volume of the US or China, its contributions are often at the cutting edge, especially in precision engineering and deep space probes."
+      "rationale": "Strong government support for space, advanced manufacturing capabilities, focus on high-tech, precision-driven missions, and robotics."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Korea Aerospace Research Institute (KARI)",
-        "Hanwha Aerospace (Nuri launch vehicle)",
-        "LIG Nex1 (satellite components)",
-        "Korea Pathfinder Lunar Orbiter (Danuri)"
+        "KARI (Korea Aerospace Research Institute)",
+        "Hanwha Aerospace",
+        "Korea Aerospace Industries (KAI)",
+        "Nuri Launch Vehicle",
+        "Danuri Lunar Orbiter",
+        "KF-21 Fighter Jet Program"
       ],
-      "rationale": "South Korea is a rapidly emerging player in space, successfully developing its own launch capabilities and lunar missions. The volume is growing, and the skill level is advancing, with increasing investment in domestic R&D, though still behind major global players in frontier work."
+      "rationale": "Significant national investment in developing indigenous space and defense capabilities, rapid progress in recent years, particularly in launch and lunar exploration."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "National Space Organization (NSPO)",
-        "Focus on satellite components and electronics manufacturing",
-        "FORMOSAT satellite series"
+        "TASA (Taiwan Space Agency)",
+        "Aerospace Industrial Development Corporation (AIDC)",
+        "FORMOSAT satellite series",
+        "Indigenous Defense Fighter (IDF)"
       ],
-      "rationale": "Taiwan's space sector is primarily focused on satellite manufacturing, components, and ground systems, leveraging its strong electronics industry. While it has a national space program, the volume of advanced roles and frontier R&D is relatively small compared to other leading nations."
+      "rationale": "Strong electronics industry supports satellite components and defense aerospace, but limited full-system space launch or deep space capabilities. Focus on applications and defense."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "German Aerospace Center (DLR)",
-        "Airbus Defence and Space (major European contributor)",
-        "OHB SE (satellite manufacturer)",
-        "ArianeGroup (propulsion, launchers)",
-        "Contributions to ESA programs"
+        "DLR (German Aerospace Center)",
+        "Airbus Defence and Space",
+        "OHB SE",
+        "ArianeGroup (JV)",
+        "MTU Aero Engines",
+        "ESA contributions (Galileo, Copernicus)"
       ],
-      "rationale": "Germany is a cornerstone of the European space industry, with strong capabilities in satellite systems, Earth observation, propulsion, and space science. DLR is a major research institution, and German companies are key contributors to ESA programs, driving significant advanced R&D."
+      "rationale": "Leading role in European space efforts, strong engineering base, significant R&D in key aerospace technologies, including satellite manufacturing and propulsion."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Netherlands Space Office (NSO)",
-        "ESA ESTEC (European Space Research and Technology Centre) located in Noordwijk",
-        "Airbus Defence and Space Netherlands (solar arrays, instruments)",
-        "TNO (applied research)"
+        "ESA ESTEC (European Space Research and Technology Centre)",
+        "NLR (Netherlands Aerospace Centre)",
+        "Airbus Defence and Space Netherlands",
+        "TNO"
       ],
-      "rationale": "The Netherlands plays a significant role in the European space sector, particularly in scientific instrumentation, small satellite technology, and Earth observation. The presence of ESA ESTEC boosts its R&D capabilities, but the overall volume of advanced roles is moderate."
+      "rationale": "Hosts a major ESA facility, strong in specialized aerospace components, instruments, and research, particularly in optics and small satellites."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "UK Space Agency",
-        "OneWeb (satellite constellation)",
-        "Rolls-Royce (aerospace propulsion, potential space applications)",
-        "BAE Systems (aerospace, defense)",
+        "BAE Systems",
+        "Rolls-Royce",
+        "Reaction Engines (SABRE)",
+        "OneWeb",
         "SSTL (Surrey Satellite Technology Ltd)",
-        "Growing number of launch sites (e.g., SaxaVord, Spaceport Cornwall)"
+        "SaxaVord Spaceport"
       ],
-      "rationale": "The UK has a rapidly growing space sector, with strong capabilities in satellite manufacturing, telecommunications, Earth observation, and a burgeoning launch industry. Significant government and private investment are driving an increase in advanced roles and frontier R&D."
+      "rationale": "Significant historical aerospace legacy, strong in specific high-tech areas like propulsion (SABRE engine) and small satellites, growing ambition in launch services."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.8,
+      "skill_level": 4,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Centre National d'\u00c9tudes Spatiales (CNES)",
-        "ArianeGroup (launchers, propulsion)",
-        "Airbus Defence and Space (major European player)",
-        "Thales Alenia Space (satellites)",
-        "Major contributor to ESA programs"
+        "CNES (Centre National d'\u00c9tudes Spatiales)",
+        "Airbus Defence and Space",
+        "ArianeGroup",
+        "Thales Alenia Space",
+        "Dassault Aviation",
+        "Safran",
+        "Ariane 6 development"
       ],
-      "rationale": "France is a leading European space power, with a comprehensive industry covering launchers, satellites, and space applications. CNES is a major national agency, and French companies are at the forefront of European space technology, contributing significantly to frontier R&D."
+      "rationale": "Core architect of European space capabilities, strong government investment, leading edge in launch vehicles, satellites, and defense aerospace."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.5,
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "Israel Space Agency (ISA)",
-        "Israel Aerospace Industries (IAI - Ofek satellites, Arrow missile defense)",
-        "Rafael Advanced Defense Systems",
+        "Israel Aerospace Industries (IAI)",
         "Elbit Systems",
-        "SpaceIL (Beresheet lunar lander)"
+        "Rafael Advanced Defense Systems",
+        "Shavit Launch Vehicle",
+        "Ofek Spy Satellites"
       ],
-      "rationale": "Israel has a highly advanced and specialized space industry, particularly strong in small, high-performance satellites (especially for intelligence and communication) and defense aerospace. Its innovation often pushes frontiers in niche areas, despite a smaller overall volume."
+      "rationale": "Focus on national security applications drives advanced capabilities in small satellites, reconnaissance, and defense aerospace. Limited commercial launch or deep space."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.55,
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Indian Space Research Organisation (ISRO)",
+        "ISRO (Indian Space Research Organisation)",
         "Hindustan Aeronautics Limited (HAL)",
-        "Antrix Corporation (commercial arm of ISRO)",
-        "Chandrayaan lunar missions",
-        "Mangalyaan Mars Orbiter Mission",
-        "Growing private space sector (e.g., Skyroot Aerospace, Agnikul Cosmos)"
+        "Chandrayaan Lunar Missions",
+        "Mangalyaan Mars Orbiter",
+        "Gaganyaan Human Spaceflight Program",
+        "PSLV/GSLV Launchers"
       ],
-      "rationale": "India has a well-established and rapidly advancing space program, known for its cost-effective launch services and scientific missions. ISRO drives significant R&D in satellite manufacturing, launch vehicles, and planetary exploration, with a growing private sector contributing to volume."
+      "rationale": "Strong national space program with ambitious goals, focus on cost-effective solutions and self-reliance, significant achievements in space exploration."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Office for Space Technology & Industry (OSTIn)",
-        "ST Engineering (aerospace MRO, satellite manufacturing)",
+        "ST Engineering",
+        "Nanyang Technological University (NTU) Satellite Research Centre",
         "DSO National Laboratories",
-        "Nanyang Technological University (satellite research)"
+        "Multiple small satellite launches"
       ],
-      "rationale": "Singapore is developing its space capabilities, focusing on small satellite manufacturing, data analytics, and aerospace MRO. While it has a strategic focus on space, the volume of advanced roles and frontier R&D is still relatively low, concentrating on specific niches."
+      "rationale": "Strong high-tech manufacturing base supports satellite components and MRO, but limited full-system space or large-scale aerospace development. Focus on niche high-value areas."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.25,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Swiss Space Office",
-        "RUAG Space (payload fairings, satellite structures)",
-        "ESA contributions (e.g., CHEOPS exoplanet mission)",
-        "EPFL Space Center"
+        "RUAG Space",
+        "EPFL Space Center",
+        "CSEM",
+        "Contributions to ESA (e.g., Ariane fairings, scientific instruments)"
       ],
-      "rationale": "Switzerland contributes to the European space sector with high-precision engineering, scientific instruments, and satellite components. Its role is specialized and high-quality, but the overall volume of advanced space and aerospace jobs is modest, with niche frontier research."
+      "rationale": "Strong in high-precision engineering, materials science, and robotics, contributing specialized components and research to European space efforts. Not a full-system developer."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Swedish National Space Agency (SNSA)",
-        "Swedish Space Corporation (SSC - Esrange Space Center, satellite services)",
-        "GKN Aerospace Sweden (engine components)",
-        "OHB Sweden (small satellites)"
+        "Swedish Space Corporation (SSC)",
+        "Saab",
+        "GKN Aerospace Sweden",
+        "Esrange Space Center",
+        "Gripen Fighter Jet"
       ],
-      "rationale": "Sweden has a focused space sector, particularly strong in sounding rockets, satellite operations, and scientific instruments. Esrange Space Center is a key asset. While innovative, the overall volume of advanced roles is relatively small, with specialized frontier contributions."
+      "rationale": "Strong capabilities in sounding rockets and satellite ground services, niche in small satellite development, and robust defense aerospace sector."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Finnish Space Committee",
-        "ICEYE (SAR microsatellites)",
-        "Aurora Propulsion Technologies (thrusters)",
-        "VTT Technical Research Centre of Finland"
+        "ICEYE (SAR satellites)",
+        "Reaktor Space Lab",
+        "VTT Technical Research Centre",
+        "Multiple small satellite launches"
       ],
-      "rationale": "Finland has an emerging 'New Space' sector, particularly strong in small satellite manufacturing (especially SAR) and space data applications. It shows promising innovation in niche areas, but the overall volume of advanced roles and frontier R&D is still low."
+      "rationale": "Emerging strong player in New Space, particularly with ICEYE's success in SAR small satellites. Focus on data and specialized applications rather than heavy launch."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.45,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "Canadian Space Agency (CSA)",
-        "MDA (Canadarm, satellite systems)",
-        "Magellan Aerospace (satellite components, rocket motors)",
-        "Telesat (satellite communications)"
+        "MDA (formerly MacDonald, Dettwiler and Associates)",
+        "Magellan Aerospace",
+        "Pratt & Whitney Canada",
+        "Canadarm series",
+        "RADARSAT satellites"
       ],
-      "rationale": "Canada has a well-established space industry, particularly renowned for its robotics (Canadarm), satellite communications, and Earth observation capabilities. It contributes significantly to international space missions and has a solid base of advanced roles and R&D."
+      "rationale": "Long history of significant contributions to international space programs, particularly in robotics and remote sensing, strong aerospace manufacturing."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "volume_band": "low",
-      "skill_level": 3,
+      "volume_band": "very_low",
+      "skill_level": 2,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Australian Space Agency (ASA)",
-        "Gilmour Space Technologies (launch vehicles)",
-        "Southern Launch (launch facilities)",
-        "Fleet Space Technologies (IoT satellites)",
-        "EOS Space Systems (space situational awareness)"
+        "Australian Space Agency",
+        "Gilmour Space Technologies",
+        "Southern Launch",
+        "EOS (Electro Optic Systems)"
       ],
-      "rationale": "Australia's space sector is rapidly growing, with increasing government support and private investment. It is developing capabilities in launch services, satellite manufacturing, and space situational awareness. While still emerging, it has clear ambitions and some frontier R&D."
+      "rationale": "Significant recent government investment to build a domestic space industry, focus on launch services, small satellites, and ground segment. Still in early growth phase for advanced capabilities."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Enterprise Ireland (supports space companies)",
-        "Focus on software, data analytics, and niche components for aerospace",
-        "Some MRO (Maintenance, Repair, and Overhaul) for aviation"
+        "EireComposites",
+        "Arralis",
+        "Irish Space Centre (UCD)",
+        "Contributions to ESA (components, software)"
       ],
-      "rationale": "Ireland's space and aerospace sector is relatively small, focusing on specific niches like software, data analytics, and some component manufacturing, often leveraging its strong tech sector. Direct advanced space R&D and manufacturing volume are limited."
+      "rationale": "Strong tech sector contributes specialized components and software to European aerospace, but no large-scale indigenous space or aerospace programs."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Belgian Science Policy Office (BELSPO)",
-        "Thales Alenia Space Belgium (power conditioning, data processing)",
-        "OIP Sensor Systems (optics)",
-        "Contributions to ESA programs"
+        "Spacebel",
+        "Thales Alenia Space Belgium",
+        "OIP Sensor Systems",
+        "Contributions to ESA (software, instruments, satellite components)"
       ],
-      "rationale": "Belgium has a specialized role in the European space sector, particularly in optical instruments, data processing, and power systems for satellites. Its contributions are high-tech but concentrated, resulting in a moderate volume of advanced roles and niche frontier work."
+      "rationale": "Strong engineering and software capabilities contribute specialized systems and components to European space missions."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
-        "Austrian Research Promotion Agency (FFG)",
-        "RUAG Space Austria (thermal insulation, mechanisms)",
-        "Pankl Aerospace Systems (components)",
-        "Graz University of Technology (space research)"
+        "Beyond Gravity (formerly RUAG Space Austria)",
+        "FOTEC",
+        "Contributions to ESA (mechanisms, thermal insulation, scientific instruments)"
       ],
-      "rationale": "Austria contributes to the space sector with specialized components, materials, and scientific research. While it has expertise in certain areas, the overall volume of advanced space and aerospace jobs and frontier R&D is relatively small."
+      "rationale": "Focus on high-precision components and scientific instruments for European space programs, leveraging strong engineering and materials science."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Italian Space Agency (ASI)",
-        "Leonardo (aerospace, defense, space systems)",
-        "Thales Alenia Space Italia (satellites)",
-        "Avio (launchers, propulsion)",
-        "Contributions to ESA programs"
+        "ASI (Italian Space Agency)",
+        "Leonardo",
+        "Thales Alenia Space Italia",
+        "Avio",
+        "Vega Launch Vehicle",
+        "Cosmo-SkyMed Satellites"
       ],
-      "rationale": "Italy is a significant player in the European space industry, with strong capabilities in satellite manufacturing, Earth observation, and launch vehicle components. ASI drives national programs, and Italian companies are key contributors to ESA, fostering substantial R&D."
+      "rationale": "Significant contributor to European space, with indigenous launch capabilities (Vega) and strong expertise in satellite manufacturing and defense aerospace."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Centre for the Development of Industrial Technology (CDTI - space programs)",
-        "Airbus Spain (aerospace manufacturing)",
-        "GMV (ground segments, satellite navigation)",
-        "SENER Aeroespacial (mechanisms, instruments)",
-        "Contributions to ESA programs"
+        "CDTI (Centre for the Development of Industrial Technology)",
+        "Airbus Defence and Space Spain",
+        "GMV",
+        "SENER",
+        "Contributions to ESA (structures, antennas, ground segment)"
       ],
-      "rationale": "Spain has a growing space sector, particularly strong in ground segments, satellite components, and space situational awareness. It is a significant contributor to ESA programs, with increasing investment in domestic capabilities, leading to a moderate volume of advanced roles."
+      "rationale": "Significant contributions to European space infrastructure, particularly in satellite structures, antennas, and ground control systems, with a growing small satellite sector."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Malaysian Space Agency (MYSA)",
-        "Focus on satellite applications and data utilization",
-        "Some aerospace MRO"
+        "ANGKASA (Malaysian National Space Agency)",
+        "Astronautic Technology (M) Sdn. Bhd. (ATSB)",
+        "RazakSAT",
+        "MEASAT communication satellites (operators)"
       ],
-      "rationale": "Malaysia's space sector is primarily focused on satellite applications, Earth observation, and data services, with limited indigenous manufacturing or advanced R&D in core space technologies. The aerospace sector is more focused on MRO."
+      "rationale": "Primarily a user of space technology, with limited indigenous advanced manufacturing or R&D in launch or spacecraft. Focus on satellite applications and data."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Vietnam National Space Center (VNSC)",
-        "Focus on satellite applications and remote sensing",
-        "Reliance on foreign technology for satellite development"
+        "VNSC (Vietnam National Satellite Center)",
+        "VNREDSat-1 (built with French assistance)",
+        "NanoDragon (small satellite)"
       ],
-      "rationale": "Vietnam is in the very early stages of developing its space capabilities, primarily focusing on satellite applications and remote sensing using imported technology. There is negligible advanced-role hiring or frontier R&D in core space and aerospace technology."
+      "rationale": "Developing a small satellite program with international assistance, but still in very early stages for advanced indigenous capabilities."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Geo-Informatics and Space Technology Development Agency (GISTDA)",
-        "Focus on satellite applications and Earth observation",
-        "Some aerospace MRO"
+        "GISTDA (Geo-Informatics and Space Technology Development Agency)",
+        "THEOS-1/2 (earth observation satellites, built with foreign assistance)"
       ],
-      "rationale": "Thailand's space activities are largely centered on satellite applications, Earth observation, and disaster management. While there are plans for domestic satellite development, the current volume of advanced space and aerospace jobs and frontier R&D is very low."
+      "rationale": "Primarily a user of satellite technology for earth observation, with limited indigenous advanced aerospace manufacturing or R&D."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "National Research and Innovation Agency (BRIN - includes former LAPAN)",
-        "PT Dirgantara Indonesia (aerospace manufacturing)",
-        "Focus on satellite applications and some domestic satellite assembly"
+        "LAPAN (National Institute of Aeronautics and Space, now part of BRIN)",
+        "PT Dirgantara Indonesia (PTDI)",
+        "LAPAN-A series of small satellites"
       ],
-      "rationale": "Indonesia has a nascent space program focused on satellite applications and some domestic assembly. Its aerospace industry, primarily PT Dirgantara Indonesia, focuses on aircraft manufacturing. Advanced space R&D and high-volume hiring are still very limited."
+      "rationale": "Developing small satellite capabilities and has some indigenous aircraft manufacturing, but advanced space and aerospace R&D is limited."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "UAE Space Agency",
-        "Mohammed Bin Rashid Space Centre (MBRSC - Hope Mars Mission, Emirates Lunar Mission)",
-        "Yahsat (satellite communications)"
+        "Mohammed Bin Rashid Space Centre (MBRSC)",
+        "Hope Mars Mission",
+        "Emirates Lunar Mission",
+        "KhalifaSat",
+        "MBZ-SAT"
       ],
-      "rationale": "The UAE has an ambitious and rapidly developing space program, marked by significant achievements like the Hope Mars Mission. It is investing heavily in domestic capabilities, satellite development, and scientific research, driving a growing volume of advanced roles and frontier R&D."
+      "rationale": "Ambitious and well-funded space program with significant achievements in deep space exploration and indigenous satellite development, rapidly building expertise."
     },
     {
       "country_iso": "SA",
@@ -426,41 +443,41 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Saudi Space Commission (SSC)",
-        "King Abdulaziz City for Science and Technology (KACST - satellite development)",
-        "Investments in space technology and applications"
+        "Saudi Space Commission",
+        "King Abdulaziz City for Science and Technology (KACST) satellite programs",
+        "Taqnia Aeronautics"
       ],
-      "rationale": "Saudi Arabia is investing in developing its space capabilities, primarily through the Saudi Space Commission and KACST, focusing on satellite technology and applications. While ambitions are high, the current volume of advanced roles and frontier R&D is still very low."
+      "rationale": "Investing in space capabilities, primarily for satellite applications and defense, often through international partnerships. Indigenous advanced R&D is still limited."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Brazilian Space Agency (AEB)",
-        "Embraer (major aerospace manufacturer)",
-        "Instituto Nacional de Pesquisas Espaciais (INPE)",
-        "Attempts at domestic launch vehicle development"
+        "AEB (Brazilian Space Agency)",
+        "Embraer",
+        "INPE (National Institute for Space Research)",
+        "CBERS satellites (with China)"
       ],
-      "rationale": "Brazil has a long-standing space program focused on satellite development and applications, alongside a significant aerospace industry (Embraer). However, its space sector has faced challenges, and the volume of advanced roles and frontier R&D remains relatively low compared to its potential."
+      "rationale": "Strong regional aircraft manufacturer (Embraer), and a space program with earth observation satellites, but indigenous launch capabilities have faced significant challenges."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
         "Polish Space Agency (POLSA)",
-        "Creotech Instruments (small satellites, electronics)",
-        "Astropolska (space mechanisms)",
-        "Contributions to ESA programs"
+        "Creotech Instruments",
+        "Syderal Polska",
+        "Contributions to ESA (components, software, robotics)"
       ],
-      "rationale": "Poland is an emerging player in the European space sector, focusing on small satellites, space data, and components. While it has a growing number of companies and research initiatives, the overall volume of advanced roles and frontier R&D is still relatively low."
+      "rationale": "Growing participation in ESA programs, with a focus on small satellite components, software, and robotics, leveraging its strong IT and engineering sectors."
     }
   ]
 }

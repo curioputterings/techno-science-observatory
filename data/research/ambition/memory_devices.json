@@ -10,10 +10,10 @@
       "confidence": "high",
       "evidence": [
         "CHIPS and Science Act",
-        "National Advanced Packaging Manufacturing Program",
-        "DoD Microelectronics Commons"
+        "National Semiconductor Technology Center (NSTC)",
+        "Department of Defense (DoD) advanced packaging initiatives"
       ],
-      "rationale": "The US has a flagship national priority to re-shore and advance semiconductor manufacturing, including memory, with significant funding and strategic programs aimed at leading-edge R&D and production."
+      "rationale": "The US has a flagship national priority to re-shore and advance semiconductor manufacturing, including memory, driven by the CHIPS Act with significant funding for R&D and production incentives, aiming for frontier capabilities."
     },
     {
       "country_iso": "CN",
@@ -23,12 +23,12 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Made in China 2025",
         "National Integrated Circuit Industry Investment Fund (Big Fund)",
-        "Investments in Yangtze Memory Technologies Co. (YMTC)",
-        "Investments in ChangXin Memory Technologies (CXMT)"
+        "Made in China 2025 (semiconductor goals)",
+        "Yangtze Memory Technologies Co (YMTC) expansion",
+        "Changxin Memory Technologies (CXMT) investments"
       ],
-      "rationale": "China has a very strong national imperative for semiconductor self-sufficiency, with massive state-backed investments and explicit targets to develop domestic capabilities in DRAM and NAND flash memory."
+      "rationale": "China has a very strong national priority for semiconductor self-sufficiency, including memory (DRAM and NAND), backed by massive state-led investments and strategic plans to catch up to expert levels."
     },
     {
       "country_iso": "JP",
@@ -36,13 +36,13 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
-        "Rapidus Corporation initiative",
+        "Rapidus Corporation (broader semiconductor push)",
         "Ministry of Economy, Trade and Industry (METI) semiconductor strategy",
-        "Subsidies for advanced semiconductor manufacturing facilities"
+        "Kioxia (NAND flash production and R&D)"
       ],
-      "rationale": "Japan is making a concerted effort to revitalize its semiconductor manufacturing base, with significant government backing for advanced logic and memory-related R&D and production, exemplified by the Rapidus initiative."
+      "rationale": "Japan aims for a resurgence in semiconductors, focusing on advanced manufacturing and next-generation technologies, including memory, with significant government backing for initiatives like Rapidus and support for existing players like Kioxia."
     },
     {
       "country_iso": "KR",
@@ -53,10 +53,10 @@
       "confidence": "high",
       "evidence": [
         "K-Semiconductor Strategy",
-        "Semiconductor Special Act",
-        "Massive R&D and investment by Samsung Electronics and SK Hynix"
+        "Massive R&D investments by Samsung Electronics and SK Hynix",
+        "Government support for semiconductor mega-clusters"
       ],
-      "rationale": "South Korea is a global leader in memory semiconductors and maintains this position through continuous, aggressive R&D, massive private investment often supported by government incentives, and a clear national strategy to maintain frontier capabilities."
+      "rationale": "South Korea is a global leader in memory and has a continuous, aggressive national strategy to maintain and extend its frontier leadership in DRAM and NAND through substantial industry and government investment."
     },
     {
       "country_iso": "TW",
@@ -66,11 +66,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Taiwan's '5+2 Industrial Innovation Plan' (includes smart manufacturing)",
-        "Government incentives for semiconductor industry",
-        "Investments by Nanya Technology and Winbond"
+        "Taiwan's '5+2 Industrial Innovation Plan' (semiconductor focus)",
+        "Nanya Technology's advanced DRAM development plans",
+        "Government support for semiconductor R&D and talent"
       ],
-      "rationale": "Taiwan possesses a robust semiconductor ecosystem. While primarily known for logic, it has significant players in specialized memory and a strong national commitment to supporting the broader semiconductor industry's advancement."
+      "rationale": "Taiwan has a strong existing semiconductor ecosystem and a clear ambition to advance its capabilities across the board, including specialized memory manufacturing and design, aiming for expert levels."
     },
     {
       "country_iso": "DE",
@@ -81,36 +81,37 @@
       "confidence": "medium",
       "evidence": [
         "European Chips Act (national implementation)",
-        "IPCEI Microelectronics",
-        "Intel fab announcement in Magdeburg"
+        "Important Projects of Common European Interest (IPCEI) Microelectronics",
+        "Fraunhofer institutes' research on novel memory technologies"
       ],
-      "rationale": "Germany's ambition in memory is primarily within the broader European Chips Act framework, focusing on R&D, materials, and specialized memory for industrial and automotive applications, rather than mass commodity memory production."
+      "rationale": "Germany's ambition in memory is primarily within the broader EU Chips Act framework, focusing on R&D, specialized applications (e.g., automotive), and materials, rather than mass production of standard memory, targeting specialist tiers."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "ambition": 2,
-      "target_level": 3,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "European Chips Act (national implementation)",
-        "Brainport Eindhoven ecosystem",
-        "TNO research initiatives"
+        "National Growth Fund (partially for semiconductors)",
+        "Research programs at universities (e.g., TU Delft on quantum memory)"
       ],
-      "rationale": "The Netherlands excels in semiconductor equipment and R&D, supporting the memory industry indirectly. Its national ambition is more focused on enabling technologies and specialized components rather than direct memory manufacturing."
+      "rationale": "The Netherlands excels in semiconductor equipment but has a more modest, applied ambition in memory devices themselves, focusing on niche R&D and materials rather than large-scale manufacturing."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "ambition": 2,
-      "target_level": 2,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "UK Semiconductor Strategy (May 2023)"
+        "UK Semiconductor Strategy (published 2023)",
+        "ARM (memory IP design)",
+        "University research in novel memory architectures"
       ],
-      "rationale": "The UK's semiconductor strategy prioritizes design, R&D, and compound semiconductors, with less emphasis or stated ambition for large-scale memory manufacturing."
+      "rationale": "The UK's semiconductor strategy focuses on design, IP, and compound semiconductors. While there's R&D in novel memory, there's no stated national ambition for large-scale memory device manufacturing, targeting specialist design and IP."
     },
     {
       "country_iso": "FR",
@@ -121,10 +122,10 @@
       "confidence": "medium",
       "evidence": [
         "European Chips Act (national implementation)",
-        "IPCEI Microelectronics",
-        "STMicroelectronics investments"
+        "Important Projects of Common European Interest (IPCEI) Microelectronics",
+        "CEA-Leti research on advanced memory technologies"
       ],
-      "rationale": "France's ambition is aligned with the European Chips Act, focusing on R&D, design, and some specialized manufacturing, but not a flagship national priority for commodity memory production."
+      "rationale": "France's ambition in memory is part of the broader EU Chips Act, focusing on R&D and design, particularly for specific applications, rather than establishing a national memory manufacturing industry."
     },
     {
       "country_iso": "IL",
@@ -134,24 +135,24 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Israel Innovation Authority support for high-tech",
-        "Intel's R&D and design centers in Israel"
+        "Israel Innovation Authority programs (general tech)",
+        "Intel's R&D centers (focus on logic, but some memory interface work)"
       ],
-      "rationale": "Israel has a strong focus on semiconductor design, R&D, and IP development, but no stated national ambition for large-scale memory manufacturing."
+      "rationale": "Israel is strong in semiconductor design and IP, but its stated ambition does not include memory device manufacturing. Focus is on specialized design and R&D."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "ambition": 3,
+      "ambition": 4,
       "target_level": 2,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "high",
       "evidence": [
         "India Semiconductor Mission (ISM)",
         "Production Linked Incentive (PLI) scheme for semiconductors",
-        "Micron's assembly and test plant announcement"
+        "Micron Technology's assembly and test facility announcement"
       ],
-      "rationale": "India has a clear and funded national ambition to establish a domestic semiconductor manufacturing ecosystem, including memory, driven by self-reliance goals and significant financial incentives."
+      "rationale": "India has a high stated ambition to establish a semiconductor manufacturing ecosystem, including memory, driven by significant financial incentives. While the immediate target level is applied, the long-term goal is to build foundational capabilities."
     },
     {
       "country_iso": "SG",
@@ -159,96 +160,105 @@
       "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
-        "Economic Development Board (EDB) support for high-tech manufacturing",
-        "A*STAR research institutes",
-        "Micron's significant manufacturing presence"
+        "Economic Development Board (EDB) initiatives for advanced manufacturing",
+        "A*STAR research in microelectronics",
+        "Existing semiconductor industry clusters (e.g., Micron's presence)"
       ],
-      "rationale": "Singapore maintains a strong semiconductor ecosystem, with a focus on high-value manufacturing, R&D, and advanced packaging, supporting memory production through its established industry players."
+      "rationale": "Singapore aims to enhance its high-value manufacturing and R&D capabilities within the semiconductor sector, including advanced packaging and some niche memory activities, targeting specialist tiers."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "ambition": 1,
-      "target_level": 2,
+      "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "ETH Zurich and EPFL research in microelectronics"
+        "ETH Zurich research in materials science",
+        "CSEM (applied research in microtechnology)"
       ],
-      "rationale": "Switzerland has strong academic research in materials science and microelectronics, but no stated national ambition for large-scale memory manufacturing."
+      "rationale": "Switzerland has strong academic research in materials and microtechnology but no stated national ambition for memory device manufacturing. Focus is on basic research."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "ambition": 1,
-      "target_level": 2,
+      "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "KTH Royal Institute of Technology research"
+        "Vinnova (Sweden's innovation agency) general tech programs",
+        "University research in ICT and materials"
       ],
-      "rationale": "Sweden focuses on R&D and design in broader electronics, but lacks specific national strategies or significant investments for memory manufacturing."
+      "rationale": "Sweden's focus is on ICT, software, and niche materials. There is no significant stated national ambition for memory device manufacturing."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "ambition": 1,
-      "target_level": 2,
+      "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre of Finland"
+        "Business Finland programs (general tech)",
+        "VTT Technical Research Centre (general electronics research)"
       ],
-      "rationale": "Finland's focus is on R&D and niche applications in electronics, with no stated national ambition for memory manufacturing."
+      "rationale": "Similar to Sweden, Finland focuses on ICT and quantum technologies, with no specific stated national ambition for memory device manufacturing."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [
-        "National Quantum Strategy",
-        "Various university research programs"
-      ],
-      "rationale": "Canada's strategic tech focus is on AI, quantum computing, and photonics, with no significant stated national ambition for memory manufacturing."
-    },
-    {
-      "country_iso": "AU",
-      "country_name": "Australia",
-      "ambition": 0,
-      "target_level": 1,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "Australia's tech strategies focus on critical minerals and quantum computing, with no stated national ambition or significant initiatives in memory manufacturing."
-    },
-    {
-      "country_iso": "IE",
-      "country_name": "Ireland",
-      "ambition": 0,
-      "target_level": 1,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [
-        "IDA Ireland (general FDI attraction)"
-      ],
-      "rationale": "Ireland attracts significant tech FDI, but there is no specific national ambition or program targeting memory manufacturing."
-    },
-    {
-      "country_iso": "BE",
-      "country_name": "Belgium",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Imec (world-leading R&D hub)"
+        "Strategic Innovation Fund (semiconductor stream)",
+        "National Research Council (NRC) programs",
+        "Quantum computing research initiatives"
       ],
-      "rationale": "While Imec in Belgium is a global leader in semiconductor R&D (including memory), Belgium itself does not have a national strategy or ambition for large-scale memory manufacturing."
+      "rationale": "Canada has an ambition in R&D for specialized materials and quantum technologies, which may indirectly support future memory, but no direct national ambition for memory device manufacturing."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO (national science agency) research",
+        "Quantum computing initiatives"
+      ],
+      "rationale": "Australia's focus is on quantum computing, photonics, and niche materials, with no stated national ambition for memory device manufacturing."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "IDA Ireland (general tech investment attraction)",
+        "University research in electronics"
+      ],
+      "rationale": "Ireland attracts significant tech FDI but has no specific stated national ambition for memory device manufacturing. Its focus is on software and data centers."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "IMEC (world-leading nanoelectronics research center)",
+        "Flemish government support for R&D"
+      ],
+      "rationale": "Belgium, through IMEC, is a global leader in semiconductor R&D, including advanced memory concepts and materials. However, IMEC is a research hub for global industry, not a national memory manufacturing strategy, targeting specialist R&D."
     },
     {
       "country_iso": "AT",
@@ -256,131 +266,141 @@
       "ambition": 1,
       "target_level": 2,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Austrian Research Promotion Agency (FFG) support for microelectronics"
+        "Silicon Austria Labs (SAL) research",
+        "FFG (Austrian Research Promotion Agency) programs"
       ],
-      "rationale": "Austria focuses on R&D and specialized components within microelectronics, but has no stated national ambition for memory manufacturing."
+      "rationale": "Austria focuses on microelectronics design, sensors, and power electronics. There is no significant stated national ambition for memory device manufacturing."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "medium",
-      "confidence": "low",
-      "evidence": [
-        "European Chips Act (national implementation)",
-        "IPCEI Microelectronics"
-      ],
-      "rationale": "Italy's semiconductor ambition is part of the broader European Chips Act, with some focus on R&D and specialized manufacturing, but not a specific national drive for memory production."
-    },
-    {
-      "country_iso": "ES",
-      "country_name": "Spain",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "medium",
-      "confidence": "low",
-      "evidence": [
-        "PERTE Chip (Strategic Project for the Recovery and Economic Transformation of Microelectronics and Semiconductors)"
-      ],
-      "rationale": "Spain's PERTE Chip initiative aims to strengthen its semiconductor ecosystem, but there is no explicit or significant stated national ambition for memory manufacturing."
-    },
-    {
-      "country_iso": "MY",
-      "country_name": "Malaysia",
       "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Semiconductor Strategic Plan (emerging)",
-        "Various investment incentives for semiconductor industry"
+        "European Chips Act (national implementation)",
+        "Important Projects of Common European Interest (IPCEI) Microelectronics",
+        "STMicroelectronics investments (some MRAM activity)"
       ],
-      "rationale": "Malaysia is a strong player in assembly, test, and packaging (ATP) and has stated ambitions to move up the value chain in semiconductors, including design, but less so for front-end memory manufacturing."
+      "rationale": "Italy's ambition in memory is primarily within the EU Chips Act framework, focusing on R&D and specific applications, with some existing niche memory activities by STMicroelectronics."
+    },
+    {
+      "country_iso": "ES",
+      "country_name": "Spain",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "PERTE Chip program (part of EU Chips Act)"
+      ],
+      "rationale": "Spain's PERTE Chip program is part of the EU Chips Act, focusing on design and R&D, but there is no significant stated national ambition for memory device manufacturing."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
+      "ambition": 3,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "National Investment Aspirations (NIA)",
+        "Electrical & Electronics (E&E) Industry Roadmap",
+        "Incentives for high-tech manufacturing"
+      ],
+      "rationale": "Malaysia is strong in semiconductor assembly, test, and packaging, and has a stated ambition to move up the value chain into design and potentially some front-end manufacturing, including advanced packaging for memory."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "National Strategy for Semiconductor Industry Development (emerging)",
-        "Intel's assembly and test operations"
+        "Government efforts to attract semiconductor FDI",
+        "Development of high-tech industrial parks"
       ],
-      "rationale": "Vietnam is an emerging player attracting some semiconductor investment, primarily in assembly and test, with a nascent national strategy to develop the industry, but no specific strong ambition for memory manufacturing."
+      "rationale": "Vietnam is an emerging player attracting FDI in semiconductor assembly and packaging. While there's a stated ambition to develop the semiconductor industry, memory device manufacturing is a very long-term, entry-level goal."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "ambition": 1,
       "target_level": 1,
-      "horizon": "medium",
-      "confidence": "low",
+      "horizon": "long",
+      "confidence": "medium",
       "evidence": [
         "Board of Investment (BOI) incentives for electronics industry"
       ],
-      "rationale": "Thailand has a strong electronics manufacturing base, particularly in assembly and test, but lacks a specific stated national ambition or significant initiatives for memory manufacturing."
+      "rationale": "Thailand's focus in semiconductors is primarily on assembly and packaging. There is no significant stated national ambition for memory device manufacturing."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "'Making Indonesia 4.0' roadmap (broadly covers electronics)"
+        "Government initiatives to attract electronics manufacturing investment"
       ],
-      "rationale": "Indonesia's industrial roadmap broadly covers electronics, but there is no specific stated national ambition or significant initiatives for memory manufacturing."
+      "rationale": "Indonesia is in the early stages of developing its electronics manufacturing capabilities, primarily focusing on assembly. There is no stated national ambition for memory device manufacturing."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "The UAE focuses on economic diversification and AI, but has no stated national ambition or specific programs for memory manufacturing."
+      "confidence": "medium",
+      "evidence": [
+        "UAE National AI Strategy 2031",
+        "Various technology investment initiatives"
+      ],
+      "rationale": "The UAE is investing heavily in AI and advanced technologies but has no specific stated national ambition for memory device manufacturing. Focus is on R&D and applications."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Vision 2030 (broad tech diversification)"
+        "Vision 2030 (economic diversification)",
+        "NEOM investments in advanced technologies"
       ],
-      "rationale": "Saudi Arabia's Vision 2030 includes broad tech diversification, but there is no specific stated national ambition or significant initiatives for memory manufacturing."
+      "rationale": "Saudi Arabia's Vision 2030 includes tech diversification, but there is no specific stated national ambition for memory device manufacturing. Focus is on AI and digital transformation."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "Brazil has had some historical efforts in electronics, but currently lacks a strong stated national ambition or significant programs for memory manufacturing."
+      "confidence": "medium",
+      "evidence": [
+        "Past programs like CI-Brasil (limited success)",
+        "Current R&D support for microelectronics"
+      ],
+      "rationale": "Brazil has had historical efforts in microelectronics but currently has no significant stated national ambition for memory device manufacturing. Focus is on design and niche manufacturing."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
         "European Chips Act (national implementation)",
-        "Intel's Assembly and Test Lab (ATAL) announcement"
+        "Intel's announced Assembly and Test Facility (ATAL)"
       ],
-      "rationale": "Poland's involvement in semiconductors is primarily through the European Chips Act and attracting assembly/test facilities like Intel's ATAL, with no specific national ambition for memory manufacturing."
+      "rationale": "Poland's ambition in semiconductors is growing, notably with Intel's investment in an assembly and test facility. While this is significant for packaging, there is no stated national ambition for memory *device* manufacturing, targeting applied capabilities in the broader semiconductor value chain."
     }
   ]
 }

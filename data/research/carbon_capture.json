@@ -9,96 +9,88 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Inflation Reduction Act (IRA)",
-        "Department of Energy (DOE) funding",
-        "Project Cypress",
-        "Occidental Petroleum (Oxy Low Carbon Ventures)",
-        "ExxonMobil",
-        "Carbon Engineering (US operations)",
-        "Climeworks (US partnerships)",
-        "National Energy Technology Laboratory (NETL)"
+        "Inflation Reduction Act (IRA) tax credits (45Q, 45V)",
+        "Department of Energy (DOE) funding for DAC hubs and CCS projects",
+        "Companies: Occidental (1PointFive), Carbon Engineering, Charm Industrial, Climeworks (US operations)",
+        "National Labs: NETL, LLNL, PNNL",
+        "Carbon Capture Coalition"
       ],
-      "rationale": "The US is a global leader in Carbon Capture & Climate Tech, driven by substantial government incentives (IRA), significant private investment, numerous startups, and established energy companies. It hosts world-leading DAC and CCS projects and extensive R&D."
+      "rationale": "The US has aggressive policy support (IRA), significant private investment, numerous startups, and leading national labs driving frontier R&D in DAC, CCS, and CO2 utilization, resulting in a very high volume of advanced roles."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Sinopec",
-        "China Energy",
-        "PetroChina",
-        "Yanchang Integrated CCS Project",
-        "Tsinghua University research",
-        "National CCS demonstration projects"
+        "National CCS R&D programs (e.g., 14th Five-Year Plan)",
+        "State-owned enterprises: Sinopec, CNOOC, Huaneng (large-scale industrial CCS projects)",
+        "Research institutions: Tsinghua University, Chinese Academy of Sciences",
+        "Focus on industrial decarbonization and CCUS demonstration projects"
       ],
-      "rationale": "China has a large industrial base and significant state-driven initiatives in CCS, particularly for industrial emissions. While deployment is extensive, frontier R&D, especially in DAC, is still catching up to Western leaders, though rapidly advancing."
+      "rationale": "China has a massive industrial base and significant emissions, driving a strong focus on large-scale industrial CCS projects and related R&D. While the sheer volume is high, the 'frontier' aspect, particularly in DAC, is somewhat less pronounced than in the US or Switzerland, leaning more towards applied engineering."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
-        "METI (Ministry of Economy, Trade and Industry) initiatives",
-        "JOGMEC",
-        "Kawasaki Heavy Industries",
-        "Mitsubishi Heavy Industries",
-        "Toshiba",
-        "RITE (Research Institute of Innovative Technology for the Earth)"
+        "METI's CCS roadmap and 'Green Innovation Fund'",
+        "Companies: Mitsubishi Heavy Industries (MHI), Kawasaki Heavy Industries (KHI)",
+        "JOGMEC (Japan Organization for Metals and Energy Security)",
+        "Research Institute of Innovative Technology for the Earth (RITE)",
+        "Focus on CCU, hydrogen/ammonia co-firing with CCS"
       ],
-      "rationale": "Japan has strong industrial players and government support for CCS and CCU, focusing on industrial decarbonization and hydrogen integration. R&D is robust, but large-scale deployment is still developing."
+      "rationale": "Japan has strong industrial players and government support for CCS/CCU, particularly in developing advanced capture technologies and integrating them with hydrogen/ammonia value chains. There's a solid base of R&D and pilot projects."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "skill_level": 4,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "K-CCS project",
-        "SK E&S",
-        "Hyundai Motor Group (investments)",
-        "Korea Institute of Energy Research (KIER)",
-        "Government carbon neutrality goals"
+        "K-CCS 2030 program and national carbon neutrality goals",
+        "Companies: Hyundai, SK E&S, KEPCO (investments in CCS/CCU)",
+        "Research institutions: Korea Institute of Energy Research (KIER), KAIST",
+        "Focus on industrial CCS and CO2 utilization technologies"
       ],
-      "rationale": "South Korea is actively pursuing carbon neutrality with government-backed industrial CCS projects and growing private sector involvement. The skill level is high in engineering, with developing frontier R&D."
+      "rationale": "South Korea has significant industrial emissions and ambitious carbon neutrality targets, driving investment in CCS/CCU R&D and demonstration projects. The skill level is high, with a growing focus on advanced technologies, though perhaps not at the absolute frontier of DAC."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Taiwan Power Company (Taipower) pilot projects",
-        "Industrial decarbonization efforts"
+        "Industrial Technology Research Institute (ITRI) research",
+        "Limited large-scale CCS/DAC projects announced",
+        "Academic research at universities (e.g., National Taiwan University)"
       ],
-      "rationale": "Taiwan has some industrial interest and pilot projects, but the overall volume and dedicated frontier R&D in advanced Carbon Capture & Climate Tech are relatively limited compared to major players."
+      "rationale": "Taiwan has a strong manufacturing base but a relatively nascent advanced Carbon Capture & Climate Tech sector. While there is some academic and institutional research, large-scale deployment or frontier R&D roles are very limited."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 5,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Climeworks (co-founder country)",
-        "Fraunhofer Institutes",
-        "RWTH Aachen",
-        "Carbon Capture Technology Centre (CCTZ)",
-        "Siemens Energy",
-        "BASF (CCU research)"
+        "Strong climate tech ecosystem and government funding for innovation",
+        "Research institutions: Fraunhofer Institutes, RWTH Aachen, KIT",
+        "Companies: Siemens Energy, BASF (CCU initiatives), significant startup activity in climate tech",
+        "Climeworks (Swiss-based but strong German R&D presence and partnerships)"
       ],
-      "rationale": "Germany is a hub for climate tech innovation, particularly in DAC (Climeworks originated here) and CCU. It boasts strong research institutions and engineering capabilities, though large-scale CCS deployment faces political hurdles."
+      "rationale": "Germany is a leader in climate tech R&D, particularly in CO2 utilization (CCU) and DAC, driven by strong research institutions and a vibrant startup scene. Despite historical political resistance to geological CCS, the focus on advanced capture and utilization technologies is very high."
     },
     {
       "country_iso": "NL",
@@ -108,14 +100,12 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Porthos project",
-        "Aramis project",
-        "Port of Rotterdam",
-        "TNO",
-        "Shell",
-        "Gasunie"
+        "Porthos CCS project (Rotterdam Port)",
+        "Government subsidies for CCS and CCU",
+        "Research institutions: TNO, Delft University of Technology",
+        "Companies: Shell, Gasunie (active in CCS infrastructure development)"
       ],
-      "rationale": "The Netherlands has strong government support and ambitious plans for industrial CCS, with major projects like Porthos underway. It leverages its industrial clusters and North Sea geology for carbon storage."
+      "rationale": "The Netherlands has a strong focus on industrial CCS, particularly in its major port areas, with significant government and industry investment in large-scale projects and supporting R&D. This creates a medium volume of advanced roles, with a good frontier component in project execution and technology integration."
     },
     {
       "country_iso": "GB",
@@ -125,327 +115,329 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "UK CCS clusters (HyNet, East Coast Cluster, Acorn)",
-        "Net Zero Strategy",
-        "Carbon Capture and Storage Association (CCSA)",
-        "Shell",
-        "BP",
-        "Imperial College London"
+        "UK CCS Cluster Sequencing program (HyNet, East Coast Cluster, Acorn)",
+        "Government funding for industrial decarbonization and CCS",
+        "Research institutions: Imperial College London, University of Edinburgh",
+        "Carbon Capture and Storage Association"
       ],
-      "rationale": "The UK has ambitious net-zero targets, significant government investment, and multiple large-scale CCS cluster projects. It has strong academic research and engineering firms driving deployment and innovation."
+      "rationale": "The UK has ambitious net-zero targets and a clear strategy for developing industrial CCS clusters. Significant government funding and industry partnerships are driving a high volume of advanced roles in project development, engineering, and related R&D."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "TotalEnergies (CCS R&D and projects abroad)",
-        "IFP Energies nouvelles (IFPEN)",
-        "Industrial clusters (e.g., Dunkirk)"
+        "TotalEnergies (CCS projects and R&D)",
+        "IFP Energies nouvelles (IFPEN) research",
+        "CNRS (National Centre for Scientific Research)",
+        "Government support for decarbonization, but less aggressive on large-scale CCS than some neighbors"
       ],
-      "rationale": "France shows growing interest in industrial decarbonization and CCU, with some R&D and pilot projects. While it has strong engineering capabilities, the overall volume and frontier activity in CC&CT are moderate."
+      "rationale": "France has a strong research base and some industrial interest in CCS/CCU, but the overall volume of advanced roles is lower compared to leading European countries. The focus is growing, but large-scale deployment is still in earlier stages."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.3,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Emerging climate tech startup ecosystem",
-        "Academic research in related fields"
+        "Vibrant climate tech startup ecosystem (general)",
+        "Academic research at Weizmann Institute, Technion",
+        "Limited heavy industry for large-scale CCS, focus on innovative niche solutions"
       ],
-      "rationale": "Israel has a vibrant tech ecosystem, but dedicated advanced Carbon Capture & Climate Tech is a niche area. While there are innovative startups, it's not a major global hub for frontier R&D in this specific domain."
+      "rationale": "Israel's strong tech ecosystem fosters innovation, but its smaller industrial base means fewer large-scale CCS/DAC projects. Advanced roles are primarily in early-stage R&D and startups exploring novel CCU or capture technologies, leading to a very low volume."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "skill_level": 3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "NTPC (pilot projects)",
-        "ONGC",
-        "IITs (research)",
-        "Government industrial decarbonization initiatives"
+        "Indian Institute of Technology (IITs) research on CCS/CCU",
+        "Pilot projects by large industrial groups (e.g., Tata Steel, NTPC)",
+        "Government interest in decarbonization, but large-scale deployment is nascent"
       ],
-      "rationale": "India has a large industrial base and growing awareness of CC&CT, with some pilot projects and academic research. However, large-scale deployment and frontier R&D are still in nascent stages."
+      "rationale": "India has a massive industrial base and growing emissions, but advanced Carbon Capture & Climate Tech is still largely in the research and pilot phase. While there's significant engineering talent, the volume of dedicated advanced roles remains low, with limited frontier R&D."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "very_low",
-      "skill_level": 3,
+      "volume_band": "low",
+      "skill_level": 4,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "National Research Foundation",
-        "A*STAR",
-        "Jurong Island (industrial decarbonization)",
-        "Shell (Bukom refinery CCU)"
+        "National Research Foundation, A*STAR (Agency for Science, Technology and Research)",
+        "Nanyang Technological University (NTU) research",
+        "Shell's Bukom CCS study and regional hub ambitions",
+        "Focus on high-tech solutions, CCU, and regional carbon management"
       ],
-      "rationale": "Singapore, despite its small size, has a strategic focus on sustainability and innovation. It's developing expertise in CCU and industrial decarbonization, leveraging its strong research infrastructure."
+      "rationale": "Singapore, despite its small size, has a strong R&D ecosystem and a strategic focus on high-tech climate solutions, including CCU and regional carbon management. While the volume of roles is low, the skill level and frontier component are relatively high for its scale, focusing on niche, advanced applications."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 5,
-      "frontier": 0.8,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Climeworks (headquarters, Orca plant)",
-        "ETH Zurich",
-        "EPFL"
+        "Climeworks (world leader in DAC technology)",
+        "ETH Zurich, EPFL (leading research in materials science, energy systems)",
+        "Government funding for climate innovation and startups"
       ],
-      "rationale": "Switzerland is home to Climeworks, a global leader in Direct Air Capture (DAC), and boasts world-class research institutions. While the domestic market is small, its contribution to frontier R&D is significant."
+      "rationale": "Switzerland is home to a global leader in DAC (Climeworks) and boasts world-class research institutions. Despite a smaller industrial base, its focus on high-tech, frontier R&D in carbon capture is exceptionally strong, leading to a medium volume of highly specialized roles."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.6,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Stockholm Exergi (bio-CCS project)",
-        "SSAB (fossil-free steel initiatives)",
-        "Vattenfall",
-        "Chalmers University of Technology"
+        "Stockholm Exergi (BECCS project)",
+        "Vattenfall (CCS initiatives)",
+        "Chalmers University of Technology, KTH Royal Institute of Technology",
+        "Government support for bio-CCS (BECCS) and industrial decarbonization"
       ],
-      "rationale": "Sweden has ambitious climate targets and is a leader in bio-CCS and industrial decarbonization. It has strong engineering and specific R&D efforts, particularly in hard-to-abate sectors."
+      "rationale": "Sweden has ambitious climate targets and a strong focus on industrial CCS and bio-energy with carbon capture and storage (BECCS). Significant pilot projects and R&D efforts contribute to a medium volume of advanced roles with a good frontier component."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Fortum",
-        "Neste (biofuels, CCU potential)",
-        "VTT Technical Research Centre"
+        "Fortum (CCS/CCU initiatives)",
+        "VTT Technical Research Centre of Finland",
+        "Universities (e.g., Aalto University)",
+        "Focus on industrial CCS and BECCS, particularly in pulp and paper industry"
       ],
-      "rationale": "Finland focuses on industrial CCU/CCS and bio-CCS, leveraging its strong engineering and research capabilities. The overall volume of dedicated advanced roles is moderate."
+      "rationale": "Finland, similar to Sweden, has a strong focus on industrial CCS and BECCS, driven by its energy and forest industries. While active in R&D and pilot projects, the overall volume of advanced roles is somewhat lower than its Nordic neighbor."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Quest CCS Facility (Shell)",
-        "Boundary Dam CCS Facility (SaskPower)",
-        "Carbon Engineering (origin)",
+        "Quest CCS facility (Shell), Boundary Dam CCS project (SaskPower)",
         "Alberta Carbon Trunk Line (ACTL)",
-        "Federal investment tax credits"
+        "Government tax credits and funding for CCS projects",
+        "Carbon Capture Canada conference, universities (e.g., University of Calgary)"
       ],
-      "rationale": "Canada is a global leader in large-scale industrial CCS, with several operational projects and strong government support. It also has a strong connection to DAC innovation (Carbon Engineering originated here)."
+      "rationale": "Canada has a significant oil and gas industry and has been an early adopter of large-scale industrial CCS projects. Strong government support and a robust engineering sector drive a high volume of advanced roles, particularly in geological storage and industrial applications."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Gorgon CCS Project (Chevron)",
-        "CarbonNet Project",
-        "CSIRO",
-        "Santos",
-        "Woodside",
-        "Government CCS initiatives"
+        "Gorgon CCS project (Chevron)",
+        "CarbonNet Project (Victoria)",
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "Global CCS Institute (headquartered in Melbourne)",
+        "Significant geological storage potential"
       ],
-      "rationale": "Australia has significant geological storage potential and a strong government push for CCS, particularly from its fossil fuel industry. It hosts large-scale projects and has robust research capabilities."
+      "rationale": "Australia has vast geological storage potential and a strong interest in CCS, particularly for its fossil fuel and heavy industries. While projects like Gorgon have faced challenges, there's ongoing investment in large-scale CCS and related R&D, creating a medium volume of advanced roles."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Emerging climate tech startups",
-        "Academic research in sustainability"
+        "Some academic research (e.g., Trinity College Dublin)",
+        "Limited heavy industry for large-scale CCS",
+        "Focus on general climate tech innovation rather than specific CCS/DAC deployment"
       ],
-      "rationale": "Ireland has a growing climate tech scene, but advanced Carbon Capture & Climate Tech is a relatively niche area. Dedicated frontier R&D and large-scale projects are limited."
+      "rationale": "Ireland has a growing tech sector and climate ambitions, but its industrial base is not conducive to large-scale CCS/DAC deployment. Advanced roles are very limited, primarily in early-stage academic research or supporting broader European initiatives."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "skill_level": 4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Antwerp@C project",
-        "Fluxys",
-        "TotalEnergies (local operations)",
-        "Industrial clusters"
+        "Antwerp@C project (industrial CCS hub)",
+        "Fluxys (CO2 transport infrastructure)",
+        "Ghent University, KU Leuven (research in chemical engineering, materials)",
+        "Government support for industrial decarbonization"
       ],
-      "rationale": "Belgium, with its industrial clusters, is showing growing interest in CCS and CCU, with projects like Antwerp@C. It has strong engineering capabilities, but the overall volume is moderate."
+      "rationale": "Belgium, with its industrial heartland and major ports, is actively pursuing industrial CCS and CCU projects. This drives a low but growing volume of advanced roles, with a good skill level and some frontier R&D in technology integration and infrastructure."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "OMV (CCU research)",
-        "Academic institutions"
+        "Some university research (e.g., TU Wien)",
+        "Limited heavy industry for large-scale CCS",
+        "Focus on niche CCU or DAC applications rather than large-scale capture"
       ],
-      "rationale": "Austria has some climate tech activity and research, but advanced Carbon Capture & Climate Tech is a niche domain. Dedicated frontier R&D and large-scale deployment are limited."
+      "rationale": "Austria has a strong environmental focus and good research capabilities, but its industrial structure and lack of suitable geological storage limit large-scale CCS/DAC deployment. Advanced roles are very limited, primarily in academic research or small-scale CCU initiatives."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Eni (Ravenna CCS project)",
-        "Snam",
-        "University research"
+        "Eni (CCS projects, e.g., Ravenna CCS project)",
+        "Snam (CO2 transport infrastructure studies)",
+        "Universities (e.g., Politecnico di Milano) research",
+        "Growing interest in industrial decarbonization"
       ],
-      "rationale": "Italy has growing interest in industrial CCS and CCU, with projects like Eni's Ravenna. It possesses strong engineering capabilities, but the overall market volume is still developing."
+      "rationale": "Italy has an industrial economy and growing interest in CCS, with some major energy companies exploring projects. However, the overall market for advanced roles is still very low, with deployment slower than in Northern European countries, and frontier R&D limited."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
-        "Repsol (CCU initiatives)",
-        "Endesa",
-        "University research"
+        "Repsol (CCU initiatives, industrial decarbonization)",
+        "Some university research (e.g., CSIC)",
+        "Early stages of large-scale CCS/DAC development"
       ],
-      "rationale": "Spain is seeing increased activity in industrial decarbonization, including CCS and CCU. It has strong engineering talent, but the market for advanced roles is still in a growth phase."
+      "rationale": "Spain has a growing interest in climate tech and some industrial emissions, but advanced Carbon Capture & Climate Tech is in its early stages. The volume of dedicated roles is very low, primarily focused on early research and industrial decarbonization studies rather than large-scale projects."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Petronas (CCS projects, e.g., Kasawari)",
-        "Government initiatives"
+        "Petronas (some early CCS feasibility studies)",
+        "Limited public information on significant advanced CCS/DAC projects or R&D",
+        "Focus on oil and gas production, with CCS as an emerging consideration"
       ],
-      "rationale": "Malaysia has emerging interest in CCS, particularly driven by Petronas for offshore gas fields. The market for advanced roles is nascent, with focus on specific industrial applications."
+      "rationale": "Malaysia is an oil and gas producer with emerging interest in CCS, but advanced Carbon Capture & Climate Tech roles are negligible. Activity is limited to very early-stage feasibility studies and basic research, with no significant frontier R&D or deployment."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
-      "skill_level": 1,
+      "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "General decarbonization goals",
-        "Limited specific CC&CT projects reported"
+        "Limited public information on significant advanced CCS/DAC projects or R&D",
+        "Rapidly industrializing economy, but CCS/DAC is very nascent"
       ],
-      "rationale": "Vietnam's advanced Carbon Capture & Climate Tech market is currently negligible, with very limited dedicated projects or frontier R&D reported. Focus is primarily on renewable energy deployment."
+      "rationale": "Vietnam is a rapidly industrializing country with high emissions, but advanced Carbon Capture & Climate Tech is extremely nascent. There are virtually no dedicated advanced roles, with any activity limited to very basic research or initial awareness."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
-      "skill_level": 1,
+      "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "General decarbonization goals",
-        "Limited specific CC&CT projects reported"
+        "Limited public information on significant advanced CCS/DAC projects or R&D",
+        "Industrializing economy, but CCS/DAC is very nascent"
       ],
-      "rationale": "Thailand's advanced Carbon Capture & Climate Tech market is currently negligible, with very limited dedicated projects or frontier R&D reported. Focus is primarily on renewable energy deployment."
+      "rationale": "Thailand is an industrializing economy, but advanced Carbon Capture & Climate Tech is in its very early stages. There are negligible advanced roles, with any activity limited to very basic research or initial awareness, far from frontier R&D or significant deployment."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Pertamina (CCS pilots)",
-        "Potential for regional CCS hubs",
-        "Government interest in geological storage"
+        "Pertamina (CCS studies and potential projects, e.g., Tangguh CCS)",
+        "Significant potential for geological CO2 storage",
+        "Government interest in CCS development for decarbonization"
       ],
-      "rationale": "Indonesia has significant potential for geological storage and growing interest from its oil and gas sector (Pertamina) for CCS pilots. The market for advanced roles is nascent."
+      "rationale": "Indonesia, a large fossil fuel producer with significant emissions and geological storage potential, is in the early stages of CCS development. While there's growing interest and some feasibility studies, the volume of advanced roles is very low, with limited frontier R&D."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "low",
-      "skill_level": 3,
+      "volume_band": "medium",
+      "skill_level": 4,
       "frontier": 0.6,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "ADNOC (Al Reyadah CCS project)",
-        "Masdar",
-        "COP28 host",
-        "Significant investment in clean energy"
+        "Al Reyadah CCS facility (ADNOC)",
+        "Masdar Institute (research in clean energy and CCUS)",
+        "Government initiatives for decarbonization and clean energy investment",
+        "International partnerships for climate tech development"
       ],
-      "rationale": "The UAE, a major oil and gas producer, is investing significantly in CC&CT, exemplified by the Al Reyadah project. It has strong engineering capabilities and a strategic focus on decarbonization."
+      "rationale": "The UAE, a major oil and gas producer, is making significant investments in clean energy and CCS/CCU as part of its diversification and decarbonization strategy. This drives a medium volume of advanced roles, with strong investment in R&D and large-scale industrial projects."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "low",
-      "skill_level": 3,
+      "volume_band": "medium",
+      "skill_level": 4,
       "frontier": 0.6,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Saudi Aramco (CCS projects)",
-        "SABIC (CCU initiatives)",
-        "King Abdullah University of Science and Technology (KAUST)",
-        "NEOM (future tech city)"
+        "Aramco (CCS projects and R&D initiatives)",
+        "NEOM (ambitious sustainable city projects with climate tech focus)",
+        "King Abdullah University of Science and Technology (KAUST) research",
+        "National energy transition and decarbonization plans"
       ],
-      "rationale": "Saudi Arabia, another major oil and gas producer, is actively pursuing CCS and CCU initiatives, led by Saudi Aramco and SABIC. It has strong engineering and growing R&D in this area."
+      "rationale": "Saudi Arabia, another major oil and gas producer, is investing heavily in CCS/CCU as part of its economic diversification and decarbonization goals. This includes significant industrial projects and R&D, creating a medium volume of advanced roles with a good frontier component."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Petrobras (CCS pilots)",
-        "University research",
-        "Potential for geological storage"
+        "Petrobras (some CCS research and pilot projects)",
+        "Universities (e.g., COPPE/UFRJ) research",
+        "Large economy with significant emissions, but CCS/DAC is nascent"
       ],
-      "rationale": "Brazil has potential for geological storage and some pilot projects, particularly from Petrobras. However, the advanced Carbon Capture & Climate Tech market is still in its early stages."
+      "rationale": "Brazil has a large economy and significant emissions, but advanced Carbon Capture & Climate Tech is still in its early stages, primarily focused on academic research and very limited pilot projects by state-owned companies. The volume of advanced roles is very low."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "PGE (CCS studies)",
-        "Tauron (CCS pilots)",
-        "National energy strategy"
+        "Some university research (e.g., AGH University of Science and Technology)",
+        "Coal-dependent economy with strong need for decarbonization",
+        "CCS has faced political hurdles, limiting large-scale deployment"
       ],
-      "rationale": "Poland, with its coal-dependent economy, is exploring CCS as a decarbonization tool, with some studies and pilot projects by major energy companies. The market for advanced roles is nascent."
+      "rationale": "Poland's coal-dependent economy presents a strong need for decarbonization, but CCS has faced political and economic challenges. While there is some research, the volume of advanced roles in Carbon Capture & Climate Tech remains very low, with limited large-scale projects or frontier R&D."
     }
   ]
 }

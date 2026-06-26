@@ -9,79 +9,83 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "DOE Hydrogen Program",
-        "Hydrogen Hubs initiative",
+        "Inflation Reduction Act (IRA)",
+        "Department of Energy Hydrogen Shot",
         "Plug Power",
         "Bloom Energy",
         "Cummins",
-        "National Renewable Energy Laboratory (NREL)",
-        "Lawrence Livermore National Laboratory (LLNL)"
+        "GM",
+        "NREL",
+        "Sandia National Laboratories",
+        "Air Products"
       ],
-      "rationale": "The US has robust government funding, significant private sector investment, and a strong research ecosystem driving high volume and frontier R&D in hydrogen and fuel cells."
+      "rationale": "The US has significant government incentives (IRA), a diverse ecosystem of startups and established industrial giants, and leading national labs driving both R&D and large-scale deployment of green hydrogen, fuel cells, and electrolyzers. This fosters a high volume of advanced roles across the value chain."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "National Hydrogen Strategy",
+        "China's National Hydrogen Strategy",
         "Sinopec",
         "Foton Motor",
-        "SAIC Motor",
-        "Dalian Institute of Chemical Physics (DICP)"
+        "Weichai Power",
+        "Peric Hydrogen",
+        "Sungrow",
+        "various provincial hydrogen initiatives"
       ],
-      "rationale": "China is aggressively pursuing hydrogen technologies with massive industrial scale and government support, leading to very high volume and increasing skill levels, with significant R&D efforts."
+      "rationale": "China has a massive industrial base and strong government support for hydrogen, particularly in fuel cell vehicles and electrolyzer manufacturing. While R&D is growing, the focus is also heavily on scaling production and domestic market deployment, leading to a high volume of advanced engineering and manufacturing roles."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
-      "confidence": "high",
-      "evidence": [
-        "METI Hydrogen Strategy",
-        "Toyota (Mirai FCV)",
-        "Honda",
-        "Panasonic",
-        "Toshiba",
-        "Japan Aerospace Exploration Agency (JAXA)"
-      ],
-      "rationale": "Japan has been a pioneer and long-term leader in hydrogen and fuel cell technology, with sustained government and industry investment, particularly in FCVs and stationary applications."
-    },
-    {
-      "country_iso": "KR",
-      "country_name": "South Korea",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Hydrogen Economy Roadmap",
-        "Hyundai (Nexo FCV)",
-        "SK E&S",
-        "Doosan Fuel Cell",
-        "LG Chem",
-        "Korea Institute of Science and Technology (KIST)"
+        "Japan's Basic Hydrogen Strategy",
+        "Toyota (Mirai)",
+        "Honda (Clarity)",
+        "Panasonic",
+        "Toshiba",
+        "Kawasaki Heavy Industries",
+        "NEDO"
       ],
-      "rationale": "South Korea has a clear national strategy and major conglomerates investing heavily in hydrogen, driving high volume and advanced R&D, especially in automotive and power generation."
+      "rationale": "Japan has been a long-standing pioneer in fuel cell technology, especially for automotive applications. It has a clear national strategy to establish a hydrogen society, with strong R&D and industrial players focusing on advanced fuel cells, hydrogen storage, and international supply chains. The volume is significant but perhaps not as broad as the US or Germany."
+    },
+    {
+      "country_iso": "KR",
+      "country_name": "South Korea",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "South Korea's Hydrogen Economy Roadmap",
+        "Hyundai (Nexo)",
+        "SK E&S",
+        "Hanwha Solutions",
+        "Doosan Fuel Cell",
+        "POSCO"
+      ],
+      "rationale": "South Korea has an aggressive national roadmap for a hydrogen economy, with major conglomerates investing heavily in fuel cell vehicles, power generation, and green hydrogen production. This drives a strong demand for advanced R&D and engineering roles, particularly in automotive and industrial applications."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "Industrial Technology Research Institute (ITRI)",
-        "Proton Exchange Membrane (PEM) component manufacturers",
-        "Academic research at National Taiwan University"
+        "some local electronics/materials companies exploring applications"
       ],
-      "rationale": "Taiwan has a strong tech manufacturing base and some academic research, but a smaller, more nascent hydrogen ecosystem compared to its neighbors, focusing on specific components."
+      "rationale": "Taiwan has a strong high-tech manufacturing base, but its hydrogen and fuel cell sector is more niche, focusing on specific components, materials, or small-scale applications, often driven by research institutes rather than large-scale industrial deployment. Advanced roles are limited."
     },
     {
       "country_iso": "DE",
@@ -91,47 +95,46 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "National Hydrogen Strategy",
-        "Siemens Energy",
-        "ThyssenKrupp",
-        "Bosch",
-        "Fraunhofer Institutes (e.g., ISE, ICT)",
-        "Helmholtz-Zentrum Berlin"
+        "Germany's National Hydrogen Strategy",
+        "Siemens Energy (electrolyzers)",
+        "ThyssenKrupp Nucera",
+        "Bosch (fuel cells)",
+        "Linde",
+        "Fraunhofer Institutes",
+        "H2Global initiative"
       ],
-      "rationale": "Germany is a global leader in renewable energy and industrial technology, with strong government support and research institutions, making it a key player in green hydrogen and electrolysis."
+      "rationale": "Germany is a global leader in industrial engineering and has a comprehensive national hydrogen strategy with substantial funding. It boasts strong R&D institutions and major industrial players developing cutting-edge electrolyzer technology, fuel cell systems, and hydrogen infrastructure, leading to a high volume of expert and frontier roles."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "National Hydrogen Strategy",
-        "Port of Rotterdam (hydrogen hub projects)",
-        "Shell",
-        "Gasunie",
-        "TNO (Netherlands Organisation for Applied Scientific Research)"
+        "Dutch National Hydrogen Strategy",
+        "Port of Rotterdam (hydrogen hub)",
+        "HyCC (electrolyzers)",
+        "Shell hydrogen projects",
+        "Gasunie"
       ],
-      "rationale": "The Netherlands is strategically positioned and investing heavily in hydrogen infrastructure and production, especially green hydrogen, with a focus on innovation and pilot projects."
+      "rationale": "The Netherlands has ambitious green hydrogen targets, leveraging its strategic port infrastructure (Rotterdam) for imports and industrial applications. This drives significant project development, engineering, and some R&D, creating a medium volume of advanced roles focused on deployment and infrastructure."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
         "UK Hydrogen Strategy",
-        "Johnson Matthey",
-        "ITM Power",
-        "Ceres Power",
-        "Imperial College London",
-        "University of Cambridge"
+        "ITM Power (electrolyzers)",
+        "Ceres Power (fuel cells)",
+        "academic research (e.g., Imperial College London)"
       ],
-      "rationale": "The UK has a solid research base and a developing hydrogen strategy with innovative startups, but industrial deployment is still scaling up, leading to medium volume and good frontier R&D."
+      "rationale": "The UK has a developing hydrogen strategy and some key players in electrolyzer and fuel cell manufacturing. While there's strong academic research, the overall industrial scale and deployment volume for advanced roles are still relatively low compared to other major European economies."
     },
     {
       "country_iso": "FR",
@@ -141,226 +144,214 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "National Hydrogen Strategy",
+        "France 2030 investment plan",
+        "Air Liquide (electrolyzers, distribution)",
         "Engie",
-        "Air Liquide",
-        "EDF",
-        "Commissariat \u00e0 l'\u00e9nergie atomique et aux \u00e9nergies alternatives (CEA)",
-        "Centre national de la recherche scientifique (CNRS)"
+        "Faurecia (hydrogen storage)",
+        "Symbio (fuel cell systems)",
+        "CEA"
       ],
-      "rationale": "France is investing significantly in hydrogen as part of its energy transition, leveraging its industrial and research strengths, particularly in nuclear-hydrogen coupling and industrial applications."
+      "rationale": "France has a strong national plan (France 2030) with significant investment in hydrogen. Major industrial players are active across the value chain, from electrolyzer manufacturing to fuel cell systems and distribution, driving a medium volume of advanced R&D, engineering, and industrialization roles."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "H2Pro (electrolyzer startup)",
         "GenCell Energy (fuel cells)",
-        "Technion \u2013 Israel Institute of Technology",
-        "Weizmann Institute of Science"
+        "various energy tech startups",
+        "academic research"
       ],
-      "rationale": "Israel has a strong innovation ecosystem and high-tech talent, leading to some innovative R&D in new materials and production methods, but a smaller overall industrial market for hydrogen."
+      "rationale": "Israel is known for its tech innovation and startup ecosystem. While there are niche players and startups in fuel cell technology and hydrogen production, the overall industrial scale and advanced job market volume for hydrogen are very low, focused on specialized R&D."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "National Green Hydrogen Mission",
-        "Reliance Industries (green hydrogen projects)",
-        "Adani Group (green hydrogen initiatives)",
-        "Indian Institutes of Technology (IITs)",
-        "Council of Scientific & Industrial Research (CSIR) labs"
+        "India's National Green Hydrogen Mission",
+        "Reliance Industries",
+        "Adani Group",
+        "NTPC"
       ],
-      "rationale": "India has massive potential and a strong government push through its National Green Hydrogen Mission, but the large-scale hydrogen economy is still in its formative years, with expertise developing."
+      "rationale": "India has launched an ambitious National Green Hydrogen Mission, attracting significant investment from large conglomerates. However, the advanced job market is still in its nascent stages, with most roles focused on project planning, feasibility studies, and early-stage R&D rather than large-scale advanced manufacturing or frontier research."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "National Hydrogen Strategy",
-        "Agency for Science, Technology and Research (A*STAR)",
-        "Nanyang Technological University (NTU)",
-        "National University of Singapore (NUS)"
+        "Singapore's National Hydrogen Strategy",
+        "Port of Singapore (bunkering initiatives)",
+        "Nanyang Technological University (NTU) research"
       ],
-      "rationale": "Singapore is positioning itself as a regional hydrogen hub, leveraging its research and port infrastructure for hydrogen import/export and storage, but domestic volume is limited."
+      "rationale": "Singapore is exploring hydrogen as an energy carrier and for bunkering, with a focus on imports and logistics. While there's some academic research and strategic planning, the domestic industrial base for advanced hydrogen production or fuel cell manufacturing is limited, leading to very low volume of advanced roles."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
-      "evidence": [
-        "ETH Zurich",
-        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
-        "Paul Scherrer Institute (PSI)",
-        "Specialized tech companies (e.g., in fuel cell components)"
-      ],
-      "rationale": "Switzerland has excellent research capabilities and a focus on high-tech solutions and specialized applications, but the overall hydrogen market is small in volume."
-    },
-    {
-      "country_iso": "SE",
-      "country_name": "Sweden",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "medium",
-      "evidence": [
-        "HYBRIT project (SSAB, LKAB, Vattenfall for fossil-free steel)",
-        "Volvo Group (fuel cell trucks)",
-        "Chalmers University of Technology",
-        "KTH Royal Institute of Technology"
-      ],
-      "rationale": "Sweden is pursuing hydrogen for industrial decarbonization, particularly in steel production and heavy transport, driving specific R&D and a growing market."
-    },
-    {
-      "country_iso": "FI",
-      "country_name": "Finland",
-      "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Fortum (green hydrogen projects)",
-        "W\u00e4rtsil\u00e4 (power solutions)",
-        "VTT Technical Research Centre of Finland",
-        "Aalto University"
+        "ETH Zurich",
+        "Empa",
+        "some specialized industrial gas companies (e.g., Messer)",
+        "H2 Energy"
       ],
-      "rationale": "Finland has a strong industrial base and is exploring hydrogen for decarbonization, particularly in industrial processes, but the market is still developing."
+      "rationale": "Switzerland has a strong reputation for high-tech R&D and precision engineering. Its hydrogen sector is niche, with advanced roles primarily in specialized research, component development, and some industrial applications, but the overall volume is very low due to limited large-scale industrial deployment."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "Hybrit (SSAB, LKAB, Vattenfall)",
+        "H2 Green Steel",
+        "PowerCell Sweden AB",
+        "Volvo Group"
+      ],
+      "rationale": "Sweden is a leader in green industrial transformation, notably with projects like Hybrit for fossil-free steel and H2 Green Steel. This drives demand for advanced roles in industrial hydrogen applications and some specialized fuel cell/electrolyzer development, but the overall volume remains very low."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre of Finland",
+        "some industrial players exploring green hydrogen for process heat/feedstock"
+      ],
+      "rationale": "Finland, similar to Sweden, has a focus on industrial decarbonization and green hydrogen for specific applications. While there's strong research and some industrial interest, the advanced job market volume is very low, primarily in R&D and project feasibility."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "National Hydrogen Strategy",
-        "Alberta Hydrogen Roadmap",
+        "Canada's Hydrogen Strategy",
         "Ballard Power Systems (fuel cells)",
         "Hydrogen Optimized (electrolyzers)",
-        "National Research Council of Canada (NRC)"
+        "various green hydrogen production projects"
       ],
-      "rationale": "Canada has significant natural resources for hydrogen production (both green and blue) and an ambitious national strategy, supported by strong research and key industry players."
+      "rationale": "Canada has abundant renewable energy resources and a national hydrogen strategy aiming for significant production and export. It hosts global leaders in fuel cell technology (Ballard) and emerging electrolyzer manufacturers, leading to a low but growing volume of advanced R&D, engineering, and project development roles."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "National Hydrogen Strategy",
+        "Australia's National Hydrogen Strategy",
         "Fortescue Future Industries (FFI)",
-        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
-        "University of New South Wales (UNSW)"
+        "Woodside Energy",
+        "ARENA funding for hydrogen projects"
       ],
-      "rationale": "Australia is positioning itself as a major hydrogen exporter, leveraging its abundant renewable energy resources for large-scale production, with developing expertise and R&D."
+      "rationale": "Australia has immense potential for green hydrogen exports and a national strategy to support it. Numerous large-scale projects are planned or under development, driving demand for advanced roles in project engineering, development, and some R&D, but the current volume is still low as many projects are in early stages."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Limited pilot projects (e.g., in transport)",
-        "Academic research at University College Dublin",
-        "National Energy and Climate Plan mentions hydrogen"
+        "Limited dedicated national hydrogen strategy or major industrial projects announced"
       ],
-      "rationale": "Ireland is in the very early stages of exploring hydrogen, with some academic interest and limited industrial initiatives, resulting in very low volume and nascent frontier R&D."
+      "rationale": "Ireland's hydrogen and fuel cell sector is currently negligible. While there might be nascent interest or very small-scale academic research, there's no significant industrial base or national strategy driving advanced job creation in this domain."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Federal Hydrogen Strategy",
-        "Port of Antwerp-Bruges (hydrogen import/production projects)",
-        "Fluxys (hydrogen infrastructure)",
-        "VITO (Flemish Institute for Technological Research)"
+        "Belgian Hydrogen Strategy",
+        "Port of Antwerp-Bruges (hydrogen import hub)",
+        "Fluxys (hydrogen infrastructure)"
       ],
-      "rationale": "Belgium is leveraging its strategic location and industrial clusters to develop a hydrogen economy, particularly for imports, transit, and industrial use, with growing research."
+      "rationale": "Belgium, with its strategic port infrastructure, is positioning itself as a hydrogen import and distribution hub for Europe. This creates some demand for advanced roles in infrastructure development, logistics, and industrial applications, but the domestic production and R&D volume are very low."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "skill_level": 2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "Austrian Hydrogen Strategy",
-        "Voestalpine (H2FUTURE project for green steel)",
-        "Technical University of Vienna",
-        "Austrian Institute of Technology (AIT)"
+        "OMV",
+        "Verbund",
+        "HyCentA Research GmbH"
       ],
-      "rationale": "Austria is exploring hydrogen for specific industrial decarbonization needs and has a good research base, but the overall market volume is relatively small."
+      "rationale": "Austria has a national hydrogen strategy focusing on industrial decarbonization and renewable hydrogen production. While there's some research and pilot projects, the overall advanced job market volume is very low, primarily in project planning and niche R&D."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "National Hydrogen Strategy",
-        "Snam (hydrogen infrastructure)",
-        "Eni (green hydrogen projects)",
-        "Politecnico di Milano",
-        "ENEA (Italian National Agency for New Technologies, Energy and Sustainable Economic Development)"
+        "Italy's National Hydrogen Strategy",
+        "Snam",
+        "Eni",
+        "Ansaldo Energia"
       ],
-      "rationale": "Italy has a national hydrogen strategy and some industrial players, but the market is still in early development, with growing interest in green hydrogen production and infrastructure."
+      "rationale": "Italy has a national hydrogen strategy and some industrial players exploring hydrogen for energy transition. However, the advanced job market is still in early development, with a very low volume of roles focused on project planning, infrastructure, and some R&D."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
-        "National Hydrogen Roadmap",
-        "Iberdrola (green hydrogen projects)",
+        "Spain's Hydrogen Roadmap",
+        "Iberdrola",
         "Repsol",
-        "National Centre for Hydrogen Technologies (CNH2)",
-        "Universities (e.g., Polytechnic University of Valencia)"
+        "Enag\u00e1s",
+        "various green hydrogen valley initiatives"
       ],
-      "rationale": "Spain has excellent renewable energy resources and a strong government push to become a green hydrogen producer and exporter, driving significant investment and developing expertise."
+      "rationale": "Spain has strong renewable energy potential and an ambitious hydrogen roadmap, aiming to become a major green hydrogen producer and exporter. This drives a growing demand for advanced roles in project development, engineering, and some R&D, leading to a low but significant volume."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Sarawak Energy (hydrogen production pilot)",
-        "Academic research at Universiti Teknologi Malaysia",
-        "Limited industrial initiatives"
+        "Limited dedicated national hydrogen strategy or major industrial projects announced"
       ],
-      "rationale": "Malaysia is in the very early stages of exploring hydrogen, with some pilot projects and academic interest, but lacks significant industrial scale or dedicated programs yet."
+      "rationale": "Malaysia's hydrogen and fuel cell sector is currently negligible. While there might be nascent interest, there's no significant industrial base or national strategy driving advanced job creation in this domain."
     },
     {
       "country_iso": "VN",
@@ -370,98 +361,91 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Very limited academic research",
-        "Nascent government interest in energy transition",
-        "No significant industrial hydrogen projects identified"
+        "Limited dedicated national hydrogen strategy or major industrial projects announced"
       ],
-      "rationale": "Vietnam is starting to show nascent interest in hydrogen as part of its energy transition, but currently has a very limited ecosystem with negligible job volume in advanced roles."
+      "rationale": "Vietnam's hydrogen and fuel cell sector is currently negligible. While there's growing interest in renewable energy, advanced hydrogen roles are not yet a significant part of the labour market."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "PTT (exploring hydrogen production)",
-        "Academic research at Chulalongkorn University",
-        "Limited pilot projects"
+        "Limited dedicated national hydrogen strategy or major industrial projects announced"
       ],
-      "rationale": "Thailand is exploring hydrogen but has a very nascent ecosystem, with some state-owned enterprises showing interest and limited academic research."
+      "rationale": "Thailand's hydrogen and fuel cell sector is currently negligible. While there's some exploration of energy transition, advanced hydrogen roles are not yet a significant part of the labour market."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Pertamina (exploring green hydrogen)",
-        "Academic research at University of Indonesia",
-        "Limited pilot projects"
+        "Limited dedicated national hydrogen strategy or major industrial projects announced"
       ],
-      "rationale": "Indonesia is starting to explore hydrogen, particularly green hydrogen production potential, but has a very nascent ecosystem with limited advanced job volume."
+      "rationale": "Indonesia's hydrogen and fuel cell sector is currently negligible. While there's potential for renewable energy, advanced hydrogen roles are not yet a significant part of the labour market."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "UAE Hydrogen Strategy",
-        "ADNOC (blue hydrogen projects)",
-        "Masdar (green hydrogen initiatives)",
-        "Siemens Energy partnerships (electrolyzers)"
+        "Masdar",
+        "ADNOC",
+        "Dubai Electricity and Water Authority (DEWA) green hydrogen project"
       ],
-      "rationale": "The UAE is leveraging its energy resources and capital to become a major hydrogen producer and exporter, with significant investment in pilot projects and developing expertise."
+      "rationale": "The UAE has ambitious plans to become a major producer and exporter of green and blue hydrogen, backed by significant government and state-owned enterprise investment. This drives demand for advanced roles in project development, engineering, and some R&D, but the current volume is still very low as projects scale up."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.8,
-      "confidence": "high",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
       "evidence": [
-        "NEOM (Helios Green Fuels project - world's largest green hydrogen plant)",
-        "Aramco (blue hydrogen initiatives)",
-        "ACWA Power",
-        "National strategies for hydrogen production"
+        "NEOM (Helios Green Fuels project with ACWA Power and Air Products)",
+        "Saudi Green Initiative",
+        "Aramco"
       ],
-      "rationale": "Saudi Arabia is making massive strategic investments to become a global leader in green and blue hydrogen production, particularly through projects like NEOM, driving high-level R&D."
+      "rationale": "Saudi Arabia is investing massively in green hydrogen production, notably with the NEOM project (Helios Green Fuels), aiming for large-scale exports. This creates demand for advanced roles in project development, engineering, and some R&D, but the current volume is very low as these mega-projects are in early stages of development and construction."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Cear\u00e1 Green Hydrogen Hub initiative",
-        "Academic research at Federal University of Rio de Janeiro",
-        "Some pilot projects for green hydrogen production"
+        "Cear\u00e1 Green Hydrogen Hub",
+        "Petrobras (exploring hydrogen)",
+        "academic research"
       ],
-      "rationale": "Brazil has significant renewable energy potential for green hydrogen but is still in the early stages of developing a comprehensive hydrogen economy, with emerging job volume and research."
+      "rationale": "Brazil has immense renewable energy potential and growing interest in green hydrogen production, particularly in states like Cear\u00e1. While there are plans for large-scale hubs, the advanced job market is still in its early stages, with very low volume focused on project planning and feasibility."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Polish Hydrogen Strategy",
-        "PKN Orlen (hydrogen production and distribution)",
-        "Academic research at Warsaw University of Technology",
-        "Industrial initiatives for decarbonization"
+        "Poland's Hydrogen Strategy",
+        "PKN Orlen",
+        "Grupa Azoty",
+        "some academic initiatives"
       ],
-      "rationale": "Poland is developing a hydrogen strategy to support its energy transition and industrial decarbonization, with growing interest and some industrial players, but the market is still nascent."
+      "rationale": "Poland is developing a national hydrogen strategy, primarily focusing on industrial applications and decarbonization. While there's interest from major state-owned enterprises, the advanced job market for hydrogen and fuel cells is still in its early stages, with very low volume."
     }
   ]
 }
