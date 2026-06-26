@@ -46,13 +46,16 @@ def run() -> dict:
     agg: dict[tuple, dict] = defaultdict(lambda: {"n": 0, "domains": Counter()})
     employer_sector = {}
 
+    n_ok = n_err = 0
     for b in boards:
         employer_sector[b["name"]] = b.get("sector", "")
         try:
             posts = scrape.fetch_board(b)
         except Exception as e:  # noqa: BLE001
             log(f"[err] {b['name']}: {e!r}")
+            n_err += 1
             continue
+        n_ok += 1
         for p in posts:
             c = classify_posting(p["title"], p["text"], p["location"], b.get("sector"))
             country = c["country"]
@@ -77,6 +80,18 @@ def run() -> dict:
             "n_roles": v["n"],
             "as_of": as_of,
         })
+
+    # Safety guard: never let a transient outage wipe the table. If every board
+    # errored (e.g. a DNS blackout — exactly what happened 2026-06-26), `rows` is
+    # empty not because the world has no footprint but because we couldn't reach
+    # it. Refuse the destructive replace and keep the prior snapshot instead.
+    if boards and n_ok == 0:
+        store = Store()
+        total = store.count_footprint()
+        store.close()
+        log(f"=== ABORTED: all {n_err} boards failed (no network?) — kept existing "
+            f"{total} rows, refused to overwrite with 0 ===")
+        return {"rows": 0, "multi_country": 0, "aborted": True, "kept": total}
 
     store = Store()
     n = store.replace_footprint(rows)

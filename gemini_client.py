@@ -48,8 +48,17 @@ def _post(url: str, body: dict, timeout: int = 120) -> dict:
 
 
 def structured(prompt: str, schema: dict, model: str | None = None,
-               temperature: float = 0.3, retries: int = 3) -> dict:
-    """Return parsed JSON object conforming to `schema`."""
+               temperature: float = 0.3, retries: int = 6) -> dict:
+    """Return parsed JSON object conforming to `schema`.
+
+    Resilient to laptop movement between networks (wifi/VPN handoffs cause DNS
+    `gaierror`, connection resets, and socket timeouts that can last tens of
+    seconds). Errors are classified:
+      - connectivity (URLError/gaierror/timeout/reset): LONG backoff so a single
+        call rides out a network switch (10,20,40,80,90,90s ~ up to ~5 min).
+      - transient server (HTTP 429/5xx, empty/garbled candidate): medium backoff.
+      - non-retryable (HTTP 4xx other than 429 = bad prompt/schema/key): fail fast.
+    """
     if not API_KEY:
         raise RuntimeError("GEMINI_API_KEY missing in .env")
     model = model or MODEL
@@ -71,9 +80,24 @@ def structured(prompt: str, schema: dict, model: str | None = None,
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "ignore")[:300]
             last_err = f"HTTP {e.code}: {detail}"
-        except (urllib.error.URLError, KeyError, IndexError, json.JSONDecodeError) as e:
+            # 4xx (except 429 rate-limit) is our fault, not the network's — don't hammer.
+            if 400 <= e.code < 500 and e.code != 429:
+                raise RuntimeError(f"Gemini call failed (non-retryable {e.code}): {detail}")
+            wait = min(60, 5 * (2 ** attempt))
+        except urllib.error.URLError as e:
+            # connectivity gap (DNS/connection) — the network-switch case. Wait it out.
             last_err = repr(e)
-        time.sleep(2 * (attempt + 1))
+            wait = min(90, 10 * (2 ** attempt))
+        except OSError as e:
+            # socket timeout / connection reset not wrapped in URLError — also connectivity.
+            last_err = repr(e)
+            wait = min(90, 10 * (2 ** attempt))
+        except (KeyError, IndexError, json.JSONDecodeError) as e:
+            # empty or malformed candidate — usually a transient server hiccup.
+            last_err = repr(e)
+            wait = min(30, 3 * (2 ** attempt))
+        if attempt < retries - 1:
+            time.sleep(wait)
     raise RuntimeError(f"Gemini call failed after {retries} tries: {last_err}")
 
 
