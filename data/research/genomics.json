@@ -9,14 +9,20 @@
       "frontier": 1.0,
       "confidence": "high",
       "evidence": [
+        "NIH",
         "Broad Institute",
+        "Harvard University",
+        "MIT",
+        "Stanford University",
+        "UCSF",
         "Illumina",
         "Regeneron",
-        "CRISPR Therapeutics (US presence)",
-        "NIH funding",
-        "numerous biotech startups and venture capital"
+        "CRISPR Therapeutics",
+        "Vertex Pharmaceuticals",
+        "numerous biotech startups",
+        "significant venture capital funding"
       ],
-      "rationale": "The US is the global leader in genomics and genetic engineering, with unparalleled research institutions, significant private and public funding, and a vibrant biotech ecosystem driving frontier innovation."
+      "rationale": "The US is the global leader in genomics and genetic engineering, with unparalleled research institutions, a vibrant biotech industry, massive funding, and a high volume of frontier R&D."
     },
     {
       "country_iso": "CN",
@@ -28,10 +34,11 @@
       "evidence": [
         "BGI Genomics",
         "Chinese Academy of Sciences (CAS)",
-        "national gene sequencing projects",
-        "significant government investment in biotech"
+        "national gene bank",
+        "extensive government funding for biotech",
+        "major research universities"
       ],
-      "rationale": "China has made massive strategic investments in genomics and genetic engineering, leading to rapid growth in research output, large-scale sequencing projects, and emerging frontier capabilities, though still catching up in some areas."
+      "rationale": "China has made massive strategic investments in genomics and genetic engineering, leading to rapid growth in research and application, with BGI being a global player. While rapidly advancing, some areas of frontier innovation are still catching up to the US."
     },
     {
       "country_iso": "JP",
@@ -43,11 +50,13 @@
       "evidence": [
         "RIKEN",
         "Kyoto University",
+        "Osaka University",
+        "National Institute of Genetics",
         "Takeda Pharmaceutical",
         "Astellas Pharma",
-        "focus on regenerative medicine"
+        "Japan Agency for Medical Research and Development (AMED)"
       ],
-      "rationale": "Japan possesses a strong foundation in life sciences and a robust pharmaceutical industry, with high-quality academic research contributing to genomics and genetic engineering, particularly in areas like regenerative medicine."
+      "rationale": "Japan has a strong foundation in life sciences and genomics research, with leading institutions and pharmaceutical companies. While high-quality, the commercialization and startup ecosystem might be less dynamic than in the US or China."
     },
     {
       "country_iso": "KR",
@@ -59,171 +68,184 @@
       "evidence": [
         "Seoul National University",
         "KAIST",
+        "POSTECH",
+        "Samsung Biologics",
+        "Celltrion",
         "Macrogen",
-        "Samsung Biologics (R&D focus)",
-        "national precision medicine initiatives"
+        "government initiatives like 'Bio-Korea'"
       ],
-      "rationale": "South Korea has significant government backing for biotech and precision medicine, fostering strong academic research and a growing industry presence in genomics and genetic engineering."
+      "rationale": "South Korea has rapidly invested in its biotech sector, with strong government support, leading universities, and emerging biopharmaceutical companies driving significant research and development in genomics."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Academia Sinica",
         "National Taiwan University",
+        "Industrial Technology Research Institute (ITRI)",
         "Taiwan Bio-Industry Organization",
-        "focus on precision medicine"
+        "developing biotech parks"
       ],
-      "rationale": "Taiwan has a developing biotech sector with strong academic institutions and a focus on precision medicine, leveraging its high-tech infrastructure, but with a smaller overall volume of advanced genomics roles."
+      "rationale": "Taiwan has a strong high-tech manufacturing base and is increasingly investing in biotechnology. While research quality is good, the overall volume and frontier R&D are smaller compared to major global players."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Max Planck Institutes",
         "Helmholtz Centres",
-        "EMBL (Heidelberg)",
-        "BioNTech",
+        "Fraunhofer Institutes",
+        "German Cancer Research Center (DKFZ)",
         "Bayer",
-        "Merck KGaA"
+        "Boehringer Ingelheim",
+        "BioNTech",
+        "CureVac"
       ],
-      "rationale": "Germany boasts a powerful combination of world-class academic research, particularly through its Max Planck and Helmholtz Institutes, and a strong pharmaceutical industry, making it a significant player in genomics and genetic engineering."
+      "rationale": "Germany boasts world-renowned research institutions and a strong pharmaceutical industry, contributing significantly to genomics and genetic engineering, particularly in areas like cancer research and vaccine development."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Leiden Bio Science Park",
-        "Utrecht Science Park",
-        "Erasmus MC",
         "Hubrecht Institute",
-        "Netherlands Genomics Initiative"
+        "Erasmus MC",
+        "Leiden University Medical Center",
+        "Utrecht University",
+        "Wageningen University & Research",
+        "strong biotech startup ecosystem"
       ],
-      "rationale": "The Netherlands has a concentrated and high-quality life sciences cluster with strong research universities and institutes, contributing to genomics and personalized medicine, albeit with a smaller market volume."
+      "rationale": "The Netherlands has a concentrated and high-quality life sciences cluster, particularly strong in academic research and a growing biotech startup scene, contributing to advanced genomics."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.9,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Wellcome Trust Sanger Institute",
+        "Wellcome Sanger Institute",
         "Francis Crick Institute",
-        "Genomics England",
+        "University of Cambridge",
+        "University of Oxford",
+        "Imperial College London",
         "AstraZeneca",
         "GSK",
-        "Oxford Nanopore Technologies"
+        "Oxford Nanopore Technologies",
+        "UK Biobank"
       ],
-      "rationale": "The UK is a global leader in genomics, driven by world-renowned research institutions, major pharmaceutical companies, and national initiatives like Genomics England, fostering significant frontier R&D."
+      "rationale": "The UK is a global powerhouse in genomics, with leading research institutes, top universities, major pharmaceutical companies, and significant national initiatives like the UK Biobank."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "Institut Pasteur",
-        "Genopole",
-        "Inserm",
         "CNRS",
+        "Inserm",
+        "Genopole",
         "Sanofi",
-        "France Genomique"
+        "Evry Genopole biocluster"
       ],
-      "rationale": "France has a strong public research sector and major pharmaceutical companies, with significant contributions to genomics and genetic engineering, particularly in fundamental research and rare diseases."
+      "rationale": "France has a strong public research sector with institutions like Institut Pasteur and national research agencies, alongside major pharmaceutical companies. Its genomics efforts are significant but perhaps less commercially driven than some counterparts."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "Weizmann Institute of Science",
-        "Technion",
-        "Tel Aviv University",
-        "numerous biotech startups",
-        "national genomics initiatives"
+        "Technion \u2013 Israel Institute of Technology",
+        "Hebrew University of Jerusalem",
+        "vibrant biotech startup scene",
+        "significant VC funding"
       ],
-      "rationale": "Israel's high-tech ecosystem extends to biotech, with innovative research institutions and a vibrant startup scene contributing to genomics and computational biology, despite a smaller overall market size."
+      "rationale": "Israel's 'startup nation' ethos extends to biotech, with world-class academic institutions and a dynamic ecosystem of startups, particularly strong in bioinformatics and medical technologies."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
+        "Council of Scientific & Industrial Research (CSIR) labs",
+        "National Centre for Biological Sciences (NCBS)",
         "Centre for Cellular and Molecular Biology (CCMB)",
-        "CSIR-Institute of Genomics and Integrative Biology (IGIB)",
-        "Biocon",
-        "Strand Life Sciences"
+        "MedGenome",
+        "growing private genomics companies"
       ],
-      "rationale": "India has a growing pharmaceutical and biotechnology sector, with strong bioinformatics capabilities and emerging genomics research, but advanced gene editing and frontier R&D are still in earlier stages."
+      "rationale": "India has a large scientific talent pool and growing investment in life sciences. While foundational research is present, the advanced genomics market is still developing, with some notable private players emerging."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.6,
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "A*STAR (Genome Institute of Singapore)",
-        "National University of Singapore",
-        "Nanyang Technological University",
+        "A*STAR (Agency for Science, Technology and Research)",
+        "National University of Singapore (NUS)",
+        "Nanyang Technological University (NTU)",
+        "Genome Institute of Singapore (GIS)",
         "Biopolis research hub"
       ],
-      "rationale": "Singapore has made strategic investments in biomedical sciences, attracting top talent and establishing world-class research institutes like the Genome Institute of Singapore, with a focus on Asian genomics."
+      "rationale": "Singapore has strategically invested heavily in biomedical sciences, creating a world-class research ecosystem with state-of-the-art facilities and a strong focus on genomics research and applications."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "ETH Zurich",
         "EPFL",
         "University of Basel",
-        "Roche",
+        "Friedrich Miescher Institute for Biomedical Research",
         "Novartis",
-        "Swiss Institute of Bioinformatics"
+        "Roche",
+        "Swiss National Science Foundation"
       ],
-      "rationale": "Switzerland's world-leading pharmaceutical industry and top-tier universities drive significant research and development in genomics and genetic engineering, particularly in precision medicine and drug discovery."
+      "rationale": "Switzerland combines elite academic institutions with global pharmaceutical giants, fostering high-quality, frontier-level research in genomics and genetic engineering, albeit with a smaller overall volume."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "Karolinska Institutet",
-        "SciLifeLab",
         "Uppsala University",
-        "AstraZeneca (R&D presence)"
+        "Lund University",
+        "SciLifeLab",
+        "AstraZeneca (research presence)"
       ],
-      "rationale": "Sweden has a strong life sciences sector, anchored by institutions like Karolinska Institutet and SciLifeLab, contributing high-quality research in genomics, though with a smaller overall market volume."
+      "rationale": "Sweden has a strong tradition of medical research, particularly at institutions like Karolinska Institutet and through collaborative platforms like SciLifeLab, contributing to advanced genomics."
     },
     {
       "country_iso": "FI",
@@ -235,83 +257,88 @@
       "evidence": [
         "University of Helsinki",
         "Institute for Molecular Medicine Finland (FIMM)",
-        "national biobank initiatives",
-        "Blueprint Genetics"
+        "national biobank network",
+        "strong health tech focus"
       ],
-      "rationale": "Finland excels in health tech and data, with strong research in population genomics and biobanking, but the overall volume of advanced genomics jobs remains relatively low."
+      "rationale": "Finland has a high-quality, but smaller-scale, genomics research landscape, particularly strong in population genetics and biobank initiatives, driven by institutions like FIMM."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "University of Toronto (SickKids)",
+        "University of Toronto",
         "McGill University",
+        "University of British Columbia",
         "Genome Canada",
-        "Stem Cell Network"
+        "Ontario Institute for Cancer Research",
+        "MaRS Discovery District"
       ],
-      "rationale": "Canada has strong academic research institutions and government funding for genomics, with notable hubs in Toronto, Montreal, and Vancouver, but faces challenges with brain drain to the US."
+      "rationale": "Canada has strong academic research in genomics, supported by national funding bodies and leading universities, with emerging biotech clusters, particularly in Toronto and Montreal."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Garvan Institute of Medical Research",
-        "Walter and Eliza Hall Institute",
+        "Walter and Eliza Hall Institute of Medical Research",
         "CSIRO",
         "Australian Genomics Health Alliance"
       ],
-      "rationale": "Australia has a robust medical research sector with excellent universities and institutes contributing to genomics, particularly in health and agriculture, but with a smaller market scale."
+      "rationale": "Australia has reputable medical research institutes and national genomics programs, contributing to advanced research, though the commercialization scale is smaller than larger economies."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
         "University College Dublin",
         "Trinity College Dublin",
-        "National Centre for Biomedical Engineering Science"
+        "National University of Ireland Galway",
+        "SFI Research Centres (e.g., FutureNeuro)"
       ],
-      "rationale": "Ireland has a significant pharmaceutical manufacturing presence, but advanced genomics R&D is still relatively nascent, with academic research leading the way."
+      "rationale": "Ireland has a growing life sciences sector, primarily in manufacturing, with increasing but still nascent research in advanced genomics at its universities and SFI research centers."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "VIB (Flanders Institute for Biotechnology)",
         "KU Leuven",
         "Ghent University",
-        "Janssen Pharmaceutica"
+        "Universit\u00e9 catholique de Louvain",
+        "strong biotech cluster"
       ],
-      "rationale": "Belgium, particularly Flanders, has a strong biotech cluster with excellent academic research institutes like VIB and a significant pharmaceutical industry presence, contributing to genomics."
+      "rationale": "Belgium has a strong academic research base in biotechnology, particularly in Flanders with institutions like VIB, contributing to high-quality genomics research and a vibrant biotech cluster."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "low",
       "evidence": [
-        "CeMM (Research Center for Molecular Medicine)",
-        "Medical University of Vienna",
-        "Institute of Molecular Biotechnology (IMBA)"
+        "Research Institute of Molecular Pathology (IMP)",
+        "CeMM Research Center for Molecular Medicine",
+        "University of Vienna",
+        "Austrian Academy of Sciences"
       ],
-      "rationale": "Austria has high-quality academic research in molecular biology and medicine, with specific institutes focused on advanced genomics, but the overall market volume is small."
+      "rationale": "Austria has excellent specialized research institutes in molecular biology and medicine, contributing to advanced genomics, but the overall market volume remains relatively small."
     },
     {
       "country_iso": "IT",
@@ -319,29 +346,29 @@
       "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.4,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
         "Human Technopole",
         "San Raffaele Hospital",
         "Telethon Institute of Genetics and Medicine (TIGEM)",
-        "Italian Institute of Technology"
+        "various university research centers"
       ],
-      "rationale": "Italy has a strong academic tradition in biomedical research and emerging large-scale initiatives like Human Technopole, contributing to genomics, though industrial investment is less pronounced."
+      "rationale": "Italy has a strong academic tradition in biomedical research, with some prominent institutes and emerging national initiatives like Human Technopole, but the commercialization and job market are still developing."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "low",
-      "skill_level": 3,
+      "skill_level": 2,
       "frontier": 0.4,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "CNIO (Spanish National Cancer Research Centre)",
-        "CRG (Centre for Genomic Regulation)",
-        "Spanish National Centre for Cardiovascular Research (CNIC)",
+        "Spanish National Cancer Research Centre (CNIO)",
+        "Centre for Genomic Regulation (CRG)",
+        "National Centre for Biotechnology (CNB)",
         "national genomics programs"
       ],
-      "rationale": "Spain has developed strong centers of excellence in genomic research, particularly in cancer and rare diseases, with increasing national investment, but the overall market size remains moderate."
+      "rationale": "Spain has made significant strides in biomedical research with specialized centers like CRG and CNIO, and national genomics programs, but the overall volume of advanced roles is still moderate."
     },
     {
       "country_iso": "MY",
@@ -351,23 +378,24 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "University Malaya",
-        "Malaysian Genomics Resource Centre Berhad (MGRC)"
+        "Universiti Malaya",
+        "Universiti Kebangsaan Malaysia",
+        "some government initiatives in biotechnology, but advanced genomics is nascent"
       ],
-      "rationale": "Malaysia's biotech sector is emerging, with some basic research and service providers in genomics, but very limited advanced R&D or significant job volume in frontier genetic engineering."
+      "rationale": "Malaysia is developing its biotechnology sector, but advanced genomics and genetic engineering roles are very limited, primarily focused on basic research and agricultural applications."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "Vietnam National University",
-        "some agricultural research institutes"
+        "Vietnam Academy of Science and Technology",
+        "some university research, but advanced genomics is very limited"
       ],
-      "rationale": "Vietnam has a nascent biotech sector, primarily focused on agriculture and basic health, with very limited infrastructure and expertise for advanced genomics and genetic engineering R&D."
+      "rationale": "Vietnam's genomics capabilities are in very early stages, with minimal advanced research or commercial activity in genetic engineering."
     },
     {
       "country_iso": "TH",
@@ -378,22 +406,24 @@
       "confidence": "low",
       "evidence": [
         "National Center for Genetic Engineering and Biotechnology (BIOTEC)",
-        "Mahidol University"
+        "Mahidol University",
+        "Chulalongkorn University",
+        "focus on agricultural biotechnology"
       ],
-      "rationale": "Thailand is developing its biotech capabilities, particularly in agriculture and tropical diseases, but advanced genomics and genetic engineering R&D are still in early stages with low job volume."
+      "rationale": "Thailand has a national biotechnology center, but advanced genomics and genetic engineering roles are very limited, with a stronger focus on agricultural and industrial biotechnology."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
         "Eijkman Institute for Molecular Biology (now part of BRIN)",
-        "University of Indonesia"
+        "some university research, but advanced genomics is very limited"
       ],
-      "rationale": "Indonesia has a very limited advanced biotech and genomics infrastructure, with research primarily focused on public health and basic biology, and negligible frontier R&D."
+      "rationale": "Indonesia's genomics and genetic engineering sector is very nascent, with limited advanced research or commercial activity."
     },
     {
       "country_iso": "AE",
@@ -401,14 +431,13 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.3,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "UAE Genome Program",
-        "Khalifa University",
-        "NYU Abu Dhabi",
-        "Mohammed Bin Rashid University of Medicine and Health Sciences"
+        "Mohammed Bin Rashid University of Medicine and Health Sciences (MBRU)",
+        "UAE National Genome Project",
+        "some emerging research centers"
       ],
-      "rationale": "The UAE is making significant investments in healthcare and research, including large-scale genomics programs, attracting international talent to build its capabilities from a relatively low base."
+      "rationale": "The UAE is making significant investments in healthcare and research, including a national genome project, but the advanced genomics job market is still in its early growth phase."
     },
     {
       "country_iso": "SA",
@@ -416,29 +445,28 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.4,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
         "King Abdullah University of Science and Technology (KAUST)",
         "King Faisal Specialist Hospital and Research Centre",
-        "Saudi Human Genome Program",
-        "NEOM (planned research initiatives)"
+        "Saudi Human Genome Project"
       ],
-      "rationale": "Saudi Arabia is investing heavily in research and development, particularly through new research cities and national genomics programs, aiming to build significant capabilities in advanced biotech."
+      "rationale": "Saudi Arabia has invested heavily in research infrastructure, particularly at KAUST and through initiatives like the Saudi Human Genome Project, fostering emerging genomics capabilities."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "medium",
+      "frontier": 0.3,
+      "confidence": "low",
       "evidence": [
-        "FAPESP",
-        "Fiocruz",
+        "FAPESP (S\u00e3o Paulo Research Foundation)",
+        "Oswaldo Cruz Foundation (Fiocruz)",
         "University of S\u00e3o Paulo",
-        "focus on tropical diseases and agricultural genomics"
+        "Brazilian National Research Council (CNPq)"
       ],
-      "rationale": "Brazil has a strong academic research base in life sciences, particularly in areas like tropical diseases and agricultural genomics, but industrial scale and frontier genetic engineering remain limited."
+      "rationale": "Brazil has a strong academic base in life sciences, particularly in S\u00e3o Paulo, with significant research in genomics, but faces challenges in commercialization and scaling the advanced job market."
     },
     {
       "country_iso": "PL",
@@ -451,9 +479,9 @@
         "University of Warsaw",
         "Jagiellonian University",
         "Institute of Bioorganic Chemistry PAS",
-        "some national genomics initiatives"
+        "some national research programs"
       ],
-      "rationale": "Poland has a growing research and development sector with good academic institutions, but advanced genomics and genetic engineering are still emerging, with limited frontier R&D and job volume."
+      "rationale": "Poland has a developing research infrastructure in genomics, with universities and institutes conducting foundational work, but the advanced job market volume is still limited."
     }
   ]
 }

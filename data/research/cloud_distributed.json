@@ -6,52 +6,60 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "AWS (Amazon Web Services)",
+        "AWS",
         "Microsoft Azure",
-        "Google Cloud Platform (GCP)",
-        "Netflix",
+        "Google Cloud Platform (main providers)",
+        "Google",
+        "Microsoft",
+        "Amazon",
         "Meta",
-        "Uber",
-        "Cloud Native Computing Foundation (CNCF)",
-        "Major universities (CMU, Stanford, Berkeley)"
+        "Netflix",
+        "IBM",
+        "Oracle",
+        "VMware",
+        "numerous startups",
+        "academic research at Stanford, CMU, MIT, Berkeley",
+        "CNCF contributions"
       ],
-      "rationale": "The US is the global leader in cloud infrastructure and distributed systems, home to the largest hyperscalers and numerous innovative tech companies. Significant R&D and a massive demand for advanced roles drive a very high volume and frontier skill level."
+      "rationale": "The US is the global epicenter for Cloud & Distributed Systems, hosting the largest cloud providers, major tech giants driving innovation, and a vibrant startup ecosystem. Significant R&D occurs in both industry and academia, leading to constant advancements in serverless, microservices, Kubernetes, SRE, and distributed databases. The talent pool is vast and highly skilled, with a strong emphasis on frontier technologies."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Alibaba Cloud",
         "Tencent Cloud",
         "Huawei Cloud",
-        "Baidu",
-        "ByteDance",
-        "National AI and cloud infrastructure strategies"
+        "Baidu Cloud",
+        "major tech companies like ByteDance, JD.com",
+        "government-backed initiatives for digital infrastructure",
+        "academic research at Tsinghua, Peking University"
       ],
-      "rationale": "China has a rapidly growing and massive domestic tech market, driven by its own hyperscalers and tech giants. Significant investment in cloud infrastructure and AI contributes to high volume and advanced capabilities, though sometimes with a domestic focus."
+      "rationale": "China has a massive domestic market driving the growth of its own cloud giants. Companies like Alibaba and Tencent operate at immense scale, pushing the boundaries of distributed systems for e-commerce, social media, and AI. While there's strong adoption and scaling of advanced cloud technologies, pure foundational 'frontier' research might be slightly less than the US, though rapidly increasing."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "NTT Data",
         "Fujitsu",
-        "NEC",
-        "SoftBank",
-        "Growing presence of AWS/Azure/GCP regions"
+        "Hitachi",
+        "growing presence of AWS/Azure/GCP",
+        "some startups",
+        "academic research at University of Tokyo, Kyoto University"
       ],
-      "rationale": "Japan has a mature economy with a strong industrial base, but cloud-native adoption has been more gradual. There's increasing investment in digital transformation, leading to medium volume and a solid, but not frontier-leading, skill level."
+      "rationale": "Japan's enterprise sector has been slower to fully embrace cloud-native architectures, often preferring on-premise or hybrid solutions. However, there's a growing push for digital transformation, leading to increased demand for cloud skills. While there are highly skilled engineers and some R&D, the overall volume of advanced, frontier-level distributed systems work is not as high as in leading tech nations."
     },
     {
       "country_iso": "KR",
@@ -59,15 +67,16 @@
       "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.6,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "Samsung SDS",
         "Naver Cloud",
         "Kakao Enterprise",
-        "KT Cloud",
-        "Government digital transformation initiatives"
+        "LG CNS",
+        "major tech companies like Samsung, Naver, Kakao",
+        "academic research at KAIST, Seoul National University"
       ],
-      "rationale": "South Korea is highly digitized with major tech conglomerates investing heavily in cloud and AI. This drives a medium volume of advanced roles and a high skill level, with notable frontier work in specific areas."
+      "rationale": "South Korea is a highly digitized nation with strong domestic tech giants like Samsung, Naver, and Kakao, which operate large-scale distributed systems for their services. There's significant investment in AI, 5G, and related cloud infrastructure, leading to a high skill level and substantial R&D, particularly in areas supporting their core businesses."
     },
     {
       "country_iso": "TW",
@@ -77,64 +86,67 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "TSMC (indirectly, data center needs)",
-        "Foxconn",
+        "TSMC",
+        "Foxconn (hardware focus)",
         "Acer",
-        "ASUS",
-        "Chunghwa Telecom"
+        "Asus",
+        "some local cloud providers and startups",
+        "academic research at National Taiwan University"
       ],
-      "rationale": "Taiwan excels in hardware and semiconductors, which are foundational to cloud, but its domestic cloud software and distributed systems market is smaller. The skill level is strong in engineering, but frontier R&D in cloud software is more limited."
+      "rationale": "Taiwan is a global leader in hardware manufacturing (semiconductors, electronics), which means its tech talent often leans towards hardware engineering. While there's a growing software sector and increasing cloud adoption, the volume of advanced, frontier-level distributed systems roles is not as high as in countries with larger software-centric economies. However, there's expertise in building highly reliable systems."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
         "SAP",
         "Siemens",
         "Deutsche Telekom (T-Systems)",
-        "Bosch",
+        "many mid-sized enterprises adopting cloud",
         "Fraunhofer Institutes",
-        "Gaia-X initiative"
+        "Max Planck Society",
+        "growing startup scene in Berlin, Munich"
       ],
-      "rationale": "Germany has Europe's largest economy with a strong industrial and enterprise software sector. Significant investment in cloud, data sovereignty (Gaia-X), and a robust engineering culture drive high volume and advanced skill levels."
+      "rationale": "Germany has a robust economy with a strong industrial and enterprise software sector. Cloud adoption is accelerating, driven by digital transformation initiatives and a focus on data sovereignty. Companies like SAP are major players in enterprise cloud. There's a high demand for skilled cloud and distributed systems engineers, with significant R&D in areas like industrial IoT, automotive software, and enterprise solutions."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.5,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
+        "Amsterdam tech hub",
         "Booking.com",
         "Adyen",
-        "ING",
-        "Philips",
-        "TU Delft",
-        "Strong presence of hyperscaler regions"
+        "Elastic",
+        "presence of AWS/Azure/GCP regions",
+        "strong startup ecosystem"
       ],
-      "rationale": "A highly digitalized and innovative economy with a strong startup scene and good talent pool. This results in a medium volume of advanced cloud roles and a high skill level, with some frontier work in specific domains."
+      "rationale": "The Netherlands has a dynamic tech scene, particularly in Amsterdam, with a strong focus on e-commerce, fintech, and data. Cloud adoption is high, and there's a good talent pool for implementing and managing distributed systems. While there are innovative companies, the volume of pure frontier R&D in core distributed systems is not as high as in larger economies."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "DeepMind (Google)",
-        "ARM",
-        "BT",
-        "Vodafone",
-        "Major financial institutions (e.g., HSBC, Barclays)",
-        "Leading universities (Oxford, Cambridge, Imperial)"
+        "London tech hub",
+        "ARM (influences distributed systems)",
+        "DeepMind (AI, uses distributed systems)",
+        "Monzo",
+        "Revolut",
+        "major presence of AWS/Azure/GCP",
+        "academic research at Imperial College, UCL, Cambridge, Oxford"
       ],
-      "rationale": "The UK is a major global financial and tech hub with a vibrant startup ecosystem and strong university research. This drives high demand for advanced cloud and distributed systems roles, with significant frontier R&D."
+      "rationale": "The UK, particularly London, is a major global tech hub with a strong financial services sector driving demand for robust, scalable distributed systems. There's a high volume of advanced cloud roles, significant startup activity, and R&D centers for global tech companies. Universities also contribute to frontier research, especially in AI and related distributed computing."
     },
     {
       "country_iso": "FR",
@@ -146,28 +158,29 @@
       "evidence": [
         "OVHcloud",
         "Dassault Syst\u00e8mes",
-        "Thales",
-        "Orange",
-        "Inria",
-        "French Tech initiatives"
+        "Scaleway",
+        "Station F (startup campus)",
+        "academic research at Inria, \u00c9cole Polytechnique"
       ],
-      "rationale": "France has a growing tech scene with strong government support for digital transformation. Good engineering schools and a focus on specific sectors contribute to a medium volume and solid skill level, with some notable frontier work."
+      "rationale": "France has been investing heavily in its tech ecosystem, with initiatives like Station F and strong government support. OVHcloud is a notable European cloud provider. While there's a growing demand for cloud and distributed systems skills, and strong engineering talent, the overall volume of advanced roles and frontier R&D is still developing compared to the leading global hubs."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Check Point",
-        "Palo Alto Networks (R&D centers)",
-        "Intel, Google, Microsoft R&D centers",
-        "Numerous cloud-native/DevOps startups",
-        "Technion, Weizmann Institute"
+        "Check Point Software",
+        "Palo Alto Networks (R&D)",
+        "Intel (R&D)",
+        "Microsoft (R&D)",
+        "Amazon (R&D)",
+        "numerous startups in deep tech",
+        "academic research at Technion, Weizmann Institute"
       ],
-      "rationale": "Known as the 'Startup Nation,' Israel has a highly skilled workforce and a strong R&D culture, particularly in cybersecurity, AI, and deep tech. This leads to a medium volume of highly advanced roles and significant frontier innovation."
+      "rationale": "Israel is renowned for its innovation and 'startup nation' culture, particularly in deep tech, cybersecurity, and AI. This drives a high demand for advanced distributed systems expertise. Many global tech giants have R&D centers in Israel, contributing to frontier work. The talent pool is highly skilled, often working on complex, specialized distributed challenges."
     },
     {
       "country_iso": "IN",
@@ -177,186 +190,180 @@
       "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "TCS, Infosys, Wipro, HCLTech (IT services)",
-        "Major R&D centers for Google, Microsoft, Amazon",
-        "Flipkart, Jio (domestic tech giants)"
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "HCLTech (IT services giants)",
+        "Flipkart",
+        "Zomato",
+        "Paytm (domestic tech)",
+        "R&D centers for Google, Microsoft, Amazon",
+        "IITs, IISc"
       ],
-      "rationale": "India possesses a massive talent pool and a significant IT services industry, increasingly moving towards product development and advanced cloud adoption. This drives very high volume, with a growing, but still developing, frontier capability."
+      "rationale": "India has a vast IT services industry and a rapidly growing domestic tech market, leading to a very high volume of cloud and distributed systems roles. While a significant portion is in implementation and managed services, there's a strong and growing segment of advanced engineering, especially in domestic tech companies operating at scale and R&D centers of MNCs. Frontier work is emerging but not as widespread as in the US or China."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
         "Grab",
         "Sea Group (Garena, Shopee)",
-        "Regional HQs for AWS, Google, Microsoft, Alibaba",
-        "A*STAR (Agency for Science, Technology and Research)",
-        "NUS, NTU"
+        "regional HQs/R&D for Google, AWS, Microsoft, Alibaba",
+        "government initiatives (Smart Nation)",
+        "A*STAR, NUS, NTU"
       ],
-      "rationale": "Singapore is a strategic regional tech hub with strong government support and a highly internationalized talent pool. It attracts major tech companies, leading to a medium volume of advanced roles and significant frontier R&D."
+      "rationale": "Singapore is a key tech hub in Southeast Asia, attracting significant investment from global tech companies. Its 'Smart Nation' initiatives drive demand for advanced distributed systems. There's a high skill level, particularly in fintech and AI, and a growing amount of R&D, making it a strong regional player in advanced cloud capabilities."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Google R&D (Zurich)",
+        "Google (Zurich office, significant engineering presence)",
         "IBM Research (Zurich)",
+        "major banks and financial institutions",
         "ETH Zurich",
-        "EPFL",
-        "CERN (indirectly, massive distributed data processing)"
+        "EPFL"
       ],
-      "rationale": "Switzerland has a high-value economy with excellent universities and a high-skilled workforce. While the overall volume is lower, the quality and frontier nature of R&D, particularly in distributed computing and AI, are very high."
+      "rationale": "Switzerland has a highly skilled workforce and a strong focus on finance and deep tech. While the overall volume of roles is smaller due to market size, the quality and complexity of work are very high, especially in areas like secure distributed systems for finance, blockchain, and AI. There's significant academic R&D, but less broad commercial frontier work compared to larger economies."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.5,
-      "confidence": "medium",
-      "evidence": [
-        "Ericsson",
-        "Spotify",
-        "Klarna",
-        "KTH Royal Institute of Technology",
-        "Chalmers University"
-      ],
-      "rationale": "Sweden is a highly digitalized country with an innovative culture and strong engineering talent. Leading companies in telecommunications and streaming drive a medium volume of advanced roles and a solid frontier capability."
-    },
-    {
-      "country_iso": "FI",
-      "country_name": "Finland",
       "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Nokia",
-        "Supercell",
-        "Unity Technologies (R&D)",
-        "Aalto University",
-        "CSC (national supercomputing)"
+        "Spotify",
+        "Ericsson",
+        "Klarna",
+        "growing startup scene",
+        "KTH Royal Institute of Technology",
+        "Chalmers University"
       ],
-      "rationale": "Finland is known for innovation in telecommunications and gaming. Despite its smaller market size, it has a strong focus on R&D, leading to a low volume but good skill level in advanced cloud and distributed systems."
+      "rationale": "Sweden has a strong engineering tradition and a vibrant startup ecosystem, particularly in areas like music streaming (Spotify) and fintech (Klarna), which rely heavily on distributed systems. Cloud adoption is good, and there's a solid talent pool. While innovative, the volume of pure frontier R&D in core cloud infrastructure is not as high as in the leading global hubs."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.2,
+      "confidence": "medium",
+      "evidence": [
+        "Nokia (telecoms focus)",
+        "Supercell",
+        "Unity (R&D)",
+        "Aalto University",
+        "University of Helsinki"
+      ],
+      "rationale": "Finland has a highly educated workforce and a history of innovation in telecommunications and gaming. While there's strong engineering talent, the overall market size limits the volume of advanced cloud and distributed systems roles. R&D tends to be focused on specific industry niches rather than broad cloud infrastructure."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "medium",
+      "frontier": 0.4,
+      "confidence": "high",
       "evidence": [
         "Shopify",
         "OpenText",
-        "Borealis AI (RBC)",
-        "Google/Microsoft R&D centers",
-        "Vector Institute, Mila (AI research)"
+        "R&D centers for Google, Microsoft, Amazon, IBM",
+        "strong AI research at University of Toronto, Mila (Montreal)"
       ],
-      "rationale": "Canada has growing tech hubs and strong academic research, particularly in AI. Proximity to the US market and a vibrant startup scene contribute to a medium volume of advanced roles and a developing frontier capability."
+      "rationale": "Canada has rapidly growing tech hubs in Toronto, Vancouver, and Montreal, often attracting investment and talent from the US. There's a strong focus on AI research, which drives demand for distributed computing. While there's a good volume of advanced roles and some significant R&D, it often complements or supports the larger US market rather than leading in foundational cloud infrastructure."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
         "Atlassian",
         "Canva",
-        "Commonwealth Bank",
-        "Telstra",
-        "CSIRO",
-        "Major hyperscaler regions"
+        "growing presence of AWS/Azure/GCP",
+        "academic research at UNSW, University of Melbourne"
       ],
-      "rationale": "Australia is a developed economy with a strong digital services sector and a growing number of tech companies. This leads to a medium volume of advanced cloud roles and a solid, but not leading, frontier capability."
+      "rationale": "Australia has a vibrant tech scene, particularly in Sydney and Melbourne, with companies like Atlassian and Canva being global players. Cloud adoption is strong across industries. While there's a good demand for advanced cloud and distributed systems skills, the overall market size means the volume of pure frontier R&D is not as high as in larger economies."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.5,
+      "skill_level": 3,
+      "frontier": 0.2,
       "confidence": "high",
       "evidence": [
-        "European HQs for Google, Microsoft, Amazon, Apple, Facebook, Intel",
-        "IDA Ireland (Industrial Development Agency)"
+        "European HQs for Google, Microsoft, Amazon (AWS), Meta, Apple",
+        "strong data center presence"
       ],
-      "rationale": "Ireland attracts significant foreign direct investment from major US tech companies, establishing European HQs and R&D centers. This creates a concentrated demand for advanced cloud and distributed systems roles with a high skill level."
+      "rationale": "Ireland serves as a major European hub for many US tech giants, hosting their European HQs, data centers, and significant operational teams. This drives a high demand for cloud and distributed systems professionals, particularly in SRE, DevOps, and cloud operations. While the work is complex and at scale, the focus is often on implementing and operating existing advanced technologies rather than pioneering new frontier research."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "IMEC (indirectly, advanced chip research)",
-        "Euroclear",
-        "Swift",
-        "Proximus",
-        "Universities (KU Leuven, Ghent)"
+        "EU institutions (driving some digital needs)",
+        "some local tech companies",
+        "universities"
       ],
-      "rationale": "Belgium has strong research in microelectronics and is a hub for international organizations. However, its domestic cloud software market for advanced roles is smaller, leading to a low volume and moderate frontier capability."
+      "rationale": "Belgium has a developed economy and a good tech talent pool, but its market size for advanced cloud and distributed systems is smaller compared to its neighbors. While there's a growing adoption of cloud technologies, the volume of specialist and frontier roles is relatively low."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.2,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "AVL",
-        "Infineon (R&D)",
-        "Raiffeisen Bank",
-        "Magenta Telekom",
-        "TU Wien"
+        "some local tech companies",
+        "research institutions",
+        "universities"
       ],
-      "rationale": "Austria has a developed economy with good engineering talent, but a smaller overall tech sector for advanced cloud roles. Focus is often on specific industrial niches, resulting in very low volume and limited frontier work."
+      "rationale": "Austria has a strong engineering tradition and a stable economy. Cloud adoption is growing, but the overall market size limits the volume of advanced cloud and distributed systems roles. Most work is focused on applying existing technologies rather than pioneering new frontier research."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.2,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Leonardo",
-        "Eni",
-        "Telecom Italia",
-        "Intesa Sanpaolo",
-        "CINECA (HPC)",
-        "Politecnico di Milano"
+        "some local tech companies, startups",
+        "academic research at Politecnico di Milano, Sapienza University"
       ],
-      "rationale": "Italy is a large economy with a strong industrial heritage, but digital transformation and advanced cloud adoption have been slower. This leads to a low volume of advanced roles and a moderate frontier capability."
+      "rationale": "Italy has been slower in digital transformation compared to some other Western European countries, but cloud adoption is accelerating. While there's a good talent pool and some innovative startups, the overall volume of advanced cloud and distributed systems roles, especially at the frontier level, is still relatively low."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Telef\u00f3nica",
-        "BBVA",
-        "Indra",
-        "Amadeus",
-        "Barcelona Supercomputing Center"
+        "growing startup scene (e.g., Barcelona, Madrid)",
+        "some tech hubs",
+        "academic research"
       ],
-      "rationale": "Spain has a growing tech ecosystem, particularly in major cities, with increasing investment in digital infrastructure. This results in a low volume of advanced cloud roles and a developing frontier capability."
+      "rationale": "Spain's tech ecosystem is growing, particularly in cities like Barcelona and Madrid, attracting international investment and fostering startups. Cloud adoption is increasing, leading to more demand for skilled professionals. However, the volume of advanced and frontier-level distributed systems work is still developing compared to more mature tech economies."
     },
     {
       "country_iso": "MY",
@@ -364,31 +371,28 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Petronas",
-        "Axiata",
-        "Maxis",
-        "MDEC (Malaysia Digital Economy Corporation)",
-        "Growing data center investments"
+        "Government initiatives for digital economy",
+        "some regional tech companies",
+        "universities"
       ],
-      "rationale": "Malaysia is an emerging digital economy with government support for tech. While growing, advanced cloud development is still in early stages, leading to very low volume and limited frontier work."
+      "rationale": "Malaysia is investing in its digital economy, and there's a growing adoption of cloud technologies. While there's a demand for cloud professionals, the volume of advanced and frontier-level distributed systems roles is still relatively low, with most work focused on implementation and support."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
         "FPT Software",
         "Viettel",
-        "Vingroup",
-        "Zalo",
-        "Government digital transformation plans"
+        "growing startup scene (e.g., in Ho Chi Minh City, Hanoi)",
+        "strong IT services export"
       ],
-      "rationale": "Vietnam has a rapidly growing digital economy and a young, tech-savvy population. However, advanced cloud and distributed systems R&D is nascent, with focus often on scaling existing platforms or outsourcing."
+      "rationale": "Vietnam is rapidly emerging as a tech hub, particularly in IT services and software development. There's a large and growing talent pool, and domestic companies are increasingly adopting cloud-native architectures. While the volume of roles is increasing, most are in applied or specialist categories, with limited pure frontier R&D in core distributed systems."
     },
     {
       "country_iso": "TH",
@@ -396,96 +400,89 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "AIS",
-        "True Corporation",
-        "SCB TechX",
-        "PTT",
-        "Government digital economy initiatives"
+        "growing e-commerce sector",
+        "some local tech companies",
+        "government digital initiatives"
       ],
-      "rationale": "Thailand is investing in digital infrastructure and e-commerce, but advanced cloud adoption and R&D are still developing. This results in very low volume and limited frontier work."
+      "rationale": "Thailand is undergoing digital transformation, with a growing e-commerce sector and government initiatives. Cloud adoption is increasing, but the overall volume of advanced cloud and distributed systems roles, especially at the frontier level, is still relatively low, with a focus on implementation."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
         "Gojek",
-        "Tokopedia (GoTo)",
+        "Tokopedia (now GoTo)",
         "Traveloka",
-        "Telkomsel",
-        "Bank Central Asia",
-        "Government digital initiatives"
+        "large domestic market driving scale",
+        "government digital initiatives"
       ],
-      "rationale": "As the largest economy in Southeast Asia with a massive digital population, Indonesia has major tech unicorns driving demand for scaling distributed systems. This leads to a low volume of advanced roles, with a focus on practical application rather than frontier R&D."
+      "rationale": "Indonesia has a massive domestic market and is home to several tech unicorns that operate at immense scale (e.g., Gojek, Tokopedia). This drives significant demand for distributed systems expertise to handle high traffic and complex services. While much of the work is in scaling and adapting existing technologies, the sheer scale pushes some boundaries, leading to a growing number of specialist roles."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Government AI strategy",
+        "Dubai Future Foundation",
         "Smart Dubai initiatives",
-        "Etisalat",
-        "Du",
-        "ADQ (Abu Dhabi Developmental Holding Company)"
+        "ADQ",
+        "Mubadala",
+        "major government-backed projects"
       ],
-      "rationale": "The UAE has ambitious digital transformation goals and significant government investment in AI and smart city initiatives. This attracts international talent and drives a low volume of advanced roles with a developing frontier capability."
+      "rationale": "The UAE is heavily investing in digital transformation, smart cities, and AI, driving demand for advanced cloud and distributed systems. While there's significant capital and ambition, much of the advanced work is currently driven by partnerships with international firms or focused on implementing existing cutting-edge solutions rather than foundational frontier R&D."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
+        "Vision 2030",
         "NEOM project",
-        "Aramco",
-        "STC (Saudi Telecom Company)",
-        "Ministry of Communications and Information Technology",
-        "Public Investment Fund (PIF)"
+        "Aramco Digital",
+        "significant government-backed digital initiatives"
       ],
-      "rationale": "Saudi Arabia is undergoing massive digital transformation under Vision 2030, with significant government investment. While rapidly developing, it's starting from a lower base, resulting in very low volume and emerging frontier work."
+      "rationale": "Saudi Arabia is undergoing a massive digital transformation as part of Vision 2030, with projects like NEOM requiring cutting-edge digital infrastructure. This is creating significant demand for cloud and distributed systems expertise. While the current focus is on building and implementing, the scale of investment and ambition suggests a rapid increase in advanced and potentially frontier-level work in the coming years, often attracting international talent and partnerships."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
         "Nubank",
-        "Ita\u00fa Unibanco",
-        "Banco do Brasil",
-        "Petrobras",
-        "Major hyperscaler regions (AWS, Azure, GCP)"
+        "StoneCo (fintech unicorns)",
+        "growing startup ecosystem",
+        "presence of AWS/Azure/GCP regions"
       ],
-      "rationale": "Brazil is the largest economy in Latin America with a growing digital economy, particularly in fintech. Increasing adoption of cloud services drives a low volume of advanced roles, with a focus on local market solutions rather than frontier R&D."
+      "rationale": "Brazil is the largest economy in Latin America with a growing tech sector, particularly in fintech. Cloud adoption is increasing, and there's a good talent pool. While there are innovative companies operating at scale, the overall volume of advanced and frontier-level distributed systems work is still developing."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
+      "frontier": 0.2,
+      "confidence": "high",
       "evidence": [
-        "Allegro",
-        "CD Projekt Red (indirectly, game engine tech)",
-        "Major IT outsourcing firms (e.g., Luxoft, Capgemini)",
-        "Google Cloud region",
-        "Universities"
+        "Strong IT outsourcing sector",
+        "R&D centers for Google, Microsoft, IBM",
+        "vibrant startup scene (e.g., Warsaw, Krakow)"
       ],
-      "rationale": "Poland has a strong pool of IT talent and a growing tech sector, particularly in IT services and e-commerce. Increasing cloud adoption leads to a low volume of advanced roles and a developing frontier capability."
+      "rationale": "Poland has a strong reputation for IT services and a highly skilled engineering workforce. It's becoming a significant tech hub in Central Europe, attracting R&D centers from global tech companies. Cloud adoption is robust, leading to a good volume of specialist roles. While much of the work is in implementation and scaling, there's a growing amount of advanced engineering and some niche R&D."
     }
   ]
 }

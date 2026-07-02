@@ -11,19 +11,16 @@
       "evidence": [
         "NSA",
         "CISA",
-        "Google Security",
-        "Microsoft Security",
-        "Amazon Web Services Security",
-        "CrowdStrike",
-        "Palo Alto Networks",
-        "Mandiant",
+        "DARPA",
+        "Google Project Zero",
+        "Microsoft Security Response Center",
         "MIT",
         "Stanford University",
         "Carnegie Mellon University",
-        "Black Hat Conference",
-        "RSA Conference"
+        "Palo Alto Networks",
+        "CrowdStrike"
       ],
-      "rationale": "The US is the global leader in cybersecurity, driven by a massive tech industry, significant government spending, numerous startups, and leading academic research. It hosts major security vendors and cutting-edge R&D in cryptography, AI/ML for security, and quantum security."
+      "rationale": "The US is a global leader in cybersecurity, driven by massive government investment in defense and intelligence, a vibrant tech industry with numerous startups and giants, and leading academic research. This creates very high demand for advanced roles and significant frontier R&D."
     },
     {
       "country_iso": "CN",
@@ -33,33 +30,31 @@
       "frontier": 0.8,
       "confidence": "medium",
       "evidence": [
-        "Alibaba Cloud Security",
+        "Alibaba Security",
         "Tencent Security",
-        "Huawei Security",
-        "Baidu Security",
-        "360 Security",
-        "State-sponsored research labs",
-        "National cybersecurity strategies"
+        "Huawei",
+        "Qihoo 360",
+        "Tsinghua University",
+        "Chinese Academy of Sciences",
+        "National Cybersecurity Strategy"
       ],
-      "rationale": "China has a large and rapidly growing tech sector, significant state-sponsored cyber activity, and a strong domestic security industry. While capabilities are high, frontier work is often state-backed and less openly collaborative."
+      "rationale": "China has a vast digital economy and significant state-backed investment in cybersecurity, including advanced research in areas like quantum cryptography and AI security. While volume is high, some frontier work is less publicly visible."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "NEC",
-        "Fujitsu",
+        "NISC (National Center of Incident Readiness and Strategy for Cybersecurity)",
+        "NTT Security",
         "Hitachi",
-        "Mitsubishi Electric",
-        "JPCERT/CC",
-        "National cybersecurity strategies",
-        "Academic research (e.g., in cryptography)"
+        "NEC",
+        "University of Tokyo"
       ],
-      "rationale": "Japan has a mature economy with a focus on industrial control systems (ICS) security, automotive security, and critical infrastructure. It possesses a strong engineering base, but less emphasis on broad offensive security or rapid innovation compared to global leaders."
+      "rationale": "Japan has a highly developed industrial base and critical infrastructure, leading to a steady demand for cybersecurity professionals. While strong in applied security, frontier R&D is more focused on specific industrial or national needs rather than broad innovation."
     },
     {
       "country_iso": "KR",
@@ -67,17 +62,15 @@
       "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.7,
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
+        "KISA (Korea Internet & Security Agency)",
         "Samsung SDS",
         "LG CNS",
-        "SK Telecom",
-        "KT",
-        "AhnLab",
-        "KISA (Korea Internet & Security Agency)",
-        "Academic research (e.g., KAIST)"
+        "KAIST",
+        "Hanyang University"
       ],
-      "rationale": "South Korea is a highly digitized society with a strong focus on national security, mobile security, and critical infrastructure. It boasts very strong technical capabilities, particularly in mobile and network security, and active participation in CTF competitions."
+      "rationale": "South Korea's highly digitized society and leading tech companies drive strong demand for advanced cybersecurity. Significant government and corporate investment supports specialist and expert roles, with notable frontier work in mobile and IoT security."
     },
     {
       "country_iso": "TW",
@@ -87,266 +80,246 @@
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "TSMC (supply chain security)",
-        "MediaTek",
-        "National Institute of Cyber Security (NICS)",
-        "Government cybersecurity initiatives",
-        "Academic research"
+        "TSMC",
+        "ITRI (Industrial Technology Research Institute)",
+        "National Chung-Shan Institute of Science and Technology",
+        "National Taiwan University"
       ],
-      "rationale": "Taiwan's critical role in the semiconductor industry drives a strong focus on supply chain security and hardware security. It has high technical talent, especially in areas related to its core industries, with specialized frontier research."
+      "rationale": "Taiwan's critical role in the global semiconductor supply chain and geopolitical exposure necessitate strong cybersecurity capabilities, particularly in hardware and supply chain security. The market is specialized but smaller in overall volume."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Siemens (industrial security)",
-        "SAP (application security)",
-        "Bosch (automotive security)",
-        "Deutsche Telekom Security",
-        "Fraunhofer AISEC",
         "BSI (Federal Office for Information Security)",
-        "Technical Universities"
+        "Fraunhofer AISEC",
+        "Siemens",
+        "SAP",
+        "Technical University of Munich"
       ],
-      "rationale": "Germany has a strong industrial base, with a significant focus on automotive security, industrial IoT, data privacy (GDPR), and critical infrastructure. It benefits from excellent engineering talent and strong academic research, particularly in cryptography and formal methods."
+      "rationale": "Germany's strong industrial base, focus on critical infrastructure, and strict data privacy regulations create high demand for advanced cybersecurity. There's significant expertise in industrial control systems and automotive security, with robust academic and institutional research."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "The Hague Security Delta",
-        "NCSC-NL",
-        "Fox-IT",
+        "Hague Security Delta (HSD)",
         "TNO",
         "Delft University of Technology",
-        "Leiden University",
-        "Europol's EC3 (located in NL)"
+        "NCSC-NL"
       ],
-      "rationale": "The Netherlands is known for its cybersecurity cluster in The Hague, with a strong focus on ethical hacking, digital forensics, and critical infrastructure protection. It has a high concentration of skilled professionals and active engagement in offensive security and incident response."
+      "rationale": "The Netherlands is a recognized European cybersecurity hub, fostering strong public-private partnerships and focusing on critical infrastructure protection, digital forensics, and ethical hacking. This supports a high skill level and some frontier research."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.9,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "GCHQ",
         "NCSC (National Cyber Security Centre)",
-        "BT Security",
-        "Vodafone Security",
-        "Darktrace",
-        "Sophos",
-        "Immersive Labs",
-        "University of Oxford",
-        "University of Cambridge",
-        "UCL"
+        "Lloyds Banking Group",
+        "Oxford University",
+        "Cambridge University",
+        "Imperial College London"
       ],
-      "rationale": "The UK is a major financial hub with strong government intelligence agencies and a vibrant startup scene. It boasts academic excellence and significant contributions to cryptography and secure systems, driven by institutions like GCHQ and NCSC."
+      "rationale": "The UK has a mature cybersecurity ecosystem, driven by its status as a global financial hub, strong defense sector, and leading intelligence agencies. This results in high demand for advanced roles and significant frontier research, particularly in intelligence and financial security."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "ANSSI (National Cybersecurity Agency)",
-        "Thales Group",
-        "Airbus CyberSecurity",
+        "ANSSI (National Agency for the Security of Information Systems)",
+        "Thales",
+        "Airbus",
         "Orange Cyberdefense",
-        "INRIA",
-        "Major universities (e.g., ENS, T\u00e9l\u00e9com Paris)"
+        "Inria"
       ],
-      "rationale": "France has strong state involvement in cybersecurity, with a focus on national security, defense, and critical infrastructure. It has a good technical base, particularly in cryptography and smart card security, with government-backed research initiatives."
+      "rationale": "France has a strong focus on national security, defense, and critical infrastructure protection, supported by government agencies and major industrial players. This drives demand for specialist skills and some frontier work in cryptography and secure systems."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "medium",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Unit 8200 alumni",
-        "Check Point Software Technologies",
+        "Unit 8200 (IDF)",
+        "Check Point Software",
         "CyberArk",
-        "Wiz",
-        "SentinelOne",
-        "Ben-Gurion University of the Negev",
-        "Tel Aviv University"
+        "Palo Alto Networks (R&D)",
+        "Ben-Gurion University (Cyber Security Research Center)",
+        "Technion"
       ],
-      "rationale": "Israel is a 'Startup Nation' for cybersecurity, characterized by a strong military intelligence background (Unit 8200) and a vibrant ecosystem. It leads in offensive security, threat intelligence, and innovative solutions, with a disproportionately high R&D output."
+      "rationale": "Israel is a global cybersecurity innovation powerhouse, fueled by its defense sector, a vibrant startup ecosystem, and world-class academic research. It boasts a very high concentration of expert and frontier talent, despite a smaller overall volume."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "TCS Cyber Security",
-        "Infosys Cyber Security",
-        "Wipro Cyber Security",
-        "HCLTech Cyber Security",
-        "CERT-In",
-        "Global security vendors' R&D centers (e.g., Microsoft, Cisco)",
-        "Growing startup ecosystem"
+        "TCS",
+        "Wipro",
+        "Infosys",
+        "IITs (Indian Institutes of Technology)",
+        "CERT-In"
       ],
-      "rationale": "India has a massive IT services industry and a growing domestic market, providing a large talent pool for security operations, compliance, and managed security services. While product development is growing, global frontier R&D is less prominent."
+      "rationale": "India's massive IT services industry and rapidly growing digital economy generate high demand for cybersecurity professionals. While a large volume of applied skills exists, the advanced and frontier R&D market is still developing, with a focus on managed security services and some AI/ML for threat detection."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "CSA (Cyber Security Agency of Singapore)",
-        "GovTech Singapore",
-        "Singtel Cyber Security",
-        "ST Engineering",
+        "CSA Singapore (Cyber Security Agency)",
+        "GovTech",
         "Nanyang Technological University (NTU)",
         "National University of Singapore (NUS)",
-        "A*STAR"
+        "DSO National Laboratories"
       ],
-      "rationale": "Singapore serves as a regional hub with a strong government focus on cybersecurity, critical infrastructure, and smart nation initiatives. It benefits from high government investment, strong academic programs, and a focus on advanced defense and smart city security."
+      "rationale": "Singapore is a key regional financial and tech hub with significant government investment in cybersecurity. It focuses on critical infrastructure, smart nation initiatives, and has strong academic and government-led frontier research, despite a smaller local market volume."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
         "ETH Zurich",
-        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
-        "Swisscom",
-        "Financial institutions (e.g., UBS, Credit Suisse)",
-        "Government cybersecurity initiatives"
+        "EPFL",
+        "Proton Technologies",
+        "UBS",
+        "Credit Suisse (security divisions)"
       ],
-      "rationale": "Switzerland, a global financial hub, places a strong emphasis on data privacy, secure systems, and critical infrastructure. It is known for high-quality academic research, particularly in cryptography and secure hardware."
+      "rationale": "Switzerland's financial sector and strong data privacy laws drive demand for highly skilled cybersecurity professionals. It excels in secure systems, cryptography, and privacy-enhancing technologies, with strong academic contributions, but the overall market volume is modest."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Ericsson (telecom security)",
-        "Saab (defense security)",
         "KTH Royal Institute of Technology",
-        "Chalmers University of Technology",
-        "FOI (Swedish Defence Research Agency)"
+        "Ericsson",
+        "FOI (Swedish Defence Research Agency)",
+        "Swedish National Cyber Security Centre"
       ],
-      "rationale": "Sweden has a strong tech sector with a focus on telecommunications security, industrial security, and privacy. It possesses a good technical base and strong academic research, particularly in areas relevant to its key industries."
+      "rationale": "Sweden is a highly digitized society with a strong tech sector, leading to demand for cybersecurity expertise, particularly in telecom and critical infrastructure. There's solid academic research and some frontier work in privacy and IoT security."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
-      "skill_level": 3,
+      "skill_level": 4,
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Nokia (telecom security)",
         "F-Secure",
         "VTT Technical Research Centre of Finland",
         "Aalto University",
-        "NCSC-FI"
+        "Nokia"
       ],
-      "rationale": "Finland is strong in telecommunications security, notably with Nokia, and benefits from robust government initiatives. It exhibits high technical competence and strong academic research, contributing to specialized frontier areas."
+      "rationale": "Finland has a strong heritage in telecommunications and a highly digitized society, fostering a high skill level in cybersecurity. It's known for specific expertise (e.g., F-Secure), with some frontier research, but the overall market volume for advanced roles is comparatively small."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "high",
+      "frontier": 0.5,
+      "confidence": "medium",
       "evidence": [
         "CSE (Communications Security Establishment)",
-        "BlackBerry (legacy & current security offerings)",
-        "Shopify (e-commerce security)",
-        "University of Waterloo",
         "University of Toronto",
-        "Growing startup scene"
+        "University of Waterloo",
+        "RBC",
+        "TD Bank (security teams)"
       ],
-      "rationale": "Canada has a strong government focus on cybersecurity (CSE), significant academic research, and growing tech hubs. It has a good technical base, particularly within government and academic sectors, with emerging frontier research."
+      "rationale": "Canada has a growing tech sector and significant government investment in cybersecurity, particularly for national security and financial services. There's a solid base of applied and specialist skills, with emerging expert and frontier capabilities, especially in AI security."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "ACSC (Australian Cyber Security Centre)",
-        "Telstra Security",
-        "Optus Security",
         "CSIRO",
-        "Major universities (e.g., UNSW, ANU)"
+        "UNSW Canberra (ADFA)",
+        "major Australian banks"
       ],
-      "rationale": "Australia has a strong government focus on cybersecurity (ACSC), critical infrastructure protection, and a growing tech sector. It possesses a good technical base, particularly in government and defense, with some academic research contributing to frontier areas."
+      "rationale": "Australia's growing digital economy and government focus on critical infrastructure and defense drive demand for cybersecurity. While the market for advanced roles is growing, it's smaller than larger economies, with frontier work concentrated in government and defense-related research."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "European HQs of Google, Microsoft, Apple, Amazon (security teams)",
-        "IDA Ireland initiatives",
-        "Academic institutions (e.g., UCD, Trinity College Dublin)"
+        "Microsoft Ireland",
+        "Google Ireland",
+        "Amazon Web Services (AWS) Ireland",
+        "University College Dublin"
       ],
-      "rationale": "Ireland serves as a European hub for many US tech companies, leading to a strong focus on data privacy and cloud security operations. While it has skilled professionals, indigenous frontier R&D is less prominent, with more emphasis on operational security for multinational corporations."
+      "rationale": "Ireland serves as a European hub for many US tech companies, leading to demand for cloud and data center security expertise. While the skill level is good, particularly in applied and specialist roles, significant frontier R&D is less prevalent locally."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "KU Leuven (COSIC research group)",
-        "NCSC-BE (Centre for Cybersecurity Belgium)",
-        "Presence of EU institutions (e.g., European Commission security)",
-        "Academic research"
+        "Centre for Cybersecurity Belgium (CCB)",
+        "KU Leuven",
+        "Ghent University",
+        "NATO Cyber Centre (contributions)"
       ],
-      "rationale": "Belgium's role as host to EU institutions drives a focus on critical infrastructure, data privacy, and national security. It has a good technical base, particularly in government and academic research, with notable contributions from institutions like KU Leuven."
+      "rationale": "As home to EU and NATO institutions, Belgium has a strong focus on government and critical infrastructure security. This fosters specialist skills and some frontier research, but the overall market volume for advanced roles is relatively small."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "TU Graz (IAIK research group)",
+        "TU Wien (Vienna University of Technology)",
         "AIT Austrian Institute of Technology",
-        "Government cybersecurity initiatives",
-        "Academic research"
+        "CERT.at"
       ],
-      "rationale": "Austria focuses on industrial security, data privacy, and critical infrastructure. It has a good technical base and strong academic research, particularly from institutions like TU Graz, though its global frontier presence is moderate."
+      "rationale": "Austria focuses on critical infrastructure, industrial control systems, and data privacy. It has solid applied and specialist skills, with some academic and institutional research contributing to frontier areas, but the overall market volume is limited."
     },
     {
       "country_iso": "IT",
@@ -354,14 +327,13 @@
       "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.3,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Leonardo (defense & security)",
-        "Poste Italiane (critical infrastructure)",
+        "Leonardo S.p.A.",
         "National Cybersecurity Agency (ACN)",
-        "Academic research (e.g., Sapienza University of Rome)"
+        "Politecnico di Milano"
       ],
-      "rationale": "Italy has a growing focus on national security, critical infrastructure, and industrial cybersecurity. While capabilities are developing, and some academic research exists, it is less prominent in global frontier research compared to leading nations."
+      "rationale": "Italy is increasing its investment and awareness in cybersecurity, particularly for defense and critical infrastructure. While the market is growing, the prevalence of advanced and frontier roles is still developing, with a stronger base in applied skills."
     },
     {
       "country_iso": "ES",
@@ -369,14 +341,13 @@
       "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.3,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
         "INCIBE (National Cybersecurity Institute)",
         "Telefonica Tech",
-        "Government cybersecurity strategies",
-        "Academic research (e.g., Polytechnic University of Madrid)"
+        "Polytechnic University of Madrid"
       ],
-      "rationale": "Spain is experiencing a growing focus on national security, critical infrastructure, and digital transformation. Capabilities are developing, with some academic research, but it holds a less prominent position in global frontier research."
+      "rationale": "Spain's digital economy is growing, supported by government initiatives like INCIBE. Demand for cybersecurity is increasing, especially in critical infrastructure and managed services, but the market for highly advanced and frontier roles is still maturing."
     },
     {
       "country_iso": "MY",
@@ -387,10 +358,10 @@
       "confidence": "low",
       "evidence": [
         "CyberSecurity Malaysia",
-        "Government initiatives (e.g., MyDIGITAL)",
-        "Academic programs (e.g., Universiti Kebangsaan Malaysia)"
+        "MIMOS Berhad",
+        "local universities"
       ],
-      "rationale": "Malaysia serves as a regional hub with a focus on national security, critical infrastructure, and the digital economy. Capabilities are developing, primarily focused on applied security rather than frontier research."
+      "rationale": "Malaysia has aspirations to be a regional tech hub, with government initiatives to boost cybersecurity. The market for advanced roles is nascent, primarily focused on national security and digital forensics, with limited frontier R&D."
     },
     {
       "country_iso": "VN",
@@ -402,25 +373,23 @@
       "evidence": [
         "Viettel Cyber Security",
         "VNPT",
-        "National Cybersecurity Center (NCSC Vietnam)",
-        "Government cybersecurity strategies"
+        "Ministry of Public Security"
       ],
-      "rationale": "Vietnam has a rapidly growing digital economy and an increasing focus on national security and cyber defense. Capabilities are emerging, driven by strong government pushes for cybersecurity talent, but frontier research is limited."
+      "rationale": "Vietnam's rapidly growing digital economy and strong government focus on national cybersecurity are driving demand. While the market for applied skills is expanding, advanced and frontier roles are still emerging, often linked to state-owned enterprises and defense."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
         "ETDA (Electronic Transactions Development Agency)",
-        "National Cybersecurity Agency (NCSA)",
-        "Government initiatives",
-        "Academic programs"
+        "NCSC Thailand",
+        "Chulalongkorn University"
       ],
-      "rationale": "Thailand's growing digital economy and increasing awareness of cybersecurity are driving government initiatives. Capabilities are emerging, with a focus on national security and critical infrastructure, but frontier research remains limited."
+      "rationale": "Thailand's digital transformation initiatives are increasing cybersecurity awareness and demand. The market for advanced roles is in its early stages, with a focus on national security and critical infrastructure, and limited frontier R&D."
     },
     {
       "country_iso": "ID",
@@ -431,40 +400,38 @@
       "confidence": "low",
       "evidence": [
         "BSSN (National Cyber and Crypto Agency)",
-        "Government initiatives (e.g., Digital Indonesia)",
-        "Academic programs"
+        "Telkomsel",
+        "local universities"
       ],
-      "rationale": "Indonesia, with its large and rapidly digitizing population, is seeing growing awareness of cybersecurity and government initiatives. Capabilities are emerging, focused on national security and digital economy protection, with limited frontier research."
+      "rationale": "As the largest digital economy in Southeast Asia, Indonesia has significant potential, but its advanced cybersecurity market is still developing. Demand is primarily for applied skills, with very limited frontier R&D."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "UAE Cyber Security Council",
-        "DarkMatter (local firm)",
-        "Khalifa University (cybersecurity research)",
-        "Government partnerships with global firms"
+        "National Electronic Security Authority (NESA)",
+        "Dubai Electronic Security Center (DESC)",
+        "Khalifa University"
       ],
-      "rationale": "The UAE is pursuing ambitious digital transformation and smart city initiatives, backed by strong government investment in cybersecurity. While there's significant investment in talent and technology, indigenous frontier capabilities are still developing."
+      "rationale": "The UAE is a major financial and tech hub with substantial government investment in smart city initiatives and national security. This drives demand for specialist and expert skills, with notable frontier work in critical infrastructure and smart city security, often leveraging international talent."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "National Cybersecurity Authority (NCA)",
-        "Saudi Aramco (critical infrastructure security)",
-        "King Abdullah University of Science and Technology (KAUST)",
-        "Vision 2030 initiatives"
+        "Saudi Cybersecurity Authority (SCA)",
+        "Saudi Aramco",
+        "King Abdullah University of Science and Technology (KAUST)"
       ],
-      "rationale": "Saudi Arabia's Vision 2030 entails significant investment in digital infrastructure and national security. Capabilities are rapidly developing with a strong government push, including investment in research, but are still building up to frontier levels."
+      "rationale": "Saudi Arabia's Vision 2030 and significant government investment are rapidly developing its digital infrastructure and cybersecurity capabilities. Demand for advanced roles is growing, particularly in critical infrastructure (oil & gas) and national defense, with emerging frontier research."
     },
     {
       "country_iso": "BR",
@@ -474,12 +441,12 @@
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "CERT.br",
-        "Government cybersecurity initiatives",
-        "Academic research (e.g., University of S\u00e3o Paulo)",
-        "Financial sector security needs"
+        "Brazilian Army Cyber Command",
+        "Banco do Brasil",
+        "Bradesco",
+        "University of S\u00e3o Paulo"
       ],
-      "rationale": "Brazil, as the largest economy in Latin America, has a significant digital presence and growing cybersecurity awareness. Capabilities are developing, with some academic research, but challenges with scale and investment limit its frontier research presence."
+      "rationale": "Brazil, as the largest economy in Latin America, has a growing digital sector and significant financial industry. While demand for cybersecurity is increasing, the market for advanced and frontier roles is less mature, with a focus on financial and government security."
     },
     {
       "country_iso": "PL",
@@ -490,11 +457,10 @@
       "confidence": "medium",
       "evidence": [
         "NASK (National Research Institute)",
-        "Military University of Technology (WAT)",
-        "Government cybersecurity strategies",
-        "Growing tech sector and startups"
+        "Military University of Technology",
+        "Polish Cyber Command"
       ],
-      "rationale": "Poland has a growing tech sector and a strong government focus on national security and critical infrastructure, particularly in the context of Eastern Europe. It possesses good technical talent and active participation in CTF competitions, with some academic and government-backed initiatives."
+      "rationale": "Poland's growing tech sector and strong government focus on national security as a NATO member drive demand for cybersecurity professionals. There's a solid base of applied and specialist skills, with increasing investment in expert and some frontier capabilities, particularly in cyber defense."
     }
   ]
 }

@@ -6,449 +6,444 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 1.0,
+      "frontier": 0.95,
       "confidence": "high",
       "evidence": [
-        "FDA approvals (e.g., Kymriah, Yescarta, Zolgensma)",
-        "Major biotech clusters (Boston, San Francisco Bay Area, San Diego, Philadelphia)",
-        "NIH funding",
-        "Leading academic research institutions (Harvard, Stanford, UPenn, MIT)",
-        "Large pharmaceutical and biotech companies (Novartis, Gilead, Bristol Myers Squibb, Sarepta, Bluebird Bio, Vertex)"
+        "Boston/Cambridge biotech cluster (MIT, Harvard, Broad Institute, Moderna, Biogen, Vertex)",
+        "San Francisco Bay Area (Stanford, UCSF, Genentech, Gilead, CRISPR Therapeutics)",
+        "Philadelphia (University of Pennsylvania - CAR-T pioneers)",
+        "National Institutes of Health (NIH) funding",
+        "FDA regulatory leadership",
+        "Numerous biotech startups (e.g., Bluebird Bio, Sarepta, Sangamo)"
       ],
-      "rationale": "The US is the global leader in Cell & Gene Therapy, characterized by unparalleled R&D investment, a robust ecosystem of startups and large pharma, extensive clinical trials, and a strong regulatory framework. It consistently drives world-first discoveries and applications."
+      "rationale": "The US is the global leader in Cell & Gene Therapy, characterized by unparalleled investment, a robust ecosystem of academic research, biotech startups, large pharmaceutical companies, and a supportive regulatory environment. Major hubs like Boston and the Bay Area drive significant advanced-role hiring and frontier R&D."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Significant government investment (Made in China 2025)",
-        "High volume of CAR-T clinical trials",
-        "Major biotech companies (Legend Biotech, Innovent Biologics)",
-        "Contract Development and Manufacturing Organizations (CDMOs) like WuXi AppTec",
-        "Leading research institutions (Chinese Academy of Sciences)"
+        "Shanghai (CAS, Fudan University, WuXi AppTec, Legend Biotech)",
+        "Beijing and Shenzhen biotech clusters",
+        "National Key R&D Program funding",
+        "Large number of clinical trials in CGT"
       ],
-      "rationale": "China has rapidly emerged as a major player in Cell & Gene Therapy, driven by substantial government support, a large patient population, and aggressive clinical development, particularly in CAR-T. While strong in application and scale, its frontier discovery is rapidly advancing."
+      "rationale": "China has rapidly emerged as a major player, driven by substantial government investment, a large patient population for clinical trials, and a growing number of domestic biotech companies. While strong in applied research and manufacturing, it also contributes significantly to frontier R&D."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Pioneering iPS cell research (Shinya Yamanaka, Nobel Prize)",
-        "PMDA fast-track approval system for regenerative medicine",
-        "Major pharmaceutical companies (Takeda, Astellas)",
-        "Leading research institutes (RIKEN, Kyoto University)"
+        "Kyoto University (Shinya Yamanaka - iPSC Nobel Prize)",
+        "RIKEN Center for Developmental Biology",
+        "Osaka University",
+        "PMDA's SAKIGAKE regulatory pathway for regenerative medicine",
+        "Major pharmaceutical companies (Takeda, Astellas, Daiichi Sankyo)"
       ],
-      "rationale": "Japan has a strong foundation in regenerative medicine and stem cell research, with significant academic contributions and a supportive regulatory environment. While not as high volume as the US or China, it maintains a strong frontier presence in specific areas."
+      "rationale": "Japan has a strong foundation in regenerative medicine, particularly iPSCs, supported by leading academic institutions and a proactive regulatory framework. There's significant high-skill R&D and a growing commercial sector."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.6,
+      "skill_level": 4,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "Strong government support for biotech",
-        "Major biopharmaceutical companies (Celltrion, Samsung Biologics)",
-        "Focus on stem cell research and biosimilars",
-        "Leading universities (Seoul National University, KAIST)"
+        "Seoul National University, KAIST",
+        "Samsung Biologics (CDMO capabilities for CGT)",
+        "Celltrion, SK Bioscience",
+        "Government initiatives for biotech and regenerative medicine"
       ],
-      "rationale": "South Korea is a growing hub for biotech, with government backing and strong manufacturing capabilities. Its cell and gene therapy sector is developing, showing strength in applied research and manufacturing, with increasing expert-level contributions."
+      "rationale": "South Korea is a rapidly growing hub with strong government support and excellent research infrastructure. It excels in stem cell research and has a burgeoning biotech industry, contributing to both advanced research and manufacturing."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.45,
       "confidence": "medium",
       "evidence": [
-        "Government initiatives to promote biotech",
-        "Focus on precision medicine and cell therapy",
-        "Taiwan Bio-Industry Organization",
-        "National Health Research Institutes"
+        "Academia Sinica, National Taiwan University",
+        "Development Center for Biotechnology (DCB)",
+        "Government support for biotech industry development"
       ],
-      "rationale": "Taiwan has an emerging biotech sector with government support and a focus on precision medicine. While growing, its advanced cell and gene therapy market is smaller, with specialist-level roles and some frontier R&D in specific niches."
+      "rationale": "Taiwan has a solid academic base and government initiatives to foster biotech. While not a global leader, it has niche strengths in regenerative medicine and some emerging CGT companies, leading to a moderate volume of advanced roles."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Strong pharmaceutical and chemical industry base",
-        "Leading biotech companies (BioNTech, Miltenyi Biotec)",
-        "Excellent academic research (Max Planck, Fraunhofer Institutes)",
-        "Major pharma R&D (Bayer, Merck KGaA)",
-        "Robust university hospital network"
+        "Max Planck Institutes, Fraunhofer Institutes",
+        "Charit\u00e9 Berlin, University of T\u00fcbingen",
+        "BioNTech (expanding into CGT)",
+        "Miltenyi Biotec (cell processing technologies)",
+        "Strong pharmaceutical industry presence"
       ],
-      "rationale": "Germany possesses a highly developed life sciences sector with significant contributions to cell and gene therapy, particularly in CAR-T and cell processing technologies. Its strong academic and industrial base supports expert-level roles and substantial frontier research."
+      "rationale": "Germany boasts a robust pharmaceutical and biotech sector, supported by world-class academic and research institutions. It has significant activity in both fundamental research and clinical development of cell and gene therapies."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
-        "Growing life sciences cluster (Leiden Bio Science Park, Utrecht Science Park)",
-        "Key gene therapy company (uniQure)",
-        "Presence of major pharma (Kite Pharma/Gilead)",
-        "Strong academic medical centers"
+        "Leiden University Medical Center (LUMC)",
+        "Hubrecht Institute, Utrecht University",
+        "Amsterdam UMC",
+        "Focus on regenerative medicine and gene therapy research"
       ],
-      "rationale": "The Netherlands has a focused and growing cell and gene therapy sector, particularly in gene therapy and regenerative medicine. It offers specialist roles and contributes to frontier research in specific areas, supported by strong academic-industry collaboration."
+      "rationale": "The Netherlands has strong academic research clusters, particularly in Leiden and Utrecht, focusing on regenerative medicine and gene therapy. While the overall volume is lower, the quality of research is high, with some frontier work."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
-        "Cell and Gene Therapy Catapult (national initiative)",
-        "World-leading academic institutions (Oxford, Cambridge, UCL)",
-        "Major pharmaceutical companies (GSK, AstraZeneca)",
-        "Pioneering gene therapy companies (Orchard Therapeutics)",
-        "Strong clinical trial infrastructure"
+        "UCL (pioneering gene therapy research)",
+        "Oxford University, Cambridge University",
+        "Francis Crick Institute",
+        "Cell and Gene Therapy Catapult (government-backed innovation center)",
+        "Major pharmaceutical companies (GSK, AstraZeneca)"
       ],
-      "rationale": "The UK has a strong academic and clinical research base in cell and gene therapy, supported by government initiatives and significant private investment. It excels in gene therapy development and clinical translation, offering expert roles and substantial frontier R&D."
+      "rationale": "The UK is a significant hub for Cell & Gene Therapy, driven by world-renowned universities, dedicated government initiatives like the CGT Catapult, and strong pharmaceutical R&D. It has a high volume of advanced roles and substantial frontier research."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.6,
+      "skill_level": 4,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "Strong academic research (Pasteur Institute, CNRS, Inserm)",
-        "Key gene therapy research organization (Genethon)",
-        "Major pharmaceutical company (Sanofi)",
-        "AFM-Telethon funding for rare diseases"
+        "Genopole biocluster",
+        "Institut Pasteur, Inserm",
+        "AFM-Telethon (significant funding for gene therapy research)",
+        "G\u00e9n\u00e9thon (gene therapy research and development)",
+        "Sanofi (R&D presence)"
       ],
-      "rationale": "France has a solid foundation in biomedical research, particularly in gene therapy for rare diseases and immunology. It offers specialist and growing expert roles, with notable contributions to frontier research, especially through public-private partnerships."
+      "rationale": "France has a strong legacy in biomedical research, with key institutions and dedicated funding for gene therapy. It has a good volume of advanced roles, particularly in academic and non-profit research, with some frontier contributions."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.65,
       "confidence": "medium",
       "evidence": [
-        "High innovation ecosystem ('Startup Nation')",
-        "Key cell therapy companies (Pluristem, Gamida Cell)",
-        "Leading research institutes (Weizmann Institute of Science, Technion)",
-        "Strong academic-industry collaboration"
+        "Weizmann Institute of Science",
+        "Hebrew University of Jerusalem, Tel Aviv University",
+        "Vibrant biotech startup ecosystem",
+        "Focus on innovative medical technologies"
       ],
-      "rationale": "Israel demonstrates high innovation potential in biotech, including cell and gene therapy, despite its smaller scale. It focuses on specialist roles and contributes to frontier research through agile startups and strong academic institutions."
+      "rationale": "Israel's strong academic research and innovative startup culture extend to Cell & Gene Therapy. While the overall volume of roles is lower than major hubs, the quality and frontier nature of the R&D are significant."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.25,
       "confidence": "medium",
       "evidence": [
-        "Large pharmaceutical industry (generics, vaccines)",
-        "Growing interest in biotech",
-        "Some academic research centers (e.g., NCBS)",
-        "Biocon (biologics focus)"
+        "All India Institute of Medical Sciences (AIIMS)",
+        "Indian Institute of Science (IISc)",
+        "Biocon (biopharmaceuticals)",
+        "Emerging clinical trial landscape"
       ],
-      "rationale": "India's advanced cell and gene therapy market is nascent, primarily focused on applied research and manufacturing rather than frontier discovery. While there's growing interest, the volume of advanced roles and world-first R&D remains very low."
+      "rationale": "India is an emerging market with growing interest in CGT, primarily focused on clinical applications and some academic research. Frontier R&D is limited, with most advanced roles being in applied research or clinical development."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "high",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "medium",
       "evidence": [
-        "Strong government investment in biomedical sciences (A*STAR)",
-        "Excellent research infrastructure (Biopolis)",
-        "Focus on advanced manufacturing and bioprocessing",
-        "Presence of major pharma manufacturing (Takeda)",
-        "Leading universities (National University of Singapore, Nanyang Technological University)"
+        "A*STAR (Agency for Science, Technology and Research)",
+        "National University of Singapore (NUS), Nanyang Technological University (NTU)",
+        "Biopolis research hub",
+        "Government strategy to develop a biomedical sciences hub"
       ],
-      "rationale": "Singapore is a strategic hub for biomedical sciences, with a strong focus on advanced manufacturing, translational research, and some frontier discovery in cell and gene therapy. It offers specialist and growing expert roles, particularly in bioprocessing and clinical development."
+      "rationale": "Singapore has made significant strategic investments in biomedical sciences, including CGT. It has strong research institutions and a growing biotech presence, contributing to both advanced research and some frontier work, despite a smaller overall volume."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
-        "Global pharmaceutical hub (Roche, Novartis)",
-        "World-class academic research (ETH Zurich, EPFL)",
-        "High R&D investment",
-        "Strong biotech cluster (Basel)"
+        "ETH Zurich, EPFL",
+        "University of Zurich, University of Basel",
+        "Novartis, Roche (major pharmaceutical R&D centers)",
+        "Lonza (leading CDMO for CGT manufacturing)"
       ],
-      "rationale": "Switzerland is a powerhouse in pharmaceutical R&D, with major companies and top-tier academic institutions driving significant innovation in cell and gene therapy. It offers expert-level roles and contributes substantially to frontier discovery, especially in oncology and immunology."
+      "rationale": "Switzerland is a powerhouse in pharmaceuticals and biotech, with world-class universities and major industry players. It has a high concentration of advanced CGT roles, particularly in R&D and manufacturing, with significant frontier contributions."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
-        "Strong life science sector",
-        "Excellent academic research (Karolinska Institute)",
-        "Focus on rare diseases and gene therapy",
-        "AstraZeneca R&D presence"
+        "Karolinska Institute (Nobel Assembly for Physiology or Medicine)",
+        "Uppsala University",
+        "AstraZeneca (R&D presence)",
+        "Focus on gene editing and stem cell research"
       ],
-      "rationale": "Sweden has a robust life science sector with strong academic research, particularly in rare diseases and gene therapy. It offers specialist roles and contributes to frontier research in specific disease areas, though at a smaller overall volume."
+      "rationale": "Sweden has a strong academic research base, particularly at the Karolinska Institute, contributing to high-quality research in CGT. While the commercial volume is moderate, there's significant advanced research and some frontier work."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "low",
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Growing health tech and biotech sector",
-        "University of Eastern Finland (gene therapy research)",
-        "Focus on ocular gene therapy"
+        "University of Helsinki, University of Turku",
+        "Niche strengths in viral vectors and gene therapy research"
       ],
-      "rationale": "Finland has niche areas of excellence in gene therapy, particularly for ocular diseases, supported by strong academic research. However, the overall volume of advanced roles and frontier R&D in cell and gene therapy remains very low."
+      "rationale": "Finland has strong academic research in specific areas of CGT, such as viral vectors. The overall volume of advanced roles is low, but there are pockets of high-skill and some frontier research."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
-        "Strong academic research (University of Toronto, McGill)",
-        "McEwen Stem Cell Institute",
-        "Centre for Commercialization of Regenerative Medicine (CCRM)",
+        "University of Toronto (SickKids, McEwen Centre for Regenerative Medicine)",
+        "McGill University, University of British Columbia (UBC)",
+        "Stem Cell Network (national research initiative)",
         "Government funding for health research"
       ],
-      "rationale": "Canada has a strong academic foundation in stem cell and regenerative medicine research, with growing efforts in gene therapy. It offers specialist and emerging expert roles, contributing to frontier research, particularly in stem cell applications and commercialization."
+      "rationale": "Canada has a strong academic research base in CGT, particularly in regenerative medicine and stem cells, supported by national networks and funding. It offers a moderate volume of advanced roles with significant frontier contributions."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.45,
       "confidence": "medium",
       "evidence": [
-        "Strong academic research (Monash, Melbourne Universities)",
-        "Medical Research Future Fund (government investment)",
-        "CSIRO (national science agency)",
-        "Focus on regenerative medicine and stem cells"
+        "Monash University (Australian Regenerative Medicine Institute - ARMI)",
+        "University of Melbourne, CSIRO",
+        "Peter MacCallum Cancer Centre",
+        "Growing clinical trial activity"
       ],
-      "rationale": "Australia has a solid research base in regenerative medicine and stem cells, supported by government funding. It offers specialist roles and contributes to frontier research, particularly in academic settings, though the industrial scale is moderate."
+      "rationale": "Australia has good academic research in regenerative medicine and a growing number of clinical trials. While the overall volume of advanced roles is moderate, there's a solid foundation for high-skill research and some frontier work."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
-      "confidence": "low",
+      "frontier": 0.15,
+      "confidence": "medium",
       "evidence": [
-        "Significant presence of large pharma manufacturing",
-        "IDA Ireland (attracting pharma investment)",
-        "NIBRT (bioprocessing training and research)",
-        "Growing biotech R&D"
+        "National Institute for Bioprocessing Research and Training (NIBRT)",
+        "Focus on biopharmaceutical manufacturing and process development",
+        "Limited fundamental CGT R&D"
       ],
-      "rationale": "Ireland is a major hub for pharmaceutical manufacturing and bioprocessing. While R&D in biotech is growing, its advanced cell and gene therapy market is more focused on applied research, manufacturing, and clinical trials rather than frontier discovery."
+      "rationale": "Ireland has a strong biopharmaceutical manufacturing sector, but its advanced R&D in Cell & Gene Therapy is relatively limited. Most roles are in applied sciences, manufacturing, or quality control, with very little frontier research."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
-        "Strong pharmaceutical industry (UCB, Janssen)",
-        "Excellent academic research (KU Leuven, VIB)",
-        "Focus on gene therapy and rare diseases",
-        "Strong research in vaccine development"
+        "KU Leuven, Ghent University",
+        "VIB (Flanders Institute for Biotechnology)",
+        "Celyad Oncology (CAR-T company)",
+        "Strong academic research in immunology and cell biology"
       ],
-      "rationale": "Belgium has a strong pharmaceutical sector and excellent academic research, making significant contributions to gene therapy and rare diseases. It offers specialist and growing expert roles, with notable frontier research in specific therapeutic areas."
+      "rationale": "Belgium has strong academic research institutions and a growing biotech cluster, particularly in Flanders. It contributes to advanced CGT research, especially in immunology and cell biology, with some frontier work and specialized companies."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "low",
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Growing biotech sector",
-        "Strong academic research (Medical University of Vienna)",
-        "Austrian Institute of Technology",
-        "Focus on regenerative medicine and immunology"
+        "Medical University of Vienna",
+        "CeMM (Research Center for Molecular Medicine)",
+        "Niche strengths in academic research"
       ],
-      "rationale": "Austria has a developing biotech sector with solid academic research in regenerative medicine and immunology. While it offers specialist roles, its overall volume and consistent frontier contributions in cell and gene therapy are moderate."
+      "rationale": "Austria has high-quality academic research in specific areas of molecular medicine and cell biology. While the overall volume of advanced CGT roles is low, there are pockets of high-skill research and some frontier contributions."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
-        "Telethon Institute for Gene Therapy (SR-TIGET, pioneering work)",
-        "Strong academic research",
-        "Focus on gene therapy for rare diseases",
-        "Chiesi Farmaceutici (biotech focus)"
+        "San Raffaele Telethon Institute (pioneering gene therapy)",
+        "University of Rome",
+        "Fondazione Telethon (funding for rare disease research)",
+        "Strong academic research in genetic diseases"
       ],
-      "rationale": "Italy has made pioneering contributions to gene therapy, particularly for rare diseases, through institutions like SR-TIGET. It offers specialist and some expert roles, with significant frontier research in specific therapeutic areas, though the overall market volume is moderate."
+      "rationale": "Italy has a strong history in genetic disease research and has pioneered some gene therapies, notably through the San Raffaele Telethon Institute. It offers a moderate volume of advanced roles, with significant high-skill and frontier research in specialized areas."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.3,
-      "confidence": "low",
+      "skill_level": 3,
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Growing biotech sector",
-        "Strong academic research (CNIO - National Cancer Research Centre)",
-        "Focus on oncology and regenerative medicine"
+        "Centre for Genomic Regulation (CRG)",
+        "IDIBAPS (August Pi i Sunyer Biomedical Research Institute)",
+        "Growing clinical trial activity in oncology",
+        "Academic research in Barcelona and Madrid"
       ],
-      "rationale": "Spain's biotech sector is growing, with solid academic research, particularly in oncology and regenerative medicine. However, the volume of advanced cell and gene therapy roles and consistent frontier R&D remains relatively low."
+      "rationale": "Spain has good academic research, particularly in genomics and oncology, with some clinical trial activity in CGT. The overall volume of advanced roles is lower, but there are high-skill research positions and some emerging frontier work."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.1,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Nascent biotech sector",
-        "Malaysia Bioeconomy Corporation (government initiative)",
-        "Limited advanced research infrastructure"
+        "Limited dedicated CGT research institutions or companies",
+        "Focus on basic biomedical research or clinical application of established therapies",
+        "General economic development reports"
       ],
-      "rationale": "Malaysia's advanced cell and gene therapy market is negligible, with very limited indigenous R&D or advanced hiring. Efforts are primarily focused on basic biomanufacturing and early-stage research."
+      "rationale": "Malaysia's Cell & Gene Therapy market is very nascent, with negligible advanced R&D or specialized hiring. Activity is primarily in basic research or the application of established therapies, with minimal frontier work."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Very early stages of biotech development",
-        "Focus on basic research and diagnostics",
-        "Limited public information on advanced biotech initiatives"
+        "Limited dedicated CGT research institutions or companies",
+        "Focus on basic biomedical research or clinical application of established therapies",
+        "General economic development reports"
       ],
-      "rationale": "Vietnam's advanced cell and gene therapy market is virtually non-existent, with negligible R&D or advanced hiring. The focus remains on foundational biomedical research and public health."
+      "rationale": "Vietnam's Cell & Gene Therapy market is very nascent, with negligible advanced R&D or specialized hiring. Activity is primarily in basic research or the application of established therapies, with minimal frontier work."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.1,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Growing interest in medical tourism",
-        "National Center for Genetic Engineering and Biotechnology (BIOTEC)",
-        "Limited advanced research infrastructure"
+        "Limited dedicated CGT research institutions or companies",
+        "Focus on basic biomedical research or clinical application of established therapies",
+        "General economic development reports"
       ],
-      "rationale": "Thailand has a nascent biotech sector with some interest in stem cell applications, but the advanced cell and gene therapy market is very limited. Frontier R&D is minimal and not consistently world-class."
+      "rationale": "Thailand's Cell & Gene Therapy market is very nascent, with negligible advanced R&D or specialized hiring. Activity is primarily in basic research or the application of established therapies, with minimal frontier work."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Large population, but very early stages for advanced biotech",
-        "Focus on public health and basic diagnostics",
-        "Limited public information on advanced biotech initiatives"
+        "Limited dedicated CGT research institutions or companies",
+        "Focus on basic biomedical research or clinical application of established therapies",
+        "General economic development reports"
       ],
-      "rationale": "Indonesia's advanced cell and gene therapy market is negligible, with virtually no indigenous R&D or advanced hiring. The focus is on basic biomedical research and public health challenges."
+      "rationale": "Indonesia's Cell & Gene Therapy market is very nascent, with negligible advanced R&D or specialized hiring. Activity is primarily in basic research or the application of established therapies, with minimal frontier work."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Significant investment in healthcare infrastructure",
-        "Dubai Future Foundation initiatives",
-        "Partnerships with international medical institutions (e.g., Cleveland Clinic Abu Dhabi)",
-        "Focus on adoption and clinical application"
+        "Significant investment in general healthcare infrastructure",
+        "Limited dedicated CGT research or biotech industry",
+        "Focus on attracting clinical services rather than fundamental R&D"
       ],
-      "rationale": "The UAE is investing heavily in healthcare and attracting international expertise, but its advanced cell and gene therapy market is primarily focused on clinical adoption and partnerships rather than indigenous frontier R&D. Volume of advanced roles is very low."
+      "rationale": "The UAE is investing heavily in healthcare infrastructure but has very limited advanced R&D in Cell & Gene Therapy. The focus is more on clinical application and attracting medical tourism rather than frontier research or specialized biotech development."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Vision 2030 initiatives for health and biotech",
-        "King Abdullah University of Science and Technology (KAUST)",
-        "King Faisal Specialist Hospital & Research Centre",
-        "Focus on building infrastructure and attracting talent"
+        "Vision 2030 initiatives for healthcare development",
+        "Limited dedicated CGT research or biotech industry",
+        "Focus on building general healthcare capacity"
       ],
-      "rationale": "Saudi Arabia is making strategic investments in biotech as part of Vision 2030, building infrastructure and attracting talent. However, its advanced cell and gene therapy market is still in early development, with limited indigenous frontier R&D."
+      "rationale": "Saudi Arabia is undergoing significant healthcare transformation, but its Cell & Gene Therapy R&D is nascent. There's minimal advanced hiring or frontier research, with efforts concentrated on building foundational healthcare capabilities."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.25,
       "confidence": "medium",
       "evidence": [
-        "Largest economy in Latin America",
-        "Strong academic research base (Fiocruz, Butantan Institute, USP)",
-        "Growing interest in stem cell research",
-        "Some clinical trials in advanced therapies"
+        "Oswaldo Cruz Foundation (Fiocruz)",
+        "University of S\u00e3o Paulo",
+        "Some public health initiatives and clinical trials",
+        "Economic challenges impacting research funding"
       ],
-      "rationale": "Brazil has a strong academic research base and growing interest in stem cell research, but its advanced cell and gene therapy market faces regulatory and funding challenges. It offers applied and some specialist roles, with moderate frontier contributions from academic institutions."
+      "rationale": "Brazil has some academic research in CGT, particularly in public health institutions. However, economic challenges limit large-scale investment in frontier R&D, resulting in a very low volume of advanced roles, mostly in applied research."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
+      "frontier": 0.15,
+      "confidence": "medium",
       "evidence": [
-        "Growing life science sector",
-        "Strong academic research (Medical University of Warsaw)",
-        "National Centre for Research and Development",
-        "Emerging biotech startups"
+        "Medical University of Warsaw, Jagiellonian University",
+        "EU funding for research and development",
+        "Emerging academic interest but limited commercial biotech"
       ],
-      "rationale": "Poland's life science sector is developing, with solid academic research. However, its advanced cell and gene therapy market is still in early stages, with limited volume of advanced roles and nascent frontier R&D."
+      "rationale": "Poland has a growing academic sector with some research in CGT, often supported by EU funding. However, the commercial biotech landscape for advanced CGT is limited, leading to a very low volume of specialized roles and minimal frontier R&D."
     }
   ]
 }

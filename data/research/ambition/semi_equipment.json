@@ -9,39 +9,39 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "CHIPS and Science Act",
+        "CHIPS and Science Act (2022)",
         "National Semiconductor Technology Center (NSTC)",
-        "CHIPS for America R&D programs"
+        "Manufacturing USA institutes"
       ],
-      "rationale": "The US has a flagship national priority to revitalize domestic semiconductor manufacturing and R&D, including advanced fab equipment and next-gen lithography, backed by significant funding and strategic initiatives."
+      "rationale": "The CHIPS Act provides substantial funding and strategic direction to strengthen the domestic semiconductor ecosystem, including advanced manufacturing and R&D for fab equipment and lithography."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "ambition": 5,
-      "target_level": 4,
-      "horizon": "long",
+      "target_level": 5,
+      "horizon": "medium",
       "confidence": "high",
       "evidence": [
+        "Made in China 2025",
         "National Integrated Circuit Industry Investment Fund (Big Fund)",
-        "Made in China 2025 (semiconductor self-sufficiency goals)",
-        "Various national and provincial R&D programs for equipment"
+        "Shanghai Micro Electronics Equipment (SMEE) development programs"
       ],
-      "rationale": "China has a very strong national drive for self-sufficiency in semiconductors, including a massive, funded plan to develop domestic fab equipment and lithography capabilities to overcome foreign restrictions."
+      "rationale": "China has made semiconductor self-sufficiency, particularly in advanced manufacturing and lithography, a top national priority with massive state-backed investment to overcome export controls."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "ambition": 4,
-      "target_level": 4,
+      "ambition": 5,
+      "target_level": 5,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Rapidus Corporation initiative",
-        "Ministry of Economy, Trade and Industry (METI) support for semiconductor industry",
-        "Various R&D initiatives for advanced manufacturing"
+        "Rapidus Corporation (advanced logic manufacturing JV)",
+        "Ministry of Economy, Trade and Industry (METI) subsidies",
+        "JASM (TSMC fab) investment"
       ],
-      "rationale": "Japan is actively revitalizing its semiconductor industry with a strong focus on advanced manufacturing (Rapidus) and maintaining its historical strength in equipment and materials, backed by government and industry collaboration."
+      "rationale": "Japan is investing heavily to regain leadership in advanced semiconductor manufacturing and equipment, with Rapidus aiming for 2nm production and government support for the ecosystem."
     },
     {
       "country_iso": "KR",
@@ -51,220 +51,236 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "K-Semiconductor Strategy",
-        "Massive private sector investment (Samsung, SK Hynix) supported by government incentives",
-        "National Semiconductor R&D programs"
+        "K-Semiconductor Strategy (2021)",
+        "Samsung and SK Hynix R&D investments",
+        "Government incentives for semiconductor clusters"
       ],
-      "rationale": "South Korea aims for global leadership across the entire semiconductor ecosystem, including advanced fab equipment and processes, with substantial government support and industry investment in R&D and talent."
+      "rationale": "South Korea's national strategy and significant corporate investments are geared towards maintaining and extending global leadership in advanced semiconductor manufacturing and related equipment."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "ambition": 4,
+      "ambition": 5,
       "target_level": 5,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Taiwan Chips Act (Statute for Industrial Innovation)",
-        "Government support for R&D in advanced manufacturing",
-        "ITRI (Industrial Technology Research Institute) initiatives"
+        "TSMC's continuous R&D and fab expansion (e.g., 2nm)",
+        "Taiwan's '5+2 Industrial Innovation Plan'",
+        "Government support for semiconductor clusters"
       ],
-      "rationale": "Taiwan is focused on maintaining its global leadership in advanced semiconductor manufacturing and is investing to strengthen its entire supply chain, including R&D for advanced equipment and materials."
+      "rationale": "Taiwan, through TSMC and government support, consistently invests in leading-edge fab technology and R&D, pushing the frontier in advanced lithography and manufacturing processes."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "European Chips Act (major beneficiary)",
+        "Intel fab announcement in Magdeburg",
+        "Infineon expansion in Dresden"
+      ],
+      "rationale": "Germany is a key hub within the European Chips Act, attracting significant investment in advanced fabs and supporting the ecosystem for leading-edge manufacturing, which requires advanced equipment."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
+      "confidence": "high",
+      "evidence": [
+        "ASML's continuous R&D investment in EUV and High-NA EUV",
+        "Government support for Brainport Eindhoven ecosystem",
+        "National initiatives to retain talent for high-tech industries"
+      ],
+      "rationale": "As home to ASML, the global leader in lithography, the Netherlands has a top national priority to support and advance this critical frontier technology through R&D and ecosystem development."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "UK Semiconductor Strategy (2023)",
+        "Compound Semiconductor Applications Catapult"
+      ],
+      "rationale": "The UK's strategy focuses on design, R&D, and compound semiconductors, with less emphasis on large-scale advanced logic fab equipment manufacturing or frontier lithography development."
+    },
+    {
+      "country_iso": "FR",
+      "country_name": "France",
       "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "EU Chips Act (national implementation)",
-        "German government subsidies for Intel fab in Magdeburg",
-        "Fraunhofer institutes' research in microelectronics"
+        "European Chips Act (contributor)",
+        "France 2030 investment plan (includes microelectronics)",
+        "CEA-Leti's R&D in microelectronics"
       ],
-      "rationale": "Germany is a key player in the EU Chips Act, attracting major fab investments and supporting R&D in specific high-value components for fab equipment, leveraging its engineering strengths."
+      "rationale": "France contributes to the European Chips Act and has strong R&D capabilities in microelectronics, aiming for specialized equipment and processes rather than full-scale frontier lithography manufacturing."
     },
     {
-      "country_iso": "NL",
-      "country_name": "Netherlands",
-      "ambition": 4,
-      "target_level": 5,
-      "horizon": "long",
-      "confidence": "high",
-      "evidence": [
-        "Dutch National Growth Fund (supporting ASML's ecosystem)",
-        "Brainport Eindhoven initiatives",
-        "Government support for R&D in photonics and microelectronics"
-      ],
-      "rationale": "As the home of ASML, the Netherlands has a strong national commitment to maintaining and advancing its leadership in lithography equipment, with continuous R&D and ecosystem support."
-    },
-    {
-      "country_iso": "GB",
-      "country_name": "United Kingdom",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "medium",
-      "confidence": "medium",
-      "evidence": [
-        "UK Semiconductor Strategy (focus on design, R&D, compound semiconductors)"
-      ],
-      "rationale": "The UK's semiconductor strategy focuses on design, R&D, and compound semiconductors, with limited stated ambition or direct investment in large-scale fab equipment manufacturing."
-    },
-    {
-      "country_iso": "FR",
-      "country_name": "France",
+      "country_iso": "IL",
+      "country_name": "Israel",
       "ambition": 2,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "EU Chips Act (national implementation)",
-        "France 2030 investment plan (includes microelectronics)",
-        "CEA-Leti research"
+        "Intel's R&D and manufacturing presence",
+        "Various tech startups in semiconductor-related fields",
+        "Government support for high-tech R&D"
       ],
-      "rationale": "France contributes to the EU Chips Act with a focus on R&D and specific segments like FD-SOI, but does not have a broad national ambition for comprehensive fab equipment manufacturing."
-    },
-    {
-      "country_iso": "IL",
-      "country_name": "Israel",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "medium",
-      "confidence": "low",
-      "evidence": [
-        "Israel Innovation Authority support for high-tech"
-      ],
-      "rationale": "Israel excels in design and R&D but has no stated national ambition for developing or manufacturing complex fab equipment or lithography systems."
+      "rationale": "Israel excels in semiconductor design and has some specialized equipment companies, but there is no stated national ambition to become a major player in general-purpose advanced fab equipment or lithography manufacturing."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "ambition": 4,
-      "target_level": 2,
-      "horizon": "long",
+      "target_level": 3,
+      "horizon": "medium",
       "confidence": "high",
       "evidence": [
         "India Semiconductor Mission (ISM)",
         "Production Linked Incentive (PLI) scheme for semiconductors",
-        "Various state-level incentives for fabs"
+        "Micron fab announcement"
       ],
-      "rationale": "India has a strong national push to establish a comprehensive semiconductor manufacturing ecosystem, including fab equipment and materials, backed by significant subsidies and a long-term vision for self-reliance."
+      "rationale": "India has launched a significant national mission with substantial financial incentives to establish a domestic semiconductor ecosystem, including attracting fab manufacturing and related equipment industries."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Economic Development Board (EDB) initiatives to attract and grow semiconductor investments",
-        "A*STAR research institutes"
+        "Economic Development Board (EDB) initiatives to attract high-tech manufacturing",
+        "GlobalFoundries and Micron expansions",
+        "A*STAR research institutes in microelectronics"
       ],
-      "rationale": "Singapore aims to maintain its competitiveness in advanced semiconductor manufacturing and packaging, with R&D support for related processes, but not a direct ambition for developing core fab equipment."
+      "rationale": "Singapore consistently invests in its semiconductor manufacturing sector, attracting leading foundries and supporting the ecosystem for advanced fab operations, which implies ambition in related equipment."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "Switzerland has no stated national ambition or dedicated programs for developing or manufacturing fab equipment or lithography."
+      "confidence": "medium",
+      "evidence": [
+        "ETH Zurich and EPFL research in micro/nanotechnology"
+      ],
+      "rationale": "Switzerland has strong research and precision engineering capabilities, but no specific national strategy or large-scale investment for developing or manufacturing advanced fab equipment or lithography."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "Sweden has no stated national ambition or dedicated programs for developing or manufacturing fab equipment or lithography."
+      "confidence": "medium",
+      "evidence": [
+        "KTH, Chalmers research in related fields"
+      ],
+      "rationale": "Sweden has strong general R&D, but no stated national ambition or significant public investment specifically targeting advanced fab equipment or lithography manufacturing."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "Finland has no stated national ambition or dedicated programs for developing or manufacturing fab equipment or lithography."
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre, Aalto University research"
+      ],
+      "rationale": "Finland, despite its tech sector, does not have a stated national ambition or significant programs focused on becoming a player in advanced fab equipment or lithography."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "medium",
-      "confidence": "low",
-      "evidence": [
-        "National Quantum Strategy (some overlap with advanced materials)"
-      ],
-      "rationale": "Canada's focus is on R&D, design, and specific materials, with no significant stated national ambition for large-scale fab equipment manufacturing."
-    },
-    {
-      "country_iso": "AU",
-      "country_name": "Australia",
-      "ambition": 0,
-      "target_level": 1,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [],
-      "rationale": "Australia's focus in semiconductors is primarily on critical minerals, with no stated national ambition for fab equipment or lithography manufacturing."
-    },
-    {
-      "country_iso": "IE",
-      "country_name": "Ireland",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "IDA Ireland strategies for attracting FDI"
+        "National Quantum Strategy (some overlap with advanced manufacturing)",
+        "Canadian Semiconductor Council"
       ],
-      "rationale": "Ireland's strategy is to attract and support high-tech manufacturing FDI (e.g., Intel), rather than developing its own indigenous fab equipment industry."
+      "rationale": "Canada focuses on R&D, design, and specialized materials in semiconductors, with less emphasis on developing or manufacturing large-scale advanced fab equipment or lithography systems."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "ambition": 1,
+      "target_level": 1,
+      "horizon": "long",
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO research, some university initiatives"
+      ],
+      "rationale": "Australia has a growing tech sector and research, but no national strategy or significant investment specifically for developing or manufacturing advanced fab equipment or lithography."
+    },
+    {
+      "country_iso": "IE",
+      "country_name": "Ireland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Intel's significant fab presence in Leixlip",
+        "IDA Ireland's efforts to attract high-tech investment"
+      ],
+      "rationale": "Ireland's strength is in attracting and hosting major semiconductor manufacturers. Its national ambition is more about supporting these operations rather than developing indigenous advanced fab equipment or lithography."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "ambition": 4,
-      "target_level": 5,
+      "target_level": 4,
       "horizon": "long",
       "confidence": "high",
       "evidence": [
-        "Flemish government funding for imec",
-        "EU Chips Act contributions"
+        "Imec (Interuniversity Microelectronics Centre) research roadmap",
+        "Government support for Imec"
       ],
-      "rationale": "Through imec, Belgium is a world leader in R&D for nanoelectronics and next-generation lithography, with strong national and regional government support for this critical research hub."
+      "rationale": "Imec, based in Belgium, is a global leader in nanoelectronics R&D, critically influencing future fab processes and equipment, demonstrating a high-level ambition in this domain, supported by the government."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Silicon Austria Labs (SAL) research in microelectronics"
+        "Infineon's R&D and manufacturing presence",
+        "Silicon Austria Labs (SAL) research"
       ],
-      "rationale": "Austria has niche strengths in power semiconductors and specific components, but no broad national ambition for fab equipment manufacturing."
+      "rationale": "Austria has niche strengths in microelectronics, particularly in power semiconductors and sensors, with some specialized equipment suppliers, but not a broad ambition in advanced fab equipment or lithography."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "ambition": 2,
+      "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "EU Chips Act (national implementation)",
-        "Government support for STMicroelectronics/GlobalFoundries fab"
+        "European Chips Act (contributor)",
+        "STMicroelectronics presence",
+        "Government incentives for semiconductor R&D and manufacturing"
       ],
-      "rationale": "Italy participates in the EU Chips Act, aiming to attract new fabs and strengthen specific manufacturing segments like power semiconductors, but not broad fab equipment development."
+      "rationale": "Italy participates in the European Chips Act and aims to attract significant fab investments, implying ambition to host and support advanced manufacturing, though not primarily developing frontier lithography equipment."
     },
     {
       "country_iso": "ES",
@@ -274,35 +290,36 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "PERTE Chip (Strategic Project for Economic Recovery and Transformation in Microelectronics and Semiconductors)",
-        "EU Chips Act"
+        "PERTE Chip (Strategic Project for Economic Recovery and Transformation in Microelectronics and Semiconductors)"
       ],
-      "rationale": "Spain's 'PERTE Chip' plan aims to invest in the semiconductor ecosystem, including design and R&D, but its ambition for complex fab equipment manufacturing is nascent."
+      "rationale": "Spain's PERTE Chip initiative focuses on strengthening its semiconductor ecosystem, primarily in design and R&D, with some pilot lines, rather than developing advanced fab equipment or lithography."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "ambition": 3,
-      "target_level": 2,
+      "target_level": 3,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "New Industrial Master Plan 2030 (NIMP 2030)",
-        "Various investment incentives for high-tech manufacturing"
+        "National Semiconductor Strategic Plan (announced 2024)",
+        "Efforts to attract front-end manufacturing and R&D"
       ],
-      "rationale": "Malaysia is leveraging its strong assembly, testing, and packaging base to move up the value chain into wafer fabrication and potentially some equipment components, backed by national industrial plans."
+      "rationale": "Malaysia is actively pursuing a strategy to move beyond its traditional role in assembly, test, and packaging, aiming to attract more front-end manufacturing and R&D, including related equipment and processes."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "ambition": 1,
       "target_level": 1,
-      "horizon": "medium",
-      "confidence": "low",
+      "horizon": "long",
+      "confidence": "medium",
       "evidence": [
-        "Government efforts to attract semiconductor investment (e.g., Amkor, Intel assembly plants)"
+        "US-Vietnam Comprehensive Strategic Partnership (includes semiconductor cooperation)",
+        "Intel's assembly and test operations",
+        "Government incentives for high-tech manufacturing"
       ],
-      "rationale": "Vietnam is emerging as a hub for semiconductor assembly and packaging, but has no stated national ambition for complex fab equipment or lithography manufacturing."
+      "rationale": "Vietnam is attracting some semiconductor investment, primarily in assembly and test. While there's an aspiration to move up the value chain, concrete signals for advanced fab equipment or lithography development are nascent."
     },
     {
       "country_iso": "TH",
@@ -310,21 +327,23 @@
       "ambition": 1,
       "target_level": 1,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Board of Investment (BOI) incentives for electronics industry"
+        "Board of Investment (BOI) incentives for electronics and semiconductor industries"
       ],
-      "rationale": "Thailand is focused on attracting semiconductor assembly and packaging investments, with no specific national strategy or ambition for fab equipment manufacturing."
+      "rationale": "Thailand has an established electronics manufacturing base, including semiconductor assembly and test. While aiming to attract more advanced manufacturing, specific high-ambition plans for developing or manufacturing advanced fab equipment or lithography are not prominent."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
       "confidence": "low",
-      "evidence": [],
-      "rationale": "Indonesia is in the early stages of developing a semiconductor ecosystem, primarily focused on assembly and packaging, with no stated ambition for fab equipment."
+      "evidence": [
+        "Government efforts to attract investment in electronics manufacturing"
+      ],
+      "rationale": "Indonesia is in the early stages of building a semiconductor industry, with current focus on attracting basic assembly and test operations. There is no clear stated national ambition or significant investment in advanced fab equipment or lithography."
     },
     {
       "country_iso": "AE",
@@ -334,7 +353,7 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [],
-      "rationale": "The UAE is investing heavily in technology and AI, but has no specific stated national ambition for developing or manufacturing fab equipment or lithography."
+      "rationale": "No stated national ambition or significant public investment specifically targeting advanced fab equipment or lithography manufacturing. While general tech investment exists, this domain is not a priority."
     },
     {
       "country_iso": "SA",
@@ -344,7 +363,7 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [],
-      "rationale": "Saudi Arabia is making significant tech investments, but has no specific stated national ambition for developing or manufacturing fab equipment or lithography."
+      "rationale": "No stated national ambition or significant public investment specifically targeting advanced fab equipment or lithography manufacturing. While general tech investment exists, this domain is not a priority."
     },
     {
       "country_iso": "BR",
@@ -353,21 +372,23 @@
       "target_level": 1,
       "horizon": "long",
       "confidence": "low",
-      "evidence": [],
-      "rationale": "Brazil has historically had some semiconductor initiatives, but currently lacks a strong stated national ambition for fab equipment or lithography."
+      "evidence": [
+        "Past efforts with CEITEC (struggled)"
+      ],
+      "rationale": "Brazil has historically struggled to establish a competitive semiconductor manufacturing industry. There is no current strong national ambition or significant investment in advanced fab equipment or lithography."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "ambition": 1,
-      "target_level": 1,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "medium",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "EU Chips Act (national implementation)",
-        "Intel's planned assembly and test facility"
+        "European Chips Act (beneficiary)",
+        "Intel's planned assembly and test facility in Wroc\u0142aw"
       ],
-      "rationale": "Poland is participating in the EU Chips Act and attracting assembly/test facilities (Intel), but has no specific stated national ambition for developing fab equipment."
+      "rationale": "Poland is part of the European Chips Act and has attracted Intel's assembly and test facility. While growing in the semiconductor supply chain, the stated ambition is not focused on developing or manufacturing advanced fab equipment or lithography systems."
     }
   ]
 }

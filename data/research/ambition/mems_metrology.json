@@ -10,23 +10,26 @@
       "confidence": "high",
       "evidence": [
         "National Nanotechnology Initiative (NNI)",
-        "NIST Quantum Metrology Program",
-        "DoD MESA (Microelectronics Science & Technology for Advanced Packaging) Program",
-        "CHIPS and Science Act (indirectly supporting related R&D infrastructure)"
-      ]
+        "Manufacturing USA Institutes (e.g., AIM Photonics, NextFlex)",
+        "NIST programs for advanced measurement science",
+        "CHIPS and Science Act (indirect support for foundational technologies)"
+      ],
+      "rationale": "The US has a sustained, high-level commitment to foundational micro- and nano-technologies, precision measurement, and advanced manufacturing, essential for MEMS and Metrology. This is evidenced by long-standing initiatives and recent legislative support."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "ambition": 5,
       "target_level": 5,
-      "horizon": "long",
+      "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Made in China 2025 (focus on advanced materials, high-end equipment, new-generation IT)",
-        "14th Five-Year Plan (strategic emerging industries, advanced manufacturing)",
-        "National Key R&D Program (sensor technology, microfabrication)"
-      ]
+        "14th Five-Year Plan (focus on strategic emerging industries, including advanced sensors and microelectronics)",
+        "National semiconductor industry investment funds",
+        "Various provincial and national R&D programs for micro-nano manufacturing",
+        "Earlier 'Made in China 2025' goals (principles remain)"
+      ],
+      "rationale": "China has a very strong national ambition to achieve self-sufficiency and global leadership in critical technologies, including MEMS and advanced metrology, driven by top-down strategic planning and massive investment."
     },
     {
       "country_iso": "JP",
@@ -34,12 +37,13 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "METI's Society 5.0 initiatives (smart sensors, IoT)",
-        "NEDO (New Energy and Industrial Technology Development Organization) R&D programs",
-        "AIST (National Institute of Advanced Industrial Science and Technology) research"
-      ]
+        "METI strategies for advanced materials and manufacturing",
+        "AIST (National Institute of Advanced Industrial Science and Technology) research programs",
+        "Various national R&D projects in micro-nano technologies and precision engineering"
+      ],
+      "rationale": "Japan maintains a strong focus on precision manufacturing, advanced materials, and robotics, with significant government and institutional support for R&D in micro-nano technologies and metrology to sustain its industrial competitiveness."
     },
     {
       "country_iso": "KR",
@@ -47,24 +51,27 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "K-Semiconductor Strategy (includes advanced sensors and components)",
-        "National R&D programs for future semiconductors and smart manufacturing"
-      ]
+        "National R&D strategies for semiconductors and future mobility",
+        "KIST (Korea Institute of Science and Technology) and ETRI (Electronics and Telecommunications Research Institute) initiatives",
+        "Government funding for advanced sensor development and smart manufacturing"
+      ],
+      "rationale": "South Korea leverages its strong semiconductor and display industries to drive innovation in MEMS and advanced sensors, with clear national strategies and institutional support for high-tech development."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "ambition": 4,
-      "target_level": 3,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "5+2 Industrial Innovation Plan (smart machinery, IoT)",
-        "Industrial Technology Research Institute (ITRI) R&D efforts",
-        "Semiconductor industry roadmaps (integration with MEMS)"
-      ]
+        "ITRI (Industrial Technology Research Institute) research programs",
+        "National strategies for smart manufacturing and IoT",
+        "Government support for the semiconductor ecosystem, which includes MEMS fabrication"
+      ],
+      "rationale": "Taiwan's world-leading semiconductor industry provides a robust foundation for MEMS fabrication. National efforts focus on expanding into smart sensors and IoT applications, leveraging existing infrastructure and expertise."
     },
     {
       "country_iso": "DE",
@@ -74,10 +81,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Industry 4.0 initiatives (smart sensors for automation)",
-        "Fraunhofer Gesellschaft research programs (microelectronics, sensor systems)",
-        "PTB (Physikalisch-Technische Bundesanstalt) national metrology programs"
-      ]
+        "Fraunhofer Institutes (e.g., ISIT, IPMS) research programs",
+        "'Industry 4.0' platform and related initiatives",
+        "BMBF (Federal Ministry of Education and Research) funding for microelectronics and sensor technology"
+      ],
+      "rationale": "Germany's strength in precision engineering, industrial automation, and automotive drives a high ambition in industrial MEMS and metrology. Strong institutional support and strategic initiatives like Industry 4.0 underpin this focus."
     },
     {
       "country_iso": "NL",
@@ -87,10 +95,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "National Growth Fund (e.g., PhotonDelta program for integrated photonics)",
-        "TNO research in high-tech systems and sensors",
-        "Ecosystem around ASML (advanced metrology for lithography)"
-      ]
+        "National Agenda for Photonics",
+        "NanoLab initiatives and MESA+ Institute research",
+        "Government support for high-tech ecosystems, including semiconductor equipment (ASML)"
+      ],
+      "rationale": "The Netherlands has a strong niche focus in high-tech systems, particularly photonics and advanced materials. This translates into significant ambition in areas like photonics-integrated MEMS and precision instrumentation."
     },
     {
       "country_iso": "GB",
@@ -100,22 +109,25 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "UK National Quantum Technologies Programme (quantum metrology)",
-        "National Physical Laboratory (NPL) strategic research",
-        "Innovate UK funding for advanced materials and manufacturing"
-      ]
+        "UK National Quantum Technologies Programme (indirectly supports precision measurement)",
+        "High Value Manufacturing Catapult",
+        "EPSRC (Engineering and Physical Sciences Research Council) funding for micro-nano research"
+      ],
+      "rationale": "The UK has a moderate ambition, focusing on strategic applications like quantum technologies and advanced manufacturing, which require high-precision measurement and micro-systems. Support is primarily through research councils and innovation centers."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "France 2030 investment plan (electronics, quantum technologies, advanced manufacturing)",
-        "CEA-Leti strategic roadmap (microelectronics, advanced sensors)"
-      ]
+        "CEA-Leti research programs in microelectronics and nanotechnologies",
+        "'France 2030' investment plan (includes microelectronics and advanced sensors)",
+        "National strategies for aerospace and defense, which rely on advanced sensors"
+      ],
+      "rationale": "France demonstrates a strong ambition in microelectronics and advanced sensors, particularly through its strategic investment plans and leading research institutes like CEA-Leti, supporting key industrial sectors like aerospace and defense."
     },
     {
       "country_iso": "IL",
@@ -125,34 +137,39 @@
       "horizon": "short",
       "confidence": "medium",
       "evidence": [
-        "Israel Innovation Authority programs (sensor tech startups)",
-        "Defense R&D investments (specialized sensors)"
-      ]
+        "Israel Innovation Authority programs supporting high-tech startups",
+        "Defense R&D initiatives focusing on sensor innovation",
+        "Academic research in micro-nano technologies"
+      ],
+      "rationale": "Israel's ambition in MEMS and metrology is driven by its vibrant high-tech ecosystem and strong defense sector, focusing on innovative sensor design and miniaturization for various applications."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "ambition": 2,
-      "target_level": 2,
-      "horizon": "long",
+      "ambition": 3,
+      "target_level": 3,
+      "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Make in India initiative (indigenous manufacturing)",
-        "National Policy on Electronics",
-        "India Semiconductor Mission (indirectly supports sensor R&D)"
-      ]
+        "'Make in India' initiative (focus on electronics manufacturing)",
+        "MeitY (Ministry of Electronics and Information Technology) programs for semiconductor and sensor development",
+        "National Policy on Electronics"
+      ],
+      "rationale": "India has a growing ambition to build indigenous capabilities in electronics manufacturing, including MEMS and sensors, supported by national policies and programs aimed at reducing import dependence and fostering local R&D."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "ambition": 4,
-      "target_level": 4,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Research, Innovation and Enterprise (RIE) 2025 plan (advanced manufacturing, smart nation)",
-        "A*STAR Institute of Microelectronics (IME) research"
-      ]
+        "A*STAR (Agency for Science, Technology and Research) institutes (e.g., IME)",
+        "'Research, Innovation and Enterprise (RIE) 2025' plan",
+        "Smart Nation initiatives driving demand for advanced sensors"
+      ],
+      "rationale": "Singapore's strategic focus on high-value manufacturing, biomedical, and smart nation initiatives drives a strong ambition in MEMS and advanced sensor technologies, supported by dedicated research agencies and funding."
     },
     {
       "country_iso": "CH",
@@ -162,9 +179,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Swiss National Science Foundation (SNSF) programs (precision engineering, micro-robotics)",
-        "CSEM (Swiss Center for Electronics and Microtechnology) research"
-      ]
+        "ETH Zurich and EPFL research initiatives in micro-nano engineering",
+        "CSEM (Swiss Center for Electronics and Microtechnology)",
+        "Innosuisse funding for innovation projects in precision technologies"
+      ],
+      "rationale": "Switzerland excels in precision engineering and high-tech manufacturing. Its ambition in MEMS and metrology is high, focusing on niche leadership in high-precision sensors, micro-robotics, and advanced instrumentation, supported by world-class academic and research institutions."
     },
     {
       "country_iso": "SE",
@@ -174,21 +193,23 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Vinnova (Sweden's innovation agency) funding for smart industry and IoT",
-        "Strategic innovation programs (e.g., advanced materials)"
-      ]
+        "Vinnova funding programs for advanced materials and ICT",
+        "KTH Royal Institute of Technology and Chalmers University of Technology research in micro-nano technologies"
+      ],
+      "rationale": "Sweden's ambition in MEMS and metrology is integrated into its broader innovation strategies for ICT and industrial applications, focusing on advanced sensors and micro-systems for specific industrial needs."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Business Finland programs (digital transformation, smart industry)",
-        "VTT Technical Research Centre of Finland (sensor applications)"
-      ]
+        "VTT Technical Research Centre of Finland programs in microelectronics and photonics",
+        "Business Finland funding for R&D in high-tech sectors"
+      ],
+      "rationale": "Finland has a moderate ambition, with a niche focus on MEMS and metrology within its strengths in ICT and photonics, supported by its national research center VTT."
     },
     {
       "country_iso": "CA",
@@ -198,35 +219,38 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Research Council (NRC) programs (photonics, advanced materials)",
-        "NSERC (Natural Sciences and Engineering Research Council) funding",
-        "National Quantum Strategy"
-      ]
+        "National Research Council (NRC) programs in advanced manufacturing and photonics",
+        "NSERC (Natural Sciences and Engineering Research Council) funding for academic research",
+        "Canada's National Quantum Strategy (indirectly supports precision measurement)"
+      ],
+      "rationale": "Canada's ambition in MEMS and metrology is part of its broader strategy in quantum technologies, photonics, and advanced manufacturing, with support from national research bodies and funding agencies."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Quantum Strategy",
-        "CSIRO research (specialized sensors)",
-        "Modern Manufacturing Initiative (medical products, defense, space)"
-      ]
+        "Australian National Fabrication Facility (ANFF)",
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation) research",
+        "National Quantum Strategy (indirectly supports precision measurement)"
+      ],
+      "rationale": "Australia has a moderate ambition, driven by strategic investments in quantum technologies, defense, and medical devices, which require advanced micro-fabrication and precision measurement capabilities."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "ambition": 3,
       "target_level": 3,
-      "horizon": "short",
+      "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Enterprise Ireland programs (medtech, ICT)",
-        "Science Foundation Ireland (SFI) research centers (e.g., Tyndall National Institute)"
-      ]
+        "Science Foundation Ireland (SFI) research centers (e.g., Tyndall National Institute)",
+        "National strategies for ICT and medical technology sectors"
+      ],
+      "rationale": "Ireland's ambition in MEMS and metrology is linked to its strong ICT and medical device industries, with dedicated research institutes like Tyndall playing a key role in micro-nano electronics."
     },
     {
       "country_iso": "BE",
@@ -236,9 +260,10 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "IMEC's strategic roadmap (nanoelectronics, digital technologies, including MEMS)",
-        "Regional innovation policies (Flanders, Wallonia)"
-      ]
+        "IMEC (Interuniversity Microelectronics Centre) research programs",
+        "Regional innovation strategies supporting nanoelectronics"
+      ],
+      "rationale": "Belgium, particularly through IMEC, has a very strong R&D ambition in nanoelectronics and micro-fabrication, which directly underpins advanced MEMS and metrology capabilities, positioning it as a global research hub."
     },
     {
       "country_iso": "AT",
@@ -248,9 +273,10 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Austrian Research Promotion Agency (FFG) programs (microelectronics, smart systems)",
-        "Photonics Austria initiatives"
-      ]
+        "Silicon Austria Labs (SAL) initiatives",
+        "National microelectronics strategy"
+      ],
+      "rationale": "Austria has a moderate ambition to strengthen its microelectronics and sensor technology capabilities, particularly through Silicon Austria Labs, focusing on industrial applications and R&D."
     },
     {
       "country_iso": "IT",
@@ -260,32 +286,36 @@
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National Recovery and Resilience Plan (PNRR) investments in R&D",
-        "Industry 4.0 initiatives (general advanced manufacturing)"
-      ]
+        "National Research Council (CNR) programs in materials science and microelectronics",
+        "Regional innovation clusters in automotive and aerospace"
+      ],
+      "rationale": "Italy shows a moderate, but less coordinated, ambition in MEMS and metrology, often integrated into broader microelectronics or industrial strategies, with some regional initiatives and academic research."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National R&D and Innovation Strategy (general support for S&T)"
-      ]
+        "National R&D programs for microelectronics and photonics",
+        "Regional innovation strategies"
+      ],
+      "rationale": "Spain has an emerging but relatively low stated ambition in MEMS and metrology, with efforts primarily focused on applied research and integration into existing industrial sectors, rather than frontier development."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "ambition": 1,
-      "target_level": 1,
-      "horizon": "long",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National Investment Aspirations (NIA) (attracting high-tech FDI)",
-        "Malaysia Digital Economy Blueprint"
-      ]
+        "National Investment Aspirations (NIA)",
+        "Various industrial master plans focusing on electronics manufacturing"
+      ],
+      "rationale": "Malaysia's ambition in MEMS is primarily focused on strengthening its role in electronics manufacturing and assembly, with less emphasis on cutting-edge R&D or metrology innovation at a national strategic level."
     },
     {
       "country_iso": "VN",
@@ -295,30 +325,36 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "National Digital Transformation Program (general electronics manufacturing focus)"
-      ]
+        "National strategies for high-tech development",
+        "Investment incentives for electronics manufacturing"
+      ],
+      "rationale": "Vietnam is in the foundational stages of developing its high-tech manufacturing capabilities. Stated ambition in MEMS and metrology is low, focusing on basic electronics manufacturing rather than advanced R&D."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Thailand 4.0 initiative (focus on smart electronics)",
+        "Board of Investment (BOI) incentives for high-tech industries"
+      ],
+      "rationale": "Thailand's ambition in MEMS and metrology is moderate, largely driven by its 'Thailand 4.0' initiative to upgrade its electronics and automotive industries, focusing on smart electronics and applications rather than fundamental research."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
       "ambition": 1,
       "target_level": 1,
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Thailand 4.0 strategy (aiming for high-tech industries, but MEMS not explicitly prioritized)"
-      ]
-    },
-    {
-      "country_iso": "ID",
-      "country_name": "Indonesia",
-      "ambition": 0,
-      "target_level": 1,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [
-        "National industrial policies (broader digital transformation, not specific to MEMS)"
-      ]
+        "'Making Indonesia 4.0' roadmap (focus on electronics)",
+        "National R&D funding for digital economy"
+      ],
+      "rationale": "Indonesia's ambition in MEMS and metrology is low, primarily focused on building a foundational digital economy and manufacturing base, with limited explicit national strategies for advanced micro-fabrication or precision measurement."
     },
     {
       "country_iso": "AE",
@@ -326,12 +362,12 @@
       "ambition": 2,
       "target_level": 2,
       "horizon": "long",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "UAE Centennial 2071 (economic diversification into high-tech)",
-        "National Advanced Manufacturing Strategy",
-        "Investments in AI and space programs"
-      ]
+        "UAE Advanced Technology Strategy",
+        "Various initiatives for smart cities and AI"
+      ],
+      "rationale": "The UAE has a broad ambition to develop advanced technologies and smart cities. While this implies a need for advanced sensors, explicit national strategies or dedicated programs for MEMS and metrology R&D are still emerging."
     },
     {
       "country_iso": "SA",
@@ -339,34 +375,39 @@
       "ambition": 2,
       "target_level": 2,
       "horizon": "long",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Vision 2030 (diversification into high-tech, smart cities like NEOM)",
-        "Public Investment Fund (PIF) investments in technology"
-      ]
+        "Vision 2030 (diversification and knowledge-based economy)",
+        "NEOM projects (smart city infrastructure)",
+        "King Abdullah University of Science and Technology (KAUST) research initiatives"
+      ],
+      "rationale": "Saudi Arabia's ambition in MEMS and metrology is driven by its Vision 2030 and large-scale projects like NEOM, aiming to build a knowledge-based economy. While foundational, specific, dedicated programs for MEMS are still developing."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "ambition": 1,
-      "target_level": 2,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [
-        "National strategies for science, technology and innovation (general support)"
-      ]
-    },
-    {
-      "country_iso": "PL",
-      "country_name": "Poland",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National Smart Specialisations (Krajowe Inteligentne Specjalizacje) (may include related advanced manufacturing)",
-        "EU structural funds for R&D"
-      ]
+        "National strategies for industrial development and innovation",
+        "Embrapii (Brazilian Company of Industrial Research and Innovation) funding"
+      ],
+      "rationale": "Brazil has a moderate ambition to develop local capabilities in industrial automation and related technologies. While MEMS and metrology are relevant, explicit national strategies or significant dedicated funding are limited."
+    },
+    {
+      "country_iso": "PL",
+      "country_name": "Poland",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "National Smart Specialisation Strategy",
+        "EU structural funds for R&D and industrial modernization"
+      ],
+      "rationale": "Poland's ambition in MEMS and metrology is moderate, primarily driven by its National Smart Specialisation Strategy and EU funding, focusing on industrial modernization and building research capacity in relevant areas."
     }
   ]
 }
