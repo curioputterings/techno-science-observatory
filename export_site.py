@@ -71,6 +71,17 @@ def main():
             "WHERE source='publications'", conn)
     except Exception:
         pub = pd.DataFrame()
+    def _read(sql):
+        try:
+            return pd.read_sql_query(sql, conn)
+        except Exception:
+            return pd.DataFrame()
+    pvol = _read("SELECT country_iso,country_name,domain,year,n_pubs FROM publication_trend")
+    impact = _read("SELECT country_iso,domain,year,n_impact FROM publication_impact_trend")
+    insts = _read("SELECT * FROM institution_leaders")
+    collab = _read("SELECT country_iso,domain,year,n_intl FROM collaboration_trend")
+    bilat = _read("SELECT domain,year,n_works FROM bilateral_collab "
+                  "WHERE country_a='US' AND country_b='CN'")
     conn.close()
 
     g["capability"] = capability(g)
@@ -223,6 +234,54 @@ def main():
                        "broadly corroborated. Points above the line publish more than "
                        "they hire (academic strength); below the line hire more than "
                        "they publish (industrial base)."))
+
+    # Research impact — FWCI>1 share (quality vs volume)
+    if not impact.empty and not pvol.empty:
+        iyr = int(impact["year"].max())
+        m = pvol.merge(impact, on=["country_iso", "domain", "year"])
+        m = m[(m["year"] == iyr) & (m["n_pubs"] >= 50)].copy()
+        m["share"] = (m["n_impact"] / m["n_pubs"]).clip(upper=1.0) * 100
+        m["domain_label"] = m["domain"].map(taxonomy.DOMAIN_LABELS).fillna(m["domain"])
+        piv = m.pivot_table(index="country_name", columns="domain_label", values="share")
+        piv = piv.loc[piv.mean(axis=1).sort_values(ascending=False).index]
+        f = px.imshow(piv, aspect="auto", color_continuous_scale="Magma",
+                      labels=dict(color="Impact %"),
+                      title=f"Above-world-average research impact — FWCI>1 share ({iyr})")
+        blocks.append(("Research impact (FWCI)",
+                       fig_html(f, height=max(420, 22 * len(piv))),
+                       "Share of each country's publications whose field-weighted citation "
+                       "impact beats the world average. Volume shows how much a country "
+                       "publishes; this shows how much clears the bar — quality, not quantity. "
+                       f"Citation-mature year {iyr} (recent years excluded — citations must accrue)."))
+
+    # Institution leaders — the research-side org map
+    if not insts.empty:
+        lyr = int(insts["year"].max())
+        top1 = insts[(insts["year"] == lyr) & (insts["rank"] == 1)].copy()
+        top1["domain_label"] = top1["domain"].map(taxonomy.DOMAIN_LABELS).fillna(top1["domain"])
+        top1 = top1.sort_values("n_works")
+        f = px.bar(top1, x="n_works", y="domain_label", orientation="h",
+                   color="country_iso", hover_data=["institution_name"],
+                   labels={"n_works": "Publications (leader)", "domain_label": "",
+                           "country_iso": "Country"},
+                   title=f"Leading research institution in each field ({lyr})")
+        blocks.append(("Institution leaders",
+                       fig_html(f, height=max(500, 20 * len(top1))),
+                       "The single top institution by publication volume in each domain, "
+                       "coloured by country (hover for its name). The research-side org map "
+                       "beneath the country totals — the Chinese Academy of Sciences leads most fields."))
+
+    # US-CN co-authorship over time — the coupling/decoupling signal
+    if not bilat.empty:
+        tot = bilat.groupby("year")["n_works"].sum().reset_index()
+        f = px.line(tot, x="year", y="n_works", markers=True,
+                    labels={"n_works": "US-CN co-authored works", "year": ""},
+                    title="US-CN research co-authorship over time (all frontier fields)")
+        blocks.append(("US-CN collaboration", fig_html(f, height=440),
+                       "Publications co-authored by researchers in both the US and China "
+                       "across all 30 frontier domains, per year. Despite geopolitical "
+                       "tension, raw co-authorship kept rising — coupling, not decoupling, "
+                       "in absolute terms."))
 
     # assemble
     n_countries = g["country_iso"].nunique()

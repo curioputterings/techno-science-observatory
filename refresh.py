@@ -62,13 +62,53 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
         except Exception as e:  # noqa: BLE001
             log(f"    [warn] footprint refresh failed: {e!r}")
 
-        # publications triangulation layer (free OpenAlex, no key)
+        # publications triangulation layer (OpenAlex). skip_existing=True: the
+        # target year is `today-1`, and a full-year publication count is stable
+        # once indexed — re-pulling it weekly would spend ~900 calls (30 countries
+        # × 30 domains) of OpenAlex's now-metered ~1000/day budget on byte-identical
+        # data. So we pull a year only until it's complete (all 30 domains × 30
+        # countries), i.e. once when `year-1` ticks over to a new value (~January);
+        # every other week skips with 0 calls. A run interrupted by BudgetExhausted
+        # resumes next week (incomplete domains aren't marked done). Force a manual
+        # re-pull with `publications.py` (no --skip-existing) if a year needs it.
         try:
             from research_sources import publications
-            psum = publications.run(year=dt.date.today().year - 1)
+            psum = publications.run(year=dt.date.today().year - 1, skip_existing=True)
             log(f"    publications: {psum}")
         except Exception as e:  # noqa: BLE001
             log(f"    [warn] publications refresh failed: {e!r}")
+
+        # trend years drive the impact + collaboration maintenance below.
+        store = Store()
+        trend_years = store.publication_years()
+        store.close()
+
+        # impact-weighting layer: FWCI>1 counts for the citation-mature trend years.
+        # skip_existing => ~0 calls once populated; fills a trend year only when it
+        # crosses the maturity lag. Orthogonal to the volume pull above.
+        try:
+            isum = publications.run_impact(trend_years, skip_existing=True)
+            log(f"    publication impact: {isum}")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] impact refresh failed: {e!r}")
+
+        # institution leaders: top-N research institutions per domain for the latest
+        # full year. Re-pulled weekly (idempotent by rank) — unlike stable-once-done
+        # volume, current-year leadership shifts as new work is indexed. ~60 calls.
+        try:
+            lsum = publications.run_institutions(dt.date.today().year - 1)
+            log(f"    institution leaders: {lsum}")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] institution leaders refresh failed: {e!r}")
+
+        # international collaboration + US-CN bilateral (skip_existing => ~0 calls
+        # once a year is complete; fills a new trend year when it appears).
+        try:
+            csum = publications.run_collaboration(trend_years, skip_existing=True)
+            bsum = publications.run_bilateral(trend_years, skip_existing=True)
+            log(f"    collaboration: {csum} | bilateral: {bsum}")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] collaboration refresh failed: {e!r}")
 
         # patents layer — prefer BigQuery if configured, else EPO OPS, else skip.
         # Skip-existing: the target year is `today-3` and patents lag ~3y, so once a

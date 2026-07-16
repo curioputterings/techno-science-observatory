@@ -71,10 +71,12 @@ m1.metric("Countries", df["country_iso"].nunique())
 m2.metric("Domains", df["domain"].nunique())
 m3.metric("Cells", len(df))
 
-(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11) = st.tabs(
+(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11,
+ tab12, tab13, tab14) = st.tabs(
     ["Capability matrix", "Quantity vs skill", "Country profile", "Rankings",
      "Complexity (OEC)", "Adjacent possible", "Ambition vs reality", "Trends",
-     "Verified (ATS)", "MNC footprint", "Triangulation"]
+     "Verified (ATS)", "MNC footprint", "Triangulation",
+     "Research impact", "Institution leaders", "Collaboration"]
 )
 
 DOMAIN_ORDER = [taxonomy.DOMAIN_LABELS[d] for d in taxonomy.ALL_DOMAINS
@@ -796,6 +798,126 @@ with tab11:
                        "`python3 research_sources/patents_bq.py --check` and "
                        "`python3 research_sources/patents_bq.py --years 2016 2018 2020 2022`. "
                        "A research→invention view + momentum trend appear here automatically.")
+
+
+with tab12:
+    st.subheader("Research impact — volume vs quality (FWCI)")
+    st.caption("Volume counts every publication; impact counts only works whose "
+               "field-weighted citation impact (FWCI) is above the world average. "
+               "Impact **share** = above-average ÷ total — how much of a country's "
+               "output clears the bar. Mature years only (citations need to accrue).")
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        _vol = pd.read_sql_query(
+            "SELECT country_iso,country_name,domain,year,n_pubs FROM publication_trend", conn)
+        _imp = pd.read_sql_query(
+            "SELECT country_iso,domain,year,n_impact FROM publication_impact_trend", conn)
+    finally:
+        conn.close()
+    if _imp.empty:
+        st.info("No impact data yet. Run "
+                "`python3 research_sources/publications.py --impact "
+                "--years 2016 2018 2020 2022`.")
+    else:
+        _m = _vol.merge(_imp, on=["country_iso", "domain", "year"])
+        _m["impact_share"] = (_m["n_impact"] / _m["n_pubs"]).clip(upper=1.0)
+        _m["domain_label"] = _m["domain"].map(taxonomy.DOMAIN_LABELS).fillna(_m["domain"])
+        _yrs = sorted(_m["year"].unique())
+        yr = st.select_slider("Year", options=_yrs, value=_yrs[-1], key="imp_yr")
+        dlabel = st.selectbox("Domain", DOMAIN_ORDER, key="imp_dom")
+        sub = _m[(_m["year"] == yr) & (_m["domain_label"] == dlabel)
+                 & (_m["n_pubs"] >= 50)].sort_values("impact_share", ascending=False)
+        if sub.empty:
+            st.info("No countries clear the volume floor (≥50) for this slice.")
+        else:
+            fig = px.bar(sub.head(15), x="country_iso", y="impact_share",
+                         hover_data=["n_pubs", "n_impact"],
+                         labels={"impact_share": "Above-average-impact share",
+                                 "country_iso": "Country"})
+            fig.update_yaxes(tickformat=".0%")
+            st.plotly_chart(fig, use_container_width=True)
+            show = sub[["country_name", "n_pubs", "n_impact", "impact_share"]].rename(
+                columns={"country_name": "Country", "n_pubs": "Volume",
+                         "n_impact": "FWCI>1", "impact_share": "Impact share"})
+            show["Impact share"] = (show["Impact share"] * 100).round().astype(int).astype(str) + "%"
+            st.dataframe(show, hide_index=True, use_container_width=True)
+
+with tab13:
+    st.subheader("Institution leaders — who drives each field")
+    st.caption("Top research institutions by publication volume per domain (latest "
+               "year), from OpenAlex. The research-side org map beneath the country totals.")
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        _il = pd.read_sql_query("SELECT * FROM institution_leaders", conn)
+    finally:
+        conn.close()
+    if _il.empty:
+        st.info("No institution data yet. Run "
+                "`python3 research_sources/publications.py --institutions`.")
+    else:
+        _il["domain_label"] = _il["domain"].map(taxonomy.DOMAIN_LABELS).fillna(_il["domain"])
+        _yr = int(_il["year"].max())
+        dlabel = st.selectbox("Domain", DOMAIN_ORDER, key="inst_dom")
+        sub = _il[(_il["domain_label"] == dlabel) & (_il["year"] == _yr)].sort_values("rank")
+        if sub.empty:
+            st.info("No institution rows for this domain.")
+        else:
+            fig = px.bar(sub.head(15), x="n_works", y="institution_name",
+                         orientation="h", color="country_iso",
+                         labels={"n_works": "Publications", "institution_name": "",
+                                 "country_iso": "Country"})
+            fig.update_layout(height=520, yaxis=dict(autorange="reversed"))
+            st.plotly_chart(fig, use_container_width=True)
+            st.caption(f"Top institutions in {dlabel}, {_yr}.")
+
+with tab14:
+    st.subheader("International collaboration & US–CN coupling")
+    st.caption("Collaboration rate = share of a country's works co-authored with "
+               "another country. Bilateral = works co-authored by **both** US and "
+               "CN in a field over time — the coupling/decoupling signal.")
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        _cvol = pd.read_sql_query(
+            "SELECT country_iso,domain,year,n_pubs FROM publication_trend", conn)
+        _col = pd.read_sql_query(
+            "SELECT country_iso,domain,year,n_intl FROM collaboration_trend", conn)
+        _bil = pd.read_sql_query(
+            "SELECT domain,year,n_works FROM bilateral_collab "
+            "WHERE country_a='US' AND country_b='CN'", conn)
+    finally:
+        conn.close()
+    if _col.empty:
+        st.info("No collaboration data yet. Run "
+                "`python3 research_sources/publications.py --collaboration "
+                "--years 2016 2018 2020 2022 2025`.")
+    else:
+        dlabel = st.selectbox("Domain", DOMAIN_ORDER, key="collab_dom")
+        dom = next((d for d in taxonomy.ALL_DOMAINS
+                    if taxonomy.DOMAIN_LABELS.get(d) == dlabel), dlabel)
+        _m = _cvol.merge(_col, on=["country_iso", "domain", "year"])
+        _m["rate"] = (_m["n_intl"] / _m["n_pubs"]).clip(upper=1.0)
+        _yr = int(_m["year"].max())
+        sub = _m[(_m["domain"] == dom) & (_m["year"] == _yr)
+                 & (_m["n_pubs"] >= 50)].sort_values("rate", ascending=False)
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown(f"**Collaboration rate by country ({_yr})**")
+            if sub.empty:
+                st.info("No countries clear the volume floor here.")
+            else:
+                fig = px.bar(sub.head(12), x="country_iso", y="rate",
+                             labels={"rate": "International share", "country_iso": ""})
+                fig.update_yaxes(tickformat=".0%")
+                st.plotly_chart(fig, use_container_width=True)
+        with c2:
+            st.markdown("**US–CN co-authorship over time**")
+            b = _bil[_bil["domain"] == dom].sort_values("year")
+            if b.empty:
+                st.info("No bilateral data for this domain.")
+            else:
+                fig = px.line(b, x="year", y="n_works", markers=True,
+                              labels={"n_works": "Co-authored works", "year": ""})
+                st.plotly_chart(fig, use_container_width=True)
 
 
 st.divider()

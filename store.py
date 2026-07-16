@@ -113,6 +113,65 @@ CREATE TABLE IF NOT EXISTS publication_trend (
     PRIMARY KEY (country_iso, domain, year)
 );
 CREATE INDEX IF NOT EXISTS idx_put_year ON publication_trend(year);
+
+-- Impact-weighted publication series (country × domain × year): count of works
+-- whose field-weighted citation impact (FWCI) is above the world average (>1).
+-- Populated only for citation-mature years — recent years haven't accrued
+-- citations yet. Divide by publication_trend.n_pubs for the "impact share"
+-- quality signal: volume shows how much a country publishes, this shows how much
+-- of it lands above the world bar.
+CREATE TABLE IF NOT EXISTS publication_impact_trend (
+    country_iso  TEXT NOT NULL,
+    country_name TEXT,
+    domain       TEXT NOT NULL,
+    year         INTEGER NOT NULL,
+    n_impact     INTEGER,   -- works with FWCI > 1
+    PRIMARY KEY (country_iso, domain, year)
+);
+CREATE INDEX IF NOT EXISTS idx_pit_year ON publication_impact_trend(year);
+
+-- Leading research institutions per domain×year (top by publication volume), from
+-- OpenAlex group_by=authorships.institutions.id. The "who" beneath the country
+-- totals — the research-side org map, complementing the MNC footprint layer.
+CREATE TABLE IF NOT EXISTS institution_leaders (
+    domain           TEXT NOT NULL,
+    year             INTEGER NOT NULL,
+    rank             INTEGER NOT NULL,
+    institution_id   TEXT NOT NULL,
+    institution_name TEXT,
+    country_iso      TEXT,
+    n_works          INTEGER,
+    PRIMARY KEY (domain, year, rank)
+);
+CREATE INDEX IF NOT EXISTS idx_il_domain ON institution_leaders(domain, year);
+
+-- International-collaboration series (country × domain × year): count of a
+-- country's works co-authored with at least one other country
+-- (countries_distinct_count>1). Divide by publication_trend.n_pubs for the
+-- international-collaboration RATE — how networked vs self-contained a country's
+-- research is. Meaningful for all years (not citation-dependent).
+CREATE TABLE IF NOT EXISTS collaboration_trend (
+    country_iso  TEXT NOT NULL,
+    country_name TEXT,
+    domain       TEXT NOT NULL,
+    year         INTEGER NOT NULL,
+    n_intl       INTEGER,   -- works with authors from >1 country
+    PRIMARY KEY (country_iso, domain, year)
+);
+CREATE INDEX IF NOT EXISTS idx_ct_year ON collaboration_trend(year);
+
+-- Bilateral co-authorship (country-pair × domain × year): works co-authored by
+-- both countries. Curated strategic pairs only (combinatorial otherwise); the
+-- headline is US-CN decoupling/coupling in frontier fields over time.
+CREATE TABLE IF NOT EXISTS bilateral_collab (
+    country_a   TEXT NOT NULL,
+    country_b   TEXT NOT NULL,
+    domain      TEXT NOT NULL,
+    year        INTEGER NOT NULL,
+    n_works     INTEGER,
+    PRIMARY KEY (country_a, country_b, domain, year)
+);
+CREATE INDEX IF NOT EXISTS idx_bc_pair ON bilateral_collab(country_a, country_b);
 """
 
 _COLS = [
@@ -213,6 +272,59 @@ class Store:
     def publication_years(self) -> list[int]:
         return [r[0] for r in self.conn.execute(
             "SELECT DISTINCT year FROM publication_trend ORDER BY year")]
+
+    def upsert_publication_impact(self, rows: list[dict]) -> int:
+        cols = ["country_iso", "country_name", "domain", "year", "n_impact"]
+        upd = "n_impact=excluded.n_impact, country_name=excluded.country_name"
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO publication_impact_trend ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(country_iso, domain, year) DO UPDATE SET {upd}",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
+
+    def publication_impact_years(self) -> list[int]:
+        return [r[0] for r in self.conn.execute(
+            "SELECT DISTINCT year FROM publication_impact_trend ORDER BY year")]
+
+    def upsert_institution_leaders(self, rows: list[dict]) -> int:
+        cols = ["domain", "year", "rank", "institution_id",
+                "institution_name", "country_iso", "n_works"]
+        upd = ", ".join(f"{c}=excluded.{c}" for c in cols[3:])
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO institution_leaders ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(domain, year, rank) DO UPDATE SET {upd}",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
+
+    def upsert_collaboration_year(self, rows: list[dict]) -> int:
+        cols = ["country_iso", "country_name", "domain", "year", "n_intl"]
+        upd = "n_intl=excluded.n_intl, country_name=excluded.country_name"
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO collaboration_trend ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(country_iso, domain, year) DO UPDATE SET {upd}",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
+
+    def upsert_bilateral(self, rows: list[dict]) -> int:
+        cols = ["country_a", "country_b", "domain", "year", "n_works"]
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO bilateral_collab ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(country_a, country_b, domain, year) "
+                f"DO UPDATE SET n_works=excluded.n_works",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
 
     # ---- cross-border footprint ----
     def replace_footprint(self, rows: list[dict]) -> int:
