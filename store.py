@@ -172,6 +172,23 @@ CREATE TABLE IF NOT EXISTS bilateral_collab (
     PRIMARY KEY (country_a, country_b, domain, year)
 );
 CREATE INDEX IF NOT EXISTS idx_bc_pair ON bilateral_collab(country_a, country_b);
+
+-- Funding acknowledgements (funder × domain × year) from Crossref: count of works
+-- in a field that acknowledge a given national funder. The "revealed ambition"
+-- layer — which agencies actually back which frontier fields — to triangulate
+-- against the stated-ambition table. Acknowledgement-based (a work counts only if
+-- its publisher recorded the funder), so coverage is incomplete and skews by
+-- publisher/discipline/country; read shares/rankings, not totals.
+CREATE TABLE IF NOT EXISTS funder_trend (
+    funder_id      TEXT NOT NULL,   -- short slug (nsfc, nsf, ...)
+    funder_name    TEXT,
+    funder_country TEXT,
+    domain         TEXT NOT NULL,
+    year           INTEGER NOT NULL,
+    n_works        INTEGER,
+    PRIMARY KEY (funder_id, domain, year)
+);
+CREATE INDEX IF NOT EXISTS idx_ft_domain ON funder_trend(domain, year);
 """
 
 _COLS = [
@@ -322,6 +339,19 @@ class Store:
                 f"VALUES ({','.join('?' for _ in cols)}) "
                 f"ON CONFLICT(country_a, country_b, domain, year) "
                 f"DO UPDATE SET n_works=excluded.n_works",
+                [r.get(c) for c in cols])
+        self.conn.commit()
+        return len(rows)
+
+    def upsert_funder_trend(self, rows: list[dict]) -> int:
+        cols = ["funder_id", "funder_name", "funder_country",
+                "domain", "year", "n_works"]
+        upd = ", ".join(f"{c}=excluded.{c}" for c in cols[1:])
+        for r in rows:
+            self.conn.execute(
+                f"INSERT INTO funder_trend ({','.join(cols)}) "
+                f"VALUES ({','.join('?' for _ in cols)}) "
+                f"ON CONFLICT(funder_id, domain, year) DO UPDATE SET {upd}",
                 [r.get(c) for c in cols])
         self.conn.commit()
         return len(rows)

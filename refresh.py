@@ -110,6 +110,17 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
         except Exception as e:  # noqa: BLE001
             log(f"    [warn] collaboration refresh failed: {e!r}")
 
+        # funder analysis (Crossref, NOT OpenAlex) — which national agencies back
+        # which fields = revealed ambition. Mature years only (funder metadata
+        # lags for recent years); skip_existing => ~0 calls once populated.
+        try:
+            from research_sources import funding
+            fund_years = [y for y in trend_years if y <= dt.date.today().year - 2]
+            fsum = funding.run_funding(fund_years, skip_existing=True)
+            log(f"    funding: {fsum}")
+        except Exception as e:  # noqa: BLE001
+            log(f"    [warn] funding refresh failed: {e!r}")
+
         # patents layer — prefer BigQuery if configured, else EPO OPS, else skip.
         # Skip-existing: the target year is `today-3` and patents lag ~3y, so once a
         # year is pulled its counts are final and never change. Re-scanning it every

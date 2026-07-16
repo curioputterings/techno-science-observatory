@@ -82,6 +82,7 @@ def main():
     collab = _read("SELECT country_iso,domain,year,n_intl FROM collaboration_trend")
     bilat = _read("SELECT domain,year,n_works FROM bilateral_collab "
                   "WHERE country_a='US' AND country_b='CN'")
+    funders_df = _read("SELECT * FROM funder_trend")
     conn.close()
 
     g["capability"] = capability(g)
@@ -282,6 +283,28 @@ def main():
                        "across all 30 frontier domains, per year. Despite geopolitical "
                        "tension, raw co-authorship kept rising — coupling, not decoupling, "
                        "in absolute terms."))
+
+    # Funding — revealed ambition (Crossref national-funder acknowledgements)
+    if not funders_df.empty:
+        fyr = int(funders_df["year"].max())
+        fd = funders_df[funders_df["year"] == fyr].copy()
+        fd["domain_label"] = fd["domain"].map(taxonomy.DOMAIN_LABELS).fillna(fd["domain"])
+        agg = fd.groupby(["domain_label", "funder_country"])["n_works"].sum().reset_index()
+        tot = agg.groupby("domain_label")["n_works"].transform("sum")
+        agg["share"] = agg["n_works"] / tot * 100
+        f = px.bar(agg, x="share", y="domain_label", color="funder_country",
+                   orientation="h", barmode="stack",
+                   labels={"share": "Share of funding acknowledgements %",
+                           "domain_label": "", "funder_country": "Funder country"},
+                   title=f"Who funds each field — national-funder share ({fyr})")
+        nrows = agg["domain_label"].nunique()
+        blocks.append(("Funding (revealed ambition)",
+                       fig_html(f, height=max(500, 22 * nrows)),
+                       "Share of funding acknowledgements by national-funder country in "
+                       f"each field (Crossref, {fyr}). Revealed ambition — which agencies "
+                       "back which frontier fields, to read against stated intent. "
+                       "Acknowledgement-based and keyword-matched, so directional: read the "
+                       "mix, not absolute spend."))
 
     # assemble
     n_countries = g["country_iso"].nunique()

@@ -72,11 +72,11 @@ m2.metric("Domains", df["domain"].nunique())
 m3.metric("Cells", len(df))
 
 (tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11,
- tab12, tab13, tab14) = st.tabs(
+ tab12, tab13, tab14, tab15) = st.tabs(
     ["Capability matrix", "Quantity vs skill", "Country profile", "Rankings",
      "Complexity (OEC)", "Adjacent possible", "Ambition vs reality", "Trends",
      "Verified (ATS)", "MNC footprint", "Triangulation",
-     "Research impact", "Institution leaders", "Collaboration"]
+     "Research impact", "Institution leaders", "Collaboration", "Funding"]
 )
 
 DOMAIN_ORDER = [taxonomy.DOMAIN_LABELS[d] for d in taxonomy.ALL_DOMAINS
@@ -918,6 +918,42 @@ with tab14:
                 fig = px.line(b, x="year", y="n_works", markers=True,
                               labels={"n_works": "Co-authored works", "year": ""})
                 st.plotly_chart(fig, use_container_width=True)
+
+with tab15:
+    st.subheader("Funding — which national agencies back which fields")
+    st.caption("Publications acknowledging each major national funder per domain "
+               "(Crossref). A **revealed-ambition** signal — read against the stated "
+               "'Ambition vs reality' tab. Acknowledgement-based (incomplete, skews by "
+               "publisher/country) and keyword-matched — read rankings, not totals.")
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        _fund = pd.read_sql_query("SELECT * FROM funder_trend", conn)
+    finally:
+        conn.close()
+    if _fund.empty:
+        st.info("No funding data yet. Run "
+                "`python3 research_sources/funding.py --years 2016 2018 2020 2022`.")
+    else:
+        _fund["domain_label"] = _fund["domain"].map(
+            taxonomy.DOMAIN_LABELS).fillna(_fund["domain"])
+        _fyr = int(_fund["year"].max())
+        dlabel = st.selectbox("Domain", DOMAIN_ORDER, key="fund_dom")
+        sub = _fund[(_fund["domain_label"] == dlabel)
+                    & (_fund["year"] == _fyr)].sort_values("n_works")
+        if sub.empty:
+            st.info("No funder rows for this domain/year.")
+        else:
+            sub = sub.copy()
+            sub["funder"] = sub["funder_name"] + " (" + sub["funder_country"] + ")"
+            fig = px.bar(sub, x="n_works", y="funder", orientation="h",
+                         color="funder_country",
+                         labels={"n_works": "Works funded", "funder": "",
+                                 "funder_country": "Country"},
+                         title=f"{dlabel} — national funders ({_fyr})")
+            fig.update_layout(height=460)
+            st.plotly_chart(fig, use_container_width=True)
+            st.caption("Read against the stated-ambition gap, not as absolute spend — "
+                       "coverage is acknowledgement-based and skews by country/publisher.")
 
 
 st.divider()
