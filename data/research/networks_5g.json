@@ -6,42 +6,43 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Verizon",
         "AT&T",
+        "Verizon",
         "T-Mobile",
-        "Cisco",
-        "Juniper",
         "Qualcomm",
         "Intel",
+        "Cisco",
+        "Juniper",
         "Google",
         "Microsoft",
-        "Amazon",
-        "Nokia Bell Labs (US)",
-        "University research (Stanford, MIT)",
-        "DARPA"
+        "Amazon Web Services (AWS)",
+        "Bell Labs (Nokia)",
+        "Stanford University",
+        "MIT",
+        "DoD 5G/6G initiatives"
       ],
-      "rationale": "The US has a massive telecom market, leading network equipment vendors, major cloud providers driving SDN/NFV, and extensive academic and corporate R&D in 5G, 6G, optical, and quantum networking."
+      "rationale": "The US has a massive and highly advanced telecom market with major operators, equipment vendors, and cloud providers driving significant 5G deployment and 6G research. Strong academic and corporate R&D, including Bell Labs, positions it at the frontier of innovation."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
-      "skill_level": 5,
+      "skill_level": 4,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "Huawei",
         "ZTE",
         "China Mobile",
-        "China Unicom",
         "China Telecom",
-        "Government 6G initiatives",
-        "Universities (Tsinghua, Peking)"
+        "China Unicom",
+        "Tsinghua University",
+        "National 5G/6G R&D programs"
       ],
-      "rationale": "China is a global leader in 5G deployment and equipment manufacturing, with strong government backing for 6G research and significant R&D from major domestic vendors."
+      "rationale": "China is the world's largest 5G market with extensive infrastructure deployment. Domestic giants like Huawei and ZTE are global leaders in equipment and R&D, with substantial government backing for advanced networking and 6G initiatives."
     },
     {
       "country_iso": "JP",
@@ -51,180 +52,188 @@
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "NTT Docomo (IOWN initiative)",
+        "NTT DOCOMO",
         "SoftBank",
+        "Rakuten Mobile",
         "KDDI",
         "NEC",
         "Fujitsu",
         "Sony",
-        "National 6G roadmap"
+        "University of Tokyo"
       ],
-      "rationale": "Japan has an advanced telecom market, strong domestic operators, and significant R&D efforts in 5G, Open RAN, and future 6G technologies, particularly through NTT's IOWN initiative."
+      "rationale": "Japan has an advanced 5G ecosystem, with strong domestic operators and vendors actively pursuing Open RAN and 6G research. NTT DOCOMO is a key player in global telecom innovation."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.85,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Samsung Electronics",
+        "Samsung",
+        "LG",
         "SK Telecom",
         "KT",
         "LG U+",
-        "ETRI (Electronics and Telecommunications Research Institute)",
-        "Government 6G strategy"
+        "ETRI (Electronics and Telecommunications Research Institute)"
       ],
-      "rationale": "South Korea was an early adopter of 5G and continues to be a leader in mobile technology, with Samsung driving significant R&D in 5G/6G and strong national support for future networks."
+      "rationale": "South Korea was an early and aggressive adopter of 5G, boasting highly advanced network infrastructure. Samsung is a major global player in 5G/6G technology, supported by strong national R&D and telecom operators."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "TSMC (semiconductor manufacturing)",
-        "MediaTek",
+        "Mediatek",
+        "ITRI (Industrial Technology Research Institute)",
         "Chunghwa Telecom",
-        "Industrial Technology Research Institute (ITRI)"
+        "TSMC (indirectly via chip manufacturing for networking)"
       ],
-      "rationale": "Taiwan excels in semiconductor manufacturing crucial for networking hardware, with some R&D in components and specific networking areas, but less in full system architecture or core telecom R&D."
+      "rationale": "Taiwan's strength lies in its semiconductor industry, which underpins much of networking hardware. While not a major telecom operator market, it has significant R&D in components and some system integration, with growing efforts in 5G/6G."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Deutsche Telekom",
         "Vodafone Germany",
-        "Telefonica O2",
+        "Telefonica Germany",
         "Fraunhofer Institutes",
-        "Siemens (industrial 5G)",
-        "Bosch (industrial 5G)"
+        "Siemens",
+        "Bosch (private 5G)",
+        "Technical University of Munich"
       ],
-      "rationale": "Germany has a large economy with major telecom operators and strong industrial focus on 5G applications (e.g., Industry 4.0), supported by significant research institutes."
+      "rationale": "Germany has a robust industrial base and a strong focus on industrial 5G and private networks. Deutsche Telekom is a global telecom player, and significant R&D is conducted by Fraunhofer Institutes and major industrial companies."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "KPN",
         "VodafoneZiggo",
+        "T-Mobile NL",
         "TNO (Netherlands Organisation for Applied Scientific Research)",
-        "Universities (TU Delft, Eindhoven)"
+        "TU Delft"
       ],
-      "rationale": "The Netherlands has a strong digital infrastructure and some specialized R&D in areas like optical networking and quantum communication, but is not a major telecom equipment manufacturing hub."
+      "rationale": "The Netherlands is a tech-forward nation with good connectivity and a focus on innovation. While a smaller market, it has strong academic research and some R&D presence for advanced networking and security."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "BT (BT Labs)",
-        "Vodafone UK",
+        "BT (Adastral Park)",
+        "Vodafone",
         "EE",
         "O2",
-        "University research (Cambridge, UCL)",
-        "UK government Open RAN strategy"
+        "University of Cambridge",
+        "Imperial College London",
+        "UK 5G/6G Testbeds & Trials"
       ],
-      "rationale": "The UK has major telecom operators, strong academic research, and government initiatives promoting Open RAN and future network technologies."
+      "rationale": "The UK has a major European telecom market, active 5G deployment, and strong academic research. BT's Adastral Park is a significant R&D hub, and there's a growing focus on Open RAN and future network technologies."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "high",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Orange (Orange Labs)",
+        "Orange",
         "SFR",
         "Bouygues Telecom",
-        "Nokia Bell Labs (France)",
-        "CEA (French Alternative Energies and Atomic Energy Commission)",
-        "Inria"
+        "Free Mobile",
+        "Orange Labs",
+        "Thales (defense communications)",
+        "EURECOM"
       ],
-      "rationale": "France hosts major telecom operators with significant R&D arms (Orange Labs) and has a strong presence of Nokia Bell Labs, alongside robust academic and public research institutions."
+      "rationale": "France has a competitive telecom market with strong operators like Orange, which has significant R&D capabilities through Orange Labs. There's a good engineering base and academic research in signal processing and networking."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.55,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Intel (R&D)",
-        "Nvidia (Mellanox)",
+        "Intel (Israel R&D)",
+        "Nvidia (Mellanox acquisition)",
         "Numerous networking/security startups",
-        "Technion",
-        "Weizmann Institute"
+        "Technion \u2013 Israel Institute of Technology",
+        "Tel Aviv University"
       ],
-      "rationale": "Israel has a vibrant tech ecosystem with strong expertise in cybersecurity, semiconductors, and software-defined networking, leading to specialized R&D roles."
+      "rationale": "Israel, despite its size, is a global innovation hub, particularly strong in cybersecurity, semiconductors, and specialized networking. It boasts a vibrant startup ecosystem and significant R&D centers for global tech giants."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "very_high",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Reliance Jio",
+        "Reliance Jio (Jio Platforms)",
         "Bharti Airtel",
         "Vodafone Idea",
         "TCS",
         "Wipro",
         "Infosys",
-        "IITs",
-        "C-DOT"
+        "IITs (Indian Institutes of Technology)",
+        "Government 'Make in India' telecom initiatives"
       ],
-      "rationale": "India has a massive and rapidly expanding telecom market with extensive 5G rollout. While deployment and operations drive high volume, advanced R&D is growing but still relatively nascent compared to global leaders."
+      "rationale": "India is a massive and rapidly expanding 5G market, with major domestic players like Reliance Jio driving indigenous technology development. It has a vast pool of engineering talent and growing R&D capabilities in software-defined and cloud-native networks."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
         "Singtel",
         "StarHub",
         "M1",
-        "A*STAR",
+        "A*STAR (Agency for Science, Technology and Research)",
         "Nanyang Technological University (NTU)",
-        "National University of Singapore (NUS)"
+        "National University of Singapore (NUS)",
+        "Smart Nation initiatives"
       ],
-      "rationale": "Singapore is an advanced digital hub with strong government support for tech and smart nation initiatives, leading to some specialized R&D and deployment roles, but with a small domestic market."
+      "rationale": "Singapore is a leading regional tech hub with strong government support for advanced technologies and smart city initiatives. While a small market, it has high skill levels and significant R&D in future connectivity."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "Swisscom",
+        "Sunrise",
+        "Salt",
         "ETH Zurich",
-        "EPFL",
-        "CERN (indirectly for networking research)"
+        "EPFL (Swiss Federal Institute of Technology Lausanne)",
+        "IBM Research Zurich"
       ],
-      "rationale": "Switzerland has a high-tech economy and strong academic research, particularly in areas like quantum networking, but is not a major telecom equipment manufacturing or large-scale R&D hub."
+      "rationale": "Switzerland has a high-tech economy and excellent academic institutions. While the market volume is small, there's strong research in areas like network security, quantum communications, and advanced networking."
     },
     {
       "country_iso": "SE",
@@ -234,11 +243,13 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Ericsson (global HQ and major R&D)",
+        "Ericsson (headquarters and major R&D)",
         "Telia",
-        "Universities (KTH, Chalmers)"
+        "Tele2",
+        "Chalmers University of Technology",
+        "KTH Royal Institute of Technology"
       ],
-      "rationale": "As the home of Ericsson, Sweden is a global powerhouse in telecom equipment manufacturing and R&D, with significant contributions to 5G and 6G technologies."
+      "rationale": "Sweden is home to Ericsson, a global leader in 5G and 6G technology, with extensive R&D operations. This creates a highly skilled workforce and significant frontier research in wireless communications and network architecture."
     },
     {
       "country_iso": "FI",
@@ -248,244 +259,252 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Nokia (global HQ and major R&D)",
+        "Nokia (headquarters and major R&D, Bell Labs Finland)",
         "Elisa",
         "Telia Finland",
-        "Universities (Oulu, Aalto)",
-        "VTT Technical Research Centre"
+        "University of Oulu (6G Flagship)",
+        "VTT Technical Research Centre of Finland"
       ],
-      "rationale": "Finland, home to Nokia, has a long history of telecom innovation and continues to be a leader in 5G and 6G research, supported by strong academic and industrial collaboration."
+      "rationale": "Finland is home to Nokia, another global leader in 5G and 6G, with significant R&D including Bell Labs Finland. The University of Oulu's 6G Flagship program positions Finland at the forefront of future wireless research."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.45,
-      "confidence": "high",
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
         "Bell Canada",
-        "Rogers",
+        "Rogers Communications",
         "Telus",
-        "Ciena",
-        "Nokia (R&D centers)",
-        "Universities (Waterloo, Toronto)",
-        "NRC (National Research Council)"
+        "Ericsson/Nokia R&D presence",
+        "University of Waterloo",
+        "University of Toronto",
+        "McGill University"
       ],
-      "rationale": "Canada has major telecom operators, a strong academic research base, and a presence of international networking companies, contributing to R&D in various networking domains."
+      "rationale": "Canada has a developed telecom market with major operators and a growing tech sector. There's a good base of academic research and some R&D presence from global vendors, contributing to advanced networking."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Telstra",
         "Optus",
         "Vodafone Australia",
-        "CSIRO",
-        "Universities"
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "University of Melbourne"
       ],
-      "rationale": "Australia has an advanced telecom market with major operators and some academic research, but is not a primary hub for telecom equipment manufacturing or cutting-edge R&D."
+      "rationale": "Australia has a mature 5G market with active deployment by major operators. While not a primary R&D hub for global telecom equipment, there's a focus on network operations, some academic research, and initiatives by CSIRO."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.15,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Google",
-        "Microsoft",
-        "Amazon (data centers)",
-        "Intel (some R&D)",
-        "Universities"
+        "Eir",
+        "Vodafone Ireland",
+        "Three Ireland",
+        "Google/Microsoft/Amazon (data center & network operations)",
+        "Trinity College Dublin"
       ],
-      "rationale": "Ireland hosts European HQs and data centers for many tech giants, leading to networking operations roles, but has limited indigenous telecom equipment R&D."
+      "rationale": "Ireland is a hub for multinational tech companies, leading to a demand for networking professionals in data center and cloud infrastructure. While indigenous telecom R&D is limited, there's a strong skill base in network operations and some academic research."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.15,
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Proximus",
-        "Telenet",
         "Orange Belgium",
-        "IMEC (semiconductors, some wireless research)",
-        "Universities"
+        "Telenet",
+        "Imec (research in wireless/semiconductors)",
+        "KU Leuven"
       ],
-      "rationale": "Belgium has good digital infrastructure and some specialized research (e.g., IMEC in semiconductors), but is not a major player in telecom equipment or large-scale R&D."
+      "rationale": "Belgium has an active 5G rollout and a good engineering base. Imec, though primarily semiconductor-focused, contributes to wireless communication research, and there's academic activity in networking."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "low",
       "evidence": [
         "A1 Telekom Austria",
         "Magenta Telekom",
-        "AIT (Austrian Institute of Technology)",
-        "Universities"
+        "Drei (Hutchison Drei Austria)",
+        "TU Wien (Vienna University of Technology)"
       ],
-      "rationale": "Austria has a developed telecom market and some research institutions, but limited advanced R&D or manufacturing in the Networks & 5G/6G domain."
+      "rationale": "Austria is a smaller European market with active 5G deployment. It has a solid engineering base and some academic research in networking, but limited large-scale R&D compared to major players."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.25,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "TIM (Telecom Italia)",
+        "TIM",
         "Vodafone Italy",
         "WindTre",
-        "Universities"
+        "Infratel Italia (national broadband plan)",
+        "Politecnico di Milano",
+        "Politecnico di Torino"
       ],
-      "rationale": "Italy has a large telecom market with major operators and some academic research, but is less prominent in equipment manufacturing or cutting-edge R&D compared to Northern European leaders."
+      "rationale": "Italy is a major European market with ongoing 5G deployment. It has a good engineering base and academic research, with some government initiatives to boost digital infrastructure, but limited frontier R&D in telecom equipment."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.25,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Telefonica (Telefonica I+D)",
         "Vodafone Spain",
         "Orange Spain",
-        "Universities"
+        "Masmovil",
+        "Universitat Polit\u00e8cnica de Catalunya"
       ],
-      "rationale": "Spain has major telecom operators, with Telefonica having a notable R&D arm, and some academic contributions, but is not a primary hub for advanced networking equipment R&D."
+      "rationale": "Spain is a significant European market and home to Telefonica, which has its own R&D arm (Telefonica I+D). There's a good engineering base and academic research, contributing to networking advancements."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
+        "Digital Nasional Berhad (DNB)",
         "Maxis",
         "CelcomDigi",
         "U Mobile",
-        "MCMC (Malaysian Communications and Multimedia Commission)"
+        "Universiti Malaya"
       ],
-      "rationale": "Malaysia is focused on 5G deployment and operations to support its digital economy, with limited advanced R&D in core networking technologies."
+      "rationale": "Malaysia is actively rolling out 5G through a single wholesale network (DNB). While the market is growing, the advanced R&D and frontier work are still nascent, with a focus on deployment and operational skills."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.4,
       "confidence": "low",
       "evidence": [
-        "Viettel (some R&D)",
+        "Viettel (domestic telecom and equipment vendor)",
         "VNPT",
-        "Mobifone"
+        "MobiFone",
+        "FPT Corporation",
+        "Government 5G development strategy"
       ],
-      "rationale": "Vietnam is rapidly developing its digital infrastructure and 5G network, with some domestic efforts (e.g., Viettel) in R&D, but overall advanced frontier work is limited."
+      "rationale": "Vietnam has a rapidly growing telecom market with a strong government push for domestic technology development, particularly from Viettel, which is developing its own 5G equipment. Skill levels are developing, with some emerging R&D."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
         "AIS",
         "TrueMove H",
-        "DTAC"
+        "dtac",
+        "National Broadcasting and Telecommunications Commission (NBTC)"
       ],
-      "rationale": "Thailand is deploying 5G and developing its digital economy, but advanced R&D in networking is not a primary focus, with most roles centered on deployment and operations."
+      "rationale": "Thailand is deploying 5G and has a growing digital economy. The job market is primarily focused on network deployment and operations, with limited advanced R&D or frontier work currently."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
         "Telkomsel",
         "Indosat Ooredoo Hutchison",
-        "XL Axiata"
+        "XL Axiata",
+        "Ministry of Communication and Information Technology"
       ],
-      "rationale": "Indonesia has a massive and growing telecom market with 5G rollout, but the job market for advanced R&D in networking is very limited, focusing on network operations and expansion."
+      "rationale": "Indonesia has a massive and developing telecom market with ongoing 5G rollout. The demand is largely for deployment and operational roles, with advanced R&D capabilities still in early stages."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.15,
+      "skill_level": 4,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Etisalat",
+        "Etisalat (e&)",
         "Du",
-        "Smart Dubai initiatives",
-        "Technology parks"
+        "Government smart city initiatives",
+        "Various tech parks and innovation hubs"
       ],
-      "rationale": "The UAE has ambitious digital transformation goals and early 5G adoption, with significant investment in smart city technologies, often leveraging international partnerships for advanced R&D."
+      "rationale": "The UAE, despite its small size, invests heavily in advanced infrastructure and smart city initiatives, driving demand for high-skill networking professionals. Operators like Etisalat (e&) are regional leaders in 5G deployment and innovation."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.15,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "STC",
+        "STC (Saudi Telecom Company)",
         "Mobily",
-        "Zain",
-        "NEOM project",
-        "Vision 2030 initiatives"
+        "Zain KSA",
+        "NEOM project (future focus on advanced connectivity)",
+        "King Abdullah University of Science and Technology (KAUST)"
       ],
-      "rationale": "Saudi Arabia is making large investments in its digital infrastructure and smart city projects (e.g., NEOM) as part of Vision 2030, driving demand for networking skills, often through international collaborations for frontier work."
+      "rationale": "Saudi Arabia is undergoing rapid digital transformation as part of Vision 2030, with significant investment in advanced infrastructure and projects like NEOM. This is driving demand for networking skills, with growing R&D capabilities."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "medium",
       "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.3,
+      "confidence": "low",
       "evidence": [
-        "Vivo",
+        "Vivo (Telefonica Brasil)",
         "Claro",
         "TIM Brasil",
-        "Anatel",
-        "Universities"
+        "Anatel (National Telecommunications Agency)",
+        "Universidade de S\u00e3o Paulo"
       ],
-      "rationale": "Brazil has a large telecom market with ongoing 5G rollout. While there's a demand for network engineers, advanced R&D in core networking technologies is limited compared to global leaders."
+      "rationale": "Brazil is a large market with ongoing 5G deployment. The job market is primarily focused on network operations and deployment. While there's academic research, large-scale frontier R&D in telecom is limited."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.2,
-      "confidence": "medium",
+      "frontier": 0.4,
+      "confidence": "low",
       "evidence": [
         "Orange Polska",
         "Play",
         "T-Mobile Polska",
-        "Nokia (R&D center in Krakow/Wroclaw)",
-        "Universities"
+        "Plus",
+        "Warsaw University of Technology"
       ],
-      "rationale": "Poland has a growing tech sector and good telecom infrastructure. While not a major indigenous equipment hub, it hosts R&D centers for international companies like Nokia, contributing to specialized roles."
+      "rationale": "Poland is a growing European market with active 5G rollout and a good base of engineering talent. The demand is mainly for network deployment and operational roles, with some academic research but limited frontier R&D."
     }
   ]
 }

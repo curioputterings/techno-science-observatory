@@ -5,56 +5,52 @@
       "country_iso": "US",
       "country_name": "United States",
       "volume_band": "very_high",
-      "skill_level": 4,
+      "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "National Nanotechnology Initiative (NNI)",
-        "IBM Research",
+        "MIT.nano",
+        "Northwestern University (International Institute for Nanotechnology)",
+        "IBM",
         "Intel",
         "3M",
-        "Dow Chemical",
-        "MIT",
-        "Stanford University",
-        "UC Berkeley",
-        "Harvard University",
-        "Numerous startups in nanotech"
+        "Dow Chemical"
       ],
-      "rationale": "The US has a vast and mature ecosystem for nanomaterials, driven by significant government funding (NNI), leading universities, and major corporations in electronics, materials, and defense. It's a global leader in both fundamental research and commercialization across various nanomaterial applications."
+      "rationale": "The US has a robust ecosystem for nanomaterials, driven by significant government funding, leading academic institutions, and major corporations. It excels in fundamental research and commercialization across various applications, including electronics, medicine, and energy."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
       "skill_level": 4,
-      "frontier": 0.85,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Chinese Academy of Sciences (CAS)",
+        "Chinese Academy of Sciences (CAS) - National Center for Nanoscience and Technology (NCNST)",
         "Tsinghua University",
         "Peking University",
-        "National Center for Nanoscience and Technology (NCNST)",
-        "Extensive government investment in advanced materials"
+        "Huawei"
       ],
-      "rationale": "China has made massive strategic investments in nanotechnology, leading to a very high volume of research and development, particularly in graphene, 2D materials, and nanostructured materials for energy and electronics. Its scientific output and industrial application are rapidly expanding."
+      "rationale": "China has made massive strategic investments in nanomaterials R&D, leading to a high volume of research output and rapid industrialization. It is a major player in applications for energy, electronics, and biomedicine, with a large talent pool."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "National Institute for Materials Science (NIMS)",
         "University of Tokyo",
-        "Kyoto University",
-        "NEC",
+        "Osaka University",
+        "Sony",
+        "Panasonic",
         "Toshiba",
-        "Hitachi",
-        "Panasonic"
+        "Hitachi"
       ],
-      "rationale": "Japan has a long-standing strength in materials science and precision engineering. It maintains a high volume of advanced nanomaterials work, particularly in carbon nanotubes, quantum dots, and thin films for electronics and automotive applications, supported by strong academic and industrial research."
+      "rationale": "Japan has a long-standing excellence in materials science and precision engineering. Strong corporate R&D and government support drive innovation in nanomaterials for electronics, automotive, and advanced manufacturing sectors."
     },
     {
       "country_iso": "KR",
@@ -67,43 +63,42 @@
         "Samsung",
         "LG",
         "SK Hynix",
-        "KAIST (Korea Advanced Institute of Science and Technology)",
-        "POSTECH (Pohang University of Science and Technology)",
-        "KIST (Korea Institute of Science and Technology)"
+        "Korea Institute of Science and Technology (KIST)",
+        "KAIST"
       ],
-      "rationale": "South Korea is a global leader in electronics, displays, and batteries, all of which heavily rely on advanced nanomaterials. Major chaebols and top universities drive significant R&D and commercialization efforts, resulting in a high volume of skilled roles and frontier research."
+      "rationale": "South Korea is a global leader in electronics and display technologies, with significant investment from conglomerates in nanomaterials for semiconductors, batteries, and flexible displays. It boasts strong R&D capabilities and rapid commercialization."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "TSMC (Taiwan Semiconductor Manufacturing Company)",
-        "UMC (United Microelectronics Corporation)",
-        "ITRI (Industrial Technology Research Institute)",
+        "TSMC",
+        "UMC",
+        "Industrial Technology Research Institute (ITRI)",
         "National Taiwan University"
       ],
-      "rationale": "Taiwan's dominance in semiconductor manufacturing necessitates advanced materials, including thin films and nanostructures. While focused primarily on applied research for production, there's significant expertise and some frontier work in materials science relevant to future chip technologies."
+      "rationale": "Taiwan's strength in semiconductor manufacturing drives demand for advanced nanomaterials in microelectronics, displays, and optoelectronics. Its focus is primarily on applied R&D to support its dominant industry."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Fraunhofer Institutes",
-        "Max Planck Institutes",
-        "RWTH Aachen University",
-        "TU Munich",
+        "Max Planck Society",
         "BASF",
-        "Siemens"
+        "Merck",
+        "Siemens",
+        "Technical University of Munich"
       ],
-      "rationale": "Germany possesses a robust industrial and research landscape for materials science. Its strong chemical, automotive, and engineering sectors drive significant demand for nanomaterials R&D and application, supported by world-class research institutions."
+      "rationale": "Germany excels in industrial applications, automotive, chemicals, and engineering. Its strong research infrastructure (Fraunhofer, Max Planck) and corporate R&D translate fundamental nanomaterials research into robust industrial solutions."
     },
     {
       "country_iso": "NL",
@@ -114,59 +109,55 @@
       "confidence": "medium",
       "evidence": [
         "ASML",
-        "Philips",
-        "TNO (Netherlands Organisation for Applied Scientific Research)",
-        "TU Delft",
-        "Eindhoven University of Technology",
-        "QuTech"
+        "University of Twente (MESA+ Institute)",
+        "Delft University of Technology",
+        "Philips"
       ],
-      "rationale": "The Netherlands has a highly innovative economy with strong clusters in high-tech systems, semiconductors, and quantum technology. This drives significant, albeit specialized, nanomaterials research and development, particularly for advanced manufacturing and quantum applications."
+      "rationale": "The Netherlands has a strong focus on advanced materials, semiconductors, and life sciences. World-class academic research, particularly in quantum materials and nanodevices, is supported by key industrial players."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "National Graphene Institute (University of Manchester)",
         "Cambridge University",
-        "Imperial College London",
-        "EPSRC (Engineering and Physical Sciences Research Council)"
+        "Oxford University",
+        "EPSRC"
       ],
-      "rationale": "The UK is a pioneer in graphene and 2D materials research, with strong academic institutions leading fundamental discoveries. While industrial translation is still developing, the volume of high-skill research roles is substantial, particularly in academic and startup environments."
+      "rationale": "The UK boasts a strong academic base, particularly in graphene and 2D materials, with world-leading research. While industrial translation can be slower, its fundamental research in these areas is highly impactful."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.65,
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "CNRS (National Center for Scientific Research)",
-        "CEA (French Alternative Energies and Atomic Energy Commission)",
-        "Sorbonne University",
-        "Arkema",
+        "CNRS",
+        "CEA (Atomic Energy and Alternative Energies Commission)",
+        "Thales",
         "Saint-Gobain"
       ],
-      "rationale": "France has a strong tradition in fundamental science and materials research, with significant government-backed research institutes and universities contributing to nanomaterials R&D. Industrial application is present, particularly in chemicals and advanced manufacturing."
+      "rationale": "France has a solid academic research base in nanomaterials, with strong links to aerospace, defense, energy, and health sectors. While fundamental research is good, industrial scale and commercialization are moderate."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
-        "Technion \u2013 Israel Institute of Technology",
         "Weizmann Institute of Science",
-        "Tel Aviv University",
-        "Numerous high-tech startups"
+        "Technion \u2013 Israel Institute of Technology",
+        "numerous nanotech startups"
       ],
-      "rationale": "Israel's high-tech and startup ecosystem includes significant activity in advanced materials, particularly for defense, medical devices, and electronics. While the overall volume is lower than larger economies, the skill level and frontier research quality are high."
+      "rationale": "Israel's vibrant startup ecosystem and excellent academic research drive highly specialized nanomaterials R&D, particularly in nanomedicine, optoelectronics, and defense applications, punching above its weight."
     },
     {
       "country_iso": "IN",
@@ -176,12 +167,11 @@
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Indian Institutes of Technology (IITs)",
-        "Indian Institute of Science (IISc Bangalore)",
-        "CSIR (Council of Scientific & Industrial Research) labs",
-        "National Nanomission"
+        "Indian Institute of Science (IISc)",
+        "IITs (various)",
+        "Nano Mission (Department of Science & Technology)"
       ],
-      "rationale": "India has a large and growing scientific talent pool with increasing government investment in nanotechnology. While academic research is strong and expanding, industrial translation and frontier commercialization are still developing compared to global leaders, leading to a medium volume of roles."
+      "rationale": "India has a growing research output and government initiatives in nanomaterials, focusing on energy, water purification, and healthcare. While academic research is significant, industrial application and frontier leadership are still maturing."
     },
     {
       "country_iso": "SG",
@@ -191,12 +181,11 @@
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "A*STAR (Agency for Science, Technology and Research)",
+        "Agency for Science, Technology and Research (A*STAR) - Institute of Materials Research and Engineering (IMRE)",
         "National University of Singapore (NUS)",
-        "Nanyang Technological University (NTU)",
-        "Institute of Materials Research and Engineering (IMRE)"
+        "Nanyang Technological University (NTU)"
       ],
-      "rationale": "Singapore has strategically invested heavily in R&D and high-tech manufacturing, including nanomaterials. It has world-class research institutions and a focus on advanced materials for electronics, biomedical, and energy applications, leading to a concentrated but high-skill market."
+      "rationale": "Singapore has made significant government investments in R&D, fostering excellent research institutes and universities focused on electronics, biomedical, and advanced manufacturing applications of nanomaterials."
     },
     {
       "country_iso": "CH",
@@ -204,103 +193,96 @@
       "volume_band": "low",
       "skill_level": 4,
       "frontier": 0.7,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "ETH Zurich",
-        "EPFL (Swiss Federal Institute of Technology Lausanne)",
+        "EPFL",
         "IBM Research Zurich",
-        "CSEM (Swiss Center for Electronics and Microtechnology)"
+        "CSEM"
       ],
-      "rationale": "Switzerland excels in high-value research and precision industries. Its top-tier universities and research centers conduct significant frontier research in nanomaterials, particularly for electronics, biomedical, and advanced manufacturing, though the overall volume of roles is smaller."
+      "rationale": "Switzerland boasts world-class academic institutions and strong industries in precision engineering and pharmaceuticals. It conducts very high-quality, specialized nanomaterials research, often leading in niche areas."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "KTH Royal Institute of Technology",
         "Chalmers University of Technology",
-        "Link\u00f6ping University",
-        "Ericsson",
-        "Sandvik"
+        "RISE (Research Institutes of Sweden)"
       ],
-      "rationale": "Sweden has a strong innovation ecosystem and excellent academic research in materials science and nanotechnology. While industrial application is present, particularly in telecom and engineering, the overall volume of advanced nanomaterials roles is moderate."
+      "rationale": "Sweden has strong academic research and an innovation ecosystem, focusing on sustainable materials, energy, and biomedical applications of nanomaterials. The overall volume is smaller, but quality is high."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "low",
       "evidence": [
-        "Aalto University",
         "VTT Technical Research Centre of Finland",
-        "University of Oulu"
+        "Aalto University"
       ],
-      "rationale": "Finland has strong academic research in materials science and nanotechnology, particularly in areas related to forest products, ICT, and sustainable materials. However, the industrial market for advanced nanomaterials roles remains relatively small."
+      "rationale": "Finland has niche expertise in nanomaterials, particularly in nanocellulose and sustainable materials, driven by its forest industry. Research is high-quality but the overall market volume is limited."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "University of Toronto",
-        "McGill University",
-        "University of Waterloo",
-        "National Research Council (NRC) Canada"
+        "National Research Council Canada (NRC)",
+        "University of Toronto (Institute for Optical Sciences)",
+        "McGill University"
       ],
-      "rationale": "Canada has a strong academic research base in nanomaterials, particularly in quantum materials, biomedical applications, and energy. While there's significant research output, industrial translation and large-scale commercialization are still developing, leading to a moderate volume of roles."
+      "rationale": "Canada has a good academic research base in nanomaterials, with government funding supporting efforts in energy, health, and advanced manufacturing. Industrial translation is present but not as scaled as in the US."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "low",
       "evidence": [
-        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
-        "UNSW (University of New South Wales)",
+        "UNSW (Centre for Advanced Photovoltaics)",
         "Monash University",
-        "Australian National University (ANU)"
+        "CSIRO"
       ],
-      "rationale": "Australia has excellent academic research in nanomaterials, often linked to mining, biomedical, and energy sectors. However, the industrial market for advanced nanomaterials roles is relatively small, with less emphasis on large-scale manufacturing compared to other leading nations."
+      "rationale": "Australia has strong academic research in nanomaterials, focusing on energy, environment, and biomedical applications. While there's emerging frontier research, the industrial scale remains limited."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "Tyndall National Institute",
-        "CRANN (Centre for Research on Adaptive Nanostructures and Nanodevices, Trinity College Dublin)",
-        "IDA Ireland initiatives"
+        "CRANN (Trinity College Dublin)",
+        "Tyndall National Institute"
       ],
-      "rationale": "Ireland has a growing high-tech sector, particularly in pharmaceuticals and medical devices, which utilize some nanomaterials. Research is concentrated in specific institutes, but the overall volume of dedicated advanced nanomaterials roles remains very low."
+      "rationale": "Ireland's nanomaterials R&D is growing, particularly linked to its ICT and medical devices sectors. It has niche expertise, often driven by academic centers and multinational collaborations, but overall volume is low."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
-        "KU Leuven",
+        "IMEC (Interuniversity Microelectronics Centre)",
         "Ghent University",
-        "Solvay",
-        "Close collaboration with IMEC (located in Netherlands)"
+        "KU Leuven"
       ],
-      "rationale": "Belgium has strong academic and industrial research in materials science, with significant contributions to nanomaterials, often in collaboration with neighboring high-tech hubs like IMEC. This leads to a moderate volume of high-skill roles."
+      "rationale": "Belgium, particularly through IMEC, is a world leader in nanoelectronics R&D. This drives significant frontier research and specialized industrial applications in semiconductors, biomedical, and advanced coatings."
     },
     {
       "country_iso": "AT",
@@ -310,11 +292,11 @@
       "frontier": 0.4,
       "confidence": "low",
       "evidence": [
-        "TU Vienna (Vienna University of Technology)",
+        "University of Vienna",
         "Graz University of Technology",
         "Austrian Institute of Technology (AIT)"
       ],
-      "rationale": "Austria has a solid research base in materials science and nanotechnology, particularly in niche areas like advanced sensors and surface technologies. However, the overall market for advanced nanomaterials roles is relatively small."
+      "rationale": "Austria has good academic research in physics and materials science, with high-quality niche expertise in advanced materials, sensors, and quantum technologies. The overall market volume is small."
     },
     {
       "country_iso": "IT",
@@ -322,137 +304,131 @@
       "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.5,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
         "Italian Institute of Technology (IIT)",
         "CNR (National Research Council)",
-        "Politecnico di Milano",
-        "Sapienza University of Rome"
+        "Politecnico di Milano"
       ],
-      "rationale": "Italy has a strong academic tradition in physics and chemistry, with significant research in nanomaterials. The Italian Institute of Technology (IIT) is a major player. However, industrial translation and the overall volume of commercial roles are not as extensive as in leading nations."
+      "rationale": "Italy possesses a strong academic tradition in nanomaterials, particularly in physics and chemistry, with the IIT being a significant hub. While fundamental research is solid, industrial translation can be fragmented."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "ICN2 (Catalan Institute of Nanoscience and Nanotechnology)",
-        "CSIC (Spanish National Research Council)",
-        "Universities like Autonomous University of Barcelona"
+        "Catalan Institute of Nanoscience and Nanotechnology (ICN2)",
+        "CSIC (Spanish National Research Council)"
       ],
-      "rationale": "Spain has invested in developing its nanotechnology research capabilities, with notable institutes like ICN2. Academic output is growing, but the industrial market for advanced nanomaterials roles remains relatively small."
+      "rationale": "Spain has growing research efforts in nanomaterials, notably in Catalonia, focusing on energy, health, and environmental applications. It's an emerging player, but not yet a major global leader."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "MIMOS (Malaysian Institute of Microelectronic Systems)",
-        "Universiti Malaya",
-        "National Nanotechnology Centre (NNC)"
+        "National Nanotechnology Directorate (NND)",
+        "MIMOS Berhad"
       ],
-      "rationale": "Malaysia is developing its high-tech manufacturing and R&D capabilities, including some focus on nanomaterials. Most roles are in applied research or manufacturing support, with limited frontier R&D."
+      "rationale": "Malaysia has government initiatives to promote nanotechnology, with some applied research in agriculture, energy, and electronics. However, the advanced job market for nanomaterials is negligible, with very limited frontier research."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Vietnam Academy of Science and Technology (VAST)",
-        "National University of Vietnam"
+        "Vietnam National University",
+        "Institute of Materials Science (IMS)"
       ],
-      "rationale": "Vietnam is an emerging economy with growing investment in science and technology. While there's nascent academic research in nanomaterials, the advanced job market is currently negligible, with very limited frontier work."
+      "rationale": "Vietnam has emerging research in nanomaterials, with government support for science and technology. Activity is primarily academic and basic applied research, with a negligible advanced job market."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "NSTDA (National Science and Technology Development Agency)",
-        "Chulalongkorn University",
-        "NANOTEC (National Nanotechnology Center)"
+        "National Nanotechnology Center (NANOTEC)",
+        "Chulalongkorn University"
       ],
-      "rationale": "Thailand has government initiatives to promote science and technology, including nanotechnology. Academic research exists, but the industrial application and advanced job market for nanomaterials are currently negligible."
+      "rationale": "Thailand's nanomaterials efforts are centered around the National Nanotechnology Center, focusing on agriculture, food, and textiles. The advanced job market is negligible, with limited frontier research."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "BRIN (National Research and Innovation Agency)",
-        "Universitas Indonesia"
+        "Indonesian Institute of Sciences (LIPI)",
+        "Bandung Institute of Technology"
       ],
-      "rationale": "Indonesia's advanced materials sector is still in its very early stages. While there is some academic interest, the job market for advanced nanomaterials roles is negligible, with minimal frontier research."
+      "rationale": "Indonesia is in the early stages of nanomaterials development, with some university research. The advanced job market is negligible, and there is no significant frontier research."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
         "Khalifa University",
-        "Masdar Institute (now part of Khalifa University)",
-        "NYU Abu Dhabi"
+        "Masdar Institute"
       ],
-      "rationale": "The UAE has made significant investments in establishing world-class research institutions and attracting international talent. While the overall volume of roles is small, there's a focused effort on advanced materials and nanotechnology, leading to some high-skill and emerging frontier work."
+      "rationale": "The UAE has significant investment in R&D infrastructure, particularly in energy, water, and advanced materials, attracting international talent. It has an emerging frontier, but the local talent pool and market volume are still small."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "low",
+      "frontier": 0.4,
+      "confidence": "medium",
       "evidence": [
         "King Abdullah University of Science and Technology (KAUST)",
-        "King Fahd University of Petroleum and Minerals (KFUPM)"
+        "King Saud University",
+        "Saudi Aramco (R&D)"
       ],
-      "rationale": "Saudi Arabia, particularly through KAUST, has invested heavily in cutting-edge research, including nanomaterials. This has created a small but highly skilled and frontier-focused research environment, often with international researchers."
+      "rationale": "Saudi Arabia has made massive investments in research infrastructure, attracting top international researchers to institutions like KAUST. It focuses on energy, water, and petrochemicals, with significant emerging frontier research."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Universidade de S\u00e3o Paulo (USP)",
-        "UNICAMP (University of Campinas)",
-        "CNPEM (Brazilian Center for Research in Energy and Materials)"
+        "Brazilian Nanotechnology National Laboratory (LNNano)",
+        "University of S\u00e3o Paulo"
       ],
-      "rationale": "Brazil has a strong academic base in materials science, with universities conducting research in nanomaterials. However, the industrial translation and overall job market for advanced nanomaterials roles remain very low compared to its research potential."
+      "rationale": "Brazil has growing academic research in nanomaterials, with some government funding, focusing on agriculture, energy, and health. However, industrial scale and advanced job market volume remain limited."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Polish Academy of Sciences",
-        "Warsaw University of Technology",
-        "AGH University of Science and Technology"
+        "Institute of Physical Chemistry PAS",
+        "Warsaw University of Technology"
       ],
-      "rationale": "Poland has a growing research sector with increasing investment in advanced materials. Academic research in nanomaterials is present, but the industrial job market for highly specialized roles is still in early development."
+      "rationale": "Poland has developing research infrastructure in nanomaterials, often supported by EU funding, focusing on materials science, electronics, and biomedical applications. It's an emerging player, but not a major global hub."
     }
   ]
 }
