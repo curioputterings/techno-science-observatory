@@ -20,6 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+from ats import classify as classify_module  # noqa: E402
 from ats import scrape  # noqa: E402  (fetch_board + pacing)
 from ats.classify import classify_posting  # noqa: E402
 from store import Store  # noqa: E402
@@ -106,6 +107,7 @@ def run() -> dict:
     log(f"=== done. {n} footprint rows | {total} in db | "
         f"{len(multi)} multi-country employers ===")
     log(f"    multi-country: {dict(sorted(multi.items(), key=lambda x: -x[1]))}")
+    log(f"    llm classify cache: {classify_module.cache_stats()}")
     return {"rows": n, "multi_country": len(multi)}
 
 

@@ -50,6 +50,16 @@ collectors ──▶ store.py (jobs.db) ──▶ analysis/ ──▶ dashboard/
   `run_research.py` + `ambition.py` (Gemini), `ats/` (probe→scrape→footprint),
   `research_sources/publications.py` (OpenAlex), `research_sources/patents_bq.py`
   (BigQuery).
+  `ats/classify.py`'s domain/tier/function classification is regex-first,
+  local-LLM-second: a posting only escalates to the local model (`llm_local.py`,
+  via LM Studio) when the regex rules weren't confident (no/tied domain-anchor
+  hits, no tier or function cue matched). A real registry can carry thousands of
+  postings with ~50% needing escalation, so results are cached forever
+  (`data/classify_cache.db`, keyed on posting content) and new escalations are
+  capped per run (`LLM_ESCALATION_CAP`, default 250) — an uncached backlog
+  drains over several weekly runs rather than blocking one. A small residual
+  sample also gets an independent Gemini classification purely for drift
+  auditing (printed on disagreement, never overrides).
 - **`analysis/`** is pure computation over the DB: `complexity.py` (OEC — RCA, PCI,
   basket complexity, proximity, adjacent-possible) and `gap.py` (ambition − revealed).
 - **`dashboard/app.py`** is an 11-tab Streamlit reader; **`export_site.py`** renders

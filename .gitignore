@@ -7,6 +7,7 @@ venv/
 .env
 # data artifacts
 data/jobs.db
+data/classify_cache.db
 *.csv
 # keep raw research JSON in git (it's the cited evidence), ignore db
 data/ats_raw/

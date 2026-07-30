@@ -27,6 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 import taxonomy  # noqa: E402
+from ats import classify as classify_module  # noqa: E402
 from ats.classify import classify_posting  # noqa: E402
 from store import Store  # noqa: E402
 
@@ -192,6 +193,7 @@ def run() -> dict:
 
     log(f"=== done. classified={classified} unclassified={unclassified} "
         f"no_country={no_country} | cells written={written} | ats cells total={total_ats} ===")
+    log(f"    llm classify cache: {classify_module.cache_stats()}")
     return {"classified": classified, "cells": written, "ats_total": total_ats}
 
 
