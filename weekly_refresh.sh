@@ -20,17 +20,43 @@ cd "$PROJECT_DIR"
 # interpreter the venv was built on) so cron matches the historically-validated
 # runtime. Fall back to any python3.14, then bare python3 (Apple's /usr/bin/python3
 # is 3.9 — the pipeline imports fine there, but 3.14 is preferred).
+#
+# DON'T just pick the first executable candidate: pinning the Homebrew path alone
+# reproduced the 07-20 outage in a new place on 2026-08-03 — that path resolves
+# into the Python.app framework bundle, which carries its own TCC identity and so
+# gets denied ~/Desktop under the LaunchAgent, dying with
+# `can't open file 'refresh.py': [Errno 1] Operation not permitted` in <1s.
+# TCC verdicts differ per interpreter and can change with an OS/Homebrew update,
+# so probe instead of predict: each candidate must prove it can actually open
+# refresh.py from PROJECT_DIR before we accept it.
+PY=""
 for cand in \
   /opt/homebrew/opt/python@3.14/bin/python3.14 \
   "$(command -v python3.14 2>/dev/null)" \
-  "$(command -v python3 2>/dev/null)"; do
-  if [ -n "$cand" ] && [ -x "$cand" ]; then PY="$cand"; break; fi
+  "$PROJECT_DIR/.venv/bin/python3" \
+  "$(command -v python3 2>/dev/null)" \
+  /usr/bin/python3; do
+  [ -n "$cand" ] && [ -x "$cand" ] || continue
+  if "$cand" -c "open('refresh.py').close()" >/dev/null 2>&1; then PY="$cand"; break; fi
 done
+
+LOG_DIR_EARLY="$PROJECT_DIR/data/research"
+if [ -z "$PY" ]; then
+  mkdir -p "$LOG_DIR_EARLY"
+  echo "[$(date)] weekly_refresh ABORT: no interpreter could read refresh.py \
+(TCC/disk-access denial — grant Full Disk Access to the LaunchAgent's shell)" \
+    >> "$LOG_DIR_EARLY/cron.log"
+  exit 1
+fi
 
 LOG_DIR="$PROJECT_DIR/data/research"
 mkdir -p "$LOG_DIR"
 STAMP="$(date +%Y-%m-%d_%H%M%S)"
 
 echo "[$(date)] weekly_refresh starting with $PY" >> "$LOG_DIR/cron.log"
-"$PY" refresh.py >> "$LOG_DIR/cron.log" 2>&1
-echo "[$(date)] weekly_refresh finished (rc=$?)" >> "$LOG_DIR/cron.log"
+# `set -e` would abort before the finish line on a non-zero refresh, hiding the rc
+# in cron.log (the only place a launchd-run failure is visible) — so capture it.
+rc=0
+"$PY" refresh.py >> "$LOG_DIR/cron.log" 2>&1 || rc=$?
+echo "[$(date)] weekly_refresh finished (rc=$rc)" >> "$LOG_DIR/cron.log"
+exit "$rc"
