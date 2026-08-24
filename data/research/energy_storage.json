@@ -4,39 +4,40 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Tesla Gigafactories",
-        "Redwood Materials",
-        "QuantumScape",
+        "Tesla (Gigafactories, R&D)",
+        "QuantumScape (solid-state)",
         "Solid Power",
+        "Redwood Materials (recycling)",
+        "GM, Ford (EV battery investments)",
         "Argonne National Lab",
-        "Stanford University",
-        "MIT",
-        "DOE initiatives",
-        "Inflation Reduction Act (IRA)"
+        "Pacific Northwest National Lab",
+        "MIT, Stanford (university research)",
+        "ARPA-E funding"
       ],
-      "rationale": "The US has a robust ecosystem for advanced battery R&D, manufacturing, and startups, driven by significant government incentives (IRA), major automotive players, and leading research institutions. It is a global hub for frontier technologies like solid-state batteries."
+      "rationale": "The US has a robust ecosystem for advanced battery R&D and manufacturing, driven by major EV players, specialized startups in solid-state and recycling, and significant government and academic research funding. It's a global leader in frontier battery technology."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "CATL",
+        "CATL (Contemporary Amperex Technology Co.)",
         "BYD",
-        "Contemporary Amperex Technology Co. Ltd. (CALB)",
         "EVE Energy",
-        "Government 5-year plans",
-        "Numerous research institutes"
+        "CALB",
+        "Chinese Academy of Sciences",
+        "Beijing Institute of Technology",
+        "National EV and battery initiatives"
       ],
-      "rationale": "China is the undisputed global leader in battery production and has massive investments in R&D, from materials to advanced cell chemistries. Companies like CATL and BYD are at the forefront of innovation and scale."
+      "rationale": "China dominates global Li-ion battery production and has a massive domestic EV market. Companies like CATL and BYD are global leaders. There's substantial government support and investment in both manufacturing scale and advanced R&D, including solid-state technologies."
     },
     {
       "country_iso": "JP",
@@ -47,12 +48,13 @@
       "confidence": "high",
       "evidence": [
         "Panasonic",
-        "Toyota (solid-state battery development)",
+        "Toyota (Prime Planet Energy & Solutions, solid-state)",
+        "Murata Manufacturing",
+        "Hitachi",
         "GS Yuasa",
-        "Murata",
-        "NEDO (New Energy and Industrial Technology Development Organization)"
+        "National Institute of Advanced Industrial Science and Technology (AIST)"
       ],
-      "rationale": "Japan has a strong legacy in battery technology and continues to be a significant player in R&D and high-quality manufacturing, particularly in areas like solid-state batteries (Toyota) and specialized components."
+      "rationale": "Japan has a long history of leadership in battery technology, particularly Li-ion. While some manufacturing has shifted, it remains a powerhouse in R&D, especially with Toyota's pioneering work in solid-state batteries and Panasonic's advanced cell development."
     },
     {
       "country_iso": "KR",
@@ -65,188 +67,188 @@
         "LG Energy Solution",
         "Samsung SDI",
         "SK On",
-        "Government R&D programs",
-        "KAIST"
+        "Hyundai Motor Group",
+        "Korea Advanced Institute of Science and Technology (KAIST)"
       ],
-      "rationale": "South Korea is a global powerhouse in lithium-ion battery manufacturing and R&D, with major players like LG Energy Solution, Samsung SDI, and SK On driving innovation in cell technology and production efficiency."
+      "rationale": "South Korea is home to global battery giants that are leaders in Li-ion cell production and R&D. These companies are at the forefront of developing advanced battery chemistries, cell designs, and manufacturing processes, with significant investment in next-generation technologies like solid-state."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
+        "ProLogium Technology (solid-state battery development)",
         "ITRI (Industrial Technology Research Institute)",
-        "Specialized material companies",
-        "Strong electronics supply chain"
+        "Delta Electronics (BMS, power solutions)"
       ],
-      "rationale": "Taiwan excels in electronics manufacturing and has a strong base in battery components and materials. While not a major cell manufacturer, it contributes significantly to the supply chain and specialized R&D."
+      "rationale": "Taiwan excels in electronics manufacturing and components, including battery management systems (BMS) and some specialized materials. While not a large-scale cell producer, it has niche players like ProLogium pushing solid-state technology and strong research institutes."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Fraunhofer Institutes (e.g., IFAM)",
-        "Varta",
-        "BASF (materials)",
-        "VW PowerCo",
-        "Mercedes-Benz",
-        "BMW",
-        "Government funding for battery research"
+        "Volkswagen (PowerCo, gigafactories)",
+        "BMW, Mercedes-Benz (battery R&D and production)",
+        "BASF (battery materials)",
+        "Varta (specialty batteries)",
+        "Fraunhofer Institutes (e.g., ISC)",
+        "Helmholtz Association, TU Munich"
       ],
-      "rationale": "Germany's strong automotive industry is driving significant investment in domestic battery production and R&D. Leading research institutes and major OEMs are pushing innovation in cell technology and manufacturing processes."
+      "rationale": "Germany's strong automotive industry is driving significant investment in battery cell production and R&D. There's a robust ecosystem of materials science, engineering, and academic research, with a growing focus on solid-state and sustainable battery technologies."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
         "TU Delft",
         "Eindhoven University of Technology",
-        "Some startups in energy storage solutions"
+        "E-Stone Batteries (flow batteries)"
       ],
-      "rationale": "The Netherlands has a strong academic base in materials science and energy systems, leading to specialized R&D and some innovative startups, though not large-scale battery manufacturing."
+      "rationale": "The Netherlands has strong academic research in materials science and electrochemistry, with some niche startups focusing on specific battery types or energy management systems. However, it lacks large-scale battery manufacturing or a broad industrial base in advanced battery cells."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Faraday Institution",
-        "Oxford University",
-        "Cambridge University",
-        "Imperial College London",
-        "Nissan Sunderland plant (battery assembly)"
+        "Faraday Institution (national battery research)",
+        "Envision AESC (Nissan Sunderland gigafactory)",
+        "Oxford, Cambridge, Imperial College London (university research)"
       ],
-      "rationale": "The UK has a strong academic research base in battery science, supported by initiatives like the Faraday Institution. Industrial scale manufacturing is growing, particularly linked to the automotive sector."
+      "rationale": "The UK has a strong academic foundation in battery research, spearheaded by the Faraday Institution. While industrial-scale manufacturing is emerging (e.g., Envision AESC), the ecosystem is still developing, with significant R&D efforts in next-generation battery materials and cell designs."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Saft (TotalEnergies)",
-        "ACC (Automotive Cells Company)",
-        "CNRS",
+        "ACC (Automotive Cells Company - Stellantis, TotalEnergies, Mercedes-Benz)",
+        "Saft (TotalEnergies subsidiary)",
+        "CNRS (Centre National de la Recherche Scientifique)",
         "CEA (Commissariat \u00e0 l'\u00e9nergie atomique et aux \u00e9nergies alternatives)"
       ],
-      "rationale": "France has a strong government-backed strategy to develop a domestic battery industry, with significant R&D capabilities through institutions like CNRS and CEA, and industrial players like Saft and ACC."
+      "rationale": "France is investing significantly in battery production through initiatives like ACC, a major European gigafactory project. It has strong public research institutions (CNRS, CEA) contributing to materials science and electrochemistry, positioning it for growth in advanced battery R&D and manufacturing."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "StoreDot",
-        "Bar-Ilan University",
-        "Technion"
+        "StoreDot (extreme fast charging battery technology)",
+        "Weizmann Institute of Science",
+        "Technion (university research)",
+        "Various battery software/BMS startups"
       ],
-      "rationale": "Israel's vibrant startup ecosystem and strong academic research contribute to niche innovations in battery materials, fast-charging technologies, and battery management systems, rather than large-scale cell production."
+      "rationale": "Israel's strength lies in high-tech innovation, particularly in software, AI, and specialized materials. While not a manufacturing hub, it has notable startups like StoreDot pushing frontier advancements in specific battery performance areas (e.g., fast charging) and strong academic research."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "ISRO (space applications)",
-        "IITs (Indian Institutes of Technology)",
-        "Government PLI schemes for battery manufacturing",
-        "Reliance Industries investments"
+        "Reliance Industries (gigafactory plans)",
+        "Ola Electric",
+        "Exide Industries",
+        "Government's PLI scheme for ACC battery manufacturing",
+        "IITs (Indian Institutes of Technology)"
       ],
-      "rationale": "India is an emerging market with high demand for energy storage, and government initiatives are pushing domestic manufacturing. Advanced R&D is growing but still nascent compared to global leaders."
+      "rationale": "India is an emerging market with strong government incentives to localize EV and battery manufacturing. While currently more focused on assembly and systems integration, significant investments are being made to develop domestic cell production and R&D capabilities, though frontier research is still nascent."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Nanyang Technological University (NTU)",
+        "Nanyang Technological University (NTU) - Energy Research Institute @ NTU (ERIAN)",
         "National University of Singapore (NUS)",
         "A*STAR (Agency for Science, Technology and Research)"
       ],
-      "rationale": "Singapore focuses on high-tech R&D, particularly in materials science and energy management, often through its world-class universities and research agencies, but without large-scale battery manufacturing."
+      "rationale": "Singapore has a strong focus on advanced materials research and smart energy solutions. Its universities and research institutes are active in battery materials science and energy storage, but the country is not a hub for large-scale battery cell manufacturing."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "ETH Zurich",
-        "EPFL (Swiss Federal Institute of Technology Lausanne)",
-        "Specialized chemical companies"
+        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
+        "Paul Scherrer Institute (PSI)",
+        "Leclanch\u00e9 (specialty cells)"
       ],
-      "rationale": "Switzerland has strong capabilities in materials science and precision engineering, with leading academic institutions conducting specialized battery R&D, particularly in novel materials and fundamental science."
+      "rationale": "Switzerland excels in high-precision engineering and materials science. Its leading technical universities and research institutes conduct advanced research in electrochemistry and energy storage. While not a mass producer, it has niche players and contributes to frontier materials development."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Northvolt (gigafactories, R&D)",
-        "KTH Royal Institute of Technology",
-        "Chalmers University of Technology"
+        "Northvolt (Skellefte\u00e5 gigafactory, R&D)",
+        "Volvo Cars, Scania (EV and battery investments)",
+        "Chalmers University of Technology",
+        "KTH Royal Institute of Technology"
       ],
-      "rationale": "Sweden has rapidly emerged as a significant player in sustainable battery production, primarily driven by Northvolt's ambitious gigafactory projects and strong R&D focus on green battery technologies."
+      "rationale": "Sweden has rapidly emerged as a significant player in advanced batteries, largely driven by Northvolt's ambition to create sustainable, large-scale battery production. There's strong collaboration between industry and academia, focusing on green battery technologies and recycling."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "Fortum",
-        "Mining companies (battery minerals)",
-        "VTT Technical Research Centre of Finland",
+        "Terrafame (nickel mining, battery chemicals)",
+        "Fortum (battery recycling)",
         "Aalto University"
       ],
-      "rationale": "Finland is strong in the upstream battery value chain, particularly in mining and processing of battery minerals, with some R&D in materials and circular economy aspects, but less in core cell development."
+      "rationale": "Finland's strength in the battery domain lies primarily in raw materials (mining and refining of nickel, cobalt, lithium) and recycling technologies. While there's some academic research, it is not a significant hub for advanced battery cell R&D or manufacturing."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Li-Cycle (recycling)",
-        "General Motors/POSCO chemical plant",
-        "Dalhousie University (Jeff Dahn group)",
-        "Government funding for battery ecosystem"
+        "Dalhousie University (Jeff Dahn's research group, partnered with Tesla)",
+        "National Research Council Canada",
+        "Stellantis-LGES battery plant (Windsor)",
+        "GM-POSCO chemical plant (B\u00e9cancour)"
       ],
-      "rationale": "Canada possesses significant raw material resources for batteries and is actively investing in developing a full battery supply chain, from mining to manufacturing and recycling, supported by strong academic research."
+      "rationale": "Canada possesses significant raw material reserves for batteries and is actively building out its EV supply chain, including battery manufacturing. Academic research, particularly at Dalhousie University, is globally recognized for its frontier contributions to Li-ion battery longevity and performance."
     },
     {
       "country_iso": "AU",
@@ -256,117 +258,119 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Pilbara Minerals",
-        "Talison Lithium",
-        "CSIRO",
-        "Universities"
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "Monash University, UNSW (university research)",
+        "Major lithium and nickel mining operations"
       ],
-      "rationale": "Australia is a global leader in the extraction of battery raw materials. While R&D is growing in processing and some niche areas, large-scale advanced cell manufacturing and frontier R&D are still limited."
+      "rationale": "Australia is a major global supplier of key battery raw materials. It has strong academic research in materials science and electrochemistry, but limited industrial-scale battery cell manufacturing. The focus is more on upstream materials and niche R&D."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
       "evidence": [
-        "Tyndall National Institute",
-        "Some university research"
+        "Lack of major battery manufacturing facilities",
+        "Limited dedicated battery R&D institutions"
       ],
-      "rationale": "Ireland has a high-tech economy but a very limited footprint in advanced battery R&D or manufacturing, with most activity confined to academic research or supporting roles for multinational tech firms."
+      "rationale": "Ireland's high-tech sector is primarily focused on software, pharmaceuticals, and data centers. There is no significant advanced energy storage or battery manufacturing, R&D, or a dedicated ecosystem for these technologies."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "imec (nanoelectronics, materials)",
-        "Umicore (materials)",
-        "KU Leuven"
+        "IMEC (nanoelectronics, some battery research)",
+        "KU Leuven, Ghent University (academic research)"
       ],
-      "rationale": "Belgium has strong research capabilities in materials science and nanotechnology, notably through imec and Umicore, contributing to specialized battery component and material innovation."
+      "rationale": "Belgium has a strong research base in nanoelectronics and materials science, with institutions like IMEC and leading universities conducting relevant research. However, it does not host large-scale battery manufacturing or a broad industrial ecosystem for advanced battery cells."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "Graz University of Technology",
-        "Austrian Institute of Technology (AIT)"
+        "Vienna University of Technology (electrochemistry research)"
       ],
-      "rationale": "Austria has a smaller but capable research landscape in materials and energy systems, with some specialized R&D in battery-related fields, but not a major industrial hub."
+      "rationale": "Austria has some academic research in electrochemistry and materials science at its technical universities. However, it lacks a significant industrial presence in advanced battery manufacturing or a dedicated ecosystem for frontier battery R&D."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "ENEA (National Agency for New Technologies, Energy and Sustainable Economic Development)",
-        "Some university research"
+        "Stellantis (Mirafiori gigafactory plans)",
+        "Politecnico di Torino",
+        "CNR (National Research Council)"
       ],
-      "rationale": "Italy has a significant automotive industry but its advanced battery R&D and manufacturing capabilities are less developed compared to other major European economies, with activity mainly in academic research."
+      "rationale": "Italy's automotive industry is showing increasing interest in EV and battery production, with plans for gigafactories. There's academic research in electrochemistry and materials, but the overall advanced battery ecosystem is still developing and not yet a global leader in frontier R&D."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "SEAT (VW Group) plans for EV production",
-        "Some university research"
+        "Volkswagen (Sagunto gigafactory plans)",
+        "SEAT (automotive)",
+        "Basque Energy Research Centre (CIC energiGUNE)",
+        "Government PERTE VEC program"
       ],
-      "rationale": "Spain is seeing growing interest in EV manufacturing, but its advanced battery R&D and production ecosystem is still in early stages, with limited frontier research."
+      "rationale": "Spain's automotive sector is driving investment in battery production, supported by government initiatives. There's a growing research base, particularly in the Basque Country, but the country is still in the early stages of building a comprehensive advanced battery ecosystem and frontier R&D capabilities."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Existing electronics manufacturing base",
-        "Some assembly plants"
+        "Strong electronics manufacturing base (assembly)",
+        "Limited dedicated battery cell R&D or production facilities"
       ],
-      "rationale": "Malaysia has a strong electronics manufacturing base, which includes some battery component assembly, but advanced battery cell R&D and frontier manufacturing are very limited."
+      "rationale": "Malaysia is a significant hub for electronics manufacturing and assembly. While it contributes to the battery supply chain through components, there is limited advanced battery cell R&D or large-scale manufacturing within the country itself."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "VinFast (EV production)",
-        "Some government initiatives"
+        "VinFast (EV production, battery pack assembly)",
+        "Limited domestic battery cell R&D or manufacturing"
       ],
-      "rationale": "Vietnam's VinFast is a domestic EV player, but advanced battery R&D and manufacturing are still in nascent stages, often relying on technology transfer rather than indigenous frontier innovation."
+      "rationale": "Vietnam's VinFast is an emerging EV manufacturer, driving demand for batteries. However, the country primarily focuses on battery pack assembly and relies on external technology for advanced battery cells, with limited domestic frontier R&D."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Automotive industry",
-        "Government push for EV adoption"
+        "Major automotive assembly hub",
+        "Government EV promotion policies",
+        "Limited domestic battery cell R&D or manufacturing"
       ],
-      "rationale": "Thailand is a major automotive manufacturing hub, but its role in advanced battery R&D and cell production is limited, with most activity focused on assembly and localizing existing technologies."
+      "rationale": "Thailand is a major automotive manufacturing hub in Southeast Asia, with growing government support for EV adoption. While there's increasing interest in battery pack assembly, advanced battery cell R&D and manufacturing are still nascent and largely reliant on foreign technology."
     },
     {
       "country_iso": "ID",
@@ -376,37 +380,39 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Nickel mining",
-        "Government initiatives for EV ecosystem",
-        "Hyundai battery plant"
+        "Indonesia Battery Corporation (IBC)",
+        "Abundant nickel reserves (key battery material)",
+        "Government initiatives to attract battery manufacturing"
       ],
-      "rationale": "Indonesia has significant nickel reserves and strong government ambition to become a battery production hub. However, advanced R&D and frontier cell technology development are still in very early stages, focused on raw material processing and basic manufacturing."
+      "rationale": "Indonesia holds significant nickel reserves, a critical battery material, and is actively pursuing policies to become a global EV battery production hub. While investments are flowing into raw material processing and attracting manufacturing, advanced battery R&D is still in its early stages."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
       "evidence": [
-        "Masdar Institute",
-        "Some renewable energy projects"
+        "Focus on oil & gas, solar energy deployment",
+        "Masdar, DEWA (grid storage projects)",
+        "Absence of battery cell R&D or manufacturing facilities"
       ],
-      "rationale": "The UAE is investing in renewable energy and diversification, but its involvement in advanced battery R&D and manufacturing is minimal, primarily focused on technology adoption and applied research rather than frontier innovation."
+      "rationale": "The UAE is investing heavily in renewable energy deployment and grid-scale energy storage solutions, but its focus is on integration and deployment rather than core battery R&D or manufacturing of advanced battery cells."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "high",
       "evidence": [
-        "NEOM project",
-        "King Abdullah University of Science and Technology (KAUST)"
+        "NEOM project (large-scale infrastructure)",
+        "Focus on oil & gas, solar energy",
+        "Absence of battery cell R&D or manufacturing facilities"
       ],
-      "rationale": "Saudi Arabia is diversifying its economy with large-scale projects like NEOM and investing in research (KAUST), but its direct involvement in advanced battery R&D and manufacturing is currently very limited."
+      "rationale": "Similar to the UAE, Saudi Arabia's energy strategy focuses on large-scale renewable energy projects and infrastructure development. There is no significant domestic advanced battery R&D or manufacturing ecosystem for battery cells."
     },
     {
       "country_iso": "BR",
@@ -416,23 +422,23 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Some university research",
-        "Limited industrial players in advanced batteries"
+        "Some academic research at universities (e.g., USP, UNICAMP)",
+        "Limited industrial-scale advanced battery manufacturing or R&D"
       ],
-      "rationale": "Brazil has a large economy but its advanced battery R&D and manufacturing capabilities are not highly developed. Activity is mostly confined to academic research and early-stage initiatives."
+      "rationale": "Brazil has an established automotive industry, but it's largely focused on internal combustion engines. While there's academic research in electrochemistry and materials, the country has limited industrial-scale advanced battery manufacturing or significant frontier R&D."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "LG Energy Solution Wroclaw plant (Europe's largest EV battery factory)",
-        "Some university research"
+        "LG Energy Solution (Wroc\u0142aw factory - largest in Europe)",
+        "Automotive supply chain presence"
       ],
-      "rationale": "Poland is a significant hub for battery manufacturing, hosting Europe's largest EV battery factory (LG Energy Solution). While manufacturing volume is high, advanced R&D in new cell chemistries is less prominent, focusing more on production engineering."
+      "rationale": "Poland has become a major manufacturing hub for battery components and assembly, notably hosting LG Energy Solution's large-scale factory. While it's crucial for the European battery supply chain, core advanced R&D for new cell chemistries often resides elsewhere."
     }
   ]
 }

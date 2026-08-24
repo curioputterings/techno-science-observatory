@@ -9,68 +9,70 @@
       "frontier": 0.95,
       "confidence": "high",
       "evidence": [
-        "Pfizer R&D",
-        "Merck & Co. Research Labs",
-        "Bristol Myers Squibb",
+        "Pfizer",
+        "Merck",
+        "Johnson & Johnson",
+        "Eli Lilly",
         "Genentech",
-        "Novartis Institutes for BioMedical Research (NIBR) Cambridge",
-        "Harvard University",
         "MIT",
-        "Stanford University",
+        "Harvard University",
         "UCSF",
-        "NIH funding for drug discovery"
+        "NIH funding",
+        "Boston/SF Bay Area biotech clusters"
       ],
-      "rationale": "The US is the global leader in small-molecule drug discovery, with a vast ecosystem of large pharmaceutical companies, innovative biotech startups, and world-class academic research institutions. There's a high volume of advanced roles and significant frontier R&D, driven by substantial investment and a strong talent pool."
+      "rationale": "The US is the global leader in small-molecule drug discovery, with a vast ecosystem of major pharmaceutical companies, innovative biotechs, world-class academic institutions, and significant venture capital investment. It drives a substantial portion of global frontier R&D."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "WuXi AppTec",
-        "Pharmaron",
         "Hengrui Medicine",
         "BeiGene",
-        "Chinese Academy of Sciences (CAS) institutes",
-        "National Key R&D Program of China"
+        "Innovent Biologics",
+        "CSPC Pharmaceutical Group",
+        "Chinese Academy of Sciences",
+        "Government biotech initiatives"
       ],
-      "rationale": "China has rapidly emerged as a major player in small-molecule drug discovery, with significant government and private investment. Large CROs and domestic pharmaceutical companies are driving a high volume of R&D, increasingly moving towards innovative and frontier work."
+      "rationale": "China has rapidly emerged as a major player, with massive investment in biotech and pharma R&D. While historically strong in CRO services, domestic companies are increasingly focused on novel small-molecule drug discovery, pushing towards frontier research."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Takeda Pharmaceutical Company",
+        "Takeda Pharmaceutical",
         "Astellas Pharma",
         "Daiichi Sankyo",
-        "Eisai Co., Ltd.",
+        "Eisai",
+        "Ono Pharmaceutical",
         "Kyoto University",
         "University of Tokyo"
       ],
-      "rationale": "Japan has a well-established pharmaceutical industry with strong historical capabilities in small-molecule chemistry and pharmacology. There's a consistent demand for advanced roles and a solid foundation for expert-level and frontier research within major pharma companies and leading universities."
+      "rationale": "Japan has a long-established and highly innovative pharmaceutical industry with major global players. It maintains strong R&D capabilities in small-molecule drug discovery, supported by excellent academic research and a focus on novel therapeutics."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.55,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "SK Biopharmaceuticals",
-        "Celltrion (expanding into small molecules)",
-        "Korea Research Institute of Chemical Technology (KRICT)",
-        "Seoul National University",
-        "Government initiatives for biotech innovation"
+        "Yuhan Corporation",
+        "Hanmi Pharmaceutical",
+        "Daewoong Pharmaceutical",
+        "Government biotech funding",
+        "Korea Research Institute of Chemical Technology"
       ],
-      "rationale": "South Korea is a rapidly growing biotech hub with increasing investment in novel drug discovery. While traditionally strong in biologics, there's a clear push towards small-molecule R&D, leading to a medium volume of specialist roles and a growing frontier presence."
+      "rationale": "South Korea has a rapidly growing biotech and pharmaceutical sector, with significant government support and investment in R&D. While strong in biologics, there's a notable and increasing focus on small-molecule drug discovery, moving towards specialist and some frontier work."
     },
     {
       "country_iso": "TW",
@@ -80,12 +82,12 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
+        "Industrial Technology Research Institute (ITRI)",
         "Academia Sinica",
-        "National Health Research Institutes (NHRI)",
-        "Taipei Biotech Park",
+        "National Health Research Institutes",
         "Local biotech startups"
       ],
-      "rationale": "Taiwan has a strong academic research base and a developing biotech sector. Small-molecule drug discovery is present, particularly in academic and early-stage biotech settings, but the industrial volume for advanced roles and frontier work is lower compared to regional leaders."
+      "rationale": "Taiwan has a developing biotech industry with strong academic research capabilities. Small-molecule drug discovery is present, often in early-stage research and development, with some specialist roles but limited frontier work compared to larger hubs."
     },
     {
       "country_iso": "DE",
@@ -95,31 +97,29 @@
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Bayer AG",
+        "Bayer",
         "Boehringer Ingelheim",
         "Merck KGaA",
-        "Evotec SE",
         "Max Planck Institutes",
         "Fraunhofer Institutes",
         "Technical University of Munich"
       ],
-      "rationale": "Germany boasts a robust pharmaceutical industry and a strong chemical research tradition. It's a major European hub for small-molecule drug discovery, with significant R&D activities from large pharma, innovative biotechs, and world-renowned research institutions, contributing to high volume and frontier work."
+      "rationale": "Germany possesses a robust and historically strong pharmaceutical industry, coupled with world-class academic research in chemistry and pharmacology. It is a major European hub for small-molecule drug discovery, with significant frontier R&D."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "Leiden Bio Science Park",
         "Utrecht Science Park",
-        "Organon (R&D)",
-        "Academic Medical Centers (e.g., Amsterdam UMC, Erasmus MC)",
-        "Dutch Top Sector Life Sciences & Health"
+        "Galapagos (R&D)",
+        "University Medical Centers"
       ],
-      "rationale": "The Netherlands has a vibrant life sciences ecosystem with strong academic research and a growing number of biotech companies. Small-molecule drug discovery is a focus area, leading to a medium volume of specialist roles and a respectable level of frontier research, particularly in academic spin-offs."
+      "rationale": "The Netherlands has a vibrant and growing life sciences sector, particularly around Leiden and Utrecht. It fosters innovative biotech startups and academic research in small-molecule drug discovery, with a solid base of specialist roles and emerging frontier activities."
     },
     {
       "country_iso": "GB",
@@ -129,61 +129,61 @@
       "frontier": 0.85,
       "confidence": "high",
       "evidence": [
-        "AstraZeneca R&D",
-        "GSK R&D",
-        "Oxford University",
-        "Cambridge University",
+        "AstraZeneca",
+        "GlaxoSmithKline (GSK)",
+        "University of Cambridge",
+        "University of Oxford",
         "Francis Crick Institute",
-        "Wellcome Trust Sanger Institute"
+        "Wellcome Trust"
       ],
-      "rationale": "The UK has a long-standing and highly influential presence in pharmaceutical R&D, particularly in small-molecule drug discovery. Its world-leading universities and biotech clusters (e.g., Oxford-Cambridge-London 'Golden Triangle') generate a high volume of advanced roles and significant frontier research."
+      "rationale": "The UK is a global leader in life sciences, with major pharmaceutical companies and world-renowned academic institutions. Its biotech clusters (e.g., Cambridge, Oxford, London) are significant hubs for small-molecule drug discovery, including substantial frontier research."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "high",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Sanofi R&D",
+        "Sanofi",
         "Servier",
         "Institut Pasteur",
-        "CNRS (National Centre for Scientific Research)",
-        "Universities in Paris, Lyon, Strasbourg"
+        "CNRS",
+        "Paris-Saclay University"
       ],
-      "rationale": "France possesses a substantial pharmaceutical industry and a strong tradition in chemical and biological research. It maintains a high volume of advanced small-molecule drug discovery roles, supported by major pharma companies and prominent academic institutions, with a solid contribution to frontier science."
+      "rationale": "France has an established pharmaceutical industry, anchored by Sanofi, and strong public research institutions. It maintains significant capabilities in small-molecule drug discovery, with specialist roles and a notable presence in frontier research."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Weizmann Institute of Science",
+        "Technion",
         "Hebrew University of Jerusalem",
-        "Teva Pharmaceutical Industries (some R&D beyond generics)",
-        "Various biotech startups"
+        "Numerous biotech startups"
       ],
-      "rationale": "Israel is renowned for its innovation and biotech startups, with strong academic research. While not a large-scale industrial drug discovery hub, it has a low volume of specialist roles in small-molecule discovery, often focused on specific therapeutic areas or early-stage research, contributing to some frontier work."
+      "rationale": "Israel is a powerhouse of scientific innovation, particularly in biotech. While its pharma industry is smaller, it excels in early-stage drug discovery research, often focusing on novel mechanisms and technologies, leading to a high frontier score for its volume."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Syngene International",
-        "Dr. Reddy's Laboratories (R&D)",
-        "Cipla (R&D)",
-        "National Centre for Biological Sciences (NCBS)",
-        "Biocon"
+        "Cipla",
+        "Dr. Reddy's Laboratories",
+        "Sun Pharmaceutical Industries",
+        "Biocon",
+        "National Centre for Biological Sciences"
       ],
-      "rationale": "India has a massive pharmaceutical industry, primarily focused on generics, but there's a growing emphasis on novel drug discovery and R&D, particularly through CROs and larger domestic companies. This leads to a medium volume of applied to specialist roles, with an emerging but still limited frontier presence."
+      "rationale": "India has a vast pharmaceutical industry, historically focused on generics and contract research. However, there's increasing investment by domestic companies in novel small-molecule drug discovery, leading to a growing number of specialist roles and emerging frontier efforts."
     },
     {
       "country_iso": "SG",
@@ -194,43 +194,42 @@
       "confidence": "medium",
       "evidence": [
         "A*STAR (Agency for Science, Technology and Research)",
-        "National University of Singapore (NUS)",
-        "Nanyang Technological University (NTU)",
-        "Global pharma R&D presence (e.g., GSK, Novartis)"
+        "Biopolis",
+        "National University of Singapore",
+        "Duke-NUS Medical School"
       ],
-      "rationale": "Singapore has made significant strategic investments in biomedical sciences, attracting global pharmaceutical R&D and fostering local innovation. This results in a low but high-quality volume of specialist roles, with a strong focus on frontier research within its well-funded research institutes and universities."
+      "rationale": "Singapore has made significant strategic investments in biomedical sciences, attracting international talent and fostering local expertise. For its size, it has a high concentration of advanced research in small-molecule drug discovery, with a strong frontier component."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Novartis AG",
-        "F. Hoffmann-La Roche AG",
-        "Lonza Group",
+        "Novartis",
+        "Roche",
         "ETH Zurich",
-        "University of Basel",
-        "EPFL"
+        "EPFL",
+        "BioValley Basel cluster"
       ],
-      "rationale": "Switzerland is a global powerhouse in pharmaceuticals, hosting the headquarters and major R&D operations of two of the world's largest pharma companies. This, combined with top-tier academic institutions, drives a high volume of expert and frontier small-molecule drug discovery roles."
+      "rationale": "Switzerland is a global pharmaceutical powerhouse, home to two of the world's largest pharma companies. It boasts exceptionally high R&D investment per capita, world-leading academic institutions, and a strong culture of innovation in small-molecule drug discovery, driving significant frontier research."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "AstraZeneca (R&D in M\u00f6lndal)",
+        "AstraZeneca (R&D in Gothenburg)",
         "Karolinska Institutet",
         "Uppsala University",
         "SciLifeLab"
       ],
-      "rationale": "Sweden has a strong life science sector with a historical presence in pharmaceuticals and excellent academic research. While the overall volume of advanced small-molecule drug discovery roles is low, the quality is high, with significant specialist and frontier work, particularly around major research institutions and AstraZeneca's R&D hub."
+      "rationale": "Sweden has a strong life science sector with a history of pharmaceutical innovation. While the overall volume is moderate, it has excellent academic research and some significant industry R&D presence in small-molecule drug discovery, contributing to specialist and some frontier work."
     },
     {
       "country_iso": "FI",
@@ -238,28 +237,28 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.2,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Orion Pharma",
-        "University of Helsinki",
-        "Turku Bioscience Centre"
+        "University of Helsinki (Drug Research Program)",
+        "VTT Technical Research Centre",
+        "Some smaller biotech startups"
       ],
-      "rationale": "Finland has a smaller life science sector compared to its Nordic neighbors, with some niche strengths. Small-molecule drug discovery is primarily concentrated in academic research and a few local pharmaceutical companies, resulting in a very low volume of applied roles and limited frontier work."
+      "rationale": "Finland has a smaller life science sector with niche strengths, particularly in health tech. While academic research in drug discovery exists, the industrial volume for advanced small-molecule drug discovery is relatively low, with limited frontier activities."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.45,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "University of Toronto (MaRS Discovery District)",
         "McGill University",
-        "Montreal Biotech City",
-        "Vancouver biotech cluster"
+        "University of Toronto",
+        "University of British Columbia",
+        "Montreal/Toronto/Vancouver biotech clusters"
       ],
-      "rationale": "Canada has a well-regarded life science sector with strong academic research and emerging biotech clusters. While it contributes to small-molecule drug discovery, the industrial volume for advanced roles is low compared to the US, with a moderate level of specialist and some frontier research."
+      "rationale": "Canada has strong academic research in life sciences and emerging biotech clusters. While its pharmaceutical industry is smaller than the US or major European countries, it contributes to small-molecule drug discovery with specialist roles and some frontier research."
     },
     {
       "country_iso": "AU",
@@ -269,89 +268,85 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Walter and Eliza Hall Institute (WEHI)",
+        "Walter and Eliza Hall Institute",
         "Garvan Institute of Medical Research",
         "Monash University",
-        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)"
+        "CSL (R&D, though more biologics)"
       ],
-      "rationale": "Australia has a strong foundation in biomedical research, with world-class institutes and universities. Small-molecule drug discovery is active, particularly in early-stage research and academic settings. However, the industrial volume for advanced roles is low, and commercialization often occurs overseas, leading to a moderate frontier score."
+      "rationale": "Australia has world-class medical research institutes and a growing biotech sector. Small-molecule drug discovery is active, often focused on early-stage research and licensing. It has specialist roles and a notable, though not extensive, frontier component."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "IDA Ireland (attracting pharma manufacturing)",
-        "Trinity College Dublin",
-        "University College Dublin",
-        "Many global pharma manufacturing sites (e.g., Pfizer, Lilly)"
+        "Presence of many pharma manufacturing plants (e.g., Pfizer, Lilly)",
+        "National Institute for Bioprocessing Research and Training (NIBRT)"
       ],
-      "rationale": "Ireland is a significant hub for pharmaceutical manufacturing and process development, but its involvement in early-stage small-molecule drug discovery R&D is very limited. Academic research exists, but the industrial volume for advanced discovery roles and frontier work is very low."
+      "rationale": "Ireland is a major hub for pharmaceutical manufacturing and clinical trials, but its core R&D in early-stage small-molecule drug discovery is limited. Roles are primarily applied, with very little frontier research."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "UCB S.A.",
-        "Janssen Pharmaceutica (Johnson & Johnson R&D)",
+        "UCB",
+        "Janssen Pharmaceutica (J&J subsidiary)",
         "VIB (Flanders Institute for Biotechnology)",
-        "Ghent University",
-        "KU Leuven"
+        "Ghent University"
       ],
-      "rationale": "Belgium has a dynamic life science sector, particularly in Flanders, with strong academic research and the presence of major pharmaceutical R&D centers. This fosters a medium volume of specialist roles and a significant contribution to frontier small-molecule drug discovery."
+      "rationale": "Belgium has a strong and innovative biotech and pharmaceutical sector, particularly in the Flanders region. It boasts excellent academic research and industry presence in small-molecule drug discovery, with specialist roles and a significant frontier component for its size."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.25,
-      "confidence": "low",
+      "frontier": 0.2,
+      "confidence": "medium",
       "evidence": [
+        "Boehringer Ingelheim (R&D presence)",
         "University of Vienna",
         "Medical University of Vienna",
-        "Boehringer Ingelheim (R&D presence)",
-        "CeMM Research Center for Molecular Medicine"
+        "Austrian Biotech Association"
       ],
-      "rationale": "Austria has a developing life science sector with good academic research capabilities. Small-molecule drug discovery is present, often in niche areas or early-stage academic projects, leading to a very low volume of applied roles and limited frontier work."
+      "rationale": "Austria has a smaller but growing life science sector. While some pharmaceutical R&D exists, particularly from international companies, the volume for advanced small-molecule drug discovery is relatively low, with limited frontier activities."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
         "Menarini Group",
         "Chiesi Farmaceutici",
         "Domp\u00e9 farmaceutici",
-        "University of Milan",
-        "Sapienza University of Rome"
+        "Academic research centers"
       ],
-      "rationale": "Italy has an established pharmaceutical industry and a strong tradition in chemistry. While there's a good academic base, the industrial volume for advanced small-molecule drug discovery roles and frontier R&D is low compared to other major European players, often focused on specific therapeutic areas or generics."
+      "rationale": "Italy has an established pharmaceutical industry, but its focus is often on generics, manufacturing, or later-stage development. While academic research is present, the volume of advanced small-molecule drug discovery and frontier R&D is moderate compared to other major European countries."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.25,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Almirall S.A.",
-        "Grifols (some R&D, though more biologics)",
+        "Almirall",
+        "Grifols (R&D, though more biologics/plasma)",
         "Barcelona Science Park",
-        "CNIO (Spanish National Cancer Research Centre)"
+        "National Research Council (CSIC)"
       ],
-      "rationale": "Spain's life science sector is growing, with strong academic research and emerging biotech startups. However, the industrial volume for advanced small-molecule drug discovery roles is low, and frontier work is primarily concentrated in research institutes rather than large-scale industrial efforts."
+      "rationale": "Spain's pharmaceutical sector is growing, with some domestic companies and increasing investment in biotech. However, similar to Italy, the primary focus is often on generics or later-stage development, with limited advanced small-molecule drug discovery and frontier research."
     },
     {
       "country_iso": "MY",
@@ -359,27 +354,25 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.05,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Malaysian Bioeconomy Development Corporation (focus on bio-based industries)",
-        "Universiti Malaya (basic research)",
-        "Focus on generics and traditional medicine"
+        "Government initiatives to grow biotech (e.g., Bioeconomy Corporation)",
+        "Limited local pharmaceutical R&D"
       ],
-      "rationale": "Malaysia's life science sector is developing, with some focus on manufacturing and traditional medicine. Advanced small-molecule drug discovery R&D, particularly at the specialist or frontier level, is negligible, with very few relevant job roles."
+      "rationale": "Malaysia's pharmaceutical market is primarily focused on generics, manufacturing, and distribution. Advanced small-molecule drug discovery R&D is negligible, with very few, if any, frontier roles."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.01,
-      "confidence": "low",
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "Limited domestic pharmaceutical R&D capacity",
-        "Focus on generics and essential medicines",
-        "Emerging economy with basic healthcare priorities"
+        "Predominantly generic drug market",
+        "Limited R&D infrastructure for novel drug discovery"
       ],
-      "rationale": "Vietnam has a nascent pharmaceutical sector primarily focused on generics and basic healthcare needs. There is no significant advanced small-molecule drug discovery R&D, and therefore, negligible job volume and frontier work."
+      "rationale": "Vietnam's pharmaceutical industry is nascent and almost entirely focused on generics and distribution. There is no significant advanced small-molecule drug discovery R&D or frontier work."
     },
     {
       "country_iso": "TH",
@@ -387,85 +380,81 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.05,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "Government Pharmaceutical Organization (GPO)",
-        "Mahidol University (some research)",
-        "Focus on generics and traditional medicine"
+        "Government initiatives for medical hub",
+        "Limited advanced drug discovery R&D by local companies"
       ],
-      "rationale": "Thailand's life science sector is developing, with a focus on generics, traditional medicine, and some clinical research. Advanced small-molecule drug discovery R&D is very limited, resulting in negligible job volume and frontier work."
+      "rationale": "Thailand's pharmaceutical market is developing, mainly in generics. While there's government interest in becoming a medical hub, advanced small-molecule drug discovery R&D is very limited, with negligible frontier activity."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.01,
-      "confidence": "low",
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "Bio Farma (vaccines, some R&D)",
-        "Limited domestic R&D investment in novel drugs",
-        "Focus on large generics market"
+        "Dominance of generic drug manufacturers (e.g., Kalbe Farma)",
+        "Focus on traditional medicine and local production"
       ],
-      "rationale": "Indonesia has a large domestic pharmaceutical market dominated by generics. Advanced small-molecule drug discovery R&D is virtually non-existent, with no significant job volume or frontier activities in this domain."
+      "rationale": "Indonesia has a large domestic pharmaceutical market, but it is almost exclusively focused on generics and traditional medicine. There is no significant advanced small-molecule drug discovery R&D or frontier work."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.05,
-      "confidence": "low",
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "Mohammed Bin Rashid University of Medicine and Health Sciences (basic research)",
-        "Investment in healthcare infrastructure",
-        "Limited indigenous drug discovery industry"
+        "Investment in healthcare infrastructure and services",
+        "Limited focus on core drug R&D"
       ],
-      "rationale": "The UAE is investing heavily in healthcare infrastructure and attracting medical tourism, but its indigenous advanced small-molecule drug discovery R&D capabilities are very nascent. There is negligible job volume or frontier work in this specialized domain."
+      "rationale": "The UAE's emerging healthcare sector focuses on services, medical tourism, and some manufacturing/distribution of existing drugs. There is no significant advanced small-molecule drug discovery R&D or frontier work."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.05,
-      "confidence": "low",
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "King Abdullah University of Science and Technology (KAUST) (basic research)",
-        "Vision 2030 (diversification, healthcare investment)",
-        "Limited indigenous drug discovery industry"
+        "Vision 2030 healthcare goals",
+        "Focus on local manufacturing and healthcare services"
       ],
-      "rationale": "Saudi Arabia is making significant investments in research and healthcare as part of Vision 2030. While academic research is growing, advanced small-molecule drug discovery R&D is still in its infancy, resulting in negligible job volume and frontier work."
+      "rationale": "Saudi Arabia's healthcare strategy emphasizes local manufacturing of existing drugs and healthcare services. There is no significant advanced small-molecule drug discovery R&D or frontier work."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Fiocruz (Oswaldo Cruz Foundation)",
-        "Butantan Institute",
-        "Universidade de S\u00e3o Paulo (USP)",
-        "Local pharmaceutical companies (e.g., EMS, Eurofarma)"
+        "Fiocruz",
+        "Butantan Institute (more vaccines/biologics)",
+        "Local pharma companies focused on generics",
+        "Academic research in chemistry"
       ],
-      "rationale": "Brazil has the largest pharmaceutical market in Latin America and some domestic R&D capabilities, often focused on adapting existing drugs or generics. While academic research is present, the industrial volume for advanced small-molecule drug discovery roles is low, and frontier work is limited."
+      "rationale": "Brazil has a large domestic pharmaceutical market, but it is heavily reliant on generics and imported innovative drugs. While some academic research exists, advanced small-molecule drug discovery R&D is very limited, with negligible frontier activity."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.25,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Adamed Pharma",
         "Polpharma",
-        "Medical University of Warsaw",
-        "Jagiellonian University"
+        "Adamed Pharma",
+        "Increasing investment in biotech",
+        "Academic research in medicinal chemistry"
       ],
-      "rationale": "Poland's pharmaceutical market is growing, with some domestic companies investing in R&D. While there's a good academic base, the industrial volume for advanced small-molecule drug discovery roles is low, and frontier work is still developing compared to Western European counterparts."
+      "rationale": "Poland's pharmaceutical market is growing, with strengths in generics and contract manufacturing. While there's increasing investment in biotech, advanced small-molecule drug discovery R&D is limited compared to Western Europe, with very little frontier work."
     }
   ]
 }

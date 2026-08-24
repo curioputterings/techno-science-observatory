@@ -9,16 +9,17 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
+        "Intel (fabs, R&D)",
+        "Micron (fabs, R&D)",
+        "GlobalFoundries (fabs)",
         "Applied Materials",
         "Lam Research",
         "KLA Corporation",
-        "Intel Fabs (Arizona, Oregon, Ohio)",
-        "Micron Technology",
-        "GlobalFoundries",
         "IBM Research",
-        "CHIPS and Science Act"
+        "University research (Stanford, MIT, Berkeley)",
+        "CHIPS Act initiatives"
       ],
-      "rationale": "The US is a global leader in semiconductor equipment manufacturing and advanced R&D, with major players in deposition, etch, metrology, and process control. Significant investment in domestic fab expansion and frontier research."
+      "rationale": "The US is a global leader in semiconductor design, manufacturing, and equipment. It hosts major IDM fabs, leading equipment manufacturers, and extensive frontier R&D in universities and corporate labs, driving high volume and skill in advanced roles."
     },
     {
       "country_iso": "CN",
@@ -28,34 +29,35 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "SMIC",
-        "Hua Hong Semiconductor",
-        "Yangtze Memory Technologies (YMTC)",
-        "CXMT",
-        "SMEE (Shanghai Micro Electronics Equipment)",
-        "Naura Technology Group",
-        "AMEC (Advanced Micro-Fabrication Equipment Inc.)"
+        "SMIC (fabs)",
+        "YMTC (fabs)",
+        "CXMT (fabs)",
+        "Naura Technology",
+        "AMEC (Advanced Micro-Fabrication Equipment Inc.)",
+        "National IC Industry Investment Fund",
+        "Numerous new fab projects"
       ],
-      "rationale": "China has rapidly expanding domestic fab capacity and aggressive investment in developing indigenous fab equipment, including lithography, deposition, and etch tools, driven by national strategic goals."
+      "rationale": "China has made massive investments in building a domestic semiconductor industry, including fabs and equipment manufacturers. While still catching up in some frontier areas, the sheer scale of investment and development drives high volume and rapidly increasing skill in advanced fab equipment roles."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "high",
-      "skill_level": 5,
+      "volume_band": "medium",
+      "skill_level": 4,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "Tokyo Electron (TEL)",
-        "Canon",
-        "Nikon",
+        "Canon (lithography)",
+        "Nikon (lithography)",
         "Screen Holdings",
-        "Hitachi High-Tech",
+        "Advantest",
         "JSR Corporation (materials)",
         "Shin-Etsu Chemical (materials)",
-        "Rapidus initiative"
+        "Renesas Electronics (fabs)",
+        "AIST (National Institute of Advanced Industrial Science and Technology)"
       ],
-      "rationale": "Japan is a powerhouse in semiconductor equipment, particularly in deposition, etch, cleaning, and materials. It also has strong players in lithography (Canon, Nikon) and is investing in advanced logic manufacturing."
+      "rationale": "Japan remains a critical player in the global semiconductor supply chain, particularly in advanced materials and specialized equipment. While its leading-edge fab operations are less extensive than Taiwan or South Korea, its equipment and materials companies maintain high skill and significant frontier R&D."
     },
     {
       "country_iso": "KR",
@@ -65,13 +67,15 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Samsung Electronics (foundry, memory)",
-        "SK Hynix",
-        "ASML Korea",
-        "Applied Materials Korea",
-        "Domestic equipment suppliers (e.g., SEMES, Wonik IPS)"
+        "Samsung Electronics (foundry, memory fabs, R&D)",
+        "SK Hynix (memory fabs, R&D)",
+        "Wonik IPS",
+        "Eugene Technology",
+        "FST (FasTech)",
+        "KAIST (Korea Advanced Institute of Science and Technology)",
+        "KANC (Korea Advanced Nano Fab Center)"
       ],
-      "rationale": "South Korea boasts world-leading memory and foundry fabs (Samsung, SK Hynix) that drive immense demand for advanced fab equipment and process engineering expertise, including extensive EUV adoption and related R&D."
+      "rationale": "South Korea is a global leader in memory and foundry manufacturing, with Samsung and SK Hynix at the forefront of process technology. This drives a very high demand for advanced fab equipment and lithography expertise, supported by a strong domestic ecosystem and R&D."
     },
     {
       "country_iso": "TW",
@@ -81,44 +85,46 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "TSMC (Taiwan Semiconductor Manufacturing Company)",
-        "UMC (United Microelectronics Corporation)",
+        "TSMC (foundry fabs, R&D)",
+        "UMC (foundry fabs)",
         "Powerchip Semiconductor Manufacturing Corp.",
-        "Micron Technology Taiwan",
-        "Applied Materials Taiwan",
-        "Lam Research Taiwan"
+        "Macronix International",
+        "ITRI (Industrial Technology Research Institute)",
+        "Hermes-Epitek",
+        "Marketech International"
       ],
-      "rationale": "Taiwan is home to the world's leading foundries, particularly TSMC, which is at the forefront of advanced process node development and manufacturing, requiring extensive fab equipment and process engineering talent."
+      "rationale": "Taiwan is the undisputed global leader in advanced foundry services, dominated by TSMC. This necessitates continuous innovation in fab equipment and lithography, leading to a very high volume of advanced roles, top-tier skill levels, and significant frontier R&D."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 4,
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Carl Zeiss SMT (EUV optics)",
-        "Infineon Technologies",
-        "Bosch (MEMS)",
-        "Fraunhofer Institutes",
-        "GlobalFoundries Dresden"
+        "Carl Zeiss SMT (optics for ASML EUV)",
+        "Fraunhofer Institutes (e.g., IPMS, IZM)",
+        "Infineon Technologies (fabs)",
+        "Siltronic AG (wafers)",
+        "Trumpf (lasers for EUV)"
       ],
-      "rationale": "Germany is critical for advanced lithography through Carl Zeiss SMT's role in ASML's EUV systems. It also has strong capabilities in precision engineering, optics, and specialized semiconductor manufacturing (e.g., automotive)."
+      "rationale": "Germany is strong in specialized equipment components, particularly optics for lithography (Zeiss), and has significant R&D capabilities through Fraunhofer institutes. While not a major fab operator, its niche expertise contributes to high skill and frontier work."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 5,
       "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "ASML (Advanced Semiconductor Materials Lithography)",
+        "ASML (EUV and DUV lithography systems)",
         "TNO (Netherlands Organisation for Applied Scientific Research)",
-        "Eindhoven University of Technology"
+        "Eindhoven University of Technology",
+        "High Tech Campus Eindhoven"
       ],
-      "rationale": "The Netherlands is the undisputed global leader in lithography equipment, specifically ASML, which develops and manufactures the most advanced EUV and DUV systems essential for modern chip manufacturing."
+      "rationale": "The Netherlands is home to ASML, the world's sole supplier of EUV lithography systems, making it the absolute frontier for lithography technology. While the overall volume of diverse fab equipment roles might be medium, the skill level and frontier R&D in lithography are unparalleled."
     },
     {
       "country_iso": "GB",
@@ -128,40 +134,42 @@
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Compound Semiconductor Centre (CSC)",
-        "University research (e.g., Cambridge, Manchester)",
-        "Newport Wafer Fab (now Nexperia)"
+        "Compound semiconductor clusters (e.g., IQE)",
+        "University research (Cambridge, Manchester)",
+        "ARM (semiconductor IP design, not fab equipment)"
       ],
-      "rationale": "The UK has niche strengths in compound semiconductors, advanced materials, and some academic R&D, but a limited direct presence in mainstream advanced fab equipment manufacturing or large-scale fabs."
+      "rationale": "The UK has some niche strengths in compound semiconductors and design IP, but a very limited presence in advanced silicon fab equipment manufacturing or large-scale fab operations. Advanced roles are scarce and mostly confined to specialized R&D or smaller-scale facilities."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 4,
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "CEA-Leti (research institute)",
-        "STMicroelectronics",
-        "Soitec (SOI wafers)"
+        "CEA-Leti (advanced microelectronics research institute)",
+        "STMicroelectronics (fabs)",
+        "Soitec (SOI wafers)",
+        "Minatec campus (Grenoble)"
       ],
-      "rationale": "France has strong R&D capabilities, particularly through CEA-Leti, in materials science, FD-SOI technology, and some specialized equipment development, but not high-volume mainstream fab equipment manufacturing."
+      "rationale": "France has strong R&D capabilities, particularly through CEA-Leti, and a significant player in specialized materials (Soitec) and some fab operations (STMicroelectronics). This supports high skill and frontier R&D, but the overall hiring volume for advanced fab equipment roles is relatively low."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "frontier": 0.5,
+      "confidence": "medium",
       "evidence": [
-        "Applied Materials Israel",
-        "KLA Israel",
-        "Nova Measuring Instruments",
-        "Intel Israel (design, some R&D)"
+        "Intel (fab operations and R&D center)",
+        "Tower Semiconductor (foundry)",
+        "Applied Materials Israel (R&D)",
+        "Weizmann Institute of Science",
+        "Technion \u2013 Israel Institute of Technology"
       ],
-      "rationale": "Israel is a significant hub for R&D in metrology, inspection, and process control equipment, with major R&D centers for global equipment leaders, contributing critical components and software to the fab ecosystem."
+      "rationale": "Israel has a strong semiconductor design ecosystem and hosts Intel's advanced fab operations and R&D. This creates demand for high-skill process engineers and R&D, but the overall volume for diverse fab equipment roles is limited to these specific entities."
     },
     {
       "country_iso": "IN",
@@ -171,67 +179,70 @@
       "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Proposed fab projects (e.g., Tata Electronics, Vedanta Group)",
-        "Indian Institutes of Technology (IITs)"
+        "India Semiconductor Mission (government initiative)",
+        "ISRO (small-scale fab for strategic needs)",
+        "IITs (Indian Institutes of Technology) research",
+        "Tata Electronics (assembly and test)"
       ],
-      "rationale": "India has nascent ambitions in semiconductor manufacturing with proposed fabs, but currently has very limited direct involvement in advanced fab equipment manufacturing or frontier process R&D, primarily focusing on design."
+      "rationale": "India has a strong talent pool in semiconductor design, but its advanced fab equipment manufacturing and large-scale fab operations are nascent. Government initiatives are pushing for growth, but current advanced hiring volume is very low, with limited frontier R&D in this specific domain."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.5,
-      "confidence": "high",
+      "frontier": 0.4,
+      "confidence": "medium",
       "evidence": [
-        "GlobalFoundries",
-        "Micron Technology",
-        "STMicroelectronics",
-        "Applied Materials Singapore",
-        "Lam Research Singapore",
-        "A*STAR (Agency for Science, Technology and Research)"
+        "GlobalFoundries (fabs)",
+        "Micron Technology (fabs)",
+        "STMicroelectronics (fabs)",
+        "UMC (fabs)",
+        "A*STAR (Agency for Science, Technology and Research - IMRE, IME)",
+        "Nanyang Technological University (NTU)",
+        "National University of Singapore (NUS)"
       ],
-      "rationale": "Singapore hosts significant advanced manufacturing fabs and regional R&D centers for major semiconductor companies and equipment suppliers, focusing on process engineering and some specialized equipment support."
+      "rationale": "Singapore hosts significant fab operations from major international players, leading to a consistent demand for skilled process engineers. It also has strong research institutes, contributing to a medium level of frontier R&D, but the overall equipment manufacturing ecosystem is smaller than top-tier countries."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
         "ETH Zurich",
-        "Specialized component manufacturers"
+        "EPFL (Swiss Federal Institute of Technology Lausanne)",
+        "Specialized precision manufacturing companies (not directly fab equipment)"
       ],
-      "rationale": "Switzerland has strengths in precision engineering and materials science, with some academic research relevant to semiconductors, but a very limited direct role in advanced fab equipment manufacturing."
+      "rationale": "Switzerland excels in precision engineering and materials science, with world-class universities. However, it has no significant advanced fab equipment manufacturing or large-scale fab operations, resulting in negligible hiring volume for this specific domain."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "KTH Royal Institute of Technology",
-        "Chalmers University of Technology"
+        "Chalmers University of Technology",
+        "KTH Royal Institute of Technology"
       ],
-      "rationale": "Sweden has academic research in materials and nanotechnology, but a negligible industrial presence in advanced fab equipment manufacturing or large-scale semiconductor fabs."
+      "rationale": "Sweden has a strong general engineering and technology sector but lacks a significant presence in advanced fab equipment manufacturing or large-scale semiconductor fabs. Hiring volume for this domain is negligible."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
         "VTT Technical Research Centre of Finland",
         "Aalto University"
       ],
-      "rationale": "Finland has some academic and research institute activity in microelectronics and materials, but a very limited industrial footprint in advanced fab equipment or semiconductor manufacturing."
+      "rationale": "Similar to Sweden, Finland has a strong technology sector but no significant industry or R&D focus on advanced fab equipment or large-scale semiconductor manufacturing. Hiring volume for this domain is negligible."
     },
     {
       "country_iso": "CA",
@@ -241,36 +252,36 @@
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "National Research Council Canada",
-        "University of Toronto",
-        "Waterloo Institute for Nanotechnology"
+        "University of Waterloo (Institute for Nanotechnology)",
+        "National Research Council (NRC)",
+        "Some photonics and quantum technology companies"
       ],
-      "rationale": "Canada has niche strengths in photonics, quantum computing, and some specialized materials R&D, but a limited direct role in advanced fab equipment manufacturing or large-scale semiconductor fabs."
+      "rationale": "Canada has niche R&D capabilities in nanotechnology, photonics, and quantum computing, which can overlap with semiconductor fabrication. However, it lacks a major advanced fab equipment manufacturing industry or large-scale silicon fabs, leading to very low hiring volume."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "UNSW (quantum computing research)",
-        "Australian National University"
+        "UNSW (University of New South Wales - quantum computing research)",
+        "ANU (Australian National University)"
       ],
-      "rationale": "Australia has strong academic research in quantum computing and some materials science, but a negligible industrial presence in advanced fab equipment manufacturing or semiconductor fabs."
+      "rationale": "Australia has some academic research in quantum computing and nanotechnology, which involves advanced fabrication techniques. However, it has no significant advanced fab equipment manufacturing or large-scale semiconductor fabs, resulting in negligible hiring volume for this domain."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "low",
-      "skill_level": 3,
+      "volume_band": "very_low",
+      "skill_level": 4,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Intel Ireland (Leixlip Fab)"
+        "Intel Leixlip fab (advanced manufacturing)"
       ],
-      "rationale": "Ireland hosts a significant Intel fab, driving demand for process engineering and advanced manufacturing skills, but the core R&D and equipment design functions are primarily located elsewhere."
+      "rationale": "Ireland hosts Intel's significant advanced manufacturing fab, which requires high-skill process engineers. However, the broader fab equipment manufacturing ecosystem is limited, leading to a very low overall hiring volume for the domain outside of Intel's direct needs."
     },
     {
       "country_iso": "BE",
@@ -280,9 +291,11 @@
       "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "IMEC (Interuniversity Microelectronics Centre)"
+        "IMEC (Interuniversity Microelectronics Centre - world-leading R&D)",
+        "Ghent University",
+        "KU Leuven"
       ],
-      "rationale": "Belgium is home to IMEC, a world-leading research and innovation hub for nanoelectronics and digital technologies, conducting frontier R&D in semiconductor processes and materials, though not high-volume equipment manufacturing."
+      "rationale": "Belgium is home to IMEC, a global leader in advanced semiconductor R&D, pushing the absolute frontier of technology. While the hiring volume for direct equipment manufacturing or large-scale fab operations is very low, the skill level and frontier R&D are top-tier."
     },
     {
       "country_iso": "AT",
@@ -290,24 +303,27 @@
       "volume_band": "very_low",
       "skill_level": 3,
       "frontier": 0.2,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "AMS-Osram",
-        "Infineon Technologies Austria"
+        "EV Group (EVG - wafer bonding and lithography equipment)",
+        "TU Wien",
+        "Joanneum Research"
       ],
-      "rationale": "Austria has specialized semiconductor manufacturing (e.g., sensors, power electronics) and some R&D, but a limited direct role in advanced fab equipment manufacturing."
+      "rationale": "Austria has niche strengths in specialized equipment like wafer bonding (EV Group). This contributes to some advanced roles and R&D, but the overall volume for the broader fab equipment and lithography domain remains very low."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (Agrate, Catania fabs)"
+        "STMicroelectronics (Agrate, Catania fabs)",
+        "CNR (National Research Council)",
+        "Politecnico di Milano"
       ],
-      "rationale": "Italy has a presence in semiconductor manufacturing through STMicroelectronics, with some fabs and R&D activities, but is not a major player in advanced fab equipment design or manufacturing."
+      "rationale": "Italy hosts STMicroelectronics fabs, providing some demand for process engineers. There is also academic research. However, the overall scale of advanced fab equipment manufacturing and R&D is limited, resulting in a very low hiring volume."
     },
     {
       "country_iso": "ES",
@@ -316,60 +332,65 @@
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
-      "evidence": [],
-      "rationale": "Spain has very limited direct involvement in semiconductor manufacturing or advanced fab equipment industries, with activity primarily confined to academic research."
+      "evidence": [
+        "IMEC-CNM (Barcelona - research center)",
+        "Some university research"
+      ],
+      "rationale": "Spain has some academic research in microelectronics but no significant advanced fab equipment manufacturing or large-scale semiconductor fabs. Hiring volume for this domain is negligible."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Intel Malaysia",
-        "Infineon Technologies Malaysia",
-        "Micron Technology Malaysia",
-        "Various OSAT (Outsourced Semiconductor Assembly and Test) providers"
+        "Intel (assembly and test)",
+        "Micron (assembly and test)",
+        "Infineon (assembly and test)",
+        "MIMOS (R&D in microelectronics)"
       ],
-      "rationale": "Malaysia is a major hub for semiconductor assembly, test, and packaging, with some frontend fabs. While it has significant volume in the broader semiconductor industry, advanced fab equipment and frontier R&D roles are limited."
+      "rationale": "Malaysia is a major hub for semiconductor backend assembly and test operations. While this involves some process engineering, its direct involvement in advanced front-end fab equipment manufacturing and lithography is very limited, leading to very low hiring volume for these specific roles."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Intel Vietnam (assembly and test)"
+        "Intel (assembly and test)",
+        "FPT University"
       ],
-      "rationale": "Vietnam is primarily involved in semiconductor assembly and test operations, with very limited or negligible activity in advanced fab equipment manufacturing or frontier R&D."
+      "rationale": "Vietnam is an emerging player in semiconductor assembly and test. However, it has no significant advanced fab equipment manufacturing or large-scale front-end semiconductor fabs, resulting in negligible hiring volume for this domain."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Western Digital (storage, some semiconductor packaging)",
-        "NXP Semiconductors"
+        "Western Digital (HDD manufacturing)",
+        "Seagate Technology (HDD manufacturing)",
+        "Some semiconductor assembly and test operations"
       ],
-      "rationale": "Thailand's semiconductor industry is dominated by assembly and test operations, with very limited or negligible involvement in advanced fab equipment manufacturing or frontier R&D."
+      "rationale": "Thailand has a presence in hard disk drive manufacturing and some semiconductor assembly and test. However, it lacks advanced front-end fab equipment manufacturing or large-scale semiconductor fabs, leading to negligible hiring volume for this domain."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Infineon Technologies (assembly and test)"
+        "No major fab equipment or advanced fab presence identified."
       ],
-      "rationale": "Indonesia's semiconductor sector is primarily focused on assembly and test, with very limited or negligible activity in advanced fab equipment manufacturing or frontier R&D."
+      "rationale": "Indonesia has a very limited semiconductor industry, primarily focused on assembly. There is no significant advanced fab equipment manufacturing or large-scale front-end semiconductor fabs, resulting in negligible hiring volume for this domain."
     },
     {
       "country_iso": "AE",
@@ -378,8 +399,10 @@
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
-      "evidence": [],
-      "rationale": "The UAE has nascent interest in technology sectors but currently has no established advanced fab equipment manufacturing or significant semiconductor fabrication industry."
+      "evidence": [
+        "No major fab equipment or advanced fab presence identified."
+      ],
+      "rationale": "The UAE has no significant advanced fab equipment manufacturing or large-scale semiconductor fabs. Hiring volume for this domain is negligible."
     },
     {
       "country_iso": "SA",
@@ -388,8 +411,10 @@
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
-      "evidence": [],
-      "rationale": "Saudi Arabia is investing in technology and diversification but currently has no established advanced fab equipment manufacturing or significant semiconductor fabrication industry."
+      "evidence": [
+        "No major fab equipment or advanced fab presence identified."
+      ],
+      "rationale": "Saudi Arabia has no significant advanced fab equipment manufacturing or large-scale semiconductor fabs. Hiring volume for this domain is negligible."
     },
     {
       "country_iso": "BR",
@@ -399,21 +424,22 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "CEITEC S.A. (small fab, limited scope)"
+        "CEITEC (older fab, limited scale)",
+        "Some university research"
       ],
-      "rationale": "Brazil has a limited semiconductor manufacturing presence, primarily focused on design and very small-scale fabrication, with negligible activity in advanced fab equipment."
+      "rationale": "Brazil has a limited semiconductor industry, primarily focused on design or older generation fabs. There is no significant advanced fab equipment manufacturing or large-scale front-end semiconductor fabs, resulting in negligible hiring volume for this domain."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Intel (planned assembly and test facility in Wroc\u0142aw)"
+        "No major fab equipment or advanced fab presence identified."
       ],
-      "rationale": "Poland is set to host a new Intel assembly and test facility, which will create jobs in semiconductor operations, but it does not involve advanced fab equipment manufacturing or frontier R&D."
+      "rationale": "Poland has no significant advanced fab equipment manufacturing or large-scale semiconductor fabs. Hiring volume for this domain is negligible."
     }
   ]
 }

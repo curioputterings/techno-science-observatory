@@ -12,9 +12,9 @@
         "Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence (Oct 2023)",
         "National AI Initiative Act of 2020",
         "NIST AI Risk Management Framework",
-        "DARPA/NSF funding for AI research"
+        "DARPA AI programs"
       ],
-      "rationale": "The US has consistently demonstrated a high ambition to lead in AI, including generative AI and NLP, through executive actions, significant research funding, and the establishment of regulatory frameworks. The focus is on maintaining frontier leadership."
+      "rationale": "Clear, top-level government directives and substantial funding for AI R&D, with a strong emphasis on foundational models and responsible development, aiming for global leadership."
     },
     {
       "country_iso": "CN",
@@ -25,10 +25,10 @@
       "confidence": "high",
       "evidence": [
         "New Generation Artificial Intelligence Development Plan (2017)",
-        "State-backed funding for AI research and development",
-        "Beijing Academy of Artificial Intelligence (BAAI) and its WuDao series LLMs"
+        "Various provincial and national funding initiatives for AI research and development",
+        "State-backed AI labs and companies"
       ],
-      "rationale": "China has a clear national strategy to become a world leader in AI by 2030, with massive state-backed investment in foundational AI research, including large language models, and explicit targets for global leadership."
+      "rationale": "Long-standing national strategy with massive state-directed resources towards AI, including explicit focus on large language models and their applications, aiming for global leadership by 2030."
     },
     {
       "country_iso": "JP",
@@ -39,10 +39,11 @@
       "confidence": "medium",
       "evidence": [
         "AI Strategy 2019",
-        "METI initiatives for AI R&D and adoption",
-        "Funding for domestic LLM development and data centers"
+        "Society 5.0 initiatives",
+        "METI's AI R&D projects",
+        "Announcements regarding investment in domestic LLMs and supercomputing infrastructure"
       ],
-      "rationale": "Japan is actively pursuing the development of domestic generative AI capabilities, including large language models, to ensure economic security and competitiveness, backed by government strategies and funding."
+      "rationale": "Recognizes the strategic importance of generative AI, with government support for domestic LLM development and infrastructure, focusing on ethical and industrial applications."
     },
     {
       "country_iso": "KR",
@@ -53,11 +54,11 @@
       "confidence": "high",
       "evidence": [
         "National AI Strategy (2019)",
-        "K-AI Strategy (2023)",
-        "AI Semiconductor Industry Growth Strategy (2022)",
-        "MSIT funding for large-scale AI model development"
+        "Digital New Deal",
+        "K-AI Strategy (2023) with plans for domestic LLM development and AI chip investment",
+        "Ministry of Science and ICT (MSIT) initiatives"
       ],
-      "rationale": "South Korea has a robust national AI strategy with explicit goals and significant investment in developing its own large-scale AI models and related semiconductor technology, aiming for global leadership."
+      "rationale": "Clear and well-funded national strategy with explicit goals for developing core AI technologies, including LLMs, and fostering a robust AI ecosystem to become a global AI powerhouse."
     },
     {
       "country_iso": "TW",
@@ -67,53 +68,56 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Taiwan AI Action Plan (2018-2022)",
-        "National Science and Technology Council (NSTC) funding for AI research"
+        "Taiwan AI Action Plan (2018)",
+        "National AI Development Plan",
+        "Announcements about investing in AI computing infrastructure and domestic LLM development"
       ],
-      "rationale": "Taiwan leverages its semiconductor strength to support AI development, with a focus on applications and research. While not explicitly targeting frontier LLMs, there's a strong push for AI innovation."
+      "rationale": "Leveraging its strong hardware foundation, Taiwan is expanding into AI software and model development, with government support for R&D and talent, aiming for specialized AI capabilities."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "ambition": 4,
-      "target_level": 4,
-      "horizon": "medium",
-      "confidence": "medium",
-      "evidence": [
-        "AI Strategy of the German Federal Government (updated 2020)",
-        "AI Future Fund",
-        "GAIA-X initiative",
-        "Funding for AI research centers (e.g., DFKI), discussions on sovereign LLMs"
-      ],
-      "rationale": "Germany has a comprehensive AI strategy focusing on ethical AI, industrial applications, and research excellence. Recent discussions and initiatives indicate a growing ambition to develop sovereign generative AI capabilities."
-    },
-    {
-      "country_iso": "NL",
-      "country_name": "Netherlands",
       "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Strategic Action Plan for Artificial Intelligence (2019)",
-        "NL AI Coalition (NLAIC)"
+        "AI Strategy of the German Federal Government (2018, updated 2020)",
+        "GAIA-X initiative",
+        "Fraunhofer and Max Planck institutes' AI research",
+        "Calls for European LLM development"
       ],
-      "rationale": "The Netherlands focuses on responsible and human-centric AI, with initiatives to foster AI research and innovation, particularly in specific application areas rather than frontier LLM development."
+      "rationale": "Solid research base and industrial application focus, with government funding for 'AI made in Europe' and ethical AI. Ambition for large-scale foundational models is growing but distributed."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
+      "ambition": 2,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "Strategic Action Plan for Artificial Intelligence (2019)",
+        "NL AI Coalition (NLAIC)",
+        "Various research programs"
+      ],
+      "rationale": "Strong research community and focus on responsible AI and human-centric AI, but less emphasis on developing proprietary frontier LLMs at a national level compared to larger economies."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "ambition": 5,
+      "ambition": 4,
       "target_level": 5,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
         "National AI Strategy (2021)",
-        "AI Research and Innovation Programme",
+        "AI Research and Development Roadmap",
         "AI Safety Institute",
-        "Significant UKRI funding for AI research, discussions on sovereign AI"
+        "Significant funding for AI research (e.g., through UKRI)",
+        "Announcements for compute infrastructure"
       ],
-      "rationale": "The UK has a highly ambitious national AI strategy, explicitly prioritizing foundation models and AI safety, with significant government investment and the establishment of dedicated institutions to lead in frontier AI research."
+      "rationale": "Explicit government commitment to AI leadership, with dedicated institutions, significant funding, and a strong focus on foundational models and safety to become a global AI superpower."
     },
     {
       "country_iso": "FR",
@@ -121,14 +125,14 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         "AI for Humanity strategy (2018)",
         "National Strategy for AI (2021)",
-        "France 2030 investment plan (billions for AI)",
-        "Support for French AI startups (e.g., Mistral AI)"
+        "France 2030 investment plan (including AI)",
+        "Initiatives for open-source LLMs (e.g., with Hugging Face)"
       ],
-      "rationale": "France has a strong national AI strategy with substantial funding and a clear focus on developing sovereign AI capabilities, including support for domestic generative AI companies and research institutes."
+      "rationale": "Clear national strategy with substantial funding and a focus on building a strong domestic and European AI ecosystem, including foundational models, aiming for European leadership."
     },
     {
       "country_iso": "IL",
@@ -138,24 +142,25 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National AI Program (2020) by the Innovation Authority",
-        "Strong AI startup ecosystem"
+        "National AI Program (2020)",
+        "Israel Innovation Authority (IIA) funding for AI startups and research",
+        "Academic and industry collaborations"
       ],
-      "rationale": "Israel has a vibrant AI ecosystem driven by startups and research, with government support for AI R&D. The ambition is strong in applied AI, with potential for specialized generative AI niches."
+      "rationale": "Leveraging its strong tech ecosystem and startup culture, with government support for AI R&D and commercialization, aiming for leadership in specific AI applications and innovation."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "ambition": 4,
+      "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "National Strategy for Artificial Intelligence (NITI Aayog, 2018)",
-        "IndiaAI initiative",
-        "Discussions on BharatGPT"
+        "AI for All vision",
+        "IndiaAI mission (2023) with plans for a national AI compute grid and foundational models"
       ],
-      "rationale": "India's 'AI for All' vision includes significant government push for AI adoption and the development of domestic AI capabilities, with growing explicit interest and initiatives for building its own LLMs (e.g., BharatGPT)."
+      "rationale": "Growing government focus and investment in AI, including foundational models, with a clear vision for leveraging AI for social impact and national development."
     },
     {
       "country_iso": "SG",
@@ -165,52 +170,55 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "National AI Strategy 2.0 (2023)",
+        "National AI Strategy (2019)",
         "AI Singapore (AISG) program",
-        "AI Governance Blueprint"
+        "AI.SG initiatives",
+        "Investments in AI research and talent development",
+        "Recent announcements on LLM development"
       ],
-      "rationale": "Singapore has a comprehensive and well-funded national AI strategy, aiming to be a global hub for AI innovation and application, including advanced NLP research and responsible AI development."
+      "rationale": "Well-defined and funded national strategy with a strong focus on developing AI capabilities, including foundational models, and fostering a vibrant AI ecosystem to be a global AI hub."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "ambition": 3,
+      "ambition": 2,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Swiss Digitalisation Strategy",
-        "Funding for AI research at ETH Zurich, EPFL"
+        "Swiss Digital Initiative",
+        "University research programs (e.g., EPFL, ETH Zurich)",
+        "Innosuisse funding for AI projects"
       ],
-      "rationale": "Switzerland boasts strong academic research in AI, with government support for digitalization and ethical AI. Its ambition is more focused on leveraging research excellence for advanced applications rather than leading in foundational LLM development."
+      "rationale": "Excellent academic research base and focus on ethical AI, but the national ambition is more distributed and focused on specific niches rather than a centralized push for frontier LLMs."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "National Approach for Artificial Intelligence (2018)",
         "AI Sweden initiative",
-        "Vinnova funding for AI projects"
+        "Various research and innovation programs"
       ],
-      "rationale": "Sweden focuses on responsible AI and industrial applications, leveraging its strong research base through initiatives like AI Sweden to apply AI effectively across sectors."
+      "rationale": "Strong research and innovation environment, with government support for AI development and adoption, but not a primary focus on developing proprietary frontier LLMs."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "Finland's Age of Artificial Intelligence (2017)",
-        "AuroraAI program",
-        "AI 4.0 program"
+        "AuroraAI program (public sector AI)",
+        "Various research initiatives"
       ],
-      "rationale": "Finland emphasizes ethical AI and public sector applications, aiming to leverage its digital infrastructure for effective and responsible AI deployment."
+      "rationale": "Early adopter of AI strategies, with a focus on practical applications and ethical considerations, but not a major player in frontier LLM development."
     },
     {
       "country_iso": "CA",
@@ -220,24 +228,26 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Pan-Canadian Artificial Intelligence Strategy (CIFAR)",
-        "Significant funding for AI institutes (Mila, Vector, Amii)"
+        "Pan-Canadian Artificial Intelligence Strategy (2017)",
+        "CIFAR AI Chairs program",
+        "Vector Institute, Mila, Amii",
+        "Recent announcements on compute infrastructure and responsible AI"
       ],
-      "rationale": "Canada was an early mover in national AI strategies, with substantial investment in foundational AI research, talent development, and ethical AI, aiming to be a global leader in deep learning and generative models."
+      "rationale": "Long-standing and well-funded national strategy with a strong focus on fundamental AI research and talent, directly supporting generative AI advancements and aiming for global leadership."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "Australia's AI Action Plan (2021)",
-        "AI Ethics Framework",
-        "CSIRO's AI & Digital research"
+        "National AI Centre",
+        "CSIRO and university research programs"
       ],
-      "rationale": "Australia is increasing investment in AI, focusing on ethical AI and applications in key sectors. Its ambition is more on adopting and adapting AI technologies for national needs."
+      "rationale": "Growing government interest and investment in AI, with a focus on practical applications and ethical considerations, but not a primary driver of frontier LLM development."
     },
     {
       "country_iso": "IE",
@@ -247,165 +257,165 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Artificial Intelligence Strategy: AI Here For Good (2021)",
-        "AI Ireland initiative"
+        "National Artificial Intelligence Strategy (2021)",
+        "AI Ireland",
+        "SFI research centres"
       ],
-      "rationale": "Ireland's strategy focuses on leveraging AI for economic growth and talent development, aiming to be a hub for AI adoption and innovation rather than leading foundational generative AI research."
+      "rationale": "Clear strategy to foster AI adoption and research, leveraging its tech hub status, but not a direct focus on building national frontier LLMs."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "ambition": 2,
+      "ambition": 1,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "Regional AI strategies (e.g., Flemish AI Plan)",
-        "Federal AI strategy discussions"
+        "Various regional AI initiatives (e.g., Flemish AI Plan)",
+        "Federal AI strategy in development/early stages"
       ],
-      "rationale": "Belgium's AI strategy is somewhat fragmented across regions, with a focus on ethical AI and specific applications, aiming for adoption and integration rather than leading foundational research."
+      "rationale": "AI strategy is more fragmented across regions, with less centralized, large-scale ambition for foundational models at a federal level."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "ambition": 2,
+      "ambition": 1,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "AI Strategy Austria (2020)",
-        "Funding for AI research"
+        "AI Strategy Austria (2021)",
+        "Various research programs"
       ],
-      "rationale": "Austria's AI strategy emphasizes ethical AI, research, and specific applications, aiming to leverage AI for societal benefit and economic growth."
+      "rationale": "Clear strategy for responsible AI, human-centric AI, and specific research niches, but not a major player in frontier LLM development."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "National Strategy for Artificial Intelligence (2020)",
-        "Funding for AI research and innovation"
+        "Various research initiatives"
       ],
-      "rationale": "Italy has a national AI strategy focusing on research, industry, public administration, and ethics, aiming to develop and apply AI technologies across key sectors."
+      "rationale": "Developing national strategy with increasing investment, aiming to foster research, innovation, and ethical development, but still building momentum in the generative AI space."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 2,
+      "target_level": 2,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "National Artificial Intelligence Strategy (2020)",
-        "Spain Digital 2025 agenda",
-        "Project LEIA (Spanish LLM)"
+        "Spanish Agency for the Supervision of Artificial Intelligence (AESIA)"
       ],
-      "rationale": "Spain has a national AI strategy with a focus on research, talent, ethical AI, and public sector adoption, including explicit initiatives like Project LEIA to develop language-specific LLMs."
+      "rationale": "Clear national strategy with a strong focus on ethical AI, human-centric AI, and leveraging AI for public services and economic growth, but not a primary driver of frontier LLM development."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 1,
+      "target_level": 1,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National AI Roadmap (2021)",
-        "Malaysia Digital Economy Blueprint"
+        "National Artificial Intelligence Roadmap (2021-2025)",
+        "MyDIGITAL initiative"
       ],
-      "rationale": "Malaysia's focus is on digital transformation and AI adoption, with less explicit ambition in frontier generative AI research, aiming to integrate AI solutions across its economy."
+      "rationale": "Focus is more on AI adoption and digital transformation rather than leading in generative AI research or developing frontier models."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 1,
+      "target_level": 1,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National Strategy on Research, Development and Application of Artificial Intelligence until 2030 (2021)"
+        "National Strategy on Research, Development and Application of AI by 2030 (2021)"
       ],
-      "rationale": "Vietnam has a national strategy to develop AI capabilities, but it's still in early stages for advanced generative AI, primarily aiming to adopt and apply AI for economic development."
+      "rationale": "Clear strategy for AI development and application to support digital economy goals, but still in early stages for frontier generative AI."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 1,
+      "target_level": 1,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National AI Strategy and Action Plan (2020-2027)"
+        "National AI Strategy and Action Plan (2021-2027)"
       ],
-      "rationale": "Thailand focuses on AI adoption for economic and social impact, with limited explicit ambition in frontier generative AI research, aiming to apply AI solutions across sectors."
+      "rationale": "Strategy focuses on AI adoption for economic and social benefit rather than leading in generative AI research."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 1,
+      "target_level": 1,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National Strategy for Artificial Intelligence 2020-2045"
+        "National Strategy for Artificial Intelligence (2020-2045)"
       ],
-      "rationale": "Indonesia's national AI strategy focuses on talent development and AI adoption in key sectors, primarily aiming to leverage AI for digital transformation."
+      "rationale": "Long-term strategy for AI, but current focus is more on foundational adoption for national development and digital transformation rather than frontier generative AI."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "ambition": 5,
-      "target_level": 5,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
         "UAE National AI Strategy 2031",
-        "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
-        "Falcon LLM development (Technology Innovation Institute - TII)"
+        "Ministry of Artificial Intelligence, Digital Economy and Remote Work Applications",
+        "Various initiatives for AI research and talent",
+        "Investments in AI infrastructure"
       ],
-      "rationale": "The UAE has demonstrated extremely high ambition in AI, with a dedicated Minister of AI, significant investment in research (e.g., MBZUAI), and the development of frontier-level LLMs like Falcon, aiming for global leadership."
+      "rationale": "Explicit and well-funded national strategy with a strong top-down drive to lead in AI, including advanced generative AI applications, to become a global AI hub."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "ambition": 5,
-      "target_level": 5,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
         "National Strategy for Data & AI (NSDAI)",
         "Saudi Data & AI Authority (SDAIA)",
-        "Significant investments in AI research and development as part of Vision 2030"
+        "Significant investments in AI research centers (e.g., KAUST) and talent development"
       ],
-      "rationale": "Saudi Arabia has an ambitious national AI strategy as part of Vision 2030, with substantial investments and dedicated authorities (SDAIA) to drive AI research and development, aiming for global leadership in advanced AI capabilities."
+      "rationale": "Clear national strategy (Vision 2030) with substantial funding and institutional support to become a leader in AI, including advanced generative AI, as a key pillar for economic diversification."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "ambition": 2,
+      "ambition": 1,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "Brazilian Strategy for Artificial Intelligence (2021)"
+        "Brazilian Artificial Intelligence Strategy (2021)"
       ],
-      "rationale": "Brazil's national AI strategy focuses more on ethical AI, regulation, and adoption rather than leading frontier research in generative AI, aiming to apply AI for societal and economic benefit."
+      "rationale": "Developing national strategy with a focus on ethical AI, public sector applications, and fostering a domestic AI ecosystem, but not a primary driver of frontier LLM development."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 1,
+      "target_level": 2,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Polish AI Policy (2020)",
-        "Funding for AI research"
+        "Polish AI Strategy (2020)"
       ],
-      "rationale": "Poland has a national AI policy focusing on research, talent development, and AI adoption in key sectors, aiming to develop and apply AI technologies."
+      "rationale": "Clear strategy for AI development and application, focusing on adoption and talent, but still building momentum in the generative AI space."
     }
   ]
 }

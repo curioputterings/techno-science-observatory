@@ -4,74 +4,73 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "volume_band": "very_high",
-      "skill_level": 5,
+      "volume_band": "high",
+      "skill_level": 4,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "Boston Dynamics",
-        "NVIDIA Robotics",
-        "CMU Robotics Institute",
+        "Tesla Bot",
+        "Google Robotics",
+        "Carnegie Mellon Robotics Institute",
         "MIT CSAIL",
-        "DARPA",
-        "Rockwell Automation",
-        "numerous startups"
+        "NASA JPL",
+        "Amazon Robotics",
+        "iRobot",
+        "Defense Advanced Research Projects Agency (DARPA)"
       ],
-      "rationale": "Global leader in robotics R&D, AI, and advanced manufacturing. Strong academic base, venture capital, and diverse industrial applications."
+      "rationale": "The US has a vast and diverse robotics ecosystem, from industrial automation to AI-driven autonomous systems, with significant R&D investment across academic, corporate, and defense sectors, leading in multiple sub-domains."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
         "Siasun Robot & Automation",
         "DJI",
+        "UBTECH Robotics",
         "Midea (KUKA owner)",
-        "Foxconn automation",
-        "Made in China 2025",
-        "numerous universities and research institutes"
+        "Made in China 2025 strategy (robotics focus)",
+        "Chinese Academy of Sciences (CAS) robotics institutes"
       ],
-      "rationale": "World's largest manufacturing base with massive government investment in industrial automation and AI robotics, aiming for global leadership."
+      "rationale": "China is the world's largest market for industrial robots and has a strong national strategy to become a global leader in robotics, driving massive investment and talent development in industrial, service, and AI robotics."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "FANUC",
-        "Yaskawa",
-        "Kawasaki Robotics",
-        "Denso Wave",
-        "Honda Robotics",
-        "Toyota Research Institute",
-        "AIST",
-        "RIKEN"
+        "Fanuc Corporation",
+        "Yaskawa Electric Corporation",
+        "Kawasaki Heavy Industries",
+        "Honda (ASIMO, robotics research)",
+        "Sony (Aibo, robotics R&D)",
+        "National Institute of Advanced Industrial Science and Technology (AIST)"
       ],
-      "rationale": "Pioneer and long-standing leader in industrial robotics, precision engineering, and humanoid robotics. Strong domestic market and export."
+      "rationale": "Japan has a long-standing dominance in industrial robotics and continues to innovate, especially in areas like collaborative robots, service robotics, humanoid robots, and precision motion control, supported by major global players."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Samsung Robotics",
-        "LG Robotics",
         "Hyundai Robotics",
+        "Samsung (robotics initiatives)",
+        "LG (robotics R&D)",
         "Doosan Robotics",
-        "KAIST",
-        "KIST",
-        "high robot density in manufacturing"
+        "Korea Advanced Institute of Science and Technology (KAIST)",
+        "Government initiatives for smart factories and robotics"
       ],
-      "rationale": "High robot density in advanced manufacturing (electronics, automotive) and significant government investment in robotics R&D and supply chain."
+      "rationale": "South Korea has the highest robot density in the world and a strong commitment to advancing robotics technology, particularly in manufacturing automation, service robots, and emerging AI-driven applications."
     },
     {
       "country_iso": "TW",
@@ -81,276 +80,272 @@
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "HIWIN",
-        "Delta Electronics",
+        "Hiwin Technologies",
         "Techman Robot",
-        "ITRI",
-        "strong semiconductor manufacturing"
+        "Delta Electronics (industrial automation)",
+        "Industrial Technology Research Institute (ITRI)",
+        "Foxconn (manufacturing automation in Taiwan)"
       ],
-      "rationale": "Strong in precision components, industrial automation, and embedded systems for manufacturing, with growing domestic robot production."
+      "rationale": "Taiwan excels in precision manufacturing and has a growing robotics industry focused on industrial automation, components, and collaborative robots, leveraging its semiconductor and electronics expertise."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "KUKA Robotics",
-        "Bosch Rexroth",
-        "Siemens (industrial automation)",
-        "Festo",
-        "Fraunhofer Institutes",
+        "KUKA AG (R&D in Germany)",
+        "Siemens (automation & motion control)",
+        "Bosch (robotics, automation)",
+        "Fraunhofer Institutes (IPA, IML)",
+        "Technical University of Munich (TUM) Robotics and AI Institute",
         "Industry 4.0 initiatives"
       ],
-      "rationale": "European leader in industrial robotics and automation, with deep engineering expertise, strong R&D, and a focus on Industry 4.0."
+      "rationale": "Germany is a powerhouse in industrial engineering and automation, with a strong focus on advanced manufacturing, Industry 4.0, and robotics R&D, maintaining a leading position in industrial and collaborative robotics."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.6,
+      "confidence": "medium",
       "evidence": [
-        "ASML (precision motion control)",
+        "ASML (advanced motion control systems)",
+        "Lely (agri-robotics)",
         "Philips (medical robotics)",
-        "Lely (agri-food robotics)",
-        "TU Delft (RoboValley)"
+        "Delft University of Technology (robotics research)",
+        "Wageningen University & Research (agri-robotics)"
       ],
-      "rationale": "Niche strengths in high-precision motion control (e.g., lithography), agri-food robotics, and medical robotics, supported by strong research."
+      "rationale": "The Netherlands has a highly specialized robotics sector, excelling in specific niches like agri-food, medical, and high-tech systems, driven by strong research and a focus on innovation in precision mechatronics."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.55,
       "confidence": "medium",
       "evidence": [
-        "Ocado (logistics robotics)",
-        "Dyson (robotics research)",
-        "UK RAS Network",
-        "Imperial College London",
-        "University of Edinburgh"
+        "Ocado Technology (robotics for logistics)",
+        "Dyson (robotics R&D)",
+        "Imperial College London (robotics research)",
+        "University of Edinburgh (robotics & AI)",
+        "UK Robotics and Autonomous Systems Network"
       ],
-      "rationale": "Strong academic research base in AI and autonomous systems, with a growing number of startups and increasing industrial adoption, particularly in logistics."
+      "rationale": "The UK has a strong academic research base in robotics and AI, with emerging companies in logistics, defense, and service robotics, though industrial robot adoption lags some other major economies."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "SoftBank Robotics (Aldebaran)",
-        "CEA",
-        "Inria",
-        "CNRS",
-        "strong aerospace and automotive industries"
+        "SoftBank Robotics (Aldebaran Robotics origin)",
+        "CEA List (robotics research)",
+        "Inria (robotics & AI research)",
+        "Airbus (automation in aerospace manufacturing)",
+        "Dassault Syst\u00e8mes (robotics simulation)"
       ],
-      "rationale": "Solid industrial base with good academic research in AI, human-robot interaction, and specialized robotics, particularly in aerospace."
+      "rationale": "France has a solid foundation in robotics research and development, with strengths in specific sectors like aerospace, defense, and collaborative robotics, supported by strong engineering education and national research institutes."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
+      "frontier": 0.65,
+      "confidence": "medium",
       "evidence": [
-        "Mobileye (autonomous driving tech)",
-        "Elbit Systems (defense robotics)",
-        "Technion",
-        "numerous robotics startups",
-        "strong VC funding"
+        "Mobileye (autonomous driving, robotics relevance)",
+        "Numerous defense tech companies (robotics for security)",
+        "Medical robotics startups",
+        "Technion \u2013 Israel Institute of Technology (robotics research)",
+        "Weizmann Institute of Science (robotics & AI)"
       ],
-      "rationale": "Highly innovative startup ecosystem focused on cutting-edge AI, computer vision, and autonomous systems, often with defense applications."
+      "rationale": "Israel's robotics sector is characterized by high innovation and specialization, particularly in defense, medical technology, and AI-driven autonomous systems, leveraging its strong startup ecosystem and R&D capabilities."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Tata Motors automation",
-        "Mahindra & Mahindra",
-        "numerous system integrators",
-        "IITs",
-        "Make in India initiative"
+        "Tata Motors (automation in manufacturing)",
+        "Mahindra & Mahindra (automation)",
+        "Indian Institutes of Technology (IITs) (robotics research)",
+        "Make in India initiatives (promoting automation)"
       ],
-      "rationale": "Rapidly growing manufacturing sector driving demand for industrial automation, with a large pool of engineering talent, but less frontier R&D."
+      "rationale": "India is a rapidly growing market for industrial automation, but its indigenous advanced robotics R&D and manufacturing are still in early stages, with most adoption being integration of foreign technologies rather than frontier innovation."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.7,
-      "confidence": "high",
-      "evidence": [
-        "A*STAR (ARTC)",
-        "NTU",
-        "NUS",
-        "National Robotics Programme",
-        "high-tech manufacturing"
-      ],
-      "rationale": "Significant government investment in robotics R&D and adoption for advanced manufacturing, logistics, and smart city applications."
-    },
-    {
-      "country_iso": "CH",
-      "country_name": "Switzerland",
-      "volume_band": "low",
-      "skill_level": 5,
-      "frontier": 0.8,
-      "confidence": "high",
-      "evidence": [
-        "ABB (global HQ)",
-        "ETH Zurich",
-        "EPFL",
-        "Swiss Centre for Robotics",
-        "precision engineering industry"
-      ],
-      "rationale": "World-class research and precision engineering capabilities, particularly strong in industrial, medical, and soft robotics."
-    },
-    {
-      "country_iso": "SE",
-      "country_name": "Sweden",
-      "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.6,
-      "confidence": "medium",
-      "evidence": [
-        "ABB (major presence)",
-        "Ericsson (robotics for telecom)",
-        "KTH Royal Institute of Technology",
-        "strong industrial base"
-      ],
-      "rationale": "Strong industrial heritage with a focus on automation, human-robot collaboration, and advanced manufacturing, supported by good academic research."
-    },
-    {
-      "country_iso": "FI",
-      "country_name": "Finland",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre",
-        "Aalto University",
-        "Tampere University",
-        "automation in forest industry"
+        "A*STAR (robotics research institutes)",
+        "National University of Singapore (NUS) (robotics research)",
+        "Nanyang Technological University (NTU) (robotics research)",
+        "Smart Nation initiatives (robotics for logistics, services)"
       ],
-      "rationale": "Niche strengths in industrial automation, mobile robotics, and AI, particularly in resource-intensive industries."
+      "rationale": "Singapore is investing heavily in robotics for smart nation initiatives, logistics, and advanced manufacturing, leveraging its strong research institutions and government support to create a high-tech, specialized ecosystem."
     },
     {
-      "country_iso": "CA",
-      "country_name": "Canada",
-      "volume_band": "medium",
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "very_low",
       "skill_level": 4,
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "MDA (space robotics)",
-        "Clearpath Robotics",
-        "University of Toronto (Vector Institute)",
-        "Waterloo",
-        "McGill"
+        "ABB (significant R&D presence in Switzerland)",
+        "ETH Zurich (robotics research)",
+        "EPFL (robotics research)",
+        "Swiss Federal Laboratories for Materials Science and Technology (Empa)",
+        "Numerous precision engineering firms"
       ],
-      "rationale": "Strong academic research in AI for robotics, autonomous systems, and space robotics, with a growing startup ecosystem."
+      "rationale": "Switzerland, despite its size, is a global leader in precision engineering and robotics, with world-renowned research institutions and companies pushing the boundaries in areas like medical, collaborative, and soft robotics."
     },
     {
-      "country_iso": "AU",
-      "country_name": "Australia",
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.55,
+      "confidence": "medium",
+      "evidence": [
+        "ABB (major R&D and manufacturing presence)",
+        "Ericsson (automation in telecom manufacturing)",
+        "KTH Royal Institute of Technology (robotics research)",
+        "Strong manufacturing sector with high automation rates"
+      ],
+      "rationale": "Sweden has a highly automated industrial sector and a strong tradition in engineering, with significant R&D in industrial robotics and automation, supported by major global players and a focus on innovation."
+    },
+    {
+      "country_iso": "FI",
+      "country_name": "Finland",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "medium",
+      "evidence": [
+        "VTT Technical Research Centre of Finland (robotics research)",
+        "Aalto University (robotics research)",
+        "Valmet (automation in pulp & paper, energy)",
+        "Kone (elevator automation, some robotics relevance)"
+      ],
+      "rationale": "Finland has a niche but innovative robotics sector, focusing on automation for its key industries (e.g., forestry, mining) and leveraging its strong ICT background for mobile robotics and AI integration."
+    },
+    {
+      "country_iso": "CA",
+      "country_name": "Canada",
       "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "CSIRO Robotics and Autonomous Systems",
-        "Australian Centre for Robotic Vision",
-        "mining automation (Rio Tinto, BHP)"
+        "MDA (Canadarm, space robotics)",
+        "Clearpath Robotics",
+        "University of Toronto (robotics & AI research)",
+        "University of Waterloo (robotics research)",
+        "Mila - Quebec AI Institute, Vector Institute"
       ],
-      "rationale": "Leading in field robotics, particularly for mining, agriculture, and environmental monitoring in harsh environments."
+      "rationale": "Canada has a strong academic base in AI and robotics, with notable contributions in space robotics and emerging companies in autonomous systems, logistics automation, and medical robotics."
+    },
+    {
+      "country_iso": "AU",
+      "country_name": "Australia",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.5,
+      "confidence": "medium",
+      "evidence": [
+        "CSIRO (robotics research, particularly field robotics)",
+        "University of Sydney (robotics research)",
+        "Queensland University of Technology (QUT) (robotics research)",
+        "Mining companies (Rio Tinto, BHP) investing in autonomous systems"
+      ],
+      "rationale": "Australia's robotics sector is highly specialized, driven by its mining and agriculture industries, with significant R&D in autonomous systems for harsh environments and field robotics."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Intel (manufacturing automation)",
-        "University College Dublin",
-        "Tyndall National Institute"
+        "Some multinational tech companies with automation R&D presence",
+        "Trinity College Dublin (robotics research)",
+        "IDA Ireland (promoting tech investment)"
       ],
-      "rationale": "Smaller market with some R&D presence from multinationals and academic research, but limited native robotics industry."
+      "rationale": "Ireland has a strong tech sector, but robotics is still an emerging area, with some academic research and adoption of automation by multinationals, but limited indigenous frontier R&D."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "IMEC",
-        "KU Leuven",
-        "Ghent University",
-        "strong manufacturing sector"
+        "KU Leuven (robotics research)",
+        "IMEC (nanoelectronics, some robotics relevance)",
+        "Some industrial automation companies (e.g., in logistics)"
       ],
-      "rationale": "Solid engineering capabilities and academic research, particularly in industrial automation and microelectronics, but smaller scale."
+      "rationale": "Belgium has a developed industrial base and good engineering talent, with a focus on industrial automation and some academic research in robotics, but not a major global frontier player."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.35,
       "confidence": "medium",
       "evidence": [
-        "Linz Center of Mechatronics",
-        "Joanneum Research",
-        "TU Graz",
-        "specialized machinery manufacturers"
+        "Joanneum Research (robotics & automation)",
+        "Technical University of Vienna (robotics research)",
+        "Some specialized automation companies (e.g., in intralogistics)"
       ],
-      "rationale": "Strong engineering tradition with a focus on industrial automation, mechatronics, and human-robot collaboration."
+      "rationale": "Austria has a strong tradition in mechatronics and industrial automation, with good research institutions and specialized companies, but its overall volume and frontier R&D are smaller scale."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.45,
       "confidence": "medium",
       "evidence": [
-        "Comau (Stellantis robotics)",
-        "Italian Institute of Technology (IIT)",
-        "Politecnico di Milano",
-        "strong automotive industry"
+        "Comau (industrial robots)",
+        "Italian Institute of Technology (IIT) (humanoid robotics, soft robotics)",
+        "Politecnico di Milano (robotics research)",
+        "Strong manufacturing sector (automotive, machinery)"
       ],
-      "rationale": "Strong industrial base, particularly in automotive and specialized machinery, with notable academic research in humanoid and soft robotics."
+      "rationale": "Italy has a significant manufacturing sector and some notable robotics companies and research institutions, particularly in industrial automation and humanoid robotics, but overall frontier R&D is not as broad as leading nations."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.25,
       "confidence": "low",
       "evidence": [
-        "PAL Robotics",
-        "Tecnalia",
-        "CSIC",
-        "Polytechnic University of Catalonia",
-        "automotive industry"
+        "Spanish National Research Council (CSIC) (robotics research)",
+        "Universities (e.g., Polytechnic University of Catalonia)",
+        "Automotive industry automation"
       ],
-      "rationale": "Growing industrial automation market and academic research, particularly in service and humanoid robotics, but smaller scale."
+      "rationale": "Spain has a developing industrial automation sector and academic research in robotics, but its overall volume and frontier R&D are still relatively modest compared to major players."
     },
     {
       "country_iso": "MY",
@@ -360,25 +355,25 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "strong electronics manufacturing",
-        "government automation initiatives",
-        "Universiti Malaya"
+        "Government initiatives for Industry 4.0 adoption",
+        "Some manufacturing automation in electronics and automotive sectors",
+        "Local universities with emerging robotics programs"
       ],
-      "rationale": "Increasing adoption of industrial automation in manufacturing, but limited advanced R&D and local innovation."
+      "rationale": "Malaysia is a manufacturing hub with increasing adoption of automation, but its indigenous advanced robotics R&D is still in very early stages, primarily focused on integration and basic application rather than frontier innovation."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "VinFast (automotive automation)",
-        "growing manufacturing sector",
-        "some universities"
+        "VinFast (automotive manufacturing automation)",
+        "Growing electronics manufacturing sector adopting automation",
+        "Universities with nascent robotics research"
       ],
-      "rationale": "Emerging manufacturing hub with increasing automation needs, primarily focused on adoption and basic integration."
+      "rationale": "Vietnam is a rapidly industrializing nation, but its advanced robotics sector is still nascent, focusing on basic automation adoption and integration rather than significant frontier R&D."
     },
     {
       "country_iso": "TH",
@@ -388,80 +383,81 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Thailand 4.0 initiative",
-        "strong automotive and electronics manufacturing",
-        "Chulalongkorn University"
+        "Eastern Economic Corridor (EEC) initiatives (promoting automation)",
+        "Automotive and electronics manufacturing automation",
+        "Universities with emerging robotics programs"
       ],
-      "rationale": "Government initiatives to boost automation in key manufacturing sectors, but advanced R&D is still nascent."
+      "rationale": "Thailand is a manufacturing base in Southeast Asia, with government initiatives to promote automation, but its advanced robotics R&D is still in early stages, mainly focused on integrating existing technologies."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
       "skill_level": 1,
-      "frontier": 0.0,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "large manufacturing base",
-        "low robot density compared to peers"
+        "Some manufacturing automation in automotive and electronics",
+        "Government 'Making Indonesia 4.0' roadmap",
+        "Universities with basic robotics education"
       ],
-      "rationale": "Large manufacturing sector with significant potential for automation, but current adoption is low and advanced R&D is negligible."
+      "rationale": "Indonesia is a large and developing economy, but its advanced robotics sector is still in its infancy, with limited indigenous R&D and primarily focused on basic automation adoption and integration."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.15,
       "confidence": "low",
       "evidence": [
-        "government smart city initiatives",
-        "Khalifa University",
-        "logistics automation"
+        "Dubai Future Foundation (robotics & AI initiatives)",
+        "Various smart city projects (e.g., autonomous vehicles trials)",
+        "Khalifa University (robotics research)"
       ],
-      "rationale": "High investment in smart city technologies and AI, importing talent and technology, but local industry and foundational R&D are still developing."
+      "rationale": "The UAE is investing heavily in future technologies and smart city concepts, including robotics and AI, but its industrial base for advanced robotics R&D is still very small, with most activity focused on adoption and pilot projects rather than deep frontier work."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "volume_band": "none",
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "NEOM project",
-        "Aramco (industrial automation)",
-        "KAUST"
+        "NEOM project (ambitious tech city plans)",
+        "King Abdullah University of Science and Technology (KAUST) (robotics research)",
+        "Vision 2030 initiatives (promoting tech development)"
       ],
-      "rationale": "Ambitious plans for future cities (NEOM) and industrial automation, with significant investment, but local talent and industry are nascent."
+      "rationale": "Saudi Arabia has ambitious plans for technological development, including robotics, as part of Vision 2030 and projects like NEOM, but its advanced robotics R&D and industrial ecosystem are still in very early stages."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.15,
       "confidence": "low",
       "evidence": [
-        "strong automotive and agricultural sectors",
-        "USP",
-        "Unicamp"
+        "Some automotive and agricultural automation",
+        "Universities (e.g., University of S\u00e3o Paulo) with robotics research",
+        "Brazilian Association of Industrial Robotics (ABROBOT)"
       ],
-      "rationale": "Largest Latin American market with growing industrial automation in automotive and agriculture, but limited advanced R&D."
+      "rationale": "Brazil has a large economy and some industrial automation, particularly in automotive and agriculture, but its advanced robotics R&D is still in early stages, with most activity focused on integrating existing solutions rather than frontier innovation."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
-        "growing manufacturing sector",
-        "automotive industry",
-        "AGH University of Science and Technology"
+        "Growing manufacturing sector (automotive, electronics) adopting automation",
+        "Universities (e.g., Warsaw University of Technology) with robotics research",
+        "EU funding for R&D and industrial modernization"
       ],
-      "rationale": "Rapidly increasing adoption of industrial automation, becoming a regional hub for system integration and manufacturing, with growing academic research."
+      "rationale": "Poland is a growing manufacturing hub in Central Europe, with increasing adoption of industrial automation. It has a good engineering base and emerging academic research in robotics, but its frontier R&D is still developing."
     }
   ]
 }

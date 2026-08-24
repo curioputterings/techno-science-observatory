@@ -6,87 +6,87 @@
       "country_name": "United States",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 1.0,
       "confidence": "high",
       "evidence": [
         "Google AI",
         "Meta AI",
         "OpenAI",
-        "Anthropic",
+        "Microsoft Research",
         "NVIDIA",
-        "Stanford University",
-        "MIT",
-        "Carnegie Mellon University"
+        "Stanford AI Lab",
+        "MIT CSAIL",
+        "CMU ML Dept"
       ],
-      "rationale": "The US is the global leader in Machine & Deep Learning, hosting the largest concentration of major tech companies, cutting-edge research labs, and top-tier academic institutions driving foundational AI research and development."
+      "rationale": "Global leader in ML/DL research and application, home to top tech companies, startups, and universities driving world-first innovations."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
-      "skill_level": 5,
-      "frontier": 0.85,
+      "skill_level": 4,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
         "Baidu AI",
         "Alibaba DAMO Academy",
         "Tencent AI Lab",
         "Huawei Noah's Ark Lab",
+        "SenseTime",
         "Tsinghua University",
         "Peking University",
-        "SenseTime"
+        "National AI plans"
       ],
-      "rationale": "China has a massive domestic market, significant government investment in AI, and major tech giants that are world leaders in AI research and application, particularly in computer vision and natural language processing."
+      "rationale": "Massive investment and talent, rapidly advancing in both research and application, with strong government backing and leading tech giants."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "high",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "volume_band": "medium",
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "RIKEN AIP",
-        "AIST",
+        "RIKEN Center for Advanced Intelligence Project (AIP)",
         "Sony AI",
-        "NEC AI",
         "Toyota Research Institute (TRI)",
-        "University of Tokyo"
+        "Fujitsu AI",
+        "NEC AI"
       ],
-      "rationale": "Japan possesses a strong industrial base and is increasing its investment in AI, with notable research in robotics and industrial applications. While strong, its foundational ML research is not as broad as the US or China."
+      "rationale": "Strong industrial base with growing interest in AI, particularly in robotics and automotive, but broader ML research is developing at a moderate pace."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.65,
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "Samsung AI Center",
+        "Samsung AI Research",
         "LG AI Research",
         "Naver AI Lab",
         "Kakao Brain",
         "KAIST",
-        "Seoul National University"
+        "Seoul National University",
+        "National AI strategies"
       ],
-      "rationale": "South Korea benefits from strong government support and major conglomerates investing heavily in AI. It excels in applied AI for manufacturing, automotive, and consumer electronics, with growing foundational research capabilities."
+      "rationale": "Major tech conglomerates investing heavily in AI R&D, coupled with strong academic institutions and government support."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "TSMC",
+        "TSMC (AI in manufacturing)",
         "MediaTek",
-        "NVIDIA R&D centers",
-        "ITRI",
-        "National Taiwan University"
+        "ITRI (Industrial Technology Research Institute)",
+        "Academia Sinica"
       ],
-      "rationale": "Taiwan is a global leader in hardware and semiconductors, which supports AI development. Its advanced ML market is smaller, with a focus on hardware-software co-design and applied AI for manufacturing rather than broad foundational research."
+      "rationale": "Strong in AI hardware and chip design, with increasing focus on applied ML solutions, but a smaller market for advanced research roles."
     },
     {
       "country_iso": "DE",
@@ -96,80 +96,83 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
+        "Max Planck Institute for Intelligent Systems",
         "Fraunhofer Institutes",
-        "Max Planck Institutes",
         "DFKI",
-        "Cyber Valley",
         "Bosch Center for AI",
-        "Siemens AI Lab"
+        "Siemens AI",
+        "TU Munich"
       ],
-      "rationale": "Germany has a robust industrial sector and significant government investment in AI. It excels in industrial AI, robotics, and explainable AI, with strong academic and corporate research contributing to frontier developments."
+      "rationale": "Robust industrial AI adoption, strong research institutes, and significant investment in autonomous systems and industrial applications."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.55,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "ELLIS units (Amsterdam, Delft)",
-        "CWI",
         "University of Amsterdam (UvA)",
-        "Delft University of Technology (TU Delft)",
-        "Philips Research"
+        "TU Delft",
+        "Radboud University",
+        "Philips Research",
+        "ASML (AI in lithography)",
+        "National AI Coalition"
       ],
-      "rationale": "The Netherlands boasts strong academic research and a growing startup ecosystem, with a focus on responsible AI and applications in logistics, healthcare, and finance. It has a solid foundation for advanced ML."
+      "rationale": "Innovative ecosystem with strong academic research in areas like responsible AI, medical imaging, and specific industrial applications."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
-      "skill_level": 5,
+      "skill_level": 4,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Google DeepMind",
-        "Meta AI London",
+        "DeepMind (Google)",
+        "Meta AI (London)",
+        "Microsoft Research Cambridge",
         "The Alan Turing Institute",
         "University of Oxford",
-        "University of Cambridge",
-        "UCL"
+        "University of Cambridge"
       ],
-      "rationale": "The UK is a major global hub for AI research, home to world-leading institutions and companies like DeepMind, which have made significant contributions to foundational AI, particularly in reinforcement learning."
+      "rationale": "Strong academic base and key industry players like DeepMind, making it a significant global research hub for advanced ML/DL."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 4,
+      "skill_level": 3,
       "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
         "INRIA",
-        "PRAIRIE Institute",
-        "Meta AI Paris",
+        "CNRS",
         "Google AI Paris",
-        "\u00c9cole Normale Sup\u00e9rieure"
+        "Meta AI Paris",
+        "Institut Polytechnique de Paris",
+        "National AI strategy"
       ],
-      "rationale": "France has strong government support for AI (AI for Humanity), excellent academic research, and a growing startup scene. It is particularly strong in theoretical ML and mathematics, with increasing applied AI capabilities."
+      "rationale": "Strong academic research and government initiatives, attracting major tech companies for AI labs and fostering fundamental research."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.65,
-      "confidence": "medium",
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
+        "Mobileye (Intel)",
+        "NVIDIA (Mellanox)",
+        "Google AI Israel",
+        "Microsoft Research Israel",
         "Technion",
-        "Weizmann Institute",
-        "Tel Aviv University",
-        "Intel AI",
-        "NVIDIA R&D",
-        "Mobileye"
+        "Weizmann Institute of Science",
+        "Numerous AI startups"
       ],
-      "rationale": "Israel, the 'Startup Nation,' has a highly concentrated talent pool and strong R&D, particularly in defense, cybersecurity, and medical tech. It excels in applied AI with significant foundational research contributions."
+      "rationale": "High concentration of R&D talent, particularly in computer vision, autonomous tech, and cybersecurity, driven by startups and multinational R&D centers."
     },
     {
       "country_iso": "IN",
@@ -179,45 +182,48 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "IITs (e.g., IIT Bombay, IIT Delhi)",
-        "IISc Bangalore",
-        "Google India AI",
-        "Microsoft India Development Center",
-        "Amazon India"
+        "TCS Research",
+        "Infosys",
+        "Wipro",
+        "Google AI India",
+        "Microsoft India",
+        "Indian Institutes of Technology (IITs)",
+        "Indian Institute of Science (IISc)"
       ],
-      "rationale": "India possesses a vast talent pool and a growing domestic tech market, serving as a significant hub for global tech companies. Its strength lies in applied ML, data science, and MLOps, with emerging foundational research."
+      "rationale": "Large talent pool and significant applied ML development, with growing but still nascent frontier research capabilities."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.5,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "AI Singapore",
         "A*STAR",
-        "National University of Singapore (NUS)",
         "Nanyang Technological University (NTU)",
-        "Grab AI Lab"
+        "National University of Singapore (NUS)",
+        "Google AI Singapore",
+        "Grab AI Labs"
       ],
-      "rationale": "Singapore has a strong government focus on AI (AI Singapore) and excellent research institutions. It serves as a regional tech hub with high-quality academic research and strong applications in finance, smart cities, and healthcare."
+      "rationale": "Government-led initiatives and a hub for multinational tech companies, fostering applied AI and some research, especially in smart city and healthcare."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
         "ETH Zurich",
         "EPFL",
-        "IDSIA",
+        "IBM Research Zurich",
         "Google AI Zurich",
-        "IBM Research Zurich"
+        "Swiss AI Initiative"
       ],
-      "rationale": "Switzerland is known for high-quality academic research, particularly at ETH Zurich and EPFL, and strong capabilities in specific niches like finance, pharma, and robotics. Its overall market for advanced ML is smaller but highly specialized."
+      "rationale": "Top-tier universities (ETH, EPFL) and research labs (IBM, Google) contribute to high-quality, specialized research in fundamental ML and robotics."
     },
     {
       "country_iso": "SE",
@@ -227,43 +233,46 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Wallenberg AI, Autonomous Systems and Software Program (WASP)",
         "KTH Royal Institute of Technology",
         "Chalmers University of Technology",
-        "Ericsson Research"
+        "RISE Research Institutes of Sweden",
+        "Ericsson AI",
+        "Spotify"
       ],
-      "rationale": "Sweden has strong academic research and an innovative startup scene, with a focus on responsible AI and industrial applications (e.g., automotive, telecommunications). Its advanced ML market is growing but still relatively small."
+      "rationale": "Innovative tech scene with good academic research and industry applications, particularly in responsible AI and industrial solutions."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.35,
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Finnish Center for Artificial Intelligence (FCAI)",
+        "University of Helsinki (Elements of AI)",
         "Aalto University",
-        "University of Helsinki",
+        "VTT Technical Research Centre of Finland",
         "Nokia Bell Labs"
       ],
-      "rationale": "Finland has strong academic research, particularly in AI ethics and specific applications (e.g., forestry, health tech, telecommunications). Its advanced ML market is smaller but highly specialized and innovative."
+      "rationale": "Highly innovative in specific niches and strong academic foundations, but a smaller overall market for advanced ML roles."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.75,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Mila (Yoshua Bengio)",
-        "Vector Institute (Geoffrey Hinton)",
-        "Amii (Richard Sutton)",
+        "Mila (Quebec AI Institute)",
+        "Vector Institute",
         "Borealis AI (RBC)",
-        "Google AI"
+        "Google AI Canada",
+        "Meta AI Canada",
+        "University of Toronto",
+        "University of Alberta"
       ],
-      "rationale": "Canada has made significant government investments and is home to world-renowned AI research institutes that have pioneered deep learning. It has a strong academic base and growing corporate R&D in advanced ML."
+      "rationale": "World-renowned academic research centers (Mila, Vector) and strong government support for AI, attracting top talent and industry investment."
     },
     {
       "country_iso": "AU",
@@ -273,142 +282,144 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "CSIRO's Data61",
+        "CSIRO Data61",
         "Australian Institute for Machine Learning (AIML)",
-        "University of Sydney",
-        "University of Melbourne"
+        "UNSW",
+        "ANU",
+        "University of Melbourne",
+        "National AI strategy"
       ],
-      "rationale": "Australia has growing investment in AI and good academic research, with a focus on specific applications relevant to its economy (e.g., mining, agriculture, healthcare). Its advanced ML market is developing."
+      "rationale": "Growing research capabilities and industry adoption, particularly in specific sectors, but limited world-first R&D compared to global leaders."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.25,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "ADAPT Centre",
-        "Insight SFI Research Centre for Data Analytics",
+        "SFI Research Centres (ADAPT, Insight)",
         "Google",
         "Microsoft",
-        "Meta operations"
+        "IBM",
+        "Trinity College Dublin",
+        "UCD"
       ],
-      "rationale": "Ireland hosts European HQs for many US tech giants, leading to strong applied ML, data science, and MLOps roles. While some academic research exists, core R&D is less prevalent compared to other major tech hubs."
+      "rationale": "Primarily a hub for applied ML roles within multinational tech companies, with some academic research and government-funded centers."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
-      "skill_level": 3,
+      "volume_band": "very_low",
+      "skill_level": 2,
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "KU Leuven AI",
-        "Ghent University AI",
-        "IMEC",
-        "VUB AI Lab"
+        "KU Leuven",
+        "Ghent University",
+        "IMEC (microelectronics research)"
       ],
-      "rationale": "Belgium has good academic research, particularly at institutions like KU Leuven and Ghent University, and some applied AI in industry. Its overall advanced ML market is smaller but growing."
+      "rationale": "Good academic institutions and some niche research, but limited large-scale advanced ML industry and overall volume."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "low",
-      "skill_level": 3,
+      "volume_band": "very_low",
+      "skill_level": 2,
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Austrian Research Institute for Artificial Intelligence (OFAI)",
         "TU Wien",
-        "JKU Linz",
-        "AIT Austrian Institute of Technology"
+        "Johannes Kepler University Linz (LIT AI Lab)",
+        "IST Austria"
       ],
-      "rationale": "Austria has good academic research, particularly in specific niches, and some applied AI in industry. Its overall advanced ML market is smaller but contributes to European research efforts."
+      "rationale": "Solid academic base and some specialized research, but a smaller overall market for advanced ML roles and limited frontier R&D."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "Italian Institute of Technology (IIT)",
-        "CNR (National Research Council)",
-        "Sapienza University of Rome"
+        "National Research Council (CNR)",
+        "Sapienza University of Rome",
+        "Politecnico di Milano"
       ],
-      "rationale": "Italy shows growing government and academic interest in AI, but industrial adoption and the prevalence of advanced ML roles are slower compared to other major European economies. Research is present but less widespread."
+      "rationale": "Growing interest and academic research, but slower industry adoption and limited frontier R&D compared to other major European economies."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "Barcelona Supercomputing Center (BSC)",
         "Universitat Polit\u00e8cnica de Catalunya (UPC)",
-        "CSIC"
+        "Google AI Barcelona"
       ],
-      "rationale": "Spain has growing government and academic interest in AI, particularly in major cities like Barcelona and Madrid. However, industrial application and advanced ML roles are less widespread than in leading tech nations."
+      "rationale": "Developing tech ecosystem with some academic centers, but advanced ML R&D is still emerging and focused on specific applications."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "skill_level": 1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "MIMOS",
-        "Universiti Malaya",
-        "Multimedia University"
+        "MyDIGITAL blueprint",
+        "Local universities",
+        "MDEC"
       ],
-      "rationale": "Malaysia is an emerging tech market with government initiatives to promote AI. However, it has a limited advanced talent pool and R&D infrastructure for frontier ML, primarily focusing on applied solutions."
+      "rationale": "Emerging market with a focus on basic adoption and talent development, limited advanced R&D and frontier innovation."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "skill_level": 1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "VinAI Research",
+        "VinAI Research (Vingroup)",
         "FPT AI",
-        "Vietnam National University"
+        "Local universities"
       ],
-      "rationale": "Vietnam has a rapidly growing tech sector and strong government push for AI. While promising, it is still in the early stages for advanced ML, with a focus on applied solutions and emerging research capabilities."
+      "rationale": "Rapidly growing tech sector, but primarily focused on applied development and talent building, not frontier research."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "skill_level": 1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
         "AI Thailand",
-        "National Science and Technology Development Agency (NSTDA)",
-        "Chulalongkorn University"
+        "NSTDA",
+        "Local universities"
       ],
-      "rationale": "Thailand is an emerging tech market with government initiatives to foster AI. However, it has a limited advanced talent pool and R&D infrastructure for frontier ML, primarily focusing on applied solutions."
+      "rationale": "Developing tech ecosystem with government initiatives, but advanced ML R&D is nascent and focused on basic adoption."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "skill_level": 1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "AI Center Indonesia",
-        "University of Indonesia",
-        "Gojek/Tokopedia AI teams"
+        "Gojek (AI teams)",
+        "Tokopedia (AI teams)",
+        "Local universities"
       ],
-      "rationale": "Indonesia has a large domestic market and a growing digital economy. Advanced ML R&D is nascent, with a focus on applying existing models to local challenges and a developing academic base."
+      "rationale": "Large consumer tech market driving applied ML, but limited advanced R&D and frontier innovation."
     },
     {
       "country_iso": "AE",
@@ -420,52 +431,51 @@
       "evidence": [
         "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
         "G42",
-        "Dubai Future Foundation"
+        "UAE AI Strategy"
       ],
-      "rationale": "The UAE has significant government investment in AI strategy and a dedicated AI university (MBZUAI). While ambitious, it heavily relies on expatriate talent, and the local advanced R&D ecosystem is still developing, with a focus on applied AI."
+      "rationale": "Significant government investment and efforts to attract talent, but still in early stages of building genuine frontier R&D capabilities."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.08,
-      "confidence": "medium",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "low",
       "evidence": [
-        "Saudi Data & AI Authority (SDAIA)",
-        "King Abdullah University of Science and Technology (KAUST)",
-        "NEOM"
+        "NEOM",
+        "SDAIA (Saudi Data & AI Authority)",
+        "KAUST"
       ],
-      "rationale": "Saudi Arabia has ambitious plans (Vision 2030) and significant investment in AI. However, it is in the very early stages for local advanced ML R&D, with a developing talent pool and a focus on strategic applications."
+      "rationale": "Massive government investment in AI, but still building foundational capabilities and relying on international partnerships for advanced work."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
         "University of S\u00e3o Paulo (USP)",
-        "State University of Campinas (Unicamp)",
-        "Ita\u00fa Unibanco AI Lab"
+        "University of Campinas (Unicamp)",
+        "National AI strategy"
       ],
-      "rationale": "Brazil, the largest economy in Latin America, has a growing tech sector and good academic research. However, advanced ML R&D is less developed compared to global leaders, with a focus on applied ML in finance, agriculture, and retail."
+      "rationale": "Growing tech sector and academic interest, but limited advanced R&D and a focus on applied solutions for local market needs."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.2,
-      "confidence": "medium",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "IDEAS NCBR",
+        "Polish Academy of Sciences",
         "Warsaw University of Technology",
-        "Jagiellonian University",
-        "Google Poland"
+        "Google AI (small presence)"
       ],
-      "rationale": "Poland is a growing tech hub in Central Europe with a good academic base. It shows strong capabilities in applied ML and MLOps, often serving as a tech talent pool for Western European companies, with emerging frontier research."
+      "rationale": "Emerging tech hub with a strong talent pool for applied ML, but limited deep research and frontier innovation compared to Western Europe."
     }
   ]
 }

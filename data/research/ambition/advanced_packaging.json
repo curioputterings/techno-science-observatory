@@ -9,12 +9,12 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "CHIPS and Science Act (2022)",
+        "CHIPS and Science Act",
         "National Advanced Packaging Manufacturing Program (NAPMP)",
-        "National Semiconductor Technology Center (NSTC) initiatives",
-        "DoD SHIP program"
+        "National Semiconductor Technology Center (NSTC)",
+        "DoD State-of-the-Art Heterogeneous Integration Prototype (SHIP) program"
       ],
-      "rationale": "The CHIPS Act explicitly allocates significant funding for advanced packaging R&D and domestic manufacturing, establishing programs like NAPMP and integrating packaging into the NSTC's mission to achieve global leadership."
+      "rationale": "The US has made advanced packaging a cornerstone of its domestic semiconductor strategy, with significant funding and programs aimed at re-establishing leadership in manufacturing and R&D."
     },
     {
       "country_iso": "CN",
@@ -24,11 +24,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "National IC Industry Investment Fund (Big Fund) investments",
-        "14th Five-Year Plan (indirect support for semiconductor self-sufficiency)",
-        "Various provincial and national R&D programs for heterogeneous integration"
+        "14th Five-Year Plan for Semiconductor Industry",
+        "National Integrated Circuit Industry Investment Fund (Big Fund)",
+        "Various provincial government subsidies and R&D programs"
       ],
-      "rationale": "Advanced packaging is a critical area for China to circumvent technology restrictions and achieve semiconductor self-sufficiency, with substantial state-backed investments and strategic focus on heterogeneous integration."
+      "rationale": "China is heavily investing in advanced packaging to achieve semiconductor self-sufficiency, with substantial state-backed funding and strategic plans to overcome technology restrictions."
     },
     {
       "country_iso": "JP",
@@ -38,11 +38,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Rapidus Corporation (collaboration with IBM, Imec)",
         "Ministry of Economy, Trade and Industry (METI) semiconductor strategy",
-        "JASM (TSMC fab) in Kumamoto (includes packaging capabilities)"
+        "Rapidus Corporation (collaboration with IBM, IMEC)",
+        "JASM (TSMC joint venture) includes packaging capabilities"
       ],
-      "rationale": "Japan is making a concerted effort to re-establish its position in leading-edge semiconductors, with Rapidus specifically targeting advanced manufacturing, including packaging, and government support for the ecosystem."
+      "rationale": "Japan has a renewed focus on semiconductor manufacturing, with significant government support for advanced packaging R&D and production, often through international collaborations like Rapidus."
     },
     {
       "country_iso": "KR",
@@ -52,11 +52,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "K-Semiconductor Strategy (2021)",
-        "Government R&D funding for next-generation packaging technologies",
-        "Samsung Electronics' advanced packaging roadmaps (I-Cube, X-Cube)"
+        "K-Semiconductor Strategy",
+        "National Semiconductor R&D Roadmap",
+        "Samsung and SK Hynix investments in advanced packaging"
       ],
-      "rationale": "South Korea, with its leading memory and foundry players, has a national strategy to maintain and extend its leadership in advanced semiconductors, explicitly prioritizing next-generation packaging R&D and manufacturing."
+      "rationale": "South Korea, a global leader in memory and foundry, is aggressively pursuing advanced packaging technologies to maintain its competitive edge, backed by strong government and industry investment."
     },
     {
       "country_iso": "TW",
@@ -66,39 +66,39 @@
       "horizon": "short",
       "confidence": "high",
       "evidence": [
-        "TSMC's continuous investment in CoWoS, InFO, and other advanced packaging technologies",
-        "National Science and Technology Council (NSTC) support for semiconductor industry",
-        "Government incentives for R&D and manufacturing"
+        "Taiwan's '5+2 Industrial Innovation Plan' (broader context)",
+        "TSMC's continuous R&D and investment in CoWoS, InFO, SoIC",
+        "Industrial Technology Research Institute (ITRI) programs"
       ],
-      "rationale": "Taiwan is a global leader in advanced packaging, driven by TSMC's continuous innovation and substantial government support to maintain its competitive edge in the semiconductor ecosystem."
+      "rationale": "As the global leader in advanced semiconductor manufacturing, Taiwan, through TSMC and government support, continuously pushes the frontier of advanced packaging technologies."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "EU Chips Act (national implementation)",
+        "IPCEI Microelectronics and Communication Technologies",
+        "Fraunhofer Institutes (e.g., IZM) R&D programs"
+      ],
+      "rationale": "Germany, as part of the EU Chips Act, is investing in semiconductor manufacturing and R&D, with a focus on advanced packaging for its strong automotive and industrial sectors, leveraging its research institutes."
+    },
+    {
+      "country_iso": "NL",
+      "country_name": "Netherlands",
       "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "EU Chips Act (national implementation)",
-        "Fraunhofer Institutes (e.g., IZM) R&D programs",
-        "Intel's Magdeburg fab (potential for future packaging integration)"
+        "National Growth Fund (e.g., PhotonDelta)",
+        "Brainport Eindhoven ecosystem support"
       ],
-      "rationale": "Germany participates in the EU Chips Act and has strong research capabilities in advanced packaging through institutions like Fraunhofer, aiming to strengthen its position in the European semiconductor value chain, though less focused on frontier logic packaging manufacturing."
-    },
-    {
-      "country_iso": "NL",
-      "country_name": "Netherlands",
-      "ambition": 2,
-      "target_level": 3,
-      "horizon": "medium",
-      "confidence": "medium",
-      "evidence": [
-        "EU Chips Act (national implementation)",
-        "ASML's role in lithography for advanced packaging",
-        "Collaboration with Imec (Belgium) on R&D"
-      ],
-      "rationale": "While a critical player in the semiconductor equipment ecosystem, the Netherlands' national ambition is more focused on equipment and R&D collaboration (e.g., with Imec) rather than direct advanced packaging manufacturing leadership."
+      "rationale": "The Netherlands has a strong semiconductor equipment and R&D ecosystem. While not focused on large-scale packaging fabs, it supports advanced packaging through its contributions to equipment, materials, and R&D, aligned with the EU Chips Act."
     },
     {
       "country_iso": "GB",
@@ -108,24 +108,24 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "UK Semiconductor Strategy (2023) (mentions packaging R&D)",
+        "UK Semiconductor Strategy (2023)",
         "Compound Semiconductor Applications Catapult"
       ],
-      "rationale": "The UK's semiconductor strategy acknowledges packaging, particularly in compound semiconductors, but lacks specific, large-scale funding or programs for advanced logic packaging manufacturing, focusing more on niche R&D."
+      "rationale": "The UK Semiconductor Strategy focuses more on design, IP, and compound semiconductors. While there's some R&D in advanced packaging, a large-scale manufacturing ambition is not a primary stated goal."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "ambition": 2,
+      "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "EU Chips Act (national implementation)",
-        "CEA-Leti's R&D in 3D integration and advanced packaging",
-        "STMicroelectronics' operations"
+        "France 2030 plan (semiconductor component production)",
+        "CEA-Leti's advanced packaging research"
       ],
-      "rationale": "France, through CEA-Leti, has strong R&D in advanced packaging, and participates in the EU Chips Act, but its national strategy does not indicate a flagship priority for advanced logic packaging manufacturing leadership."
+      "rationale": "France, through the EU Chips Act and its national France 2030 plan, aims to strengthen its semiconductor ecosystem, including R&D in advanced packaging, particularly through institutions like CEA-Leti."
     },
     {
       "country_iso": "IL",
@@ -135,23 +135,24 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Focus on chip design and IP development",
-        "Intel's presence (primarily design and fab, less on advanced packaging manufacturing as a national priority)"
+        "General support for high-tech industry",
+        "Intel's presence in Israel (design and manufacturing, but not specific national advanced packaging strategy)"
       ],
-      "rationale": "Israel excels in chip design and IP, but there is no stated national strategy or significant public investment specifically targeting advanced packaging manufacturing capabilities."
+      "rationale": "Israel excels in chip design and R&D, but there is no explicit national strategy or significant public commitment to establish advanced packaging manufacturing facilities domestically."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "ambition": 3,
-      "target_level": 2,
+      "ambition": 4,
+      "target_level": 3,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "India Semiconductor Mission (ISM) incentives for ATMP units",
-        "Micron Technology's announced ATMP plant in Gujarat"
+        "India Semiconductor Mission (ISM)",
+        "Production Linked Incentive (PLI) scheme for semiconductors",
+        "Micron's ATMP (Assembly, Test, Marking, and Packaging) plant announcement"
       ],
-      "rationale": "India has a strong stated ambition to establish a domestic semiconductor ecosystem, with significant incentives under the ISM specifically for Assembly, Testing, Marking, and Packaging (ATMP) units, attracting major investments like Micron's."
+      "rationale": "India has a strong national ambition to establish a domestic semiconductor manufacturing ecosystem, including advanced packaging, backed by significant financial incentives and attracting major FDI like Micron's ATMP plant."
     },
     {
       "country_iso": "SG",
@@ -159,13 +160,13 @@
       "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
-        "Economic Development Board (EDB) initiatives to attract high-value semiconductor manufacturing",
-        "Presence of major players with packaging operations (e.g., GlobalFoundries, Micron, STMicroelectronics)",
-        "A*STAR research institutes in advanced packaging"
+        "Economic Development Board (EDB) focus on advanced manufacturing",
+        "A*STAR research institutes (e.g., IME) in advanced packaging",
+        "Investments by global semiconductor companies (e.g., GlobalFoundries, Micron)"
       ],
-      "rationale": "Singapore aims to be a hub for high-value semiconductor manufacturing, including advanced packaging, supported by government initiatives and existing industry presence, focusing on specialized and high-end assembly."
+      "rationale": "Singapore, an established high-tech manufacturing hub, supports advanced packaging through R&D and by attracting foreign investment, aiming to maintain its role in the global semiconductor supply chain."
     },
     {
       "country_iso": "CH",
@@ -175,10 +176,9 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Academic research at institutions like EPFL and ETH Zurich",
-        "No specific national advanced packaging strategy or dedicated funding"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Switzerland has strong academic research capabilities but no stated national ambition or dedicated programs for developing advanced packaging manufacturing as a strategic priority."
+      "rationale": "Switzerland has a strong high-tech sector and niche R&D, but no stated national ambition or significant public programs focused on large-scale advanced packaging manufacturing."
     },
     {
       "country_iso": "SE",
@@ -188,9 +188,9 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "No specific national advanced packaging strategy or dedicated funding"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Sweden's focus in semiconductors is primarily on design and specific applications, with no stated national ambition or significant public investment in advanced packaging manufacturing."
+      "rationale": "Sweden has a strong innovation ecosystem but lacks a stated national ambition or dedicated programs for advanced packaging manufacturing."
     },
     {
       "country_iso": "FI",
@@ -200,23 +200,22 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "No specific national advanced packaging strategy or dedicated funding"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Finland has not articulated a national strategy or dedicated significant resources towards developing advanced packaging manufacturing capabilities."
+      "rationale": "Finland has a strong digital and high-tech sector but no explicit national strategy or significant public commitment to advanced packaging manufacturing."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "ambition": 1,
       "target_level": 2,
-      "horizon": "long",
+      "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "Canada's National Quantum Strategy (indirect relevance)",
-        "CMC Microsystems support for R&D",
-        "No dedicated national advanced packaging manufacturing strategy"
+        "National Quantum Strategy (indirectly related to advanced materials/packaging)",
+        "Some provincial initiatives for semiconductor ecosystem development"
       ],
-      "rationale": "Canada supports some semiconductor R&D, but there is no specific national strategy or significant public funding aimed at establishing advanced packaging manufacturing capabilities."
+      "rationale": "Canada supports semiconductor R&D and design, but there is no prominent national strategy or significant funding specifically for advanced packaging manufacturing at scale."
     },
     {
       "country_iso": "AU",
@@ -226,64 +225,61 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "National Quantum Strategy (focus on quantum technologies)",
-        "No specific national advanced packaging strategy"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Australia's semiconductor focus is on niche areas like quantum technologies, with no stated national ambition or dedicated programs for advanced packaging manufacturing."
+      "rationale": "Australia has emerging interests in critical minerals and niche photonics/quantum technologies, but no stated national ambition or dedicated programs for advanced packaging manufacturing."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "ambition": 0,
-      "target_level": 1,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [
-        "IDA Ireland's general FDI attraction (Intel fab primarily wafer manufacturing)",
-        "No specific national advanced packaging strategy"
-      ],
-      "rationale": "While Ireland attracts significant FDI in semiconductors, its national strategy does not specifically prioritize or fund advanced packaging manufacturing capabilities."
-    },
-    {
-      "country_iso": "BE",
-      "country_name": "Belgium",
-      "ambition": 1,
-      "target_level": 4,
-      "horizon": "medium",
-      "confidence": "medium",
-      "evidence": [
-        "Imec's world-leading R&D in advanced packaging",
-        "EU Chips Act (national implementation)",
-        "No specific national manufacturing strategy beyond R&D support"
-      ],
-      "rationale": "Belgium hosts Imec, a global leader in advanced packaging R&D, but its national ambition is primarily focused on research and development rather than establishing large-scale advanced packaging manufacturing facilities."
-    },
-    {
-      "country_iso": "AT",
-      "country_name": "Austria",
-      "ambition": 0,
-      "target_level": 1,
-      "horizon": "long",
-      "confidence": "low",
-      "evidence": [
-        "Infineon's presence (primarily power semiconductors)",
-        "No specific national advanced packaging strategy"
-      ],
-      "rationale": "Austria has a presence in specific semiconductor segments, but no stated national ambition or dedicated programs for advanced packaging manufacturing."
-    },
-    {
-      "country_iso": "IT",
-      "country_name": "Italy",
       "ambition": 1,
       "target_level": 2,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "EU Chips Act (national implementation)",
-        "STMicroelectronics' operations",
-        "No major national advanced packaging initiative"
+        "IDA Ireland's general tech investment strategy",
+        "Intel's significant manufacturing presence (not a specific national advanced packaging strategy)"
       ],
-      "rationale": "Italy participates in the EU Chips Act and has some semiconductor presence, but lacks a distinct national strategy or significant dedicated funding for advanced packaging manufacturing."
+      "rationale": "Ireland attracts significant FDI in tech, including Intel's fab, but its national strategy focuses on general investment attraction and R&D rather than a specific advanced packaging manufacturing push."
+    },
+    {
+      "country_iso": "BE",
+      "country_name": "Belgium",
+      "ambition": 4,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "IMEC's advanced packaging research programs",
+        "Flemish government support for IMEC"
+      ],
+      "rationale": "Belgium, through IMEC, is a world-leading R&D hub for advanced semiconductor technologies, including cutting-edge advanced packaging, with strong governmental and European support for its research agenda."
+    },
+    {
+      "country_iso": "AT",
+      "country_name": "Austria",
+      "ambition": 1,
+      "target_level": 2,
+      "horizon": "medium",
+      "confidence": "low",
+      "evidence": [
+        "Austrian Microelectronics Cluster (broader focus)",
+        "Some university and industry R&D in power electronics packaging"
+      ],
+      "rationale": "Austria has strengths in power electronics and sensors, with some related R&D in packaging, but no broad national strategy or significant public commitment to advanced packaging manufacturing."
+    },
+    {
+      "country_iso": "IT",
+      "country_name": "Italy",
+      "ambition": 2,
+      "target_level": 3,
+      "horizon": "medium",
+      "confidence": "medium",
+      "evidence": [
+        "EU Chips Act (national implementation)",
+        "STMicroelectronics investments and presence"
+      ],
+      "rationale": "Italy, as part of the EU Chips Act, aims to strengthen its semiconductor capabilities. While STMicroelectronics has a significant presence, a dedicated, large-scale national advanced packaging manufacturing ambition is still developing."
     },
     {
       "country_iso": "ES",
@@ -294,10 +290,9 @@
       "confidence": "low",
       "evidence": [
         "EU Chips Act (national implementation)",
-        "PERTE Chip program (focus on design and R&D)",
-        "No major national advanced packaging manufacturing initiative"
+        "PERTE Chip program (focus on design, R&D, and some manufacturing)"
       ],
-      "rationale": "Spain's PERTE Chip program focuses on design and R&D within the EU Chips Act framework, but there is no strong stated national ambition for advanced packaging manufacturing."
+      "rationale": "Spain's PERTE Chip program, aligned with the EU Chips Act, focuses on strengthening its semiconductor ecosystem, including R&D, but a strong national ambition for advanced packaging manufacturing is not yet prominent."
     },
     {
       "country_iso": "MY",
@@ -307,25 +302,24 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "National Semiconductor Strategic Plan (NSSP)",
-        "Government incentives to attract high-value semiconductor investments",
-        "Existing strong OSAT industry (e.g., Intel, Amkor, ASE) aiming to move up the value chain"
+        "National Investment Aspiration (NIA)",
+        "Malaysia Digital Economy Blueprint (MyDIGITAL)",
+        "Investments by OSAT companies (e.g., Intel, AMD, ASE, Amkor) in advanced packaging"
       ],
-      "rationale": "Malaysia, with its established OSAT industry, has a clear national strategy (NSSP) and incentives to attract and develop more advanced packaging capabilities, aiming to move up the semiconductor value chain."
+      "rationale": "Malaysia is a long-standing OSAT hub and has a clear national ambition to move up the value chain into more advanced packaging technologies, supported by government policies and significant industry investments."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "ambition": 1,
+      "ambition": 2,
       "target_level": 2,
       "horizon": "long",
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
-        "US-Vietnam Comprehensive Strategic Partnership (mentions semiconductors)",
-        "Intel's existing assembly and test plant",
-        "No specific national advanced packaging R&D or manufacturing strategy"
+        "Government efforts to attract high-tech investment",
+        "Amkor's new advanced packaging plant announcement"
       ],
-      "rationale": "Vietnam is attracting some semiconductor investment, primarily in assembly and test, but lacks a specific national strategy or significant public funding for advanced packaging R&D or manufacturing."
+      "rationale": "Vietnam is an emerging player, actively attracting high-tech FDI. The establishment of Amkor's advanced packaging plant signals a growing ambition, though it's still in early stages of ecosystem development."
     },
     {
       "country_iso": "TH",
@@ -335,10 +329,10 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Government incentives for high-tech investment (broader electronics focus)",
-        "No specific national advanced packaging strategy"
+        "Board of Investment (BOI) incentives for electronics industry (general)",
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Thailand aims to attract high-tech investment, including in electronics assembly, but has no specific national strategy or dedicated programs for advanced packaging manufacturing."
+      "rationale": "Thailand has an existing electronics manufacturing base, but there is no explicit national strategy or significant public commitment specifically targeting advanced packaging manufacturing beyond general FDI attraction."
     },
     {
       "country_iso": "ID",
@@ -348,9 +342,9 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "No specific national advanced packaging strategy or dedicated funding"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Indonesia is in the early stages of developing its broader electronics industry, with no stated national ambition or dedicated programs for advanced packaging."
+      "rationale": "Indonesia is focusing on digital economy development, but there is no stated national ambition or dedicated programs for advanced packaging manufacturing."
     },
     {
       "country_iso": "AE",
@@ -360,10 +354,9 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Broader technology investment funds",
-        "No specific national advanced packaging strategy"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "The UAE is investing in technology and diversification, but there is no stated national ambition or dedicated strategy for advanced packaging manufacturing."
+      "rationale": "The UAE is diversifying its economy into technology, but there is no explicit national strategy or significant public commitment to advanced packaging manufacturing."
     },
     {
       "country_iso": "SA",
@@ -373,10 +366,9 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Vision 2030 (broader tech and industrial diversification)",
-        "No specific national advanced packaging strategy"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Saudi Arabia's Vision 2030 includes broad technology and industrial goals, but there is no specific national ambition or dedicated strategy for advanced packaging manufacturing."
+      "rationale": "Saudi Arabia's Vision 2030 includes tech diversification, but there is no explicit national strategy or significant public commitment to advanced packaging manufacturing."
     },
     {
       "country_iso": "BR",
@@ -386,9 +378,9 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "No specific national advanced packaging strategy or dedicated funding"
+        "No specific national advanced packaging strategy identified"
       ],
-      "rationale": "Brazil has some domestic electronics manufacturing, but no stated national ambition or dedicated programs for advanced packaging."
+      "rationale": "Brazil has some domestic electronics assembly, but no significant stated national ambition or dedicated programs for advanced packaging manufacturing."
     },
     {
       "country_iso": "PL",
@@ -398,10 +390,10 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Intel's announced new assembly and test facility in Wroc\u0142aw (includes advanced packaging capabilities)",
-        "EU Chips Act (national implementation)"
+        "EU Chips Act (national implementation)",
+        "Intel's new Assembly and Test Facility announcement"
       ],
-      "rationale": "Poland has gained significant attention with Intel's announcement of a new assembly and test facility, which will include advanced packaging, indicating a growing national ambition within the EU Chips Act framework."
+      "rationale": "Poland, as part of the EU Chips Act, is attracting semiconductor investments. Intel's new assembly and test facility indicates a growing ambition in packaging, though it's primarily an FDI-driven initiative."
     }
   ]
 }
