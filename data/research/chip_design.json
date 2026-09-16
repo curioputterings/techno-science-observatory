@@ -9,19 +9,22 @@
       "frontier": 0.95,
       "confidence": "high",
       "evidence": [
-        "NVIDIA (GPUs, AI accelerators)",
-        "Qualcomm (mobile SoCs, modems)",
-        "Intel (CPUs, FPGAs, AI)",
-        "Broadcom (networking, broadband)",
-        "AMD (CPUs, GPUs)",
-        "Apple (in-house SoCs)",
-        "Google (TPUs)",
+        "Intel",
+        "NVIDIA",
+        "AMD",
+        "Qualcomm",
+        "Apple (custom silicon)",
+        "Broadcom",
+        "Cadence",
+        "Synopsys",
+        "Google (Tensor)",
         "Amazon (Graviton)",
-        "Synopsys, Cadence (EDA tools)",
-        "Stanford University, UC Berkeley, MIT (research)",
-        "DARPA (advanced research funding)"
+        "Stanford University",
+        "UC Berkeley",
+        "MIT",
+        "DARPA"
       ],
-      "rationale": "The US is a global leader in Chip & IC Design, hosting numerous major fabless companies, IDMs, and EDA vendors. It drives innovation across CPUs, GPUs, AI accelerators, networking, and advanced process technologies, with strong university research and government funding for frontier R&D."
+      "rationale": "The global leader in advanced chip design, encompassing all segments from CPUs and GPUs to AI accelerators and custom ASICs, supported by major tech giants, leading EDA companies, top-tier universities, and significant government R&D funding."
     },
     {
       "country_iso": "CN",
@@ -31,31 +34,35 @@
       "frontier": 0.75,
       "confidence": "high",
       "evidence": [
-        "Huawei HiSilicon (Kirin, Ascend)",
-        "SMIC (foundry, design enablement)",
-        "Alibaba T-Head (Yitian, Hanguang)",
-        "Loongson (CPUs)",
-        "Tsinghua University, Chinese Academy of Sciences (research)",
-        "National IC Industry Investment Fund"
+        "Huawei (HiSilicon)",
+        "SMIC (design arm)",
+        "Alibaba (T-Head)",
+        "Tencent",
+        "Baidu",
+        "Numerous domestic fabless startups",
+        "Tsinghua University",
+        "Chinese Academy of Sciences",
+        "National semiconductor funds"
       ],
-      "rationale": "China has made massive strategic investments in its semiconductor industry, fostering a rapidly growing ecosystem of domestic design houses focused on mobile, AI, and general-purpose computing. While still catching up in some areas, significant frontier work is emerging, especially in AI chips and RISC-V architectures."
+      "rationale": "Under aggressive national strategy, China has seen massive investment and rapid growth in chip design, particularly in AI, HPC, and specialized ASICs, with a strong push for domestic self-sufficiency, though still catching up in some advanced areas."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.45,
-      "confidence": "medium",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.65,
+      "confidence": "high",
       "evidence": [
-        "Renesas Electronics (automotive, industrial MCUs)",
-        "Sony (image sensors, game console SoCs)",
-        "Toshiba (power devices, storage controllers)",
-        "Fujitsu (supercomputer CPUs, ASICs)",
-        "Tokyo Electron (equipment, design implications)",
-        "University of Tokyo, Tokyo Institute of Technology (research)"
+        "Sony (image sensors)",
+        "Renesas (automotive MCUs)",
+        "Kioxia (memory controllers)",
+        "Toshiba",
+        "Panasonic",
+        "University of Tokyo",
+        "AIST"
       ],
-      "rationale": "Japan has a strong legacy in semiconductors, particularly in automotive, industrial, and specialized sensors. While less dominant in general-purpose CPUs/GPUs, it maintains high skill levels and some frontier work in specific niches, often tied to its strong materials and equipment industries."
+      "rationale": "Historically a semiconductor powerhouse, Japan maintains strong design capabilities in niche but critical areas such as image sensors, automotive microcontrollers, and specialized industrial ICs, supported by key domestic players and research."
     },
     {
       "country_iso": "KR",
@@ -65,321 +72,368 @@
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Samsung Electronics (System LSI, Foundry, memory design)",
-        "SK Hynix (memory design)",
-        "KAIST, Seoul National University (research)",
-        "Government initiatives for AI semiconductors"
+        "Samsung Electronics (memory, Exynos SoCs, foundry design services)",
+        "SK Hynix (memory)",
+        "LG",
+        "K-Semiconductor Strategy",
+        "KAIST",
+        "Seoul National University"
       ],
-      "rationale": "South Korea is a powerhouse in memory and mobile SoC design, driven by Samsung and SK Hynix. Samsung's System LSI division and Foundry business are at the forefront of advanced node design and manufacturing, with significant R&D in next-gen memory and mobile platforms."
+      "rationale": "A global leader in memory and display driver ICs, with Samsung aggressively expanding into advanced logic foundry and mobile SoC design, backed by substantial national investment and world-class research institutions."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.85,
       "confidence": "high",
       "evidence": [
-        "TSMC (foundry, design enablement, advanced packaging)",
-        "MediaTek (mobile SoCs, connectivity)",
-        "Realtek (networking, multimedia)",
-        "Novatek (display drivers)",
-        "UMC (foundry)",
-        "National Taiwan University, ITRI (research)"
+        "MediaTek",
+        "Realtek",
+        "Novatek",
+        "Nuvoton",
+        "TSMC (design enablement, IP ecosystem)",
+        "UMC",
+        "ITRI",
+        "National Chiao Tung University (NCTU)"
       ],
-      "rationale": "Taiwan is a global leader in both foundry services (TSMC) and fabless design (MediaTek). Its ecosystem is critical for advanced chip production, driving innovation in process technology, SoC integration, and specialized IP, with very high skill levels and significant frontier influence."
+      "rationale": "A global hub for fabless IC design, benefiting immensely from the world's leading foundries (TSMC). Strong in mobile, networking, display, and consumer electronics chips, with a vibrant ecosystem of design houses."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.35,
-      "confidence": "medium",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
       "evidence": [
-        "Infineon Technologies (automotive, power semiconductors)",
+        "Infineon Technologies",
         "Bosch (automotive ICs)",
-        "Intel (design centers, e.g., for automotive)",
-        "Fraunhofer Institutes (applied research)",
-        "Technical Universities (e.g., TU Munich, RWTH Aachen)"
+        "NXP (R&D centers)",
+        "Fraunhofer Institutes (IIS, IPMS)",
+        "Technical University of Dresden",
+        "Silicon Saxony cluster"
       ],
-      "rationale": "Germany excels in automotive and industrial electronics, with strong players like Infineon and Bosch. While not a broad general-purpose chip design hub, it possesses high skill in embedded systems, power management, and specialized automotive ICs, with some niche frontier R&D."
+      "rationale": "Germany excels in specialized IC design, particularly for the automotive, industrial, and power electronics sectors, with a focus on high precision, reliability, and safety-critical applications, supported by strong research institutions."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "medium",
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
-        "NXP Semiconductors (automotive, secure connectivity)",
-        "ASML (lithography, influencing chip design)",
-        "TU Delft, Eindhoven University of Technology (research)"
+        "NXP Semiconductors (headquarters, R&D)",
+        "ASML (chip design for lithography systems)",
+        "TU Delft",
+        "Eindhoven University of Technology",
+        "Holst Centre"
       ],
-      "rationale": "The Netherlands has a highly specialized and skilled chip design sector, particularly in mixed-signal, RF, and automotive ICs (NXP). ASML, though an equipment manufacturer, plays a crucial role in pushing the boundaries of chip technology, indirectly fostering frontier design capabilities."
+      "rationale": "Despite its size, the Netherlands has a highly advanced and specialized chip design sector, particularly in mixed-signal, RF, and secure microcontrollers, heavily influenced by NXP and the ASML ecosystem."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.65,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "ARM Holdings (CPU/GPU IP design)",
+        "Arm Holdings (CPU/GPU IP)",
         "Imagination Technologies (GPU IP)",
         "Graphcore (AI accelerators)",
-        "University of Cambridge, University of Manchester (research)"
+        "Raspberry Pi Foundation (custom SoC)",
+        "University of Cambridge",
+        "University of Manchester"
       ],
-      "rationale": "The UK is a global leader in semiconductor IP design, most notably with ARM, whose architectures power billions of devices. It also has strong capabilities in GPU IP and emerging AI accelerator design, supported by world-class university research and a vibrant startup scene."
+      "rationale": "The UK is a global leader in semiconductor IP design, particularly with Arm's dominance in mobile processors. It also has a vibrant ecosystem for AI accelerators and embedded systems design."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.35,
-      "confidence": "medium",
+      "frontier": 0.55,
+      "confidence": "high",
       "evidence": [
-        "STMicroelectronics (IDM, design centers)",
-        "CEA-Leti (microelectronics research institute)",
-        "Grenoble Alpes University (research)"
+        "STMicroelectronics (co-headquarters, R&D)",
+        "CEA-Leti (microelectronics research)",
+        "Soitec (substrate technology)",
+        "Thales (secure ICs)",
+        "Grenoble Alpes University"
       ],
-      "rationale": "France has significant expertise in embedded systems, secure microcontrollers, and RF design, largely centered around STMicroelectronics and the world-renowned CEA-Leti research institute. It contributes to frontier research in specific application areas, though the overall job volume is moderate."
+      "rationale": "France has a strong foundation in microelectronics research and design, particularly in secure ICs (smart cards), automotive, and embedded systems, driven by STMicroelectronics and leading research institutes like CEA-Leti."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "low",
-      "skill_level": 5,
-      "frontier": 0.75,
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Intel (design centers, Mobileye)",
-        "NVIDIA (Mellanox acquisition, networking/AI chips)",
-        "CEVA (DSP IP)",
-        "Technion, Weizmann Institute of Science (research)"
+        "Intel (development centers for CPUs, AI, Mobileye)",
+        "NVIDIA (Mellanox, AI)",
+        "Qualcomm",
+        "Apple (R&D)",
+        "CEVA",
+        "Numerous fabless startups",
+        "Technion",
+        "Tel Aviv University"
       ],
-      "rationale": "Israel is a hub for high-tech innovation, with a strong focus on specialized chip design, particularly in networking, AI, and security. Major global players have significant R&D centers, and the country fosters a vibrant startup ecosystem, contributing to frontier advancements."
+      "rationale": "Israel is a hotbed for chip design innovation, with a high concentration of R&D centers for major global tech companies and a thriving startup ecosystem focused on AI, networking, and specialized processors."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.45,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "Design centers for Intel, Qualcomm, Broadcom, NVIDIA, AMD, Texas Instruments, STMicroelectronics",
-        "Wipro, TCS (design services)",
-        "Indian Institutes of Technology (IITs) (research and talent pool)"
+        "Intel",
+        "Qualcomm",
+        "NVIDIA",
+        "Broadcom",
+        "Texas Instruments",
+        "Cadence",
+        "Synopsys (large R&D centers)",
+        "Wipro",
+        "TCS",
+        "HCL (design services)",
+        "IITs",
+        "IISc"
       ],
-      "rationale": "India is a major global hub for semiconductor design services and R&D centers for multinational corporations. It boasts a large pool of skilled engineers primarily in verification, physical design, and IP integration. While much work supports global teams, there's a growing push for domestic IP and some frontier research."
+      "rationale": "India is a major global hub for semiconductor design services and hosts large R&D centers for almost all major international chip companies, covering various stages of the design flow. Domestic product design is growing."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.55,
-      "confidence": "medium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.45,
+      "confidence": "high",
       "evidence": [
-        "Broadcom, MediaTek, Micron (design centers)",
-        "GlobalFoundries (fab, design support)",
-        "A*STAR (research institutes)",
-        "National University of Singapore (research)"
+        "Broadcom (R&D)",
+        "Micron (R&D)",
+        "GlobalFoundries (design enablement)",
+        "STMicroelectronics (R&D)",
+        "A*STAR (IMRE, IME)",
+        "Nanyang Technological University (NTU)",
+        "National University of Singapore (NUS)"
       ],
-      "rationale": "Singapore has a focused and high-skill chip design sector, particularly in mixed-signal, RF, and SoC integration, supported by multinational design centers and strong government-backed research (A*STAR). It contributes to frontier work in specific areas, often in collaboration with global partners."
+      "rationale": "Singapore is a strategic location for semiconductor manufacturing and has attracted significant R&D investment from global companies, focusing on design enablement, specialized ICs, and advanced packaging."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
       "skill_level": 4,
-      "frontier": 0.45,
+      "frontier": 0.6,
       "confidence": "medium",
       "evidence": [
-        "CSEM (applied research in microelectronics)",
-        "STMicroelectronics (design centers)",
-        "ETH Zurich, EPFL (world-class research in microelectronics, quantum computing hardware)"
+        "ams-OSRAM (sensors, analog)",
+        "CSEM (research institute)",
+        "EM Microelectronic",
+        "STMicroelectronics (R&D)",
+        "ETH Zurich",
+        "EPFL"
       ],
-      "rationale": "Switzerland has a highly specialized chip design ecosystem, focusing on ultra-low power, sensors, and medical devices. Its world-renowned universities (ETH Zurich, EPFL) conduct frontier research in advanced computing architectures and quantum hardware, contributing to high skill levels despite a smaller volume."
+      "rationale": "Switzerland has a highly specialized and advanced chip design sector, particularly strong in analog, mixed-signal, sensors, and ultra-low-power ICs, driven by strong research institutions and niche companies."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "low",
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Ericsson (in-house design for telecom ICs)",
-        "KTH Royal Institute of Technology, Lund University (research)"
+        "Ericsson (baseband, RF ICs)",
+        "STMicroelectronics (R&D)",
+        "KTH Royal Institute of Technology",
+        "Lund University"
       ],
-      "rationale": "Sweden's chip design activity is primarily concentrated around Ericsson for telecom-specific ICs and some smaller startups. It possesses high skill in wireless communication ICs, but the overall volume for advanced general-purpose chip design roles is limited."
+      "rationale": "Sweden has design capabilities primarily linked to its strong telecom industry (Ericsson) and some specialized embedded and IoT applications, with a focus on wireless communication chips."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.15,
-      "confidence": "low",
+      "frontier": 0.25,
+      "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre of Finland (microelectronics research)",
-        "Aalto University (research)",
-        "Some small design houses (e.g., for IoT, wireless)"
+        "VTT Technical Research Centre",
+        "Aalto University",
+        "Tampere University",
+        "Some smaller startups in wireless/IoT"
       ],
-      "rationale": "Finland has niche expertise in wireless and IoT-related chip design, stemming from its strong telecom history. Research centers like VTT and universities contribute to skill development, but the overall advanced design job market volume is very low."
+      "rationale": "Finland's chip design capabilities are largely tied to its historical strength in mobile communications and current focus on IoT and wireless technologies, with strong university research."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.45,
-      "confidence": "medium",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
+      "confidence": "high",
       "evidence": [
-        "AMD, Intel, NVIDIA (design centers for GPUs, CPUs, AI)",
-        "University of Toronto, Mila (AI research, hardware implications)",
-        "D-Wave Systems (quantum computing hardware)"
+        "AMD (graphics R&D)",
+        "Intel",
+        "NVIDIA",
+        "Qualcomm (R&D centers)",
+        "Tenstorrent (AI chips)",
+        "University of Toronto",
+        "University of British Columbia"
       ],
-      "rationale": "Canada hosts design centers for major global semiconductor companies, particularly strong in graphics and AI hardware. Its world-leading AI research ecosystem (e.g., Mila, University of Toronto) drives some frontier work in AI accelerators and quantum computing hardware, leading to high skill levels in specific areas."
+      "rationale": "Canada hosts R&D centers for major chip companies, particularly in graphics, AI, and networking. It also has a growing ecosystem of AI chip startups and strong university research."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "low",
+      "skill_level": 2,
+      "frontier": 0.15,
+      "confidence": "medium",
       "evidence": [
-        "Silicon Quantum Computing (quantum chip development)",
-        "UNSW, University of Sydney (quantum computing research)",
-        "CSIRO (some microelectronics research)"
+        "CSIRO",
+        "Universities (UNSW, University of Sydney)",
+        "Some specialized startups in quantum computing control, RF"
       ],
-      "rationale": "Australia's chip design market is very niche, with significant frontier work in quantum computing hardware. While the overall volume is low, the skill level in these specialized areas is high, driven by leading research institutions."
+      "rationale": "Australia's chip design sector is relatively small, with a greater focus on system-level design, software, and specialized applications (e.g., quantum computing control, RF) rather than mainstream IC design."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.35,
-      "confidence": "medium",
+      "frontier": 0.3,
+      "confidence": "high",
       "evidence": [
-        "Intel (design centers, e.g., for FPGAs via Xilinx acquisition)",
-        "Analog Devices (mixed-signal, analog ICs)",
-        "Tyndall National Institute (microelectronics research)"
+        "Intel (manufacturing, some design support)",
+        "Analog Devices (R&D)",
+        "Xilinx/AMD (R&D)",
+        "Tyndall National Institute",
+        "University College Cork"
       ],
-      "rationale": "Ireland has established design centers for global semiconductor companies, particularly strong in mixed-signal, analog, and FPGA design. Intel's presence and research institutes like Tyndall contribute to a high skill level in these specialized areas, though the overall volume is moderate."
+      "rationale": "Ireland hosts significant R&D operations for major semiconductor companies, particularly in analog, mixed-signal, and embedded processing, benefiting from a skilled workforce and favorable business environment."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
-      "skill_level": 5,
-      "frontier": 0.85,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "IMEC (world-leading nanoelectronics research center)",
-        "KU Leuven (research)"
+        "NXP (R&D)",
+        "STMicroelectronics (R&D)",
+        "KU Leuven"
       ],
-      "rationale": "Belgium is home to IMEC, a global frontier R&D hub for semiconductor technology, driving innovation in advanced process nodes, materials, and architectures that directly impact future chip design. While the job market volume is concentrated in research, the skill level and frontier impact are exceptionally high."
+      "rationale": "Belgium, primarily through IMEC, is a global powerhouse in semiconductor R&D, driving future process technologies and design methodologies, which indirectly supports a highly advanced but small design ecosystem."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "low",
+      "frontier": 0.35,
+      "confidence": "medium",
       "evidence": [
-        "Infineon Technologies (design centers)",
-        "AMS-Osram (sensors, analog ICs)",
-        "Graz University of Technology (research)"
+        "Infineon (R&D centers)",
+        "ams-OSRAM (R&D centers)",
+        "Silicon Austria Labs (SAL)",
+        "Graz University of Technology"
       ],
-      "rationale": "Austria has specialized chip design capabilities, particularly in mixed-signal, sensors, and power management, largely driven by companies like Infineon and AMS-Osram. The skill level is high in these niches, but the overall advanced design job market volume is limited."
+      "rationale": "Austria has a strong niche in analog, mixed-signal, and sensor IC design, with R&D centers for major players like Infineon and ams-OSRAM, and dedicated research initiatives."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.35,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (major design centers)",
-        "Politecnico di Milano, University of Catania (research)"
+        "STMicroelectronics (R&D centers)",
+        "Politecnico di Milano",
+        "University of Bologna"
       ],
-      "rationale": "Italy hosts significant design centers for STMicroelectronics, contributing expertise in embedded systems, automotive, and power electronics. It possesses high skill levels in these specific domains, with some frontier research, but the overall advanced design job market volume is moderate."
+      "rationale": "Italy, through STMicroelectronics, has design capabilities in secure microcontrollers, automotive, and power management ICs, with a focus on embedded applications and strong academic ties."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Barcelona Supercomputing Center (HPC, some custom chip initiatives)",
-        "Universitat Polit\u00e8cnica de Catalunya (research)"
+        "Barcelona Supercomputing Center (RISC-V initiatives)",
+        "Universities (UPC, UAB)",
+        "Some small startups"
       ],
-      "rationale": "Spain has an emerging presence in microelectronics research, particularly related to HPC and some RISC-V initiatives. However, the advanced Chip & IC Design job market for commercial roles remains negligible, with most activity at an applied or academic level."
+      "rationale": "Spain has a nascent chip design sector, with some academic research and growing interest in open-source hardware (e.g., RISC-V), but limited industrial presence in advanced IC design."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
-      "confidence": "low",
+      "frontier": 0.05,
+      "confidence": "medium",
       "evidence": [
-        "Intel, Broadcom, NXP (assembly, test, some design support)",
-        "MIMOS (applied research in microelectronics)"
+        "Intel",
+        "Broadcom",
+        "NXP",
+        "Infineon (significant assembly, test, packaging operations, some design support)",
+        "MIMOS"
       ],
-      "rationale": "Malaysia is a strong hub for semiconductor assembly, test, and packaging. While there's growing activity in design, it's primarily at the applied level, supporting global companies, with limited advanced or frontier R&D in core chip design."
+      "rationale": "Malaysia is a major hub for semiconductor assembly, test, and packaging (ATP). While it hosts R&D centers, advanced front-end IC design is less prominent, focusing more on design support and embedded systems."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "skill_level": 1,
+      "frontier": 0.02,
       "confidence": "low",
       "evidence": [
-        "Synopsys, Marvell (small design centers)",
-        "FPT Semiconductor (emerging local player)",
-        "National University of Ho Chi Minh City (research)"
+        "FPT (software, some embedded)",
+        "Universities",
+        "Government push for high-tech"
       ],
-      "rationale": "Vietnam's chip design sector is emerging, with some foreign companies establishing small design centers and local efforts growing. However, the advanced-role hiring volume for complex Chip & IC Design remains negligible, mostly focused on entry to applied level tasks."
+      "rationale": "Vietnam is an emerging tech hub, but its advanced chip design capabilities are still in their infancy, primarily focusing on embedded systems and software rather than complex IC design."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.01,
       "confidence": "low",
       "evidence": [
-        "Western Digital (storage, some related design support)",
-        "Universities (basic research)"
+        "Western Digital (storage, some controller design)",
+        "Universities"
       ],
-      "rationale": "Thailand's semiconductor industry is predominantly focused on assembly and test. Advanced Chip & IC Design activity is very limited, with negligible hiring volume for complex roles and minimal frontier R&D."
+      "rationale": "Thailand has a strong presence in electronics manufacturing and assembly, but advanced chip design capabilities are very limited, mostly confined to basic embedded systems or design support for existing manufacturing."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.01,
       "confidence": "low",
       "evidence": [
-        "Universities (basic research)",
-        "Small local initiatives"
+        "Universities",
+        "Government initiatives to boost digital economy"
       ],
-      "rationale": "Indonesia has a nascent semiconductor industry, primarily focused on assembly. Advanced Chip & IC Design activity is negligible, with very limited job opportunities for complex design roles and minimal frontier R&D."
+      "rationale": "Indonesia's semiconductor industry is primarily focused on assembly and basic electronics. Advanced chip design capabilities are extremely limited and nascent."
     },
     {
       "country_iso": "AE",
@@ -389,50 +443,51 @@
       "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "Khalifa University (some microelectronics research)",
-        "Government technology initiatives"
+        "Khalifa University (research)",
+        "Mubadala (investment in GlobalFoundries, but not direct design in UAE)"
       ],
-      "rationale": "The UAE is investing in technology, but its Chip & IC Design sector is in very early stages. Advanced-role hiring volume is negligible, with most activity at a foundational or academic level, and minimal frontier R&D."
+      "rationale": "The UAE is investing heavily in technology and R&D, but its direct advanced chip design capabilities are very limited, with a focus more on adoption and application rather than core design."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.03,
       "confidence": "low",
       "evidence": [
-        "King Abdullah University of Science and Technology (KAUST) (some microelectronics research)",
-        "NEOM initiatives (future focus)"
+        "King Abdullah University of Science and Technology (KAUST)",
+        "NEOM initiatives"
       ],
-      "rationale": "Saudi Arabia is making significant investments in technology as part of Vision 2030, but its Chip & IC Design capabilities are nascent. Advanced-role hiring volume is negligible, with activity primarily at a foundational or academic level, and minimal frontier R&D."
+      "rationale": "Saudi Arabia is developing its tech sector, but advanced chip design is still in a very nascent stage, with limited industrial presence. KAUST conducts some relevant research."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "skill_level": 1,
+      "frontier": 0.05,
       "confidence": "low",
       "evidence": [
-        "CEITEC (former IDM, now limited activity)",
-        "Universities (e.g., USP, Unicamp) (research)"
+        "Universities (USP, Unicamp)",
+        "CTI Renato Archer",
+        "Government programs (e.g., CI-Brasil)"
       ],
-      "rationale": "Brazil has had some government-backed initiatives in chip design (e.g., CEITEC), but the commercial advanced-role job market remains very limited. Most activity is at an applied or academic level, with negligible hiring volume for complex design roles."
+      "rationale": "Brazil has academic research in microelectronics and some government initiatives to foster the sector, but industrial-scale advanced chip design is very limited."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.25,
-      "confidence": "medium",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "Intel (design centers, e.g., for software-defined silicon, verification)",
-        "Samsung, Qualcomm (design centers)",
-        "AGH University of Science and Technology (research)"
+        "Intel (Gdansk R&D, primarily software/platform)",
+        "Universities (Warsaw University of Technology)",
+        "Some smaller design houses"
       ],
-      "rationale": "Poland has a growing tech sector and hosts design centers for major global semiconductor companies, particularly in areas like verification, embedded systems, and some digital design. While the volume is moderate, the skill level for applied and specialist roles is solid, with some niche R&D."
+      "rationale": "Poland has a strong and growing IT sector and engineering talent pool, attracting R&D centers for global tech companies. However, advanced IC design is still relatively small, focusing more on embedded systems and software."
     }
   ]
 }

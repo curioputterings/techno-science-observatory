@@ -4,80 +4,68 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Commonwealth Fusion Systems",
-        "Helion Energy",
-        "Zap Energy",
-        "TAE Technologies",
-        "Princeton Plasma Physics Laboratory (PPPL)",
-        "Lawrence Livermore National Laboratory (LLNL)",
-        "Oak Ridge National Laboratory",
+        "Princeton Plasma Physics Lab (PPPL)",
+        "Commonwealth Fusion Systems (CFS)",
+        "Helion",
         "TerraPower",
         "NuScale Power",
-        "Westinghouse Electric Company",
-        "GE Hitachi Nuclear Energy",
-        "Idaho National Laboratory",
-        "Argonne National Laboratory",
-        "Department of Energy (DOE) funding for fusion and SMRs"
+        "X-energy",
+        "Department of Energy (DOE) programs",
+        "MIT, UC Berkeley"
       ],
-      "rationale": "The US is a global leader in both fusion and advanced fission. Significant private investment in fusion startups, coupled with strong national lab research and government funding, drives high activity. Advanced fission is robust with SMR developers and established nuclear vendors, supported by extensive R&D."
+      "rationale": "The US is a global leader in both fusion and advanced fission R&D and commercialization efforts, with substantial government and private funding driving frontier research."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
-      "volume_band": "very_high",
-      "skill_level": 4,
-      "frontier": 0.85,
-      "confidence": "high",
-      "evidence": [
-        "Experimental Advanced Superconducting Tokamak (EAST)",
-        "China National Nuclear Corporation (CNNC)",
-        "Hualong One reactor",
-        "CAP1400 reactor",
-        "Molten Salt Reactor (TMSR) program",
-        "ITER participation",
-        "Chinese Academy of Sciences"
-      ],
-      "rationale": "China has an aggressive and rapidly expanding nuclear power program, with significant domestic development in advanced fission reactors (Hualong One, CAP1400, SMRs). Its fusion program, centered around EAST and ITER involvement, is also highly active and well-funded, positioning it as a major player in both areas."
-    },
-    {
-      "country_iso": "JP",
-      "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "JT-60SA tokamak",
-        "National Institutes for Quantum Science and Technology (QST)",
-        "National Institute for Fusion Science (NIFS)",
-        "ITER participation",
-        "Mitsubishi Heavy Industries (MHI)",
-        "Toshiba",
-        "Hitachi-GE Nuclear Energy"
+        "Experimental Advanced Superconducting Tokamak (EAST)",
+        "China Fusion Engineering Test Reactor (CFETR)",
+        "China National Nuclear Corporation (CNNC)",
+        "Tsinghua University",
+        "Hualong One",
+        "CAP1400"
       ],
-      "rationale": "Japan has a strong legacy in nuclear technology and a leading role in fusion research, exemplified by JT-60SA and significant contributions to ITER. While domestic new fission reactor builds have slowed, R&D in advanced reactor designs and materials remains robust, driven by major industrial players and research institutions."
+      "rationale": "China has aggressive nuclear energy expansion plans and is a major player in both advanced fission (e.g., HTGRs, fast reactors) and fusion research, with significant state-backed programs."
+    },
+    {
+      "country_iso": "JP",
+      "country_name": "Japan",
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
+      "evidence": [
+        "Japan Atomic Energy Agency (JAEA)",
+        "JT-60SA",
+        "ITER (major contributor)",
+        "Mitsubishi Heavy Industries (MHI)"
+      ],
+      "rationale": "Japan has a mature nuclear industry and is a significant contributor to international fusion efforts (e.g., JT-60SA, ITER), alongside domestic advanced fission research."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.75,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "Korea Superconducting Tokamak Advanced Research (KSTAR)",
-        "National Fusion Research Institute (NFRI)",
-        "Korea Hydro & Nuclear Power (KHNP)",
-        "APR-1400 reactor",
-        "SMART SMR development",
-        "Korea Atomic Energy Research Institute (KAERI)"
+        "Korea Atomic Energy Research Institute (KAERI)",
+        "SMART SMR",
+        "Doosan Enerbility"
       ],
-      "rationale": "South Korea is a significant player in advanced nuclear, with a successful export reactor (APR-1400) and active SMR development (SMART). Its KSTAR tokamak is a world-renowned fusion research facility, demonstrating strong capabilities and investment in both domains."
+      "rationale": "South Korea is a major nuclear power producer and exporter, with strong domestic capabilities in advanced reactor design (e.g., SMART SMR) and fusion research (KSTAR)."
     },
     {
       "country_iso": "TW",
@@ -88,24 +76,22 @@
       "confidence": "medium",
       "evidence": [
         "Taiwan Power Company (Taipower)",
-        "National Tsing Hua University (NTHU) nuclear engineering department"
+        "Existing nuclear power plants"
       ],
-      "rationale": "Taiwan operates existing nuclear power plants, leading to some demand for operational and maintenance roles. However, there is limited to no significant domestic R&D or commercial activity in advanced fission reactor development or fusion research."
+      "rationale": "Taiwan's nuclear focus is primarily on operating existing plants, with minimal advanced R&D in fusion or next-generation fission technologies."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "skill_level": 3,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Wendelstein 7-X stellarator",
-        "Max Planck Institute for Plasma Physics (IPP)",
-        "Karlsruhe Institute of Technology (KIT)",
-        "Forschungszentrum J\u00fclich"
+        "Max Planck Institute for Plasma Physics (IPP) - Wendelstein 7-X",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Germany is a leader in fusion research, particularly with the Wendelstein 7-X stellarator, attracting top talent. However, its domestic nuclear phase-out policy severely limits advanced fission reactor development and commercial activity, with roles primarily in decommissioning and some component research for international projects."
+      "rationale": "Germany is a leader in fusion research (e.g., Wendelstein 7-X) but has a policy of phasing out fission, limiting domestic advanced fission R&D, leading to a mixed overall volume."
     },
     {
       "country_iso": "NL",
@@ -115,11 +101,11 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Dutch Institute for Fundamental Energy Research (DIFFER)",
+        "DIFFER (Dutch Institute for Fundamental Energy Research)",
         "TU Delft",
-        "NRG (Nuclear Research and Consultancy Group)"
+        "NRG (Petten)"
       ],
-      "rationale": "The Netherlands has a focused, albeit smaller, fusion research program through DIFFER. While there's some discussion around SMRs, there's no major domestic advanced fission development, with most activity centered on research and existing reactor operations."
+      "rationale": "The Netherlands has a small but specialized role in nuclear research, particularly in fusion and materials science, but not a large advanced nuclear market."
     },
     {
       "country_iso": "GB",
@@ -129,76 +115,68 @@
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Culham Centre for Fusion Energy (CCFE)",
-        "JET (Joint European Torus)",
-        "Spherical Tokamak for Energy Production (STEP) program",
-        "UK Atomic Energy Authority (UKAEA)",
-        "Tokamak Energy",
+        "Culham Centre for Fusion Energy (CCFE) - Joint European Torus (JET)",
+        "Spherical Tokamak for Energy Production (STEP)",
         "Rolls-Royce SMR",
-        "EDF Energy (Hinkley Point C)"
+        "UK Atomic Energy Authority (UKAEA)"
       ],
-      "rationale": "The UK has a strong commitment to both fusion and advanced fission. It hosts major fusion facilities (JET, CCFE) and has ambitious domestic programs like STEP. Rolls-Royce is a key player in SMR development, and there's significant investment in new nuclear builds, driving substantial hiring and R&D."
+      "rationale": "The UK has a strong commitment to nuclear power and is a global leader in fusion energy research (e.g., JET, STEP), with significant domestic SMR development."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "high",
-      "skill_level": 4,
-      "frontier": 0.85,
+      "skill_level": 5,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "ITER (host country)",
+        "ITER (host country, major contributor)",
         "Commissariat \u00e0 l'\u00e9nergie atomique et aux \u00e9nergies alternatives (CEA)",
         "EDF",
-        "Framatome",
-        "EPR reactor technology",
-        "Nuward SMR"
+        "Framatome"
       ],
-      "rationale": "As the host of ITER and a nation with a long-standing, robust nuclear industry, France is a powerhouse in both fusion and advanced fission. CEA leads extensive R&D, while EDF and Framatome drive commercial deployment and advanced reactor development (EPR, SMRs), ensuring high volume and frontier work."
+      "rationale": "France has one of the world's most developed nuclear industries, hosting ITER and actively pursuing advanced fission technologies (e.g., Astrid, SMRs) with deep expertise."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Weizmann Institute of Science (plasma physics research)",
-        "Tel Aviv University (nuclear physics research)"
+        "Weizmann Institute of Science (plasma physics)",
+        "Tel Aviv University"
       ],
-      "rationale": "Israel does not have nuclear power plants and no significant advanced fission or fusion power development programs. Academic research in related fields like plasma physics exists but does not translate into a substantial job market for this domain."
+      "rationale": "Israel has no commercial nuclear power plants and its involvement in advanced nuclear/fusion is primarily academic and theoretical, not large-scale industrial."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.6,
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Institute for Plasma Research (IPR)",
-        "ADITYA tokamak",
-        "SST-1 tokamak",
-        "ITER participation",
+        "ITER (major contributor)",
         "Bhabha Atomic Research Centre (BARC)",
-        "Nuclear Power Corporation of India Limited (NPCIL)",
-        "Advanced Heavy Water Reactor (AHWR) program",
-        "Prototype Fast Breeder Reactor (PFBR)"
+        "Indira Gandhi Centre for Atomic Research (IGCAR)",
+        "Prototype Fast Breeder Reactor (PFBR)",
+        "Institute for Plasma Research (IPR) - SST-1 tokamak"
       ],
-      "rationale": "India has an ambitious indigenous nuclear power program, including advanced fission reactor development (AHWR, PFBR) and significant expansion plans. Its fusion research, with IPR and participation in ITER, also contributes to a growing and domestically focused advanced nuclear and fusion job market."
+      "rationale": "India has an ambitious nuclear energy program, including advanced reactor development (especially thorium-based) and a significant role in international fusion research (SST-1, ITER)."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "none",
       "skill_level": 1,
-      "frontier": 0.05,
-      "confidence": "medium",
+      "frontier": 0.0,
+      "confidence": "high",
       "evidence": [
-        "National University of Singapore (NUS) research in materials science"
+        "No known advanced nuclear or fusion programs"
       ],
-      "rationale": "Singapore has no nuclear power plants and no active advanced fission or fusion power development programs. Any related activity is limited to very niche academic research in materials or physics, not a dedicated labour market for this domain."
+      "rationale": "Singapore has no nuclear power program and no significant advanced nuclear or fusion R&D initiatives."
     },
     {
       "country_iso": "CH",
@@ -208,70 +186,67 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Swiss Plasma Center (SPC) at EPFL",
-        "TCV tokamak",
-        "Paul Scherrer Institute (PSI)"
+        "Swiss Plasma Center (EPFL)",
+        "Paul Scherrer Institute (PSI)",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Switzerland has a strong academic presence in fusion research, particularly at EPFL with the TCV tokamak. While it operates existing nuclear plants, there is no domestic advanced fission reactor development, with activity primarily focused on research and operational support."
+      "rationale": "Switzerland has a strong scientific base and contributes to international fusion efforts, but its domestic advanced nuclear market is small."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "KTH Royal Institute of Technology (plasma physics)",
-        "Uppsala University (nuclear physics)",
-        "Vattenfall (nuclear operator)"
+        "KTH Royal Institute of Technology (fusion research)",
+        "Vattenfall (nuclear operator)",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Sweden has some academic research in plasma physics and nuclear engineering. While there is interest in SMRs and existing nuclear operations, there is no major domestic advanced fission or fusion power development program, leading to a very low volume of specialized roles."
+      "rationale": "Sweden has an existing nuclear fleet and some academic involvement in fusion research, but not a large advanced nuclear market."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre of Finland (nuclear safety, materials)",
+        "Fennovoima (Hanhikivi 1 project)",
         "Fortum",
-        "Teollisuuden Voima Oyj (TVO)"
+        "VTT Technical Research Centre of Finland",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Finland operates existing nuclear power plants and has recently brought Olkiluoto 3 online. While there is some research in nuclear safety and materials, and growing interest in SMRs, there is no significant domestic advanced fission or fusion power development program, keeping the volume low."
+      "rationale": "Finland is expanding its nuclear capacity but its advanced nuclear R&D is primarily focused on operational aspects and safety, with some contribution to EU fusion efforts."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.65,
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
+        "Atomic Energy of Canada Limited (AECL)",
         "Canadian Nuclear Laboratories (CNL)",
-        "Ontario Power Generation (OPG)",
-        "Bruce Power",
-        "General Fusion",
-        "Terrestrial Energy (IMSR)",
-        "ARC Clean Energy Canada",
-        "GE Hitachi BWRX-300 SMR deployment plans"
+        "Terrestrial Energy",
+        "ARC Clean Energy"
       ],
-      "rationale": "Canada is a leader in SMR development and deployment, with strong government support and active projects involving major utilities and developers. It also has a growing private fusion sector (General Fusion) and national lab research, contributing to a significant and expanding job market in the domain."
+      "rationale": "Canada has a long history in nuclear technology (CANDU) and is a frontrunner in Small Modular Reactor (SMR) development, with a growing advanced nuclear sector."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "skill_level": 3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Australian National University (ANU) plasma physics research",
-        "Australian Nuclear Science and Technology Organisation (ANSTO) research reactor"
+        "Australian Nuclear Science and Technology Organisation (ANSTO) - OPAL reactor"
       ],
-      "rationale": "Australia does not have nuclear power plants for electricity generation and no active advanced fission or fusion power development programs. While ANSTO operates a research reactor and some academic research in plasma physics exists, it does not constitute a significant labour market for advanced nuclear or fusion power."
+      "rationale": "Australia has no commercial nuclear power plants, but ANSTO conducts research, primarily in medical isotopes and materials, not advanced power reactor development or fusion."
     },
     {
       "country_iso": "IE",
@@ -281,51 +256,50 @@
       "frontier": 0.0,
       "confidence": "high",
       "evidence": [
-        "No nuclear power plants",
-        "No known advanced nuclear or fusion research programs"
+        "No known advanced nuclear or fusion programs"
       ],
-      "rationale": "Ireland has no nuclear power plants and no known significant research or commercial activity in advanced fission or fusion, resulting in negligible job market volume in this domain."
+      "rationale": "Ireland has no nuclear power program and no significant advanced nuclear or fusion R&D initiatives."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "high",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.2,
+      "confidence": "medium",
       "evidence": [
         "SCK CEN (Belgian Nuclear Research Centre)",
-        "MYRRHA project (Multi-purpose hYbrid Research Reactor for High-tech Applications)",
-        "Tractebel (Engie)"
+        "Tractebel",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Belgium operates existing nuclear power plants and has a strong nuclear research center (SCK CEN) actively involved in advanced fission research, including the MYRRHA project. This drives a consistent, albeit smaller, volume of specialist roles and frontier research."
+      "rationale": "Belgium has existing nuclear power plants and some research capabilities, primarily supporting the existing fleet and contributing to EU-level initiatives."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "TU Wien (plasma physics research)",
-        "Strong anti-nuclear policy"
+        "TU Wien (plasma physics)",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Austria has a strong anti-nuclear stance and no nuclear power plants. While some academic research in plasma physics exists, there is no domestic advanced fission or fusion power development, leading to negligible job market volume in this domain."
+      "rationale": "Austria has a strong anti-nuclear policy for power generation, but some academic research in plasma physics and fusion exists."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Divertor Tokamak Test (DTT) facility",
         "ENEA (Italian National Agency for New Technologies, Energy and Sustainable Economic Development)",
-        "ITER participation"
+        "ITER (EU contribution)",
+        "DTT (Divertor Tokamak Test) facility"
       ],
-      "rationale": "Italy is a significant contributor to fusion research, hosting the DTT facility and actively participating in ITER. However, it phased out nuclear power, limiting domestic advanced fission development to academic research rather than commercial or large-scale R&D, making fusion the primary driver of the job market."
+      "rationale": "Italy phased out nuclear power but remains a significant player in fusion research, hosting and contributing to major international projects like ITER and DTT."
     },
     {
       "country_iso": "ES",
@@ -335,10 +309,11 @@
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "CIEMAT (Centro de Investigaciones Energ\u00e9ticas, Medioambientales y Tecnol\u00f3gicas) fusion research",
-        "ITER participation"
+        "CIEMAT (Centre for Energy, Environmental and Technological Research)",
+        "Fusion for Energy (F4E, based in Barcelona)",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Spain participates in fusion research through CIEMAT and ITER. While it operates existing nuclear power plants, there is no significant domestic advanced fission reactor development, resulting in a relatively low volume of specialized roles, primarily in research."
+      "rationale": "Spain has existing nuclear power plants and contributes to EU fusion initiatives, but its domestic advanced nuclear R&D market is not large."
     },
     {
       "country_iso": "MY",
@@ -346,12 +321,11 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "No nuclear power plants",
-        "Limited public information on advanced nuclear or fusion research"
+        "No known advanced nuclear or fusion programs"
       ],
-      "rationale": "Malaysia does not have nuclear power plants and no known significant research or commercial activity in advanced fission or fusion, resulting in negligible job market volume in this domain."
+      "rationale": "Malaysia has no nuclear power program and no significant advanced nuclear or fusion R&D initiatives."
     },
     {
       "country_iso": "VN",
@@ -359,12 +333,11 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "No nuclear power plants",
-        "Limited public information on advanced nuclear or fusion research"
+        "No known advanced nuclear or fusion programs"
       ],
-      "rationale": "Vietnam does not have nuclear power plants and no known significant research or commercial activity in advanced fission or fusion, resulting in negligible job market volume in this domain."
+      "rationale": "Vietnam has no nuclear power program and no significant advanced nuclear or fusion R&D initiatives."
     },
     {
       "country_iso": "TH",
@@ -372,79 +345,76 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "No nuclear power plants",
-        "Limited public information on advanced nuclear or fusion research"
+        "No known advanced nuclear or fusion programs"
       ],
-      "rationale": "Thailand does not have nuclear power plants and no known significant research or commercial activity in advanced fission or fusion, resulting in negligible job market volume in this domain."
+      "rationale": "Thailand has no nuclear power program and no significant advanced nuclear or fusion R&D initiatives."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "National Nuclear Energy Agency (BATAN) research reactors",
-        "Interest in SMRs"
+        "National Nuclear Energy Agency (BATAN) - operates research reactors"
       ],
-      "rationale": "Indonesia operates research reactors and has expressed interest in SMRs, but there is no active advanced fission or fusion power development program. The job market is very limited, primarily focused on existing research and early-stage planning."
+      "rationale": "Indonesia operates research reactors but does not have commercial nuclear power or significant advanced nuclear/fusion R&D programs."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Barakah Nuclear Power Plant (ENEC)",
-        "APR-1400 reactors"
+        "Emirates Nuclear Energy Corporation (ENEC)",
+        "Barakah Nuclear Power Plant (APR-1400 reactors from Korea)"
       ],
-      "rationale": "The UAE has successfully deployed the Barakah Nuclear Power Plant, creating demand for operational and maintenance roles. However, it primarily imports technology and expertise, with limited domestic R&D in advanced fission or fusion, keeping the frontier aspect low."
+      "rationale": "The UAE has a new commercial nuclear power program but is primarily an operator of imported technology, with limited domestic advanced nuclear or fusion R&D."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.05,
+      "skill_level": 1,
+      "frontier": 0.0,
       "confidence": "medium",
       "evidence": [
-        "King Abdullah City for Atomic and Renewable Energy (K.A.CARE)",
-        "Plans for nuclear power program"
+        "King Abdullah City for Atomic and Renewable Energy (K.A.CARE) - plans for nuclear power"
       ],
-      "rationale": "Saudi Arabia is in the early stages of developing a nuclear power program and exploring SMRs. While there's government interest, the current job market for advanced fission and fusion is very low, primarily focused on planning and initial research, with technology likely to be imported."
+      "rationale": "Saudi Arabia has expressed interest in nuclear power but is in the very early stages, with no significant advanced nuclear or fusion R&D currently."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Eletronuclear (Angra NPPs)",
-        "National Institute for Space Research (INPE) plasma physics",
-        "University of S\u00e3o Paulo (fusion research)"
+        "Eletronuclear (operator)",
+        "National Nuclear Energy Commission (CNEN)",
+        "IPEN (Institute for Energy and Nuclear Research)"
       ],
-      "rationale": "Brazil operates existing nuclear power plants and has some academic research in plasma physics and fusion. However, there is no major domestic advanced fission or fusion power development program, leading to a very low volume of specialized roles, mainly in operations and research."
+      "rationale": "Brazil has a small nuclear power program and some domestic research capabilities, but not a large advanced nuclear or fusion market."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.15,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Institute of Plasma Physics and Laser Microfusion (IFPiLM)",
-        "Orlen Synthos Green Energy (OSGE) with NuScale SMR plans",
-        "Polish Nuclear Power Program"
+        "National Centre for Nuclear Research (NCBJ)",
+        "Plans for new nuclear power plants",
+        "ITER (EU contribution)"
       ],
-      "rationale": "Poland has a growing interest in nuclear power, particularly SMRs, with concrete plans for deployment. It also has some academic and research institute activity in fusion. While the current volume is low, it is expected to grow, driven by national energy policy and international partnerships."
+      "rationale": "Poland is planning to introduce nuclear power and has some academic research, but its advanced nuclear and fusion R&D market is currently small."
     }
   ]
 }

@@ -9,80 +9,90 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "NIST",
-        "Stanford University (microsystems)",
-        "MIT (Microsystems Technology Laboratories)",
         "Analog Devices",
-        "Intel (sensor R&D)",
-        "Apple (in-house sensor design)",
-        "Northrop Grumman"
+        "Texas Instruments",
+        "Intel",
+        "HP",
+        "NIST",
+        "MIT",
+        "Stanford University",
+        "University of California, Berkeley",
+        "numerous startups",
+        "defense contractors"
       ],
-      "rationale": "The US is a global leader in semiconductor design, advanced manufacturing, aerospace, defense, and fundamental research. Key institutions like NIST and top universities, alongside major tech and defense companies, drive significant frontier R&D and high-volume advanced MEMS and metrology job creation."
+      "rationale": "The US leads globally in semiconductors, R&D, defense, aerospace, and medical devices. A vast ecosystem of companies, startups, and research labs drives very high demand for advanced MEMS and metrology expertise, with significant frontier R&D."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "SMIC",
-        "Huawei (sensor R&D)",
+        "Huawei",
+        "Xiaomi",
         "Chinese Academy of Sciences (CAS)",
         "Tsinghua University",
-        "National strategic initiatives for semiconductor and advanced manufacturing"
+        "Peking University",
+        "Made in China 2025 initiatives"
       ],
-      "rationale": "China has a massive domestic market and aggressive government investment in advanced manufacturing, semiconductors, and AI, leading to strong demand for MEMS and metrology expertise. While rapidly expanding, some areas are still catching up to global leaders in frontier R&D."
+      "rationale": "China's massive manufacturing base and aggressive government investment in semiconductors and advanced technologies fuel high demand for MEMS and metrology professionals, with rapidly increasing focus on advanced R&D."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Sony (image sensors)",
-        "Murata Manufacturing (MEMS sensors)",
-        "Mitutoyo (metrology)",
-        "Canon/Nikon (precision optics/lithography)",
-        "Tokyo Electron",
-        "AIST (National Institute of Advanced Industrial Science and Technology)"
+        "Canon",
+        "Nikon",
+        "Sony",
+        "Panasonic",
+        "Hitachi",
+        "Toshiba",
+        "Advantest",
+        "University of Tokyo",
+        "Kyoto University",
+        "National Institute of Advanced Industrial Science and Technology (AIST)"
       ],
-      "rationale": "Japan is a long-standing global leader in precision manufacturing, optics, and advanced materials. It has strong R&D in sensors and metrology, driven by major players in automotive, electronics, and semiconductor equipment sectors."
+      "rationale": "Japan's long-standing leadership in precision manufacturing, optics, and electronics ensures high demand for MEMS and metrology skills, particularly in industrial and automotive applications, with significant frontier research."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Samsung Electronics (foundry, sensor division)",
+        "Samsung",
         "SK Hynix",
         "LG",
-        "KIST (Korea Institute of Science and Technology)",
-        "KAIST"
+        "KAIST",
+        "Seoul National University",
+        "Electronics and Telecommunications Research Institute (ETRI)"
       ],
-      "rationale": "South Korea is a dominant player in global semiconductor manufacturing and consumer electronics. Companies like Samsung and SK Hynix, supported by strong research institutions, drive substantial R&D in advanced sensors and microfabrication."
+      "rationale": "South Korea's dominance in semiconductors and consumer electronics necessitates strong MEMS and metrology capabilities for manufacturing, quality control, and R&D, leading to medium-high demand and significant frontier work."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "TSMC (advanced process nodes, 3D IC)",
+        "TSMC",
         "UMC",
-        "MediaTek",
-        "ITRI (Industrial Technology Research Institute)",
+        "ASE",
+        "Industrial Technology Research Institute (ITRI)",
         "National Taiwan University"
       ],
-      "rationale": "Taiwan is the global leader in semiconductor foundry services, with TSMC at the forefront of continuous innovation in microfabrication and metrology for advanced chip manufacturing. This drives high demand for specialized expertise."
+      "rationale": "Taiwan's critical role in the global semiconductor supply chain, particularly advanced foundry processes, creates strong demand for MEMS and metrology expertise, with significant frontier work in process optimization and inspection."
     },
     {
       "country_iso": "DE",
@@ -92,276 +102,295 @@
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Bosch (automotive MEMS sensors)",
+        "Bosch",
         "Siemens",
-        "Zeiss (metrology, optics)",
-        "Fraunhofer Institutes (e.g., ISIT, IPK)",
-        "PTB (National Metrology Institute)"
+        "Carl Zeiss",
+        "Trumpf",
+        "Fraunhofer Institutes",
+        "Physikalisch-Technische Bundesanstalt (PTB)",
+        "TU Munich",
+        "RWTH Aachen University"
       ],
-      "rationale": "Germany is a European powerhouse in automotive, industrial automation, and precision engineering. It boasts a strong R&D infrastructure, including Fraunhofer Institutes and PTB, and companies like Bosch and Zeiss, which drive MEMS and metrology innovation."
+      "rationale": "Germany's excellence in precision engineering, automotive, and industrial automation drives high demand for MEMS and metrology, with significant frontier research in industrial applications, sensors, and advanced manufacturing."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "ASML (EUV lithography, metrology systems)",
-        "Philips Research",
-        "TNO (applied scientific research)",
-        "TU Delft (nanoscience)"
+        "ASML",
+        "Philips",
+        "TNO",
+        "TU Delft",
+        "Eindhoven University of Technology"
       ],
-      "rationale": "Home to ASML, a critical player in global semiconductor manufacturing, the Netherlands drives cutting-edge metrology and precision engineering, particularly in EUV lithography. This creates a highly specialized, frontier-level job market."
+      "rationale": "The Netherlands, particularly through ASML, is at the forefront of metrology for semiconductor manufacturing, leading to medium volume but very high skill and frontier activity in this specialized area."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Renishaw (precision measurement)",
-        "NPL (National Physical Laboratory)",
-        "Cambridge University (nanotechnology)",
-        "STMicroelectronics (design centers)"
+        "National Physical Laboratory (NPL)",
+        "University of Cambridge",
+        "University of Oxford",
+        "Imperial College London",
+        "Renishaw",
+        "BAE Systems"
       ],
-      "rationale": "The UK has a strong academic research base, particularly in nanotechnology and precision measurement (NPL). Renishaw is a global leader in metrology, and there are niche manufacturing and design activities, contributing to a medium-sized, high-skill market."
+      "rationale": "The UK has a solid foundation in academic research and specialized engineering, particularly in metrology standards and defense applications, leading to medium demand and a respectable level of frontier research."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.7,
+      "skill_level": 3,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (Grenoble site, MEMS production)",
-        "CEA-Leti (microelectronics research institute)",
-        "Thales (aerospace sensors)",
-        "CNRS"
+        "STMicroelectronics (partially French)",
+        "Thales",
+        "Safran",
+        "CEA-Leti",
+        "CNRS",
+        "Paris-Saclay University"
       ],
-      "rationale": "France hosts STMicroelectronics, a global leader in MEMS manufacturing, and has strong government-backed research in microelectronics (CEA-Leti). Significant demand also comes from its aerospace and defense industries."
+      "rationale": "France possesses strong capabilities in aerospace, defense, and microelectronics, supported by significant public research, resulting in medium demand for MEMS and metrology skills and a notable frontier presence."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "medium",
       "evidence": [
-        "Intel R&D centers",
-        "Mobileye (computer vision, sensors)",
-        "Tower Semiconductor (foundry)",
-        "Technion",
-        "numerous deep-tech startups"
+        "Intel (R&D centers)",
+        "Tower Semiconductor",
+        "numerous high-tech startups",
+        "Technion \u2013 Israel Institute of Technology",
+        "Weizmann Institute of Science"
       ],
-      "rationale": "Israel is known for its vibrant high-tech and startup ecosystem, with significant R&D in semiconductors, computer vision, and defense technologies that rely heavily on advanced sensors and metrology. The market is smaller in volume but highly innovative."
+      "rationale": "Israel's vibrant high-tech ecosystem, particularly in semiconductors, defense, and medical tech, drives a concentrated demand for highly skilled MEMS and metrology professionals, with significant frontier innovation."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "ISRO (sensor development for space applications)",
-        "DRDO (defense research)",
-        "various IITs (research in microelectronics)",
-        "growing electronics manufacturing initiatives"
+        "Tata Elxsi",
+        "Wipro",
+        "Infosys (design services)",
+        "Indian Institutes of Technology (IITs)",
+        "Indian Institute of Science (IISc)",
+        "government initiatives for semiconductor manufacturing"
       ],
-      "rationale": "India has a large engineering talent pool and growing electronics manufacturing. The advanced MEMS and metrology market is primarily driven by defense/space and automotive sectors, with manufacturing capabilities still maturing and limited frontier R&D."
+      "rationale": "India has a large engineering talent pool and a growing electronics sector, leading to increasing demand for MEMS and metrology skills, primarily in design and application, with nascent but growing frontier research."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
         "GlobalFoundries",
         "Micron",
-        "STMicroelectronics (manufacturing)",
-        "A*STAR (Institute of Microelectronics - IME)",
-        "NUS",
-        "NTU"
+        "STMicroelectronics (fabs)",
+        "A*STAR (Agency for Science, Technology and Research)",
+        "National University of Singapore (NUS)",
+        "Nanyang Technological University (NTU)"
       ],
-      "rationale": "Singapore is a key hub for semiconductor manufacturing and R&D in Southeast Asia, with significant government investment in advanced manufacturing and precision engineering. This creates a high-value, concentrated market for MEMS and metrology."
+      "rationale": "Singapore's strategic focus on high-tech manufacturing and R&D, particularly in semiconductors and precision engineering, generates a focused demand for MEMS and metrology expertise, with a solid frontier presence."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "low",
       "skill_level": 5,
-      "frontier": 0.9,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "Sensirion (MEMS sensors)",
-        "CSEM (microtechnology research)",
-        "EPFL",
+        "Rolex",
+        "Swatch Group (micro-components)",
+        "CSEM (Swiss Center for Electronics and Microtechnology)",
+        "Sensirion",
         "ETH Zurich",
-        "CERN (precision measurement)"
+        "EPFL (Swiss Federal Institute of Technology Lausanne)"
       ],
-      "rationale": "Renowned for precision engineering, microtechnology, and world-leading scientific research (CERN), Switzerland drives demand for highly specialized, frontier-level MEMS and metrology expertise, though the overall volume is smaller."
+      "rationale": "Switzerland's heritage in precision engineering, coupled with world-class research institutions, creates a highly specialized and advanced MEMS and metrology sector, with significant frontier innovation despite lower volume."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "RISE (research institutes)",
+        "Ericsson",
+        "Volvo",
+        "Saab",
         "KTH Royal Institute of Technology",
-        "some specialized sensor companies",
-        "Ericsson (R&D)"
+        "Chalmers University of Technology"
       ],
-      "rationale": "Sweden has strong engineering and research capabilities, particularly in industrial automation and telecom. However, the market for dedicated MEMS manufacturing and advanced metrology is smaller, leading to a niche, high-tech job volume."
+      "rationale": "Sweden has a strong engineering tradition and good research universities, leading to a low but specialized demand for MEMS and metrology, particularly in automotive and telecommunications, with some frontier activity."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "VTT Technical Research Centre",
+        "VTT Technical Research Centre of Finland",
         "Aalto University",
-        "Murata Electronics (MEMS production in Finland)"
+        "Nokia (some sensor work)"
       ],
-      "rationale": "Finland has a strong research ecosystem (VTT, Aalto) and a niche presence in MEMS manufacturing (Murata acquired VTI Technologies), particularly for demanding applications, resulting in a very low but high-skill job volume."
+      "rationale": "Finland has a strong research focus and some high-tech industries, but the overall volume for advanced MEMS and metrology roles remains very low, with specific niche frontier contributions."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Teledyne DALSA (MEMS foundry)",
         "National Research Council (NRC)",
-        "University of Toronto (microsystems)"
+        "University of Waterloo",
+        "University of Toronto",
+        "McGill University",
+        "MDA (aerospace)"
       ],
-      "rationale": "Canada has a specialized MEMS foundry (Teledyne DALSA) and strong university research, but the overall market volume for advanced MEMS and metrology jobs is smaller compared to major global players."
+      "rationale": "Canada has a strong research base and industries like aerospace and automotive that utilize MEMS and metrology, leading to low but specialized demand and some frontier research, particularly in quantum technologies."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "CSIRO (nanotechnology, sensors)",
-        "UNSW (quantum computing, microfabrication)",
-        "ANU"
+        "CSIRO",
+        "UNSW Sydney",
+        "Australian National University (ANU)",
+        "some medical device companies"
       ],
-      "rationale": "Australia has strong research capabilities, particularly in quantum and niche sensor applications, but a smaller industrial base for large-scale MEMS manufacturing or advanced metrology, leading to a very low job volume."
+      "rationale": "Australia has strong academic research, particularly in quantum and medical fields, but a smaller advanced manufacturing sector, resulting in very low demand for MEMS and metrology, with limited industrial frontier work."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
-        "Intel (Leixlip fab)",
-        "Analog Devices (Limerick)",
-        "Tyndall National Institute (microelectronics research)"
+        "Analog Devices (significant presence)",
+        "Intel (some R&D)",
+        "Tyndall National Institute",
+        "universities"
       ],
-      "rationale": "Ireland hosts significant operations for Intel and Analog Devices, including some R&D. The Tyndall National Institute is a key microelectronics research hub, contributing to a niche but high-skill market."
+      "rationale": "Ireland hosts significant R&D operations for multinational tech and medical device companies, leading to very low but specialized demand for MEMS and metrology, with some frontier work in specific applications."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "very_low",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "imec (leading microelectronics R&D hub)",
+        "IMEC",
+        "Ghent University",
         "KU Leuven"
       ],
-      "rationale": "Home to imec, a globally recognized leader in nanoelectronics and digital technologies, Belgium drives significant frontier research in microfabrication and metrology. While job volume is very low, the skill level and frontier work are exceptionally high."
+      "rationale": "Belgium's strength in microelectronics is largely driven by IMEC, a global research leader, which creates a concentrated but highly skilled and frontier-focused demand for MEMS and metrology expertise."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "AMS OSRAM (sensor solutions)",
-        "Infineon (Villach site)",
+        "ams OSRAM",
+        "Infineon (presence)",
+        "TU Wien",
         "Joanneum Research"
       ],
-      "rationale": "Austria has specialized companies like AMS OSRAM (sensors) and Infineon with R&D and manufacturing presence, contributing to niche advanced MEMS and metrology, resulting in a low but high-skill job volume."
+      "rationale": "Austria has a strong industrial base, particularly in automotive and sensors (ams OSRAM), leading to very low but specialized demand for MEMS and metrology, with some frontier work in sensor development."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.6,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (Agrate Brianza fab, MEMS R&D)",
-        "CNR (National Research Council)",
-        "Politecnico di Milano"
+        "STMicroelectronics (significant presence)",
+        "Politecnico di Milano",
+        "CNR (National Research Council)"
       ],
-      "rationale": "STMicroelectronics has significant MEMS manufacturing and R&D operations in Italy, making it a key player in the European MEMS landscape, supported by a good academic research base."
+      "rationale": "Italy has a strong industrial base, with STMicroelectronics being a key player in MEMS, leading to low demand for MEMS and metrology skills, primarily in industrial applications and some R&D."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.3,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "CSIC (IMB-CNM microelectronics institute)",
-        "various universities"
+        "universities",
+        "some automotive industry",
+        "IMB-CNM (Institute of Microelectronics of Barcelona - National Centre for Microelectronics)"
       ],
-      "rationale": "Spain has a decent research base in microelectronics (e.g., IMB-CNM), but the industrial scale for advanced MEMS and metrology is relatively small, leading to a very low job volume."
+      "rationale": "Spain has a developing tech sector and some industrial presence, but advanced MEMS and metrology roles are very low, with limited frontier research, mostly concentrated in academic institutions."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Intel (assembly & test)",
-        "Infineon (assembly & test)",
-        "various OSAT companies",
-        "MIMOS (R&D)"
+        "Intel",
+        "Micron",
+        "Broadcom (assembly/test operations)",
+        "MIMOS (Malaysian Institute of Microelectronic Systems)"
       ],
-      "rationale": "Malaysia is strong in semiconductor assembly, test, and packaging, which requires metrology. However, it has less focus on advanced MEMS design or frontier microfabrication R&D, resulting in a very low volume of advanced roles."
+      "rationale": "Malaysia is a significant player in semiconductor assembly and testing, driving low demand for MEMS and metrology skills, primarily for manufacturing and quality control, with limited frontier R&D."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Samsung (manufacturing plants)",
-        "Intel (assembly & test plant)",
-        "FPT (tech services)"
+        "Samsung (assembly plants)",
+        "FPT Corporation",
+        "government initiatives"
       ],
-      "rationale": "Vietnam is an emerging electronics manufacturing hub, but currently focused on assembly and basic manufacturing, with minimal advanced MEMS or metrology R&D. Some precision roles exist within these manufacturing operations."
+      "rationale": "Vietnam is an emerging manufacturing hub, but its focus is primarily on assembly, leading to very low demand for advanced MEMS and metrology skills and negligible frontier research."
     },
     {
       "country_iso": "TH",
@@ -371,77 +400,81 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Western Digital (HDD manufacturing)",
-        "various automotive component manufacturers"
+        "Western Digital",
+        "Seagate (HDD plants)",
+        "automotive industry",
+        "some universities"
       ],
-      "rationale": "Thailand is a manufacturing hub for automotive and electronics, which involves precision. However, it is not a significant center for advanced MEMS design or frontier metrology R&D, leading to a very low volume of advanced roles."
+      "rationale": "Thailand's manufacturing base, particularly in automotive and electronics, creates very low demand for MEMS and metrology, mainly for quality control and process support, with minimal frontier R&D."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "none",
-      "skill_level": 1,
+      "volume_band": "very_low",
+      "skill_level": 2,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "General electronics assembly",
-        "automotive manufacturing. No specific anchors for advanced MEMS/metrology."
+        "some electronics assembly",
+        "government initiatives"
       ],
-      "rationale": "Primarily an electronics assembly and automotive manufacturing base, with very limited presence in advanced MEMS or metrology R&D and high-skill jobs. Advanced roles are negligible."
+      "rationale": "Indonesia has a large economy but a nascent advanced manufacturing sector, resulting in very low demand for MEMS and metrology skills and negligible frontier research."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Khalifa University (some research)",
-        "government initiatives for smart cities"
+        "Masdar Institute",
+        "Khalifa University",
+        "government investment in technology parks"
       ],
-      "rationale": "The UAE is investing in smart city technologies and advanced manufacturing, but currently more focused on adopting and integrating existing technologies rather than fundamental MEMS/metrology R&D or large-scale manufacturing. Advanced job volume is negligible."
+      "rationale": "The UAE is investing in technology and R&D, but its advanced manufacturing base for MEMS and metrology is still very low, with nascent frontier efforts primarily in academic and strategic projects."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "KAUST (nanotechnology, sensors research)",
-        "Vision 2030 initiatives (e.g., NEOM)"
+        "King Abdullah University of Science and Technology (KAUST)",
+        "King Fahd University of Petroleum and Minerals",
+        "NEOM project"
       ],
-      "rationale": "Saudi Arabia has significant investment in research (KAUST) and future industries (NEOM), but currently a very limited industrial base for advanced MEMS manufacturing or deep metrology R&D. Advanced job volume is negligible."
+      "rationale": "Saudi Arabia is making significant investments in R&D and industrial diversification, but the current demand for advanced MEMS and metrology is very low, with frontier efforts concentrated in a few key research institutions."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Embraer (aerospace systems)",
-        "USP (University of S\u00e3o Paulo)",
-        "UNICAMP (microelectronics research)"
+        "Embraer (aerospace, some sensor integration)",
+        "University of S\u00e3o Paulo (USP)",
+        "University of Campinas (Unicamp)"
       ],
-      "rationale": "Brazil has a significant industrial base in automotive and aerospace (Embraer), which uses sensors, and some academic research. However, it is not a major hub for advanced MEMS manufacturing or frontier metrology R&D, leading to a very low job volume."
+      "rationale": "Brazil has a large industrial base, but its advanced microelectronics and MEMS sector is very low, with limited demand for advanced roles and minimal frontier research."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Various electronics manufacturing plants",
-        "Warsaw University of Technology (microelectronics)",
-        "AGH University of Science and Technology"
+        "Warsaw University of Technology",
+        "some automotive suppliers",
+        "electronics manufacturing"
       ],
-      "rationale": "Poland has a growing electronics manufacturing sector and a strong academic base, but the advanced MEMS and metrology market is still developing and primarily focused on supporting existing industries rather than frontier R&D or large-scale specialized manufacturing."
+      "rationale": "Poland is a growing manufacturing and R&D hub in Central Europe, but its advanced MEMS and metrology sector is still very low, with demand primarily for applied roles and limited frontier research."
     }
   ]
 }

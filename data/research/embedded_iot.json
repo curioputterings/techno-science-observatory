@@ -14,55 +14,48 @@
         "Apple",
         "Google (Nest)",
         "Amazon (AWS IoT)",
-        "Microsoft (Azure IoT)",
-        "NVIDIA",
         "Tesla",
         "MIT",
         "Stanford",
-        "CMU",
-        "various defense contractors"
+        "DARPA"
       ],
-      "rationale": "The US is a global leader in embedded systems and IoT, with extensive R&D across consumer electronics, automotive, industrial, defense, and cloud platforms. Major tech giants and numerous startups drive innovation and high demand for advanced roles."
+      "rationale": "Global leader in semiconductor design, software, and advanced manufacturing, with a vast ecosystem for embedded and IoT innovation across multiple sectors including automotive, aerospace, consumer electronics, and industrial IoT."
     },
     {
       "country_iso": "CN",
       "country_name": "China",
       "volume_band": "very_high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "Huawei",
         "Xiaomi",
         "Alibaba Cloud IoT",
-        "Tencent Cloud IoT",
-        "Baidu AIoT",
+        "DJI",
         "SMIC",
-        "Made in China 2025 initiatives",
-        "numerous industrial IoT players"
+        "Shenzhen electronics manufacturing hubs",
+        "National AI/IoT initiatives"
       ],
-      "rationale": "China has a massive domestic market, a strong manufacturing base, and significant government investment in IoT, AIoT, and industrial automation. This drives high volume and a rapidly advancing skill level, with substantial frontier R&D."
+      "rationale": "World's largest electronics manufacturing hub with massive domestic market and strong government support for IoT and embedded systems development, driving high volume and increasing skill levels across consumer electronics, industrial IoT, and smart infrastructure."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "Toyota",
+        "Honda",
         "Sony",
         "Panasonic",
         "Hitachi",
-        "Mitsubishi Electric",
-        "Renesas",
-        "Toshiba",
-        "FANUC",
-        "DENSO",
-        "NTT"
+        "Renesas (microcontrollers)",
+        "FANUC (robotics)"
       ],
-      "rationale": "Japan excels in industrial automation, automotive, robotics, and consumer electronics, all heavily reliant on embedded systems. While strong in corporate R&D, its frontier work is more focused on specific industrial applications rather than broad startup innovation."
+      "rationale": "A global leader in industrial automation, robotics, and automotive, with a mature embedded systems industry and significant R&D in these specialized areas, focusing on precision engineering and industrial IoT."
     },
     {
       "country_iso": "KR",
@@ -72,20 +65,18 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Samsung",
-        "LG",
-        "Hyundai",
+        "Samsung (SmartThings, semiconductors)",
+        "LG (home appliances, automotive components)",
+        "Hyundai (automotive)",
         "SK Hynix",
-        "Naver",
-        "KT",
-        "major universities"
+        "National 5G/IoT initiatives"
       ],
-      "rationale": "South Korea is a global powerhouse in consumer electronics, semiconductors, and automotive, with strong capabilities in embedded systems and IoT. Corporate R&D is robust, driving significant advanced-level work."
+      "rationale": "Dominant in consumer electronics and semiconductors, driving high demand for embedded systems and IoT development, with significant R&D investment from major conglomerates in smart home, mobile, and automotive."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "volume_band": "high",
+      "volume_band": "medium",
       "skill_level": 4,
       "frontier": 0.6,
       "confidence": "high",
@@ -93,13 +84,10 @@
         "TSMC",
         "MediaTek",
         "Foxconn",
-        "Acer",
-        "Asus",
-        "HTC",
-        "UMC",
-        "Realtek"
+        "Advantech (industrial IoT)",
+        "ITRI (Industrial Technology Research Institute)"
       ],
-      "rationale": "Taiwan is central to the global semiconductor and hardware manufacturing supply chain. Its expertise in chip design, embedded hardware, and ODM/OEM services creates high demand for advanced embedded roles, with frontier work in semiconductor innovation."
+      "rationale": "A global powerhouse in semiconductor manufacturing and electronics hardware, providing a robust foundation for embedded systems development, particularly in industrial IoT, edge AI, and semiconductor-related embedded systems."
     },
     {
       "country_iso": "DE",
@@ -109,85 +97,80 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Siemens",
-        "Bosch",
+        "Siemens (industrial automation, IoT)",
+        "Bosch (automotive, IoT)",
+        "Infineon (semiconductors)",
+        "Fraunhofer Institutes",
         "BMW",
         "Mercedes-Benz",
-        "Volkswagen",
-        "Infineon",
-        "SAP (IoT)",
-        "Fraunhofer Institutes"
+        "Volkswagen"
       ],
-      "rationale": "Germany's strength in industrial automation (Industry 4.0), automotive, and high-tech manufacturing drives a high demand for embedded systems engineers. Its frontier work is particularly strong in industrial IoT and autonomous systems."
+      "rationale": "A global leader in automotive and industrial engineering, with a strong emphasis on Industry 4.0 and embedded systems for critical applications, driving high demand for specialized skills in industrial IoT and automotive."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.5,
-      "confidence": "medium",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
       "evidence": [
         "ASML",
         "NXP Semiconductors",
-        "Philips",
-        "TomTom",
+        "Philips (medical devices, smart home)",
         "TU Delft",
         "Eindhoven University of Technology"
       ],
-      "rationale": "The Netherlands has a strong high-tech sector, particularly in semiconductor equipment, photonics, and some specialized IoT applications. It offers a good environment for advanced embedded roles, with niche frontier research."
+      "rationale": "A hub for high-tech systems and semiconductors, with NXP being a major embedded processor vendor, leading to a concentrated demand for advanced embedded and IoT expertise in advanced manufacturing, medical tech, and smart infrastructure."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "ARM Holdings",
-        "Vodafone IoT",
-        "BT",
-        "Dyson",
-        "Cambridge University",
-        "Oxford University",
-        "various IoT startups"
+        "Imagination Technologies",
+        "BAE Systems",
+        "Rolls-Royce",
+        "Various IoT startups in London/Cambridge"
       ],
-      "rationale": "The UK has a strong design and software ecosystem, with significant contributions to the ARM architecture, which is fundamental to embedded systems. There's a growing IoT startup scene and good academic research."
+      "rationale": "A significant player in semiconductor IP (ARM) and aerospace/defense, with a growing ecosystem of IoT startups and research, driving demand for advanced embedded skills in chip architecture, low-power embedded, and critical systems."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Airbus",
         "Thales",
         "Dassault Syst\u00e8mes",
         "STMicroelectronics",
-        "Orange IoT",
         "Renault",
         "PSA"
       ],
-      "rationale": "France has strong industries in aerospace, defense, and automotive, which require advanced embedded systems. While there's solid engineering talent, the overall volume and frontier work are not as extensive as in leading nations."
+      "rationale": "Strong in aerospace, defense, and automotive sectors, which are heavy users of embedded systems, supported by companies like STMicroelectronics, focusing on critical embedded systems and real-time applications."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "Mobileye (Intel)",
-        "NXP Semiconductors (presence)",
-        "numerous cybersecurity firms",
-        "edge AI startups",
-        "Technion"
+        "NXP R&D center",
+        "Numerous automotive tech and IoT security startups",
+        "Technion",
+        "Weizmann Institute"
       ],
-      "rationale": "Israel's 'Startup Nation' culture drives significant innovation in specialized areas like IoT security, edge AI, and custom chip design. The skill level is very high, with substantial frontier R&D in these niches."
+      "rationale": "A hub for deep tech innovation, particularly in AI, cybersecurity, and autonomous systems, leading to a high concentration of advanced embedded and edge computing R&D despite a smaller overall volume."
     },
     {
       "country_iso": "IN",
@@ -197,301 +180,285 @@
       "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "Wipro",
+        "R&D centers of Intel, Qualcomm, Samsung, Bosch, Texas Instruments",
         "TCS",
+        "Wipro",
         "Infosys",
-        "HCLTech",
-        "R&D centers for Intel, Qualcomm, Samsung, Bosch",
-        "Digital India initiatives"
+        "HCLTech"
       ],
-      "rationale": "India has a vast talent pool and serves as a major R&D hub for many global tech companies in embedded systems. While the volume is high, much of the work is applied R&D, with growing but less extensive frontier innovation compared to top-tier countries."
+      "rationale": "A large talent pool and significant presence of global R&D centers, driving high volume in embedded software development and IoT solutions, with increasing domestic product innovation and R&D support for global firms."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.5,
+      "skill_level": 4,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "ST Engineering",
-        "Micron (presence)",
-        "Smart Nation initiatives",
-        "NUS",
-        "NTU",
-        "various global tech R&D centers"
+        "Smart Nation initiative",
+        "A*STAR research institutes",
+        "R&D centers of Infineon, STMicroelectronics, Micron, GlobalFoundries"
       ],
-      "rationale": "Singapore is a strategic tech hub with strong government support for smart city initiatives and R&D. It attracts global tech firms and has excellent academic institutions, driving advanced embedded work in specific domains."
+      "rationale": "Strong government support for 'Smart Nation' initiatives and a hub for advanced manufacturing and R&D, leading to concentrated demand for high-skill embedded and IoT expertise in industrial IoT, smart city solutions, and biomedical."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "medium",
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
-        "ABB",
+        "ABB (robotics, industrial automation)",
         "Logitech",
-        "Siemens (presence)",
+        "Various medical device firms",
         "ETH Zurich",
-        "EPFL",
-        "various industrial firms"
+        "EPFL"
       ],
-      "rationale": "Switzerland excels in high-precision engineering, robotics, and industrial automation. While the overall volume is lower, the skill level for advanced embedded roles is very high, with significant frontier work in specialized areas like robotics and medical IoT."
+      "rationale": "Known for high-precision engineering, robotics, and medical technology, Switzerland has a small but highly skilled and frontier-focused embedded systems market, particularly in high-reliability embedded and industrial IoT."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "Ericsson",
-        "Volvo",
+        "Volvo Cars",
+        "Volvo Group",
         "Saab",
-        "ABB (presence)",
-        "KTH Royal Institute of Technology",
-        "various startups"
+        "ABB R&D",
+        "KTH Royal Institute of Technology"
       ],
-      "rationale": "Sweden has a strong legacy in telecommunications and a robust automotive and industrial sector. This drives demand for embedded systems, particularly in 5G/IoT infrastructure and autonomous vehicles, with good frontier research."
+      "rationale": "A strong industrial base in telecommunications and automotive, driving demand for embedded systems expertise, with some R&D in these sectors focusing on telecom, automotive safety, and industrial tech."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "Nokia",
-        "Vaisala",
-        "W\u00e4rtsil\u00e4",
-        "Aalto University",
-        "various startups"
+        "Kone (elevators/escalators)",
+        "Vaisala (measurement tech)",
+        "Oulu University (5G/IoT research)"
       ],
-      "rationale": "Finland, with its strong telecom heritage, is actively developing in IoT, particularly in industrial applications and digital services. While the volume is moderate, the skill level is solid, with some niche frontier work."
+      "rationale": "Known for its telecommunications heritage and industrial machinery, Finland has a niche but skilled market for embedded systems, particularly in IoT, sensor technologies, and telecom infrastructure."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "volume_band": "medium",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "BlackBerry QNX",
-        "Shopify (some hardware)",
-        "various automotive R&D centers",
-        "University of Waterloo",
-        "University of Toronto"
+        "Various automotive R&D centers (e.g., GM, Ford)",
+        "Aerospace companies",
+        "Vector Institute (AI)"
       ],
-      "rationale": "Canada has a growing tech sector, with strengths in AI, automotive, and some industrial applications. This translates to a moderate demand for advanced embedded roles, with some frontier work in AIoT and autonomous systems."
+      "rationale": "A growing tech sector with significant R&D in automotive (QNX being a key embedded OS), AI, and aerospace, driving demand for embedded expertise, particularly in AI at the edge."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.2,
-      "confidence": "medium",
+      "volume_band": "very_low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "low",
       "evidence": [
         "CSIRO",
-        "various startups in agritech/mining IoT",
-        "universities"
+        "Various IoT startups",
+        "Defense industry projects",
+        "Universities"
       ],
-      "rationale": "Australia has a developing tech scene with niche applications in areas like mining, agriculture, and smart cities. While there's some academic research, the industrial scale for advanced embedded systems is relatively smaller."
+      "rationale": "A smaller but growing tech market with niche applications in mining, agriculture, defense, and smart cities, leading to a moderate demand for embedded and IoT skills with some specialized R&D."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Intel (manufacturing/some R&D)",
-        "Dell",
-        "HP",
-        "various tech companies with European HQs"
+        "Intel (Leixlip fab)",
+        "Analog Devices",
+        "Medtronic",
+        "Boston Scientific",
+        "Various university research centers"
       ],
-      "rationale": "Ireland serves as a European hub for many global tech companies, primarily for software and operations. While there's some embedded presence, particularly with Intel, it's not a primary center for advanced embedded R&D or frontier work."
+      "rationale": "A significant hub for medical device manufacturing and a base for some semiconductor operations, creating demand for embedded systems expertise in these sectors, as well as industrial control."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
+      "volume_band": "very_low",
+      "skill_level": 4,
+      "frontier": 0.7,
+      "confidence": "high",
       "evidence": [
-        "IMEC (research institute)",
-        "NXP (presence)",
-        "various industrial firms"
+        "IMEC (world-leading nanoelectronics research center)",
+        "Various industrial automation companies"
       ],
-      "rationale": "Belgium has a strong research institution in microelectronics (IMEC) and a presence of industrial firms. This supports a moderate volume of advanced embedded work, with some frontier research in specific microelectronics areas."
+      "rationale": "Home to IMEC, a global leader in nanoelectronics research, which drives a highly skilled and frontier-focused embedded systems ecosystem, especially in advanced hardware and industrial IoT, despite a small market volume."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
-      "confidence": "medium",
+      "frontier": 0.4,
+      "confidence": "low",
       "evidence": [
-        "Infineon (presence)",
-        "AVL",
-        "Magna Steyr",
-        "TU Graz",
-        "various industrial firms"
+        "AVL (automotive testing)",
+        "AMS OSRAM (sensors)",
+        "Infineon (R&D)"
       ],
-      "rationale": "Austria has strengths in industrial automation, automotive components, and microelectronics. This drives a moderate demand for advanced embedded systems, with some frontier work in automotive and industrial applications."
+      "rationale": "A niche market with strengths in automotive components and microelectronics, leading to specialized demand for embedded systems expertise in automotive, industrial, and sensor applications."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (design/manufacturing)",
-        "Stellantis (Fiat Chrysler)",
+        "STMicroelectronics (Agrate Brianza)",
         "Ferrari",
-        "industrial automation firms"
+        "Fiat",
+        "Leonardo (aerospace/defense)"
       ],
-      "rationale": "Italy has a strong automotive and industrial automation sector, with STMicroelectronics being a key player in semiconductors. While there's a foundation for embedded systems, the overall volume for advanced roles and frontier R&D is moderate."
+      "rationale": "A significant manufacturing base in automotive, industrial, and aerospace sectors, supported by STMicroelectronics, drives demand for embedded systems, with some R&D in these areas."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Telefonica IoT",
-        "some automotive R&D",
-        "universities",
-        "smart city initiatives"
+        "Seat (automotive)",
+        "Various smart city initiatives",
+        "Universities"
       ],
-      "rationale": "Spain has a growing tech sector and some smart city initiatives, but its industrial base for advanced embedded systems is not as developed as other European countries. Most work is applied rather than frontier."
+      "rationale": "An emerging tech market with some focus on smart cities, renewable energy, and automotive, leading to a moderate but less advanced demand for embedded and IoT skills."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
-        "Intel (manufacturing)",
-        "Broadcom (manufacturing)",
-        "STMicroelectronics (manufacturing)",
-        "various EMS providers"
+        "Intel (Penang)",
+        "Various electronics manufacturing services (EMS) companies"
       ],
-      "rationale": "Malaysia is a significant hub for electronics manufacturing and assembly, with a growing capability in design. While it has a good base for embedded systems, the focus is more on manufacturing support and applied engineering rather than frontier R&D."
+      "rationale": "A significant hub for electronics manufacturing and semiconductor assembly, creating demand for embedded systems expertise primarily in manufacturing and industrial IoT, with some growing local product development."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "volume_band": "low",
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Samsung (manufacturing)",
+        "Samsung (manufacturing plants)",
         "Intel (assembly/test)",
-        "FPT Software",
-        "VinGroup"
+        "FPT Software"
       ],
-      "rationale": "Vietnam is an emerging manufacturing hub with a rapidly developing tech sector. While there's a growing talent pool, advanced embedded roles and frontier R&D are still nascent, primarily supporting manufacturing or local application development."
+      "rationale": "A rapidly growing manufacturing hub for electronics, leading to increasing demand for embedded systems skills, primarily in manufacturing support and some local IoT development and services."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Western Digital (manufacturing)",
-        "various automotive suppliers",
-        "smart city initiatives"
+        "Automotive manufacturing plants (e.g., Ford, Toyota, Honda)",
+        "Various electronics manufacturers"
       ],
-      "rationale": "Thailand has a manufacturing base for automotive and electronics. While there are some smart city initiatives, advanced embedded roles and frontier R&D are very limited, mostly focused on manufacturing support and local integration."
+      "rationale": "A significant automotive manufacturing base and electronics production, creating demand for embedded systems expertise, mainly for local manufacturing and industrial applications."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Telkomsel IoT",
-        "various startups",
-        "government digital initiatives"
+        "Various local tech startups",
+        "Government smart city initiatives"
       ],
-      "rationale": "Indonesia has a large domestic market and a growing digital economy, but its advanced embedded tech ecosystem is still in early stages. Most work is focused on local application development and integration rather than core embedded R&D."
+      "rationale": "A large and rapidly digitizing economy with emerging smart city and industrial IoT initiatives, leading to a growing but still nascent demand for embedded and IoT skills."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
-        "Smart Dubai initiatives",
-        "various government tech investments",
-        "attracting global tech firms"
+        "Dubai Smart City initiative",
+        "Various government-backed tech projects"
       ],
-      "rationale": "The UAE is investing heavily in smart city and digital transformation initiatives, attracting international talent and technology. However, indigenous advanced embedded R&D and frontier work are limited, relying more on adoption and integration of foreign tech."
+      "rationale": "Strong government investment in smart city and digital transformation initiatives drives demand for embedded and IoT solutions, often leveraging international expertise for infrastructure, logistics, and oil & gas tech."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "low",
       "evidence": [
         "NEOM project",
-        "Vision 2030 initiatives",
-        "Aramco Digital",
-        "government investment funds"
+        "Saudi Aramco (industrial IoT)",
+        "Vision 2030 initiatives"
       ],
-      "rationale": "Saudi Arabia's Vision 2030 and mega-projects like NEOM involve significant investment in smart infrastructure. Similar to the UAE, the focus is on adopting and integrating advanced technologies, with limited indigenous frontier embedded R&D."
+      "rationale": "Massive government investment in Vision 2030 and projects like NEOM are creating significant demand for advanced IoT and embedded systems, often through partnerships with international firms, particularly in smart city and industrial IoT for oil & gas."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Embraer (aerospace embedded)",
-        "some automotive industry",
-        "universities"
+        "Embraer (aerospace)",
+        "Various industrial companies",
+        "Universities"
       ],
-      "rationale": "Brazil has a large domestic market and some industrial presence (e.g., aerospace, automotive). While there's academic research, the industrial scale for advanced embedded systems and frontier R&D is relatively small."
+      "rationale": "A large economy with some industrial and agricultural tech, leading to a moderate demand for embedded and IoT skills, but with less emphasis on frontier R&D, focusing on industrial IoT and agriculture tech."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.1,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "various automotive suppliers",
-        "R&D centers for global firms",
-        "good engineering universities"
+        "Various automotive R&D centers (e.g., Aptiv, Delphi)",
+        "Industrial automation firms",
+        "Growing tech sector"
       ],
-      "rationale": "Poland has a growing tech sector and a strong pool of engineering talent, often serving as an outsourcing hub for R&D. While there's a moderate volume of embedded work, primarily in automotive and industrial sectors, frontier R&D is less prominent."
+      "rationale": "A rapidly developing tech sector with a strong presence in automotive components and R&D outsourcing, driving demand for embedded systems expertise, particularly in automotive and industrial IoT."
     }
   ]
 }

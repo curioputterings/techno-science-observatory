@@ -4,19 +4,19 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "volume_band": "very_high",
+      "volume_band": "high",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Micron Technology (DRAM, NAND, HBM R&D and manufacturing)",
+        "Micron Technology (DRAM, NAND, HBM)",
         "Western Digital (NAND, HDD, storage solutions)",
-        "Intel (Optane, memory controllers, some MRAM R&D)",
-        "IBM Research (MRAM, advanced memory concepts)",
-        "NVIDIA (HBM integration, memory architecture)",
-        "Universities: Stanford, UC Berkeley, MIT (fundamental memory research)"
+        "Intel (NAND, Optane, memory R&D)",
+        "IBM Research (MRAM, advanced memory R&D)",
+        "Nvidia/AMD (HBM integration, memory controllers)",
+        "Leading universities (Stanford, Berkeley, MIT) for memory research"
       ],
-      "rationale": "The US is a global leader in memory and storage, with major players in design, R&D, and some manufacturing. Significant frontier research in novel memory technologies and advanced architectures."
+      "rationale": "The US is a global leader in memory and storage, particularly in design, advanced R&D, and high-end storage solutions. Micron is a major memory manufacturer, and many tech giants drive innovation in memory controllers, architectures, and next-gen memory technologies. Strong academic research complements industrial efforts."
     },
     {
       "country_iso": "CN",
@@ -26,13 +26,12 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Yangtze Memory Technologies Corp (YMTC - 3D NAND manufacturing and R&D)",
-        "ChangXin Memory Technologies (CXMT - DRAM manufacturing and R&D)",
-        "Huawei (memory controllers, system-level memory design)",
-        "SMIC (foundry services for memory components)",
-        "National IC Industry Investment Fund (significant government investment)"
+        "YMTC (NAND flash manufacturing)",
+        "CXMT (DRAM manufacturing)",
+        "Huawei (memory controllers, system integration)",
+        "Government-backed semiconductor initiatives"
       ],
-      "rationale": "China has made massive strategic investments to achieve self-sufficiency in memory, leading to rapid growth in manufacturing and R&D capabilities, particularly in NAND and DRAM."
+      "rationale": "China has made significant strategic investments to develop its indigenous memory industry, with YMTC and CXMT emerging as major players in NAND and DRAM manufacturing. While still catching up to global leaders in some areas, there's substantial R&D and manufacturing volume, with a strong push towards self-sufficiency and advanced technologies."
     },
     {
       "country_iso": "JP",
@@ -42,27 +41,27 @@
       "frontier": 0.6,
       "confidence": "high",
       "evidence": [
-        "Kioxia (formerly Toshiba Memory - leading 3D NAND flash manufacturer and R&D)",
-        "Renesas Electronics (some memory controllers, embedded memory)",
-        "Sony (image sensors with integrated memory, some advanced memory R&D)",
-        "Universities: Tohoku University, University of Tokyo (materials science, spintronics, MRAM research)",
-        "Tokyo Electron (memory manufacturing equipment)"
+        "Kioxia (NAND flash manufacturing, joint venture with Western Digital)",
+        "Renesas (memory controllers, embedded memory)",
+        "Strong materials and equipment industry (e.g., Tokyo Electron, Canon, Nikon)",
+        "Academic research in advanced materials and memory"
       ],
-      "rationale": "Japan remains a strong player in NAND flash memory, particularly in manufacturing technology and materials science. It also has significant R&D in emerging memory types."
+      "rationale": "Japan has a strong legacy and continues to be a significant player, particularly in NAND flash manufacturing (Kioxia) and the critical materials and equipment supply chain for memory production. R&D in advanced materials and next-gen memory concepts is also robust."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.95,
+      "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "Samsung Electronics (world leader in DRAM, NAND, HBM, MRAM R&D and manufacturing)",
-        "SK Hynix (world leader in DRAM, NAND, HBM R&D and manufacturing)",
-        "Universities: KAIST, Seoul National University (advanced semiconductor and memory research)"
+        "Samsung Electronics (world leader in DRAM, NAND, HBM, MRAM R&D)",
+        "SK Hynix (world leader in DRAM, NAND, HBM)",
+        "Massive R&D investment by industry giants",
+        "Leading-edge process technology development"
       ],
-      "rationale": "South Korea is the undisputed global leader in memory and storage devices, dominating DRAM and NAND production and consistently pushing the frontier in HBM, MRAM, and next-generation memory technologies."
+      "rationale": "South Korea is the undisputed global leader in memory and storage devices, home to Samsung and SK Hynix, which dominate the DRAM and NAND markets. These companies drive the frontier of memory technology, including HBM and emerging memory types, with massive R&D and manufacturing capabilities."
     },
     {
       "country_iso": "TW",
@@ -72,13 +71,13 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "TSMC (leading foundry for memory controllers, HBM integration, advanced packaging)",
-        "Nanya Technology (DRAM manufacturing and R&D)",
-        "Macronix International (NOR Flash, 3D NAND, R&D)",
-        "Winbond Electronics (DRAM, Flash memory)",
-        "MediaTek (memory controllers for mobile/consumer electronics)"
+        "TSMC (foundry for memory controllers, advanced packaging for HBM)",
+        "Nanya Technology (DRAM manufacturing)",
+        "Winbond (DRAM, Flash memory)",
+        "Macronix (NOR Flash, ROM)",
+        "Strong semiconductor ecosystem and advanced packaging expertise"
       ],
-      "rationale": "Taiwan has a robust memory ecosystem, particularly in DRAM manufacturing, memory controller design, and advanced foundry services that are critical for high-performance memory integration."
+      "rationale": "Taiwan is a critical hub for the global semiconductor industry, including memory. While not leading in raw DRAM/NAND volume like Korea, it excels in specialty memory, DRAM manufacturing (Nanya), and crucially, advanced packaging (TSMC) which is vital for HBM and other high-performance memory integration. Strong design and manufacturing capabilities."
     },
     {
       "country_iso": "DE",
@@ -88,12 +87,12 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Infineon Technologies (embedded memory for automotive/industrial, some MRAM R&D)",
-        "Bosch (automotive memory applications)",
-        "Fraunhofer Institutes (applied research in memory technologies, materials)",
-        "TU Dresden (semiconductor research, including memory)"
+        "Infineon (some embedded memory, automotive solutions)",
+        "Bosch (automotive memory, sensors)",
+        "Fraunhofer Institutes (materials research)",
+        "Zeiss (critical optics for lithography equipment)"
       ],
-      "rationale": "Germany has a strong focus on embedded and automotive memory solutions, with specialized R&D in areas like MRAM and robust industrial applications, but lacks large-scale commodity memory production."
+      "rationale": "Germany has a strong focus on embedded memory, particularly for automotive and industrial applications, driven by companies like Infineon and Bosch. While not a major player in standalone memory manufacturing, it contributes significantly to materials science, equipment (via Zeiss), and specialized memory R&D."
     },
     {
       "country_iso": "NL",
@@ -103,39 +102,38 @@
       "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "ASML (critical lithography equipment for memory manufacturing)",
-        "NXP Semiconductors (some embedded memory for automotive)",
-        "TU Delft (research in advanced materials and devices)"
+        "ASML (world leader in lithography equipment, critical for memory fabs)",
+        "NXP Semiconductors (embedded memory, automotive)"
       ],
-      "rationale": "While not a direct memory manufacturer, the Netherlands is crucial for the memory industry through ASML's lithography technology. It also has niche R&D in advanced materials and embedded systems."
+      "rationale": "The Netherlands is not a direct memory producer but is absolutely critical to the global memory industry through ASML, which provides the advanced lithography equipment essential for manufacturing cutting-edge memory chips. Direct memory job volume is low, but the skill level in enabling technologies is expert."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "ARM (memory controller IP design, architecture for memory systems)",
-        "Graphcore (AI accelerators with advanced memory requirements)",
-        "Universities: Cambridge, Manchester (spintronics, novel materials research)"
+        "Arm (memory controller IP, architecture design)",
+        "Graphcore (AI accelerators with memory integration)",
+        "Academic research in novel memory concepts"
       ],
-      "rationale": "The UK excels in memory IP design and architecture through ARM, and has a growing ecosystem around AI accelerators that drive demand for advanced memory solutions. Niche academic research in novel memory."
+      "rationale": "The UK's contribution to memory and storage is primarily in IP design (Arm's memory controllers are ubiquitous), system-level integration for AI/ML, and academic research into future memory technologies. There is no significant memory manufacturing presence."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics (embedded memory, MRAM R&D and manufacturing)",
-        "CEA-Leti (leading research institute in advanced memory technologies, MRAM, RRAM)",
-        "Universities (fundamental research in materials science)"
+        "STMicroelectronics (MRAM R&D, embedded memory)",
+        "CEA-Leti (advanced memory research, MRAM development)",
+        "Soitec (materials for memory applications)"
       ],
-      "rationale": "France has strong research capabilities, particularly at CEA-Leti, in emerging memory technologies like MRAM and RRAM, and STMicroelectronics contributes to embedded memory solutions."
+      "rationale": "France has a strong R&D focus, particularly through CEA-Leti, which is a key player in emerging memory technologies like MRAM. STMicroelectronics also contributes to embedded memory and MRAM development. The volume is low, but the skill level in advanced research is notable."
     },
     {
       "country_iso": "IL",
@@ -145,67 +143,66 @@
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Intel (some memory R&D, acquired Habana Labs for AI accelerators using HBM)",
-        "Various startups in storage optimization, data management, and memory-centric computing",
-        "Mellanox (now NVIDIA - high-speed interconnects impacting memory access)"
+        "Intel (NAND R&D, storage solutions)",
+        "Nvidia (Mellanox acquisition, high-speed interconnects, memory interfaces)",
+        "Various storage and AI accelerator startups"
       ],
-      "rationale": "Israel has a vibrant high-tech sector with expertise in memory optimization, storage solutions, and AI hardware that leverages advanced memory, primarily in design and software rather than manufacturing."
+      "rationale": "Israel excels in semiconductor design, algorithms, and system-level innovation. While not a memory manufacturer, it hosts significant R&D centers for global tech giants working on memory controllers, storage architectures, and high-performance computing that heavily relies on advanced memory."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "medium",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "skill_level": 3,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Design centers for global semiconductor companies (e.g., Intel, Samsung, Micron, Western Digital)",
-        "Numerous startups in storage software and data management",
-        "Academic research in VLSI and embedded systems"
+        "Design centers for global semiconductor companies (e.g., Micron, Western Digital, Intel, Samsung)",
+        "Strong talent pool for VLSI design, verification, and software development",
+        "Growing government initiatives for semiconductor manufacturing"
       ],
-      "rationale": "India serves as a significant hub for design, verification, and software development for global memory and storage companies. While lacking fabs, it has a large talent pool for supporting advanced memory R&D."
+      "rationale": "India has a large and growing talent pool for semiconductor design, verification, and software, hosting major design centers for global memory and storage companies. While lacking significant manufacturing, it's a key contributor to design and R&D support functions."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.3,
+      "skill_level": 4,
+      "frontier": 0.5,
       "confidence": "high",
       "evidence": [
-        "Micron Technology (NAND fab, R&D center)",
-        "GlobalFoundries (foundry services, some memory-related process tech)",
-        "Seagate Technology (HDD manufacturing, some R&D)",
-        "Applied Materials (equipment for memory manufacturing)",
-        "Universities: NUS, NTU (semiconductor research)"
+        "Micron (NAND fab, R&D center)",
+        "GlobalFoundries (some memory manufacturing)",
+        "Western Digital (storage solutions)",
+        "A*STAR (advanced manufacturing and materials research)"
       ],
-      "rationale": "Singapore is a key manufacturing and R&D hub for memory, particularly for NAND flash, with a strong presence of major global players and a focus on advanced manufacturing processes."
+      "rationale": "Singapore is a significant hub for semiconductor manufacturing and R&D, including memory. Micron has a substantial NAND fab and R&D presence. The country has strong government support for advanced manufacturing, materials science, and advanced packaging, contributing to the memory supply chain."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
-      "skill_level": 4,
+      "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "IBM Research Zurich (advanced materials, spintronics, novel memory concepts)",
-        "ETH Zurich, EPFL (fundamental research in physics and materials science)"
+        "IBM Research Zurich (some advanced memory concepts, quantum computing implications)",
+        "ETH Zurich, EPFL (academic research in materials science, physics)"
       ],
-      "rationale": "Switzerland has high-end academic and corporate research in fundamental memory science and novel materials, but no significant industrial memory production."
+      "rationale": "Switzerland's contribution is primarily in fundamental research, particularly in materials science and emerging computing paradigms (like quantum computing) that have implications for future memory technologies. Industrial presence in core memory manufacturing is negligible."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "Ericsson (some memory integration in telecom equipment)",
-        "Universities: KTH Royal Institute of Technology, Chalmers University of Technology (materials science, electronics)"
+        "Ericsson (embedded memory in networking solutions)",
+        "Academic research in materials and physics"
       ],
-      "rationale": "Sweden has limited direct involvement in advanced memory and storage, with activity primarily in embedded memory for telecommunications and some academic research."
+      "rationale": "Sweden has limited direct involvement in advanced memory and storage devices. Its contributions are mainly in embedded memory for telecommunications equipment and some academic research in related fields."
     },
     {
       "country_iso": "FI",
@@ -215,10 +212,10 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Nokia (some memory in network infrastructure)",
-        "VTT Technical Research Centre of Finland (some microelectronics research)"
+        "Nokia (embedded memory in networking solutions)",
+        "Academic research"
       ],
-      "rationale": "Finland's contribution to advanced memory is minimal, mainly related to embedded systems in telecommunications and general microelectronics research."
+      "rationale": "Finland's presence in advanced memory is very limited, primarily through embedded memory in telecommunications equipment and some academic research."
     },
     {
       "country_iso": "CA",
@@ -228,50 +225,49 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "AMD (memory controller design, HBM integration for GPUs/CPUs)",
-        "Various AI/ML startups (memory optimization for accelerators)",
-        "Universities: University of Toronto, University of Waterloo (computer architecture, AI hardware)"
+        "D-Wave Systems (quantum computing, specialized memory needs)",
+        "Various AI/ML startups (memory integration, optimization)",
+        "Academic research in AI, quantum computing, materials"
       ],
-      "rationale": "Canada has expertise in memory controller design and memory architecture, particularly driven by AI/ML hardware development and high-performance computing, but no major memory manufacturing."
+      "rationale": "Canada has a growing ecosystem in AI and quantum computing, which drives demand for specialized memory solutions and research into novel memory architectures. Direct memory manufacturing is minimal, but R&D in related fields is present."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "CSIRO (some materials science research)",
-        "Universities: UNSW, University of Melbourne (quantum computing, some microelectronics research)"
+        "Academic research in quantum computing, materials science",
+        "Limited industrial presence"
       ],
-      "rationale": "Australia has very limited activity in advanced memory and storage, primarily confined to academic research in materials science and emerging computing paradigms."
+      "rationale": "Australia's involvement in advanced memory is largely confined to academic research, particularly in quantum computing and materials science, which could impact future memory technologies. Industrial presence is negligible."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Intel (manufacturing/assembly operations, some memory-related support)",
-        "Dell EMC (storage solutions, R&D for enterprise storage)"
+        "Intel (some R&D, manufacturing, but not primary memory fab)",
+        "Dell/HP (storage systems integration, software)"
       ],
-      "rationale": "Ireland hosts significant operations for Intel and Dell EMC, contributing to memory-related manufacturing support and enterprise storage solutions, but not core memory R&D or fabrication."
+      "rationale": "Ireland hosts operations for major tech companies, but its direct contribution to advanced memory and storage devices is primarily in software, systems integration, and support rather than core design or manufacturing."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 5,
       "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "IMEC (world-leading research in advanced memory materials, process technology, novel memory concepts like MRAM, RRAM, FeRAM)",
-        "Universities (collaboration with IMEC)"
+        "Imec (world-leading R&D hub for advanced semiconductor technology, including memory)"
       ],
-      "rationale": "Belgium, through IMEC, is a global powerhouse for cutting-edge, frontier research in advanced memory technologies, materials, and process integration, despite not having large-scale commercial production."
+      "rationale": "Belgium, through Imec, is a global powerhouse in pre-competitive semiconductor R&D, including advanced memory concepts (MRAM, FeRAM, etc.), materials, and process technology. While industrial manufacturing volume is low, the skill level and frontier R&D are exceptionally high."
     },
     {
       "country_iso": "AT",
@@ -281,10 +277,10 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Infineon Technologies (some R&D and manufacturing for power semiconductors, some embedded memory)",
-        "AT&S (high-end PCBs, packaging solutions relevant to memory modules)"
+        "Infineon (some R&D, power semiconductors, but not core memory)",
+        "AMS (sensors, some embedded memory)"
       ],
-      "rationale": "Austria has niche contributions through Infineon's embedded memory for industrial applications and AT&S's advanced packaging solutions, but no significant direct memory industry."
+      "rationale": "Austria has limited direct involvement in advanced memory, primarily contributing through embedded memory in sensors and power semiconductors, and some academic research."
     },
     {
       "country_iso": "IT",
@@ -294,77 +290,76 @@
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "STMicroelectronics (some embedded memory, MRAM R&D)",
-        "Politecnico di Milano, University of Bologna (materials science, microelectronics research)"
+        "STMicroelectronics (some embedded memory design, MRAM R&D in collaboration)",
+        "Academic research"
       ],
-      "rationale": "Italy's involvement is primarily through STMicroelectronics' embedded memory and MRAM R&D, along with academic research in microelectronics and materials."
+      "rationale": "Italy's contribution to advanced memory is mainly through STMicroelectronics' embedded memory design and some collaborative R&D in emerging memory types. Overall volume is low."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Universities (some microelectronics and materials science research)",
-        "Barcelona Supercomputing Center (HPC, but not memory manufacturing)"
+        "Academic research in materials science, quantum computing",
+        "Limited industrial presence"
       ],
-      "rationale": "Spain has very limited activity in advanced memory and storage, mostly confined to academic research with no significant industrial presence."
+      "rationale": "Spain has very limited direct involvement in advanced memory and storage devices, with contributions primarily from academic research in related scientific fields."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "medium",
-      "skill_level": 2,
+      "skill_level": 3,
       "frontier": 0.1,
       "confidence": "high",
       "evidence": [
-        "Intel (assembly, test operations for various components, including memory-related)",
-        "Micron Technology (assembly, test, packaging for NAND and DRAM)",
-        "Western Digital (HDD manufacturing, assembly, test)",
-        "Numerous OSAT (Outsourced Semiconductor Assembly and Test) companies"
+        "Major semiconductor assembly, test, and packaging (ATP) operations (e.g., Micron, Western Digital, Intel)",
+        "Strong manufacturing engineering talent"
       ],
-      "rationale": "Malaysia is a major global hub for semiconductor assembly, test, and packaging, including significant operations for memory devices. It's strong in manufacturing engineering but less so in core R&D."
+      "rationale": "Malaysia is a crucial hub for semiconductor assembly, test, and packaging (ATP) for many global memory and storage companies. While not involved in leading-edge design or wafer fabrication, it plays a significant role in the back-end manufacturing and supply chain."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Samsung (assembly, test operations for various electronic components)",
-        "Intel (assembly, test operations)"
+        "Intel (assembly and test operations, some storage related)",
+        "Samsung (assembly for consumer electronics, some storage)",
+        "Growing electronics manufacturing sector"
       ],
-      "rationale": "Vietnam is an emerging manufacturing hub, with major players like Samsung and Intel having assembly and test operations that include memory-related components, but limited advanced R&D."
+      "rationale": "Vietnam is an emerging manufacturing hub for electronics, including assembly and test operations for some storage devices and components. Its role in advanced memory is primarily in the lower-skill manufacturing stages, with growing but nascent R&D."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.05,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Western Digital (major HDD manufacturing facilities)",
-        "Seagate Technology (major HDD manufacturing facilities)"
+        "Western Digital (major HDD manufacturing, some flash assembly)",
+        "Seagate (HDD manufacturing)"
       ],
-      "rationale": "Thailand is a significant global center for Hard Disk Drive (HDD) manufacturing, with large-scale operations from Western Digital and Seagate, but limited activity in advanced solid-state memory."
+      "rationale": "Thailand is a significant global manufacturing base for hard disk drives (HDDs) and has some operations for flash memory assembly. Its contribution is primarily in the manufacturing and assembly of storage devices, rather than advanced memory design or R&D."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "volume_band": "very_low",
+      "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Limited electronics assembly operations",
-        "No major memory or storage device manufacturers"
+        "Limited advanced electronics manufacturing",
+        "No major memory/storage companies or R&D centers"
       ],
-      "rationale": "Indonesia has very limited involvement in advanced memory and storage devices, primarily basic electronics assembly with no significant R&D or manufacturing presence."
+      "rationale": "Indonesia has negligible involvement in advanced memory and storage devices, with very limited manufacturing or R&D capabilities in this domain."
     },
     {
       "country_iso": "AE",
@@ -372,12 +367,12 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "high",
+      "confidence": "low",
       "evidence": [
-        "No established memory or storage device industry",
-        "Focus on investment in other tech sectors"
+        "Focus on data centers and AI adoption, but no indigenous memory/storage industry",
+        "Investment funds, but limited R&D/manufacturing"
       ],
-      "rationale": "The UAE has no significant indigenous or foreign-invested advanced memory and storage device industry."
+      "rationale": "The UAE has no significant indigenous advanced memory or storage device industry. While investing in data centers and AI, direct contributions to memory technology are negligible."
     },
     {
       "country_iso": "SA",
@@ -385,26 +380,25 @@
       "volume_band": "none",
       "skill_level": 1,
       "frontier": 0.0,
-      "confidence": "high",
+      "confidence": "low",
       "evidence": [
-        "No established memory or storage device industry",
-        "Focus on diversifying economy, but not in this specific domain yet"
+        "Focus on digital transformation and AI, but no indigenous memory/storage industry",
+        "Limited R&D/manufacturing in this domain"
       ],
-      "rationale": "Saudi Arabia has no significant indigenous or foreign-invested advanced memory and storage device industry."
+      "rationale": "Saudi Arabia has no significant indigenous advanced memory or storage device industry. Efforts are focused on digital transformation and AI adoption, but not on the core technology development or manufacturing of memory."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "very_low",
       "skill_level": 1,
-      "frontier": 0.05,
+      "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Some local electronics manufacturing and assembly",
-        "Universities (basic microelectronics research)",
-        "No major memory or storage device manufacturers"
+        "Limited electronics manufacturing",
+        "Some academic research, but not a major player"
       ],
-      "rationale": "Brazil has very limited activity in advanced memory and storage, primarily basic electronics assembly and academic research, with no significant industrial footprint."
+      "rationale": "Brazil has very limited involvement in advanced memory and storage devices, with minimal manufacturing or R&D capabilities in this domain."
     },
     {
       "country_iso": "PL",
@@ -414,11 +408,10 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "Intel (planned new fab, but primarily for logic, not memory)",
-        "Some R&D centers for global tech companies (software focus)",
-        "Universities (microelectronics research)"
+        "Growing IT sector, but limited semiconductor manufacturing",
+        "Some academic research in related fields"
       ],
-      "rationale": "Poland is an emerging location for semiconductor investment (e.g., Intel's planned fab), but current advanced memory and storage activity is very limited, mainly in supporting R&D and academic research."
+      "rationale": "Poland has a growing IT sector and some academic research in related fields, but its direct involvement in advanced memory and storage device design or manufacturing is very limited."
     }
   ]
 }

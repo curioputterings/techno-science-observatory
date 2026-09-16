@@ -10,10 +10,11 @@
       "confidence": "high",
       "evidence": [
         "National Photonics Initiative (NPI)",
-        "CHIPS and Science Act (indirectly supports advanced manufacturing including photonics)",
-        "AIM Photonics (DoD-led manufacturing institute)"
+        "AIM Photonics (American Institute for Manufacturing Integrated Photonics)",
+        "CHIPS and Science Act (indirectly supports related R&D)",
+        "DoD/DARPA programs"
       ],
-      "rationale": "The US has a long-standing and well-funded commitment to photonics R&D and manufacturing, driven by defense, telecommunications, and computing needs, aiming for global leadership in advanced and integrated photonics."
+      "rationale": "Photonics is a recognized key enabling technology with significant, sustained government investment and dedicated initiatives aimed at maintaining global leadership in integrated photonics, quantum photonics, and advanced optical systems."
     },
     {
       "country_iso": "CN",
@@ -23,11 +24,11 @@
       "horizon": "long",
       "confidence": "high",
       "evidence": [
-        "14th Five-Year Plan (strategic emerging industries)",
-        "Made in China 2025 (earlier, but goals persist for self-sufficiency)",
-        "National R&D funding for optical communication and advanced lasers"
+        "14th Five-Year Plan for National Economic and Social Development",
+        "National Key R&D Programs",
+        "Significant investments in optical fiber, laser manufacturing, quantum communication"
       ],
-      "rationale": "Photonics is a critical component of China's technological self-reliance and industrial upgrade strategy, with massive state-backed investments to achieve global leadership and self-sufficiency."
+      "rationale": "Photonics is a strategic emerging industry with massive, coordinated national investment and explicit goals for global leadership across various sub-domains, including optical communication, advanced manufacturing, and quantum technologies."
     },
     {
       "country_iso": "JP",
@@ -35,13 +36,14 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Society 5.0 initiatives",
-        "National strategies for quantum technology",
-        "METI and NEDO R&D programs in optical communication and advanced materials"
+        "Japan's Science and Technology Basic Plans",
+        "Photonics Council initiatives",
+        "RIKEN (quantum photonics) research programs",
+        "NEDO projects"
       ],
-      "rationale": "Japan maintains a strong position in specific photonics niches, driven by industrial competitiveness and strategic technology goals, with a focus on advanced materials and quantum photonics."
+      "rationale": "Japan maintains a strong focus on advanced manufacturing, optical communications, and emerging quantum technologies, leveraging its historical strengths in precision optics and components."
     },
     {
       "country_iso": "KR",
@@ -49,83 +51,85 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "National Quantum Science and Technology Strategy",
-        "ICT R&D programs",
-        "Government support for advanced manufacturing and materials"
+        "National R&D programs for future technologies (e.g., 5G/6G optical networks)",
+        "KIST (Korea Institute of Science and Technology)",
+        "ETRI (Electronics and Telecommunications Research Institute)"
       ],
-      "rationale": "South Korea leverages its strengths in semiconductors and displays to push into advanced photonics, with explicit government support for future technologies like integrated and quantum photonics."
+      "rationale": "South Korea prioritizes photonics for its display technology, optical communication infrastructure, and semiconductor-related applications, aiming for leadership in specific high-tech areas."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "Industrial Technology Research Institute (ITRI) initiatives",
-        "Government support for optoelectronics industry",
-        "National science and technology programs"
+        "National Science and Technology Council (NSTC) programs",
+        "Focus on advanced packaging and compound semiconductors"
       ],
-      "rationale": "Taiwan's ambition in photonics is often intertwined with its semiconductor and display industries, with strategic investments to maintain technological edge in integrated photonics and optical components."
+      "rationale": "Taiwan leverages its robust semiconductor and optoelectronics manufacturing ecosystem to advance integrated photonics and high-value optical components."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "ambition": 4,
-      "target_level": 4,
+      "ambition": 5,
+      "target_level": 5,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Photonics Germany strategy",
-        "Fraunhofer Institutes (e.g., ILT, IOF)",
-        "BMBF funding for optical technologies",
-        "Quantum Technologies - From Basic Research to Market program"
+        "\"Photonics Germany\" strategy",
+        "Fraunhofer Institutes (e.g., ILT, IOF) dedicated research",
+        "BMBF (Federal Ministry of Education and Research) funding programs",
+        "Quantum Technology & Photonics Flagship"
       ],
-      "rationale": "Germany has a long-standing and well-funded commitment to photonics, driven by its strong industrial sector and research infrastructure, aiming for leadership in industrial lasers and optical instrumentation."
+      "rationale": "Germany has a strong industrial base in lasers and optical instruments, with a clear national strategy and significant funding to maintain and advance leadership in industrial photonics, quantum optics, and advanced optical systems."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "PhotonDelta ecosystem and roadmap",
+        "National Growth Fund investment in integrated photonics",
+        "Eindhoven University of Technology's leading role"
+      ],
+      "rationale": "The Netherlands has made integrated photonics a flagship national priority, with substantial government investment and a coordinated ecosystem (PhotonDelta) aiming for global leadership in manufacturing and applications."
+    },
+    {
+      "country_iso": "GB",
+      "country_name": "United Kingdom",
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "PhotonDelta ecosystem and National Growth Fund investment",
-        "National Agenda Quantum Technology"
+        "UK National Quantum Technologies Programme",
+        "Future Photonics Hub",
+        "Innovate UK funding for photonics projects",
+        "Compound Semiconductor Applications Catapult"
       ],
-      "rationale": "The Netherlands has made a very explicit and well-funded national commitment to integrated photonics, positioning it as a key future technology and global manufacturing hub."
-    },
-    {
-      "country_iso": "GB",
-      "country_name": "United Kingdom",
-      "ambition": 3,
-      "target_level": 3,
-      "horizon": "medium",
-      "confidence": "medium",
-      "evidence": [
-        "National Quantum Technologies Programme (NQTP)",
-        "UK Photonics Leadership Group",
-        "Innovate UK funding for photonics"
-      ],
-      "rationale": "The UK has identified photonics, especially quantum photonics and integrated photonics, as a strategic area, backing it with dedicated programs and funding to leverage its strong research base."
+      "rationale": "The UK has a strong academic base and significant government investment, particularly in quantum technologies and integrated photonics, aiming for leadership in these advanced areas."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "France 2030 investment plan (includes quantum technologies, advanced manufacturing)",
-        "National strategy for quantum technologies",
-        "ANR (National Research Agency) calls for photonics research"
+        "Photonics France cluster initiatives",
+        "CNRS and CEA research programs"
       ],
-      "rationale": "France is investing in photonics as part of its broader industrial and technological sovereignty goals, particularly in quantum technologies and high-power lasers."
+      "rationale": "France has a strong foundation in optics and lasers, with recent national investment plans (France 2030) explicitly supporting quantum technologies and advanced manufacturing, which heavily rely on photonics."
     },
     {
       "country_iso": "IL",
@@ -135,25 +139,24 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Israel Innovation Authority support for deep tech",
-        "Defense R&D programs (electro-optics)",
-        "Government grants for photonics startups"
+        "Israel Innovation Authority programs (supporting deep tech)",
+        "Strong startup ecosystem in electro-optics and imaging"
       ],
-      "rationale": "Israel's ambition in photonics is driven by its innovation ecosystem and strategic needs, with government support for high-tech R&D in areas like lidar, medical imaging, and defense applications."
+      "rationale": "Israel has a robust high-tech ecosystem with significant activity in electro-optics and imaging, and a growing interest in integrated photonics, though without a single overarching national photonics strategy."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "ambition": 2,
       "target_level": 2,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "medium",
       "evidence": [
-        "National Quantum Mission",
-        "Make in India initiative (includes electronics manufacturing)",
-        "DRDO and DST R&D projects"
+        "National Quantum Mission (includes photonics components)",
+        "\"Make in India\" initiative (general push for electronics manufacturing)",
+        "Department of Science & Technology (DST) programs"
       ],
-      "rationale": "India is developing its photonics capabilities as part of its broader push for technological self-reliance and advanced manufacturing, with increasing government attention to optical communication and sensors."
+      "rationale": "India shows growing interest in photonics, particularly for optical communications and quantum technologies, with initiatives to build domestic capabilities, but it's not yet a flagship national priority with dedicated, large-scale funding."
     },
     {
       "country_iso": "SG",
@@ -163,24 +166,25 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Quantum Strategy",
-        "A*STAR research institutes (e.g., IMRE)",
-        "Grants for deep tech and advanced manufacturing"
+        "National Research Foundation (NRF) funding for advanced manufacturing and quantum technologies",
+        "A*STAR initiatives",
+        "Centre for Quantum Technologies (CQT)"
       ],
-      "rationale": "Singapore strategically invests in high-tech areas, and photonics is identified as a critical enabling technology for its future economy and research excellence, particularly in integrated and quantum photonics."
+      "rationale": "Singapore focuses on high-value advanced manufacturing and quantum technologies, which include significant photonics components, leveraging its strong R&D ecosystem."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
-      "ambition": 2,
+      "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Swiss National Science Foundation (SNSF) grants for quantum and optical research",
-        "ETH Zurich and EPFL research programs"
+        "Swiss National Science Foundation (SNSF) funding for research",
+        "ETH Zurich, EPFL, CSEM research excellence",
+        "Strong industry in precision manufacturing and optics"
       ],
-      "rationale": "Switzerland's ambition is driven by its strong academic research and high-tech industry, with targeted investments in niche, high-value photonics areas like precision optics and quantum photonics."
+      "rationale": "Switzerland has a strong academic and industrial base in precision optics, lasers, and quantum technologies, focusing on high-value components and research excellence, though without a single, explicit national photonics strategy."
     },
     {
       "country_iso": "SE",
@@ -190,10 +194,10 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Vinnova (Swedish Innovation Agency) funding for advanced materials and ICT",
-        "National quantum initiatives"
+        "KTH Royal Institute of Technology and Chalmers University of Technology research",
+        "Ericsson R&D in optical communications"
       ],
-      "rationale": "Sweden has a solid research foundation in photonics, with government support for innovation in key areas like optical communication, sensors, and quantum photonics."
+      "rationale": "Sweden has strengths in optical communications and some academic research in photonics, but it does not have a distinct, high-level national photonics strategy or dedicated flagship programs."
     },
     {
       "country_iso": "FI",
@@ -203,11 +207,11 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Business Finland funding for deep tech",
-        "National quantum initiatives",
-        "VTT Technical Research Centre of Finland programs"
+        "Photonics Finland ecosystem",
+        "Business Finland funding for R&D",
+        "VTT Technical Research Centre of Finland"
       ],
-      "rationale": "Finland leverages its strengths in ICT and research to develop capabilities in photonics, with government support for innovation in optical communication, imaging, and quantum technologies."
+      "rationale": "Finland has a developing photonics ecosystem with some government support for R&D, focusing on applications in ICT, sensing, and quantum technologies."
     },
     {
       "country_iso": "CA",
@@ -217,11 +221,11 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Quantum Strategy",
-        "NSERC (Natural Sciences and Engineering Research Council) funding",
-        "NRC (National Research Council) photonics programs"
+        "National Quantum Strategy (includes quantum photonics)",
+        "National Research Council (NRC) programs",
+        "Leading university research (e.g., Waterloo, Toronto, Laval)"
       ],
-      "rationale": "Canada has identified quantum technologies, with photonics as a key component, as a national priority, backed by significant government investment in research and development."
+      "rationale": "Canada has a strong academic research base, particularly in quantum photonics and optical communications, supported by a national quantum strategy, aiming for leadership in specific research-intensive areas."
     },
     {
       "country_iso": "AU",
@@ -231,24 +235,24 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Quantum Strategy",
-        "CSIRO research programs",
-        "ARC (Australian Research Council) funding"
+        "Australian National Quantum Strategy",
+        "CSIRO research initiatives",
+        "University research programs"
       ],
-      "rationale": "Australia is building its photonics capabilities, particularly in quantum, as part of its broader innovation and research agenda, with increasing government support."
+      "rationale": "Australia has a growing interest in quantum technologies and optical sensing, with a national quantum strategy that includes photonics, but it's still in a developmental phase for broader photonics ambition."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Science Foundation Ireland (SFI) research centres (e.g., IPIC)",
-        "National research priorities"
+        "SFI (Science Foundation Ireland) funding",
+        "IPIC (Irish Photonics Integration Centre)"
       ],
-      "rationale": "Ireland has a focused research effort in photonics, supported by government funding, aiming to develop expertise in key areas like integrated photonics and optical communications."
+      "rationale": "Ireland has established a dedicated research center (IPIC) and government funding to develop photonics capabilities, particularly for medical devices, ICT, and advanced manufacturing."
     },
     {
       "country_iso": "BE",
@@ -258,24 +262,23 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "imec's strategic roadmap",
-        "Flemish government support for microelectronics and photonics",
-        "National quantum initiatives"
+        "IMEC (Interuniversity Microelectronics Centre) research programs",
+        "Ghent University Photonics Research Group"
       ],
-      "rationale": "Belgium, particularly Flanders through imec, has a significant ambition in integrated photonics, positioning itself as a globally recognized research and innovation hub."
+      "rationale": "Belgium, particularly through IMEC, has a strong focus on micro- and nano-photonics and integrated photonics research, aiming for specialist expertise in these areas."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "FFG (Austrian Research Promotion Agency) funding for quantum and optical technologies",
-        "National research programs"
+        "Austrian Science Fund (FWF) support for research",
+        "IQOQI (Institute for Quantum Optics and Quantum Information)"
       ],
-      "rationale": "Austria has a strong academic base in quantum and optics, with government support for related research and innovation in precision optics and quantum photonics."
+      "rationale": "Austria has strong academic research in quantum optics and laser physics, with government funding supporting these specialized areas."
     },
     {
       "country_iso": "IT",
@@ -283,12 +286,12 @@
       "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "National Quantum Technologies Plan",
-        "MIUR (Ministry of Education, University and Research) funding for strategic research areas"
+        "CNR (National Research Council) research activities",
+        "Participation in some EU funding programs"
       ],
-      "rationale": "Italy is increasing its investment in strategic technologies like quantum, which includes photonics, as part of its national research agenda for advanced manufacturing and sensors."
+      "rationale": "Italy has some academic research in photonics, but lacks a highly coordinated or explicitly stated national strategy with significant dedicated funding for the domain."
     },
     {
       "country_iso": "ES",
@@ -296,12 +299,12 @@
       "ambition": 2,
       "target_level": 2,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "National Quantum Strategy",
-        "Ministry of Science and Innovation funding for strategic research"
+        "ICFO (Institute of Photonic Sciences) research",
+        "Some national R&D programs"
       ],
-      "rationale": "Spain is developing its photonics capabilities, particularly in quantum and optical communications, with government support for research and innovation."
+      "rationale": "Spain has notable research institutions like ICFO contributing to photonics, particularly in quantum and biophotonics, but a comprehensive national strategy is less pronounced."
     },
     {
       "country_iso": "MY",
@@ -311,10 +314,9 @@
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "National Industry 4.0 Policy (indirectly supports advanced manufacturing)",
-        "Investment incentives for high-tech manufacturing"
+        "Malaysian Investment Development Authority (MIDA) general promotion of high-tech manufacturing"
       ],
-      "rationale": "Malaysia's ambition in photonics is primarily driven by its existing electronics manufacturing base, with less explicit, dedicated national strategies for advanced photonics, focusing on assembly and basic optoelectronics."
+      "rationale": "Malaysia focuses on general electronics manufacturing and assembly, but photonics is not identified as a distinct, high-priority national strategic domain with dedicated programs."
     },
     {
       "country_iso": "VN",
@@ -324,23 +326,21 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "National Strategy on Industry 4.0 (general)",
-        "FDI attraction for electronics manufacturing"
+        "General Science & Technology development plans"
       ],
-      "rationale": "Vietnam is developing its high-tech sector, but photonics is not yet a distinct, high-priority national strategy, rather an enabler for other industries, focusing on basic assembly."
+      "rationale": "Photonics is not a stated national priority or a focus of explicit government programs in Vietnam."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "ambition": 1,
+      "ambition": 0,
       "target_level": 1,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Thailand 4.0 (general)",
-        "Eastern Economic Corridor (EEC) initiatives (attracting high-tech investment)"
+        "National Science and Technology Development Agency (NSTDA) general support for S&T"
       ],
-      "rationale": "Thailand's ambition is more focused on digital infrastructure and general high-tech manufacturing, with photonics playing a supporting role in optical fiber deployment rather than being a standalone national priority."
+      "rationale": "Photonics is not a stated national priority or a focus of explicit government programs in Thailand."
     },
     {
       "country_iso": "ID",
@@ -350,51 +350,46 @@
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "Making Indonesia 4.0 (general)",
-        "National broadband initiatives"
+        "General Science & Technology development plans"
       ],
-      "rationale": "Indonesia's focus is on broader digital transformation and industrialization, with photonics primarily seen in the context of telecommunications infrastructure, not as a distinct advanced technology priority."
+      "rationale": "Photonics is not a stated national priority or a focus of explicit government programs in Indonesia."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "ambition": 1,
-      "target_level": 2,
+      "target_level": 1,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "UAE Centennial 2071",
-        "National Advanced Sciences Agenda",
-        "Specific initiatives in AI and quantum computing"
+        "UAE Advanced Technology Research Council (ATRC) general advanced tech investment"
       ],
-      "rationale": "The UAE is investing in advanced technologies, and photonics may be an underlying enabler for some of these (e.g., optical sensing for smart cities, quantum communication), but not a distinct, high-profile national strategy."
+      "rationale": "The UAE is investing in advanced technologies and AI, which may indirectly involve photonics, but there is no explicit national strategy or dedicated program for photonics as a standalone priority."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "ambition": 1,
-      "target_level": 2,
+      "target_level": 1,
       "horizon": "medium",
       "confidence": "low",
       "evidence": [
-        "Vision 2030",
-        "NEOM project (smart city tech)",
+        "Vision 2030 (general economic diversification and tech investment goals)",
         "King Abdullah University of Science and Technology (KAUST) research"
       ],
-      "rationale": "Saudi Arabia is making significant investments in future technologies as part of Vision 2030, and photonics could be an enabler for smart cities and advanced research, but not a primary, explicit focus."
+      "rationale": "Saudi Arabia's Vision 2030 includes diversification into high-tech, but photonics is not a specific, explicitly stated national priority with dedicated programs."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
-      "ambition": 0,
+      "ambition": 1,
       "target_level": 1,
       "horizon": "long",
       "confidence": "low",
       "evidence": [
-        "National Strategy for Digital Transformation (general)",
-        "University research programs"
+        "FAPESP and CNPq funding for basic research"
       ],
-      "rationale": "Brazil's ambition in photonics is primarily linked to telecommunications infrastructure and academic research, lacking a strong, explicit national strategic push for advanced photonics."
+      "rationale": "Brazil has some academic research in optics and lasers, but lacks a coordinated national strategic push or dedicated funding programs for photonics as a key domain."
     },
     {
       "country_iso": "PL",
@@ -404,11 +399,10 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Quantum Technologies Program",
-        "Strategy for Responsible Development (includes innovation and R&D)",
-        "NCBR (National Centre for Research and Development) funding"
+        "National Centre for Research and Development (NCBR) funding",
+        "Participation in EU funding programs for quantum technologies"
       ],
-      "rationale": "Poland is increasing its investment in strategic technologies, including quantum, which has a strong photonics component, as part of its broader innovation agenda for optical communication and sensors."
+      "rationale": "Poland shows growing research interest in quantum technologies and photonics, with some national and EU funding, but it's not yet a flagship national priority."
     }
   ]
 }

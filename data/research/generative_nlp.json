@@ -10,16 +10,16 @@
       "confidence": "high",
       "evidence": [
         "OpenAI",
-        "Google (DeepMind/Brain)",
-        "Microsoft (Azure AI)",
+        "Google (DeepMind, Google AI)",
         "Meta AI",
         "Anthropic",
+        "Microsoft (Azure AI)",
         "NVIDIA",
         "Stanford University",
-        "CMU",
+        "Carnegie Mellon University",
         "MIT"
       ],
-      "rationale": "The US is the global leader in Generative AI & NLP, hosting the largest number of frontier research labs, major tech companies, and top-tier academic institutions driving foundational breakthroughs and massive commercialization."
+      "rationale": "The US is the global leader in Generative AI and NLP research, development, and commercialization, with a vast talent pool, significant investment, and numerous frontier research labs and companies."
     },
     {
       "country_iso": "CN",
@@ -29,32 +29,33 @@
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Baidu (ERNIE)",
-        "Alibaba (DAMO Academy)",
-        "Tencent",
-        "Huawei (Noah's Ark Lab)",
+        "Baidu (ERNIE Bot)",
+        "Alibaba (Tongyi Qianwen)",
+        "Tencent (Hunyuan)",
+        "Huawei (Pangu-M)",
         "SenseTime",
+        "ByteDance",
         "Tsinghua University",
         "Peking University"
       ],
-      "rationale": "China has made massive strategic investments in AI, with major tech giants and leading universities conducting extensive frontier research and development in Generative AI and NLP, supported by a vast talent pool."
+      "rationale": "China is rapidly advancing in Generative AI and NLP, backed by massive government and private sector investment, a large talent pool, and leading tech companies driving significant frontier research."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "NTT",
-        "Fujitsu",
-        "Sony",
-        "RIKEN AIP",
+        "Fujitsu (Japanese LLM)",
+        "NTT (tsuzumi)",
+        "Sony AI",
+        "RIKEN Center for AIP",
         "University of Tokyo",
-        "AIST"
+        "Preferred Networks"
       ],
-      "rationale": "Japan has a strong academic base and established tech companies investing in AI, but the volume of advanced Generative AI roles and frontier breakthroughs is moderate compared to global leaders, with a focus on specific applications."
+      "rationale": "Japan has a strong foundation in AI and robotics, with increasing focus on Generative AI from major corporations and research institutions, though the overall volume and frontier impact are not yet at the level of top global players."
     },
     {
       "country_iso": "KR",
@@ -64,211 +65,221 @@
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Naver (Clova)",
-        "Kakao (Kakao Brain)",
-        "Samsung AI Center",
-        "LG AI Research",
+        "Naver (HyperCLOVA X)",
+        "Kakao (KoGPT)",
+        "LG AI Research (Exaone)",
+        "Samsung AI Research",
+        "SK Telecom (A.X)",
         "KAIST",
         "Seoul National University"
       ],
-      "rationale": "South Korea's major tech conglomerates and leading universities are heavily investing in Generative AI and NLP, driving significant research and product development, positioning it as a strong regional leader with notable frontier contributions."
+      "rationale": "South Korea is a tech powerhouse with major conglomerates heavily investing in Generative AI and NLP, driving significant research and development, and aiming for global competitiveness."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "TSMC (indirect compute)",
+        "TSMC (AI chip manufacturing)",
         "MediaTek",
-        "ITRI",
-        "National Taiwan University (NTU)",
-        "National Tsing Hua University (NTHU)"
+        "ITRI (Industrial Technology Research Institute)",
+        "National Taiwan University"
       ],
-      "rationale": "Taiwan excels in hardware and semiconductor manufacturing, which indirectly supports AI. While academic research is solid, the direct volume of advanced Generative AI roles and frontier R&D is relatively lower, focusing more on applied AI."
+      "rationale": "Taiwan excels in hardware and semiconductor manufacturing, which is crucial for AI, but its direct Generative AI and NLP research and development volume is smaller compared to software-focused hubs, with more emphasis on enabling technologies."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
+        "Max Planck Institute for Intelligent Systems",
         "Fraunhofer Institutes",
-        "Max Planck Institutes",
-        "DFKI",
-        "Aleph Alpha",
+        "DFKI (German Research Center for AI)",
         "Bosch Center for AI",
-        "University of T\u00fcbingen"
+        "SAP AI",
+        "Siemens",
+        "Technical University of Munich (TUM)"
       ],
-      "rationale": "Germany has a robust research landscape and strong industrial application of AI. Significant government and corporate investment, along with key players like Aleph Alpha, contribute to a high skill level and notable frontier research."
+      "rationale": "Germany has a robust research landscape and a strong industrial sector increasingly adopting and developing AI, including Generative AI, with significant government funding for AI research and a growing startup scene."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "University of Amsterdam (UvA)",
-        "Utrecht University",
+        "University of Amsterdam (ILLC)",
         "Radboud University",
-        "TNO",
-        "NL AI Coalition"
+        "Utrecht University",
+        "Philips Research",
+        "NL AIC (National AI Coalition)"
       ],
-      "rationale": "The Netherlands has a vibrant academic AI community and a growing startup ecosystem. While not a global giant, it contributes solid research and development in Generative AI and NLP, with a good balance of applied and specialist roles."
+      "rationale": "The Netherlands has a strong academic foundation in AI and a growing startup scene, contributing to Generative AI, but with a more concentrated volume compared to larger economies."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "high",
-      "skill_level": 5,
-      "frontier": 0.9,
+      "skill_level": 4,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "Google DeepMind",
         "Meta AI London",
+        "OpenAI London",
+        "University College London (UCL)",
+        "Imperial College London",
         "University of Cambridge",
         "University of Oxford",
-        "UCL",
-        "Imperial College London"
+        "Alan Turing Institute"
       ],
-      "rationale": "The UK is a major global AI hub, home to world-leading research institutions and significant presences of major tech companies, driving substantial frontier research and a high volume of advanced Generative AI roles."
+      "rationale": "The UK is a leading global hub for AI research and development, particularly in London, with world-class universities and major tech companies driving innovation in Generative AI."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "Mistral AI",
-        "Inria",
+        "Kyutai",
+        "Google AI Paris",
+        "Meta AI Paris",
+        "INRIA",
         "CNRS",
-        "Sorbonne University",
-        "ENS",
-        "Hugging Face (strong French roots)"
+        "\u00c9cole Normale Sup\u00e9rieure (ENS)"
       ],
-      "rationale": "France has strong academic research and emerging industry players like Mistral AI, which are making significant contributions to frontier Generative AI. Government initiatives further support a growing ecosystem of advanced roles."
+      "rationale": "France has made significant strategic investments in AI, fostering a strong academic base and a rapidly growing startup ecosystem, including key players in Generative AI, with increasing corporate R&D."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
       "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "high",
+      "frontier": 0.5,
+      "confidence": "medium",
       "evidence": [
         "AI21 Labs",
-        "Technion",
-        "Tel Aviv University",
-        "Hebrew University",
-        "NVIDIA (presence)",
-        "Intel (presence)"
+        "Mobileye (Intel)",
+        "NVIDIA (research centers)",
+        "Google AI Tel Aviv",
+        "Microsoft R&D",
+        "Hebrew University of Jerusalem",
+        "Technion"
       ],
-      "rationale": "Israel's 'Startup Nation' culture fosters strong R&D in AI, with a high concentration of skilled talent from academia and military intelligence. While volume is not as high as larger economies, the quality and frontier impact are significant."
+      "rationale": "Israel has a vibrant tech ecosystem and a strong focus on R&D, with significant contributions to AI, including Generative AI, driven by numerous startups and multinational R&D centers."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.4,
-      "confidence": "medium",
+      "frontier": 0.5,
+      "confidence": "high",
       "evidence": [
-        "IITs (e.g., Delhi, Bombay)",
+        "IITs (various)",
         "IISc Bangalore",
-        "Microsoft Research India",
-        "Google India",
-        "Various AI startups"
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Google AI Bangalore",
+        "Microsoft India Development Center",
+        "Sarvam AI",
+        "Krutrim AI"
       ],
-      "rationale": "India has a vast talent pool and a rapidly growing tech sector. While a significant portion of AI work is in applied services, there's increasing investment in product development and research by global tech giants and domestic startups, with emerging frontier contributions."
+      "rationale": "India has a vast and rapidly growing tech workforce, with major IT services companies and an emerging startup scene investing heavily in AI, including Generative AI, for both domestic and global markets, with increasing research output."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "low",
-      "skill_level": 4,
-      "frontier": 0.5,
-      "confidence": "high",
-      "evidence": [
-        "A*STAR",
-        "National University of Singapore (NUS)",
-        "Nanyang Technological University (NTU)",
-        "Google AI Singapore",
-        "Salesforce Research Asia"
-      ],
-      "rationale": "Singapore has a strategic focus on AI, attracting global talent and investment. Its strong academic institutions and presence of multinational tech companies contribute to high skill levels and notable research in Generative AI, despite a smaller overall volume."
-    },
-    {
-      "country_iso": "CH",
-      "country_name": "Switzerland",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.6,
-      "confidence": "high",
-      "evidence": [
-        "ETH Zurich",
-        "EPFL",
-        "Idiap Research Institute",
-        "Google AI Zurich",
-        "Swiss AI Center"
-      ],
-      "rationale": "Switzerland boasts world-class academic institutions and a high concentration of specialized talent. While the overall volume of roles is smaller, the quality of research and frontier contributions in Generative AI and NLP is very high."
-    },
-    {
-      "country_iso": "SE",
-      "country_name": "Sweden",
-      "volume_band": "very_low",
       "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "KTH Royal Institute of Technology",
-        "Chalmers University",
-        "RISE",
-        "AI Sweden",
-        "Ericsson AI"
+        "National University of Singapore (NUS)",
+        "Nanyang Technological University (NTU)",
+        "A*STAR",
+        "Google AI Singapore",
+        "Salesforce AI Research",
+        "AI Singapore national program"
       ],
-      "rationale": "Sweden has a strong tech ecosystem and good academic research in AI. While not a global leader in Generative AI frontier research, it has a solid base of specialist and applied roles, with growing initiatives like AI Sweden."
+      "rationale": "Singapore is strategically investing in AI, attracting multinational companies and fostering local research, leading to a concentrated but high-quality Generative AI ecosystem."
+    },
+    {
+      "country_iso": "CH",
+      "country_name": "Switzerland",
+      "volume_band": "low",
+      "skill_level": 4,
+      "frontier": 0.6,
+      "confidence": "high",
+      "evidence": [
+        "ETH Zurich (AI Center)",
+        "EPFL (Swiss AI Lab)",
+        "IBM Research Zurich",
+        "Google AI Zurich",
+        "Idiap Research Institute"
+      ],
+      "rationale": "Switzerland boasts world-class academic institutions and research labs, contributing significantly to fundamental AI research, including Generative AI, despite its smaller size, with a focus on quality over sheer volume."
+    },
+    {
+      "country_iso": "SE",
+      "country_name": "Sweden",
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.3,
+      "confidence": "medium",
+      "evidence": [
+        "KTH Royal Institute of Technology",
+        "Chalmers University of Technology",
+        "RISE Research Institutes of Sweden",
+        "Ericsson (AI research)",
+        "AI Sweden national initiative"
+      ],
+      "rationale": "Sweden has a strong tradition of innovation and a growing AI ecosystem, with academic and industry players contributing to Generative AI, though at a more moderate volume compared to larger economies."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "University of Helsinki",
+        "University of Helsinki (Elements of AI program)",
         "Aalto University",
-        "VTT Technical Research Centre",
-        "Finnish Center for AI (FCAI)"
+        "VTT Technical Research Centre of Finland",
+        "Silo AI"
       ],
-      "rationale": "Finland has a strong research tradition and a focused approach to AI development. The volume of advanced Generative AI roles is modest, but the country contributes solid academic research and applied solutions."
+      "rationale": "Finland has a focused and high-quality AI research community, particularly in areas like natural language processing, but the overall volume of advanced Generative AI roles is relatively small."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Vector Institute",
-        "Mila (Quebec AI Institute)",
-        "Amii",
+        "Mila (Quebec AI Institute, Yoshua Bengio)",
+        "Vector Institute (Geoffrey Hinton)",
+        "Borealis AI (RBC)",
+        "Google AI Montreal/Toronto",
+        "Meta AI Montreal",
         "University of Toronto",
-        "McGill University",
-        "Google AI",
-        "Meta AI"
+        "McGill University"
       ],
-      "rationale": "Canada has made significant strategic investments in AI, establishing world-renowned research institutes and attracting top talent. It's a key player in frontier AI research, particularly in deep learning and Generative AI, with growing industry adoption."
+      "rationale": "Canada is a global leader in fundamental AI research, particularly deep learning, with strong government support and major research institutes driving innovation in Generative AI, attracting significant talent and investment."
     },
     {
       "country_iso": "AU",
@@ -278,170 +289,166 @@
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "CSIRO Data61",
+        "CSIRO (Data61)",
         "University of Melbourne",
-        "UNSW",
-        "ANU",
-        "Australian Institute for Machine Learning (AIML)"
+        "University of New South Wales (UNSW)",
+        "Australian National University (ANU)"
       ],
-      "rationale": "Australia has a growing tech sector and strong universities contributing to AI research. While the volume of advanced Generative AI roles is moderate, there's increasing investment in both academic and applied research."
+      "rationale": "Australia has a developing AI ecosystem with strong academic research and increasing industry adoption, but the volume of advanced Generative AI roles and frontier R&D is still moderate."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "low",
-      "skill_level": 3,
-      "frontier": 0.2,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "ADAPT Centre",
-        "Trinity College Dublin",
-        "University College Dublin (UCD)",
-        "Google (European HQ)",
-        "Microsoft (European HQ)"
+        "ADAPT Centre for AI-Driven Digital Content Technology",
+        "Google (EMEA HQ)",
+        "Microsoft (EMEA HQ)",
+        "Meta (EMEA HQ)",
+        "University College Dublin"
       ],
-      "rationale": "Ireland serves as a European hub for many multinational tech companies, leading to a good volume of applied AI roles. While academic research is present, the focus for Generative AI is more on application and less on frontier breakthroughs."
+      "rationale": "Ireland hosts many multinational tech companies, primarily for EMEA operations, with some applied AI work. Core Generative AI frontier research and development are less prevalent compared to other leading hubs."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "KU Leuven",
-        "Ghent University",
-        "imec",
-        "AI4Belgium"
+        "KU Leuven (AI Institute)",
+        "Ghent University (IDLab)",
+        "IMEC (indirect AI relevance)"
       ],
-      "rationale": "Belgium has a solid academic research base in AI, particularly in machine learning. The volume of advanced Generative AI roles is relatively low, with contributions primarily in specialist research and applied solutions."
+      "rationale": "Belgium has solid academic research in AI, but the overall volume of advanced Generative AI roles and frontier R&D is relatively limited, with a focus on specific research niches."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "TU Wien",
-        "Johannes Kepler University Linz",
-        "Austrian Research Institute for Artificial Intelligence (OFAI)"
+        "TU Wien (Vienna University of Technology)",
+        "University of Vienna",
+        "IST Austria (Institute of Science and Technology Austria)"
       ],
-      "rationale": "Austria has a focused academic research community in AI. While the overall market for advanced Generative AI roles is small, there are specialized institutions contributing to research and development."
+      "rationale": "Austria has a strong academic tradition and some specialized AI research, but the overall scale of Generative AI development and frontier work is small."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
         "CNR (National Research Council)",
-        "Sapienza University of Rome",
         "Politecnico di Milano",
+        "Sapienza University of Rome",
         "Italian Institute of Technology (IIT)"
       ],
-      "rationale": "Italy has a strong academic tradition in AI, but the industrial adoption and volume of advanced Generative AI roles are still developing. Contributions are mainly from universities and research institutes, with a growing but nascent startup scene."
+      "rationale": "Italy has a developing AI ecosystem with academic strengths, but the industrial adoption and frontier research in Generative AI are still in early stages compared to leading nations."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
         "Barcelona Supercomputing Center (BSC)",
         "Universitat Polit\u00e8cnica de Catalunya (UPC)",
         "Plan Nacional de Inteligencia Artificial"
       ],
-      "rationale": "Spain is increasing its investment in AI, with notable academic centers and government initiatives. The volume of advanced Generative AI roles is still relatively low, with a focus on building foundational capabilities and applied research."
+      "rationale": "Spain is investing in AI and has some strong academic centers, but the Generative AI market and frontier research are still relatively nascent, with a focus on broader AI adoption."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "Universiti Malaya",
-        "MIMOS",
-        "Digital Malaysia initiative"
+        "Digital Nasional Berhad (5G infrastructure)",
+        "various universities (limited specific GenAI research)"
       ],
-      "rationale": "Malaysia is an emerging market with a focus on digital transformation and AI adoption. While there's a growing demand for applied AI skills, significant frontier Generative AI research and development are still very limited."
+      "rationale": "Malaysia is focused on digital transformation and AI adoption, but advanced Generative AI research and development roles at a frontier level are negligible."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "VinAI Research",
-        "FPT AI",
-        "National Strategy on AI"
+        "VinAI (VinGroup)",
+        "FPT AI (focus on application)"
       ],
-      "rationale": "Vietnam has a rapidly growing tech sector and strong government support for AI. While companies like VinAI are emerging, the overall volume of advanced Generative AI roles and frontier research is still very low, primarily focused on applied solutions."
+      "rationale": "Vietnam has a dynamic tech scene and a growing talent pool, with some local AI initiatives, but advanced Generative AI frontier research and development are very limited."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
-        "AI Thailand",
-        "National Science and Technology Development Agency (NSTDA)"
+        "AI Thailand (national initiative)",
+        "various universities (limited specific GenAI research)"
       ],
-      "rationale": "Thailand is investing in digital transformation and AI, but the Generative AI and NLP market is nascent. Roles are predominantly applied, with very limited frontier research or high-volume advanced hiring."
+      "rationale": "Thailand is investing in digital transformation and AI adoption, but advanced Generative AI research and development roles are very limited, with a focus on application."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
       "volume_band": "none",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "low",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "medium",
       "evidence": [
         "Gojek",
-        "Tokopedia",
-        "National AI Strategy"
+        "Tokopedia (AI for services)",
+        "various universities (limited specific GenAI research)"
       ],
-      "rationale": "Indonesia's large digital economy is driving demand for AI, but primarily in applied areas for local tech giants. Advanced Generative AI roles and frontier research are still in very early stages, with low volume."
+      "rationale": "Indonesia has a massive digital economy, with AI being applied to local services, but advanced Generative AI research and development roles are very limited at a frontier level."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
-      "volume_band": "very_low",
-      "skill_level": 4,
-      "frontier": 0.5,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
-        "G42",
-        "UAE National AI Strategy"
+        "G42 (Falcon LLM)",
+        "UAE AI Strategy"
       ],
-      "rationale": "The UAE has made significant strategic investments in AI, establishing dedicated institutions like MBZUAI and major tech players like G42. This attracts high-skill talent and fosters notable frontier research, despite a relatively small domestic market."
+      "rationale": "The UAE has a highly ambitious national AI strategy with significant investment, establishing institutions like MBZUAI and companies like G42, aiming to become a global AI hub, including in Generative AI."
     },
     {
       "country_iso": "SA",
       "country_name": "Saudi Arabia",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "skill_level": 2,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
+        "Saudi Data and AI Authority (SDAIA)",
         "King Abdullah University of Science and Technology (KAUST)",
-        "Saudi Data & AI Authority (SDAIA)",
-        "NEOM"
+        "NEOM (AI initiatives)"
       ],
-      "rationale": "Saudi Arabia is making substantial investments in AI as part of Vision 2030, with KAUST and SDAIA leading initiatives. While still developing, there's a strong push for advanced capabilities and emerging frontier research, attracting international expertise."
+      "rationale": "Saudi Arabia is making substantial investments in AI as part of Vision 2030, with initiatives to build an AI ecosystem, but Generative AI frontier research is still in early stages of development."
     },
     {
       "country_iso": "BR",
@@ -449,28 +456,28 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
-      "confidence": "low",
+      "confidence": "medium",
       "evidence": [
         "University of S\u00e3o Paulo (USP)",
-        "State University of Campinas (Unicamp)",
-        "Brazilian AI Strategy"
+        "University of Campinas (Unicamp)",
+        "Federal University of Minas Gerais (UFMG)",
+        "various AI startups"
       ],
-      "rationale": "Brazil has a growing tech sector and strong academic institutions, but the Generative AI and NLP market is still maturing. Most roles are applied, with limited high-volume advanced hiring or significant frontier research."
+      "rationale": "Brazil has a large and developing tech market with strong academic research in AI, but the volume of advanced Generative AI roles and frontier R&D is still relatively low, with more focus on applied AI."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Polish Academy of Sciences",
         "Warsaw University of Technology",
-        "Jagiellonian University",
-        "AI Tech"
+        "AGH University of Science and Technology",
+        "Polish National Centre for AI"
       ],
-      "rationale": "Poland has a strong talent pool and a growing tech hub in Central Europe. While academic research is present, the volume of advanced Generative AI roles and frontier R&D is still relatively low, with a focus on applied solutions and specialist development."
+      "rationale": "Poland has a strong and growing IT sector with a good talent pool, and AI research is developing, but advanced Generative AI roles and frontier R&D are still in early stages, with a focus on broader AI applications."
     }
   ]
 }

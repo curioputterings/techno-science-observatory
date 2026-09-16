@@ -4,26 +4,20 @@
     {
       "country_iso": "US",
       "country_name": "United States",
-      "volume_band": "high",
+      "volume_band": "very_high",
       "skill_level": 5,
       "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Intel (Foveros, EMIB)",
-        "AMD",
-        "NVIDIA",
-        "IBM",
-        "Micron",
-        "Qualcomm",
-        "Amkor",
-        "Applied Materials",
-        "Lam Research",
-        "DARPA",
-        "SRC",
-        "Georgia Tech",
-        "Stanford University"
+        "Intel (Foveros, EMIB, Co-EMIB)",
+        "AMD (chiplet design, 3D V-Cache)",
+        "NVIDIA (GPU packaging, HBM integration)",
+        "Micron (HBM, memory packaging)",
+        "IBM Research",
+        "CHIPS and Science Act funding for packaging",
+        "Leading university research (Stanford, MIT, Georgia Tech)"
       ],
-      "rationale": "The US has strong R&D, design, and equipment leadership in advanced packaging, with major IDMs and fabless companies pushing innovation in heterogeneous integration, chiplets, and 3D ICs. Significant government and academic research programs support frontier work."
+      "rationale": "The US has a robust ecosystem spanning design, some manufacturing, and extensive R&D in advanced packaging, driven by major IDMs, fabless companies, and government initiatives."
     },
     {
       "country_iso": "CN",
@@ -31,53 +25,47 @@
       "volume_band": "high",
       "skill_level": 4,
       "frontier": 0.6,
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "JCET",
-        "Tongfu Microelectronics (TFME)",
+        "JCET Group (Jiangsu Changjiang Electronics Technology)",
+        "TFME (Tongfu Microelectronics)",
         "Huatian Technology",
-        "SMIC",
-        "Huawei (HiSilicon)",
+        "SMIC (foundry packaging capabilities)",
         "National IC Industry Investment Fund"
       ],
-      "rationale": "China has made massive investments in advanced packaging, with domestic OSATs rapidly expanding capabilities and moving into more complex technologies. While still catching up to global leaders in some frontier areas, the volume of activity and R&D investment is significant."
+      "rationale": "China has heavily invested in its domestic semiconductor industry, with major OSATs and foundries pushing advanced packaging capabilities, though often playing catch-up to global leaders in cutting-edge techniques."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 4,
       "frontier": 0.7,
       "confidence": "high",
       "evidence": [
-        "Ibiden (substrates)",
-        "Shinko Electric",
-        "Disco",
-        "Tokyo Electron",
-        "Renesas",
-        "Kioxia",
-        "Sony (image sensors)",
-        "AIST",
-        "RIKEN"
+        "Renesas Electronics (automotive, industrial packaging)",
+        "Kioxia (NAND flash packaging)",
+        "Sony (CMOS sensor packaging)",
+        "Rapidus (advanced logic manufacturing, including packaging)",
+        "JSR, Disco, Tokyo Electron (materials and equipment for advanced packaging)",
+        "AIST (National Institute of Advanced Industrial Science and Technology)"
       ],
-      "rationale": "Japan excels in advanced materials, manufacturing equipment, and specialized packaging solutions, particularly for memory and image sensors. Strong R&D in these niche areas contributes to frontier advancements, though overall volume is not as high as pure manufacturing hubs."
+      "rationale": "Japan excels in specialized materials, equipment, and niche packaging solutions, with renewed focus on advanced logic manufacturing through initiatives like Rapidus, contributing to high skill and frontier R&D."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
-      "volume_band": "high",
+      "volume_band": "very_high",
       "skill_level": 5,
-      "frontier": 0.8,
+      "frontier": 0.9,
       "confidence": "high",
       "evidence": [
-        "Samsung (I-Cube, X-Cube, HBM)",
-        "SK Hynix (HBM)",
-        "Amkor Technology Korea",
-        "Nepes",
-        "KIST",
-        "KAIST"
+        "Samsung Electronics (I-Cube, X-Cube, HBM, foundry packaging)",
+        "SK Hynix (HBM, memory packaging)",
+        "KAIST (Korea Advanced Institute of Science and Technology)",
+        "Government support for semiconductor R&D"
       ],
-      "rationale": "South Korea is a global leader in advanced memory packaging (HBM) and foundry advanced packaging solutions. Samsung and SK Hynix are at the forefront of 3D stacking and heterogeneous integration, driving significant frontier R&D and high-volume production."
+      "rationale": "South Korea, home to global memory and foundry leaders, is at the forefront of advanced packaging innovation, particularly in HBM and heterogeneous integration for high-performance computing."
     },
     {
       "country_iso": "TW",
@@ -87,120 +75,116 @@
       "frontier": 1.0,
       "confidence": "high",
       "evidence": [
-        "TSMC (CoWoS, InFO, SoIC)",
-        "ASE Technology Holding (ASE, SPIL)",
-        "Powertech Technology (PTI)",
-        "ITRI"
+        "TSMC (CoWoS, InFO, SoIC, 3DFabric)",
+        "ASE Technology Holding (world's largest OSAT)",
+        "SPIL (Siliconware Precision Industries Co.)",
+        "ITRI (Industrial Technology Research Institute)",
+        "UMC (United Microelectronics Corporation)"
       ],
-      "rationale": "Taiwan is the undisputed global leader in advanced packaging, driven by TSMC's pioneering work in 2.5D/3D integration and chiplet technologies. Its robust ecosystem of OSATs and research institutions ensures very high volume, top-tier skill, and continuous frontier innovation."
+      "rationale": "Taiwan is a global leader in advanced packaging, driven by TSMC's pioneering efforts in 2.5D/3D integration and the strong presence of major OSAT companies, making it a hub for frontier innovation."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "Infineon",
-        "Bosch",
-        "Fraunhofer IZM",
-        "Fraunhofer ENAS",
-        "Siemens (EDA)"
+        "Infineon Technologies (power, automotive packaging)",
+        "Bosch (MEMS, automotive packaging)",
+        "Fraunhofer IZM (Institute for Reliability and Microintegration)",
+        "GlobalFoundries Dresden (foundry, some packaging R&D)"
       ],
-      "rationale": "Germany has strong capabilities in specialized advanced packaging, particularly for automotive, industrial, and power electronics applications. Fraunhofer institutes conduct significant frontier R&D, but the overall job volume is moderate compared to major manufacturing hubs."
+      "rationale": "Germany has strong capabilities in specialized packaging for automotive and industrial applications, supported by leading research institutes like Fraunhofer IZM, contributing to applied and some frontier R&D."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
-      "volume_band": "very_low",
+      "volume_band": "medium",
       "skill_level": 3,
       "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "ASML",
-        "NXP",
-        "TU Delft",
-        "imec (collaboration)"
+        "ASML (lithography equipment, indirectly supports advanced packaging)",
+        "NXP Semiconductors (automotive, secure connectivity)",
+        "ASM International (wafer processing equipment)",
+        "TNO (Dutch Organisation for Applied Scientific Research)"
       ],
-      "rationale": "While not a direct advanced packaging manufacturing hub, the Netherlands plays a crucial role through ASML's lithography equipment, which is foundational for advanced packaging. There's high-skill R&D and strong collaboration with leading research centers like imec."
+      "rationale": "While not a direct packaging manufacturing hub, the Netherlands' strength in semiconductor equipment and design contributes to advanced packaging through innovation in tools and related R&D."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
-      "volume_band": "very_low",
-      "skill_level": 2,
+      "volume_band": "low",
+      "skill_level": 3,
       "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "Arm",
-        "IQE (compound semiconductors)",
-        "University of Cambridge",
-        "University of Manchester"
+        "ARM Holdings (design, influences packaging requirements)",
+        "IQE (compound semiconductor materials, some packaging implications)",
+        "Cambridge Centre for Advanced Photonics and Electronics (CAPE)"
       ],
-      "rationale": "The UK has a strong presence in chip design (Arm) and some niche areas like compound semiconductors, which indirectly influence packaging. Direct advanced packaging manufacturing and large-scale R&D are limited, with most activity in academic research."
+      "rationale": "The UK has strong semiconductor design capabilities and niche areas in compound semiconductors and photonics, with some academic research in advanced packaging, but limited large-scale manufacturing."
     },
     {
       "country_iso": "FR",
       "country_name": "France",
-      "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.4,
+      "volume_band": "medium",
+      "skill_level": 4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "STMicroelectronics",
-        "Soitec",
-        "CEA-Leti"
+        "STMicroelectronics (various packaging technologies)",
+        "CEA-Leti (world-renowned microelectronics research institute)",
+        "Soitec (SOI wafer technology, relevant for advanced substrates)"
       ],
-      "rationale": "France has a strong R&D presence, particularly through CEA-Leti, which is a leading research institute in microelectronics and advanced packaging. Soitec's SOI wafers are also critical. Industrial volume is limited, but the skill level in R&D is high."
+      "rationale": "France boasts significant R&D capabilities, particularly through CEA-Leti, which is a key player in advanced packaging research and development, alongside STMicroelectronics' manufacturing presence."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
-      "volume_band": "very_low",
+      "volume_band": "low",
       "skill_level": 3,
       "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "Intel (design centers)",
-        "Tower Semiconductor",
-        "NVIDIA (Mellanox acquisition)",
-        "Technion"
+        "Intel (major R&D centers, including some packaging-related work)",
+        "Tower Semiconductor (now Intel Foundry Services)",
+        "Numerous semiconductor design startups"
       ],
-      "rationale": "Israel is a hub for chip design and R&D, with major players like Intel and NVIDIA having significant operations. While direct advanced packaging manufacturing is minimal, there's high-skill R&D related to chiplet design and integration."
+      "rationale": "Israel's strength lies in semiconductor design and R&D, with Intel's significant presence driving some advanced packaging related activities, though direct manufacturing volume is limited."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
-      "volume_band": "low",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Intel (design center)",
-        "AMD (design center)",
-        "Qualcomm (design center)",
-        "India Semiconductor Mission"
+        "Micron Technology (planned assembly and test facility)",
+        "Tata Electronics (semiconductor manufacturing ambitions)",
+        "India Semiconductor Mission (government initiative)",
+        "Design centers of global semiconductor companies"
       ],
-      "rationale": "India has a growing ecosystem for semiconductor design and R&D, with many global companies having design centers. Advanced packaging manufacturing is nascent but receiving significant government attention. The current job market is primarily in design and R&D support."
+      "rationale": "India is an emerging player with a strong design talent pool and government initiatives to boost manufacturing, including advanced packaging, but current job market volume and frontier R&D are still nascent."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "medium",
-      "skill_level": 4,
-      "frontier": 0.6,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "Micron",
-        "GlobalFoundries",
-        "Applied Materials",
-        "Lam Research",
-        "ASE",
-        "Amkor",
-        "A*STAR (IME)"
+        "GlobalFoundries (foundry, some advanced packaging)",
+        "Micron Technology (memory manufacturing, packaging)",
+        "STMicroelectronics (manufacturing, packaging)",
+        "Applied Materials (equipment manufacturing)",
+        "A*STAR (Agency for Science, Technology and Research)"
       ],
-      "rationale": "Singapore is a significant manufacturing and R&D hub for semiconductors, including advanced packaging. Major IDMs, OSATs, and equipment suppliers have a strong presence, supported by A*STAR's IME, which conducts leading-edge research."
+      "rationale": "Singapore is a significant semiconductor manufacturing hub with a strong presence of global foundries and IDMs, contributing to a solid base in advanced packaging, supported by government-backed R&D."
     },
     {
       "country_iso": "CH",
@@ -210,36 +194,37 @@
       "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "EPFL",
-        "ETH Zurich",
-        "STMicroelectronics (some R&D)"
+        "ETH Zurich (academic research in micro/nanoelectronics)",
+        "EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
+        "Specialized equipment and materials companies"
       ],
-      "rationale": "Switzerland has strong academic research institutions in microelectronics and materials science, contributing to niche advanced packaging R&D. Industrial presence is limited, focusing on specialized applications rather than high-volume manufacturing."
+      "rationale": "Switzerland has strong academic research in microelectronics and specialized materials, but a very limited industrial footprint in advanced packaging manufacturing."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.0,
-      "confidence": "medium",
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "Ericsson (system integration)"
+        "Ericsson (telecom, some specialized chip development)",
+        "Link\u00f6ping University (academic research)"
       ],
-      "rationale": "Sweden's semiconductor activity is primarily focused on system-level integration and design for telecommunications. There is negligible direct advanced packaging manufacturing or dedicated R&D."
+      "rationale": "Sweden has a niche in specialized electronics and telecom, with some academic research, but a very limited direct advanced packaging industry."
     },
     {
       "country_iso": "FI",
       "country_name": "Finland",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.0,
-      "confidence": "medium",
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "Nokia (system integration)",
-        "VTT Technical Research Centre"
+        "VTT Technical Research Centre of Finland (microelectronics research)",
+        "Aalto University"
       ],
-      "rationale": "Similar to Sweden, Finland's strength lies in system integration and design. Direct advanced packaging job market is negligible, with some academic research at VTT."
+      "rationale": "Finland has some specialized electronics and photonics R&D, but a very small advanced packaging market."
     },
     {
       "country_iso": "CA",
@@ -247,26 +232,25 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Celestica (EMS)",
-        "University of Waterloo",
-        "University of Toronto"
+        "Universities (e.g., University of Waterloo, University of Toronto for quantum/photonics)",
+        "Some specialized startups in photonics or quantum computing"
       ],
-      "rationale": "Canada has some semiconductor design capabilities and academic research in microelectronics. While EMS providers like Celestica offer some packaging services, dedicated advanced packaging R&D and manufacturing are limited."
+      "rationale": "Canada has strengths in academic research, particularly in quantum and photonics, which have packaging implications, but a limited industrial advanced packaging sector."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "volume_band": "none",
+      "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "UNSW (Centre for Quantum Computer Technology)",
-        "ANU"
+        "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+        "Universities (e.g., UNSW for quantum computing)"
       ],
-      "rationale": "Australia has niche academic research in quantum computing and photonics, which may involve advanced packaging techniques. However, there is no significant industrial advanced packaging sector or job market."
+      "rationale": "Australia has niche R&D in areas like quantum computing and photonics, which require advanced packaging, but a very small overall market volume."
     },
     {
       "country_iso": "IE",
@@ -274,39 +258,37 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.1,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
-        "Intel (fab operations)",
-        "Analog Devices",
-        "Xilinx (AMD)"
+        "Intel Leixlip (primarily wafer fabrication, some related R&D)"
       ],
-      "rationale": "Ireland is a hub for wafer fabrication (Intel) and some chip design. While Intel's presence implies some related packaging R&D, the direct advanced packaging job market is very limited, primarily supporting fab operations."
+      "rationale": "Intel has a significant presence in Ireland, primarily for wafer fabrication, with limited direct advanced packaging R&D or manufacturing."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 5,
-      "frontier": 0.9,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
-        "imec",
-        "NXP"
+        "imec (Interuniversity Microelectronics Centre, world-leading R&D)",
+        "KU Leuven (academic partnerships with imec)"
       ],
-      "rationale": "Belgium hosts imec, a world-leading research and innovation hub in nanoelectronics and digital technologies, including cutting-edge advanced packaging. While industrial volume is low, the skill level and frontier R&D are exceptionally high."
+      "rationale": "Belgium hosts imec, a global leader in nanoelectronics and digital technologies, including extensive frontier R&D in advanced packaging, attracting significant talent and industry collaboration."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
-      "skill_level": 3,
-      "frontier": 0.2,
-      "confidence": "medium",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "low",
       "evidence": [
-        "AT&S (PCB/substrate technology)",
-        "Infineon (R&D)"
+        "Infineon Technologies Austria (R&D, power semiconductors)",
+        "AT&S (high-end PCB and substrate manufacturing)"
       ],
-      "rationale": "Austria has specialized capabilities in advanced substrate technology (AT&S) and some R&D from companies like Infineon. This contributes to advanced packaging, particularly in power electronics, but the overall volume is low."
+      "rationale": "Austria has some specialized semiconductor R&D and manufacturing, particularly in power electronics and advanced substrates, but a small overall advanced packaging market."
     },
     {
       "country_iso": "IT",
@@ -316,10 +298,9 @@
       "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "STMicroelectronics (some R&D/manufacturing)",
-        "Politecnico di Milano"
+        "STMicroelectronics (manufacturing sites in Agrate, Catania)"
       ],
-      "rationale": "Italy has some semiconductor R&D and manufacturing presence through STMicroelectronics. However, dedicated advanced packaging activities are limited, with most frontier work confined to academic research."
+      "rationale": "Italy has a presence through STMicroelectronics, but its advanced packaging activities are limited in scale compared to major global hubs."
     },
     {
       "country_iso": "ES",
@@ -329,29 +310,23 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Universities, research centers"
+        "Limited established semiconductor manufacturing or advanced packaging industry"
       ],
-      "rationale": "Spain has a very limited semiconductor industry. Any advanced packaging activity would be confined to early-stage academic research with no significant industrial job market."
+      "rationale": "Spain currently has negligible presence in the advanced packaging domain, with no major fabs or OSATs."
     },
     {
       "country_iso": "MY",
       "country_name": "Malaysia",
-      "volume_band": "medium",
+      "volume_band": "high",
       "skill_level": 3,
-      "frontier": 0.2,
+      "frontier": 0.4,
       "confidence": "high",
       "evidence": [
-        "Intel (assembly & test)",
-        "Broadcom",
-        "NXP",
-        "Infineon",
-        "ASE",
-        "Amkor",
-        "TFME",
-        "Unisem",
-        "Inari Amertron"
+        "Intel (Kulim, Penang - assembly, test, some advanced packaging)",
+        "ASE, Amkor, Infineon, STMicroelectronics, NXP (major OSAT and IDM presence)",
+        "Government initiatives to move up the value chain"
       ],
-      "rationale": "Malaysia is a major global hub for semiconductor assembly and test (OSAT). While traditionally focused on conventional packaging, it is increasingly moving into more advanced packaging technologies, driven by foreign direct investment and local players."
+      "rationale": "Malaysia is a long-standing global hub for semiconductor assembly, test, and packaging, with a strong existing base and ongoing efforts to expand into more advanced packaging technologies."
     },
     {
       "country_iso": "VN",
@@ -361,37 +336,35 @@
       "frontier": 0.1,
       "confidence": "medium",
       "evidence": [
-        "Intel (assembly & test)",
-        "Samsung (assembly & test)"
+        "Intel Products Vietnam (large assembly and test facility)",
+        "Samsung (assembly operations)"
       ],
-      "rationale": "Vietnam has become a significant hub for semiconductor assembly and test, with major investments from Intel and Samsung. This includes some advanced packaging processes, but the focus is primarily on manufacturing volume rather than frontier R&D."
+      "rationale": "Vietnam is an emerging manufacturing hub, primarily for assembly and test, with Intel's significant presence driving some related packaging activities, but limited advanced R&D."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
-      "evidence": [
-        "Amkor",
-        "ASE",
-        "Hana Microelectronics"
-      ],
-      "rationale": "Thailand has a well-established semiconductor assembly and test industry, hosting several major OSATs. These facilities are increasingly adopting more advanced packaging techniques, contributing to a low but growing volume of advanced packaging jobs."
-    },
-    {
-      "country_iso": "ID",
-      "country_name": "Indonesia",
       "volume_band": "very_low",
       "skill_level": 1,
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Amkor (assembly & test)",
-        "Infineon (assembly & test)"
+        "NXP, ON Semiconductor (some assembly and test operations)",
+        "Limited advanced packaging R&D or manufacturing"
       ],
-      "rationale": "Indonesia has a limited presence in semiconductor manufacturing, primarily focused on assembly and test operations for traditional packaging. Advanced packaging activities are negligible."
+      "rationale": "Thailand has some electronics manufacturing and assembly, but a very limited presence in advanced packaging."
+    },
+    {
+      "country_iso": "ID",
+      "country_name": "Indonesia",
+      "volume_band": "none",
+      "skill_level": 1,
+      "frontier": 0.0,
+      "confidence": "low",
+      "evidence": [
+        "Limited established semiconductor manufacturing or advanced packaging industry"
+      ],
+      "rationale": "Indonesia currently has negligible presence in the advanced packaging domain."
     },
     {
       "country_iso": "AE",
@@ -401,9 +374,9 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Mubadala (GlobalFoundries ownership)"
+        "No significant established semiconductor manufacturing or advanced packaging industry"
       ],
-      "rationale": "While UAE's Mubadala is a major investor in GlobalFoundries, there is no significant advanced packaging manufacturing or R&D presence within the UAE itself. Activity is limited to strategic investment."
+      "rationale": "The UAE is investing in high-tech, but currently has no established advanced packaging industry."
     },
     {
       "country_iso": "SA",
@@ -413,9 +386,9 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "KAUST (academic research)"
+        "No significant established semiconductor manufacturing or advanced packaging industry"
       ],
-      "rationale": "Saudi Arabia has nascent academic interest in microelectronics, primarily through institutions like KAUST. There is no established advanced packaging industry or significant job market."
+      "rationale": "Saudi Arabia is diversifying its economy, but currently lacks an established advanced packaging industry."
     },
     {
       "country_iso": "BR",
@@ -425,21 +398,21 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Limited local semiconductor industry"
+        "Limited established semiconductor manufacturing or advanced packaging industry"
       ],
-      "rationale": "Brazil has a very limited semiconductor industry, with negligible presence in advanced packaging manufacturing or R&D. Any activity would be confined to basic academic research."
+      "rationale": "Brazil has a very limited semiconductor manufacturing base and negligible advanced packaging activity."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "volume_band": "none",
-      "skill_level": 1,
-      "frontier": 0.0,
-      "confidence": "low",
+      "volume_band": "very_low",
+      "skill_level": 2,
+      "frontier": 0.1,
+      "confidence": "medium",
       "evidence": [
-        "Intel (announced new fab/assembly plant)"
+        "Intel (planned new assembly and test facility in Wroclaw)"
       ],
-      "rationale": "Poland has recently attracted significant investment from Intel for a new fab/assembly plant, which may include advanced packaging in the future. However, currently, there is no established advanced packaging job market or significant R&D."
+      "rationale": "Poland is set to gain a significant presence in advanced packaging with Intel's planned assembly and test facility, which will include advanced capabilities, though currently the market is very nascent."
     }
   ]
 }

@@ -6,15 +6,15 @@
       "country_name": "United States",
       "ambition": 5,
       "target_level": 5,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "high",
       "evidence": [
+        "FedRAMP",
         "NIST Cloud Computing Program",
-        "Federal Cloud Computing Strategy (Cloud Smart)",
         "DoD Joint Warfighting Cloud Capability (JWCC)",
-        "NSF and DARPA research programs"
+        "CISA Cloud Security Technical Reference Architecture"
       ],
-      "rationale": "The US has a sustained, high-level commitment to cloud adoption, security, and innovation across federal agencies and research, aiming for leadership in next-gen distributed systems."
+      "rationale": "The US maintains a strong focus on cloud innovation, security, and resilience, with continuous government initiatives and standards driving advanced distributed systems development and adoption across public and private sectors."
     },
     {
       "country_iso": "CN",
@@ -24,11 +24,12 @@
       "horizon": "long",
       "confidence": "high",
       "evidence": [
+        "New Infrastructure initiative",
         "14th Five-Year Plan for Digital Economy",
-        "National 'New Infrastructure' Initiative",
-        "State-backed investments in Alibaba Cloud, Huawei Cloud, Tencent Cloud"
+        "National data center clusters",
+        "State support for major cloud providers (Alibaba Cloud, Huawei Cloud, Tencent Cloud)"
       ],
-      "rationale": "China views cloud and distributed systems as foundational to its digital economy and technological self-sufficiency, with massive state-led investments and strategic plans."
+      "rationale": "China has a national strategic imperative for self-sufficiency and global leadership in cloud technology, backed by massive state investment in infrastructure and domestic providers as part of its 'New Infrastructure' and digital economy plans."
     },
     {
       "country_iso": "JP",
@@ -36,13 +37,13 @@
       "ambition": 4,
       "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "Digital Agency initiatives",
-        "Government Cloud (Kasumigaseki Cloud)",
-        "'Society 5.0' vision"
+        "Government Cloud (Government Common Platform)",
+        "Society 5.0 strategy"
       ],
-      "rationale": "Japan is prioritizing digital transformation and secure government cloud adoption, aiming to strengthen its capabilities in data sovereignty and industrial cloud applications."
+      "rationale": "Japan is actively pursuing digital transformation with a strong emphasis on secure government cloud adoption and leveraging cloud as a foundational element for 'Society 5.0', aiming for robust and sovereign cloud infrastructure."
     },
     {
       "country_iso": "KR",
@@ -52,11 +53,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Digital New Deal (K-Cloud project)",
-        "National AI strategies",
-        "MSIT initiatives for cloud development"
+        "Digital New Deal (Cloud Computing Development Plan)",
+        "K-Cloud project",
+        "National Information Society Agency (NIA) initiatives"
       ],
-      "rationale": "South Korea has a strong national push for digital transformation, with cloud computing as a core pillar, focusing on public cloud adoption and domestic technology development."
+      "rationale": "South Korea's 'Digital New Deal' heavily prioritizes cloud computing, including the development of domestic cloud technologies and widespread adoption in public and private sectors, aiming for leadership in cloud-native solutions."
     },
     {
       "country_iso": "TW",
@@ -66,10 +67,11 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Digital Nation and Innovative Economy Development Plan (DIGI+)",
-        "Ministry of Digital Affairs initiatives"
+        "Asia Silicon Valley Development Plan",
+        "National Development Council (NDC) digital transformation initiatives",
+        "Cybersecurity strategies"
       ],
-      "rationale": "Taiwan aims to leverage its tech strengths for secure cloud solutions and digital transformation, focusing on robust infrastructure for its industries and government."
+      "rationale": "Taiwan focuses on digital transformation and secure cloud adoption, particularly for government and critical infrastructure, leveraging its hardware strengths and emphasizing cybersecurity within its broader tech development plans."
     },
     {
       "country_iso": "DE",
@@ -79,11 +81,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Gaia-X initiative",
-        "Digital Strategy 2025",
-        "BMBF and BMWi programs for digital technologies"
+        "GAIA-X initiative",
+        "German government's cloud strategy",
+        "Digital Strategy 2025"
       ],
-      "rationale": "Germany is a key driver of Gaia-X, emphasizing data sovereignty and secure, federated cloud infrastructure, particularly for industrial applications."
+      "rationale": "Germany is a key driver of GAIA-X, aiming to establish a federated, secure, and sovereign European data infrastructure, which inherently relies on advanced distributed cloud concepts, alongside its national cloud strategy for public administration."
     },
     {
       "country_iso": "NL",
@@ -93,10 +95,11 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Dutch Digitalisation Strategy",
-        "Focus on secure data infrastructure"
+        "National Digital Strategy",
+        "Government cloud policy",
+        "Ministry of Economic Affairs and Climate Policy initiatives"
       ],
-      "rationale": "The Netherlands focuses on secure cloud adoption and data sovereignty, particularly for public sector and critical infrastructure, as part of its digitalization strategy."
+      "rationale": "The Netherlands emphasizes secure data infrastructure and cloud adoption for government and critical sectors, focusing on open standards and interoperability as part of its national digital strategy."
     },
     {
       "country_iso": "GB",
@@ -106,11 +109,12 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "Government Digital Service (GDS) 'Cloud First' policy",
-        "National Data Strategy",
-        "Innovate UK programs"
+        "G-Cloud framework",
+        "Cloud First policy",
+        "UK Digital Strategy",
+        "Government Digital Service (GDS) initiatives"
       ],
-      "rationale": "The UK has a strong 'Cloud First' policy for government and aims to foster a vibrant cloud ecosystem, with a focus on AI and data infrastructure."
+      "rationale": "The UK has a long-standing 'Cloud First' policy for government, a robust G-Cloud framework, and a strong focus on digital transformation, aiming to foster innovation and efficiency through cloud adoption across the public sector."
     },
     {
       "country_iso": "FR",
@@ -120,11 +124,11 @@
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "France 2030 investment plan (digital sovereignty)",
-        "National Cloud Strategy",
-        "'Bleu' project"
+        "Cloud au Centre strategy",
+        "Participation in GAIA-X",
+        "France Relance plan (digital sovereignty investments)"
       ],
-      "rationale": "France is committed to digital sovereignty through its national cloud strategy and significant investments like 'Bleu', aiming for secure and competitive cloud solutions."
+      "rationale": "France is committed to digital sovereignty with its 'Cloud au Centre' strategy and active participation in GAIA-X, aiming to develop secure, trusted, and competitive cloud solutions nationally and within Europe."
     },
     {
       "country_iso": "IL",
@@ -136,37 +140,39 @@
       "evidence": [
         "Project Nimbus (government cloud)",
         "National Cyber Directorate initiatives",
-        "Innovation programs for cloud startups"
+        "Support for tech startups in cloud/cyber"
       ],
-      "rationale": "Israel focuses on secure, advanced cloud infrastructure for government and defense, leveraging its strong cybersecurity and tech innovation ecosystem."
+      "rationale": "Israel, a cybersecurity and tech hub, is modernizing government IT through initiatives like Project Nimbus, focusing on secure cloud services and leveraging distributed systems for national security and technological leadership."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "ambition": 4,
       "target_level": 4,
-      "horizon": "medium",
+      "horizon": "long",
       "confidence": "high",
       "evidence": [
         "Digital India program",
-        "MeitY Cloud Policy",
-        "National Strategy on Artificial Intelligence"
+        "MeghRaj policy (Government of India Cloud)",
+        "National Cloud Computing Strategy",
+        "Data Centre Policy"
       ],
-      "rationale": "India has a massive national push for digital transformation through 'Digital India', with cloud computing as a foundational element for e-governance and AI at scale."
+      "rationale": "India's 'Digital India' program heavily relies on cloud infrastructure, with policies like MeghRaj and a focus on building a robust, scalable, and secure national cloud ecosystem to support its vast digital economy and public services."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
-      "ambition": 4,
-      "target_level": 4,
-      "horizon": "medium",
+      "ambition": 5,
+      "target_level": 5,
+      "horizon": "long",
       "confidence": "high",
       "evidence": [
-        "Smart Nation Initiative",
+        "Smart Nation initiative",
         "Government Commercial Cloud (GCC)",
-        "Digital Government Blueprint"
+        "Digital Government Blueprint",
+        "AI Singapore"
       ],
-      "rationale": "Singapore aims to be a Smart Nation, with cloud and distributed systems as core enablers for government, AI, and smart city initiatives."
+      "rationale": "Singapore's 'Smart Nation' initiative deeply integrates cloud and distributed systems, with a strong focus on government cloud adoption, AI, and building resilient, advanced digital infrastructure to be a global leader."
     },
     {
       "country_iso": "CH",
@@ -177,9 +183,10 @@
       "confidence": "medium",
       "evidence": [
         "Digital Switzerland strategy",
-        "FOITT initiatives for government cloud"
+        "Federal government's cloud strategy",
+        "National Cyber Security Centre (NCSC) initiatives"
       ],
-      "rationale": "Switzerland prioritizes secure data infrastructure and digital sovereignty, aiming for compliant cloud solutions for sensitive data and public services."
+      "rationale": "Switzerland prioritizes data protection and cybersecurity, with initiatives for secure, sovereign cloud solutions for government and critical infrastructure, often leveraging private sector capabilities within its 'Digital Switzerland' strategy."
     },
     {
       "country_iso": "SE",
@@ -190,9 +197,10 @@
       "confidence": "medium",
       "evidence": [
         "Digitalisation Strategy for Sweden",
-        "Agency for Digital Government (DIGG) initiatives"
+        "E-government initiatives",
+        "Agency for Digital Government (DIGG) guidelines"
       ],
-      "rationale": "Sweden focuses on digital transformation and secure public sector cloud, aiming for efficient cloud services for public administration and fostering a digital economy."
+      "rationale": "Sweden's digitalization strategy includes a push for secure and efficient cloud adoption to support digital public services and innovation, emphasizing open data and leveraging commercial cloud providers."
     },
     {
       "country_iso": "FI",
@@ -203,36 +211,38 @@
       "confidence": "medium",
       "evidence": [
         "Digital Compass for Finland",
-        "Ministry of Finance initiatives for public sector cloud"
+        "Government cloud strategy",
+        "Ministry of Finance's digital transformation programs"
       ],
-      "rationale": "Finland focuses on digital government and secure cloud solutions, aiming for robust infrastructure to support its public services and tech sector."
+      "rationale": "Finland, a digitally advanced nation, focuses on public sector digitalization and data utilization, with a clear intent for secure and efficient cloud adoption to enhance public services and foster innovation."
     },
     {
       "country_iso": "CA",
       "country_name": "Canada",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
+        "Government of Canada Cloud Adoption Strategy",
         "Digital Government Strategy",
-        "Treasury Board of Canada Secretariat's Cloud Adoption Strategy"
+        "Shared Services Canada (SSC) initiatives"
       ],
-      "rationale": "Canada has a strong focus on government cloud adoption and digital transformation, aiming for secure and efficient cloud infrastructure for public services."
+      "rationale": "Canada has a 'Cloud First' strategy for government and a broader digital government agenda, focusing on secure cloud adoption, data modernization, and leveraging cloud for efficient public service delivery."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Digital Economy Strategy",
         "Australian Government Cloud Policy",
-        "Digital Transformation Agency (DTA) initiatives"
+        "Digital Transformation Agency (DTA) initiatives",
+        "Cyber Security Strategy"
       ],
-      "rationale": "Australia prioritizes government cloud adoption and digital transformation, aiming for secure and efficient cloud infrastructure to support its digital economy."
+      "rationale": "Australia's 'Cloud First' policy for government and strong digital transformation agenda aim to improve public service delivery, data management, and cybersecurity through secure and innovative cloud adoption."
     },
     {
       "country_iso": "IE",
@@ -243,9 +253,10 @@
       "confidence": "medium",
       "evidence": [
         "National Digital Strategy",
-        "Office of the Government Chief Information Officer (OGCIO) initiatives"
+        "Public Service ICT Strategy",
+        "IDA Ireland initiatives"
       ],
-      "rationale": "Ireland focuses on digital transformation and secure cloud adoption, aiming for robust infrastructure to support public services and its strong tech sector."
+      "rationale": "Ireland's digital strategy includes promoting cloud adoption for public services and fostering a digital economy, leveraging its position as a tech hub with an emphasis on cybersecurity."
     },
     {
       "country_iso": "BE",
@@ -255,10 +266,10 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Digital Belgium Strategy",
-        "Federal Public Service BOSA initiatives for government cloud"
+        "Digital Belgium strategy",
+        "Federal government's cloud strategy"
       ],
-      "rationale": "Belgium focuses on digital transformation and secure cloud adoption, aiming for efficient cloud infrastructure for government and fostering a digital economy."
+      "rationale": "Belgium's 'Digital Belgium' strategy includes modernizing government IT and promoting cloud adoption, with a focus on secure data handling and interoperability to support public services and economic growth."
     },
     {
       "country_iso": "AT",
@@ -268,87 +279,92 @@
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Digital Austria Strategy",
-        "Federal Chancellery initiatives for digital administration"
+        "Digital Austria strategy",
+        "E-government initiatives"
       ],
-      "rationale": "Austria focuses on digital transformation and secure cloud adoption, aiming for efficient cloud infrastructure for government and fostering a digital economy."
+      "rationale": "Austria's 'Digital Austria' strategy includes modernizing public administration and promoting cloud services, with an emphasis on data security and sovereignty, often within a broader European context."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
       "ambition": 4,
-      "target_level": 3,
+      "target_level": 4,
       "horizon": "medium",
       "confidence": "high",
       "evidence": [
-        "National Recovery and Resilience Plan (PNRR) - Polo Strategico Nazionale (PSN)",
-        "Italia Digitale 2026"
+        "National Strategic Pole (PSN) for Cloud",
+        "Italia Digitale 2026 plan",
+        "National Recovery and Resilience Plan (PNRR) investments"
       ],
-      "rationale": "Italy has a strong commitment to digital transformation, with significant investment in a sovereign national cloud infrastructure (PSN) for public administration."
+      "rationale": "Italy has launched the ambitious 'National Strategic Pole' (PSN) for cloud, aiming to consolidate public administration data centers into a few secure, sovereign cloud infrastructures, backed by significant national recovery funds."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
+      "ambition": 4,
+      "target_level": 4,
+      "horizon": "medium",
+      "confidence": "high",
+      "evidence": [
+        "Digital Spain 2025 agenda",
+        "National Cloud Strategy for Public Administrations",
+        "Investments from NextGenerationEU funds"
+      ],
+      "rationale": "Spain's 'Digital Spain 2025' agenda includes substantial investments in cloud infrastructure, cybersecurity, and digital transformation for public administration and SMEs, with a focus on data economy and digital sovereignty."
+    },
+    {
+      "country_iso": "MY",
+      "country_name": "Malaysia",
       "ambition": 3,
       "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Espa\u00f1a Digital 2026 agenda",
-        "National Cloud Strategy for Public Administrations"
-      ],
-      "rationale": "Spain focuses on digital transformation and a national cloud strategy, aiming for secure and efficient cloud infrastructure for public services and the digital economy."
-    },
-    {
-      "country_iso": "MY",
-      "country_name": "Malaysia",
-      "ambition": 2,
-      "target_level": 2,
-      "horizon": "medium",
-      "confidence": "medium",
-      "evidence": [
-        "MyDIGITAL blueprint",
+        "MyDIGITAL Blueprint",
         "Malaysia Digital Economy Corporation (MDEC) initiatives"
       ],
-      "rationale": "Malaysia aims to drive digital transformation and cloud adoption for government and industry, focusing on building foundational cloud infrastructure."
+      "rationale": "Malaysia's 'MyDIGITAL' blueprint aims to accelerate cloud adoption across government and industries, including building hyper-scale data centers and fostering local cloud providers to drive digital transformation."
     },
     {
       "country_iso": "VN",
       "country_name": "Vietnam",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "National Digital Transformation Program to 2025"
+        "National Digital Transformation Program to 2025, with a vision to 2030",
+        "Ministry of Information and Communications (MIC) strategies"
       ],
-      "rationale": "Vietnam focuses on digital transformation and cloud adoption as part of its national program, aiming to build foundational digital infrastructure."
+      "rationale": "Vietnam's national digital transformation program includes developing cloud computing infrastructure and services, promoting cloud adoption in government and businesses, and fostering domestic tech companies to build its digital economy."
     },
     {
       "country_iso": "TH",
       "country_name": "Thailand",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
         "Thailand 4.0 strategy",
-        "Digital Government Development Plan"
+        "Digital Government Development Agency (DGA) initiatives",
+        "National Digital Economy and Society Development Plan"
       ],
-      "rationale": "Thailand aims to drive digital transformation and cloud adoption for government and industry as part of its 'Thailand 4.0' strategy."
+      "rationale": "Thailand's 'Thailand 4.0' strategy and digital government initiatives include developing cloud infrastructure, promoting cloud adoption, and building a secure digital ecosystem to support digital government and economic transformation."
     },
     {
       "country_iso": "ID",
       "country_name": "Indonesia",
-      "ambition": 2,
-      "target_level": 2,
+      "ambition": 3,
+      "target_level": 3,
       "horizon": "medium",
       "confidence": "medium",
       "evidence": [
-        "Making Indonesia 4.0 roadmap",
-        "National Digital Transformation Strategy"
+        "Digital Indonesia Roadmap",
+        "Ministry of Communication and Informatics (Kominfo) initiatives",
+        "National data center development plans"
       ],
-      "rationale": "Indonesia focuses on digital transformation and cloud adoption as part of its 'Making Indonesia 4.0' roadmap, aiming to build foundational digital infrastructure."
+      "rationale": "Indonesia's 'Digital Indonesia' vision includes developing cloud infrastructure, promoting cloud adoption, and fostering a digital economy, with a focus on data centers and digital public services to support its large population."
     },
     {
       "country_iso": "AE",
@@ -359,10 +375,10 @@
       "confidence": "high",
       "evidence": [
         "UAE Digital Government Strategy",
-        "UAE Centennial 2071",
-        "TDRA initiatives for smart cities and AI"
+        "Smart Dubai initiatives",
+        "Emirates Digital Government"
       ],
-      "rationale": "The UAE has a high ambition for digital government, smart cities, and AI, with cloud as a core enabler, driving significant investment in advanced cloud services."
+      "rationale": "The UAE has a strong vision for digital government and smart cities, heavily relying on cloud and distributed systems, with initiatives promoting advanced cloud adoption, AI, and data-driven services to be a global leader."
     },
     {
       "country_iso": "SA",
@@ -374,9 +390,9 @@
       "evidence": [
         "Vision 2030",
         "National Digital Transformation Program",
-        "Investments in data centers and cloud regions (e.g., Oracle, Google)"
+        "Investments in data centers and cloud regions (e.g., Aramco's cloud initiatives, STC cloud)"
       ],
-      "rationale": "Saudi Arabia's Vision 2030 drives massive digital transformation, including smart cities like NEOM, with significant investments in world-class cloud infrastructure and AI."
+      "rationale": "Saudi Arabia's 'Vision 2030' includes massive digital transformation with significant investments in cloud infrastructure, data centers, and digital government services, aiming to build a robust digital economy."
     },
     {
       "country_iso": "BR",
@@ -387,22 +403,24 @@
       "confidence": "medium",
       "evidence": [
         "Brazilian Digital Transformation Strategy (E-Digital)",
-        "Ministry of Economy initiatives for government cloud"
+        "Federal Government Cloud Strategy",
+        "Ministry of Economy initiatives"
       ],
-      "rationale": "Brazil focuses on digital government and cloud adoption to modernize public administration and foster a digital economy as part of its E-Digital strategy."
+      "rationale": "Brazil has a digital government strategy and initiatives to promote cloud adoption in the public sector, focusing on modernizing IT infrastructure and improving public service delivery as part of its broader digital transformation."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
-      "ambition": 3,
-      "target_level": 3,
+      "ambition": 4,
+      "target_level": 4,
       "horizon": "medium",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "Poland's Digital Transformation Strategy",
-        "Government Cloud (OChK - Otwarty Chmura Krajowa) initiative"
+        "Polish Cloud (Chmura Krajowa) initiative",
+        "Digital Poland 2025 strategy",
+        "Ministry of Digital Affairs programs"
       ],
-      "rationale": "Poland has a strong push for digital transformation and a dedicated government cloud initiative (OChK) to modernize public administration and support its digital economy."
+      "rationale": "Poland has a strong focus on digital transformation, including a national cloud program ('Polish Cloud') aimed at accelerating cloud adoption in public administration and businesses, with an emphasis on data security and sovereignty."
     }
   ]
 }

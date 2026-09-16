@@ -16,13 +16,9 @@
         "Blue Origin",
         "Northrop Grumman",
         "JPL",
-        "ULA",
-        "Sierra Space",
-        "MIT",
-        "Stanford",
-        "Caltech"
+        "DoD programs"
       ],
-      "rationale": "Dominant global force in space exploration, commercial space, defense aerospace, and advanced R&D, with massive public and private investment."
+      "rationale": "Global leader in all aspects of space and aerospace, from fundamental research to commercialization and defense, with extensive R&D and a vibrant private sector."
     },
     {
       "country_iso": "CN",
@@ -35,102 +31,101 @@
         "CNSA",
         "CASC",
         "CASIC",
-        "China Manned Space Agency",
-        "various research institutes"
+        "Tiangong Space Station",
+        "Chang'e program",
+        "Tianwen-1"
       ],
-      "rationale": "Aggressive national space program with substantial government funding, aiming for global leadership in space with rapid advancements."
+      "rationale": "Rapidly expanding state-driven program with ambitious goals across all space domains, significant investment in R&D and indigenous capabilities."
     },
     {
       "country_iso": "JP",
       "country_name": "Japan",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.8,
       "confidence": "high",
       "evidence": [
         "JAXA",
         "Mitsubishi Heavy Industries",
-        "NEC",
-        "IHI Aerospace",
-        "Hayabusa missions"
+        "Hayabusa missions",
+        "H-IIA/B rockets"
       ],
-      "rationale": "Established and advanced space program with a focus on scientific missions, satellite technology, and advanced robotics for space."
+      "rationale": "Advanced capabilities in scientific missions, satellite technology, and propulsion, with strong industrial backing and a focus on innovation."
     },
     {
       "country_iso": "KR",
       "country_name": "South Korea",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "KARI",
-        "Hanwha Aerospace",
-        "LIG Nex1",
-        "Korea Pathfinder Lunar Orbiter (Danuri)"
+        "Nuri rocket",
+        "Danuri lunar orbiter"
       ],
-      "rationale": "Rapidly developing space sector with increasing government investment and private sector involvement, focusing on indigenous launch and satellite capabilities."
+      "rationale": "Developing indigenous launch capabilities and satellite technology, with increasing investment in space exploration and research."
     },
     {
       "country_iso": "TW",
       "country_name": "Taiwan",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
-        "TASA (formerly NSPO)",
-        "Aerospace Industrial Development Corporation (AIDC)"
+        "NSPO (National Space Organization)",
+        "component manufacturing",
+        "academic research"
       ],
-      "rationale": "Niche player, primarily focused on satellite development and component manufacturing, with growing but still small space ambitions."
+      "rationale": "Strong in electronics and precision manufacturing, contributing to global supply chains, but limited full-system integration in advanced space systems."
     },
     {
       "country_iso": "DE",
       "country_name": "Germany",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.8,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "DLR",
         "Airbus Defence and Space",
         "OHB SE",
-        "ArianeGroup",
-        "Fraunhofer Institutes"
+        "ArianeGroup (partially)",
+        "ESA contributions"
       ],
-      "rationale": "Major contributor to ESA programs, strong industrial base in aerospace, and significant public research investment, especially in satellite technology and propulsion."
+      "rationale": "Key contributor to ESA, strong in satellite systems, propulsion, and aerospace manufacturing (Airbus), with significant research capabilities."
     },
     {
       "country_iso": "NL",
       "country_name": "Netherlands",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.5,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "ESA ESTEC",
-        "Airbus Defence and Space Netherlands",
         "TNO",
-        "SRON"
+        "Airbus DS NL (formerly Dutch Space)",
+        "ISISpace"
       ],
-      "rationale": "Significant role through ESA ESTEC, strong academic and research base in specific niche areas of space technology, particularly instrumentation and optics."
+      "rationale": "Niche expertise in scientific instruments, optics, and small satellite components, host to ESA ESTEC, fostering specialized R&D."
     },
     {
       "country_iso": "GB",
       "country_name": "United Kingdom",
       "volume_band": "medium",
       "skill_level": 4,
-      "frontier": 0.7,
+      "frontier": 0.6,
       "confidence": "high",
       "evidence": [
         "UK Space Agency",
-        "Airbus Defence and Space",
-        "BAE Systems",
-        "Reaction Engines",
         "OneWeb",
-        "SSTL"
+        "SSTL",
+        "Reaction Engines",
+        "spaceport development"
       ],
-      "rationale": "Significant investment in space, particularly in satellite communications and small satellite technology, with emerging launch capabilities and advanced propulsion research."
+      "rationale": "Growing commercial space sector, focusing on small satellites, launch services, and satellite applications, with increasing investment in R&D."
     },
     {
       "country_iso": "FR",
@@ -143,86 +138,84 @@
         "CNES",
         "ArianeGroup",
         "Thales Alenia Space",
-        "Airbus Defence and Space",
-        "ONERA"
+        "Airbus (partially)",
+        "ESA contributions"
       ],
-      "rationale": "Cornerstone of European space efforts, with a robust industrial and research base in all aspects of space and aerospace, particularly launchers and satellites."
+      "rationale": "Leading European space power with comprehensive capabilities in launch vehicles, satellites, and scientific research, a major ESA contributor."
     },
     {
       "country_iso": "IL",
       "country_name": "Israel",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
-        "Israel Space Agency",
-        "IAI",
+        "IAI (Israel Aerospace Industries)",
         "Elbit Systems",
-        "Rafael Advanced Defense Systems",
-        "SpaceIL"
+        "SpaceIL",
+        "Ofek satellites"
       ],
-      "rationale": "Focus on defense and intelligence applications of space, with strong capabilities in small satellites, electro-optics, and related technologies."
+      "rationale": "Advanced capabilities in small, agile satellites for intelligence and defense, leveraging a strong tech sector for innovation."
     },
     {
       "country_iso": "IN",
       "country_name": "India",
       "volume_band": "high",
       "skill_level": 4,
-      "frontier": 0.6,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "ISRO",
-        "HAL",
-        "L&T",
-        "Godrej Aerospace",
-        "Chandrayaan missions"
+        "PSLV/GSLV rockets",
+        "Chandrayaan missions",
+        "Mangalyaan mission",
+        "growing private sector"
       ],
-      "rationale": "Ambitious and successful national space program with a focus on self-reliance, cost-effective space access, and advanced scientific missions."
+      "rationale": "Cost-effective and self-reliant space program with significant achievements in launch, satellites, and planetary missions, with increasing private sector involvement."
     },
     {
       "country_iso": "SG",
       "country_name": "Singapore",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "medium",
       "evidence": [
         "ST Engineering",
-        "NTU Satellite Research Centre",
-        "Singapore Space & Technology Ltd"
+        "Nanyang Technological University (satellite research)",
+        "aerospace MRO hub"
       ],
-      "rationale": "Emerging player with a focus on small satellite development, data applications, and a strong aerospace MRO sector."
+      "rationale": "Focus on satellite manufacturing, data analytics, and aerospace MRO, leveraging its high-tech manufacturing base and research institutions."
     },
     {
       "country_iso": "CH",
       "country_name": "Switzerland",
       "volume_band": "very_low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "RUAG Space",
-        "ETH Zurich",
         "EPFL",
-        "contributions to ESA"
+        "ETH Zurich",
+        "RUAG Space",
+        "ESA contributions (e.g., scientific instruments)"
       ],
-      "rationale": "Strong academic and industrial base in precision engineering and scientific instruments, contributing to European space efforts."
+      "rationale": "High-precision engineering for scientific instruments and components, strong academic research, and a key ESA partner in specialized areas."
     },
     {
       "country_iso": "SE",
       "country_name": "Sweden",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "SSC (Esrange Space Center)",
-        "GKN Aerospace",
-        "Saab",
-        "KTH Royal Institute of Technology"
+        "SSC (Swedish Space Corporation)",
+        "Esrange Space Center",
+        "GKN Aerospace"
       ],
-      "rationale": "Focus on scientific research (sounding rockets), ground services, and specialized aerospace components, with a strong academic base."
+      "rationale": "Expertise in satellite technology, sounding rockets, and space science, with a focus on Arctic applications and research."
     },
     {
       "country_iso": "FI",
@@ -230,13 +223,13 @@
       "volume_band": "very_low",
       "skill_level": 2,
       "frontier": 0.2,
-      "confidence": "medium",
+      "confidence": "low",
       "evidence": [
         "ICEYE",
-        "Aalto University",
-        "VTT Technical Research Centre of Finland"
+        "Aalto University (satellite programs)",
+        "Arctic Space Centre"
       ],
-      "rationale": "Emerging player with a strong focus on commercial small satellite constellations (SAR) and space weather research."
+      "rationale": "Emerging in small satellites (e.g., SAR), space data, and Arctic space applications, driven by startups and academic research."
     },
     {
       "country_iso": "CA",
@@ -247,101 +240,99 @@
       "confidence": "high",
       "evidence": [
         "CSA",
-        "MDA",
-        "Magellan Aerospace",
-        "CAE",
-        "Canadarm"
+        "MDA (Canadarm)",
+        "Telesat",
+        "GHGSat"
       ],
-      "rationale": "Established space program with key contributions to ISS (Canadarm), strong satellite communications industry, and remote sensing expertise."
+      "rationale": "World-renowned for space robotics and satellite communications, strong in remote sensing and Earth observation technologies."
     },
     {
       "country_iso": "AU",
       "country_name": "Australia",
       "volume_band": "low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "Australian Space Agency",
         "Gilmour Space Technologies",
         "Southern Launch",
-        "EOS Space Systems"
+        "various ground stations"
       ],
-      "rationale": "Rapidly growing space sector with government backing, focusing on launch capabilities, small satellites, and leveraging its geographic position for ground stations."
+      "rationale": "Rapidly developing space sector with focus on launch services, satellite manufacturing, and ground segment capabilities."
     },
     {
       "country_iso": "IE",
       "country_name": "Ireland",
       "volume_band": "very_low",
-      "skill_level": 1,
-      "frontier": 0.05,
+      "skill_level": 2,
+      "frontier": 0.1,
       "confidence": "low",
       "evidence": [
-        "ESA membership",
-        "some aerospace component manufacturers"
+        "ESA BIC Ireland",
+        "academic research",
+        "software companies supporting aerospace"
       ],
-      "rationale": "Primarily a contributor to ESA, with a small and nascent indigenous space industry, limited advanced R&D."
+      "rationale": "Primarily focused on software, data analytics, and niche components, leveraging its tech hub status rather than full-scale manufacturing."
     },
     {
       "country_iso": "BE",
       "country_name": "Belgium",
-      "volume_band": "very_low",
-      "skill_level": 2,
-      "frontier": 0.2,
+      "volume_band": "low",
+      "skill_level": 3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
-        "ESA membership",
-        "OIP Sensor Systems",
+        "Spacebel",
         "Thales Alenia Space ETCA",
-        "Liege Space Centre"
+        "ESA contributions (e.g., PROBA satellites)"
       ],
-      "rationale": "Contributes to ESA with expertise in scientific instruments, optics, and propulsion components."
+      "rationale": "Strong contributor to ESA, particularly in scientific instruments, optics, and data processing, with specialized industrial players."
     },
     {
       "country_iso": "AT",
       "country_name": "Austria",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
-      "confidence": "medium",
+      "frontier": 0.2,
+      "confidence": "low",
       "evidence": [
-        "ESA membership",
-        "Beyond Gravity (formerly RUAG Space Austria)",
-        "TU Graz"
+        "RUAG Space Austria",
+        "FOTEC",
+        "academic research"
       ],
-      "rationale": "Contributes to ESA with expertise in scientific instruments, thermal systems, and small satellite components."
+      "rationale": "Niche expertise in scientific instruments, space materials, and components for international missions, contributing to ESA programs."
     },
     {
       "country_iso": "IT",
       "country_name": "Italy",
-      "volume_band": "medium",
-      "skill_level": 3,
-      "frontier": 0.6,
+      "volume_band": "high",
+      "skill_level": 4,
+      "frontier": 0.7,
       "confidence": "high",
       "evidence": [
         "ASI",
-        "Thales Alenia Space Italia",
-        "Avio",
         "Leonardo",
-        "COSMO-SkyMed"
+        "Thales Alenia Space Italia",
+        "Avio (Vega launcher)",
+        "ESA contributions"
       ],
-      "rationale": "Major contributor to ESA, with a strong industrial base in satellite systems, launch vehicles (Vega), and scientific payloads."
+      "rationale": "Major European player in scientific missions, Earth observation, and launch vehicle development (Vega), with strong industrial capabilities."
     },
     {
       "country_iso": "ES",
       "country_name": "Spain",
-      "volume_band": "low",
+      "volume_band": "medium",
       "skill_level": 3,
-      "frontier": 0.3,
+      "frontier": 0.4,
       "confidence": "medium",
       "evidence": [
         "CDTI",
-        "Airbus Defence and Space Spain",
         "GMV",
-        "SENER",
-        "Hispasat"
+        "Airbus DS Spain",
+        "PLD Space (Miura rockets)"
       ],
-      "rationale": "Significant contributor to ESA, with expertise in ground segment, satellite components, and space software."
+      "rationale": "Growing space sector, strong in ground segment, satellite components, and developing indigenous micro-launchers."
     },
     {
       "country_iso": "MY",
@@ -351,10 +342,10 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "Angkasa (Malaysian National Space Agency)",
-        "MEASAT Satellite Systems"
+        "ANGKASA (Malaysian Space Agency)",
+        "MEASAT (satellite operator)"
       ],
-      "rationale": "Primarily a satellite operator, with very limited indigenous space technology development or advanced R&D."
+      "rationale": "Early stages, primarily focused on satellite data utilization and ground infrastructure, with limited advanced manufacturing or R&D."
     },
     {
       "country_iso": "VN",
@@ -365,9 +356,9 @@
       "confidence": "low",
       "evidence": [
         "VNSC (Vietnam National Space Center)",
-        "FPT University (CubeSat projects)"
+        "satellite data utilization"
       ],
-      "rationale": "Emerging space program, primarily focused on acquiring and operating Earth observation satellites, with limited advanced R&D."
+      "rationale": "Nascent space program focused on Earth observation satellites and applications, with very limited advanced job market."
     },
     {
       "country_iso": "TH",
@@ -377,9 +368,10 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "GISTDA (Geo-Informatics and Space Technology Development Agency)"
+        "GISTDA (Geo-Informatics and Space Technology Development Agency)",
+        "THEOS satellites"
       ],
-      "rationale": "Focus on satellite data applications and a very nascent small satellite program, with limited advanced R&D."
+      "rationale": "Developing capabilities in Earth observation satellites and their applications, with a very small advanced job market."
     },
     {
       "country_iso": "ID",
@@ -389,25 +381,25 @@
       "frontier": 0.0,
       "confidence": "low",
       "evidence": [
-        "LAPAN (now part of BRIN)",
-        "PT Dirgantara Indonesia"
+        "LAPAN (National Institute of Aeronautics and Space)",
+        "satellite data utilization"
       ],
-      "rationale": "Primarily focused on satellite operations and some basic satellite development, with limited advanced R&D."
+      "rationale": "Focus on Earth observation satellites and applications for national development, with limited advanced space manufacturing or R&D."
     },
     {
       "country_iso": "AE",
       "country_name": "United Arab Emirates",
       "volume_band": "low",
       "skill_level": 3,
-      "frontier": 0.4,
+      "frontier": 0.5,
       "confidence": "medium",
       "evidence": [
         "UAE Space Agency",
-        "MBRSC",
-        "Hope Mars Mission",
-        "Rashid Lunar Rover"
+        "Mohammed Bin Rashid Space Centre (MBRSC)",
+        "Emirates Mars Mission (Hope Probe)",
+        "Rashid Rover"
       ],
-      "rationale": "Rapidly developing space sector with significant government investment and ambitious scientific missions, demonstrating frontier capabilities."
+      "rationale": "Ambitious and rapidly developing space program with significant investments in exploration and indigenous capabilities, fostering advanced roles."
     },
     {
       "country_iso": "SA",
@@ -418,38 +410,38 @@
       "confidence": "low",
       "evidence": [
         "Saudi Space Commission",
-        "KACST",
-        "Arabsat"
+        "King Abdulaziz City for Science and Technology (KACST) satellite programs"
       ],
-      "rationale": "Emerging space program with government backing, focusing on satellite technology acquisition and applications, with nascent R&D."
+      "rationale": "Emerging space sector with strategic focus on satellite applications and national space strategy, still in early development for advanced roles."
     },
     {
       "country_iso": "BR",
       "country_name": "Brazil",
       "volume_band": "low",
       "skill_level": 2,
-      "frontier": 0.2,
+      "frontier": 0.3,
       "confidence": "medium",
       "evidence": [
-        "AEB",
+        "AEB (Brazilian Space Agency)",
         "INPE",
-        "Embraer"
+        "Alc\u00e2ntara Launch Center",
+        "CBERS satellites"
       ],
-      "rationale": "Established aerospace industry, but space program has seen fluctuating investment, focusing on Earth observation and attempting launch capabilities."
+      "rationale": "Long-standing space program with capabilities in satellite development and launch attempts, facing recent challenges but maintaining some advanced research."
     },
     {
       "country_iso": "PL",
       "country_name": "Poland",
       "volume_band": "very_low",
       "skill_level": 2,
-      "frontier": 0.1,
+      "frontier": 0.2,
       "confidence": "low",
       "evidence": [
-        "POLSA",
+        "POLSA (Polish Space Agency)",
         "Creotech Instruments",
-        "Syderal Polska"
+        "academic research"
       ],
-      "rationale": "Emerging space sector, primarily contributing to ESA and developing niche capabilities in small satellites and components."
+      "rationale": "Growing space sector, focusing on small satellites, components, and space data applications within the ESA framework, with increasing R&D."
     }
   ]
 }
