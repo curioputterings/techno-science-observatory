@@ -53,10 +53,13 @@ LOG_DIR="$PROJECT_DIR/data/research"
 mkdir -p "$LOG_DIR"
 STAMP="$(date +%Y-%m-%d_%H%M%S)"
 
-echo "[$(date)] weekly_refresh starting with $PY" >> "$LOG_DIR/cron.log"
+# Arguments are forwarded to refresh.py, so the catch-up guard can invoke the
+# scoped repair path (--domains a,b,c) through this same TCC-safe wrapper rather
+# than picking an interpreter itself.
+echo "[$(date)] weekly_refresh starting with $PY ${*:-(full refresh)}" >> "$LOG_DIR/cron.log"
 # `set -e` would abort before the finish line on a non-zero refresh, hiding the rc
 # in cron.log (the only place a launchd-run failure is visible) — so capture it.
 rc=0
-"$PY" refresh.py >> "$LOG_DIR/cron.log" 2>&1 || rc=$?
+"$PY" refresh.py "$@" >> "$LOG_DIR/cron.log" 2>&1 || rc=$?
 echo "[$(date)] weekly_refresh finished (rc=$rc)" >> "$LOG_DIR/cron.log"
 exit "$rc"

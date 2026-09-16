@@ -154,11 +154,16 @@ def do_refresh(as_of: str, skip_api: bool = False) -> None:
     log(f"--- snapshot {as_of}: {n} cells recorded | history dates: {dates} ---")
 
 
-def research_run(as_of: str) -> dict:
-    """Mirror run_research.run without re-importing its __main__ guard."""
+def research_run(as_of: str, domains: list[str] | None = None) -> dict:
+    """Mirror run_research.run without re-importing its __main__ guard.
+
+    `domains` restricts the pass to a subset — used by --domains to repair the
+    handful of domains a transient outage stranded, without re-billing the ones
+    that already landed.
+    """
     schema = gemini_client.domain_schema()
     summary = {}
-    for key in taxonomy.ALL_DOMAINS:
+    for key in (domains or taxonomy.ALL_DOMAINS):
         try:
             payload = gemini_client.structured(research.build_prompt(key), schema)
             payload["domain"] = key
@@ -168,6 +173,50 @@ def research_run(as_of: str) -> dict:
             log(f"    [err] capability {key}: {e}")
             summary[key] = 0
     return summary
+
+
+def do_repair(as_of: str, domains: list[str]) -> int:
+    """Refresh only `domains`, then re-record today's snapshot.
+
+    WHY THIS EXISTS: a network outage during the weekly run strands whichever
+    domains it happened to cover (2026-08-31: the first 8 of 30, 4 min of dead
+    Gemini retries each). The snapshot is still written, so the stranded domains
+    silently carry the previous week's values forward — a flat week in
+    cell_history rather than a visible hole. Re-running the whole refresh would
+    repair them at the cost of re-billing the 22 that were already fine, so the
+    catch-up guard calls this instead with just the stale set.
+
+    Snapshot is idempotent per day: it overwrites today's rows, so the repaired
+    values replace the carried-forward ones in place.
+    """
+    if not gemini_client.ready():
+        log("ERROR: GEMINI_API_KEY missing; cannot repair.")
+        return 1
+    unknown = [d for d in domains if d not in taxonomy.ALL_DOMAINS]
+    if unknown:
+        log(f"ERROR: unknown domain(s): {unknown}")
+        return 1
+
+    log(f"--- repair: {len(domains)} stale domain(s): {domains} ---")
+    rsum = research_run(as_of, domains)
+    log(f"    repair capability per-domain: {rsum}")
+    asum = ambition.run(domains, as_of)
+    log(f"    repair ambition per-domain: {asum}")
+
+    store = Store()
+    n = store.snapshot(as_of)
+    store.close()
+    log(f"--- repair snapshot {as_of}: {n} cells recorded ---")
+
+    # Report yield, not just completion: a repair that returned zero cells for
+    # some domain is exactly the failure this whole path exists to catch, and it
+    # must not read as success.
+    empty = sorted([d for d in domains if not rsum.get(d)])
+    if empty:
+        log(f"--- repair INCOMPLETE: still no capability data for {empty} ---")
+        return 2
+    log(f"--- repair done: {len(domains)}/{len(domains)} domains refreshed ---")
+    return 0
 
 
 def print_trends() -> None:
@@ -202,11 +251,22 @@ def main(argv=None):
                     help="snapshot current cells without calling Gemini")
     ap.add_argument("--trends", action="store_true",
                     help="print capability trends across snapshots and exit")
+    ap.add_argument("--domains", metavar="A,B,C",
+                    help="repair only these comma-separated domain keys "
+                         "(capability + ambition), then re-snapshot")
     args = ap.parse_args(argv)
 
     if args.trends:
         print_trends()
         return
+
+    if args.domains:
+        as_of = dt.date.today().isoformat()
+        keys = [d.strip() for d in args.domains.split(",") if d.strip()]
+        log(f"=== repair start {as_of} ({len(keys)} domain(s)) ===")
+        rc = do_repair(as_of, keys)
+        log(f"=== repair done (rc={rc}) ===")
+        sys.exit(rc)
 
     as_of = dt.date.today().isoformat()
     log(f"=== refresh start {as_of} (snapshot_only={args.snapshot_only}) ===")
